@@ -1,13 +1,13 @@
 {
  "app": "personal-newsdash",
  "app_version": "0.1.0",
- "build_id": "20260707T081005Z",
- "generated_at": "2026-07-07T08:10:05Z",
+ "build_id": "20260707T111836Z",
+ "generated_at": "2026-07-07T11:18:36Z",
  "schema_version": 1,
  "sections": [
   {
    "category": "open",
-   "count": 112,
+   "count": 116,
    "encrypted": false,
    "file": "news.json",
    "id": "news",
