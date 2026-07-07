@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-07T11:18:36Z",
+ "generated_at": "2026-07-07T15:12:12Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -95,7 +95,7 @@
   },
   {
    "category": "open",
-   "count": 6,
+   "count": 4,
    "error": null,
    "id": "hn_frontpage_ai",
    "name": "Hacker News (AI filter)",
@@ -106,7 +106,7 @@
   },
   {
    "category": "open",
-   "count": 27,
+   "count": 25,
    "error": null,
    "id": "bbc_world",
    "name": "BBC World",
@@ -139,7 +139,7 @@
   },
   {
    "category": "open",
-   "count": 27,
+   "count": 21,
    "error": null,
    "id": "nyt_homepage",
    "name": "The New York Times",
