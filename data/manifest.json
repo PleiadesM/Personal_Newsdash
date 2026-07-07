@@ -1,13 +1,27 @@
 {
  "app": "personal-newsdash",
  "app_version": "0.1.0",
- "build_id": "20260707T151212Z",
- "generated_at": "2026-07-07T15:12:12Z",
+ "build_id": "20260707T154818Z",
+ "crypto": {
+  "alg": "AES-256-GCM",
+  "check": {
+   "aad": "newsdash:v1:check",
+   "ct": "7Se8xX3lPg3fng0vXAziER1sD6PrdCiybwQH",
+   "nonce": "8GfKL2dUhTakd+1T"
+  },
+  "kdf": {
+   "hash": "SHA-256",
+   "iterations": 600000,
+   "name": "PBKDF2",
+   "salt": "cIUorp+/VKRwebkMYQH5iQ=="
+  }
+ },
+ "generated_at": "2026-07-07T15:48:18Z",
  "schema_version": 1,
  "sections": [
   {
    "category": "open",
-   "count": 103,
+   "count": 106,
    "encrypted": false,
    "file": "news.json",
    "id": "news",

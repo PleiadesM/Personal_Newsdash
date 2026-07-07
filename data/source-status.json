@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-07T15:12:12Z",
+ "generated_at": "2026-07-07T15:48:18Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -95,7 +95,7 @@
   },
   {
    "category": "open",
-   "count": 4,
+   "count": 3,
    "error": null,
    "id": "hn_frontpage_ai",
    "name": "Hacker News (AI filter)",
@@ -106,7 +106,7 @@
   },
   {
    "category": "open",
-   "count": 25,
+   "count": 26,
    "error": null,
    "id": "bbc_world",
    "name": "BBC World",
@@ -139,7 +139,7 @@
   },
   {
    "category": "open",
-   "count": 21,
+   "count": 22,
    "error": null,
    "id": "nyt_homepage",
    "name": "The New York Times",
@@ -172,7 +172,7 @@
   },
   {
    "category": "optional",
-   "count": 50,
+   "count": 0,
    "error": null,
    "id": "openalex_datavis",
    "name": "OpenAlex · information visualization",
@@ -194,7 +194,7 @@
   },
   {
    "category": "optional",
-   "count": 15,
+   "count": 16,
    "error": null,
    "id": "crossref_techcomm_journals",
    "name": "TechComm journals (CrossRef)",
