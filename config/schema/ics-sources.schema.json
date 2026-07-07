@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://newsdash.invalid/schema/ics-sources.schema.json",
+  "title": "Decoded ICS_SOURCES_B64 payload",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "url"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9_]{2,64}$" },
+      "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+      "url": { "type": "string", "pattern": "^(https?|webcal)://" }
+    }
+  }
+}

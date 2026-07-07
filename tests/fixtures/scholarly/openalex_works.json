@@ -1,0 +1,29 @@
+{
+  "meta": { "count": 1 },
+  "results": [
+    {
+      "id": "https://openalex.org/W4321",
+      "doi": "https://doi.org/10.1145/999",
+      "display_name": "A Grammar of Interactive Graphics Revisited",
+      "publication_date": "2026-07-01",
+      "primary_location": {
+        "landing_page_url": "https://dl.acm.org/doi/10.1145/999",
+        "source": { "display_name": "ACM CHI" }
+      },
+      "authorships": [
+        { "author": { "display_name": "Ada Lovelace" } },
+        { "author": { "display_name": "Wei Chen" } }
+      ],
+      "abstract_inverted_index": {
+        "We": [0], "revisit": [1], "declarative": [2], "visualization": [3],
+        "grammars.": [4]
+      }
+    },
+    {
+      "id": "https://openalex.org/W9999",
+      "doi": null,
+      "display_name": "Untitled record with no date",
+      "publication_date": null
+    }
+  ]
+}

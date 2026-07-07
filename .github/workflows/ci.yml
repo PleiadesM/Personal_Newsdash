@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["data/**"]
+  pull_request:
+    paths-ignore: ["data/**"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements-dev.txt"
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - run: python scripts/validate_config.py
+      - name: Smoke build (zero secrets)
+        run: python scripts/build.py --output-dir /tmp/nd-smoke --smoke
+      - name: Smoke build (encrypted)
+        env:
+          NEWSDASH_PASSPHRASE: "ci smoke passphrase only"
+          ICS_SOURCES_B64: "W10="
+          CANVAS_BASE_URL: "https://canvas.example.edu"
+          CANVAS_TOKEN: "ci-dummy"
+        run: python scripts/build.py --output-dir /tmp/nd-smoke-enc --smoke
+
+  webcrypto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Cross-language envelope proof
+        run: node tests/test_crypto_webcrypto.mjs
+      - name: ES module syntax check
+        run: |
+          set -e
+          for f in assets/js/*.js assets/js/views/*.js; do
+            node --check --input-type=module < "$f"
+            echo "OK $f"
+          done
+
+  guards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: No plaintext private section files
+        run: |
+          set -e
+          for name in schedule courses; do
+            if [ -f "data/${name}.json" ]; then
+              echo "::error::data/${name}.json exists as plaintext — private sections must be *.enc.json"
+              exit 1
+            fi
+          done
+      - name: No token-looking strings in config
+        # examples/ intentionally contains PLACEHOLDER capability-URL shapes,
+        # so only config/ and feeds/ are scanned here.
+        run: |
+          set -e
+          if grep -rInE "(github_pat_|ghp_[A-Za-z0-9]{20,}|Bearer [A-Za-z0-9._-]{20,}|calendar\.google\.com/calendar/ical/[^\"]*private)" config/ feeds/ 2>/dev/null; then
+            echo "::error::Credential-looking string committed under config/ or feeds/"
+            exit 1
+          fi
+          echo "config clean"

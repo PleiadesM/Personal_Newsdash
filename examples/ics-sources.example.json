@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gcal_personal",
+    "name": "Personal",
+    "url": "https://calendar.google.com/calendar/ical/YOUR_ID%40gmail.com/private-PLACEHOLDER/basic.ics"
+  },
+  {
+    "id": "outlook_work",
+    "name": "Work",
+    "url": "https://outlook.office365.com/owa/calendar/PLACEHOLDER/calendar.ics"
+  },
+  {
+    "id": "canvas_courses",
+    "name": "Canvas",
+    "url": "https://canvas.youruniversity.edu/feeds/calendars/user_PLACEHOLDER.ics"
+  }
+]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title>ArXiv Query: search_query=cat:cs.HC</title>
+  <entry>
+    <id>http://arxiv.org/abs/2507.01234v1</id>
+    <title>A Grammar of Interactive Graphics Revisited</title>
+    <summary>We revisit declarative visualization grammars and present a user study with 24 participants evaluating visual analytics workflows.</summary>
+    <published>2026-07-03T17:58:41Z</published>
+    <updated>2026-07-03T17:58:41Z</updated>
+    <link href="http://arxiv.org/abs/2507.01234v1" rel="alternate" type="text/html"/>
+    <author><name>Ada Lovelace</name></author>
+    <author><name>Wei Chen</name></author>
+    <arxiv:primary_category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.05678v1</id>
+    <title>Cache Coherence Protocols for Distributed Kernels</title>
+    <summary>An operating systems paper with nothing about charts.</summary>
+    <published>2026-07-04T09:00:00Z</published>
+    <updated>2026-07-04T09:00:00Z</updated>
+    <link href="http://arxiv.org/abs/2507.05678v1" rel="alternate" type="text/html"/>
+    <author><name>Someone Else</name></author>
+    <arxiv:primary_category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

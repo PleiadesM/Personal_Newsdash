@@ -1,0 +1,84 @@
+name: Update Newsdash
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # 2-hourly at :17 (dodges top-of-hour scheduler congestion).
+    # Private repos get 2000 free Actions minutes/month — this cadence uses
+    # ~900. On a public repo you may safely drop to "*/30 * * * *".
+    - cron: "17 */2 * * *"
+
+concurrency:
+  group: update-newsdash-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    timeout-minutes: 12
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Prepare optional OPML
+        env:
+          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
+        run: |
+          if [ -n "$FOLLOW_OPML_B64" ]; then
+            mkdir -p feeds
+            echo "$FOLLOW_OPML_B64" | base64 --decode > feeds/follow.opml
+            echo "Loaded feeds/follow.opml from FOLLOW_OPML_B64 secret"
+          fi
+
+      - name: Build data
+        env:
+          # Policy: keys live in Secrets; tuning lives in config files;
+          # Variables exist only as kill switches (<ID>_ENABLED=0).
+          NEWSDASH_PASSPHRASE: ${{ secrets.NEWSDASH_PASSPHRASE }}
+          ICS_SOURCES_B64: ${{ secrets.ICS_SOURCES_B64 }}
+          CANVAS_BASE_URL: ${{ secrets.CANVAS_BASE_URL }}
+          CANVAS_TOKEN: ${{ secrets.CANVAS_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          CONTACT_MAILTO: ${{ vars.CONTACT_MAILTO }}
+          ICS_CALENDARS_ENABLED: ${{ vars.ICS_CALENDARS_ENABLED }}
+          CANVAS_ENABLED: ${{ vars.CANVAS_ENABLED }}
+          RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS }}
+        run: python scripts/build.py --output-dir data
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Stage the whole data dir so new output files can never be
+          # silently dropped by a stale filename whitelist.
+          git add data/
+          # Self-check: anything under data/ still unstaged means a bug —
+          # fail loudly instead of green-but-stale runs.
+          if [ -n "$(git status --porcelain --untracked-files=all -- data/ | grep -v '^[MADRC]' || true)" ]; then
+            echo "::error::Generated files under data/ were not staged:"
+            git status --porcelain --untracked-files=all -- data/ | grep -v '^[MADRC]'
+            exit 1
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update newsdash data"
+          # Race guard against setup-from-issue config commits.
+          git pull --rebase --autostash
+          git push

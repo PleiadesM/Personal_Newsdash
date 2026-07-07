@@ -1,0 +1,49 @@
+{
+  "$schema": "../schema/preset.schema.json",
+  "id": "general-news",
+  "name": { "en": "General news", "zh": "综合新闻" },
+  "category": "open",
+  "section": "news",
+  "sources": [
+    {
+      "id": "bbc_world",
+      "type": "rss",
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "weight": 1.0
+    },
+    {
+      "id": "guardian_world",
+      "type": "rss",
+      "name": "The Guardian · World",
+      "url": "https://www.theguardian.com/world/rss",
+      "weight": 0.9
+    },
+    {
+      "id": "npr_news",
+      "type": "rss",
+      "name": "NPR News",
+      "url": "https://feeds.npr.org/1001/rss.xml",
+      "weight": 0.9
+    },
+    {
+      "id": "nyt_homepage",
+      "type": "rss",
+      "name": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "weight": 1.0
+    },
+    {
+      "id": "bbc_zhongwen",
+      "type": "rss",
+      "name": "BBC 中文",
+      "url": "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
+      "weight": 0.8
+    }
+  ],
+  "tag_rules": [
+    { "tag": "breaking", "any": ["breaking", "live updates", "快讯", "突发"] },
+    { "tag": "tech", "any": ["technology", "tech", "科技"] },
+    { "tag": "science", "any": ["science", "climate", "health", "科学"] }
+  ]
+}

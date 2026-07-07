@@ -1,0 +1,56 @@
+/* Theme: bear — Bear Blog (bearblog.dev) ultra-minimalism: system fonts,
+   one narrow column, near-zero chrome, automatic light/dark. */
+
+[data-theme="bear"] {
+  --bg: #ffffff;
+  --bg-elev: #f5f5f5;
+  --fg: #222222;
+  --fg-muted: #6b6b6b;
+  --accent: #0066cc;
+  --accent-fg: #ffffff;
+  --rule: #e8e8e8;
+  --rule-strong: #cccccc;
+  --link: #0066cc;
+  --highlight-bg: #ffef9e;
+  --font-sans: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-body: var(--font-sans);
+  --font-heading: var(--font-sans);
+  --font-meta: var(--font-sans);
+  --size-base: 16px;
+  --leading: 1.6;
+  --leading-cjk: 1.85;
+  --measure: 42rem;
+  --radius: 6px;
+  --shadow: none;
+  --page-max: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="bear"] {
+    --bg: #171717;
+    --bg-elev: #222222;
+    --fg: #dddddd;
+    --fg-muted: #999999;
+    --accent: #77aaff;
+    --accent-fg: #101010;
+    --rule: #2e2e2e;
+    --rule-strong: #494949;
+    --link: #77aaff;
+    --highlight-bg: #5c531f;
+  }
+}
+
+[data-theme="bear"] body { font-family: var(--font-sans); }
+
+[data-theme="bear"] #masthead { border-bottom: 1px solid var(--rule-strong); }
+[data-theme="bear"] #site-title { font-size: 1.35rem; font-weight: 700; }
+[data-theme="bear"] #site-title a::before { content: "ʕ•ᴥ•ʔ "; font-size: 0.9em; }
+[data-theme="bear"] #nav { border-top: none; }
+
+[data-theme="bear"] .item-title { font-size: 1.02rem; font-weight: 600; }
+[data-theme="bear"] .item-title a { color: var(--link); text-decoration: underline; }
+[data-theme="bear"] .item-meta { text-transform: none; letter-spacing: 0; }
+[data-theme="bear"] .item-score { display: none; }
+[data-theme="bear"] .today-block { border-top: 1px solid var(--rule-strong); }
+[data-theme="bear"] .today-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+[data-theme="bear"] .tag { border-radius: 4px; }

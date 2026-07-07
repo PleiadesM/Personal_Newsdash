@@ -1,0 +1,136 @@
+{
+  "app": {
+    "tagline": "Your news, your papers, your schedule — one page.",
+    "updated": "Updated {time}",
+    "loading": "Loading…",
+    "empty": "Nothing here yet.",
+    "error": "Something went wrong loading this section.",
+    "notConfigured": "This section isn't set up yet.",
+    "notConfiguredHint": "Add the required secrets in your repository settings, then wait for the next update. See the setup guide.",
+    "setupGuide": "Setup guide",
+    "noscript": "Personal Newsdash needs JavaScript to render your dashboard. 个人新闻台需要启用 JavaScript 才能显示。"
+  },
+  "nav": {
+    "today": "Today",
+    "news": "News",
+    "papers": "Papers",
+    "schedule": "Schedule",
+    "courses": "Courses",
+    "clippings": "Clippings",
+    "sources": "Sources",
+    "settings": "Settings"
+  },
+  "onboarding": {
+    "title": "Almost there — one build away",
+    "body": "This dashboard hasn't produced its first data snapshot yet. If you just deployed, do the following:",
+    "step1": "Enable GitHub Actions for your repository (Actions tab → enable workflows).",
+    "step2": "Run the “Update Newsdash” workflow once (Actions → Update Newsdash → Run workflow), or wait for the schedule.",
+    "step3": "Enable GitHub Pages (Settings → Pages → deploy from branch, main / root).",
+    "step4": "Open the “Set up my Newsdash” issue in your repository to choose sources, theme, language, and privacy.",
+    "refresh": "Refresh"
+  },
+  "login": {
+    "title": "Private mode",
+    "prompt": "Enter your passphrase to unlock private sections and notes.",
+    "placeholder": "Passphrase",
+    "unlock": "Unlock",
+    "wrong": "Wrong passphrase. Please try again.",
+    "remember": "Remember on this device",
+    "rememberNote": "Stores the derived key (not your passphrase) in this browser. Skip this on shared computers.",
+    "lock": "Lock",
+    "locked": "Locked",
+    "unlocked": "Unlocked",
+    "gateTitle": "This dashboard is private",
+    "gateBody": "All content is encrypted. Enter the passphrase to read.",
+    "noCrypto": "Private mode isn't configured. Set the NEWSDASH_PASSPHRASE secret to enable private sections and notes."
+  },
+  "today": {
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "schedule": "Schedule",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "noEvents": "No events.",
+    "dueSoon": "Due soon",
+    "noDue": "Nothing due in the next 7 days.",
+    "topStories": "Top stories",
+    "latestPapers": "Latest papers",
+    "lockedBlock": "Unlock to see this.",
+    "allDay": "all day",
+    "more": "More →"
+  },
+  "feed": {
+    "search": "Search…",
+    "allSources": "All sources",
+    "anyTime": "Any time",
+    "last6h": "Last 6 hours",
+    "last24h": "Last 24 hours",
+    "last3d": "Last 3 days",
+    "last7d": "Last 7 days",
+    "itemCount": "{n} items",
+    "alsoIn": "Also reported by",
+    "noMatches": "No items match your filters."
+  },
+  "schedule": {
+    "empty": "No events in this window.",
+    "calendars": "Calendars"
+  },
+  "courses": {
+    "announcements": "Announcements",
+    "upcoming": "Upcoming work",
+    "due": "Due {time}",
+    "submitted": "Submitted",
+    "points": "{n} pts",
+    "noUpcoming": "No upcoming work.",
+    "noAnnouncements": "No recent announcements."
+  },
+  "clippings": {
+    "title": "Clippings",
+    "empty": "No highlights, excerpts, or notes yet. Select text in any item to start.",
+    "searchPlaceholder": "Search clippings…",
+    "all": "All",
+    "highlights": "Highlights",
+    "excerpts": "Excerpts",
+    "notes": "Notes",
+    "export": "Export Markdown",
+    "delete": "Delete",
+    "editNote": "Edit note",
+    "notePlaceholder": "Write a note…",
+    "save": "Save",
+    "cancel": "Cancel",
+    "deleted": "Deleted.",
+    "lockedHint": "Unlock private mode to see your clippings."
+  },
+  "annotate": {
+    "highlight": "Highlight",
+    "excerpt": "Excerpt",
+    "note": "Note",
+    "saved": "Saved to clippings."
+  },
+  "sources": {
+    "title": "Source health",
+    "name": "Source",
+    "type": "Type",
+    "category": "Category",
+    "status": "Status",
+    "items": "Items",
+    "ok": "OK",
+    "failed": "Failed",
+    "skipped": "Awaiting secrets",
+    "disabled": "Disabled",
+    "privateSummary": "{configured} of {total} private sources configured",
+    "categories": { "open": "Open", "optional": "Optional", "private": "Private" }
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "themes": { "the-type": "The Type", "nyt": "Newsprint", "bear": "Bear" },
+    "language": "Language",
+    "privacy": "Private mode",
+    "print": "Print today's brief",
+    "about": "About",
+    "aboutBody": "Personal Newsdash — a serverless, self-hosted news · schedule · research dashboard. Data updates via GitHub Actions; private sections are AES-256 encrypted and decrypted only in your browser.",
+    "version": "Version"
+  }
+}

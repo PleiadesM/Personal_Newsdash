@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "message": {
+    "items": [
+      {
+        "DOI": "10.1177/10506519261234",
+        "title": ["Generative AI in the Technical Communication Classroom"],
+        "created": { "date-time": "2026-07-03T10:00:00Z" },
+        "container-title": ["Journal of Business and Technical Communication"],
+        "URL": "https://doi.org/10.1177/10506519261234",
+        "author": [
+          { "given": "Mary", "family": "Sue" },
+          { "given": "Li", "family": "Wang" }
+        ],
+        "abstract": "<jats:p>We examine how writing instructors integrate LLMs.</jats:p>"
+      },
+      {
+        "DOI": "10.1177/no-title",
+        "title": [],
+        "created": { "date-time": "2026-07-02T10:00:00Z" }
+      }
+    ]
+  }
+}

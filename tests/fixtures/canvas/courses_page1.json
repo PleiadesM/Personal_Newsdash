@@ -1,0 +1,12 @@
+[
+  {
+    "id": 118234,
+    "name": "HCAI Professional Communication",
+    "course_code": "ENGL 5920C",
+    "workflow_state": "available"
+  },
+  {
+    "id": 999999,
+    "access_restricted_by_date": true
+  }
+]

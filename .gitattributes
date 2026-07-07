@@ -1,0 +1,3 @@
+# Generated data snapshots: collapse in diffs and language stats
+data/** linguist-generated=true
+tests/fixtures/** linguist-vendored=true

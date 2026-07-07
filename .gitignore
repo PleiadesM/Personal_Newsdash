@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Local env & credentials — never commit
+.env
+*.env
+!examples/advanced-sources.env.example
+feeds/follow.opml
+config/*.local.json
+ics-sources.json
+examples/ics-sources.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Local scratch build output (the real data/ IS committed by Actions)
+/data-local/

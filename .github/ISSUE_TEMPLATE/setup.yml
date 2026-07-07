@@ -1,0 +1,113 @@
+# The onboarding questionnaire ("guiding page on GitHub"). Field labels are
+# the parser contract: scripts/apply_issue_setup.py keys on the English part
+# of each label (before " ·"). Change them together or tests will fail.
+name: "Set up my Newsdash · 配置我的新闻台"
+description: "Choose sources, theme, language, and privacy — the bot applies it and rebuilds. 选择信源、主题、语言与隐私，机器人自动应用并重建。"
+title: "[setup] My Newsdash preferences"
+labels: ["newsdash-setup"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit this form and a bot will update `config/`, trigger a rebuild, and
+        comment back with your next steps (Pages link, secrets checklist, AI-assisted setup prompt).
+        提交后机器人会更新 `config/`、触发重建，并回帖告诉你后续步骤。
+
+        > ⚠️ **Never paste secrets here** — no passphrase, calendar URLs, or Canvas tokens.
+        > Those go in **Settings → Secrets and variables → Actions**.
+        > **切勿在此粘贴任何密钥**（口令、日历 URL、Canvas Token 都属于密钥）。
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Interface language · 界面语言"
+      description: "Default language of the dashboard chrome (readers can toggle anytime). 仪表盘默认界面语言（读者可随时切换）。"
+      options:
+        - "English first · 英文优先"
+        - "中文优先 · Chinese first"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: visibility
+    attributes:
+      label: "Site visibility · 站点可见性"
+      description: "Private = every section is encrypted and the site opens with a passphrase gate (requires the NEWSDASH_PASSPHRASE secret). 私密＝全站加密，打开网站需输入口令（需要配置 NEWSDASH_PASSPHRASE）。"
+      options:
+        - "Public — open sections readable by anyone · 公开"
+        - "Private — everything encrypted behind a passphrase · 私密（全站加密）"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: "Theme · 主题"
+      options:
+        - "the-type — typography-first serif · 字砌"
+        - "nyt — newspaper front page · 报纸"
+        - "bear — minimal, auto dark mode · 小熊"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: "Site title · 站点标题"
+      placeholder: "Personal Newsdash"
+    validations:
+      required: false
+
+  - type: input
+    id: timezone
+    attributes:
+      label: "Timezone · 时区"
+      description: "IANA name, e.g. America/Chicago, Asia/Shanghai."
+      placeholder: "America/Chicago"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: open-presets
+    attributes:
+      label: "Open news packs · 公开新闻包"
+      options:
+        - label: "AI news — OpenAI/Google/DeepMind/HF blogs, HN filter · AI 资讯"
+        - label: "General news — BBC/Guardian/NPR/NYT/BBC中文 · 综合新闻"
+
+  - type: checkboxes
+    id: academic-presets
+    attributes:
+      label: "Academic packs · 学术论文包"
+      description: "Keyless scholarly feeds (arXiv, CrossRef, Semantic Scholar). 无需密钥的学术信源。"
+      options:
+        - label: "Data visualization — arXiv cs.HC/cs.GR + more · 数据可视化"
+        - label: "Technical communication — TCQ/JBTC/IEEE ToPC journals · 技术传播"
+
+  - type: textarea
+    id: extra-rss
+    attributes:
+      label: "Extra RSS feeds · 自定义 RSS"
+      description: "One feed URL per line (optional). 每行一个订阅地址（可选）。"
+      placeholder: |
+        https://example.edu/lab/feed.xml
+        https://blog.example.com/atom.xml
+    validations:
+      required: false
+
+  - type: textarea
+    id: interests
+    attributes:
+      label: "Interest keywords · 兴趣关键词"
+      description: "Comma-separated; items matching these score higher. 逗号分隔；命中关键词的内容会获得更高排序。"
+      placeholder: "data visualization, technical communication, LLM"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: "Acknowledgement · 确认"
+      options:
+        - label: "I understand secrets (passphrase, calendar URLs, Canvas token) go in Settings → Secrets, never in this issue. 我了解所有密钥只应配置在 Settings → Secrets，绝不写进本 Issue。"
+          required: true

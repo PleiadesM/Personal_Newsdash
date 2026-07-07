@@ -1,0 +1,23 @@
+{
+ "_comment": "Cross-language crypto test vector. The passphrase is a public constant used only by tests.",
+ "passphrase": "correct horse battery staple",
+ "section": "vector",
+ "payload": {
+  "hello": "world",
+  "zh": "你好，世界",
+  "n": 42
+ },
+ "envelope": {
+  "v": 1,
+  "alg": "AES-256-GCM",
+  "kdf": {
+   "name": "PBKDF2",
+   "hash": "SHA-256",
+   "iterations": 600000,
+   "salt": "ySydQqc5dx1V2LifCTxCyA=="
+  },
+  "aad": "newsdash:v1:vector",
+  "nonce": "0iBda7dVObFEx7sf",
+  "ct": "/2CKItEUa8aHExZ6HjPLOv7Rnbp+fpCVrOdIhgqxx2qm9ECXMAXu+23S9q1NpV358C7o0HVg8325yfqSQdXx"
+ }
+}

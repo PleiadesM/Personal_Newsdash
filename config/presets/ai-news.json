@@ -1,0 +1,79 @@
+{
+  "$schema": "../schema/preset.schema.json",
+  "id": "ai-news",
+  "name": { "en": "AI news", "zh": "AI 资讯" },
+  "category": "open",
+  "section": "news",
+  "sources": [
+    {
+      "id": "openai_blog",
+      "type": "rss",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "weight": 1.0
+    },
+    {
+      "id": "google_ai_blog",
+      "type": "rss",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "weight": 1.0
+    },
+    {
+      "id": "deepmind_blog",
+      "type": "rss",
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "weight": 1.0
+    },
+    {
+      "id": "huggingface_blog",
+      "type": "rss",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "weight": 0.9
+    },
+    {
+      "id": "mit_tr_ai",
+      "type": "rss",
+      "name": "MIT Technology Review · AI",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "weight": 0.85
+    },
+    {
+      "id": "verge_ai",
+      "type": "rss",
+      "name": "The Verge · AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "weight": 0.8
+    },
+    {
+      "id": "ars_ai",
+      "type": "rss",
+      "name": "Ars Technica · AI",
+      "url": "https://arstechnica.com/ai/feed/",
+      "weight": 0.8
+    },
+    {
+      "id": "simonwillison",
+      "type": "rss",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "weight": 0.9
+    },
+    {
+      "id": "hn_frontpage_ai",
+      "type": "rss",
+      "name": "Hacker News (AI filter)",
+      "url": "https://hnrss.org/frontpage",
+      "keywords": ["AI", "LLM", "GPT", "Claude", "Gemini", "model", "agent", "machine learning", "neural"],
+      "weight": 0.7
+    }
+  ],
+  "tag_rules": [
+    { "tag": "model-release", "any": ["release", "launch", "introducing", "announcing", "now available"] },
+    { "tag": "research", "any": ["paper", "research", "study", "benchmark"] },
+    { "tag": "dev-tools", "any": ["api", "sdk", "cli", "developer", "open source", "open-source"] },
+    { "tag": "policy", "any": ["regulation", "policy", "safety", "governance", "lawsuit", "copyright"] }
+  ]
+}

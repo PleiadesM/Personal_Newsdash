@@ -1,0 +1,40 @@
+{
+  "$schema": "../schema/preset.schema.json",
+  "id": "academic-techcomm",
+  "name": { "en": "Academic · Technical communication", "zh": "学术 · 技术传播" },
+  "category": "optional",
+  "section": "papers",
+  "sources": [
+    {
+      "id": "crossref_techcomm_journals",
+      "type": "crossref",
+      "name": "TechComm journals (CrossRef)",
+      "issn": ["1057-2252", "1050-6519", "0361-1434", "0047-2816", "0741-0883"],
+      "max_results": 60,
+      "weight": 1.0,
+      "_comment": "Technical Communication Quarterly, J. of Business and Technical Communication, IEEE Trans. on Professional Communication, J. of Technical Writing and Communication, Written Communication"
+    },
+    {
+      "id": "openalex_techcomm",
+      "type": "openalex",
+      "name": "OpenAlex · technical communication",
+      "query": "technical communication",
+      "max_results": 40,
+      "weight": 0.9
+    },
+    {
+      "id": "arxiv_hci_writing",
+      "type": "arxiv",
+      "name": "arXiv cs.HC (writing & docs)",
+      "query": "cat:cs.HC",
+      "keywords": ["writing", "documentation", "communication", "rhetoric", "explanation"],
+      "max_results": 40,
+      "weight": 0.8
+    }
+  ],
+  "tag_rules": [
+    { "tag": "pedagogy", "any": ["teaching", "pedagogy", "curriculum", "classroom", "students"] },
+    { "tag": "ai-writing", "any": ["ai", "llm", "generative", "chatgpt", "machine"] },
+    { "tag": "ux", "any": ["usability", "user experience", "ux", "design"] }
+  ]
+}

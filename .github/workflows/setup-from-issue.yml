@@ -1,0 +1,83 @@
+name: Apply setup from issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+jobs:
+  apply:
+    # Owner guard: only the repository owner's setup issues are applied —
+    # drive-by issues on public repos must never rewrite config.
+    if: >-
+      contains(github.event.issue.labels.*.name, 'newsdash-setup') &&
+      github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Write issue body to a file (injection guard)
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/issue-body.md"
+
+      - name: Apply preferences
+        id: apply
+        continue-on-error: true
+        run: |
+          python scripts/apply_issue_setup.py \
+            --body-file "$RUNNER_TEMP/issue-body.md" \
+            --comment-out "$RUNNER_TEMP/comment.md" \
+            --repo "${{ github.repository }}"
+
+      - name: Commit config
+        if: steps.apply.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/
+          if git diff --cached --quiet; then
+            echo "No config changes"
+          else
+            git commit -m "chore(setup): apply preferences from issue #${{ github.event.issue.number }}"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Trigger rebuild
+        if: steps.apply.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # Bot pushes don't retrigger workflows by design; dispatch explicitly.
+        run: gh workflow run update.yml --ref "${{ github.ref_name }}"
+
+      - name: Comment back
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" \
+            --body-file "$RUNNER_TEMP/comment.md"
+
+      - name: Close issue on success
+        if: steps.apply.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close "${{ github.event.issue.number }}" --reason completed

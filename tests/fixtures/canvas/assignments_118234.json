@@ -1,0 +1,32 @@
+[
+  {
+    "id": 555,
+    "name": "Sprint plan draft",
+    "due_at": "2026-07-10T04:59:00Z",
+    "points_possible": 20,
+    "html_url": "https://canvas.example.edu/courses/118234/assignments/555",
+    "submission": { "submitted_at": null }
+  },
+  {
+    "id": 556,
+    "name": "Reading response 6",
+    "due_at": "2026-07-08T04:59:00Z",
+    "points_possible": 10,
+    "html_url": "https://canvas.example.edu/courses/118234/assignments/556",
+    "submission": { "submitted_at": "2026-07-05T20:11:00Z" }
+  },
+  {
+    "id": 557,
+    "name": "Undated optional exercise",
+    "due_at": null,
+    "points_possible": 0,
+    "html_url": "https://canvas.example.edu/courses/118234/assignments/557"
+  },
+  {
+    "id": 558,
+    "name": "Final portfolio (far future)",
+    "due_at": "2026-12-15T04:59:00Z",
+    "points_possible": 100,
+    "html_url": "https://canvas.example.edu/courses/118234/assignments/558"
+  }
+]

@@ -1,0 +1,20 @@
+{
+ "schema_version": 1,
+ "app": "personal-newsdash",
+ "app_version": "0.1.0",
+ "status": "awaiting_first_build",
+ "generated_at": null,
+ "build_id": null,
+ "site": {
+  "title": "Personal Newsdash",
+  "languages": [
+   "en",
+   "zh"
+  ],
+  "default_language": "en",
+  "theme": "the-type",
+  "timezone": "UTC",
+  "visibility": "public"
+ },
+ "sections": []
+}

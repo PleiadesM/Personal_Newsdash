@@ -1,0 +1,48 @@
+/* Theme: the-type — inspired by The Type (thetype.com): typography-first,
+   serif-driven, generous whitespace, hairline rules, a single vermillion
+   accent, and careful CJK–Latin mixed setting. */
+
+[data-theme="the-type"] {
+  --bg: #fcfcfa;
+  --bg-elev: #f6f5f1;
+  --fg: #1a1a1a;
+  --fg-muted: #77726a;
+  --accent: #c8332b;
+  --accent-fg: #ffffff;
+  --rule: #e7e4dd;
+  --rule-strong: #cfcabe;
+  --link: #1a1a1a;
+  --highlight-bg: #f9e9a0;
+  --font-serif: "Source Serif 4", "Source Serif Pro", georgia, "Times New Roman", serif;
+  --font-cjk-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", simsun, serif;
+  --font-body: var(--font-serif), var(--font-cjk-serif);
+  --font-heading: var(--font-serif), var(--font-cjk-serif);
+  --font-meta: -apple-system, "Segoe UI", "Helvetica Neue", "PingFang SC", "Noto Sans SC", sans-serif;
+  --size-base: 17px;
+  --leading: 1.65;
+  --leading-cjk: 1.95;
+  --measure: 42rem;
+  --radius: 2px;
+  --shadow: none;
+  --page-max: 68rem;
+}
+
+[data-theme="the-type"] body {
+  font-family: var(--font-serif), var(--font-cjk-serif);
+}
+
+[data-theme="the-type"] #masthead {
+  border-bottom: 1px solid var(--fg);
+  text-align: left;
+}
+[data-theme="the-type"] #site-title { font-weight: 600; letter-spacing: 0.01em; }
+[data-theme="the-type"] #nav { border-top: none; letter-spacing: 0.02em; }
+[data-theme="the-type"] #nav a.active { border-bottom-width: 1px; }
+
+[data-theme="the-type"] .item-title { font-weight: 600; }
+[data-theme="the-type"] .item-source { color: var(--accent); font-weight: 500; }
+[data-theme="the-type"] .today-block { border-top: 1px solid var(--fg); padding-top: 0.7rem; }
+[data-theme="the-type"] .tag { border-radius: 0; border-color: var(--rule); }
+[data-theme="the-type"] .course-card,
+[data-theme="the-type"] .clipping { border-radius: 0; background: transparent; }
+[data-theme="the-type"] blockquote { font-style: italic; }

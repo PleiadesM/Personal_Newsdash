@@ -1,0 +1,19 @@
+{
+  "$schema": "./schema/site.schema.json",
+  "schema_version": 1,
+  "title": "Personal Newsdash",
+  "subtitle": "",
+  "visibility": "public",
+  "languages": ["en", "zh"],
+  "default_language": "en",
+  "theme": "the-type",
+  "timezone": "UTC",
+  "windows": {
+    "news_hours": 24,
+    "papers_days": 7,
+    "schedule_past_days": 1,
+    "schedule_horizon_days": 14,
+    "courses_horizon_days": 30,
+    "archive_days": 14
+  }
+}

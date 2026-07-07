@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="the-type" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Personal Newsdash</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/themes/the-type.css">
+  <link rel="stylesheet" href="assets/themes/nyt.css">
+  <link rel="stylesheet" href="assets/themes/bear.css">
+</head>
+<body>
+  <noscript>
+    <p style="padding:2rem;text-align:center">
+      Personal Newsdash needs JavaScript to render your dashboard.<br>
+      个人新闻台需要启用 JavaScript 才能显示。
+    </p>
+  </noscript>
+
+  <div id="app">
+    <header id="masthead">
+      <div class="masthead-inner">
+        <div class="masthead-titles">
+          <h1 id="site-title"><a id="site-title-link" href="#/today">Personal Newsdash</a></h1>
+          <p id="site-subtitle"></p>
+        </div>
+        <div class="masthead-meta">
+          <span id="updated-at"></span>
+          <button id="lang-toggle" class="chrome-btn" type="button">中文</button>
+          <button id="lock-btn" class="chrome-btn" type="button" hidden>🔒</button>
+        </div>
+      </div>
+      <nav id="nav" aria-label="Sections"></nav>
+    </header>
+
+    <main id="view" tabindex="-1"></main>
+
+    <footer id="footer">
+      <p>Personal Newsdash · <a href="https://github.com" data-repo-doc="README.md"
+        target="_blank" rel="noopener">GitHub</a></p>
+    </footer>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toolbar-root"></div>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

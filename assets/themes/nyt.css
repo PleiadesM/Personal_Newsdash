@@ -1,0 +1,58 @@
+/* Theme: nyt — newspaper front page: Cheltenham-esque serif headlines
+   (Georgia stand-in), Franklin-Gothic-esque sans metadata (Helvetica),
+   pure black on white, hairline column rules, small-caps section labels. */
+
+[data-theme="nyt"] {
+  --bg: #ffffff;
+  --bg-elev: #f7f7f7;
+  --fg: #121212;
+  --fg-muted: #5a5a5a;
+  --accent: #326891;
+  --accent-fg: #ffffff;
+  --rule: #e2e2e2;
+  --rule-strong: #b8b8b8;
+  --link: #121212;
+  --highlight-bg: #fdec9e;
+  --font-serif: georgia, "Times New Roman", times, serif;
+  --font-cjk-serif: "Songti SC", "Noto Serif SC", simsun, serif;
+  --font-body: var(--font-serif), var(--font-cjk-serif);
+  --font-heading: var(--font-serif), var(--font-cjk-serif);
+  --font-meta: "Helvetica Neue", helvetica, arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --size-base: 16px;
+  --leading: 1.55;
+  --leading-cjk: 1.85;
+  --measure: 40rem;
+  --radius: 0;
+  --shadow: none;
+  --page-max: 76rem;
+}
+
+[data-theme="nyt"] body { font-family: var(--font-serif), var(--font-cjk-serif); }
+
+[data-theme="nyt"] #masthead { border-bottom: 3px double var(--fg); text-align: center; }
+[data-theme="nyt"] .masthead-inner { flex-direction: column; align-items: center; gap: 0.1rem; }
+[data-theme="nyt"] #site-title { font-weight: 700; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+[data-theme="nyt"] .masthead-meta { justify-content: center; }
+[data-theme="nyt"] #nav { justify-content: center; border-top: 1px solid var(--fg); text-transform: uppercase; font-size: 0.74rem; letter-spacing: 0.08em; font-weight: 600; }
+
+[data-theme="nyt"] .item-title { font-weight: 700; }
+[data-theme="nyt"] .item-meta { text-transform: uppercase; }
+[data-theme="nyt"] .item-source { color: var(--fg); }
+
+/* newspaper front page: rule between columns */
+[data-theme="nyt"] .today-grid { gap: 0; }
+[data-theme="nyt"] .today-block {
+  border-top: 1px solid var(--fg);
+  padding: 0.5rem 1.2rem 1rem;
+  border-left: 1px solid var(--rule);
+}
+[data-theme="nyt"] .today-block:first-child { border-left: none; }
+[data-theme="nyt"] .block-header h2 {
+  text-transform: uppercase;
+  font-family: var(--font-meta);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+}
+[data-theme="nyt"] .today-greeting { font-weight: 700; }
+[data-theme="nyt"] .tag { border-radius: 0; }
+[data-theme="nyt"] .course-card { border-radius: 0; background: transparent; }

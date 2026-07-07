@@ -1,0 +1,39 @@
+{
+  "$schema": "../schema/preset.schema.json",
+  "id": "academic-datavis",
+  "name": { "en": "Academic · Data visualization", "zh": "学术 · 数据可视化" },
+  "category": "optional",
+  "section": "papers",
+  "sources": [
+    {
+      "id": "arxiv_datavis",
+      "type": "arxiv",
+      "name": "arXiv cs.HC + cs.GR",
+      "query": "cat:cs.HC OR cat:cs.GR",
+      "keywords": ["visualization", "visual analytics", "visual analysis", "chart", "infographic"],
+      "max_results": 60,
+      "weight": 1.0
+    },
+    {
+      "id": "openalex_datavis",
+      "type": "openalex",
+      "name": "OpenAlex · information visualization",
+      "query": "information visualization",
+      "max_results": 50,
+      "weight": 0.9
+    },
+    {
+      "id": "s2_datavis",
+      "type": "semanticscholar",
+      "name": "Semantic Scholar · data visualization",
+      "query": "data visualization",
+      "max_results": 30,
+      "weight": 0.8
+    }
+  ],
+  "tag_rules": [
+    { "tag": "eval-study", "any": ["user study", "evaluation", "experiment", "participants"] },
+    { "tag": "systems", "any": ["system", "toolkit", "framework", "library"] },
+    { "tag": "ml-vis", "any": ["machine learning", "deep learning", "llm", "neural"] }
+  ]
+}

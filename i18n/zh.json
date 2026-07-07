@@ -1,0 +1,136 @@
+{
+  "app": {
+    "tagline": "你的新闻、论文与日程——尽在一页。",
+    "updated": "更新于 {time}",
+    "loading": "加载中…",
+    "empty": "这里还没有内容。",
+    "error": "加载此栏目时出错。",
+    "notConfigured": "此栏目尚未配置。",
+    "notConfiguredHint": "请在仓库设置中添加所需的 Secrets，等待下一次更新。详见配置指南。",
+    "setupGuide": "配置指南",
+    "noscript": "个人新闻台需要启用 JavaScript 才能显示。Personal Newsdash needs JavaScript."
+  },
+  "nav": {
+    "today": "今日",
+    "news": "新闻",
+    "papers": "论文",
+    "schedule": "日程",
+    "courses": "课程",
+    "clippings": "摘录",
+    "sources": "信源",
+    "settings": "设置"
+  },
+  "onboarding": {
+    "title": "只差一步——等待首次构建",
+    "body": "仪表盘还没有生成第一份数据快照。如果你刚刚部署，请依次完成：",
+    "step1": "启用 GitHub Actions（Actions 标签页 → 启用工作流）。",
+    "step2": "手动运行一次 “Update Newsdash” 工作流（Actions → Update Newsdash → Run workflow），或等待定时任务。",
+    "step3": "启用 GitHub Pages（Settings → Pages → 从分支部署，main / root）。",
+    "step4": "打开仓库中的 “Set up my Newsdash” Issue，选择信源、主题、语言与隐私模式。",
+    "refresh": "刷新"
+  },
+  "login": {
+    "title": "私密模式",
+    "prompt": "输入口令以解锁私密栏目与笔记。",
+    "placeholder": "口令",
+    "unlock": "解锁",
+    "wrong": "口令错误，请重试。",
+    "remember": "在此设备上记住",
+    "rememberNote": "仅在浏览器中保存派生密钥（不保存口令本身）。共用电脑请勿勾选。",
+    "lock": "锁定",
+    "locked": "已锁定",
+    "unlocked": "已解锁",
+    "gateTitle": "这是一个私密仪表盘",
+    "gateBody": "所有内容均已加密，输入口令后才能阅读。",
+    "noCrypto": "尚未配置私密模式。设置 NEWSDASH_PASSPHRASE Secret 后即可启用私密栏目与笔记。"
+  },
+  "today": {
+    "greetingMorning": "早上好",
+    "greetingAfternoon": "下午好",
+    "greetingEvening": "晚上好",
+    "schedule": "日程",
+    "today": "今天",
+    "tomorrow": "明天",
+    "noEvents": "暂无日程。",
+    "dueSoon": "即将截止",
+    "noDue": "未来 7 天没有待交作业。",
+    "topStories": "头条",
+    "latestPapers": "最新论文",
+    "lockedBlock": "解锁后可见。",
+    "allDay": "全天",
+    "more": "更多 →"
+  },
+  "feed": {
+    "search": "搜索…",
+    "allSources": "全部信源",
+    "anyTime": "不限时间",
+    "last6h": "最近 6 小时",
+    "last24h": "最近 24 小时",
+    "last3d": "最近 3 天",
+    "last7d": "最近 7 天",
+    "itemCount": "{n} 条",
+    "alsoIn": "其他报道",
+    "noMatches": "没有符合筛选条件的内容。"
+  },
+  "schedule": {
+    "empty": "此时间段内没有日程。",
+    "calendars": "日历"
+  },
+  "courses": {
+    "announcements": "公告",
+    "upcoming": "待交作业",
+    "due": "截止于 {time}",
+    "submitted": "已提交",
+    "points": "{n} 分",
+    "noUpcoming": "暂无待交作业。",
+    "noAnnouncements": "暂无最新公告。"
+  },
+  "clippings": {
+    "title": "摘录",
+    "empty": "还没有任何高亮、摘录或笔记。选中任意条目中的文字即可开始。",
+    "searchPlaceholder": "搜索摘录…",
+    "all": "全部",
+    "highlights": "高亮",
+    "excerpts": "摘录",
+    "notes": "笔记",
+    "export": "导出 Markdown",
+    "delete": "删除",
+    "editNote": "编辑笔记",
+    "notePlaceholder": "写点什么…",
+    "save": "保存",
+    "cancel": "取消",
+    "deleted": "已删除。",
+    "lockedHint": "解锁私密模式后才能查看摘录。"
+  },
+  "annotate": {
+    "highlight": "高亮",
+    "excerpt": "摘录",
+    "note": "笔记",
+    "saved": "已保存到摘录。"
+  },
+  "sources": {
+    "title": "信源健康",
+    "name": "信源",
+    "type": "类型",
+    "category": "类别",
+    "status": "状态",
+    "items": "条数",
+    "ok": "正常",
+    "failed": "失败",
+    "skipped": "等待配置",
+    "disabled": "已停用",
+    "privateSummary": "私密信源已配置 {configured} / {total}",
+    "categories": { "open": "公开", "optional": "可选", "private": "私密" }
+  },
+  "settings": {
+    "title": "设置",
+    "theme": "主题",
+    "themes": { "the-type": "字砌", "nyt": "报纸", "bear": "小熊" },
+    "language": "语言",
+    "privacy": "私密模式",
+    "print": "打印今日简报",
+    "about": "关于",
+    "aboutBody": "个人新闻台（Personal Newsdash）——无服务器、自部署的新闻 · 日程 · 研究仪表盘。数据由 GitHub Actions 自动更新；私密栏目以 AES-256 加密，仅在你的浏览器中解密。",
+    "version": "版本"
+  }
+}
