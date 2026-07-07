@@ -1,0 +1,484 @@
+{
+ "items": [
+  {
+   "authors": [
+    "Kathryn Lambrecht",
+    "Lynda C. Olman",
+    "Meghan Collins",
+    "Anne Heggli",
+    "Benjamin Hatchett",
+    "Zach Tolby"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "In weather risk communication, there is a disconnect between numerical models and community members’ experiences. To help resolve this issue, the authors propose a topological method to identify community risk thresholds, arguing that they offer a middle ground that enables more robust communication about risk. The authors surveyed 1,429 participants, including decision-makers and public audience members, who responded to probabilistic visualizations from five National Weather Service offices.…",
+    "doi": "10.1177/10506519261455873"
+   },
+   "id": "fa92926bdad83e60",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-06T07:20:52Z",
+   "score": 0.5349,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "In weather risk communication, there is a disconnect between numerical models and community members’ experiences. To help resolve this issue, the authors propose a topological method to identify community risk thresholds, arguing that they offer a middle ground that enables more robust…",
+   "tags": [],
+   "title": "Bridging the Gap Between Numbers and Experience: Identifying Community Risk Thresholds in Extreme Weather Communication",
+   "url": "https://doi.org/10.1177/10506519261455873",
+   "venue": "Journal of Business and Technical Communication"
+  },
+  {
+   "authors": [
+    "Steffen Holter",
+    "Tobias Stähle",
+    "Arpit Narechania",
+    "Mennatallah El-Assady"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "The ability to automatically infer analytic intent from user interaction histories could enable interactive AI systems to proactively assist users during exploratory data analysis. In this paper, we examine whether provenance logs -- detailed records capturing sequences and timing of user interactions -- can be used to classify user intentions in visual exploration tasks. To investigate this, we record how participants interact with multiple multidimensional data projections across a range of…",
+    "arxiv_id": "2607.04501"
+   },
+   "id": "6969d5b094cba833",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-05T21:02:23Z",
+   "score": 0.6887,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "The ability to automatically infer analytic intent from user interaction histories could enable interactive AI systems to proactively assist users during exploratory data analysis. In this paper, we examine whether provenance logs -- detailed records capturing sequences and timing of user…",
+   "tags": [
+    "systems"
+   ],
+   "title": "From Interaction to Intent: Inferring User Objectives from Provenance Logs",
+   "url": "https://arxiv.org/abs/2607.04501v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Wei Liu",
+    "Eric Krokos",
+    "Kirsten Whitley",
+    "Rebecca Faust",
+    "Chris North"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Low-dimensional projections support interactive visual analysis of high-dimensional data embeddings, but their structure often does not align with analyst-defined semantic relationships. Recent LLM-augmented semantic steering methods address this gap by externalizing analyst intent from user-defined groups of seed examples, but they propagate intent through per-item LLM reasoning, causing LLM calls and cost to grow linearly with collection size. We propose a scalable semantic steering method…",
+    "arxiv_id": "2607.03978"
+   },
+   "id": "2cef4fd9dc3cfe60",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-04T18:24:00Z",
+   "score": 0.6082,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Low-dimensional projections support interactive visual analysis of high-dimensional data embeddings, but their structure often does not align with analyst-defined semantic relationships. Recent LLM-augmented semantic steering methods address this gap by externalizing analyst intent from…",
+   "tags": [
+    "ml-vis"
+   ],
+   "title": "Scalable Semantic Steering of Embedding Projections",
+   "url": "https://arxiv.org/abs/2607.03978v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Fatima Shalhoub",
+    "Mariam Al Mawla",
+    "Kabalan Chaccour",
+    "Iván López-Espejo",
+    "Hoda Fares"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Imagined speech decoding using EEG signals has emerged as a promising frontier in brain-computer interface (BCI) research, particularly to restore communication for individuals with severe speech impairments. However, decoding imagined speech remains a complex task due to the non-stationary, low-amplitude, and highly variable nature of EEG signals. Existing methods often rely on classical machine learning or deep learning models that fail to exploit spike-based temporal dynamics or event-driven…",
+    "arxiv_id": "2607.03844"
+   },
+   "id": "aabed0939dbf24a8",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-04T12:23:46Z",
+   "score": 0.5533,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Imagined speech decoding using EEG signals has emerged as a promising frontier in brain-computer interface (BCI) research, particularly to restore communication for individuals with severe speech impairments. However, decoding imagined speech remains a complex task due to the non-stationary,…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "EEG-Based Imagined Speech Decoding Using a Hybrid CNN-SNN Architecture",
+   "url": "https://arxiv.org/abs/2607.03844v1",
+   "venue": "arXiv cs.SD"
+  },
+  {
+   "authors": [
+    "Ruiqi Chen",
+    "Yibo Meng",
+    "Huidi Lu",
+    "Xiaolan Ding"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Generative AI is increasingly used for everyday health guidance, yet its clinical appropriateness in chronic disease contexts remains poorly understood. This paper presents a two-part mixed-methods study on \\revise{Type 2 Diabetes Mellitus (T2DM)}, examining how patients and physicians assess AI-generated health information. \\revise{Study~1} analyzes 784 \\revise{participant reported} patient queries to characterize seven informational need categories and \\revise{develops a structured five…",
+    "arxiv_id": "2607.03720"
+   },
+   "id": "d67f4c8c6804533b",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-04T05:53:57Z",
+   "score": 0.5384,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Generative AI is increasingly used for everyday health guidance, yet its clinical appropriateness in chronic disease contexts remains poorly understood. This paper presents a two-part mixed-methods study on \\revise{Type 2 Diabetes Mellitus (T2DM)}, examining how patients and physicians assess…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Between Knowledge and Care: A Mixed-Methods Evaluation of Generative AI for T2DM Self-Management from Patient and Physician Perspectives",
+   "url": "https://arxiv.org/abs/2607.03720v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Elsie Lee-Robbins",
+    "Eytan Adar"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Visualizations can help audiences understand the scale of tragedies, such as the consequences of natural disasters, war, genocide, and pandemics. In these cases, a visualization designer's default behavior may be to focus on communicating quantitative information: numbers, statistics, and trends. However, this may not reflect higher-level affective objectives to inspire their audience to care about an issue, empathize with others, or take action to help those in need. Worse, standard…",
+    "arxiv_id": "2607.03445"
+   },
+   "id": "4672566db70fa99c",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-03T15:56:42Z",
+   "score": 0.5499,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Visualizations can help audiences understand the scale of tragedies, such as the consequences of natural disasters, war, genocide, and pandemics. In these cases, a visualization designer's default behavior may be to focus on communicating quantitative information: numbers, statistics, and trends.…",
+   "tags": [],
+   "title": "Evaluating Affective Objectives: Statistical Numbing in Data Visualization",
+   "url": "https://arxiv.org/abs/2607.03445v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Denise Tampieri",
+    "Giovanni De Toni",
+    "Paolo Giudici"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Algorithmic recourse addresses the challenge of providing tailored recommendations to users affected by unfavorable machine learning decisions, in potentially high-stakes scenarios. Traditional approaches to recourse often rely on the closest counterfactual explanations or assume a priori knowledge of a user's causal structure, resulting in interventions that overlook individual contexts and specific feature interactions. To overcome these limitations, we study a human-in-the-loop framework…",
+    "arxiv_id": "2607.03425"
+   },
+   "id": "f57a7772bb5515b3",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-03T15:37:35Z",
+   "score": 0.5093,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Algorithmic recourse addresses the challenge of providing tailored recommendations to users affected by unfavorable machine learning decisions, in potentially high-stakes scenarios. Traditional approaches to recourse often rely on the closest counterfactual explanations or assume a priori knowledge…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Personalized Causal Recourse: A Human-In-The-Loop Approach",
+   "url": "https://arxiv.org/abs/2607.03425v1",
+   "venue": "arXiv cs.AI"
+  },
+  {
+   "authors": [
+    "Ester Chen",
+    "Aboli Shete",
+    "Aditya Anavekar",
+    "Roshan Peiris",
+    "Hidy Kong"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "User experience (UX) designers face barriers when creating data visualizations due to limited domain expertise in visualization or unfamiliarity with specialized tools. This highlights a clear need for effective methods to build visualization literacy. To address this, we evaluated three visualization onboarding techniques -- static, scrollytelling, and chatbot -- in an experimental study with 25 UX designers and students. We measured visualization comprehension and guideline adherence during a…",
+    "arxiv_id": "2607.03023"
+   },
+   "id": "377bafbf91d762f2",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-03T07:12:07Z",
+   "score": 0.6744,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "User experience (UX) designers face barriers when creating data visualizations due to limited domain expertise in visualization or unfamiliarity with specialized tools. This highlights a clear need for effective methods to build visualization literacy. To address this, we evaluated three…",
+   "tags": [],
+   "title": "A Comparative Study of Static, Scrollytelling, and Chatbot Visualization Onboarding Techniques for UX Designers",
+   "url": "https://arxiv.org/abs/2607.03023v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Jingjing Hu",
+    "Guo Dan",
+    "Haofan Cheng",
+    "Ying Zeng",
+    "Zhan Si",
+    "Jinxing Zhou"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Despite the high accuracy of EEG-based emotion recognition, existing models remain opaque \"black boxes\", lacking semantic grounding between abstract neural features and human-interpretable states. In this paper, we reframe EEG explainability as a cross-modal generation task, shifting the paradigm from feature attribution to behavioral visualization. We introduce Facial Emoji Proxy Modeling, a novel framework that translates high-dimensional EEG signals into identity-anonymized facial emojis.…",
+    "arxiv_id": "2607.02912"
+   },
+   "id": "0ed8d25198fc436c",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-03T03:18:02Z",
+   "score": 0.5279,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Despite the high accuracy of EEG-based emotion recognition, existing models remain opaque \"black boxes\", lacking semantic grounding between abstract neural features and human-interpretable states. In this paper, we reframe EEG explainability as a cross-modal generation task, shifting the paradigm…",
+   "tags": [
+    "ml-vis"
+   ],
+   "title": "See the Emotion: A Facial Emoji Proxy Modeling for EEG Emotion Recognition",
+   "url": "https://arxiv.org/abs/2607.02912v1",
+   "venue": "arXiv cs.CV"
+  },
+  {
+   "authors": [
+    "Mengxiao Zhu",
+    "Xiyue Wang",
+    "Chunke Su",
+    "Han Zhao",
+    "Cuihua Shen"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Live streaming platforms, as computer-mediated communication (CMC) systems, provide streamers with a range of tools, such as webcams, beauty filters, and stream titles, to shape their online personas in ways that either conform to or deviate from viewers' expectations. Drawing on gender role and CMC theories, this study examines how streamers leverage CMC self-presentation tools to fulfill gender role expectations and their associated live streaming outcomes. Analyzing data collected from 867…",
+    "arxiv_id": "2607.02760"
+   },
+   "id": "e4c1c8a855da0ed6",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-02T20:54:05Z",
+   "score": 0.2855,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Live streaming platforms, as computer-mediated communication (CMC) systems, provide streamers with a range of tools, such as webcams, beauty filters, and stream titles, to shape their online personas in ways that either conform to or deviate from viewers' expectations. Drawing on gender role and…",
+   "tags": [],
+   "title": "Gendered Pixels: Exploring Gender Differences in Computer-Mediated Self-Presentation among Douyu Live Streamers",
+   "url": "https://arxiv.org/abs/2607.02760v1",
+   "venue": "arXiv cs.SI"
+  },
+  {
+   "authors": [
+    "Santosh Premi Adhikari"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Generative artificial intelligence (GenAI) systems such as ChatGPT, Claude, and Gemini have made information seeking faster, more conversational, and more cognitively comfortable. These affordances can support learning and productivity, but they can also encourage a repetitive pattern in which users continue querying AI systems for explanations, summaries, comparisons, plans, and reassurance without converting those interactions into durable understanding, decisions, or finished work. This…",
+    "arxiv_id": "2607.02723"
+   },
+   "id": "c84ce668c75ffa3f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-02T19:18:21Z",
+   "score": 0.4756,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Generative artificial intelligence (GenAI) systems such as ChatGPT, Claude, and Gemini have made information seeking faster, more conversational, and more cognitively comfortable. These affordances can support learning and productivity, but they can also encourage a repetitive pattern in which…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Doom Researching: A Conceptual Framework for Repetitive AI-Assisted Information Seeking, Cognitive Offloading, and the Illusion of Knowing",
+   "url": "https://arxiv.org/abs/2607.02723v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Shahreen Salim",
+    "Klaus Mueller"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Large language model personas are increasingly used to approximate diverse users during early-stage visualization design, but it remains unclear whether persona-conditioned outputs reflect stable personality effects or artifacts of model choice and task framing. We examine this question across two visualization-relevant tasks: color assignment for abstract and concrete concepts, and chart-idiom preference ratings across task contexts. Using 43 Big Five profiles across GPT-4o-mini, GPT-4.1-mini,…",
+    "arxiv_id": "2607.02455"
+   },
+   "id": "6035d8f3608fae29",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-02T17:23:57Z",
+   "score": 0.6529,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Large language model personas are increasingly used to approximate diverse users during early-stage visualization design, but it remains unclear whether persona-conditioned outputs reflect stable personality effects or artifacts of model choice and task framing. We examine this question across two…",
+   "tags": [
+    "ml-vis"
+   ],
+   "title": "When Do LLM Personas Support Visualization Design? A Cross-Model Study of Color Assignment and Chart Choice",
+   "url": "https://arxiv.org/abs/2607.02455v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Zirui Shan",
+    "Vanessa Echeverria",
+    "Yuheng Li",
+    "Yi-Shan Tsai",
+    "Roberto Martinez-Maldonado"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "In today's data-driven world, students often struggle with interpreting visualisations due to limited visualisation literacy. Data comics have emerged as a promising medium to enhance engagement and understanding, but their educational value has seen little empirical examination, partly due to the effort required to create them. Recent advances in Generative AI (GenAI) offer a scalable solution to this challenge. We conducted a within-subjects study with 60 university students, comparing…",
+    "arxiv_id": "2607.02361"
+   },
+   "id": "2e89a812b78ee18f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-02T16:02:55Z",
+   "score": 0.471,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "In today's data-driven world, students often struggle with interpreting visualisations due to limited visualisation literacy. Data comics have emerged as a promising medium to enhance engagement and understanding, but their educational value has seen little empirical examination, partly due to the…",
+   "tags": [
+    "pedagogy",
+    "ai-writing"
+   ],
+   "title": "Data Comics for Education: Evaluating Effectiveness, Benefits, and the Ethics of AI-Assisted Creation",
+   "url": "https://arxiv.org/abs/2607.02361v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Kohei Arimoto",
+    "Masahiko Itoh"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Exploring similar nodes in attributed networks represents a key challenge in data mining. While recent representation learning methods embed networks into low-dimensional vectors, they often implicitly assume a uniform and continuous feature space. This paper proposes a visual analytics approach using dimensionality reduction to help clarify the true topological structure of high-dimensional feature spaces formed by nodes' neighborhood attribute profiles. Analyzing inter-firm transaction…",
+    "arxiv_id": "2607.02163"
+   },
+   "id": "4ec01470528803b3",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-02T13:34:43Z",
+   "score": 0.315,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Exploring similar nodes in attributed networks represents a key challenge in data mining. While recent representation learning methods embed networks into low-dimensional vectors, they often implicitly assume a uniform and continuous feature space. This paper proposes a visual analytics approach…",
+   "tags": [],
+   "title": "Visual Analytics of Neighborhood Attribute Profiles for Exploring Structural Equivalence",
+   "url": "https://arxiv.org/abs/2607.02163v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Jordan P. Woodward"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "",
+    "doi": "10.1080/10572252.2026.2693557"
+   },
+   "id": "cb801404ae54e32f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-02T02:30:17Z",
+   "score": 0.4933,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "",
+   "tags": [],
+   "title": "“Storying the Process”: Intergenerational Succession and Tactical Technical Communication in a Rural Nonprofit",
+   "url": "https://doi.org/10.1080/10572252.2026.2693557",
+   "venue": "Technical Communication Quarterly"
+  }
+ ],
+ "meta": {
+  "count": 15,
+  "generated_at": "2026-07-07T08:10:05Z",
+  "kind": "papers",
+  "section": "papers",
+  "sources": [
+   {
+    "category": "optional",
+    "count": 7,
+    "error": null,
+    "id": "arxiv_datavis",
+    "name": "arXiv cs.HC + cs.GR",
+    "ok": true,
+    "section": "papers",
+    "skip_reason": null,
+    "type": "arxiv"
+   },
+   {
+    "category": "optional",
+    "count": 0,
+    "error": null,
+    "id": "openalex_datavis",
+    "name": "OpenAlex · information visualization",
+    "ok": true,
+    "section": "papers",
+    "skip_reason": null,
+    "type": "openalex"
+   },
+   {
+    "category": "optional",
+    "count": 0,
+    "error": null,
+    "id": "s2_datavis",
+    "name": "Semantic Scholar · data visualization",
+    "ok": true,
+    "section": "papers",
+    "skip_reason": null,
+    "type": "semanticscholar"
+   },
+   {
+    "category": "optional",
+    "count": 16,
+    "error": null,
+    "id": "crossref_techcomm_journals",
+    "name": "TechComm journals (CrossRef)",
+    "ok": true,
+    "section": "papers",
+    "skip_reason": null,
+    "type": "crossref"
+   },
+   {
+    "category": "optional",
+    "count": 40,
+    "error": null,
+    "id": "openalex_techcomm",
+    "name": "OpenAlex · technical communication",
+    "ok": true,
+    "section": "papers",
+    "skip_reason": null,
+    "type": "openalex"
+   },
+   {
+    "category": "optional",
+    "count": 6,
+    "error": null,
+    "id": "arxiv_hci_writing",
+    "name": "arXiv cs.HC (writing & docs)",
+    "ok": true,
+    "section": "papers",
+    "skip_reason": null,
+    "type": "arxiv"
+   }
+  ],
+  "window_hours": 168
+ }
+}

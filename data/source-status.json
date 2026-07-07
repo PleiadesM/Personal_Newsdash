@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-07T07:30:13Z",
+ "generated_at": "2026-07-07T08:10:05Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -95,7 +95,7 @@
   },
   {
    "category": "open",
-   "count": 5,
+   "count": 6,
    "error": null,
    "id": "hn_frontpage_ai",
    "name": "Hacker News (AI filter)",
@@ -158,6 +158,72 @@
    "section": "news",
    "skip_reason": null,
    "type": "rss"
+  },
+  {
+   "category": "optional",
+   "count": 7,
+   "error": null,
+   "id": "arxiv_datavis",
+   "name": "arXiv cs.HC + cs.GR",
+   "ok": true,
+   "section": "papers",
+   "skip_reason": null,
+   "type": "arxiv"
+  },
+  {
+   "category": "optional",
+   "count": 0,
+   "error": null,
+   "id": "openalex_datavis",
+   "name": "OpenAlex · information visualization",
+   "ok": true,
+   "section": "papers",
+   "skip_reason": null,
+   "type": "openalex"
+  },
+  {
+   "category": "optional",
+   "count": 0,
+   "error": null,
+   "id": "s2_datavis",
+   "name": "Semantic Scholar · data visualization",
+   "ok": true,
+   "section": "papers",
+   "skip_reason": null,
+   "type": "semanticscholar"
+  },
+  {
+   "category": "optional",
+   "count": 16,
+   "error": null,
+   "id": "crossref_techcomm_journals",
+   "name": "TechComm journals (CrossRef)",
+   "ok": true,
+   "section": "papers",
+   "skip_reason": null,
+   "type": "crossref"
+  },
+  {
+   "category": "optional",
+   "count": 40,
+   "error": null,
+   "id": "openalex_techcomm",
+   "name": "OpenAlex · technical communication",
+   "ok": true,
+   "section": "papers",
+   "skip_reason": null,
+   "type": "openalex"
+  },
+  {
+   "category": "optional",
+   "count": 6,
+   "error": null,
+   "id": "arxiv_hci_writing",
+   "name": "arXiv cs.HC (writing & docs)",
+   "ok": true,
+   "section": "papers",
+   "skip_reason": null,
+   "type": "arxiv"
   }
  ]
 }

@@ -1,17 +1,26 @@
 {
  "app": "personal-newsdash",
  "app_version": "0.1.0",
- "build_id": "20260707T073013Z",
- "generated_at": "2026-07-07T07:30:13Z",
+ "build_id": "20260707T081005Z",
+ "generated_at": "2026-07-07T08:10:05Z",
  "schema_version": 1,
  "sections": [
   {
    "category": "open",
-   "count": 111,
+   "count": 112,
    "encrypted": false,
    "file": "news.json",
    "id": "news",
    "kind": "news",
+   "status": "ok"
+  },
+  {
+   "category": "optional",
+   "count": 15,
+   "encrypted": false,
+   "file": "papers.json",
+   "id": "papers",
+   "kind": "papers",
    "status": "ok"
   },
   {
