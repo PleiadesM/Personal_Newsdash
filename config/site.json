@@ -4,7 +4,10 @@
   "title": "Personal Newsdash",
   "subtitle": "",
   "visibility": "public",
-  "languages": ["en", "zh"],
+  "languages": [
+    "en",
+    "zh"
+  ],
   "default_language": "en",
   "theme": "the-type",
   "timezone": "UTC",

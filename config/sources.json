@@ -1,9 +1,24 @@
 {
   "$schema": "./schema/sources.schema.json",
   "schema_version": 1,
-  "presets": ["ai-news", "general-news"],
+  "presets": [
+    "ai-news",
+    "general-news",
+    "academic-datavis",
+    "academic-techcomm"
+  ],
   "interests": {
-    "keywords": [],
+    "keywords": [
+      "LLM",
+      "embodied AI",
+      "AI",
+      "data visualization",
+      "human computer interaction",
+      "visual rhetoric",
+      "technical communication",
+      "embodied cognition",
+      "critical visualization"
+    ],
     "boost": 0.15
   },
   "sources": [
@@ -13,7 +28,9 @@
       "type": "ics",
       "section": "schedule",
       "name": "My calendars",
-      "secret_ref": ["ICS_SOURCES_B64"],
+      "secret_ref": [
+        "ICS_SOURCES_B64"
+      ],
       "enabled": "auto"
     },
     {
@@ -22,7 +39,10 @@
       "type": "canvas",
       "section": "courses",
       "name": "Canvas",
-      "secret_ref": ["CANVAS_BASE_URL", "CANVAS_TOKEN"],
+      "secret_ref": [
+        "CANVAS_BASE_URL",
+        "CANVAS_TOKEN"
+      ],
       "enabled": "auto"
     }
   ]
