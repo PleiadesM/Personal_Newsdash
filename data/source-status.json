@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T10:30:12Z",
+ "generated_at": "2026-07-08T14:39:16Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -106,7 +106,7 @@
   },
   {
    "category": "open",
-   "count": 24,
+   "count": 25,
    "error": null,
    "id": "bbc_world",
    "name": "BBC World",
@@ -139,7 +139,7 @@
   },
   {
    "category": "open",
-   "count": 21,
+   "count": 22,
    "error": null,
    "id": "nyt_homepage",
    "name": "The New York Times",
@@ -183,7 +183,7 @@
   },
   {
    "category": "optional",
-   "count": 0,
+   "count": 30,
    "error": null,
    "id": "s2_datavis",
    "name": "Semantic Scholar · data visualization",
