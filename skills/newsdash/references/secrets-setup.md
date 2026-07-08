@@ -33,6 +33,30 @@ Variables go to the *Variables* tab on the same page.
   grant **full account access**; suggest an expiry date and rotating each
   semester.
 
+## LLM_API_KEY + SMITHSONIAN_API_KEY (optional AI daily brief + Today's Image)
+
+Off by default — nothing changes until the user adds `LLM_API_KEY`. Explain
+before narrating: this is the *only* feature that sends any of the user's
+content (news/paper titles + short summaries — never schedule/courses,
+never the passphrase) to a third-party endpoint the user chooses, once per
+scheduled build (never per visitor). Get informed opt-in before walking
+through it.
+
+1. **`LLM_API_KEY`** (secret) — any OpenAI-Chat-Completions-compatible
+   provider key: OpenAI, OpenRouter, Groq, Together, or a self-hosted
+   endpoint. This alone unlocks the AI daily brief + per-section summaries
+   on the Today page.
+2. **`LLM_BASE_URL`** / **`LLM_MODEL`** (variables, optional) — only needed
+   if not using OpenAI directly. Defaults: `https://api.openai.com/v1`,
+   `gpt-4o-mini`.
+3. **`SMITHSONIAN_API_KEY`** (secret, optional, requires `LLM_API_KEY` too)
+   — unlocks "Today's Image". Free key: user visits
+   `https://api.data.gov/signup/`, fills in name + email, gets a key by
+   email immediately (one key works across every api.data.gov API,
+   Smithsonian's Open Access API included).
+4. **`LLM_SUMMARY_ENABLED=0`** / **`TODAYS_IMAGE_ENABLED=0`** (variables) —
+   emergency stop for either feature without removing the key.
+
 ## Optional
 
 - `OPENALEX_API_KEY` (secret) — makes the OpenAlex fetcher reliable.

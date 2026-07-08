@@ -62,6 +62,17 @@ export function render(container) {
   }
   container.appendChild(privacy);
 
+  // AI summary (informational only — the key lives in GitHub Secrets;
+  // narrated, never entered here, per skills/newsdash/SKILL.md).
+  const aiConfigured = Boolean(manifest?.ai_summary?.enabled);
+  container.appendChild(el("section", { class: "settings-group" },
+    el("h3", {}, t("settings.aiSummary")),
+    el("p", { class: "muted" },
+      aiConfigured
+        ? `✓ ${t("settings.aiSummaryConfigured")}`
+        : t("settings.aiSummaryNotConfigured")),
+  ));
+
   // print
   container.appendChild(el("section", { class: "settings-group" },
     el("button", {

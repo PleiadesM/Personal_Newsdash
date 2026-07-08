@@ -61,7 +61,10 @@
     "latestPapers": "优选论文",
     "lockedBlock": "解锁后可见。",
     "allDay": "全天",
-    "more": "更多 →"
+    "more": "更多 →",
+    "aiSummaryLabel": "AI 摘要",
+    "todaysImage": "今日一图",
+    "imageSource": "来源："
   },
   "overview": {
     "newToday": "今日新增",
@@ -158,6 +161,9 @@
     "language": "语言",
     "privacy": "私密模式",
     "print": "打印今日简报",
+    "aiSummary": "AI 摘要",
+    "aiSummaryConfigured": "已配置——今日页面可能显示 AI 每日简报与「今日一图」。",
+    "aiSummaryNotConfigured": "尚未配置。仪表盘所有者可添加 LLM_API_KEY Secret 以启用 AI 每日简报与「今日一图」。",
     "about": "关于",
     "aboutBody": "个人新闻台（Personal Newsdash）——无服务器、自部署的新闻 · 日程 · 研究仪表盘。数据由 GitHub Actions 自动更新；私密栏目以 AES-256 加密，仅在你的浏览器中解密。",
     "version": "版本"

@@ -30,6 +30,15 @@ intact (see [DATA_CONTRACT.md](DATA_CONTRACT.md)). No exceptions for "just this 
       next steps.
 - [x] **Page Skill｜书童Skill** — in-repo maintainer skill for agents
       (interviews you, narrates secrets setup, never touches secret values).
+- [x] **Optional AI daily brief + Today's Image** — off by default,
+      budget-gated (at most two short LLM calls + one image search per
+      scheduled build, never per visitor): an AI-written brief plus
+      per-section summaries via `LLM_API_KEY` / `LLM_BASE_URL` / `LLM_MODEL`,
+      and a public-domain "Today's Image" (Smithsonian Open Access API,
+      CC0-only) with a one-sentence AI caption via `SMITHSONIAN_API_KEY`.
+      Reads only `news`/`papers` items — never schedule/courses. Item
+      translation (bundled in the original "LLM enrichment" line below)
+      did **not** ship in this pass and remains a v0.2 candidate.
 
 ## v0.2 — candidates
 
@@ -39,9 +48,10 @@ rule above.
 - **Annotation sync** — commit annotations back to the repo *encrypted*, authorized by
   a fine-grained `NEWSDASH_SYNC_PAT` (secret name already reserved). Annotations stay
   unreadable without your passphrase; the PAT is scoped to this one repo.
-- **LLM enrichment + ZH item translation** — optional, budget-gated summaries and
-  Chinese translations of items via `LLM_API_KEY` / `LLM_BASE_URL` / `LLM_MODEL`
-  (reserved). The core pipeline stays LLM-free; this is a bolt-on, off by default.
+- **ZH item translation** — Chinese translations of individual news/paper
+  items via the same `LLM_API_KEY` reserved above (the daily-brief half of
+  this line has already shipped — see v0.1.0). The core pipeline stays
+  LLM-free; this remains a bolt-on, off by default.
 - **AgentMail email ingestion** — newsletters as a source, via reserved `AGENTMAIL_*`
   secrets, following the ai-news-radar pattern (redacted digests, publish opt-in).
 - **Reader-side consumer skill** — install without forking and ask your agent

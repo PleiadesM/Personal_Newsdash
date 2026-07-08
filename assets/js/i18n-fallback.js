@@ -68,7 +68,10 @@ export const FALLBACK_EN = {
     "latestPapers": "Top papers",
     "lockedBlock": "Unlock to see this.",
     "allDay": "all day",
-    "more": "More →"
+    "more": "More →",
+    "aiSummaryLabel": "AI summary",
+    "todaysImage": "Today's Image",
+    "imageSource": "Source:"
   },
   "overview": {
     "newToday": "New today",
@@ -173,6 +176,9 @@ export const FALLBACK_EN = {
     "language": "Language",
     "privacy": "Private mode",
     "print": "Print today's brief",
+    "aiSummary": "AI summary",
+    "aiSummaryConfigured": "Configured — an AI daily brief and Today's Image may appear on the Today page.",
+    "aiSummaryNotConfigured": "Not configured. The dashboard owner can add an LLM_API_KEY secret to enable an AI daily brief and Today's Image.",
     "about": "About",
     "aboutBody": "Personal Newsdash — a serverless, self-hosted news · schedule · research dashboard. Data updates via GitHub Actions; private sections are AES-256 encrypted and decrypted only in your browser.",
     "version": "Version"

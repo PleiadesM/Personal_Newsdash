@@ -72,6 +72,14 @@ curl -s https://<owner>.github.io/<repo>/data/manifest.json | python3 -m json.to
 store it, do not use it. Tell them to rotate it immediately** (pasted-into-a-
 logged-context counts as leaked), then continue with the narrate-only flow.
 
+**`LLM_API_KEY` / `SMITHSONIAN_API_KEY`** (optional AI daily brief + Today's
+Image) aren't a source — recipe in `references/secrets-setup.md`. Verify by
+checking `manifest.json`'s `ai_summary.enabled` flips to `true` (not a
+section, so the usual "not_configured → ok" check doesn't apply); an
+`insights_file` may still legitimately be `null` on a given run if there's
+nothing to summarize yet. Flag before narrating: this is the only feature
+that sends any user content to a third-party endpoint of the user's choice.
+
 ## Evaluate a new source
 
 Decision order (radar's 伯乐 spirit): official RSS/Atom > public generated

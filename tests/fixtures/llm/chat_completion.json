@@ -1,0 +1,15 @@
+{
+  "id": "chatcmpl-test123",
+  "object": "chat.completion",
+  "model": "gpt-4o-mini",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"brief\": \"AI labs shipped new agentic models today while researchers pushed visualization theory forward.\", \"news_summary\": \"OpenAI and DeepMind both released agent-focused updates.\", \"papers_summary\": \"A grammar-of-graphics revisit led the papers, alongside a perception study.\", \"image_query\": \"clockwork automatons\"}"
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

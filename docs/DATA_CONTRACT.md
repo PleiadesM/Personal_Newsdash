@@ -39,7 +39,9 @@ other data file as `<file>?v=<build_id>` — GitHub Pages' CDN caches for
     { "id": "schedule", "kind": "schedule", "category": "private",
       "file": "schedule.enc.json", "encrypted": true, "status": "ok" }
   ],
-  "source_status_file": "source-status.json"
+  "source_status_file": "source-status.json",
+  "insights_file": "insights.json",       // AI brief/summaries/image; null if absent
+  "ai_summary": { "enabled": true }        // was LLM_API_KEY configured this run?
 }
 ```
 
@@ -191,6 +193,41 @@ here; their detail rides inside the encrypted section metas.
 `archive`: `{ meta: { generated_at, days, count }, items: [item…] }` —
 open + optional items only, rolling `archive_days`, capped at 3000.
 
+### `insights.json` / `insights.enc.json` — optional AI enrichment
+
+Not a manifest *section* (see `manifest.insights_file` above) — a sibling
+file so it never gets an automatic nav tab. Absent (`insights_file: null`)
+unless `LLM_API_KEY` is configured; even then it may legitimately be absent
+on a given run (nothing to summarize yet, or a transient upstream failure —
+distinguish "configured" (`manifest.ai_summary.enabled`) from "has content
+this run" (`insights_file` non-null)). Built only from `news`/`papers`
+items — never schedule/courses. Follows `encrypt_all` exactly like any
+other section.
+
+```jsonc
+{
+  "meta": { "generated_at": "…Z" },       // omitted inside the encrypted envelope's plaintext; see below
+  "brief": "1-3 sentences across news + papers",
+  "news_summary": "1-2 sentences on today's news",
+  "papers_summary": "1-2 sentences on today's papers",
+  "todays_image": {                        // omitted entirely if no CC0 image was found this run
+    "image_url": "https://ids.si.edu/…",
+    "thumbnail_url": "https://ids.si.edu/…",
+    "title": "Automaton Clock",
+    "source_name": "Cooper Hewitt, Smithsonian Design Museum",
+    "source_url": "https://www.si.edu/object/…",
+    "caption": "One AI-generated sentence connecting the image to today's top story"
+  }
+}
+```
+
+All text fields are content, not chrome — rendered raw, never passed
+through `i18n.js`'s `t()` (see its own header comment: "Content items stay
+in their source language — only the chrome translates"). `todays_image`
+only ever carries an image with an explicit Smithsonian
+`usage.access: "CC0"` media entry (`scripts/newsdash/todays_image.py`) —
+rights-uncertain results are never surfaced.
+
 ## Privacy invariants (frontend must uphold)
 
 1. Never write decrypted content or the passphrase to storage. The derived
@@ -205,3 +242,9 @@ open + optional items only, rolling `archive_days`, capped at 3000.
    section data, then re-renders.
 4. The numeric overview strip is computed client-side from already-loaded
    sections — private counts must never be added to plaintext files for it.
+5. The AI daily brief and Today's Image are build-time enrichment, not
+   runtime calls — no visitor's browser ever contacts the LLM endpoint.
+   Today's Image *is* hotlinked from Smithsonian's CDN at view time
+   (`referrerpolicy="no-referrer"`); the AI-generated text has no runtime
+   third-party contact at all, baked fully into `insights.json`/`.enc.json`
+   at build time.

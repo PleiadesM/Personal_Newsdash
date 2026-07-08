@@ -54,10 +54,16 @@ jobs:
           CANVAS_BASE_URL: ${{ secrets.CANVAS_BASE_URL }}
           CANVAS_TOKEN: ${{ secrets.CANVAS_TOKEN }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          SMITHSONIAN_API_KEY: ${{ secrets.SMITHSONIAN_API_KEY }}
           CONTACT_MAILTO: ${{ vars.CONTACT_MAILTO }}
           ICS_CALENDARS_ENABLED: ${{ vars.ICS_CALENDARS_ENABLED }}
           CANVAS_ENABLED: ${{ vars.CANVAS_ENABLED }}
           RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_SUMMARY_ENABLED: ${{ vars.LLM_SUMMARY_ENABLED }}
+          TODAYS_IMAGE_ENABLED: ${{ vars.TODAYS_IMAGE_ENABLED }}
         run: python scripts/build.py --output-dir data
 
       - name: Commit and push

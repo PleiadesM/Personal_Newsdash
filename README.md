@@ -58,7 +58,7 @@ Three themes ship out of the box — `the-type` (typography-first serif with a v
 
 - Track your field with keyless scholarly APIs: shipped presets include `academic-datavis` (arXiv cs.HC + cs.GR) and `academic-techcomm` (CrossRef ISSN tracking of TCQ, JBTC, IEEE ToPC, JTWC, and Written Communication)
 - Papers are deduped DOI-first and scored with a 7-day window and slower decay than news, so weekend-quiet arXiv doesn't empty your feed
-- Interest keywords in `config/sources.json` boost what matters to you — no LLM calls anywhere in the pipeline, so scoring is deterministic and free
+- Interest keywords in `config/sources.json` boost what matters to you — scoring itself is deterministic, no LLM calls, free by default. An optional bolt-on (off unless you add a key) can generate an AI daily brief and per-section summaries — see [Optional AI enrichment](#optional-ai-enrichment)
 
 ### For developers and agents
 
@@ -136,7 +136,7 @@ Open:
 http://localhost:8899
 ```
 
-Useful extras: `--smoke` (no network, valid-but-empty outputs), `--only open|private|optional` (debug one category), `python scripts/validate_config.py` (schema-check your config), `python -m pytest -q` (55 tests), `node tests/test_crypto_webcrypto.mjs` (browser-side crypto against a Python-encrypted vector). `scripts/encrypt_tool.py encrypt|decrypt|make-vector` works with the passphrase in an env var — never on argv.
+Useful extras: `--smoke` (no network, valid-but-empty outputs), `--only open|private|optional` (debug one category), `python scripts/validate_config.py` (schema-check your config), `python -m pytest -q` (81 tests), `node tests/test_crypto_webcrypto.mjs` (browser-side crypto against a Python-encrypted vector). `scripts/encrypt_tool.py encrypt|decrypt|make-vector` works with the passphrase in an env var — never on argv.
 
 ## Tutorial for agents
 
@@ -175,6 +175,8 @@ The skill **narrates** secrets setup — which secret to create, where, and how 
 | `CANVAS_TOKEN` | `courses` section | Canvas → Account → Settings → **+ New Access Token**. Tokens are full-account — rotate each semester |
 | `OPENALEX_API_KEY` | Optional | OpenAlex now rejects most keyless requests; without a key that fetcher is best-effort |
 | `FOLLOW_OPML_B64` | Optional | Your radar-compatible OPML, decoded to `feeds/follow.opml` at build time |
+| `LLM_API_KEY` | Optional — AI daily brief | Your own key for an OpenAI-Chat-Completions-compatible endpoint (OpenAI, OpenRouter, Groq, Together, self-hosted, …). Off by default; see below |
+| `SMITHSONIAN_API_KEY` | Optional — Today's Image | Free key from [api.data.gov/signup](https://api.data.gov/signup/) (works across every api.data.gov API). Requires `LLM_API_KEY` too |
 
 ### Variables (kill switches + tuning)
 
@@ -183,8 +185,14 @@ The skill **narrates** secrets setup — which secret to create, where, and how 
 | `CONTACT_MAILTO` | Joins the CrossRef/OpenAlex polite pools (better rate limits) |
 | `ICS_CALENDARS_ENABLED` / `CANVAS_ENABLED` | Set `0` for an emergency stop of that source |
 | `RSS_MAX_FEEDS` | Cap on OPML feeds (default 10) |
+| `LLM_BASE_URL` / `LLM_MODEL` | Endpoint + model for the AI daily brief (defaults: `https://api.openai.com/v1`, `gpt-4o-mini`) |
+| `LLM_SUMMARY_ENABLED` / `TODAYS_IMAGE_ENABLED` | Set `0` for an emergency stop of either feature, keeping the key |
 
 Policy line, worth memorizing: **keys live in Secrets; tuning lives in config files; Variables exist only as kill switches.**
+
+### Optional AI enrichment
+
+Off by default, server-side only (your own key, never a visitor-supplied one), and budget-gated: at most two short LLM calls and one image-archive search per scheduled build (every ~2h), never per visitor. Add `LLM_API_KEY` to get an AI-written daily brief plus a one-line summary on the Today page's "Top stories" and "Top papers" blocks. Add `SMITHSONIAN_API_KEY` too and a **Today's Image** block appears: a public-domain image from the [Smithsonian Open Access API](https://www.si.edu/openaccess), loosely and creatively matched to the day's content, with a one-sentence AI caption and a source link. Only images explicitly marked `CC0` by the Smithsonian are ever shown. The enrichment reads only your `news`/`papers` items — never schedule or courses. See [CONFIG_REFERENCE.md](docs/CONFIG_REFERENCE.md) for the full contract.
 
 Everything else is plain JSON under `config/` — `site.json` (title, visibility, theme, timezone, time windows) and `sources.json` (presets, interests, sources), both JSON-Schema validated. The schema **forbids** `url`/`path` on `category: "private"` sources, so a capability URL can never leak into the repo by config mistake.
 

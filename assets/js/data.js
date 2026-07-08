@@ -49,17 +49,34 @@ async function loadSourceStatus(manifest, key) {
   }
 }
 
+// AI daily brief / summaries / Today's Image — a sibling file, not a
+// manifest section (keeps it out of nav routing; see docs/DATA_CONTRACT.md).
+async function loadInsights(manifest, key) {
+  const file = manifest.insights_file;
+  if (!file) return null;
+  try {
+    const doc = await fetchData(file, manifest.build_id);
+    if (!file.endsWith(".enc.json")) return doc;
+    if (!key) return null;
+    return await decryptEnvelope(doc, key, "insights");
+  } catch (err) {
+    console.error("insights:", err);
+    return null;
+  }
+}
+
 // (Re)load all sections. Called at boot and again after unlock/lock.
 export async function loadAllSections() {
   const { manifest, cryptoKey } = get();
   if (!manifest || !Array.isArray(manifest.sections)) return;
-  const [results, sourceStatus] = await Promise.all([
+  const [results, sourceStatus, insights] = await Promise.all([
     Promise.all(manifest.sections.map((e) => loadSection(e, manifest, cryptoKey))),
     loadSourceStatus(manifest, cryptoKey),
+    loadInsights(manifest, cryptoKey),
   ]);
   const sections = {};
   for (const r of results) sections[r.entry.id] = r;
-  set({ sections, sourceStatus });
+  set({ sections, sourceStatus, insights });
 }
 
 export function dropDecrypted() {
@@ -72,5 +89,7 @@ export function dropDecrypted() {
   }
   const sourceStatus = manifest?.source_status_file?.endsWith(".enc.json")
     ? null : get().sourceStatus;
-  set({ sections, sourceStatus });
+  const insights = manifest?.insights_file?.endsWith(".enc.json")
+    ? null : get().insights;
+  set({ sections, sourceStatus, insights });
 }

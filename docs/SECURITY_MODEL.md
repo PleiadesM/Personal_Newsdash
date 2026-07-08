@@ -62,6 +62,33 @@ Every `*.enc.json` file is one envelope:
 - `source-status.json` shows private sources only as an aggregate
   (`configured n of m`); their detail rides inside the encrypted payloads.
 
+### 3a. Optional AI enrichment egress (off by default)
+
+Two distinct data flows, only present if you've added `LLM_API_KEY`
+and/or `SMITHSONIAN_API_KEY` — see `docs/CONFIG_REFERENCE.md` §4a:
+
+- **Build-time (server → LLM endpoint).** Once per scheduled build, the
+  pipeline may send your `news`/`papers` items' **titles and short
+  summaries only** to your configured LLM endpoint — never full item
+  bodies, never schedule or courses content, never the passphrase. This is
+  the *only* code path in the whole pipeline that calls out to a third
+  party you don't control the identity of (every other fetcher targets a
+  named, fixed API). The resulting text is baked into
+  `insights.json`/`.enc.json` at build time; no visitor's browser ever
+  contacts the LLM endpoint.
+- **Runtime (visitor's browser → Smithsonian CDN).** If Today's Image
+  renders, the `<img>` tag is hotlinked directly from Smithsonian's image
+  CDN (`ids.si.edu`) — the **first** runtime third-party asset load this
+  dashboard has ever made from a reader's browser (every other asset is
+  served from your own Pages domain). Mitigated with
+  `referrerpolicy="no-referrer"` on the tag, but the request itself
+  (source IP, timing) is still visible to Smithsonian like any hotlinked
+  image anywhere on the web.
+
+Both features are off unless you explicitly add the relevant secret, and
+both fail silently (skip, never crash the build) if the endpoint is
+unreachable or misbehaves.
+
 ## 4. Browser side
 
 - The derived key lives in memory. **"Remember on this device"** (opt-in)

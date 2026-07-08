@@ -1,0 +1,57 @@
+{
+  "response": {
+    "rowCount": 2,
+    "rows": [
+      {
+        "id": "edanmdm-restricted_1",
+        "unitCode": "NPG",
+        "content": {
+          "descriptiveNonRepeating": {
+            "record_ID": "restricted_1",
+            "unit_code": "NPG",
+            "data_source": "National Portrait Gallery",
+            "record_link": "https://www.si.edu/object/restricted_1",
+            "title": { "content": "A Restricted Portrait", "label": "Title" },
+            "online_media": {
+              "mediaCount": 1,
+              "media": [
+                {
+                  "content": "https://ids.si.edu/ids/deliveryService?id=restricted_1",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=restricted_1_thumb",
+                  "type": "Images",
+                  "idsId": "restricted_1",
+                  "usage": { "access": "Restricted" }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "edanmdm-chndm_1931-45-37",
+        "unitCode": "CHNDM",
+        "content": {
+          "descriptiveNonRepeating": {
+            "record_ID": "chndm_1931-45-37",
+            "unit_code": "CHNDM",
+            "data_source": "Cooper Hewitt, Smithsonian Design Museum",
+            "record_link": "https://www.si.edu/object/chndm_1931-45-37",
+            "title": { "content": "Automaton Clock", "label": "Title" },
+            "online_media": {
+              "mediaCount": 1,
+              "media": [
+                {
+                  "content": "https://ids.si.edu/ids/deliveryService?id=chndm_1931",
+                  "thumbnail": "https://ids.si.edu/ids/deliveryService?id=chndm_1931_thumb",
+                  "type": "Images",
+                  "idsId": "chndm_1931",
+                  "usage": { "access": "CC0" }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

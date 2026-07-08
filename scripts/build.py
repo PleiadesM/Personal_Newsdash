@@ -34,6 +34,8 @@ from newsdash.models import iso_utc
 from newsdash.output import read_json, remove_if_exists, write_json
 from newsdash.scoring import apply_tags, score_item
 from newsdash.status import StatusAccumulator
+from newsdash.summarize import summarize
+from newsdash.todays_image import caption_todays_image, find_todays_image
 
 FUTURE_SLACK_SECONDS = 2 * 3600  # tolerate slightly future-dated feed items
 MAX_ITEMS_PER_SECTION = 300
@@ -267,6 +269,36 @@ def main(argv=None) -> None:
             print(f"[{section}] {count} items -> {plain_file.name}")
         manifest_sections.append(entry)
 
+    # ---- AI daily brief + Today's Image (optional, off by default) ------
+    # Bolt-on enrichment per docs/ROADMAP.md: reads only news/papers
+    # payloads (never schedule/courses), never runs during --smoke, and
+    # follows encrypt_all exactly like every other section.
+    insights_file = None
+    if not args.smoke:
+        summary = summarize(payloads, env, ctx.session)
+        if summary:
+            image = find_todays_image(summary.get("image_query", ""), env, ctx.session)
+            if image:
+                top_story = (payloads.get("news", {}).get("items") or [{}])[0]
+                caption = caption_todays_image(
+                    image, top_story.get("title", ""), env, ctx.session)
+                if caption:
+                    summary["todays_image"] = {**image, "caption": caption}
+            summary.pop("image_query", None)
+            insights_plain = out_dir / "insights.json"
+            insights_enc = out_dir / "insights.enc.json"
+            if encrypt_all:
+                write_json(insights_enc,
+                           crypto.encrypt_json(summary, "insights", key, salt))
+                remove_if_exists(insights_plain)
+                insights_file = insights_enc.name
+            else:
+                write_json(insights_plain,
+                           {"meta": {"generated_at": generated_at}, **summary})
+                remove_if_exists(insights_enc)
+                insights_file = insights_plain.name
+            print(f"[insights] -> {insights_file}")
+
     # ---- archive (open + optional items only; never private data) -------
     previous = load_previous_archive(out_dir, passphrase)
     archive_map = {d["id"]: d for d in previous if isinstance(d, dict) and "id" in d}
@@ -324,6 +356,11 @@ def main(argv=None) -> None:
         crypto_block=crypto_block, status=overall,
     )
     manifest["source_status_file"] = status_file
+    manifest["insights_file"] = insights_file
+    manifest["ai_summary"] = {
+        "enabled": bool(env.get("LLM_API_KEY", "").strip())
+        and env.get("LLM_SUMMARY_ENABLED") != "0"
+    }
     write_json(out_dir / "manifest.json", manifest)
     print(f"[manifest] status={overall} build_id={build_id}")
 

@@ -91,7 +91,9 @@ function storiesBlock(cardOpts) {
   const top = [...(section.payload?.items || [])]
     .sort((a, b) => b.score - a.score).slice(0, 6);
   if (!top.length) return null;
+  const summary = get().insights?.news_summary;
   return block(t("today.topStories"), "news",
+    summary ? el("p", { class: "ai-summary-line" }, summary) : null,
     el("div", { class: "story-grid" }, top.map((item) => itemCard(item, "news", cardOpts))));
 }
 
@@ -102,8 +104,36 @@ function papersBlock(cardOpts) {
   const top = [...(section.payload?.items || [])]
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 5);
   if (!top.length) return null;
+  const summary = get().insights?.papers_summary;
   return block(t("today.latestPapers"), "papers",
+    summary ? el("p", { class: "ai-summary-line" }, summary) : null,
     top.map((item) => itemCard(item, "papers", cardOpts)));
+}
+
+// AI-generated: a public-domain image (Smithsonian Open Access, CC0-only)
+// loosely tied to today's content, with a one-sentence AI caption. Absent
+// unless LLM_API_KEY + SMITHSONIAN_API_KEY are both configured server-side
+// and a CC0 match was found this run — see docs/CONFIG_REFERENCE.md.
+function todaysImageBlock() {
+  const image = get().insights?.todays_image;
+  if (!image) return null;
+  return block(t("today.todaysImage"), null,
+    el("figure", { class: "todays-image" },
+      el("img", {
+        src: safeHref(image.image_url), alt: image.title || "",
+        loading: "lazy", referrerpolicy: "no-referrer",
+      }),
+      el("figcaption", {},
+        el("p", { class: "todays-image-caption" }, image.caption),
+        el("p", { class: "todays-image-source muted" },
+          `${t("today.imageSource")} `,
+          el("a", {
+            href: safeHref(image.source_url), target: "_blank", rel: "noopener",
+          }, image.title ? `${image.title} — ${image.source_name}` : image.source_name),
+        ),
+      ),
+    ),
+  );
 }
 
 function followingBlock(cardOpts) {
@@ -163,11 +193,18 @@ export async function render(container) {
     el("h2", { class: "today-greeting" }, greeting()),
     el("p", { class: "today-date" }, dateLabel),
   ));
+  const brief = get().insights?.brief;
+  if (brief) {
+    container.appendChild(el("div", { class: "ai-brief-block" },
+      el("p", { class: "ai-brief-label" }, `✨ ${t("today.aiSummaryLabel")}`),
+      el("p", { class: "ai-brief-text" }, brief),
+    ));
+  }
   const strip = overviewStrip(favs ? favs.size : null);
   if (strip) container.appendChild(strip);
   const cardOpts = { favs };
-  const blocks = [scheduleBlock(), dueSoonBlock(), storiesBlock(cardOpts),
-                  papersBlock(cardOpts), followingBlock(cardOpts)]
+  const blocks = [scheduleBlock(), dueSoonBlock(), todaysImageBlock(),
+                  storiesBlock(cardOpts), papersBlock(cardOpts), followingBlock(cardOpts)]
     .filter(Boolean);
   if (!blocks.length) container.appendChild(emptyCard());
   const grid = el("div", { class: "today-grid" }, blocks);

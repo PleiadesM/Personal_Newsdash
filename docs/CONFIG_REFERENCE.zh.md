@@ -87,6 +87,35 @@
 
 在 <https://openalex.org> 搜索学者，作者页 URL 结尾即 `A…` id；实验室/机构用 `authorships.institutions.lineage:I…`。arXiv 作者检索（`au:"Jane Doe"`）和实验室博客 RSS 指向同一栏目同样可行。全部免密钥——零 Secret 构建保持绿色。
 
+### 4a. 可选 AI 增强功能（每日简报 + 今日一图）
+
+不是信源——一个构建时的附加功能，默认关闭，没有任何配置文件字段（所有开关都是环境变量，读取方式与 `CONTACT_MAILTO`/`OPENALEX_API_KEY` 完全一致）。只在服务端运行：用你自己的 Key，绝非访客提供的 Key。每次定时构建最多两次简短 LLM 调用加一次图库检索（绝不按访客次数调用）——按设计做了预算控制。
+
+| 配置这个 Secret…… | ……就会得到 |
+|---|---|
+| `LLM_API_KEY` | 今日页面问候语后出现 AI 每日简报，「头条」「优选论文」栏目各附一行摘要 |
+| `LLM_API_KEY` **加上** `SMITHSONIAN_API_KEY` | 上述功能，外加「今日一图」栏目：从 [Smithsonian Open Access API](https://www.si.edu/openaccess) 中挑选一张与当日内容有松散、创意关联的公共领域图片，附一句 AI 生成的说明与来源链接 |
+
+`LLM_API_KEY` 面向任何 OpenAI Chat Completions 兼容端点
+（`{LLM_BASE_URL}/chat/completions`，`Authorization: Bearer`）——OpenAI、
+OpenRouter、Groq、Together、自建 Ollama/vLLM 均可；用 `LLM_BASE_URL` /
+`LLM_MODEL` 两个 Variable 调整端点/模型（默认：`https://api.openai.com/v1`、
+`gpt-4o-mini`）。`SMITHSONIAN_API_KEY` 在 <https://api.data.gov/signup/>
+免费申请——该 Key 通用于所有 api.data.gov API，包括 Smithsonian。
+
+硬性保证：
+
+- 只读取你的 `news`/`papers` 条目——**绝不**涉及日程或课程。
+- `--smoke` 时**绝不**发出任何网络请求，无论配置了哪些 Key。
+- 只有 Smithsonian 明确标注 `usage.access: "CC0"` 的图片才会展示——权利
+  状态不确定的结果一律视为「今日无图」。
+- 与其他任何栏目遵循完全相同的公开/私密加密规则：`visibility: "public"`
+  时明文，`visibility: "private"` 时加密。
+- `LLM_SUMMARY_ENABLED=0` / `TODAYS_IMAGE_ENABLED=0`（Variable）可在保留
+  Key 的情况下单独急停某个功能。
+
+确切的载荷结构见 `docs/DATA_CONTRACT.md` 的 `insights.json` 一节。
+
 ## 5. 信源包（`config/presets/<id>.json`）
 
 ```json
@@ -116,9 +145,13 @@
 | `CANVAS_BASE_URL`、`CANVAS_TOKEN` | Secret | `canvas` 信源 |
 | `OPENALEX_API_KEY` | Secret | 稳定的 `openalex` |
 | `FOLLOW_OPML_B64` | Secret | 私人 OPML |
+| `LLM_API_KEY` | Secret | AI 每日简报 + 分栏摘要（§4a） |
+| `SMITHSONIAN_API_KEY` | Secret | 今日一图（§4a）；需同时配置 `LLM_API_KEY` |
 | `CONTACT_MAILTO` | Variable | CrossRef/OpenAlex 礼貌池 |
 | `<ID>_ENABLED` | Variable | 设 `0` = 急停信源 `<id>` |
 | `RSS_MAX_FEEDS` | Variable | OPML 展开上限 |
+| `LLM_BASE_URL` / `LLM_MODEL` | Variable | AI 端点与模型（§4a） |
+| `LLM_SUMMARY_ENABLED` / `TODAYS_IMAGE_ENABLED` | Variable | 设 `0` = 急停对应 AI 功能 |
 
 ## 7. 「想改 X」速查表
 
@@ -134,6 +167,8 @@
 | 给全站加主题标签 | `sources.json` 顶层 `tag_rules`（见 §3） |
 | 把某信源标为中文 | 信源上加 `"lang": "zh"` |
 | 提升我的主题 | `interests.keywords`（+ `boost`） |
+| 开启 AI 每日简报 | Secret `LLM_API_KEY`（§4a） |
+| 加上今日一图 | Secret `SMITHSONIAN_API_KEY`（+ `LLM_API_KEY`）（§4a） |
 | 立刻停掉 Canvas | Variable `CANVAS_ENABLED=0` |
 | 换默认主题/语言 | `site.json → theme` / `default_language` |
 | 改站名 | `site.json → title` |

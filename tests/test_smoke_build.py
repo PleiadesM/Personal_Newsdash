@@ -12,7 +12,7 @@ def read(path):
 
 def test_smoke_zero_secret(tmp_path, monkeypatch, repo_root):
     for var in ("NEWSDASH_PASSPHRASE", "ICS_SOURCES_B64", "CANVAS_BASE_URL",
-                "CANVAS_TOKEN"):
+                "CANVAS_TOKEN", "LLM_API_KEY", "SMITHSONIAN_API_KEY"):
         monkeypatch.delenv(var, raising=False)
     out = tmp_path / "data"
     build_mod.main(["--output-dir", str(out), "--smoke"])
@@ -34,6 +34,23 @@ def test_smoke_zero_secret(tmp_path, monkeypatch, repo_root):
     assert news["items"] == []
     assert (out / "source-status.json").exists()
     assert (out / "archive.json").exists()
+    assert manifest["insights_file"] is None
+    assert manifest["ai_summary"] == {"enabled": False}
+
+
+def test_smoke_never_calls_llm_or_smithsonian_even_with_keys_set(tmp_path, monkeypatch):
+    # --smoke promises "skip all network fetches" — this must hold even when
+    # both optional enrichment secrets are present in the environment.
+    monkeypatch.setenv("LLM_API_KEY", "sk-should-not-be-used")
+    monkeypatch.setenv("SMITHSONIAN_API_KEY", "dg-should-not-be-used")
+    out = tmp_path / "data"
+    build_mod.main(["--output-dir", str(out), "--smoke"])
+
+    manifest = read(out / "manifest.json")
+    assert manifest["insights_file"] is None
+    assert manifest["ai_summary"] == {"enabled": True}  # key present -> "configured"
+    assert not (out / "insights.json").exists()
+    assert not (out / "insights.enc.json").exists()
 
 
 def test_smoke_with_private_secrets(tmp_path, monkeypatch):
