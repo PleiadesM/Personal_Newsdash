@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T05:07:00Z",
+ "generated_at": "2026-07-08T05:17:20Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -139,7 +139,7 @@
   },
   {
    "category": "open",
-   "count": 24,
+   "count": 22,
    "error": null,
    "id": "nyt_homepage",
    "name": "The New York Times",
@@ -249,11 +249,11 @@
   },
   {
    "category": "open",
-   "count": 0,
-   "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCvxZ0tCKgCrrgfGu_175NIA",
+   "count": 15,
+   "error": null,
    "id": "radiance_fields_yt",
    "name": "Radiance Fields (YouTube)",
-   "ok": false,
+   "ok": true,
    "section": "news",
    "skip_reason": null,
    "type": "rss"

@@ -1,8 +1,16 @@
 {
- "brief": "AI's impact on human cognition and global tensions dominate today's news, alongside advances in interactive systems and weather communication.",
+ "brief": "Today's news features escalating US-Iran tensions after strikes in the Strait of Hormuz, Marine Le Pen announcing her 2025 presidential bid, and a UK report finding the disability benefits system unfit for purpose. Academic papers highlight advances in AI-driven video generation, prompt engineering tutoring, and interpretable weather models.",
  "meta": {
-  "generated_at": "2026-07-08T05:07:00Z"
+  "generated_at": "2026-07-08T05:17:20Z"
  },
- "news_summary": "US-Iran military strikes, NATO missile funding, and cultural controversies in Germany and France highlight geopolitical and social rifts.",
- "papers_summary": "Research explores AI for world generation, prompt engineering tutoring, and visual explanations for weather models."
+ "news_summary": "Geopolitical tensions rise as US and Iran trade strikes after tanker attacks, while Marine Le Pen declares her presidential run. Domestically, UK reports find disability benefits inadequate and regional income divides stagnant, alongside a poll showing 40% of Britons doubt Muslim integration.",
+ "papers_summary": "Research introduces AlayaWorld for long-horizon video generation and Prompt Coach for teaching prompt engineering. Other work includes GeoXplain for visualizing weather model predictions and a method to infer user intent from interaction logs.",
+ "todays_image": {
+  "caption": "The fire hat's symbol of battling flames contrasts with the typhoon's overwhelming water and wind, yet both evoke urgent hope for rescue amidst disaster.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2006q05109",
+  "source_name": "National Museum of American History",
+  "source_url": null,
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2006q05109&max=150",
+  "title": "Hope Hose Company Fire Hat"
+ }
 }
