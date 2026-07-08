@@ -57,8 +57,15 @@ def find_todays_image(image_query: str, env: Mapping[str, str],
                    params={"q": f"{image_query} AND online_media_type:Images "
                                  "AND media_usage:CC0",
                            "rows": 10, "api_key": api_key})
-        rows = (resp.json().get("response") or {}).get("rows") or []
-        return _first_cc0_image(rows)
+        body = resp.json().get("response") or {}
+        image = _first_cc0_image(body.get("rows") or [])
+        if image is None:
+            # Distinguishes "ran fine, this phrase just has no CC0 media" —
+            # expected, not every image_query will hit — from a real
+            # misconfiguration, which raises/logs below instead.
+            print(f"[todays-image] no CC0 image for query {image_query!r} "
+                  f"({body.get('rowCount', 0)} matches)")
+        return image
     except requests.HTTPError as exc:
         status = exc.response.status_code if exc.response is not None else "?"
         print(f"[todays-image] error: HTTPError ({status})")

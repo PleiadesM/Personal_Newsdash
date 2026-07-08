@@ -47,12 +47,15 @@ def test_happy_path_extracts_first_cc0_row():
 
 
 @responses.activate
-def test_no_cc0_media_anywhere_returns_none():
+def test_no_cc0_media_anywhere_returns_none(capsys):
     only_restricted = json.loads((FIX / "search_response.json").read_text())
     only_restricted["response"]["rows"] = [only_restricted["response"]["rows"][0]]
     responses.get(SEARCH_URL, json=only_restricted)
     env = {"SMITHSONIAN_API_KEY": "dg-test"}
     assert find_todays_image("automatons", env, make_session()) is None
+    # Must be distinguishable in the log from a real misconfiguration —
+    # this is "ran fine, no CC0 media for this phrase," not an error.
+    assert "no CC0 image for query 'automatons'" in capsys.readouterr().out
 
 
 @responses.activate
