@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T04:56:14Z",
+ "generated_at": "2026-07-08T05:07:00Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -183,7 +183,7 @@
   },
   {
    "category": "optional",
-   "count": 30,
+   "count": 0,
    "error": null,
    "id": "s2_datavis",
    "name": "Semantic Scholar · data visualization",
