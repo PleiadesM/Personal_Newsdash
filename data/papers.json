@@ -18,7 +18,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-07T13:59:57Z",
-   "score": 0.5351,
+   "score": 0.5292,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -48,7 +48,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-07T09:44:46Z",
-   "score": 0.5166,
+   "score": 0.511,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -57,37 +57,6 @@
    "title": "Prompt Coach: An Empirical Evaluation of an Agentic Tutor for Learning Prompt Engineering in Software Development",
    "url": "https://arxiv.org/abs/2607.06074v1",
    "venue": "arXiv cs.SE"
-  },
-  {
-   "authors": [
-    "Zhiguang Zhou",
-    "Fengling Zheng",
-    "Miaoxin Hu",
-    "Lina You",
-    "Jin Wen",
-    "Huan Liu"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Structured representation can characterize semantic objects and relationships in images. It provides a possible effective way for the semantic understanding of Traditional Chinese Paintings (TCPs) to better support archaeology and art history research. However, most image-oriented structured representation methods perform poorly on TCPs, due to two major challenges: 1) the objects and events of TCPs exhibit substantial differences from modern natural images, which results in semantic…",
-    "arxiv_id": "2607.05841"
-   },
-   "id": "59062f65d723be32",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-07T05:04:26Z",
-   "score": 0.7298,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Structured representation can characterize semantic objects and relationships in images. It provides a possible effective way for the semantic understanding of Traditional Chinese Paintings (TCPs) to better support archaeology and art history research. However, most image-oriented structured…",
-   "tags": [
-    "systems",
-    "visualization"
-   ],
-   "title": "VisTCP: A Visualization Framework to Construct Knowledge-Graph-Based Representation for Traditional Chinese Painting",
-   "url": "https://arxiv.org/abs/2607.05841v1",
-   "venue": "arXiv cs.HC"
   },
   {
    "authors": [
@@ -107,7 +76,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-06T22:44:45Z",
-   "score": 0.6653,
+   "score": 0.6604,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -134,7 +103,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-06T22:40:18Z",
-   "score": 0.4725,
+   "score": 0.4676,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -155,25 +124,19 @@
    "category": "optional",
    "extra": {
     "abstract_snippet": "Weather and climate foundation models produce high-dimensional forecasts whose learned relationships are difficult to inspect with static plots alone. GeoXplain is an interactive Python-based visualization toolkit for exploring geospatial attribution maps across climate variables, atmospheric pressure levels, and forecast time. The toolkit accepts attribution bundles containing attribution grids together with corresponding metadata and renders them in a notebook widget or browser with map and…",
-    "also_in": [
-     {
-      "source": "arXiv cs.HC (writing & docs)",
-      "url": "https://arxiv.org/abs/2607.05655v1"
-     }
-    ],
     "arxiv_id": "2607.05655"
    },
    "id": "c310895c6dc55406",
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-06T21:51:46Z",
-   "score": 0.7021,
+   "score": 0.6572,
    "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
    "summary": "Weather and climate foundation models produce high-dimensional forecasts whose learned relationships are difficult to inspect with static plots alone. GeoXplain is an interactive Python-based visualization toolkit for exploring geospatial attribution maps across climate variables, atmospheric…",
    "tags": [
-    "systems",
+    "ai-writing",
     "visualization"
    ],
    "title": "GeoXplain: On-the-Fly Visual Explanations for Weather Foundation Models",
@@ -199,7 +162,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-06T07:20:52Z",
-   "score": 0.3526,
+   "score": 0.3494,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -208,65 +171,6 @@
    "title": "Bridging the Gap Between Numbers and Experience: Identifying Community Risk Thresholds in Extreme Weather Communication",
    "url": "https://doi.org/10.1177/10506519261455873",
    "venue": "Journal of Business and Technical Communication"
-  },
-  {
-   "authors": [
-    "Steffen Holter",
-    "Tobias Stähle",
-    "Arpit Narechania",
-    "Mennatallah El-Assady"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "The ability to automatically infer analytic intent from user interaction histories could enable interactive AI systems to proactively assist users during exploratory data analysis. In this paper, we examine whether provenance logs -- detailed records capturing sequences and timing of user interactions -- can be used to classify user intentions in visual exploration tasks. To investigate this, we record how participants interact with multiple multidimensional data projections across a range of…",
-    "arxiv_id": "2607.04501"
-   },
-   "id": "6969d5b094cba833",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-05T21:02:23Z",
-   "score": 0.6229,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "The ability to automatically infer analytic intent from user interaction histories could enable interactive AI systems to proactively assist users during exploratory data analysis. In this paper, we examine whether provenance logs -- detailed records capturing sequences and timing of user…",
-   "tags": [
-    "systems"
-   ],
-   "title": "From Interaction to Intent: Inferring User Objectives from Provenance Logs",
-   "url": "https://arxiv.org/abs/2607.04501v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Wei Liu",
-    "Eric Krokos",
-    "Kirsten Whitley",
-    "Rebecca Faust",
-    "Chris North"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Low-dimensional projections support interactive visual analysis of high-dimensional data embeddings, but their structure often does not align with analyst-defined semantic relationships. Recent LLM-augmented semantic steering methods address this gap by externalizing analyst intent from user-defined groups of seed examples, but they propagate intent through per-item LLM reasoning, causing LLM calls and cost to grow linearly with collection size. We propose a scalable semantic steering method…",
-    "arxiv_id": "2607.03978"
-   },
-   "id": "2cef4fd9dc3cfe60",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-04T18:24:00Z",
-   "score": 0.5602,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Low-dimensional projections support interactive visual analysis of high-dimensional data embeddings, but their structure often does not align with analyst-defined semantic relationships. Recent LLM-augmented semantic steering methods address this gap by externalizing analyst intent from…",
-   "tags": [
-    "ml-vis",
-    "llm",
-    "visualization"
-   ],
-   "title": "Scalable Semantic Steering of Embedding Projections",
-   "url": "https://arxiv.org/abs/2607.03978v1",
-   "venue": "arXiv cs.HC"
   },
   {
    "authors": [
@@ -285,7 +189,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-04T12:23:46Z",
-   "score": 0.5087,
+   "score": 0.5062,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -313,7 +217,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-04T05:53:57Z",
-   "score": 0.4971,
+   "score": 0.4948,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -323,32 +227,6 @@
    ],
    "title": "Between Knowledge and Care: A Mixed-Methods Evaluation of Generative AI for T2DM Self-Management from Patient and Physician Perspectives",
    "url": "https://arxiv.org/abs/2607.03720v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Elsie Lee-Robbins",
-    "Eytan Adar"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Visualizations can help audiences understand the scale of tragedies, such as the consequences of natural disasters, war, genocide, and pandemics. In these cases, a visualization designer's default behavior may be to focus on communicating quantitative information: numbers, statistics, and trends. However, this may not reflect higher-level affective objectives to inspire their audience to care about an issue, empathize with others, or take action to help those in need. Worse, standard…",
-    "arxiv_id": "2607.03445"
-   },
-   "id": "4672566db70fa99c",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-03T15:56:42Z",
-   "score": 0.5149,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Visualizations can help audiences understand the scale of tragedies, such as the consequences of natural disasters, war, genocide, and pandemics. In these cases, a visualization designer's default behavior may be to focus on communicating quantitative information: numbers, statistics, and trends.…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "Evaluating Affective Objectives: Statistical Numbing in Data Visualization",
-   "url": "https://arxiv.org/abs/2607.03445v1",
    "venue": "arXiv cs.HC"
   },
   {
@@ -365,7 +243,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-02T02:30:17Z",
-   "score": 0.3485,
+   "score": 0.3475,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -379,18 +257,18 @@
   }
  ],
  "meta": {
-  "count": 13,
-  "generated_at": "2026-07-08T05:17:20Z",
+  "count": 9,
+  "generated_at": "2026-07-08T06:37:33Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
-    "count": 5,
-    "error": null,
+    "count": 0,
+    "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60 (Caus",
     "id": "arxiv_datavis",
     "name": "arXiv cs.HC + cs.GR",
-    "ok": true,
+    "ok": false,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"

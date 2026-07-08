@@ -1,16 +1,8 @@
 {
- "brief": "Today's news features escalating US-Iran tensions after strikes in the Strait of Hormuz, Marine Le Pen announcing her 2025 presidential bid, and a UK report finding the disability benefits system unfit for purpose. Academic papers highlight advances in AI-driven video generation, prompt engineering tutoring, and interpretable weather models.",
+ "brief": "Tensions in the Middle East escalate as US and Iran trade strikes in the Strait of Hormuz, driving oil prices up. Meanwhile, tech news includes a GitHub AI agent vulnerability and a purported GPT-5.6 launch. Research papers explore AI-driven game world generation and prompt engineering.",
  "meta": {
-  "generated_at": "2026-07-08T05:17:20Z"
+  "generated_at": "2026-07-08T06:37:33Z"
  },
- "news_summary": "Geopolitical tensions rise as US and Iran trade strikes after tanker attacks, while Marine Le Pen declares her presidential run. Domestically, UK reports find disability benefits inadequate and regional income divides stagnant, alongside a poll showing 40% of Britons doubt Muslim integration.",
- "papers_summary": "Research introduces AlayaWorld for long-horizon video generation and Prompt Coach for teaching prompt engineering. Other work includes GeoXplain for visualizing weather model predictions and a method to infer user intent from interaction logs.",
- "todays_image": {
-  "caption": "The fire hat's symbol of battling flames contrasts with the typhoon's overwhelming water and wind, yet both evoke urgent hope for rescue amidst disaster.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2006q05109",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2006q05109&max=150",
-  "title": "Hope Hose Company Fire Hat"
- }
+ "news_summary": "US and Iran exchange attacks in the Gulf, risking shipping and oil supply. Other news: Chinese floods, NATO missile project, and a GitHub AI security breach.",
+ "papers_summary": "Papers present AlayaWorld for long-horizon video world generation, an agentic tutor for prompt engineering, and GeoXplain for weather model explanations."
 }
