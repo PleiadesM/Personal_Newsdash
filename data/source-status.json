@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-07T23:13:49Z",
+ "generated_at": "2026-07-08T03:41:50Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -161,7 +161,7 @@
   },
   {
    "category": "optional",
-   "count": 7,
+   "count": 5,
    "error": null,
    "id": "arxiv_datavis",
    "name": "arXiv cs.HC + cs.GR",
@@ -194,7 +194,7 @@
   },
   {
    "category": "optional",
-   "count": 16,
+   "count": 15,
    "error": null,
    "id": "crossref_techcomm_journals",
    "name": "TechComm journals (CrossRef)",
@@ -216,7 +216,7 @@
   },
   {
    "category": "optional",
-   "count": 6,
+   "count": 7,
    "error": null,
    "id": "arxiv_hci_writing",
    "name": "arXiv cs.HC (writing & docs)",
@@ -249,11 +249,11 @@
   },
   {
    "category": "open",
-   "count": 15,
-   "error": null,
+   "count": 0,
+   "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCvxZ0tCKgCrrgfGu_175NIA",
    "id": "radiance_fields_yt",
    "name": "Radiance Fields (YouTube)",
-   "ok": true,
+   "ok": false,
    "section": "news",
    "skip_reason": null,
    "type": "rss"

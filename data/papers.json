@@ -2,6 +2,186 @@
  "items": [
   {
    "authors": [
+    "AlayaWorld Team",
+    "Kaipeng Zhang",
+    "Chuanhao Li",
+    "Yifan Zhan",
+    "Yongtao Ge",
+    "Yuanyang Yin"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Game worlds have traditionally been built through labor-intensive production pipelines, making them costly to develop, difficult to customization, and expensive to modify after deployment. Recent advances in video world models offer a fundamentally different paradigm. Rather than explicitly authoring every component of a virtual environment, these models autoregressively synthesize future observations conditioned on the current world state and user interactions, enabling playable worlds to be…",
+    "arxiv_id": "2607.06291"
+   },
+   "id": "1f1b03eb93f2ed46",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-07T13:59:57Z",
+   "score": 0.5423,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Game worlds have traditionally been built through labor-intensive production pipelines, making them costly to develop, difficult to customization, and expensive to modify after deployment. Recent advances in video world models offer a fundamentally different paradigm. Rather than explicitly…",
+   "tags": [
+    "embodied"
+   ],
+   "title": "AlayaWorld: Long-Horizon and Playable Video World Generation",
+   "url": "https://arxiv.org/abs/2607.06291v1",
+   "venue": "arXiv cs.CV"
+  },
+  {
+   "authors": [
+    "Rohit Mehra",
+    "Kapil Singi",
+    "Vikrant Kaulgud",
+    "Vibhu Saujanya Sharma",
+    "Swapnajeet Gon Choudhury",
+    "Swati Sharma"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Prompt engineering has emerged as a critical yet undertaught skill for software developers, one that traditional learning approaches are ill-equipped to support given its evolving, interactive, and context-dependent nature. In this paper, we introduce Prompt Coach (PC), an agentic tutor that helps developers learn how to craft high-quality code-generation prompts through Socratic guidance embedded in-flow within their IDE. PC evaluates prompt quality across multiple dimensions and surfaces…",
+    "arxiv_id": "2607.06074"
+   },
+   "id": "d85c74e6084a8957",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-07T09:44:46Z",
+   "score": 0.5234,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Prompt engineering has emerged as a critical yet undertaught skill for software developers, one that traditional learning approaches are ill-equipped to support given its evolving, interactive, and context-dependent nature. In this paper, we introduce Prompt Coach (PC), an agentic tutor that helps…",
+   "tags": [],
+   "title": "Prompt Coach: An Empirical Evaluation of an Agentic Tutor for Learning Prompt Engineering in Software Development",
+   "url": "https://arxiv.org/abs/2607.06074v1",
+   "venue": "arXiv cs.SE"
+  },
+  {
+   "authors": [
+    "Zhiguang Zhou",
+    "Fengling Zheng",
+    "Miaoxin Hu",
+    "Lina You",
+    "Jin Wen",
+    "Huan Liu"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Structured representation can characterize semantic objects and relationships in images. It provides a possible effective way for the semantic understanding of Traditional Chinese Paintings (TCPs) to better support archaeology and art history research. However, most image-oriented structured representation methods perform poorly on TCPs, due to two major challenges: 1) the objects and events of TCPs exhibit substantial differences from modern natural images, which results in semantic…",
+    "arxiv_id": "2607.05841"
+   },
+   "id": "59062f65d723be32",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-07T05:04:26Z",
+   "score": 0.7363,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Structured representation can characterize semantic objects and relationships in images. It provides a possible effective way for the semantic understanding of Traditional Chinese Paintings (TCPs) to better support archaeology and art history research. However, most image-oriented structured…",
+   "tags": [
+    "systems",
+    "visualization"
+   ],
+   "title": "VisTCP: A Visualization Framework to Construct Knowledge-Graph-Based Representation for Traditional Chinese Painting",
+   "url": "https://arxiv.org/abs/2607.05841v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Zihan Fang",
+    "Yueke Zhang",
+    "Ningzhi Tang",
+    "Collin McMillan",
+    "Toby Jia-Jun Li",
+    "Yu Huang"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "AI coding assistants such as GitHub Copilot and Cursor have evolved from code-suggestion tools into conversational collaborators, enabling vibe-coding workflows in which developers guide AI-generated code through natural-language dialogue. Although researchers have increasingly recognized the importance of AI coding agents and begun examining their impact on open-source development, a comprehensive understanding of how developers' chat-based interactions with AI relate to subsequent open-source…",
+    "arxiv_id": "2607.05677"
+   },
+   "id": "9f069b6bef4d6912",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-06T22:44:45Z",
+   "score": 0.6713,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "AI coding assistants such as GitHub Copilot and Cursor have evolved from code-suggestion tools into conversational collaborators, enabling vibe-coding workflows in which developers guide AI-generated code through natural-language dialogue. Although researchers have increasingly recognized the…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "From Conversation to Contribution: Characterizing Coding Agent in Open-Source Software",
+   "url": "https://arxiv.org/abs/2607.05677v1",
+   "venue": "arXiv cs.SE"
+  },
+  {
+   "authors": [
+    "Hendrik Schuff",
+    "Heike Adel",
+    "Ngoc Thang Vu"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "How predictable users perceive an interactive system to be shapes how they interpret, trust, and rely on it, yet HCI lacks both a precise conceptualization and a validated instrument for this perception. We address this gap by introducing perceived system predictability (PSP) as a user-centered construct grounded in uncertainty theory, distinguishing epistemic, aleatory, and effective predictability. We contribute (i) a theoretical framework that situates PSP relative to adjacent constructs…",
+    "arxiv_id": "2607.05674"
+   },
+   "id": "8d06cc299cb6d50b",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-06T22:40:18Z",
+   "score": 0.4785,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "How predictable users perceive an interactive system to be shapes how they interpret, trust, and rely on it, yet HCI lacks both a precise conceptualization and a validated instrument for this perception. We address this gap by introducing perceived system predictability (PSP) as a user-centered…",
+   "tags": [],
+   "title": "Perceived System Predictability: Scale Development and Application",
+   "url": "https://arxiv.org/abs/2607.05674v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Clemens Walter Koprolin",
+    "Leonardo Trentini",
+    "Benedikt Soja",
+    "Mennatallah El-Assady",
+    "Christina Humer"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Weather and climate foundation models produce high-dimensional forecasts whose learned relationships are difficult to inspect with static plots alone. GeoXplain is an interactive Python-based visualization toolkit for exploring geospatial attribution maps across climate variables, atmospheric pressure levels, and forecast time. The toolkit accepts attribution bundles containing attribution grids together with corresponding metadata and renders them in a notebook widget or browser with map and…",
+    "also_in": [
+     {
+      "source": "arXiv cs.HC (writing & docs)",
+      "url": "https://arxiv.org/abs/2607.05655v1"
+     }
+    ],
+    "arxiv_id": "2607.05655"
+   },
+   "id": "c310895c6dc55406",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-06T21:51:46Z",
+   "score": 0.708,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Weather and climate foundation models produce high-dimensional forecasts whose learned relationships are difficult to inspect with static plots alone. GeoXplain is an interactive Python-based visualization toolkit for exploring geospatial attribution maps across climate variables, atmospheric…",
+   "tags": [
+    "systems",
+    "visualization"
+   ],
+   "title": "GeoXplain: On-the-Fly Visual Explanations for Weather Foundation Models",
+   "url": "https://arxiv.org/abs/2607.05655v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
     "Kathryn Lambrecht",
     "Lynda C. Olman",
     "Meghan Collins",
@@ -19,7 +199,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-06T07:20:52Z",
-   "score": 0.3677,
+   "score": 0.3564,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -45,7 +225,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-05T21:02:23Z",
-   "score": 0.6401,
+   "score": 0.6273,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -74,7 +254,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-04T18:24:00Z",
-   "score": 0.5728,
+   "score": 0.5635,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -105,7 +285,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-04T12:23:46Z",
-   "score": 0.5204,
+   "score": 0.5117,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -133,7 +313,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-04T05:53:57Z",
-   "score": 0.5079,
+   "score": 0.4998,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -159,7 +339,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-03T15:56:42Z",
-   "score": 0.5241,
+   "score": 0.5173,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -169,229 +349,6 @@
    ],
    "title": "Evaluating Affective Objectives: Statistical Numbing in Data Visualization",
    "url": "https://arxiv.org/abs/2607.03445v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Denise Tampieri",
-    "Giovanni De Toni",
-    "Paolo Giudici"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Algorithmic recourse addresses the challenge of providing tailored recommendations to users affected by unfavorable machine learning decisions, in potentially high-stakes scenarios. Traditional approaches to recourse often rely on the closest counterfactual explanations or assume a priori knowledge of a user's causal structure, resulting in interventions that overlook individual contexts and specific feature interactions. To overcome these limitations, we study a human-in-the-loop framework…",
-    "arxiv_id": "2607.03425"
-   },
-   "id": "f57a7772bb5515b3",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-03T15:37:35Z",
-   "score": 0.4836,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Algorithmic recourse addresses the challenge of providing tailored recommendations to users affected by unfavorable machine learning decisions, in potentially high-stakes scenarios. Traditional approaches to recourse often rely on the closest counterfactual explanations or assume a priori knowledge…",
-   "tags": [
-    "ai-writing"
-   ],
-   "title": "Personalized Causal Recourse: A Human-In-The-Loop Approach",
-   "url": "https://arxiv.org/abs/2607.03425v1",
-   "venue": "arXiv cs.AI"
-  },
-  {
-   "authors": [
-    "Ester Chen",
-    "Aboli Shete",
-    "Aditya Anavekar",
-    "Roshan Peiris",
-    "Hidy Kong"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "User experience (UX) designers face barriers when creating data visualizations due to limited domain expertise in visualization or unfamiliarity with specialized tools. This highlights a clear need for effective methods to build visualization literacy. To address this, we evaluated three visualization onboarding techniques -- static, scrollytelling, and chatbot -- in an experimental study with 25 UX designers and students. We measured visualization comprehension and guideline adherence during a…",
-    "arxiv_id": "2607.03023"
-   },
-   "id": "377bafbf91d762f2",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-03T07:12:07Z",
-   "score": 0.6511,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "User experience (UX) designers face barriers when creating data visualizations due to limited domain expertise in visualization or unfamiliarity with specialized tools. This highlights a clear need for effective methods to build visualization literacy. To address this, we evaluated three…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "A Comparative Study of Static, Scrollytelling, and Chatbot Visualization Onboarding Techniques for UX Designers",
-   "url": "https://arxiv.org/abs/2607.03023v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Jingjing Hu",
-    "Guo Dan",
-    "Haofan Cheng",
-    "Ying Zeng",
-    "Zhan Si",
-    "Jinxing Zhou"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Despite the high accuracy of EEG-based emotion recognition, existing models remain opaque \"black boxes\", lacking semantic grounding between abstract neural features and human-interpretable states. In this paper, we reframe EEG explainability as a cross-modal generation task, shifting the paradigm from feature attribution to behavioral visualization. We introduce Facial Emoji Proxy Modeling, a novel framework that translates high-dimensional EEG signals into identity-anonymized facial emojis.…",
-    "arxiv_id": "2607.02912"
-   },
-   "id": "0ed8d25198fc436c",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-03T03:18:02Z",
-   "score": 0.5057,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Despite the high accuracy of EEG-based emotion recognition, existing models remain opaque \"black boxes\", lacking semantic grounding between abstract neural features and human-interpretable states. In this paper, we reframe EEG explainability as a cross-modal generation task, shifting the paradigm…",
-   "tags": [
-    "ml-vis"
-   ],
-   "title": "See the Emotion: A Facial Emoji Proxy Modeling for EEG Emotion Recognition",
-   "url": "https://arxiv.org/abs/2607.02912v1",
-   "venue": "arXiv cs.CV"
-  },
-  {
-   "authors": [
-    "Mengxiao Zhu",
-    "Xiyue Wang",
-    "Chunke Su",
-    "Han Zhao",
-    "Cuihua Shen"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Live streaming platforms, as computer-mediated communication (CMC) systems, provide streamers with a range of tools, such as webcams, beauty filters, and stream titles, to shape their online personas in ways that either conform to or deviate from viewers' expectations. Drawing on gender role and CMC theories, this study examines how streamers leverage CMC self-presentation tools to fulfill gender role expectations and their associated live streaming outcomes. Analyzing data collected from 867…",
-    "arxiv_id": "2607.02760"
-   },
-   "id": "e4c1c8a855da0ed6",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-02T20:54:05Z",
-   "score": 0.2649,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Live streaming platforms, as computer-mediated communication (CMC) systems, provide streamers with a range of tools, such as webcams, beauty filters, and stream titles, to shape their online personas in ways that either conform to or deviate from viewers' expectations. Drawing on gender role and…",
-   "tags": [],
-   "title": "Gendered Pixels: Exploring Gender Differences in Computer-Mediated Self-Presentation among Douyu Live Streamers",
-   "url": "https://arxiv.org/abs/2607.02760v1",
-   "venue": "arXiv cs.SI"
-  },
-  {
-   "authors": [
-    "Santosh Premi Adhikari"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Generative artificial intelligence (GenAI) systems such as ChatGPT, Claude, and Gemini have made information seeking faster, more conversational, and more cognitively comfortable. These affordances can support learning and productivity, but they can also encourage a repetitive pattern in which users continue querying AI systems for explanations, summaries, comparisons, plans, and reassurance without converting those interactions into durable understanding, decisions, or finished work. This…",
-    "arxiv_id": "2607.02723"
-   },
-   "id": "c84ce668c75ffa3f",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-02T19:18:21Z",
-   "score": 0.4554,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Generative artificial intelligence (GenAI) systems such as ChatGPT, Claude, and Gemini have made information seeking faster, more conversational, and more cognitively comfortable. These affordances can support learning and productivity, but they can also encourage a repetitive pattern in which…",
-   "tags": [
-    "ai-writing",
-    "llm"
-   ],
-   "title": "Doom Researching: A Conceptual Framework for Repetitive AI-Assisted Information Seeking, Cognitive Offloading, and the Illusion of Knowing",
-   "url": "https://arxiv.org/abs/2607.02723v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Shahreen Salim",
-    "Klaus Mueller"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Large language model personas are increasingly used to approximate diverse users during early-stage visualization design, but it remains unclear whether persona-conditioned outputs reflect stable personality effects or artifacts of model choice and task framing. We examine this question across two visualization-relevant tasks: color assignment for abstract and concrete concepts, and chart-idiom preference ratings across task contexts. Using 43 Big Five profiles across GPT-4o-mini, GPT-4.1-mini,…",
-    "arxiv_id": "2607.02455"
-   },
-   "id": "6035d8f3608fae29",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-02T17:23:57Z",
-   "score": 0.6331,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Large language model personas are increasingly used to approximate diverse users during early-stage visualization design, but it remains unclear whether persona-conditioned outputs reflect stable personality effects or artifacts of model choice and task framing. We examine this question across two…",
-   "tags": [
-    "ml-vis",
-    "llm",
-    "visualization"
-   ],
-   "title": "When Do LLM Personas Support Visualization Design? A Cross-Model Study of Color Assignment and Chart Choice",
-   "url": "https://arxiv.org/abs/2607.02455v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Zirui Shan",
-    "Vanessa Echeverria",
-    "Yuheng Li",
-    "Yi-Shan Tsai",
-    "Roberto Martinez-Maldonado"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "In today's data-driven world, students often struggle with interpreting visualisations due to limited visualisation literacy. Data comics have emerged as a promising medium to enhance engagement and understanding, but their educational value has seen little empirical examination, partly due to the effort required to create them. Recent advances in Generative AI (GenAI) offer a scalable solution to this challenge. We conducted a within-subjects study with 60 university students, comparing…",
-    "arxiv_id": "2607.02361"
-   },
-   "id": "2e89a812b78ee18f",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-02T16:02:55Z",
-   "score": 0.4515,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "In today's data-driven world, students often struggle with interpreting visualisations due to limited visualisation literacy. Data comics have emerged as a promising medium to enhance engagement and understanding, but their educational value has seen little empirical examination, partly due to the…",
-   "tags": [
-    "pedagogy",
-    "ai-writing"
-   ],
-   "title": "Data Comics for Education: Evaluating Effectiveness, Benefits, and the Ethics of AI-Assisted Creation",
-   "url": "https://arxiv.org/abs/2607.02361v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Kohei Arimoto",
-    "Masahiko Itoh"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Exploring similar nodes in attributed networks represents a key challenge in data mining. While recent representation learning methods embed networks into low-dimensional vectors, they often implicitly assume a uniform and continuous feature space. This paper proposes a visual analytics approach using dimensionality reduction to help clarify the true topological structure of high-dimensional feature spaces formed by nodes' neighborhood attribute profiles. Analyzing inter-firm transaction…",
-    "arxiv_id": "2607.02163"
-   },
-   "id": "4ec01470528803b3",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-02T13:34:43Z",
-   "score": 0.2961,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Exploring similar nodes in attributed networks represents a key challenge in data mining. While recent representation learning methods embed networks into low-dimensional vectors, they often implicitly assume a uniform and continuous feature space. This paper proposes a visual analytics approach…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "Visual Analytics of Neighborhood Attribute Profiles for Exploring Structural Equivalence",
-   "url": "https://arxiv.org/abs/2607.02163v1",
    "venue": "arXiv cs.HC"
   },
   {
@@ -408,7 +365,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-02T02:30:17Z",
-   "score": 0.353,
+   "score": 0.3496,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -422,14 +379,14 @@
   }
  ],
  "meta": {
-  "count": 15,
-  "generated_at": "2026-07-07T23:13:49Z",
+  "count": 13,
+  "generated_at": "2026-07-08T03:41:50Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
-    "count": 7,
+    "count": 5,
     "error": null,
     "id": "arxiv_datavis",
     "name": "arXiv cs.HC + cs.GR",
@@ -462,7 +419,7 @@
    },
    {
     "category": "optional",
-    "count": 16,
+    "count": 15,
     "error": null,
     "id": "crossref_techcomm_journals",
     "name": "TechComm journals (CrossRef)",
@@ -484,7 +441,7 @@
    },
    {
     "category": "optional",
-    "count": 6,
+    "count": 7,
     "error": null,
     "id": "arxiv_hci_writing",
     "name": "arXiv cs.HC (writing & docs)",
