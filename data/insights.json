@@ -1,16 +1,16 @@
 {
- "brief": "Geopolitical tensions escalate as the US-Iran ceasefire frays, while AI industry doubts emerge and cultural events like Emmy nominations and Wimbledon changes dominate headlines. Research papers explore interactive AI, visualization tools, and brain-computer interfaces.",
+ "brief": "Geopolitical tensions and domestic controversies dominate today's news, while research advances AI world generation and interactive visualization.",
  "meta": {
-  "generated_at": "2026-07-08T19:53:51Z"
+  "generated_at": "2026-07-08T20:13:19Z"
  },
- "news_summary": "US-Iran ceasefire frays with threats of war and oil market volatility; immigration enforcement leads to shootings; AI industry faces skepticism; Emmy nominations and Wimbledon cultural shifts also notable.",
- "papers_summary": "Papers focus on AI agents for coding, interactive visualization for weather and embeddings, and EEG-based brain-computer interfaces, advancing human-AI collaboration.",
+ "news_summary": "Key stories include potential Patriot missile production for Ukraine, fatal shootings by federal agents, and Trump's erratic behavior at NATO.",
+ "papers_summary": "Research papers present AlayaWorld for playable video world generation and VisTCP for traditional Chinese painting representation.",
  "todays_image": {
-  "caption": "Just as the unassuming Lobophora algae quietly reshapes coral reefs, the hype around Big A.I. may have overlooked the subtle, unpredictable currents that now challenge our grand investment.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "Just as a console table provides a stable surface for strategic planning, a license to build Patriot missiles offers Ukraine a firm foundation for air defense.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-867B0A58602F2-000001",
+  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/7908",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-867B0A58602F2-000001",
+  "title": "Console Tables"
  }
 }
