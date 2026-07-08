@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T03:41:50Z",
+ "generated_at": "2026-07-08T04:10:52Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -95,7 +95,7 @@
   },
   {
    "category": "open",
-   "count": 7,
+   "count": 6,
    "error": null,
    "id": "hn_frontpage_ai",
    "name": "Hacker News (AI filter)",
