@@ -64,14 +64,20 @@
     "more": "更多 →",
     "aiSummaryLabel": "AI 摘要",
     "todaysImage": "今日一图",
-    "imageSource": "来源："
+    "imageSource": "来源：",
+    "todaysFeed": "今日推送",
+    "featured": "精选",
+    "photoOfTheDay": "今日一图"
   },
   "overview": {
     "newToday": "今日新增",
     "items": "条目",
     "sourcesOk": "信源正常",
     "languages": "语言",
-    "favorites": "收藏"
+    "favorites": "收藏",
+    "articles": "文章",
+    "sources": "来源",
+    "topics": "话题"
   },
   "feed": {
     "search": "搜索…",

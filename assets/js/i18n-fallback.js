@@ -71,14 +71,20 @@ export const FALLBACK_EN = {
     "more": "More →",
     "aiSummaryLabel": "AI summary",
     "todaysImage": "Today's Image",
-    "imageSource": "Source:"
+    "imageSource": "Source:",
+    "todaysFeed": "Today's Feed",
+    "featured": "Featured",
+    "photoOfTheDay": "Photo of the Day"
   },
   "overview": {
     "newToday": "New today",
     "items": "Items",
     "sourcesOk": "Sources OK",
     "languages": "Languages",
-    "favorites": "Favorites"
+    "favorites": "Favorites",
+    "articles": "articles",
+    "sources": "sources",
+    "topics": "topics"
   },
   "feed": {
     "search": "Search…",

@@ -1,6 +1,8 @@
 /* Personal Newsdash — theme-agnostic base. Every color/font/spacing token
    comes from the CSS variables each theme defines (assets/themes/*.css).
-   No external requests: system fonts only. */
+   No external requests: system fonts only — except the-type, which lazily
+   loads Google Fonts only when it's the active theme (assets/js/app.js
+   `ensureTheTypeFonts`); nyt/bear never trigger that request. */
 
 * { box-sizing: border-box; }
 
@@ -412,6 +414,17 @@ a.stat-tile:hover .stat-num { color: var(--accent); }
   letter-spacing: 0.05em;
   color: var(--fg-muted);
 }
+
+/* ---- hero (Today, the-type layout only — inert structure for other
+   themes since they never create elements with these classes) ---- */
+
+.hero-date-row { display: flex; justify-content: space-between; }
+.hero-greeting { display: flex; align-items: center; }
+.hero-grid { display: grid; position: relative; }
+.hero-image { position: relative; overflow: hidden; }
+.hero-image img { width: 100%; }
+.hero-right { display: flex; flex-direction: column; }
+.stats-pills { display: flex; flex-wrap: wrap; }
 
 /* ---- feed controls, chips, grouping ---- */
 

@@ -11,6 +11,10 @@ import { get } from "../store.js";
 import { itemCard } from "./feed.js";
 import { emptyCard, lockedCard } from "./shared.js";
 
+function isTheType() {
+  return document.documentElement.dataset.theme === "the-type";
+}
+
 function greeting() {
   const hour = new Date().getHours();
   if (hour < 12) return t("today.greetingMorning");
@@ -182,10 +186,162 @@ function overviewStrip(favCount) {
   return el("div", { class: "overview-strip" }, tiles);
 }
 
+// ---- the-type theme: hero + numbered-feed Today layout --------------------
+// A structurally different Today layout for the-type only (see
+// assets/themes/the-type.css); nyt/bear keep the masthead+overview-strip
+// layout below untouched.
+
+function heroDateParts() {
+  const now = new Date();
+  const locale = getLang() === "zh" ? "zh-CN" : "en-US";
+  return {
+    weekday: new Intl.DateTimeFormat(locale, { weekday: "long" }).format(now),
+    mainDate: new Intl.DateTimeFormat(locale, { month: "long", day: "numeric" }).format(now),
+    subDate: new Intl.DateTimeFormat(locale, { year: "numeric", month: "long", day: "numeric" }).format(now),
+  };
+}
+
+function heroImageBlock(image) {
+  return el("div", { class: "hero-image" },
+    el("img", {
+      src: safeHref(image.image_url), alt: image.title || "",
+      loading: "lazy", referrerpolicy: "no-referrer",
+    }),
+    el("div", { class: "hero-image-caption" },
+      el("span", { class: "hero-image-kicker" }, t("today.photoOfTheDay")),
+      el("p", { class: "hero-image-text" },
+        `${image.caption} · `,
+        el("a", {
+          href: safeHref(image.source_url), target: "_blank", rel: "noopener",
+        }, image.title ? `${image.title} — ${image.source_name}` : image.source_name),
+      ),
+    ),
+  );
+}
+
+// Distinct from overviewStrip()'s numeric strip (nyt/bear): the hero pills
+// surface a simpler cut — how much ran through the feed today — matching
+// the mockup, computed the same client-side way (no private-count leaks).
+function statsPills() {
+  const feedItems = Object.values(get().sections)
+    .filter((s) => s.status === "ok" && Array.isArray(s.payload?.items))
+    .flatMap((s) => s.payload.items);
+  if (!feedItems.length) return null;
+  const sourceCount = new Set(feedItems.map((i) => i.source)).size;
+  const topicCount = new Set(feedItems.flatMap((i) => i.tags || [])).size;
+  const tile = (value, label) => el("div", { class: "stat-tile" },
+    el("span", { class: "stat-num" }, String(value)),
+    el("span", { class: "stat-label" }, label));
+  return el("div", { class: "stats-pills" },
+    tile(feedItems.length, t("overview.articles")),
+    tile(sourceCount, t("overview.sources")),
+    topicCount ? tile(topicCount, t("overview.topics")) : null,
+  );
+}
+
+function heroGrid() {
+  const image = get().insights?.todays_image;
+  const brief = get().insights?.brief;
+  const stats = statsPills();
+  if (!image && !brief && !stats) return null;
+  const right = (brief || stats)
+    ? el("div", { class: "hero-right" },
+        brief ? el("div", { class: "hero-summary" },
+          el("div", { class: "hero-summary-label" }, t("today.aiSummaryLabel")),
+          el("p", { class: "hero-summary-text" }, brief),
+        ) : null,
+        stats,
+      )
+    : null;
+  const children = [image ? heroImageBlock(image) : null, right].filter(Boolean);
+  return children.length ? el("div", { class: "hero-grid" }, children) : null;
+}
+
+function featuredArticleCard(item) {
+  return el("article", {
+    class: `item featured-article kind-${item.kind}`,
+    dataset: { itemId: item.id, sectionId: "news" },
+    lang: item.lang === "zh" ? "zh-CN" : undefined,
+  },
+    el("div", { class: "item-meta" },
+      el("span", { class: "featured-label" }, t("today.featured")),
+      el("span", { class: "item-source" }, item.source),
+      el("time", {
+        datetime: item.published_at,
+        title: fmtDateTime(item.published_at, { year: "numeric" }),
+      }, fmtRelative(item.published_at)),
+    ),
+    el("h2", { class: "item-title" },
+      el("a", {
+        href: safeHref(item.url), target: "_blank", rel: "noopener noreferrer",
+        "data-annotatable": "",
+      }, item.title),
+    ),
+    item.summary ? el("p", { class: "item-summary", "data-annotatable": "" }, item.summary) : null,
+  );
+}
+
+function theTypeFeedSection(favs) {
+  const section = get().sections.news;
+  if (!section || section.status !== "ok") return null;
+  const top = [...(section.payload?.items || [])]
+    .sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 6);
+  if (!top.length) return null;
+  const [featured, ...rest] = top;
+  const cardOpts = { favs };
+  return el("div", { class: "the-type-feed" },
+    el("h2", { class: "feed-section-header" }, t("today.todaysFeed")),
+    featuredArticleCard(featured),
+    rest.length
+      ? el("div", { class: "item-list" }, rest.map((item) => itemCard(item, "news", cardOpts)))
+      : null,
+  );
+}
+
+function renderTheType(container, favs) {
+  const { weekday, mainDate, subDate } = heroDateParts();
+  const hero = el("div", { class: "hero-section nd-fadein" },
+    el("div", { class: "hero-date-row" },
+      el("div", {},
+        el("div", { class: "hero-weekday" }, weekday),
+        el("div", { class: "hero-date" }, mainDate),
+        el("div", { class: "hero-date-sub" }, subDate),
+      ),
+      el("div", { class: "hero-greeting" },
+        el("span", { class: "hero-greeting-dot" }),
+        el("span", { class: "hero-greeting-text" }, greeting()),
+      ),
+    ),
+  );
+  const grid = heroGrid();
+  if (grid) hero.appendChild(grid);
+  container.appendChild(hero);
+
+  const feedSection = theTypeFeedSection(favs);
+  if (feedSection) {
+    feedSection.classList.add("nd-fadein", "nd-fadein-d1");
+    container.appendChild(feedSection);
+  }
+
+  const cardOpts = { favs };
+  const restBlocks = [scheduleBlock(), dueSoonBlock(), papersBlock(cardOpts), followingBlock(cardOpts)]
+    .filter(Boolean);
+  if (restBlocks.length) {
+    container.appendChild(el("div", { class: "today-grid nd-fadein nd-fadein-d2" }, restBlocks));
+  } else if (!grid && !feedSection) {
+    container.appendChild(emptyCard());
+  }
+}
+
 export async function render(container) {
   const unlocked = get().unlocked;
   const favs = unlocked ? await favoriteIdSet() : null;
   clear(container);
+  if (isTheType()) {
+    renderTheType(container, favs);
+    renderAnnotationsIn(container);
+    return;
+  }
   const dateLabel = new Intl.DateTimeFormat(getLang() === "zh" ? "zh-CN" : "en-US", {
     weekday: "long", year: "numeric", month: "long", day: "numeric",
   }).format(new Date());

@@ -23,7 +23,10 @@ export function render(container) {
         onclick: () => {
           document.documentElement.dataset.theme = theme;
           prefs.write("theme", theme);
-          render(container); // refresh active states
+          // the-type's Today layout is structurally different (not just
+          // CSS), so a full rerender is needed; this also re-renders
+          // settings itself (refreshing the active theme chip).
+          document.dispatchEvent(new CustomEvent("nd:rerender"));
         },
       }, t(`settings.themes.${theme}`));
     })),

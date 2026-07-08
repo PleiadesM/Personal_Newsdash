@@ -61,7 +61,29 @@ function renderView() {
 
 // ---- header chrome -------------------------------------------------------
 
+// the-type is the only theme with a typography-first look that needs
+// non-system fonts; nyt/bear stay on the "system fonts only" guarantee
+// (assets/styles.css header comment) since this never runs for them.
+function ensureTheTypeFonts() {
+  if (document.documentElement.dataset.theme !== "the-type") return;
+  if (document.getElementById("the-type-fonts")) return;
+  document.head.append(
+    el("link", { rel: "preconnect", href: "https://fonts.googleapis.com" }),
+    el("link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }),
+    el("link", {
+      id: "the-type-fonts", rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?"
+        + "family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400"
+        + "&family=Noto+Serif+SC:wght@400;500;600;700"
+        + "&family=Noto+Sans+SC:wght@300;400;500"
+        + "&family=IBM+Plex+Mono:wght@400;500"
+        + "&display=swap",
+    }),
+  );
+}
+
 function renderHeader() {
+  ensureTheTypeFonts();
   const { manifest, unlocked } = get();
   document.getElementById("site-title-link").textContent =
     manifest?.site?.title || "Personal Newsdash";

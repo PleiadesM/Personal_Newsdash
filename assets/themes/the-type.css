@@ -1,48 +1,363 @@
 /* Theme: the-type — inspired by The Type (thetype.com): typography-first,
    serif-driven, generous whitespace, hairline rules, a single vermillion
-   accent, and careful CJK–Latin mixed setting. */
+   accent, and careful CJK–Latin mixed setting. Today view is a distinct
+   hero + numbered-feed layout, restructured entirely in JS (today.js)
+   and CSS (this file); nyt/bear keep the shared card layout.
+
+   Fonts: Source Serif 4, Noto Serif SC, Noto Sans SC, IBM Plex Mono are
+   loaded from Google Fonts, lazily, only when this theme is active
+   (assets/js/app.js `ensureTheTypeFonts`) — nyt/bear never fetch them,
+   preserving the system-fonts-only guarantee for those themes. */
 
 [data-theme="the-type"] {
-  --bg: #fcfcfa;
-  --bg-elev: #f6f5f1;
+  --bg: #faf9f6;
+  --bg-elev: #f0efec;
   --fg: #1a1a1a;
   --fg-muted: #77726a;
-  --accent: #c8332b;
+  --accent: #c7372f;
   --accent-fg: #ffffff;
-  --rule: #e7e4dd;
-  --rule-strong: #cfcabe;
+  --rule: rgba(0, 0, 0, 0.08);
+  --rule-strong: rgba(0, 0, 0, 0.18);
   --link: #1a1a1a;
   --highlight-bg: #f9e9a0;
   --font-serif: "Source Serif 4", "Source Serif Pro", georgia, "Times New Roman", serif;
   --font-cjk-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", simsun, serif;
   --font-body: var(--font-serif), var(--font-cjk-serif);
   --font-heading: var(--font-serif), var(--font-cjk-serif);
-  --font-meta: -apple-system, "Segoe UI", "Helvetica Neue", "PingFang SC", "Noto Sans SC", sans-serif;
+  --font-meta: "Noto Sans SC", -apple-system, "Segoe UI", "Helvetica Neue", "PingFang SC", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Noto Sans SC", monospace;
   --size-base: 17px;
   --leading: 1.65;
   --leading-cjk: 1.95;
   --measure: 42rem;
   --radius: 2px;
   --shadow: none;
-  --page-max: 68rem;
+  --page-max: 72rem;
 }
 
 [data-theme="the-type"] body {
   font-family: var(--font-serif), var(--font-cjk-serif);
 }
 
-[data-theme="the-type"] #masthead {
-  border-bottom: 1px solid var(--fg);
-  text-align: left;
-}
-[data-theme="the-type"] #site-title { font-weight: 600; letter-spacing: 0.01em; }
-[data-theme="the-type"] #nav { border-top: none; letter-spacing: 0.02em; }
-[data-theme="the-type"] #nav a.active { border-bottom-width: 1px; }
+[data-theme="the-type"] ::selection { background: rgba(199, 55, 47, 0.15); }
 
+/* ---- header: display:contents promotes masthead-inner's children to
+   direct flex items of #masthead, so `order` alone can reflow title / nav
+   / meta into a single row without touching index.html or app.js. ---- */
+
+[data-theme="the-type"] #masthead {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--fg);
+  padding: 1.1rem 0;
+}
+[data-theme="the-type"] .masthead-inner { display: contents; }
+[data-theme="the-type"] .masthead-titles { order: 1; }
+[data-theme="the-type"] #site-subtitle,
+[data-theme="the-type"] #updated-at { display: none; }
+[data-theme="the-type"] #site-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+[data-theme="the-type"] #nav {
+  order: 2;
+  margin: 0 0 0 auto;
+  padding: 0;
+  border-top: none;
+  font-family: var(--font-meta);
+  font-size: 13px;
+  gap: 24px;
+}
+[data-theme="the-type"] #nav a {
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1.5px solid transparent;
+  padding-bottom: 2px;
+}
+[data-theme="the-type"] #nav a.active {
+  color: var(--accent);
+  font-weight: 500;
+  border-bottom-color: var(--accent);
+}
+
+[data-theme="the-type"] .masthead-meta {
+  order: 3;
+  position: relative;
+  gap: 14px;
+  margin-left: 24px;
+  padding-left: 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.4);
+}
+[data-theme="the-type"] .masthead-meta::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.1);
+}
+[data-theme="the-type"] .chrome-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.5px;
+}
+[data-theme="the-type"] .chrome-btn:hover { color: var(--accent); }
+
+/* ---- hero: date + greeting + image/summary grid + stat pills ---- */
+
+[data-theme="the-type"] .hero-section { padding-top: 2.4rem; }
+
+[data-theme="the-type"] .hero-date-row {
+  align-items: flex-end;
+  margin-bottom: 2.2rem;
+}
+[data-theme="the-type"] .hero-weekday {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.35);
+  margin-bottom: 8px;
+}
+[data-theme="the-type"] .hero-date {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 0.9;
+  color: var(--fg);
+}
+[data-theme="the-type"] .hero-date-sub {
+  font-family: var(--font-cjk-serif);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+}
+[data-theme="the-type"] .hero-greeting {
+  gap: 6px;
+  padding-bottom: 8px;
+}
+[data-theme="the-type"] .hero-greeting-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4caf50;
+}
+[data-theme="the-type"] .hero-greeting-text {
+  font-family: var(--font-meta);
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="the-type"] .hero-grid {
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+[data-theme="the-type"] .hero-grid > *:only-child { grid-column: 1 / -1; }
+
+[data-theme="the-type"] .hero-image {
+  aspect-ratio: 16 / 10;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+[data-theme="the-type"] .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+[data-theme="the-type"] .hero-image::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 60%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+  pointer-events: none;
+}
+[data-theme="the-type"] .hero-image-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 16px 20px;
+  z-index: 1;
+}
+[data-theme="the-type"] .hero-image-kicker {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+[data-theme="the-type"] .hero-image-text {
+  margin: 4px 0 0;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  color: #fff;
+}
+[data-theme="the-type"] .hero-image-text a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.5); }
+
+[data-theme="the-type"] .hero-summary {
+  padding: 32px 36px;
+  flex: 1;
+}
+[data-theme="the-type"] .hero-summary-label {
+  margin: 0 0 16px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.35);
+}
+[data-theme="the-type"] .hero-summary-text {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 17px;
+  line-height: 1.75;
+  color: #2a2a2a;
+}
+
+[data-theme="the-type"] .stats-pills { padding: 0 36px 28px; gap: 10px; }
+[data-theme="the-type"] .stats-pills .stat-tile {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  background: var(--bg-elev);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+[data-theme="the-type"] .stats-pills .stat-num {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+}
+[data-theme="the-type"] .stats-pills .stat-label {
+  font-family: var(--font-meta);
+  font-size: 11px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* ---- today's feed: section header + numbered article list ---- */
+
+[data-theme="the-type"] .the-type-feed { padding-top: 2.4rem; }
+[data-theme="the-type"] .feed-section-header {
+  margin: 0 0 1.6rem;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+[data-theme="the-type"] .featured-article {
+  border-top: 2px solid var(--fg);
+  padding: 24px 0 32px;
+  max-width: none;
+}
+[data-theme="the-type"] .featured-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+[data-theme="the-type"] .featured-article .item-meta { margin-bottom: 12px; }
+[data-theme="the-type"] .featured-article .item-source { color: rgba(0, 0, 0, 0.3); font-weight: 400; }
+[data-theme="the-type"] .featured-article .item-title {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+[data-theme="the-type"] .featured-article .item-summary {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+[data-theme="the-type"] .item-list { max-width: none; counter-reset: feed-article 0; }
+/* Today's numbered feed follows a featured article that's implicitly "01" */
+[data-theme="the-type"] .the-type-feed .item-list { counter-reset: feed-article 1; }
+[data-theme="the-type"] .item-list .item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  column-gap: 20px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: none;
+  counter-increment: feed-article;
+}
+[data-theme="the-type"] .item-list .item::before {
+  content: counter(feed-article, decimal-leading-zero);
+  grid-column: 1;
+  grid-row: 1 / -1;
+  align-self: start;
+  font: 700 32px/1 var(--font-serif);
+  color: rgba(0, 0, 0, 0.08);
+}
+[data-theme="the-type"] .item-list .item > * { grid-column: 2; }
+[data-theme="the-type"] .item-list .item .item-meta { font-family: var(--font-mono); font-size: 10px; }
+[data-theme="the-type"] .item-list .item .item-source { color: rgba(0, 0, 0, 0.3); font-weight: 400; }
+[data-theme="the-type"] .item-list .item .item-title { font-size: 19px; font-weight: 600; letter-spacing: -0.3px; }
+[data-theme="the-type"] .item-list .item .item-summary { font-size: 13px; color: rgba(0, 0, 0, 0.4); }
+
+/* ---- today blocks (schedule, due-soon, papers, following) ---- */
+
+[data-theme="the-type"] .today-block { border-top: 1px solid var(--fg); padding-top: 0.7rem; }
 [data-theme="the-type"] .item-title { font-weight: 600; }
 [data-theme="the-type"] .item-source { color: var(--accent); font-weight: 500; }
-[data-theme="the-type"] .today-block { border-top: 1px solid var(--fg); padding-top: 0.7rem; }
 [data-theme="the-type"] .tag { border-radius: 0; border-color: var(--rule); }
 [data-theme="the-type"] .course-card,
 [data-theme="the-type"] .clipping { border-radius: 0; background: transparent; }
 [data-theme="the-type"] blockquote { font-style: italic; }
+
+/* ---- footer ---- */
+
+[data-theme="the-type"] #footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* ---- animations ---- */
+
+@keyframes nd-fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+[data-theme="the-type"] .nd-fadein { animation: nd-fadeIn 0.6s ease-out both; }
+[data-theme="the-type"] .nd-fadein-d1 { animation-delay: 0.2s; }
+[data-theme="the-type"] .nd-fadein-d2 { animation-delay: 0.3s; }
+
+/* ---- responsive ---- */
+
+@media (max-width: 48rem) {
+  [data-theme="the-type"] #nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+  }
+  /* overrides the base @media(40rem) `.masthead-meta { width: 100% }`
+     (written for the other themes' stacked masthead) so it stays an
+     auto-width flex item and the auto margin can push it to the right */
+  [data-theme="the-type"] .masthead-meta { order: 2; width: auto; margin-left: auto; }
+  [data-theme="the-type"] .hero-date { font-size: 48px; letter-spacing: -1.5px; }
+  [data-theme="the-type"] .hero-grid { grid-template-columns: 1fr; }
+  [data-theme="the-type"] .hero-image { border-right: none; border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+}
