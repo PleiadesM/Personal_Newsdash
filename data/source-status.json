@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T20:13:19Z",
+ "generated_at": "2026-07-08T21:22:18Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -95,7 +95,7 @@
   },
   {
    "category": "open",
-   "count": 6,
+   "count": 7,
    "error": null,
    "id": "hn_frontpage_ai",
    "name": "Hacker News (AI filter)",
@@ -183,7 +183,7 @@
   },
   {
    "category": "optional",
-   "count": 30,
+   "count": 0,
    "error": null,
    "id": "s2_datavis",
    "name": "Semantic Scholar · data visualization",

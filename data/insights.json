@@ -1,16 +1,16 @@
 {
- "brief": "Geopolitical tensions and domestic controversies dominate today's news, while research advances AI world generation and interactive visualization.",
+ "brief": "US immigration enforcement and military strikes on Iran dominate today's news, while AI research papers explore coding assistants and visualization tools.",
  "meta": {
-  "generated_at": "2026-07-08T20:13:19Z"
+  "generated_at": "2026-07-08T21:22:18Z"
  },
- "news_summary": "Key stories include potential Patriot missile production for Ukraine, fatal shootings by federal agents, and Trump's erratic behavior at NATO.",
- "papers_summary": "Research papers present AlayaWorld for playable video world generation and VisTCP for traditional Chinese painting representation.",
+ "news_summary": "Federal agents' shootings and US strikes on Iran frame a tense day, with political fallout in Maine and ethical debates on organ donation.",
+ "papers_summary": "New papers explore AI coding assistants, visualization frameworks, and brain-computer interfaces for speech decoding.",
  "todays_image": {
-  "caption": "Just as a console table provides a stable surface for strategic planning, a license to build Patriot missiles offers Ukraine a firm foundation for air defense.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-867B0A58602F2-000001",
-  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
-  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/7908",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-867B0A58602F2-000001",
-  "title": "Console Tables"
+  "caption": "The Grumman F-14A Tomcat’s iconic role as an interceptor chasing down fleeing targets mirrors the aggressive pursuit implied by immigration officers shooting at vehicles.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
+  "source_name": "National Air and Space Museum",
+  "source_url": "http://n2t.net/ark:/65665/nv96b9a4063-fe3e-40ce-824c-08f6d789a5da",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
+  "title": "Model, Static, Grumman F-14A Tomcat"
  }
 }
