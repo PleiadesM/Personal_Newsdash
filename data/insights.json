@@ -1,16 +1,8 @@
 {
- "brief": "US immigration enforcement and military strikes on Iran dominate today's news, while AI research papers explore coding assistants and visualization tools.",
+ "brief": "Tensions escalate between US and Iran as new strikes are launched; domestic news includes Telstra outage, vet sector reforms, and Emmy surprises. AI research advances with world generation and prompt engineering tools.",
  "meta": {
-  "generated_at": "2026-07-08T21:22:18Z"
+  "generated_at": "2026-07-08T23:22:13Z"
  },
- "news_summary": "Federal agents' shootings and US strikes on Iran frame a tense day, with political fallout in Maine and ethical debates on organ donation.",
- "papers_summary": "New papers explore AI coding assistants, visualization frameworks, and brain-computer interfaces for speech decoding.",
- "todays_image": {
-  "caption": "The Grumman F-14A Tomcat’s iconic role as an interceptor chasing down fleeing targets mirrors the aggressive pursuit implied by immigration officers shooting at vehicles.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
-  "source_name": "National Air and Space Museum",
-  "source_url": "http://n2t.net/ark:/65665/nv96b9a4063-fe3e-40ce-824c-08f6d789a5da",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
-  "title": "Model, Static, Grumman F-14A Tomcat"
- }
+ "news_summary": "US military strikes Iran again as Trump threatens more; Telstra faces secondary outage affecting triple-zero calls; Emmys snub 'Amazing Race' while 'Love Island USA' host gets nod.",
+ "papers_summary": "New papers present AlayaWorld for long-horizon video world generation and Prompt Coach for teaching prompt engineering, alongside tools for visualizing weather models and Chinese paintings."
 }
