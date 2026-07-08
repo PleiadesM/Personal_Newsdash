@@ -37,7 +37,13 @@ def test_happy_path_extracts_first_cc0_row():
     assert image["source_url"] == "https://www.si.edu/object/chndm_1931-45-37"
     assert image["image_url"] == "https://ids.si.edu/ids/deliveryService?id=chndm_1931"
     assert "api_key=dg-test" in responses.calls[0].request.url
-    assert "q=automatons" in responses.calls[0].request.url
+    req_url = responses.calls[0].request.url
+    assert "q=automatons" in req_url
+    # Most Smithsonian records have no digitized media at all — the search
+    # must itself be narrowed to CC0 media-bearing records, not rely on
+    # media happening to appear in the first page of a bare keyword search.
+    assert "online_media_type%3AImages" in req_url
+    assert "media_usage%3ACC0" in req_url
 
 
 @responses.activate

@@ -47,8 +47,16 @@ def find_todays_image(image_query: str, env: Mapping[str, str],
     if not api_key or env.get("TODAYS_IMAGE_ENABLED") == "0" or not image_query:
         return None
     try:
+        # Most Smithsonian records have no digitized media at all, so a bare
+        # keyword search over just `rows` hits mostly comes back empty of
+        # media entirely — narrow the search itself to media-bearing CC0
+        # records (Lucene-style query filter, per the API's own docs) rather
+        # than gambling on media showing up in the first page of results.
+        # `_first_cc0_image` stays as a defensive re-check either way.
         resp = get(session, f"{API_BASE}search",
-                   params={"q": image_query, "rows": 10, "api_key": api_key})
+                   params={"q": f"{image_query} AND online_media_type:Images "
+                                 "AND media_usage:CC0",
+                           "rows": 10, "api_key": api_key})
         rows = (resp.json().get("response") or {}).get("rows") or []
         return _first_cc0_image(rows)
     except requests.HTTPError as exc:
