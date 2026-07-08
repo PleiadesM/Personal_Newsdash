@@ -50,6 +50,18 @@ def test_happy_path_extracts_first_cc0_row():
 
 
 @responses.activate
+def test_multiword_query_ors_the_individual_terms():
+    # A literal multi-word phrase (even a concrete one) rarely matches
+    # museum catalog metadata verbatim — OR the terms so a hit on any one
+    # of them is enough, instead of requiring the full phrase to co-occur.
+    responses.get(SEARCH_URL, body=(FIX / "search_response.json").read_text())
+    env = {"SMITHSONIAN_API_KEY": "dg-test"}
+    find_todays_image("clockwork automatons", env, make_session())
+    req_url = responses.calls[0].request.url
+    assert "q=%28clockwork+OR+automatons%29+AND+online_media_type%3AImages" in req_url
+
+
+@responses.activate
 def test_no_cc0_media_anywhere_returns_none(capsys):
     only_restricted = json.loads((FIX / "search_response.json").read_text())
     only_restricted["response"]["rows"] = [only_restricted["response"]["rows"][0]]

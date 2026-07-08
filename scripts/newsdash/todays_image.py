@@ -59,8 +59,17 @@ def find_todays_image(image_query: str, env: Mapping[str, str],
         # odds that at least one of the image-bearing rows happens to carry
         # a CC0 media entry. `_first_cc0_image` is the sole source of truth
         # for the actual CC0 check either way.
+        #
+        # OR the individual words of a multi-word image_query instead of
+        # requiring the literal phrase: seen live returning 0 total matches
+        # (not just 0 CC0) for a 3-word LLM-generated phrase like "stormy
+        # seas geopolitics" — museum catalog metadata is literal, not
+        # poetic, so requiring every word to co-occur is too strict even
+        # after summarize.py's prompt was tightened towards concrete nouns.
+        terms = image_query.split()
+        text_query = f"({' OR '.join(terms)})" if len(terms) > 1 else image_query
         resp = get(session, f"{API_BASE}search",
-                   params={"q": f"{image_query} AND online_media_type:Images",
+                   params={"q": f"{text_query} AND online_media_type:Images",
                            "rows": 100, "api_key": api_key})
         body = resp.json().get("response") or {}
         image = _first_cc0_image(body.get("rows") or [])

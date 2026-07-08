@@ -40,9 +40,13 @@ SYSTEM_PROMPT = (
     '{"brief": "1-3 sentences summarizing today across both news and '
     'papers", "news_summary": "1-2 sentences on the news items", '
     '"papers_summary": "1-2 sentences on the papers", "image_query": '
-    '"a short, loose, creative 2-4 word phrase for searching a public '
-    "domain art/photo archive for an image thematically connected to "
-    'today\'s content — favor evocative general themes over proper nouns"}'
+    '"1-2 concrete, literal nouns for searching a museum collection — a '
+    "physical object, tool, animal, place, or historical-era subject "
+    "that would plausibly appear in a real museum catalog title, loosely "
+    "connected to today's content. No metaphors, no abstract concepts, "
+    'no adjectives, no proper nouns — e.g. \'lighthouse\', \'compass '
+    "clock', 'steam locomotive' rather than 'stormy geopolitics' or "
+    '\'digital revolution\'"}'
 )
 
 
