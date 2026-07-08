@@ -1,8 +1,8 @@
 {
- "brief": "Geopolitical tensions and technology disruptions dominate today's news, from US-Iran strikes and a Telstra system failure in Australia to AI's impact on work and cognition. Research papers explore AI in gaming, education, and weather forecasting, highlighting innovation and caution.",
+ "brief": "Geopolitical tensions escalate with US-Iran strikes in the Gulf, while UK political scandals and AI security concerns dominate headlines. Research highlights advances in AI-assisted game worlds and prompt engineering.",
  "meta": {
-  "generated_at": "2026-07-08T06:57:47Z"
+  "generated_at": "2026-07-08T07:13:18Z"
  },
- "news_summary": "Escalating US-Iran strikes in the Strait of Hormuz raise oil prices and shipping risks, while a Telstra outage in Australia exposes infrastructure vulnerabilities. AI automation concerns emerge as dock workers demand shorter hours, and a report warns that instant AI answers may reduce critical thinking.",
- "papers_summary": "New papers present AlayaWorld for generating playable game worlds, a prompt-coach AI for teaching prompt engineering, and GeoXplain for interactive weather model explanations, alongside studies on perceived system predictability and AI agents in open-source software."
+ "news_summary": "Oil prices jump after renewed Gulf strikes risk shipping; Farage faces money laundering questions; hackers exploit AI tools to form botnets.",
+ "papers_summary": "New papers introduce AlayaWorld for long-horizon video game generation and Prompt Coach for teaching prompt engineering, alongside visualization frameworks for Chinese painting and weather models."
 }
