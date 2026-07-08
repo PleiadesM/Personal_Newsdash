@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T07:20:43Z",
+ "generated_at": "2026-07-08T10:30:12Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -106,7 +106,7 @@
   },
   {
    "category": "open",
-   "count": 29,
+   "count": 24,
    "error": null,
    "id": "bbc_world",
    "name": "BBC World",
@@ -139,7 +139,7 @@
   },
   {
    "category": "open",
-   "count": 22,
+   "count": 21,
    "error": null,
    "id": "nyt_homepage",
    "name": "The New York Times",
