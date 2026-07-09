@@ -1,28 +1,28 @@
 {
- "brief": "Tensions escalate as US and Iran exchange strikes near a nuclear plant, while Ukraine intensifies attacks on Russian ships near Crimea. A factory fire in China kills 28, and research on visualization and AI for sign language and cultural heritage is highlighted.",
+ "brief": "Today's news features breakthroughs in biomimetic robotics, escalating Middle East tensions, and AI's role in deepfake abuse, while research papers explore visualization incentives, brain-computer interfaces, and sign language recognition.",
  "meta": {
-  "generated_at": "2026-07-09T15:32:22Z"
+  "generated_at": "2026-07-09T18:07:20Z"
  },
- "news_summary": "US-Iran strikes near Bushehr nuclear plant and steep fall in Hormuz ship crossings mark heightened Middle East tensions; Ukraine hits Russian ships near Crimea. A factory fire in China's 'shoe capital' kills 28, and a former Olympian pleads not guilty in Washington reflecting pool vandalism case.",
- "papers_summary": "New HCI research explores performance-based incentives in visualization, clinical translation of brain-computer interfaces in China, and a smart glove for sign language recognition. Two papers focus on computational analysis of traditional Chinese paintings.",
+ "news_summary": "A robot inspired by diving birds can swim and fly, and a class action lawsuit against AI makers expands over deepfake child sexual abuse material. The US launches airstrikes against Iran, and Maine faces political turmoil as a Senate candidate's withdrawal deadline looms.",
+ "papers_summary": "Research on performance-based incentives in visualization experiments and a landscape analysis of brain-computer interface trials in China highlight human-computer interaction advances. A multimodal smart glove for sign language recognition using deep learning is also presented.",
  "summaries": {
   "en": {
-   "brief": "Tensions escalate as US and Iran exchange strikes near a nuclear plant, while Ukraine intensifies attacks on Russian ships near Crimea. A factory fire in China kills 28, and research on visualization and AI for sign language and cultural heritage is highlighted.",
-   "news_summary": "US-Iran strikes near Bushehr nuclear plant and steep fall in Hormuz ship crossings mark heightened Middle East tensions; Ukraine hits Russian ships near Crimea. A factory fire in China's 'shoe capital' kills 28, and a former Olympian pleads not guilty in Washington reflecting pool vandalism case.",
-   "papers_summary": "New HCI research explores performance-based incentives in visualization, clinical translation of brain-computer interfaces in China, and a smart glove for sign language recognition. Two papers focus on computational analysis of traditional Chinese paintings."
+   "brief": "Today's news features breakthroughs in biomimetic robotics, escalating Middle East tensions, and AI's role in deepfake abuse, while research papers explore visualization incentives, brain-computer interfaces, and sign language recognition.",
+   "news_summary": "A robot inspired by diving birds can swim and fly, and a class action lawsuit against AI makers expands over deepfake child sexual abuse material. The US launches airstrikes against Iran, and Maine faces political turmoil as a Senate candidate's withdrawal deadline looms.",
+   "papers_summary": "Research on performance-based incentives in visualization experiments and a landscape analysis of brain-computer interface trials in China highlight human-computer interaction advances. A multimodal smart glove for sign language recognition using deep learning is also presented."
   },
   "zh": {
-   "brief": "广西洪灾、澳门国安法首案、台湾毒油事件占据头条，同时德国华人性侵案引发跨境犯罪讨论。学术方面，脑机接口和中国画分析研究有进展。",
-   "news_summary": "广西洪灾预警失效致民众措手不及；澳门前议员欧锦新被诉颠覆罪面临25年徒刑；德国Telegram群组涉跨國迷姦案；台湾毒油因抽验漏洞扩散全台。",
-   "papers_summary": "脑机接口在中国的临床试验转化研究，以及基于构图图分析的中国传统绘画可视分析系统，是今日论文亮点。"
+   "brief": "今日中文新闻聚焦中国异见者董广平偷渡韩国、广西洪灾、澳门国安法首案起诉、德国华人性侵案跨国网络、台湾毒油事件及英国大选热门候选人对华政策等。无重要论文发表。",
+   "news_summary": "BBC中文报道多起涉及中国社会与政治事件：异见者董广平成功偷渡韩国后赴加拿大；广西洪灾预警失效致民众措手不及；澳门前议员欧锦新被控颠覆罪面临25年刑期；德国华人Telegram群组涉及跨国迷奸案；台湾毒油流入超商暴露监管漏洞；英国首相候选人贝安德的对华政策引发关注。",
+   "papers_summary": "今日无中文优先论文，英文论文涉及可视化实验激励、脑机接口临床试验、传统中国画构图分析等。"
   }
  },
  "todays_image": {
-  "caption": "Lobophora sp.'s drifting, fragile form mirrors the fleeting truce now \"over\" as Iran reports a US attack near a nuclear plant.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "While Robonaut 1A was built for the void of space, today's robot defies gravity and buoyancy alike, proving that machines can now conquer any frontier.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2025-00372",
+  "source_name": "National Air and Space Museum",
+  "source_url": "http://n2t.net/ark:/65665/nv9971fdc5a-43bf-46ca-9b7a-bd8680991e22",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2025-00372",
+  "title": "Robonaut 1A"
  }
 }
