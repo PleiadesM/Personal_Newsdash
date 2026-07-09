@@ -1,24 +1,24 @@
 {
- "brief": "Today's news features major outages in Australia affecting emergency calls, the collapse of Graham Platner's Senate campaign, and intensified US strikes on Iran, while research papers explore AI-driven tools for programming education, brain-computer interfaces, and analysis of traditional Chinese paintings.",
+ "brief": "US strikes on Iran escalate, while Telstra outages disrupt emergency calls in Australia; and a Senate candidate withdraws amid rape allegations. Meanwhile, research explores performance incentives in visualization and clinical translation of brain-computer interfaces.",
  "meta": {
-  "generated_at": "2026-07-09T04:55:06Z"
+  "generated_at": "2026-07-09T05:23:39Z"
  },
- "news_summary": "Telstra's network failure disrupted triple-zero calls across Australia; Graham Platner suspended his Senate bid after sexual assault allegations; US launched a second day of strikes on Iran, with Trump declaring the ceasefire 'over'.",
- "papers_summary": "Studies on performance-based incentives in visualization, sign language recognition gloves, and AI-mediated privacy redaction were published, alongside new frameworks for analyzing traditional Chinese paintings.",
+ "news_summary": "The US launched further strikes on Iran after Trump threatened retaliation for attacks on tankers, while in Australia, Telstra network failures affected triple-zero calls and Graham Platner suspended his Senate campaign in Maine following a rape accusation.",
+ "papers_summary": "New studies examine the impact of performance-based incentives in visualization experiments and the clinical translation of brain-computer interfaces in China, alongside advances in sign language recognition and AI-driven programming education.",
  "summaries": {
   "en": {
-   "brief": "Today's news features major outages in Australia affecting emergency calls, the collapse of Graham Platner's Senate campaign, and intensified US strikes on Iran, while research papers explore AI-driven tools for programming education, brain-computer interfaces, and analysis of traditional Chinese paintings.",
-   "news_summary": "Telstra's network failure disrupted triple-zero calls across Australia; Graham Platner suspended his Senate bid after sexual assault allegations; US launched a second day of strikes on Iran, with Trump declaring the ceasefire 'over'.",
-   "papers_summary": "Studies on performance-based incentives in visualization, sign language recognition gloves, and AI-mediated privacy redaction were published, alongside new frameworks for analyzing traditional Chinese paintings."
+   "brief": "US strikes on Iran escalate, while Telstra outages disrupt emergency calls in Australia; and a Senate candidate withdraws amid rape allegations. Meanwhile, research explores performance incentives in visualization and clinical translation of brain-computer interfaces.",
+   "news_summary": "The US launched further strikes on Iran after Trump threatened retaliation for attacks on tankers, while in Australia, Telstra network failures affected triple-zero calls and Graham Platner suspended his Senate campaign in Maine following a rape accusation.",
+   "papers_summary": "New studies examine the impact of performance-based incentives in visualization experiments and the clinical translation of brain-computer interfaces in China, alongside advances in sign language recognition and AI-driven programming education."
   },
   "zh": {
-   "brief": "美伊衝突升級，特朗普叫停停火協議並發動新一輪空襲；中國網紅陳土豆在台灣爆紅引發統戰爭議；北京實施信訪新規減少進京上訪者。",
-   "news_summary": "美伊徹夜交火，特朗普稱停火協議「完了」，並對伊朗發動第二天空襲；中國搞笑網紅陳土豆在台灣受歡迎但被質疑統戰；中國新規要求信訪人員赴京前需經省級機關批准，學者指其目的在減少進京上訪者。",
-   "papers_summary": "arXiv論文探討腦機介面在中國的臨床轉譯、手語識別智慧手套及數位碎片化與生成式AI使用分析，展示跨領域人機互動研究進展。"
+   "brief": "今日重点：英首相热门人选贝安德的对华政策引关注，中国网红陈土豆在台引发统战争议，美伊冲突升级特朗普称停火协议破裂。同时，多篇HCI论文探讨可视化激励、数字鸿沟等主题。",
+   "news_summary": "英国大选热门贝安德的中国政策引热议；中国网红陈土豆在台湾走红但遭质疑；美国对伊朗发动新一轮打击，特朗普称停火协议已结束。",
+   "papers_summary": "arXiv多篇论文研究可视化实验中的绩效激励、中国脑机接口临床试验、传统国画构图分析等HCI领域前沿课题。"
   }
  },
  "todays_image": {
-  "caption": "The drifting Lobophora sp. seaweed, adapting to unseen currents, mirrors the uncertain course of UK-China relations should 貝安德 enter Downing Street.",
+  "caption": "The algae's lobed, branching fronds recall the fracturing of a region under repeated aerial strikes.",
   "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
   "source_name": "NMNH - Botany Dept.",
   "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
