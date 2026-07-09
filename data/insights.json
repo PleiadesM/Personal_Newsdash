@@ -1,28 +1,28 @@
 {
- "brief": "OpenAI launches agentic tool for autonomous workflows; US strikes Iran as El Niño risks rise; papers explore visualization incentives, AI tutoring, and brain-computer interfaces.",
+ "brief": "Fidji Simo departs OpenAI's AGI role amid escalating US-Iran airstrikes, while new research explores performance incentives in visualization and brain-computer interfaces.",
  "meta": {
-  "generated_at": "2026-07-09T21:42:10Z"
+  "generated_at": "2026-07-09T23:35:22Z"
  },
- "news_summary": "OpenAI rebrands Codex for independent workflows; US and Iran exchange strikes after explosions in southern Iran; Volkswagen cuts production as China sales plunge; El Niño risk of persisting through spring 2027 rises.",
- "papers_summary": "Research examines performance-based incentives in visualization experiments, AI-powered programming environments for creative computing, and clinical translation of brain-computer interfaces in China.",
+ "news_summary": "Fidji Simo steps down from OpenAI AGI role due to illness; US and Iran trade airstrikes; new evidence in Charlie Kirk murder case; multiple international stories on politics, health, and entertainment.",
+ "papers_summary": "Papers investigate performance-based incentives in visualization experiments, clinical translation of brain-computer interfaces in China, sign language recognition with smart gloves, and compositional analysis of traditional Chinese paintings.",
  "summaries": {
   "en": {
-   "brief": "OpenAI launches agentic tool for autonomous workflows; US strikes Iran as El Niño risks rise; papers explore visualization incentives, AI tutoring, and brain-computer interfaces.",
-   "news_summary": "OpenAI rebrands Codex for independent workflows; US and Iran exchange strikes after explosions in southern Iran; Volkswagen cuts production as China sales plunge; El Niño risk of persisting through spring 2027 rises.",
-   "papers_summary": "Research examines performance-based incentives in visualization experiments, AI-powered programming environments for creative computing, and clinical translation of brain-computer interfaces in China."
+   "brief": "Fidji Simo departs OpenAI's AGI role amid escalating US-Iran airstrikes, while new research explores performance incentives in visualization and brain-computer interfaces.",
+   "news_summary": "Fidji Simo steps down from OpenAI AGI role due to illness; US and Iran trade airstrikes; new evidence in Charlie Kirk murder case; multiple international stories on politics, health, and entertainment.",
+   "papers_summary": "Papers investigate performance-based incentives in visualization experiments, clinical translation of brain-computer interfaces in China, sign language recognition with smart gloves, and compositional analysis of traditional Chinese paintings."
   },
   "zh": {
-   "brief": "英國工黨啟動黨魁選舉，貝安德有望接任首相；中國異見者董廣平成功偷渡韓國引關注；廣西洪災預警失靈；澳門國安法首案起訴顛覆罪；德國華人性侵案審判；台灣毒油事件暴露食安漏洞。",
-   "news_summary": "英國工黨正式提名新黨魁，貝安德被視為熱門人選；中國異見者董廣平歷經40小時偷渡至韓國獲難民身份；廣西洪災預警體系失效引發質疑；澳門前議員歐錦新被控顛覆罪；德國Telegram群組涉跨國迷姦案；台灣致癌沙拉油流入市面，通報延誤逾50天。",
-   "papers_summary": "視覺化與人機互動領域多項研究探討行為激勵、腦機介面臨床轉譯、中國傳統繪畫分析、手語識別手套、AI輔助程式設計環境及數位碎片化等主題。"
+   "brief": "今日重點：英國工黨啟動新黨魁選舉，貝安德有望接任；美國與伊朗互相發動空襲，局勢升溫；中國異見者董廣平偷渡韓國成功，稱「怕死只有死路一條」；廣西洪災暴露預警漏洞；研究方面，腦機介面在中國的臨床轉譯及傳統國畫視覺化分析有新進展。",
+   "news_summary": "英國工黨開始提名新黨魁，貝安德被視為熱門人選；美國對伊朗發動新一輪空襲，伊朗反擊科威特和卡塔爾，中東緊張加劇。中國異見者董廣平成功偷渡韓國並獲加拿大庇護，廣西洪災因預警滯後導致損失，澳門國安法首案起訴歐錦新涉顛覆罪。",
+   "papers_summary": "一篇論文調查了中國腦機介面臨床試驗與監管現狀，另一篇提出基於構圖圖的視覺分析系統用於傳統國畫分析。"
   }
  },
  "todays_image": {
-  "caption": "A static model of a fighter jet parallels Qantas's punctuality, both in contrast to the unpredictable nature of Hanson's UK fact-finding.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
-  "source_name": "National Air and Space Museum",
-  "source_url": "http://n2t.net/ark:/65665/nv96b9a4063-fe3e-40ce-824c-08f6d789a5da",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
-  "title": "Model, Static, Grumman F-14A Tomcat"
+  "caption": "The polka dot dress's uniform pattern of dots echoes the steady rhythm of AGI research, now missing a crucial dot as Fidji Simo steps away due to illness.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1969.148_1",
+  "source_name": "Smithsonian American Art Museum",
+  "source_url": "https://americanart.si.edu/collections/search/artwork/?id=15249",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1969.148_1",
+  "title": "The Polka Dot Dress"
  }
 }
