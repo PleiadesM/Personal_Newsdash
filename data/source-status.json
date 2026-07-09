@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-09T20:02:35Z",
+ "generated_at": "2026-07-09T21:42:10Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -103,7 +103,7 @@
   },
   {
    "category": "open",
-   "count": 3,
+   "count": 5,
    "error": null,
    "full_text_count": 0,
    "id": "hn_frontpage_ai",
@@ -115,7 +115,7 @@
   },
   {
    "category": "open",
-   "count": 30,
+   "count": 24,
    "error": null,
    "full_text_count": 0,
    "id": "bbc_world",
@@ -151,7 +151,7 @@
   },
   {
    "category": "open",
-   "count": 19,
+   "count": 17,
    "error": null,
    "full_text_count": 0,
    "id": "nyt_homepage",

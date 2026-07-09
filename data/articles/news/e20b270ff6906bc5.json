@@ -1,0 +1,31 @@
+{
+ "full_text": "OpenAI is already shutting down ChatGPT Atlas, its browser that could do tasks for you on your behalf, less than a year after launching it. Atlas was announced in October , but as part of its wave of news about ChatGPT Work today , the company confirmed that it will be \"sunsetting\" Atlas and is targeting an August 9th date for deprecation. In recent months, OpenAI has also shut down the video generation app Sora and paused plans for a ChatGPT \"adult mode\" as it works to reduce \"side quests\" and catch up with Anthropic on productivity features . In a thread about the ChatGPT Work announcements, which includes an updated browser in the desktop … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/e20b270ff6906bc5.json",
+  "id": "e20b270ff6906bc5",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-09T20:34:05Z",
+  "score": 0.7619,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "OpenAI is already shutting down ChatGPT Atlas, its browser that could do tasks for you on your behalf, less than a year after launching it. Atlas was announced in October, but as part of its wave of news about ChatGPT Work today, the company confirmed that it will be \"sunsetting\" Atlas and is…",
+  "tags": [
+   "model-release",
+   "llm"
+  ],
+  "title": "The ChatGPT browser is already dead",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset"
+ },
+ "meta": {
+  "generated_at": "2026-07-09T21:42:10Z",
+  "item_id": "e20b270ff6906bc5",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

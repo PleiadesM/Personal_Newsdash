@@ -1,28 +1,28 @@
 {
- "brief": "Graham Platner's Senate campaign implodes amid disarray, OpenAI releases GPT-5.6, and Wally Funk passes away. Research highlights include performance-based incentives in visualization and multimodal sign language recognition.",
+ "brief": "OpenAI launches agentic tool for autonomous workflows; US strikes Iran as El Niño risks rise; papers explore visualization incentives, AI tutoring, and brain-computer interfaces.",
  "meta": {
-  "generated_at": "2026-07-09T20:02:35Z"
+  "generated_at": "2026-07-09T21:42:10Z"
  },
- "news_summary": "Graham Platner's Maine Senate campaign suspends amid internal chaos; Maine says no official withdrawal yet. OpenAI releases GPT-5.6 model lineup. Wally Funk, who set an age record for space travel, dies at 87. EPA proposes weakening heavy-duty truck pollution rules.",
- "papers_summary": "Papers explore performance-based incentives in visualization experiments, clinical translation of brain-computer interfaces in China, and a smart glove for sign language recognition using deep learning. Compositional analysis of traditional Chinese paintings via a visual analytics system is also presented.",
+ "news_summary": "OpenAI rebrands Codex for independent workflows; US and Iran exchange strikes after explosions in southern Iran; Volkswagen cuts production as China sales plunge; El Niño risk of persisting through spring 2027 rises.",
+ "papers_summary": "Research examines performance-based incentives in visualization experiments, AI-powered programming environments for creative computing, and clinical translation of brain-computer interfaces in China.",
  "summaries": {
   "en": {
-   "brief": "Graham Platner's Senate campaign implodes amid disarray, OpenAI releases GPT-5.6, and Wally Funk passes away. Research highlights include performance-based incentives in visualization and multimodal sign language recognition.",
-   "news_summary": "Graham Platner's Maine Senate campaign suspends amid internal chaos; Maine says no official withdrawal yet. OpenAI releases GPT-5.6 model lineup. Wally Funk, who set an age record for space travel, dies at 87. EPA proposes weakening heavy-duty truck pollution rules.",
-   "papers_summary": "Papers explore performance-based incentives in visualization experiments, clinical translation of brain-computer interfaces in China, and a smart glove for sign language recognition using deep learning. Compositional analysis of traditional Chinese paintings via a visual analytics system is also presented."
+   "brief": "OpenAI launches agentic tool for autonomous workflows; US strikes Iran as El Niño risks rise; papers explore visualization incentives, AI tutoring, and brain-computer interfaces.",
+   "news_summary": "OpenAI rebrands Codex for independent workflows; US and Iran exchange strikes after explosions in southern Iran; Volkswagen cuts production as China sales plunge; El Niño risk of persisting through spring 2027 rises.",
+   "papers_summary": "Research examines performance-based incentives in visualization experiments, AI-powered programming environments for creative computing, and clinical translation of brain-computer interfaces in China."
   },
   "zh": {
-   "brief": "英国工党启动新党魁选举，贝安德成热门人选；中国异见者董广平偷渡韩国成功；广西洪灾预警失效引发质疑；澳门国安法首案起诉颠覆罪。",
-   "news_summary": "英国工党议员开始提名新党魁接替施纪贤，贝安德被视为下任首相热门；中国异见者董广平自述偷渡韩国经历；广西洪灾预警系统失灵致民众措手不及；澳门前议员欧锦新被控颠覆国家政权罪。",
-   "papers_summary": "今日无优先中文论文，英文论文涉及可视化、脑机接口、手语识别等AI相关研究。"
+   "brief": "英國工黨啟動黨魁選舉，貝安德有望接任首相；中國異見者董廣平成功偷渡韓國引關注；廣西洪災預警失靈；澳門國安法首案起訴顛覆罪；德國華人性侵案審判；台灣毒油事件暴露食安漏洞。",
+   "news_summary": "英國工黨正式提名新黨魁，貝安德被視為熱門人選；中國異見者董廣平歷經40小時偷渡至韓國獲難民身份；廣西洪災預警體系失效引發質疑；澳門前議員歐錦新被控顛覆罪；德國Telegram群組涉跨國迷姦案；台灣致癌沙拉油流入市面，通報延誤逾50天。",
+   "papers_summary": "視覺化與人機互動領域多項研究探討行為激勵、腦機介面臨床轉譯、中國傳統繪畫分析、手語識別手套、AI輔助程式設計環境及數位碎片化等主題。"
   }
  },
  "todays_image": {
-  "caption": "Both the vintage ballot box and the Maine fiasco reflect how the mechanisms of democracy can be bent or broken by the personalities they were meant to contain.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00282-000001",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00282-000001&max=150",
-  "title": "Ballot box, mid-20th century"
+  "caption": "A static model of a fighter jet parallels Qantas's punctuality, both in contrast to the unpredictable nature of Hanson's UK fact-finding.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
+  "source_name": "National Air and Space Museum",
+  "source_url": "http://n2t.net/ark:/65665/nv96b9a4063-fe3e-40ce-824c-08f6d789a5da",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2011-02390",
+  "title": "Model, Static, Grumman F-14A Tomcat"
  }
 }

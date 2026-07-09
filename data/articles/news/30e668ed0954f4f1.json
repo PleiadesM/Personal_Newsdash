@@ -1,0 +1,28 @@
+{
+ "full_text": "Last year, when we tested out the \"Agent Mode\" in OpenAI's Atlas web browser , we complained that any automated tasks tended to stop after a few minutes, limiting its usefulness for ongoing or complex tasks. With today's release of ChatGPT Work , OpenAI says it has solved that problem with a new tool that can \"stay with a project for hours if needed, and turn a goal into finished work.\" The company is challenging users to evaluate ChatGPT Work by \"giv[ing] it a task you already know well,\" such as analyzing a budget or preparing a sales meeting. The company also promises that ChatGPT Work can automate entire workflows, going from customer research to a campaign brief to locally tailored marketing assets, for instance. At the same time, the company stresses that the tool will wait for you to \"approve important actions.\" ChatGPT Work also integrates Scheduled Tasks, a souped-up version of cron jobs that can \"take repetitive tasks off your plate\" on a schedule or whenever a monitored event occurs. These tasks can keep going when you're away from your desk and can be monitored from your phone, the company says. Read full article Comments",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/30e668ed0954f4f1.json",
+  "id": "30e668ed0954f4f1",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-09T21:25:55Z",
+  "score": 0.7924,
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai",
+  "summary": "Rebranded Codex promises independent workflows that can run \"for hours if needed.\"",
+  "tags": [],
+  "title": "OpenAI wants its new tool to do your work for you and with you",
+  "url": "https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you/"
+ },
+ "meta": {
+  "generated_at": "2026-07-09T21:42:10Z",
+  "item_id": "30e668ed0954f4f1",
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai"
+ }
+}
