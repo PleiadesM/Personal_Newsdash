@@ -307,8 +307,9 @@ rights-uncertain results are never surfaced.
 first sees only `news`/`papers` titles and short summaries and proposes
 benign off-profile search terms. The pipeline then searches public news via
 the GDELT DOC API (`mode=artlist`, `format=json`, one week), and the LLM
-writes a short bilingual card for one sourced result. No visitor browser ever
-contacts GDELT or the LLM endpoint for this block.
+writes a short bilingual card for one sourced result. If GDELT is rate-limited
+or no sourced result is available, the field is omitted for that build. No
+visitor browser ever contacts GDELT or the LLM endpoint for this block.
 
 ## Privacy invariants (frontend must uphold)
 

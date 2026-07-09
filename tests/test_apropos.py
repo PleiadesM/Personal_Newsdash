@@ -111,3 +111,18 @@ def test_happy_path_searches_public_news_and_returns_card_payload():
     assert json.loads(responses.calls[0].request.body)["response_format"] == {
         "type": "json_object",
     }
+
+
+@responses.activate
+def test_gdelt_429_is_best_effort_skip(capsys):
+    responses.post(CHAT_URL, json=query_completion())
+    responses.get(GDELT_DOC_URL, status=429)
+
+    env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
+    result = find_apropos_of_nothing(make_payloads(), env, make_session())
+
+    assert result is None
+    assert len(responses.calls) == 2
+    out = capsys.readouterr().out
+    assert "GDELT rate-limited (429)" in out
+    assert "[apropos-of-nothing:search] error" not in out

@@ -23,6 +23,7 @@ GDELT_DOC_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
 MAX_CONTEXT_NEWS = 18
 MAX_CONTEXT_PAPERS = 8
 MAX_GDELT_RESULTS = 8
+GDELT_SOFT_FAIL_STATUSES = {429}
 QUERY_KEYS = ("topic", "search_terms", "why_irrelevant")
 SUMMARY_LANGS = ("en", "zh")
 
@@ -212,6 +213,14 @@ def _search_gdelt(terms: list[str], session: requests.Session) -> tuple[str, lis
     try:
         doc = get(session, GDELT_DOC_URL, params=params).json()
         return query, _normalize_articles(doc)
+    except requests.HTTPError as exc:
+        status = exc.response.status_code if exc.response is not None else None
+        if status in GDELT_SOFT_FAIL_STATUSES:
+            print("[apropos-of-nothing:search] skipped: GDELT rate-limited "
+                  f"({status}); will try again next build")
+            return query, []
+        print(f"[apropos-of-nothing:search] error: HTTPError: {str(exc)[:200]}")
+        return query, []
     except Exception as exc:  # noqa: BLE001 - optional enrichment
         print(f"[apropos-of-nothing:search] error: {type(exc).__name__}: "
               f"{str(exc)[:200]}")

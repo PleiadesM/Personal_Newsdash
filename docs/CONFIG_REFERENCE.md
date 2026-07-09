@@ -150,6 +150,9 @@ Hard guarantees:
 - Apropos-of-Nothing sends only news/papers titles and short summaries to the
   configured LLM, then searches public news through GDELT; visitor browsers
   never contact either service for that card.
+- A GDELT rate limit or empty public-news result just omits the
+  Apropos-of-Nothing card for that build; it does not fail or degrade the
+  dashboard.
 - Generates English and Chinese summaries separately. Each summary sees both
   English and Chinese inputs, but prioritizes the active target language.
 - **Never** during `--smoke` (no network calls at all), regardless of which
