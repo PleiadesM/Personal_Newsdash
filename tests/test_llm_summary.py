@@ -1,12 +1,10 @@
 import json
-from pathlib import Path
 
 import responses
 
 from newsdash.http import make_session
 from newsdash.summarize import summarize
 
-FIX = Path(__file__).parent / "fixtures" / "llm"
 CHAT_URL = "https://api.openai.com/v1/chat/completions"
 
 
@@ -17,12 +15,39 @@ def make_payloads(news=None, papers=None):
     }
 
 
-def news_item(i, score=0.5):
-    return {"title": f"Story {i}", "summary": "…", "source": "S", "score": score}
+def completion(**overrides):
+    payload = {
+        "brief": "English brief",
+        "news_summary": "English news",
+        "papers_summary": "English papers",
+        "image_query": "clockwork automatons",
+    }
+    payload.update(overrides)
+    return {"choices": [{"message": {"content": json.dumps(payload)}}]}
 
 
-def paper_item(i, score=0.5):
-    return {"title": f"Paper {i}", "summary": "…", "source": "S", "score": score}
+def mock_summary_responses(en=None, zh=None):
+    responses.post(CHAT_URL, json=completion(**(en or {})))
+    responses.post(CHAT_URL, json=completion(**(zh or {
+        "brief": "中文简报",
+        "news_summary": "中文新闻",
+        "papers_summary": "中文论文",
+        "image_query": "compass clock",
+    })))
+
+
+def news_item(i, score=0.5, lang="en"):
+    return {
+        "title": f"Story {i}", "summary": "...", "source": "S",
+        "score": score, "lang": lang,
+    }
+
+
+def paper_item(i, score=0.5, lang="en"):
+    return {
+        "title": f"Paper {i}", "summary": "...", "source": "S",
+        "score": score, "lang": lang,
+    }
 
 
 def test_no_api_key_makes_no_call():
@@ -45,15 +70,29 @@ def test_empty_items_skips_without_call():
 
 
 @responses.activate
-def test_happy_path_returns_all_four_keys():
-    responses.post(CHAT_URL, body=(FIX / "chat_completion.json").read_text())
+def test_happy_path_returns_bilingual_summaries():
+    mock_summary_responses()
     payloads = make_payloads(
-        news=[news_item(i) for i in range(30)],
-        papers=[paper_item(i) for i in range(15)],
+        news=[news_item(i) for i in range(30)] + [news_item("中文", lang="zh")],
+        papers=[paper_item(i) for i in range(15)] + [paper_item("中文", lang="zh")],
     )
     env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
     result = summarize(payloads, env, make_session())
-    assert result.keys() == {"brief", "news_summary", "papers_summary", "image_query"}
+    assert result.keys() == {
+        "summaries", "brief", "news_summary", "papers_summary", "image_query",
+    }
+    assert result["summaries"]["en"] == {
+        "brief": "English brief",
+        "news_summary": "English news",
+        "papers_summary": "English papers",
+    }
+    assert result["summaries"]["zh"] == {
+        "brief": "中文简报",
+        "news_summary": "中文新闻",
+        "papers_summary": "中文论文",
+    }
+    # top-level fields remain as an English/default compatibility fallback
+    assert result["brief"] == "English brief"
     assert result["image_query"] == "clockwork automatons"
 
     req = responses.calls[0].request
@@ -65,6 +104,13 @@ def test_happy_path_returns_all_four_keys():
     prompt = body["messages"][1]["content"]
     assert "Story 19" in prompt and "Story 20" not in prompt
     assert "Paper 9" in prompt and "Paper 10" not in prompt
+    assert "Priority English news" in prompt
+    assert "Story 中文" in prompt
+
+    zh_body = json.loads(responses.calls[1].request.body)
+    assert "Simplified Chinese edition" in zh_body["messages"][0]["content"]
+    assert "Priority Simplified Chinese news" in zh_body["messages"][1]["content"]
+    assert "Context from English news" in zh_body["messages"][1]["content"]
 
 
 @responses.activate
@@ -76,15 +122,22 @@ def test_markdown_fenced_json_is_unwrapped():
         "image_query": "q",
     }) + "\n```"
     responses.post(CHAT_URL, json={"choices": [{"message": {"content": fenced}}]})
+    responses.post(CHAT_URL, json={"choices": [{"message": {"content": fenced}}]})
     payloads = make_payloads(news=[news_item(1)])
     env = {"LLM_API_KEY": "sk-test"}
     result = summarize(payloads, env, make_session())
-    assert result == {"brief": "b", "news_summary": "n", "papers_summary": "p",
-                       "image_query": "q"}
+    assert result["summaries"] == {
+        "en": {"brief": "b", "news_summary": "n", "papers_summary": "p"},
+        "zh": {"brief": "b", "news_summary": "n", "papers_summary": "p"},
+    }
+    assert result["image_query"] == "q"
 
 
 @responses.activate
 def test_malformed_json_content_returns_none():
+    responses.post(CHAT_URL, json={
+        "choices": [{"message": {"content": "not json at all"}}],
+    })
     responses.post(CHAT_URL, json={
         "choices": [{"message": {"content": "not json at all"}}],
     })
@@ -95,6 +148,9 @@ def test_malformed_json_content_returns_none():
 
 @responses.activate
 def test_missing_key_in_json_returns_none():
+    responses.post(CHAT_URL, json={
+        "choices": [{"message": {"content": json.dumps({"brief": "x"})}}],
+    })
     responses.post(CHAT_URL, json={
         "choices": [{"message": {"content": json.dumps({"brief": "x"})}}],
     })
@@ -112,6 +168,9 @@ def test_empty_completion_content_returns_none(capsys):
     responses.post(CHAT_URL, json={
         "choices": [{"message": {"content": ""}, "finish_reason": "length"}],
     })
+    responses.post(CHAT_URL, json={
+        "choices": [{"message": {"content": ""}, "finish_reason": "length"}],
+    })
     payloads = make_payloads(news=[news_item(1)])
     env = {"LLM_API_KEY": "sk-test"}
     assert summarize(payloads, env, make_session()) is None
@@ -121,6 +180,7 @@ def test_empty_completion_content_returns_none(capsys):
 
 @responses.activate
 def test_http_error_returns_none():
+    responses.post(CHAT_URL, status=500)
     responses.post(CHAT_URL, status=500)
     payloads = make_payloads(news=[news_item(1)])
     env = {"LLM_API_KEY": "sk-test"}
@@ -134,7 +194,7 @@ def test_empty_string_base_url_falls_back_to_default():
     # env.get(key, default) would NOT catch this (the key exists), only
     # `or default` does. Regression test for exactly that failure mode
     # (surfaced in production as requests.exceptions.MissingSchema).
-    responses.post(CHAT_URL, body=(FIX / "chat_completion.json").read_text())
+    mock_summary_responses()
     payloads = make_payloads(news=[news_item(1)])
     env = {"LLM_API_KEY": "sk-test", "LLM_BASE_URL": "", "LLM_MODEL": ""}
     result = summarize(payloads, env, make_session())

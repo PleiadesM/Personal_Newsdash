@@ -3,6 +3,7 @@
 // through textContent, never as HTML.
 
 import { renderAnnotationsIn } from "../annotate.js";
+import { itemMatchesContentLang } from "../content_lang.js";
 import { loadArticle } from "../data.js";
 import { clear, el, safeHref } from "../dom.js";
 import { fmtDateTime, fmtRelative, t } from "../i18n.js";
@@ -14,7 +15,8 @@ function itemFor(sectionId, itemId) {
   if (!section) return { status: "missing", item: null };
   if (section.status === "locked") return { status: "locked", item: null };
   if (section.status !== "ok") return { status: "error", item: null };
-  const item = (section.payload?.items || []).find((candidate) => candidate.id === itemId);
+  const item = (section.payload?.items || [])
+    .find((candidate) => candidate.id === itemId && itemMatchesContentLang(candidate));
   return item ? { status: "ok", item } : { status: "missing", item: null };
 }
 

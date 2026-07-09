@@ -145,8 +145,10 @@ The `following` section (scholars/labs tracking) is `kind: "papers"` and
 uses this same payload shape; the frontend groups it by source by default.
 
 `item.lang` is `"zh"` or `"en"`: forced by the source's config `lang` when
-declared, else detected per item. The frontend's 中文/English filter and the
-overview strip's language split key off it.
+declared, else detected per item. The frontend treats the active UI language
+as the content language for `news`, `papers`, `following`, Today feed blocks,
+and the full-text reader: English mode renders only `lang: "en"` items;
+Chinese mode renders only `lang: "zh"` items.
 
 RSS/Atom entries that include substantial embedded full content (for example
 Atom `content` or RSS `content:encoded`) additionally carry
@@ -243,9 +245,21 @@ other section.
 ```jsonc
 {
   "meta": { "generated_at": "…Z" },       // omitted inside the encrypted envelope's plaintext; see below
-  "brief": "1-3 sentences across news + papers",
-  "news_summary": "1-2 sentences on today's news",
-  "papers_summary": "1-2 sentences on today's papers",
+  "summaries": {
+    "en": {
+      "brief": "1-3 English sentences across news + papers",
+      "news_summary": "1-2 English sentences on today's news",
+      "papers_summary": "1-2 English sentences on today's papers"
+    },
+    "zh": {
+      "brief": "1-3 Chinese sentences across news + papers",
+      "news_summary": "1-2 Chinese sentences on today's news",
+      "papers_summary": "1-2 Chinese sentences on today's papers"
+    }
+  },
+  "brief": "English/default compatibility copy of summaries.en.brief",
+  "news_summary": "English/default compatibility copy of summaries.en.news_summary",
+  "papers_summary": "English/default compatibility copy of summaries.en.papers_summary",
   "todays_image": {                        // omitted entirely if no CC0 image was found this run
     "image_url": "https://ids.si.edu/…",
     "thumbnail_url": "https://ids.si.edu/…",
@@ -257,10 +271,15 @@ other section.
 }
 ```
 
-All text fields are content, not chrome — rendered raw, never passed
-through `i18n.js`'s `t()` (see its own header comment: "Content items stay
-in their source language — only the chrome translates"). `todays_image`
-only ever carries an image with an explicit Smithsonian
+The LLM generates `summaries.en` and `summaries.zh` as separate calls. Each
+call reads both English and Chinese `news`/`papers` items, but prioritizes
+the target language's items and writes in that target language. The frontend
+selects `summaries[active_language]`; the top-level scalar fields are kept as
+an English/default fallback for older cached clients.
+
+All summary/image-caption text fields are content, not chrome — rendered raw,
+never passed through `i18n.js`'s `t()`. `todays_image` only ever carries an
+image with an explicit Smithsonian
 `usage.access: "CC0"` media entry (`scripts/newsdash/todays_image.py`) —
 rights-uncertain results are never surfaced.
 

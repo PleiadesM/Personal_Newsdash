@@ -29,7 +29,7 @@ what's wrong.
 | `title`, `subtitle` | strings | Masthead text + `<title>` |
 | `visibility` | `"public"` \| `"private"` | **public**: news/papers plaintext, schedule/courses always encrypted. **private**: *every* file encrypted; site boots to a passphrase gate; build **fails** if `NEWSDASH_PASSPHRASE` is missing |
 | `languages` | subset of `["en","zh"]` | Offered UI languages |
-| `default_language` | `"en"` \| `"zh"` | Chrome language before the visitor toggles |
+| `default_language` | `"en"` \| `"zh"` | Chrome and content language before the visitor toggles |
 | `theme` | `"the-type"` \| `"nyt"` \| `"bear"` | Default theme (visitors can switch; their choice persists per browser) |
 | `timezone` | IANA name | Schedule windowing + event offsets (display uses the *viewer's* clock) |
 | `windows.*` | integers | See overview table; schema enforces sane ranges |
@@ -89,8 +89,10 @@ source without touching config: set the GitHub *Variable*
 Common fields: `id` (snake_case, unique), `name`, `section`
 (`news`/`papers`/`following`/`schedule`/`courses`), `weight` (0–1, default
 0.8), `max_results` (default 50), `lang` (`"zh"`/`"en"` forces the items'
-language for the frontend's 中文/English filter; omit to auto-detect per
-item). The schema **rejects** `url`/`path` on `category: "private"` sources.
+language; omit to auto-detect per item). The active UI language also filters
+visible news/research content: English mode shows only English items, and
+Chinese mode shows only Chinese items. The schema **rejects** `url`/`path` on
+`category: "private"` sources.
 
 The full-text reader has no config switch in v1. For RSS/Atom sources only,
 the pipeline marks an item **Full Text Available** when the feed itself
@@ -122,13 +124,14 @@ the zero-secret build stays green.
 Not a source — a build-time bolt-on, off by default, no config-file
 surface at all (every knob is an env var, read the same way
 `CONTACT_MAILTO`/`OPENALEX_API_KEY` already are). Server-side only: your
-own key, never a visitor-supplied one. At most two short LLM calls plus one
-image-archive search per scheduled build (never per visitor) —
-budget-gated by design.
+own key, never a visitor-supplied one. The build asks the LLM for separate
+English and Chinese summary editions, plus a small image caption call only
+when a CC0 image is found; it also performs at most one image-archive search
+per scheduled build (never per visitor) — budget-gated by design.
 
 | Set this secret… | …to get |
 |---|---|
-| `LLM_API_KEY` | An AI daily brief after the greeting, plus a one-line summary inside "Top stories" and "Top papers" on the Today page |
+| `LLM_API_KEY` | Language-specific AI daily briefs after the greeting, plus one-line summaries inside "Top stories" and "Top papers" on the Today page |
 | `LLM_API_KEY` **and** `SMITHSONIAN_API_KEY` | The above, plus a "Today's Image" block: a public-domain image from the [Smithsonian Open Access API](https://www.si.edu/openaccess) loosely/creatively matched to the day's content, with a one-sentence AI caption and a source link |
 
 `LLM_API_KEY` targets any OpenAI-Chat-Completions-compatible endpoint
@@ -142,6 +145,8 @@ api.data.gov API, Smithsonian included.
 Hard guarantees:
 
 - Reads only your `news`/`papers` items — **never** schedule or courses.
+- Generates English and Chinese summaries separately. Each summary sees both
+  English and Chinese inputs, but prioritizes the active target language.
 - **Never** during `--smoke` (no network calls at all), regardless of which
   keys are set.
 - Only images the Smithsonian explicitly marks `usage.access: "CC0"` are

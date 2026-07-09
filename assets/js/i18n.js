@@ -1,6 +1,6 @@
 // Bilingual UI strings. Both dictionaries load once at boot; switching
-// language is synchronous after that. Content items stay in their source
-// language — only the chrome translates.
+// language is synchronous after that. The active language also selects the
+// visible news/research language; chrome strings still come from t().
 //
 // Resilience: each dictionary fetch retries (the hosting CDN can 502
 // intermittently), and t() bottoms out on the embedded English fallback —

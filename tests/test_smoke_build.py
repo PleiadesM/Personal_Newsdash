@@ -8,9 +8,22 @@ import responses
 import build as build_mod
 from newsdash import crypto
 
+CHAT_URL = "https://api.openai.com/v1/chat/completions"
+
 
 def read(path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def llm_completion(**fields):
+    payload = {
+        "brief": "EN brief",
+        "news_summary": "EN news",
+        "papers_summary": "EN papers",
+        "image_query": "clockwork automatons",
+    }
+    payload.update(fields)
+    return {"choices": [{"message": {"content": json.dumps(payload)}}]}
 
 
 def rss_with_full_text(url="https://a.example/story"):
@@ -126,6 +139,47 @@ def test_private_visibility_encrypts_everything(tmp_path, monkeypatch, make_repo
     assert manifest["source_status_file"] == "source-status.enc.json"
     assert not (out / "news.json").exists()
     assert (out / "archive.enc.json").exists()
+
+
+@responses.activate
+def test_build_writes_bilingual_insights(tmp_path, monkeypatch, make_repo):
+    monkeypatch.setenv("LLM_API_KEY", "sk-test")
+    monkeypatch.delenv("SMITHSONIAN_API_KEY", raising=False)
+    responses.get(
+        "https://a.example/feed.xml",
+        body=rss_with_full_text("https://a.example/en-story"),
+    )
+    responses.get(
+        "https://b.example/feed.xml",
+        body=rss_with_full_text("https://b.example/zh-story"),
+    )
+    responses.post(CHAT_URL, json=llm_completion())
+    responses.post(CHAT_URL, json=llm_completion(
+        brief="中文简报",
+        news_summary="中文新闻",
+        papers_summary="中文论文",
+        image_query="compass clock",
+    ))
+    root = make_repo(sources={"schema_version": 1, "presets": [], "sources": [
+        {"id": "feed_en", "type": "rss", "section": "news",
+         "name": "A", "url": "https://a.example/feed.xml", "lang": "en"},
+        {"id": "feed_zh", "type": "rss", "section": "news",
+         "name": "B", "url": "https://b.example/feed.xml", "lang": "zh"},
+    ]})
+    out = tmp_path / "d"
+    build_mod.main(["--output-dir", str(out), "--repo-root", str(root)])
+
+    manifest = read(out / "manifest.json")
+    assert manifest["insights_file"] == "insights.json"
+    insights = read(out / "insights.json")
+    assert insights["summaries"]["en"] == {
+        "brief": "EN brief", "news_summary": "EN news", "papers_summary": "EN papers",
+    }
+    assert insights["summaries"]["zh"] == {
+        "brief": "中文简报", "news_summary": "中文新闻", "papers_summary": "中文论文",
+    }
+    assert insights["brief"] == "EN brief"
+    assert "image_query" not in insights
 
 
 @responses.activate

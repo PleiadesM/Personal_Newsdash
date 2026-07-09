@@ -1,17 +1,18 @@
 // Shared feed view for news / papers / following sections: filter bar
-// (search, source, time window), language + tag chips, Newest/Top sort,
+// (search, source, time window), tag chips, Newest/Top sort,
 // timeline day headers, group-by-source mode, favorite stars, NEW badges,
 // annotation layer. Filter changes re-render only the list, so the search
 // input keeps focus.
 
 import { renderAnnotationsIn } from "../annotate.js";
 import { addFavorite, favoriteIdSet, removeFavorite } from "../annodb.js";
+import { filterItemsForContentLang } from "../content_lang.js";
 import { clear, el, safeHref } from "../dom.js";
 import { fmtDate, fmtDateTime, fmtRelative, t } from "../i18n.js";
 import { get, prefs } from "../store.js";
 import { emptyCard, errorCard, lockedCard, notConfiguredCard } from "./shared.js";
 
-const filters = {}; // sectionId -> { q, source, hours, lang, tag }
+const filters = {}; // sectionId -> { q, source, hours, tag }
 let renderToken = 0; // drops stale async renders on fast route changes
 
 function localDayKey(iso) {
@@ -162,16 +163,17 @@ export async function render(container, sectionId) {
   if (section.status === "locked") return container.appendChild(lockedCard());
   if (section.status === "error" || !section.payload) return container.appendChild(errorCard());
 
-  const items = section.payload.items || [];
+  const items = filterItemsForContentLang(section.payload.items || []);
   if (!items.length) return container.appendChild(emptyCard());
 
   // NEW badges mark items published since the previous visit to this section.
   const newSince = prefs.read(`seen.${sectionId}`);
   prefs.write(`seen.${sectionId}`, new Date().toISOString());
 
-  const state = filters[sectionId] ||= { q: "", source: "", hours: 0, lang: "", tag: "" };
+  const state = filters[sectionId] ||= { q: "", source: "", hours: 0, tag: "" };
+  delete state.lang; // old in-memory filter state from pre-locale filtering
   const sources = [...new Set(items.map((i) => i.source))].sort();
-  const langs = new Set(items.map((i) => i.lang));
+  if (state.source && !sources.includes(state.source)) state.source = "";
   const isPapersKind = items.some((i) => i.kind === "paper");
   // papers-kind sections rank impact first; news reads chronologically;
   // "following" groups by the followed scholar/lab by default
@@ -228,17 +230,6 @@ export async function render(container, sectionId) {
           renderList();
         })
     : null;
-  const langSeg = langs.has("zh") && langs.has("en")
-    ? segmented(
-        [["", t("feed.langAll")], ["zh", t("feed.langZh")], ["en", t("feed.langEn")]],
-        state.lang,
-        (value) => {
-          state.lang = value;
-          setActive(langSeg, value);
-          renderList();
-        })
-    : null;
-
   // tag chips: the section's most frequent tags, click to filter
   const tagCounts = new Map();
   for (const item of items) {
@@ -246,6 +237,7 @@ export async function render(container, sectionId) {
       tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
     }
   }
+  if (state.tag && !tagCounts.has(state.tag)) state.tag = "";
   const topTags = [...tagCounts.entries()]
     .sort((a, b) => b[1] - a[1]).slice(0, 14);
   let tagRow = null;
@@ -274,7 +266,7 @@ export async function render(container, sectionId) {
 
   container.appendChild(el("div", { class: "filter-bar" }, search, sourceSel, timeSel, count));
   container.appendChild(el("div", { class: "feed-controls" },
-    sortSeg, groupSeg, langSeg));
+    sortSeg, groupSeg));
   if (tagRow) container.appendChild(tagRow);
   container.appendChild(list);
 
@@ -314,7 +306,6 @@ export async function render(container, sectionId) {
     const visible = items.filter((item) =>
       (!q || `${item.title} ${item.summary} ${item.source}`.toLowerCase().includes(q))
       && (!state.source || item.source === state.source)
-      && (!state.lang || item.lang === state.lang)
       && (!state.tag || (item.tags || []).includes(state.tag))
       && (!cutoff || new Date(item.published_at).getTime() >= cutoff));
     if (sort === "top") visible.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));

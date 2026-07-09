@@ -5,6 +5,7 @@
 
 import { renderAnnotationsIn } from "../annotate.js";
 import { favoriteIdSet } from "../annodb.js";
+import { filterItemsForContentLang, localizedInsights } from "../content_lang.js";
 import { clear, el, safeHref } from "../dom.js";
 import { fmtDate, fmtDateTime, fmtRelative, fmtTime, getLang, t } from "../i18n.js";
 import { get } from "../store.js";
@@ -92,10 +93,10 @@ function dueSoonBlock() {
 function storiesBlock(cardOpts) {
   const section = get().sections.news;
   if (!section || section.status !== "ok") return null;
-  const top = [...(section.payload?.items || [])]
+  const top = filterItemsForContentLang(section.payload?.items || [])
     .sort((a, b) => b.score - a.score).slice(0, 6);
   if (!top.length) return null;
-  const summary = get().insights?.news_summary;
+  const summary = localizedInsights(get().insights)?.news_summary;
   return block(t("today.topStories"), "news",
     summary ? el("p", { class: "ai-summary-line" }, summary) : null,
     el("div", { class: "story-grid" }, top.map((item) => itemCard(item, "news", cardOpts))));
@@ -105,10 +106,10 @@ function papersBlock(cardOpts) {
   const section = get().sections.papers;
   if (!section || section.status !== "ok") return null;
   // priority order: the best-scored (recency · relevance · citations) first
-  const top = [...(section.payload?.items || [])]
+  const top = filterItemsForContentLang(section.payload?.items || [])
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 5);
   if (!top.length) return null;
-  const summary = get().insights?.papers_summary;
+  const summary = localizedInsights(get().insights)?.papers_summary;
   return block(t("today.latestPapers"), "papers",
     summary ? el("p", { class: "ai-summary-line" }, summary) : null,
     top.map((item) => itemCard(item, "papers", cardOpts)));
@@ -143,7 +144,7 @@ function todaysImageBlock() {
 function followingBlock(cardOpts) {
   const section = get().sections.following;
   if (!section || section.status !== "ok") return null;
-  const top = [...(section.payload?.items || [])]
+  const top = filterItemsForContentLang(section.payload?.items || [])
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 5);
   if (!top.length) return null;
   return block(t("nav.following"), "following",
@@ -157,13 +158,11 @@ function overviewStrip(favCount) {
   const { sections, sourceStatus, unlocked } = get();
   const feedItems = Object.values(sections)
     .filter((s) => s.status === "ok" && Array.isArray(s.payload?.items))
-    .flatMap((s) => s.payload.items);
+    .flatMap((s) => filterItemsForContentLang(s.payload.items));
   if (!feedItems.length) return null;
 
   const todayKey = localDay(new Date().toISOString());
   const newToday = feedItems.filter((i) => localDay(i.published_at) === todayKey).length;
-  const zh = feedItems.filter((i) => i.lang === "zh").length;
-  const en = feedItems.length - zh;
 
   const tile = (value, label) => el("div", { class: "stat-tile" },
     el("span", { class: "stat-num" }, value),
@@ -176,7 +175,6 @@ function overviewStrip(favCount) {
     active.length
       ? tile(`${active.filter((s) => s.ok).length}/${active.length}`, t("overview.sourcesOk"))
       : null,
-    zh && en ? tile(`${en} EN · ${zh} 中文`, t("overview.languages")) : null,
     unlocked && favCount != null
       ? el("a", { class: "stat-tile", href: "#/favorites" },
           el("span", { class: "stat-num" }, `★ ${favCount}`),
@@ -225,7 +223,7 @@ function heroImageBlock(image) {
 function statsPills() {
   const feedItems = Object.values(get().sections)
     .filter((s) => s.status === "ok" && Array.isArray(s.payload?.items))
-    .flatMap((s) => s.payload.items);
+    .flatMap((s) => filterItemsForContentLang(s.payload.items));
   if (!feedItems.length) return null;
   const sourceCount = new Set(feedItems.map((i) => i.source)).size;
   const topicCount = new Set(feedItems.flatMap((i) => i.tags || [])).size;
@@ -241,7 +239,7 @@ function statsPills() {
 
 function heroGrid() {
   const image = get().insights?.todays_image;
-  const brief = get().insights?.brief;
+  const brief = localizedInsights(get().insights)?.brief;
   const stats = statsPills();
   if (!image && !brief && !stats) return null;
   const right = (brief || stats)
@@ -307,7 +305,7 @@ function featuredArticleCard(item, favs) {
 function theTypeFeedSection(favs) {
   const section = get().sections.news;
   if (!section || section.status !== "ok") return null;
-  const top = [...(section.payload?.items || [])]
+  const top = filterItemsForContentLang(section.payload?.items || [])
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, 6);
   if (!top.length) return null;
   const [featured, ...rest] = top;
@@ -372,7 +370,7 @@ export async function render(container) {
     el("h2", { class: "today-greeting" }, greeting()),
     el("p", { class: "today-date" }, dateLabel),
   ));
-  const brief = get().insights?.brief;
+  const brief = localizedInsights(get().insights)?.brief;
   if (brief) {
     container.appendChild(el("div", { class: "ai-brief-block" },
       el("p", { class: "ai-brief-label" }, `✨ ${t("today.aiSummaryLabel")}`),
