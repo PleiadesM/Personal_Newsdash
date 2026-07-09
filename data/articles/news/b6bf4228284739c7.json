@@ -1,0 +1,30 @@
+{
+ "full_text": "The popularity of Spotify Wrapped has kicked off a wide range of year-in-review features, on apps from YouTube to Uber - and now, the lookback trend has come to AI. Anthropic on Thursday announced a \"reflect\" feature for its Claude chatbot, allowing users to see an analysis of their usage data over the past month, three months, six months, or year. Anthropic bills the reflection dashboard as a way to \"see your patterns and shape them,\" the company wrote in a blog post . It begins with a summary of an individual's key topics brought up with Claude, as well as types of tasks they delegate and their usage patterns, including peak usage times.  … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/b6bf4228284739c7.json",
+  "id": "b6bf4228284739c7",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-09T13:30:00Z",
+  "score": 0.7322,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "The popularity of Spotify Wrapped has kicked off a wide range of year-in-review features, on apps from YouTube to Uber - and now, the lookback trend has come to AI. Anthropic on Thursday announced a \"reflect\" feature for its Claude chatbot, allowing users to see an analysis of their usage data over…",
+  "tags": [
+   "llm"
+  ],
+  "title": "Say hello to Claude Wrapped",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage"
+ },
+ "meta": {
+  "generated_at": "2026-07-09T15:32:22Z",
+  "item_id": "b6bf4228284739c7",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "full_text": "After reentering the AI race with its first in-house Muse Spark model in April, Meta is now opening up the doors to developers with a new model that can plug into AI coding software with the new Meta Model API. Meta says that Muse Spark 1.1 is a \"step-change\" from the first generation, with improvements based on feedback from developers. The company says it's capable of more advanced coding, including detection and fixing of complex bugs; better supports end-to-end agentic workflows across a range of apps, including multi-agent systems; and has native multimodal perception across images, videos, and documents. The Muse Spark 1.1 launch fol … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/1ce4b0cb34d0787b.json",
+  "id": "1ce4b0cb34d0787b",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-09T14:00:00Z",
+  "score": 0.7483,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "After reentering the AI race with its first in-house Muse Spark model in April, Meta is now opening up the doors to developers with a new model that can plug into AI coding software with the new Meta Model API. Meta says that Muse Spark 1.1 is a \"step-change\" from the first generation, with…",
+  "tags": [
+   "dev-tools"
+  ],
+  "title": "Meta says its new AI model is ready to compete on coding",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api"
+ },
+ "meta": {
+  "generated_at": "2026-07-09T15:32:22Z",
+  "item_id": "1ce4b0cb34d0787b",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

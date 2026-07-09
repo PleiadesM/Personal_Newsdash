@@ -1,44 +1,24 @@
 {
- "apropos_of_nothing": {
-  "query": "(\"sandcastle competition\" OR \"sand sculpture championship\")",
-  "source": {
-   "name": "tvguide.co.uk",
-   "published_at": "2026-07-08T20:45:00Z",
-   "title": "The Adventures of Paddington",
-   "url": "https://www.tvguide.co.uk/schedule/c1635611-ad74-58d7-aae1-ee6744a75d0e/the-adventures-of-paddington"
-  },
-  "summaries": {
-   "en": {
-    "summary": "Paddington Bear stars in a family TV show.",
-    "why_irrelevant": "It's about a fictional bear, not architecture."
-   },
-   "zh": {
-    "summary": "帕丁顿熊主演家庭电视节目。",
-    "why_irrelevant": "关于虚构的熊，非建筑。"
-   }
-  },
-  "topic": "sandcastle architecture"
- },
- "brief": "US and Iran trade strikes as Trump declares ceasefire over, while extreme heatwaves affect Europe and the UK sees a rise in domestic abuse cases. Papers highlight advances in visualization for traditional Chinese paintings and sign language recognition.",
+ "brief": "Tensions escalate as US and Iran exchange strikes near a nuclear plant, while Ukraine intensifies attacks on Russian ships near Crimea. A factory fire in China kills 28, and research on visualization and AI for sign language and cultural heritage is highlighted.",
  "meta": {
-  "generated_at": "2026-07-09T11:17:39Z"
+  "generated_at": "2026-07-09T15:32:22Z"
  },
- "news_summary": "Escalating US-Iran conflict dominates, with Trump ending the truce and continued strikes. Also notable: Maine political scandal, extreme temperatures in Europe, and the death of singer Bonnie Tyler.",
- "papers_summary": "Research covers performance-based incentives in visualization, clinical translation of BCI in China, and AI-powered tools for creative coding and sign language recognition.",
+ "news_summary": "US-Iran strikes near Bushehr nuclear plant and steep fall in Hormuz ship crossings mark heightened Middle East tensions; Ukraine hits Russian ships near Crimea. A factory fire in China's 'shoe capital' kills 28, and a former Olympian pleads not guilty in Washington reflecting pool vandalism case.",
+ "papers_summary": "New HCI research explores performance-based incentives in visualization, clinical translation of brain-computer interfaces in China, and a smart glove for sign language recognition. Two papers focus on computational analysis of traditional Chinese paintings.",
  "summaries": {
   "en": {
-   "brief": "US and Iran trade strikes as Trump declares ceasefire over, while extreme heatwaves affect Europe and the UK sees a rise in domestic abuse cases. Papers highlight advances in visualization for traditional Chinese paintings and sign language recognition.",
-   "news_summary": "Escalating US-Iran conflict dominates, with Trump ending the truce and continued strikes. Also notable: Maine political scandal, extreme temperatures in Europe, and the death of singer Bonnie Tyler.",
-   "papers_summary": "Research covers performance-based incentives in visualization, clinical translation of BCI in China, and AI-powered tools for creative coding and sign language recognition."
+   "brief": "Tensions escalate as US and Iran exchange strikes near a nuclear plant, while Ukraine intensifies attacks on Russian ships near Crimea. A factory fire in China kills 28, and research on visualization and AI for sign language and cultural heritage is highlighted.",
+   "news_summary": "US-Iran strikes near Bushehr nuclear plant and steep fall in Hormuz ship crossings mark heightened Middle East tensions; Ukraine hits Russian ships near Crimea. A factory fire in China's 'shoe capital' kills 28, and a former Olympian pleads not guilty in Washington reflecting pool vandalism case.",
+   "papers_summary": "New HCI research explores performance-based incentives in visualization, clinical translation of brain-computer interfaces in China, and a smart glove for sign language recognition. Two papers focus on computational analysis of traditional Chinese paintings."
   },
   "zh": {
-   "brief": "今日重點：台灣食安漏洞導致致癌沙拉油流入市面，引發監管空窗期爭議；美伊衝突升溫，停火協議破裂後雙方互相襲擊；英國新首相熱門人選貝安德的中國政策走向受關注。學術研究聚焦於人機交互、腦機接口及傳統繪畫分析等領域。",
-   "news_summary": "台灣毒油事件揭露抽驗機制失靈，問題油擴散超50日才通報；美國華裔男子盜竊UCLA中國古籍被判刑；英國首相候選人貝安德的中國政策引討論；中國網紅陳土豆在台爆紅卻遭統戰質疑；台灣擬管制事後避孕藥引發女性焦慮；美伊衝突持續，伊朗葬禮中國代表團引外交解讀；德國華人性侵案分析犯罪心理。",
-   "papers_summary": "研究包括視覺化實驗中的績效激勵效果、中國腦機接口臨床試驗景觀、傳統中國畫構圖分析、基於深度學習的手語識別智能手套、AI輔助創意編程環境、隱私解釋與信任互動、數位碎片化與生成式AI使用、長時程可遊玩視頻世界生成、提示工程學習代理、以及傳統中國畫知識圖譜構建。"
+   "brief": "广西洪灾、澳门国安法首案、台湾毒油事件占据头条，同时德国华人性侵案引发跨境犯罪讨论。学术方面，脑机接口和中国画分析研究有进展。",
+   "news_summary": "广西洪灾预警失效致民众措手不及；澳门前议员欧锦新被诉颠覆罪面临25年徒刑；德国Telegram群组涉跨國迷姦案；台湾毒油因抽验漏洞扩散全台。",
+   "papers_summary": "脑机接口在中国的临床试验转化研究，以及基于构图图分析的中国传统绘画可视分析系统，是今日论文亮点。"
   }
  },
  "todays_image": {
-  "caption": "The algae Lobophora sp. often overgrows and disrupts coral reefs, much like a scandal disrupts a political party, necessitating a clean-up convention.",
+  "caption": "Lobophora sp.'s drifting, fragile form mirrors the fleeting truce now \"over\" as Iran reports a US attack near a nuclear plant.",
   "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
   "source_name": "NMNH - Botany Dept.",
   "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
