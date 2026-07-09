@@ -1,28 +1,48 @@
 {
- "brief": "US and Iran trade new strikes amid fragile truce; Trump uses old Air Force One in security swap. Australia signs major uranium deal with India, while Senate race in Maine shifts. AI impacts software rewrites and visualization research.",
- "meta": {
-  "generated_at": "2026-07-09T07:54:59Z"
+ "apropos_of_nothing": {
+  "query": "(\"sandcastle competition\" OR \"sand sculpture championship\")",
+  "source": {
+   "name": "tvguide.co.uk",
+   "published_at": "2026-07-08T20:45:00Z",
+   "title": "The Adventures of Paddington",
+   "url": "https://www.tvguide.co.uk/schedule/c1635611-ad74-58d7-aae1-ee6744a75d0e/the-adventures-of-paddington"
+  },
+  "summaries": {
+   "en": {
+    "summary": "Paddington Bear stars in a family TV show.",
+    "why_irrelevant": "It's about a fictional bear, not architecture."
+   },
+   "zh": {
+    "summary": "帕丁顿熊主演家庭电视节目。",
+    "why_irrelevant": "关于虚构的熊，非建筑。"
+   }
+  },
+  "topic": "sandcastle architecture"
  },
- "news_summary": "US launches further airstrikes on Iran, which retaliates against Gulf states; Trump flies partway from Turkey on older plane due to security concerns. Australia and India ink uranium deal, and Graham Platner suspends Senate bid after rape accusation.",
- "papers_summary": "Research covers performance incentives in visualization, BCI clinical translation in China, compositional analysis of traditional Chinese paintings, and multimodal sign language recognition using deep learning.",
+ "brief": "US and Iran trade strikes as Trump declares ceasefire over, while extreme heatwaves affect Europe and the UK sees a rise in domestic abuse cases. Papers highlight advances in visualization for traditional Chinese paintings and sign language recognition.",
+ "meta": {
+  "generated_at": "2026-07-09T11:17:39Z"
+ },
+ "news_summary": "Escalating US-Iran conflict dominates, with Trump ending the truce and continued strikes. Also notable: Maine political scandal, extreme temperatures in Europe, and the death of singer Bonnie Tyler.",
+ "papers_summary": "Research covers performance-based incentives in visualization, clinical translation of BCI in China, and AI-powered tools for creative coding and sign language recognition.",
  "summaries": {
   "en": {
-   "brief": "US and Iran trade new strikes amid fragile truce; Trump uses old Air Force One in security swap. Australia signs major uranium deal with India, while Senate race in Maine shifts. AI impacts software rewrites and visualization research.",
-   "news_summary": "US launches further airstrikes on Iran, which retaliates against Gulf states; Trump flies partway from Turkey on older plane due to security concerns. Australia and India ink uranium deal, and Graham Platner suspends Senate bid after rape accusation.",
-   "papers_summary": "Research covers performance incentives in visualization, BCI clinical translation in China, compositional analysis of traditional Chinese paintings, and multimodal sign language recognition using deep learning."
+   "brief": "US and Iran trade strikes as Trump declares ceasefire over, while extreme heatwaves affect Europe and the UK sees a rise in domestic abuse cases. Papers highlight advances in visualization for traditional Chinese paintings and sign language recognition.",
+   "news_summary": "Escalating US-Iran conflict dominates, with Trump ending the truce and continued strikes. Also notable: Maine political scandal, extreme temperatures in Europe, and the death of singer Bonnie Tyler.",
+   "papers_summary": "Research covers performance-based incentives in visualization, clinical translation of BCI in China, and AI-powered tools for creative coding and sign language recognition."
   },
   "zh": {
-   "brief": "今日關注美國華裔竊取UCLA古籍案、英國大選中英關係走向、台灣事後避孕藥管制爭議，以及美伊持續空襲。",
-   "news_summary": "美國華裔男子因盜取UCLA中國古籍被判刑，英國首相熱門人選貝安德的中國政策受關注，中國網紅陳土豆在台灣爆紅引發統戰爭議，台灣擬管制事後避孕藥引女性焦慮，美伊互相空襲使談判前景脆弱。",
-   "papers_summary": "今日無相關中文研究論文。"
+   "brief": "今日重點：台灣食安漏洞導致致癌沙拉油流入市面，引發監管空窗期爭議；美伊衝突升溫，停火協議破裂後雙方互相襲擊；英國新首相熱門人選貝安德的中國政策走向受關注。學術研究聚焦於人機交互、腦機接口及傳統繪畫分析等領域。",
+   "news_summary": "台灣毒油事件揭露抽驗機制失靈，問題油擴散超50日才通報；美國華裔男子盜竊UCLA中國古籍被判刑；英國首相候選人貝安德的中國政策引討論；中國網紅陳土豆在台爆紅卻遭統戰質疑；台灣擬管制事後避孕藥引發女性焦慮；美伊衝突持續，伊朗葬禮中國代表團引外交解讀；德國華人性侵案分析犯罪心理。",
+   "papers_summary": "研究包括視覺化實驗中的績效激勵效果、中國腦機接口臨床試驗景觀、傳統中國畫構圖分析、基於深度學習的手語識別智能手套、AI輔助創意編程環境、隱私解釋與信任互動、數位碎片化與生成式AI使用、長時程可遊玩視頻世界生成、提示工程學習代理、以及傳統中國畫知識圖譜構建。"
   }
  },
  "todays_image": {
-  "caption": "Uranium ore's slow, invisible decay mirrors the creeping loss of autonomy and vitality in a zombified society.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2016q000115",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2016q000115&max=150",
-  "title": "Uranium ore"
+  "caption": "The algae Lobophora sp. often overgrows and disrupts coral reefs, much like a scandal disrupts a political party, necessitating a clean-up convention.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }

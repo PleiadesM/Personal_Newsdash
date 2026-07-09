@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-09T07:54:59Z",
+ "generated_at": "2026-07-09T11:17:39Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -103,7 +103,7 @@
   },
   {
    "category": "open",
-   "count": 6,
+   "count": 4,
    "error": null,
    "full_text_count": 0,
    "id": "hn_frontpage_ai",
@@ -151,7 +151,7 @@
   },
   {
    "category": "open",
-   "count": 27,
+   "count": 21,
    "error": null,
    "full_text_count": 0,
    "id": "nyt_homepage",
