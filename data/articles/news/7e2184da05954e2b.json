@@ -1,0 +1,30 @@
+{
+ "full_text": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report . As reported by GeekWire , the report states that Microsoft's carbon emissions increased 25 percent in 2025, totalling 34 million metric tons \"without select interventions.\" Microsoft says this was \"driven primarily by the expansion of our datacenter infrastructure,\" as well as the company's decision last February to stop purchasing \"non-additional, unbundled renewable energy certificates.\" Several years ago, Microsoft set itself a goal to be carbon negative by 2030 , meaning it will need to remove more carbon emissions t … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/7e2184da05954e2b.json",
+  "id": "7e2184da05954e2b",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-10T00:04:13Z",
+  "score": 0.6714,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report. As reported by GeekWire, the report states that Microsoft's carbon emissions increased 25 percent in 2025, totalling 34 million metric tons \"without select interventions.\"…",
+  "tags": [
+   "dev-tools"
+  ],
+  "title": "Microsoft’s carbon emissions went up 25 percent last year",
+  "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026"
+ },
+ "meta": {
+  "generated_at": "2026-07-10T04:12:12Z",
+  "item_id": "7e2184da05954e2b",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

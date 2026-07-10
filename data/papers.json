@@ -2,6 +2,64 @@
  "items": [
   {
    "authors": [
+    "Aitik Dandapat",
+    "Lalith Punepalle Raveendrareddy",
+    "Mithilesh Kumar Singh",
+    "Klaus Mueller"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Missing data is a persistent obstacle in scientific, social science, and public health research, often biasing analyses and placing accountability on analysts for how they handle missing values. We introduce ImputeViz, an integrated visual analytics dashboard that supports diagnosing missingness, configuring imputation models, and evaluating results. The system brings together widely used methods, including MICE, Random Forest, XGBoost, and kNN, within an interactive environment that makes…",
+    "arxiv_id": "2607.08579"
+   },
+   "id": "d71a9839e38e5fee",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-09T15:14:56Z",
+   "score": 0.5857,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Missing data is a persistent obstacle in scientific, social science, and public health research, often biasing analyses and placing accountability on analysts for how they handle missing values. We introduce ImputeViz, an integrated visual analytics dashboard that supports diagnosing missingness,…",
+   "tags": [
+    "visualization"
+   ],
+   "title": "ImputeViz: A Visual Analytics Dashboard for Diagnosing Missing Data and Comparing Imputation Methods",
+   "url": "https://arxiv.org/abs/2607.08579v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Jessica Woodhams",
+    "Amy Burrell",
+    "Wanyin Li",
+    "Fahim Ahmed",
+    "Matthew Tonkin",
+    "Jan Lemeire"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Crime linkage analysis is used in many countries to identify series of offences that may have been committed by the same individual. In practice, specialist analysts manually search for behavioural and situational connections across large crime databases, an effort that is time-consuming, cognitively demanding, and can involve repeated exposure to disturbing material. To support this work, an Artificial Intelligence (AI)-enabled decision-support tool was co-developed with a UK law enforcement…",
+    "arxiv_id": "2607.08274"
+   },
+   "id": "15d9b8fbba5ab94f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-09T09:17:25Z",
+   "score": 0.7118,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Crime linkage analysis is used in many countries to identify series of offences that may have been committed by the same individual. In practice, specialist analysts manually search for behavioural and situational connections across large crime databases, an effort that is time-consuming,…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "How Analysts Use AI in High-Stakes Crime Linkage: An Industrial Study",
+   "url": "https://arxiv.org/abs/2607.08274v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
     "Abhraneel Sarma",
     "Matthew Kay",
     "Sheng Long",
@@ -17,7 +75,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-08T14:29:40Z",
-   "score": 0.5035,
+   "score": 0.4872,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -34,10 +92,10 @@
    "authors": [
     "Long Chen",
     "Wanyi Qing",
+    "Fa Lin",
     "Lifen Mo",
     "Xiaoke Chai",
-    "Wenting Li",
-    "Fengyan Liang"
+    "Wenting Li"
    ],
    "category": "optional",
    "extra": {
@@ -48,7 +106,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-08T09:18:50Z",
-   "score": 0.6378,
+   "score": 0.6226,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -57,7 +115,7 @@
     "ai-writing"
    ],
    "title": "Clinical Translation of Brain-Computer Interface in China: A Landscape Analysis of Investigator-Initiated Trials, Registered Clinical Trials, and Regulatory Approval",
-   "url": "https://arxiv.org/abs/2607.07185v1",
+   "url": "https://arxiv.org/abs/2607.07185v2",
    "venue": "arXiv cs.HC"
   },
   {
@@ -84,7 +142,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-08T07:41:18Z",
-   "score": 0.6723,
+   "score": 0.6574,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -114,7 +172,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-08T04:43:10Z",
-   "score": 0.4301,
+   "score": 0.4157,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -148,7 +206,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-07T18:39:39Z",
-   "score": 0.6321,
+   "score": 0.6193,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -175,7 +233,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-07T18:04:51Z",
-   "score": 0.5905,
+   "score": 0.5778,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -201,7 +259,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-07T18:01:46Z",
-   "score": 0.5903,
+   "score": 0.5776,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -212,64 +270,6 @@
    "title": "Digital Fragmentation and Generative AI Use Across 103 Million Application Events",
    "url": "https://arxiv.org/abs/2607.06681v1",
    "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "AlayaWorld Team",
-    "Kaipeng Zhang",
-    "Chuanhao Li",
-    "Yifan Zhan",
-    "Yongtao Ge",
-    "Yuanyang Yin"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Game worlds have traditionally been built through labor-intensive production pipelines, making them costly to develop, difficult to customization, and expensive to modify after deployment. Recent advances in video world models offer a fundamentally different paradigm. Rather than explicitly authoring every component of a virtual environment, these models autoregressively synthesize future observations conditioned on the current world state and user interactions, enabling playable worlds to be…",
-    "arxiv_id": "2607.06291"
-   },
-   "id": "1f1b03eb93f2ed46",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-07T13:59:57Z",
-   "score": 0.3867,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Game worlds have traditionally been built through labor-intensive production pipelines, making them costly to develop, difficult to customization, and expensive to modify after deployment. Recent advances in video world models offer a fundamentally different paradigm. Rather than explicitly…",
-   "tags": [
-    "embodied"
-   ],
-   "title": "AlayaWorld: Long-Horizon and Playable Video World Generation",
-   "url": "https://arxiv.org/abs/2607.06291v1",
-   "venue": "arXiv cs.CV"
-  },
-  {
-   "authors": [
-    "Rohit Mehra",
-    "Kapil Singi",
-    "Vikrant Kaulgud",
-    "Vibhu Saujanya Sharma",
-    "Swapnajeet Gon Choudhury",
-    "Swati Sharma"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Prompt engineering has emerged as a critical yet undertaught skill for software developers, one that traditional learning approaches are ill-equipped to support given its evolving, interactive, and context-dependent nature. In this paper, we introduce Prompt Coach (PC), an agentic tutor that helps developers learn how to craft high-quality code-generation prompts through Socratic guidance embedded in-flow within their IDE. PC evaluates prompt quality across multiple dimensions and surfaces…",
-    "arxiv_id": "2607.06074"
-   },
-   "id": "d85c74e6084a8957",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-07T09:44:46Z",
-   "score": 0.3755,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Prompt engineering has emerged as a critical yet undertaught skill for software developers, one that traditional learning approaches are ill-equipped to support given its evolving, interactive, and context-dependent nature. In this paper, we introduce Prompt Coach (PC), an agentic tutor that helps…",
-   "tags": [],
-   "title": "Prompt Coach: An Empirical Evaluation of an Agentic Tutor for Learning Prompt Engineering in Software Development",
-   "url": "https://arxiv.org/abs/2607.06074v1",
-   "venue": "arXiv cs.SE"
   },
   {
    "authors": [
@@ -289,7 +289,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-07T05:04:26Z",
-   "score": 0.5964,
+   "score": 0.5855,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -300,97 +300,6 @@
    ],
    "title": "VisTCP: A Visualization Framework to Construct Knowledge-Graph-Based Representation for Traditional Chinese Painting",
    "url": "https://arxiv.org/abs/2607.05841v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Zihan Fang",
-    "Yueke Zhang",
-    "Ningzhi Tang",
-    "Collin McMillan",
-    "Toby Jia-Jun Li",
-    "Yu Huang"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "AI coding assistants such as GitHub Copilot and Cursor have evolved from code-suggestion tools into conversational collaborators, enabling vibe-coding workflows in which developers guide AI-generated code through natural-language dialogue. Although researchers have increasingly recognized the importance of AI coding agents and begun examining their impact on open-source development, a comprehensive understanding of how developers' chat-based interactions with AI relate to subsequent open-source…",
-    "arxiv_id": "2607.05677"
-   },
-   "id": "9f069b6bef4d6912",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-06T22:44:45Z",
-   "score": 0.5416,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "AI coding assistants such as GitHub Copilot and Cursor have evolved from code-suggestion tools into conversational collaborators, enabling vibe-coding workflows in which developers guide AI-generated code through natural-language dialogue. Although researchers have increasingly recognized the…",
-   "tags": [
-    "ai-writing"
-   ],
-   "title": "From Conversation to Contribution: Characterizing Coding Agent in Open-Source Software",
-   "url": "https://arxiv.org/abs/2607.05677v1",
-   "venue": "arXiv cs.SE"
-  },
-  {
-   "authors": [
-    "Hendrik Schuff",
-    "Heike Adel",
-    "Ngoc Thang Vu"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "How predictable users perceive an interactive system to be shapes how they interpret, trust, and rely on it, yet HCI lacks both a precise conceptualization and a validated instrument for this perception. We address this gap by introducing perceived system predictability (PSP) as a user-centered construct grounded in uncertainty theory, distinguishing epistemic, aleatory, and effective predictability. We contribute (i) a theoretical framework that situates PSP relative to adjacent constructs…",
-    "arxiv_id": "2607.05674"
-   },
-   "id": "8d06cc299cb6d50b",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-06T22:40:18Z",
-   "score": 0.3489,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "How predictable users perceive an interactive system to be shapes how they interpret, trust, and rely on it, yet HCI lacks both a precise conceptualization and a validated instrument for this perception. We address this gap by introducing perceived system predictability (PSP) as a user-centered…",
-   "tags": [],
-   "title": "Perceived System Predictability: Scale Development and Application",
-   "url": "https://arxiv.org/abs/2607.05674v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Clemens Walter Koprolin",
-    "Leonardo Trentini",
-    "Benedikt Soja",
-    "Mennatallah El-Assady",
-    "Christina Humer"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Weather and climate foundation models produce high-dimensional forecasts whose learned relationships are difficult to inspect with static plots alone. GeoXplain is an interactive Python-based visualization toolkit for exploring geospatial attribution maps across climate variables, atmospheric pressure levels, and forecast time. The toolkit accepts attribution bundles containing attribution grids together with corresponding metadata and renders them in a notebook widget or browser with map and…",
-    "also_in": [
-     {
-      "source": "arXiv cs.HC (writing & docs)",
-      "url": "https://arxiv.org/abs/2607.05655v1"
-     }
-    ],
-    "arxiv_id": "2607.05655"
-   },
-   "id": "c310895c6dc55406",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-06T21:51:46Z",
-   "score": 0.5796,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Weather and climate foundation models produce high-dimensional forecasts whose learned relationships are difficult to inspect with static plots alone. GeoXplain is an interactive Python-based visualization toolkit for exploring geospatial attribution maps across climate variables, atmospheric…",
-   "tags": [
-    "systems",
-    "visualization"
-   ],
-   "title": "GeoXplain: On-the-Fly Visual Explanations for Weather Foundation Models",
-   "url": "https://arxiv.org/abs/2607.05655v1",
    "venue": "arXiv cs.HC"
   },
   {
@@ -412,7 +321,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-06T07:20:52Z",
-   "score": 0.2724,
+   "score": 0.2659,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -424,8 +333,8 @@
   }
  ],
  "meta": {
-  "count": 14,
-  "generated_at": "2026-07-09T23:35:22Z",
+  "count": 11,
+  "generated_at": "2026-07-10T04:12:12Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
@@ -467,7 +376,7 @@
    },
    {
     "category": "optional",
-    "count": 15,
+    "count": 14,
     "error": null,
     "full_text_count": 0,
     "id": "crossref_techcomm_journals",
@@ -491,7 +400,7 @@
    },
    {
     "category": "optional",
-    "count": 11,
+    "count": 7,
     "error": null,
     "full_text_count": 0,
     "id": "arxiv_hci_writing",

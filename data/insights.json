@@ -1,28 +1,28 @@
 {
- "brief": "Fidji Simo departs OpenAI's AGI role amid escalating US-Iran airstrikes, while new research explores performance incentives in visualization and brain-computer interfaces.",
+ "brief": "Today's news covers broadcaster Derryn Hinch's death, escalating bird flu concerns, and controversies over ICE shootings and election commission firings, while research highlights advances in AI for crime linkage and missing data analysis.",
  "meta": {
-  "generated_at": "2026-07-09T23:35:22Z"
+  "generated_at": "2026-07-10T04:12:12Z"
  },
- "news_summary": "Fidji Simo steps down from OpenAI AGI role due to illness; US and Iran trade airstrikes; new evidence in Charlie Kirk murder case; multiple international stories on politics, health, and entertainment.",
- "papers_summary": "Papers investigate performance-based incentives in visualization experiments, clinical translation of brain-computer interfaces in China, sign language recognition with smart gloves, and compositional analysis of traditional Chinese paintings.",
+ "news_summary": "Derryn Hinch dies at 82; H5 bird flu found in Australian seabird; electronic tagging expansion criticized; ICE shooting victim not intended target; wildfires kill 12 in Spain; factory fire kills 28 in China; Trump fires election commission members.",
+ "papers_summary": "Studies present tools for visualizing missing data, using AI in crime linkage analysis, and developing brain-computer interfaces for clinical translation, alongside interactive systems for traditional Chinese painting composition and sign language recognition.",
  "summaries": {
   "en": {
-   "brief": "Fidji Simo departs OpenAI's AGI role amid escalating US-Iran airstrikes, while new research explores performance incentives in visualization and brain-computer interfaces.",
-   "news_summary": "Fidji Simo steps down from OpenAI AGI role due to illness; US and Iran trade airstrikes; new evidence in Charlie Kirk murder case; multiple international stories on politics, health, and entertainment.",
-   "papers_summary": "Papers investigate performance-based incentives in visualization experiments, clinical translation of brain-computer interfaces in China, sign language recognition with smart gloves, and compositional analysis of traditional Chinese paintings."
+   "brief": "Today's news covers broadcaster Derryn Hinch's death, escalating bird flu concerns, and controversies over ICE shootings and election commission firings, while research highlights advances in AI for crime linkage and missing data analysis.",
+   "news_summary": "Derryn Hinch dies at 82; H5 bird flu found in Australian seabird; electronic tagging expansion criticized; ICE shooting victim not intended target; wildfires kill 12 in Spain; factory fire kills 28 in China; Trump fires election commission members.",
+   "papers_summary": "Studies present tools for visualizing missing data, using AI in crime linkage analysis, and developing brain-computer interfaces for clinical translation, alongside interactive systems for traditional Chinese painting composition and sign language recognition."
   },
   "zh": {
-   "brief": "今日重點：英國工黨啟動新黨魁選舉，貝安德有望接任；美國與伊朗互相發動空襲，局勢升溫；中國異見者董廣平偷渡韓國成功，稱「怕死只有死路一條」；廣西洪災暴露預警漏洞；研究方面，腦機介面在中國的臨床轉譯及傳統國畫視覺化分析有新進展。",
-   "news_summary": "英國工黨開始提名新黨魁，貝安德被視為熱門人選；美國對伊朗發動新一輪空襲，伊朗反擊科威特和卡塔爾，中東緊張加劇。中國異見者董廣平成功偷渡韓國並獲加拿大庇護，廣西洪災因預警滯後導致損失，澳門國安法首案起訴歐錦新涉顛覆罪。",
-   "papers_summary": "一篇論文調查了中國腦機介面臨床試驗與監管現狀，另一篇提出基於構圖圖的視覺分析系統用於傳統國畫分析。"
+   "brief": "今日焦點包括巴威颱風侵襲台灣，多縣市停班停課，以及英國工黨新黨魁選舉、中國異議者偷渡韓國等事件。同時，學術論文中無優先中文項目，但英文論文中探討了中國腦機介面臨床試驗與傳統繪畫視覺分析。",
+   "news_summary": "颱風巴威近30年暴風半徑最大，台灣12縣市停班停課。其他重要新聞包括英國工黨選舉新黨魁、中國異見者董廣平偷渡韓國、廣西洪災、澳門國安法首案起訴、德國華人性侵案、台灣毒油事件等。",
+   "papers_summary": "今日無優先中文論文。相關英文論文探討了中國腦機介面臨床試驗的現狀與傳統中國繪畫的組成分析。"
   }
  },
  "todays_image": {
-  "caption": "The polka dot dress's uniform pattern of dots echoes the steady rhythm of AGI research, now missing a crucial dot as Fidji Simo steps away due to illness.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1969.148_1",
-  "source_name": "Smithsonian American Art Museum",
-  "source_url": "https://americanart.si.edu/collections/search/artwork/?id=15249",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1969.148_1",
-  "title": "The Polka Dot Dress"
+  "caption": "The handcuffs from Gates's arrest and the tragic ends of Hinch and the missing girl both symbolize the moment when personal freedom is finally, and often unjustly, taken away.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2010_11_001",
+  "source_name": "National Museum of African American History and Culture",
+  "source_url": "https://nmaahc.si.edu/object/nmaahc_2010.11",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2010_11_001",
+  "title": "Handcuffs used in the arrest of Henry Louis Gates, Jr."
  }
 }
