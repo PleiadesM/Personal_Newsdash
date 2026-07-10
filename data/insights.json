@@ -1,28 +1,28 @@
 {
- "brief": "Today's news covers controversial immigration enforcement, environmental rollbacks, and AI developments, while papers explore visual analytics, crime linkage, and sign language recognition.",
+ "brief": "Today's news highlights tensions over immigration enforcement, trade secret lawsuits, and environmental deregulation, while research explores AI in crime analysis, missing data visualization, and brain-computer interfaces.",
  "meta": {
-  "generated_at": "2026-07-10T21:19:24Z"
+  "generated_at": "2026-07-10T23:12:21Z"
  },
- "news_summary": "The Trump administration pursues deregulation and immigration crackdowns, as ICE operations spark controversy; meanwhile, AI models compete in app-building and New York City bans deceptive subscriptions.",
- "papers_summary": "Research includes a dashboard for handling missing data, an industrial study of AI in crime linkage, and a multimodal smart glove for sign language recognition.",
+ "news_summary": "Trump promotes discounted gas while his administration faces backlash over an ICE shooting and habitat protections rollback; Apple sues OpenAI for alleged trade secret theft.",
+ "papers_summary": "New visualization tools address missing data imputation and compositional analysis of Chinese paintings, while studies investigate AI's role in crime linkage and brain-computer interfaces.",
  "summaries": {
   "en": {
-   "brief": "Today's news covers controversial immigration enforcement, environmental rollbacks, and AI developments, while papers explore visual analytics, crime linkage, and sign language recognition.",
-   "news_summary": "The Trump administration pursues deregulation and immigration crackdowns, as ICE operations spark controversy; meanwhile, AI models compete in app-building and New York City bans deceptive subscriptions.",
-   "papers_summary": "Research includes a dashboard for handling missing data, an industrial study of AI in crime linkage, and a multimodal smart glove for sign language recognition."
+   "brief": "Today's news highlights tensions over immigration enforcement, trade secret lawsuits, and environmental deregulation, while research explores AI in crime analysis, missing data visualization, and brain-computer interfaces.",
+   "news_summary": "Trump promotes discounted gas while his administration faces backlash over an ICE shooting and habitat protections rollback; Apple sues OpenAI for alleged trade secret theft.",
+   "papers_summary": "New visualization tools address missing data imputation and compositional analysis of Chinese paintings, while studies investigate AI's role in crime linkage and brain-computer interfaces."
   },
   "zh": {
-   "brief": "今日中文新闻聚焦福建鞋厂大火致28人遇难、新加坡收养案引发儿童贩运质疑、台风巴威逼近台湾，以及一起罕见的医疗虐待案件。研究方面暂无中文论文报道。",
-   "news_summary": "福建晋江鞋厂火灾造成28人死亡，习近平要求严肃追责；新加坡夫妇收养印尼男婴疑涉人口贩运；台风巴威逼近台湾，多地停班停课。",
-   "papers_summary": "今日无中文论文报道。"
+   "brief": "今日中文新闻聚焦福建鞋厂火灾致28人死亡、美伊冲突升级、台风巴威逼近台湾，以及新加坡夫妇收养疑遭贩卖男婴案。研究方面涵盖可视化、AI与犯罪分析等。",
+   "news_summary": "福建泉州晋江鞋厂大火造成28人遇难，习近平指示严肃追责；美伊互相发动攻击，哈梅内伊下葬之际冲突加剧；台风巴威靠近台湾，多地停班停课；新加坡夫妇收养印尼男婴涉人口贩卖引发关注。",
+   "papers_summary": "arXiv论文涉及缺失数据诊断、犯罪关联分析、脑机接口临床试验、中国画可视化等研究方向。"
   }
  },
  "todays_image": {
-  "caption": "Sphagnum moss quietly absorbs and preserves the past, much like the buried history of a pardoned sex offender finally unearthed by deportation.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3ce897179cd9c454381cd1db594653ba7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3c2b41d0e-aa65-433c-a8dc-c503f6658a71",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3ce897179cd9c454381cd1db594653ba7/90",
-  "title": "Sphagnum girgensohnii Russow"
+  "caption": "A century-old telegram sent during World War I and a modern political pitch for \"Freedom Fuel\" both use wartime rhetoric to frame energy as a national security issue.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_727a",
+  "source_name": "National Postal Museum",
+  "source_url": "https://postalmuseum.si.edu/object/npm_1982.0157.727",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_727a",
+  "title": "Telegram to John Jordan, September 5, 1918"
  }
 }

@@ -1,0 +1,30 @@
+{
+ "full_text": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint , Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at Apple.\" In addition to OpenAI, the lawsuit also names IO Products - Jony Ive's hardware startup, which OpenAI bought in 2025 - along with two specific employees, Tang Tan (OpenAI's chief hardware officer) and Chang Liu (who joined OpenAI from Apple in January). An Apple spokesperson shared this statement with 9to5Mac : At Apple, our teams are constantly developing breakthrough technologies to create the b … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/1252ab63a3c1026a.json",
+  "id": "1252ab63a3c1026a",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-10T21:36:51Z",
+  "score": 0.7466,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at Apple.\" In addition to OpenAI, the lawsuit also names IO…",
+  "tags": [
+   "policy"
+  ],
+  "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
+  "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets"
+ },
+ "meta": {
+  "generated_at": "2026-07-10T23:12:21Z",
+  "item_id": "1252ab63a3c1026a",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}
