@@ -1,28 +1,28 @@
 {
- "brief": "Police release a suspect in the Widdecombe murder case as Spain battles deadly wildfires, McConnell's health remains unclear, and a new dinosaur species is discovered. Research highlights visual analytics for missing data and AI-assisted crime linkage, alongside advances in brain-computer interfaces and sign language recognition.",
+ "brief": "Today's news highlights a tick epidemic and tech giants' emissions nearing half of France, while papers explore AI for crime linkage and brain-computer interfaces in China.",
  "meta": {
-  "generated_at": "2026-07-11T09:47:07Z"
+  "generated_at": "2026-07-11T11:18:19Z"
  },
- "news_summary": "A man arrested on suspicion of Ann Widdecombe's murder is released; Spain's wildfire kills at least 12, including four Britons; Mitch McConnell's health questions persist; a Dreyfus statue gets a permanent home in Paris; and a new dinosaur species is found in Thailand.",
- "papers_summary": "ImputeViz provides a dashboard for missing data diagnosis, while a study examines how analysts use AI in crime linkage. Other papers cover brain-computer interface trials in China, a smart glove for sign language recognition, and visual analytics for traditional Chinese paintings.",
+ "news_summary": "Ticks are expanding their territory, and Microsoft, Amazon, and Google's datacentre emissions are approaching half of France's total. Other top stories include Iran's top diplomat in Oman for Strait of Hormuz talks, an NHS anaesthetist shortage, and a statue for Alfred Dreyfus in Paris.",
+ "papers_summary": "Research presents AI-assisted crime linkage analysis and clinical translation of brain-computer interfaces in China. Other papers cover missing data visualization and traditional Chinese painting composition analysis.",
  "summaries": {
   "en": {
-   "brief": "Police release a suspect in the Widdecombe murder case as Spain battles deadly wildfires, McConnell's health remains unclear, and a new dinosaur species is discovered. Research highlights visual analytics for missing data and AI-assisted crime linkage, alongside advances in brain-computer interfaces and sign language recognition.",
-   "news_summary": "A man arrested on suspicion of Ann Widdecombe's murder is released; Spain's wildfire kills at least 12, including four Britons; Mitch McConnell's health questions persist; a Dreyfus statue gets a permanent home in Paris; and a new dinosaur species is found in Thailand.",
-   "papers_summary": "ImputeViz provides a dashboard for missing data diagnosis, while a study examines how analysts use AI in crime linkage. Other papers cover brain-computer interface trials in China, a smart glove for sign language recognition, and visual analytics for traditional Chinese paintings."
+   "brief": "Today's news highlights a tick epidemic and tech giants' emissions nearing half of France, while papers explore AI for crime linkage and brain-computer interfaces in China.",
+   "news_summary": "Ticks are expanding their territory, and Microsoft, Amazon, and Google's datacentre emissions are approaching half of France's total. Other top stories include Iran's top diplomat in Oman for Strait of Hormuz talks, an NHS anaesthetist shortage, and a statue for Alfred Dreyfus in Paris.",
+   "papers_summary": "Research presents AI-assisted crime linkage analysis and clinical translation of brain-computer interfaces in China. Other papers cover missing data visualization and traditional Chinese painting composition analysis."
   },
   "zh": {
-   "brief": "颱風巴威侵襲台灣與中國東南沿海，造成大規模停電和人員撤離。德國華人跨國性侵案宣判，揭露隱密的性暴力網絡。國際研究持續關注AI成本、人機互動與犯罪分析。",
-   "news_summary": "颱風巴威導致台灣15萬戶停電，中國三地撤離逾76萬人；德國宣判一宗由中國籍男性主導的Telegram跨國性侵案，核心成員落網。",
-   "papers_summary": "今日研究聚焦於AI在犯罪連結分析中的應用、遺漏資料視覺化診斷，以及腦機介面在中國的臨床轉譯等領域。"
+   "brief": "今日重点新闻包括台风巴威袭击台湾和中国大陆，造成大规模停电和撤离；德国宣判一起由华人主导的跨国性侵案。研究方面，虽然没有优先语言论文，但英文论文关注了AI在犯罪关联分析中的应用以及中国传统绘画的可视化分析。",
+   "news_summary": "台风巴威暴风圈进入台湾陆地，全台15万户停电，中国三地撤离逾76万人；德国宣判“德国老司机驾校”Telegram跨国性侵案，核心成员相继落网。",
+   "papers_summary": "虽然没有优先语言论文，但英文论文涉及AI辅助犯罪关联分析、中国传统绘画可视化等前沿研究。"
   }
  },
  "todays_image": {
-  "caption": "Ancient bones in a museum and a murder investigation both involve cold cases, but only one is truly extinct.",
-  "image_url": "http://ids.si.edu/ids/deliveryService?id=SIA-SIA_000095_B44_F13_005&max=1024",
-  "source_name": "Smithsonian Institution Archives",
-  "source_url": "https://siarchives.si.edu/collections/siris_arc_402459",
-  "thumbnail_url": "http://ids.si.edu/ids/deliveryService?id=SIA-SIA_000095_B44_F13_005&max=150",
-  "title": "Hall of Dinosaurs and Fossil Reptiles, Museum of Natural History"
+  "caption": "Like Lobophora sp. uses chemical defenses to survive in its environment, humans must now wage chemical warfare against the tick invasion.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }
