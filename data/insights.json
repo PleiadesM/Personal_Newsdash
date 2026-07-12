@@ -1,24 +1,24 @@
 {
- "brief": "Senator Lindsey Graham's sudden death dominates US politics, while a Bangkok bar fire kills at least 27 and wildfires in Spain injure a British couple. Research highlights include AI-assisted crime linkage and brain-computer interface trials in China.",
+ "brief": "US politics reacts to Senator Lindsey Graham's death, while a deadly Bangkok fire and US-Iran tensions dominate international headlines; research papers focus on visualization and AI applications.",
  "meta": {
-  "generated_at": "2026-07-12T21:04:43Z"
+  "generated_at": "2026-07-12T23:07:58Z"
  },
- "news_summary": "Lindsey Graham dies from a sudden illness, triggering a special election in South Carolina and sparking debate on congressional age. A Bangkok pub fire kills 27, and a British couple is badly burned in Spanish wildfires.",
- "papers_summary": "Papers explore AI in high-stakes crime linkage analysis and clinical translation of brain-computer interfaces in China, alongside visual analytics for missing data and sign language recognition.",
+ "news_summary": "Senator Lindsey Graham dies suddenly at 71; at least 27 killed in Bangkok bar fire; US and Iran exchange strikes over Strait of Hormuz; McConnell reveals fall led to hospitalization.",
+ "papers_summary": "Papers explore visual analytics for missing data, AI in crime linkage, brain-computer interfaces in China, and multimodal sign language recognition.",
  "summaries": {
   "en": {
-   "brief": "Senator Lindsey Graham's sudden death dominates US politics, while a Bangkok bar fire kills at least 27 and wildfires in Spain injure a British couple. Research highlights include AI-assisted crime linkage and brain-computer interface trials in China.",
-   "news_summary": "Lindsey Graham dies from a sudden illness, triggering a special election in South Carolina and sparking debate on congressional age. A Bangkok pub fire kills 27, and a British couple is badly burned in Spanish wildfires.",
-   "papers_summary": "Papers explore AI in high-stakes crime linkage analysis and clinical translation of brain-computer interfaces in China, alongside visual analytics for missing data and sign language recognition."
+   "brief": "US politics reacts to Senator Lindsey Graham's death, while a deadly Bangkok fire and US-Iran tensions dominate international headlines; research papers focus on visualization and AI applications.",
+   "news_summary": "Senator Lindsey Graham dies suddenly at 71; at least 27 killed in Bangkok bar fire; US and Iran exchange strikes over Strait of Hormuz; McConnell reveals fall led to hospitalization.",
+   "papers_summary": "Papers explore visual analytics for missing data, AI in crime linkage, brain-computer interfaces in China, and multimodal sign language recognition."
   },
   "zh": {
-   "brief": "浙江连续遭遇台风侵袭，近200万人疏散；韩国寺庙举办静修相亲活动助单身男女寻找爱情。学术方面无中文论文，但国际研究关注可视化分析与AI应用。",
-   "news_summary": "台风巴威两度登陆浙江，当地提前一周转移人员、加固设施，近200万人疏散。韩国僧侣组织30小时山林静修相亲，帮助单身男女解决恋爱难题。",
-   "papers_summary": "今日无中文论文，但国际学术研究涉及缺失数据可视化、AI在犯罪关联分析中的应用及中国传统绘画构图分析等。"
+   "brief": "今日重点：台风巴威两次登陆浙江，近200万人疏散；韩国僧人举办山林静修相亲活动；同时，国际方面美国参议员林赛·格雷厄姆去世，曼谷酒吧火灾致27人死亡。论文方面，AI犯罪关联分析和中国脑机接口临床试验研究引人关注。",
+   "news_summary": "台风巴威一周内两次登陆浙江，当局提前转移人员，渔船拉上岸，近200万人疏散。韩国一座佛寺举办30小时山林静修相亲，帮助12男12女寻找爱情。",
+   "papers_summary": "由于无中文论文，英文论文中《How Analysts Use AI in High-Stakes Crime Linkage》和《Clinical Translation of Brain-Computer Interface in China》值得关注，后者聚焦中国脑机接口的临床试验与监管进展。"
   }
  },
  "todays_image": {
-  "caption": "The \"HIBERNIA\" fire engine plate suggests a dormant emergency, mirroring Lindsey Graham's suddenly uncertain re-election path.",
+  "caption": "The \"HIBERNIA\" plate, once part of a fire engine's identity, now echoes the deadly Bangkok bar fire, linking a symbol of firefighting to a tragic scene of uncontrolled flames.",
   "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2011q00827",
   "source_name": "National Museum of American History",
   "source_url": null,
