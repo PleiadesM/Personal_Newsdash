@@ -1,28 +1,28 @@
 {
- "brief": "Senator Lindsey Graham dies at 71; Iran strikes Gulf countries and closes Strait of Hormuz amid US retaliation. New research explores AI in crime linkage, BCI clinical translation, and visual analytics for missing data.",
+ "brief": "Iran escalates conflict with Gulf states while US senator Lindsey Graham dies; research papers explore missing data imputation and traditional Chinese painting analysis.",
  "meta": {
-  "generated_at": "2026-07-12T10:02:57Z"
+  "generated_at": "2026-07-12T11:28:57Z"
  },
- "news_summary": "Senator Lindsey Graham dies of sudden illness; Iran attacks Gulf states and closes Strait of Hormuz after US strikes. Also: UK warns on unregulated peptides, Typhoon evacuates millions in China, and AI bots used in campaign texts.",
- "papers_summary": "Papers cover visual analytics for imputation (ImputeViz), AI in crime linkage, BCI trials in China, sign language gloves, and a programming environment for creative computing (Flowcode).",
+ "news_summary": "Iran attacks Gulf countries and hard-liners push for continued fight; Senator Lindsey Graham dies suddenly; wildfires in Spain trap British couple.",
+ "papers_summary": "Papers cover visual analytics for missing data, AI in crime linkage, brain-computer interface trials, and a composition-graph system for traditional Chinese paintings.",
  "summaries": {
   "en": {
-   "brief": "Senator Lindsey Graham dies at 71; Iran strikes Gulf countries and closes Strait of Hormuz amid US retaliation. New research explores AI in crime linkage, BCI clinical translation, and visual analytics for missing data.",
-   "news_summary": "Senator Lindsey Graham dies of sudden illness; Iran attacks Gulf states and closes Strait of Hormuz after US strikes. Also: UK warns on unregulated peptides, Typhoon evacuates millions in China, and AI bots used in campaign texts.",
-   "papers_summary": "Papers cover visual analytics for imputation (ImputeViz), AI in crime linkage, BCI trials in China, sign language gloves, and a programming environment for creative computing (Flowcode)."
+   "brief": "Iran escalates conflict with Gulf states while US senator Lindsey Graham dies; research papers explore missing data imputation and traditional Chinese painting analysis.",
+   "news_summary": "Iran attacks Gulf countries and hard-liners push for continued fight; Senator Lindsey Graham dies suddenly; wildfires in Spain trap British couple.",
+   "papers_summary": "Papers cover visual analytics for missing data, AI in crime linkage, brain-computer interface trials, and a composition-graph system for traditional Chinese paintings."
   },
   "zh": {
-   "brief": "今日多重颱風與地緣衝突交織，中國疏散近200萬人，美伊局勢因霍爾木茲海峽關閉而緊張。同時，韓國佛寺推出實驗性相親活動，科學研究揭示蚊蟲偏好的生化機制。",
-   "news_summary": "颱風二次登陸浙江，近200萬人撤離，溫州處於風暴路徑。韓國僧侶舉辦30小時山林靜修相親，協助單身男女尋愛。研究分析人體氣味與蚊蟲叮咬的關聯性。",
-   "papers_summary": "本日無優先中文論文，英文研究涵蓋AI在犯罪關聯分析中的應用、缺失數據診斷可視化、以及傳統中國畫構圖解析等領域。"
+   "brief": "中国连续遭遇台风袭击，近200万人疏散；韩国寺庙举办静修相亲活动。论文方面，今日无中文论文。",
+   "news_summary": "台风巴威一周内两次登陆浙江，造成近200万人疏散；温州等地提前采取防范措施。此外，韩国一座寺庙举办静修相亲活动，帮助单身男女寻找爱情；关于蚊虫叮咬的研究解释了为何有些人更易被叮。",
+   "papers_summary": "今日没有来自中文来源的论文。英文论文中，一项研究利用组合图可视化分析中国传统绘画的构图，另一项关注中国脑机接口临床转化。"
   }
  },
  "todays_image": {
-  "caption": "Like Lobophora sp. drifting in the currents, Senator Graham's life has passed beyond the political horizon.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "Just as a saucer hovers unseen in the sky, hard-liners in Iran keep their aggression toward America suspended in a stubborn, unresolved standoff.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-0298529572E22-000001",
+  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/107971",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-0298529572E22-000001",
+  "title": "Saucer"
  }
 }
