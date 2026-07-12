@@ -1,28 +1,28 @@
 {
- "brief": "Iran attacks Gulf countries and closes Strait of Hormuz after US strikes, while US Senator Lindsey Graham dies suddenly. Amid these geopolitical shifts, researchers publish work on AI in crime linkage, BCI clinical translation, and traditional Chinese painting analysis.",
+ "brief": "Lindsey Graham's sudden death dominates US politics, while Ukraine advances and extreme weather hits globally. Research papers focus on AI in crime linkage, missing data visualization, and brain-computer interfaces.",
  "meta": {
-  "generated_at": "2026-07-12T13:54:00Z"
+  "generated_at": "2026-07-12T15:14:23Z"
  },
- "news_summary": "Iran retaliates against US strikes by attacking Gulf states and closing the Strait of Hormuz; Senator Lindsey Graham's death shocks Washington. Additionally, wildfires in Spain and flooding in Missouri cause casualties.",
- "papers_summary": "Research highlights include visual analytics for missing data (ImputeViz), AI for crime linkage, clinical translation of BCI in China, and compositional analysis of traditional Chinese paintings.",
+ "news_summary": "US Senator Lindsey Graham died aged 71, prompting tributes from Trump, Zelenskyy, and Netanyahu. Other notable events include Ukraine's leadership shuffle and severe weather in Germany and Missouri.",
+ "papers_summary": "New research explores AI-assisted crime linkage, methods for handling missing data in analytics, and the clinical translation of brain-computer interfaces in China.",
  "summaries": {
   "en": {
-   "brief": "Iran attacks Gulf countries and closes Strait of Hormuz after US strikes, while US Senator Lindsey Graham dies suddenly. Amid these geopolitical shifts, researchers publish work on AI in crime linkage, BCI clinical translation, and traditional Chinese painting analysis.",
-   "news_summary": "Iran retaliates against US strikes by attacking Gulf states and closing the Strait of Hormuz; Senator Lindsey Graham's death shocks Washington. Additionally, wildfires in Spain and flooding in Missouri cause casualties.",
-   "papers_summary": "Research highlights include visual analytics for missing data (ImputeViz), AI for crime linkage, clinical translation of BCI in China, and compositional analysis of traditional Chinese paintings."
+   "brief": "Lindsey Graham's sudden death dominates US politics, while Ukraine advances and extreme weather hits globally. Research papers focus on AI in crime linkage, missing data visualization, and brain-computer interfaces.",
+   "news_summary": "US Senator Lindsey Graham died aged 71, prompting tributes from Trump, Zelenskyy, and Netanyahu. Other notable events include Ukraine's leadership shuffle and severe weather in Germany and Missouri.",
+   "papers_summary": "New research explores AI-assisted crime linkage, methods for handling missing data in analytics, and the clinical translation of brain-computer interfaces in China."
   },
   "zh": {
-   "brief": "今天，两个台风接连登陆浙江，近200万人疏散；韩国一座佛寺举办30小时静修相亲活动。",
-   "news_summary": "台风巴威和另一台风接连登陆浙江，当地政府提前一周组织转移、加固门窗、撤离人员，近200万人被疏散。韩国一佛寺则推出山林静修相亲，帮助单身男女寻找爱情。",
-   "papers_summary": "今日无中文论文报道。英文论文包括针对缺失数据的可视化诊断工具和AI辅助犯罪关联分析研究。"
+   "brief": "今日重点包括中国遭遇双台风袭击，近200万人疏散；美国参议员格雷厄姆突然病逝；韩国僧人举办静修相亲。研究方面，多篇论文关注人机交互与可视化分析。",
+   "news_summary": "台风巴威登陆浙江，多地提前转移人员；美国参议员林赛·格雷厄姆因突发疾病去世，多国领导人致哀；韩国佛寺举办30小时静修相亲活动。",
+   "papers_summary": "英文论文涵盖缺失数据可视化、犯罪关联分析的AI应用、脑机接口临床试验、传统中国画构图分析等主题。"
   }
  },
  "todays_image": {
-  "caption": "The precision of a drafting compass, used to draw boundaries and spheres of influence, contrasts sharply with the chaotic redrawing of borders and alliances in the Middle East as Iran retaliates against Gulf countries.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2021_95_7_001",
+  "caption": "The gavel that once symbolized judicial finality now echoes the sudden silence of a key political ally's death.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-A2017_13_1_7_001",
   "source_name": "National Museum of African American History and Culture",
-  "source_url": "https://nmaahc.si.edu/object/nmaahc_2021.95.7",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2021_95_7_001",
-  "title": "Drafting compass owned by Julian Abele Cook Sr."
+  "source_url": "https://nmaahc.si.edu/object/nmaahc_A2017.13.1.7",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-A2017_13_1_7_001",
+  "title": "Gavel used by Judge Robert Terrell"
  }
 }
