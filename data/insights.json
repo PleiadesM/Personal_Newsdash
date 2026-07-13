@@ -1,28 +1,28 @@
 {
- "brief": "U.S. immigration enforcement intensifies with a fatal ICE shooting in Maine, while Trump reinstates an Iran port blockade. In research, papers explore AI coding assistants and wearable sensing systems. Lindsey Graham's sister is appointed to his Senate seat.",
+ "brief": "The US launched a third night of strikes on Iran and reinstated a blockade of the Hormuz strait, while ICE shootings in Maine and Texas fuel outrage. In research, new papers explore human control in AI coding assistants and wearable sensing, and the risks of AI in high-stakes crime linkage.",
  "meta": {
-  "generated_at": "2026-07-13T21:11:47Z"
+  "generated_at": "2026-07-13T23:11:17Z"
  },
- "news_summary": "Top stories include the fatal ICE shooting of a Colombian man in Maine, Trump reinstating the Iran port blockade with a 20% cargo charge, and Lindsey Graham's sister appointed to his Senate term.",
- "papers_summary": "Research highlights include configurable AI coding assistants, behavioral probing in mandatory wearable sensing, and a study on AI in crime linkage.",
+ "news_summary": "Tensions escalate as the US strikes Iran for a third night and imposes tolls on Hormuz strait shipping; domestic controversy grows over ICE shootings of migrants and the sudden death of Senator Lindsey Graham.",
+ "papers_summary": "Papers highlight the design of configurable AI coding assistants, behavioral adaptation in mandatory wearable sensing, and the use of AI in crime linkage analysis, underscoring the tension between automation and human oversight.",
  "summaries": {
   "en": {
-   "brief": "U.S. immigration enforcement intensifies with a fatal ICE shooting in Maine, while Trump reinstates an Iran port blockade. In research, papers explore AI coding assistants and wearable sensing systems. Lindsey Graham's sister is appointed to his Senate seat.",
-   "news_summary": "Top stories include the fatal ICE shooting of a Colombian man in Maine, Trump reinstating the Iran port blockade with a 20% cargo charge, and Lindsey Graham's sister appointed to his Senate term.",
-   "papers_summary": "Research highlights include configurable AI coding assistants, behavioral probing in mandatory wearable sensing, and a study on AI in crime linkage."
+   "brief": "The US launched a third night of strikes on Iran and reinstated a blockade of the Hormuz strait, while ICE shootings in Maine and Texas fuel outrage. In research, new papers explore human control in AI coding assistants and wearable sensing, and the risks of AI in high-stakes crime linkage.",
+   "news_summary": "Tensions escalate as the US strikes Iran for a third night and imposes tolls on Hormuz strait shipping; domestic controversy grows over ICE shootings of migrants and the sudden death of Senator Lindsey Graham.",
+   "papers_summary": "Papers highlight the design of configurable AI coding assistants, behavioral adaptation in mandatory wearable sensing, and the use of AI in crime linkage analysis, underscoring the tension between automation and human oversight."
   },
   "zh": {
-   "brief": "今日主要新闻包括曼谷酒吧大火致27死、台风巴威横扫华东、美国参议员格雷厄姆去世。研究方面关注AI编程助手和可穿戴传感系统。",
-   "news_summary": "曼谷酒吧大火造成27人死亡，目击者描述逃生经历；台风巴威先登陆浙江后北移，河北洪水冲走车辆；美国参议员格雷厄姆去世，其妹被任命接替任期。特朗普政府重启伊朗港口封锁并拟对霍尔木兹海峡货物征收20%费用。",
-   "papers_summary": "多项研究探讨AI编程助手的可控性、高 stakes 环境下可穿戴传感的行为探测、以及可视化分析中缺失数据处理等问题。"
+   "brief": "泰国曼谷酒吧大火导致至少27人死亡，美国参议员格雷厄姆去世，台风“巴威”袭击华东后北移。研究方面，AI编程助手和可穿戴传感系统的设计成为焦点。",
+   "news_summary": "曼谷酒吧火灾致27死，目击者描述惨状；美国参议员格雷厄姆去世，其妹妹接任；台风“巴威”横扫华东后移至河北，引发洪水。",
+   "papers_summary": "arXiv发布了关于AI编程助手可配置设计、强制性可穿戴传感的行为探测等研究，关注人机交互中的控制与适应。"
   }
  },
  "todays_image": {
-  "caption": "A pair of federal handcuffs, meant to restrain, mirrors the tragic end of a 35-year pursuit of freedom under the weight of federal enforcement.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00361-000001",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00361-000001&max=150",
-  "title": "Federal Air Marshal's Handcuffs"
+  "caption": "Like Lobophora algae drifting with the tide, the asylum bill is carried by shifting political currents of dissent and support.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }
