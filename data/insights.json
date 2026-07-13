@@ -1,28 +1,28 @@
 {
- "brief": "At least 27 die in Bangkok bar fire; US and Iran trade strikes, oil surges; Senator Lindsey Graham dies; papers explore AI coding assistants and brain-computer interfaces.",
+ "brief": "Today's news highlights the deaths of Senator Lindsey Graham and actor Sam Neill, alongside escalating US-Iran tensions that sent oil prices soaring and a deadly bar fire in Bangkok. Research papers focus on AI coding assistants and wearable sensing in high-stakes contexts.",
  "meta": {
-  "generated_at": "2026-07-13T03:57:12Z"
+  "generated_at": "2026-07-13T07:36:00Z"
  },
- "news_summary": "A fire at a Bangkok bar killed 27 and injured dozens; US-Iran hostilities escalated with strikes and rising oil prices; Senator Lindsey Graham died suddenly at 69; an Australian university tutor reported Nazi salutes from students.",
- "papers_summary": "Research on configurable AI coding assistants, mandatory wearable sensing in high-stakes contexts, and a landscape analysis of brain-computer interface trials in China highlight human-control and ethical challenges.",
+ "news_summary": "Republican Senator Lindsey Graham and actor Sam Neill have died; US-Iran strikes over the Strait of Hormuz have caused oil prices to leap and markets to fall; a bar fire in Bangkok has killed at least 27 people.",
+ "papers_summary": "Papers explore configurable AI coding assistants for developer control and the behavioral implications of mandatory wearable sensing in institutions.",
  "summaries": {
   "en": {
-   "brief": "At least 27 die in Bangkok bar fire; US and Iran trade strikes, oil surges; Senator Lindsey Graham dies; papers explore AI coding assistants and brain-computer interfaces.",
-   "news_summary": "A fire at a Bangkok bar killed 27 and injured dozens; US-Iran hostilities escalated with strikes and rising oil prices; Senator Lindsey Graham died suddenly at 69; an Australian university tutor reported Nazi salutes from students.",
-   "papers_summary": "Research on configurable AI coding assistants, mandatory wearable sensing in high-stakes contexts, and a landscape analysis of brain-computer interface trials in China highlight human-control and ethical challenges."
+   "brief": "Today's news highlights the deaths of Senator Lindsey Graham and actor Sam Neill, alongside escalating US-Iran tensions that sent oil prices soaring and a deadly bar fire in Bangkok. Research papers focus on AI coding assistants and wearable sensing in high-stakes contexts.",
+   "news_summary": "Republican Senator Lindsey Graham and actor Sam Neill have died; US-Iran strikes over the Strait of Hormuz have caused oil prices to leap and markets to fall; a bar fire in Bangkok has killed at least 27 people.",
+   "papers_summary": "Papers explore configurable AI coding assistants for developer control and the behavioral implications of mandatory wearable sensing in institutions."
   },
   "zh": {
-   "brief": "今日頭條包括曼谷酒吧大火致27死、食腦變形蟲威脅、高溫對女性影響更大，以及颱風接連登陸中國東部導致近200萬人疏散。研究方面關注AI輔助編程、可穿戴傳感與視覺分析。",
-   "news_summary": "曼谷酒吧大火造成至少27死60傷，消防員半小時內控制火勢但傷亡慘重。福氏耐格里原蟲可能全球蔓延，台灣曾現病例。高溫天氣下女性更難熬，專家呼籲加強保障。颱風巴威兩度登陸浙江，當地嚴密防災；一週內第二個颱風登陸，近200萬人疏散。",
-   "papers_summary": "論文探討AI編程助手的可配置性、強制性可穿戴傳感的行為探測與適應、以及用對話式音頻表示讓非視覺用戶體驗迷因。另有視覺分析儀表板用於診斷缺失數據和比較插補方法。"
+   "brief": "今日焦點包括Pokemon Go十週年、曼谷酒吧大火致27死、台灣曾現蹤的食腦微生物威脅擴大，以及颱風巴威登陸浙江。國際方面，美國參議員葛理漢和演員山姆·尼爾去世。",
+   "news_summary": "優先中文新聞涵蓋Pokemon Go十週年、曼谷酒吧大火、食腦微生物、高溫對女性影響及颱風巴威。國際新聞中，美國參議員葛理漢和演員山姆·尼爾逝世。",
+   "papers_summary": "今日無相關論文報告。"
   }
  },
  "todays_image": {
-  "caption": "The helmet number 7, once a proud emblem of firefighting heritage, now shadows the tragic multiple of 7 in Bangkok's deadly bar blaze.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2012q00666",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2012q00666&max=150",
-  "title": "Helmet Frontpiece, “Shiffler S. Fire Co. 7”"
+  "caption": "Just as Lobophora sp. algae can undergo a rapid, unforeseen bloom that disrupts its ecosystem, Senator Lindsey Graham's sudden illness abruptly ended a long-standing political presence.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }
