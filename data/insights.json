@@ -1,48 +1,28 @@
 {
- "apropos_of_nothing": {
-  "query": "(\"lawn mower racing\" OR \"lawn mower racing championship\")",
-  "source": {
-   "name": "norfolkdailynews.com",
-   "published_at": "2026-07-08T23:00:00Z",
-   "title": "Boone County Fair features events for all ages",
-   "url": "https://norfolkdailynews.com/news/boone-county-fair-features-events-for-all-ages/article_636e6d15-0ab3-4aef-81f8-4416f9b74ca2.html"
-  },
-  "summaries": {
-   "en": {
-    "summary": "The Boone County Fair in Nebraska offers demolition derbies and livestock shows for all ages.",
-    "why_irrelevant": "It is a local community event far removed from global politics or AI."
-   },
-   "zh": {
-    "summary": "内布拉斯加州的布恩县博览会提供老少皆宜的拆车大赛和牲畜展览。",
-    "why_irrelevant": "这是一个地方社区活动，远离全球政治或人工智能话题。"
-   }
-  },
-  "topic": "lawn mower racing"
- },
- "brief": "Tensions escalate in the Strait of Hormuz as the US imposes a blockade and tolls, while a deadly Bangkok bar fire highlights global safety lapses. Research explores AI's role in communication and creative writing, from climate change narratives to playful email tones.",
+ "brief": "Geopolitical tensions in the Gulf drive oil above $85, as US-Iran clashes and Hormuz toll threats rattle markets, while European allies flex military muscle at Bastille Day. Meanwhile, research explores AI's role in creative writing, climate narratives, and workplace communication.",
  "meta": {
-  "generated_at": "2026-07-14T10:08:22Z"
+  "generated_at": "2026-07-14T11:43:14Z"
  },
- "news_summary": "The US reinstates a blockade in the Strait of Hormuz and announces a 20% toll on cargo, prompting Iranian retaliation; a Bangkok bar fire kills 30, raising concerns over blocked exits and flammable materials; US political developments include Trump's retribution campaign and Supreme Court security requests.",
- "papers_summary": "Studies examine how AI assists creative writing through collaborative games (FIERO), how TikTok users express climate change anxiety through personal narratives, and how playful AI tone in professional emails affects recipient engagement.",
+ "news_summary": "Oil prices surge and stocks fall as US-Iran clashes escalate, with Iranian cruise missiles hitting tankers and Trump threatening tolls on Hormuz shipping. Other highlights include France's Bastille Day parade signaling European defense, a fatal ICE shooting in Maine, and the BBC facing a funding crisis.",
+ "papers_summary": "Papers examine AI-assisted creative writing (FIERO), emotional expressions about climate change on TikTok, the impact of playful AI in professional emails on recipient engagement, and a visual analytics system for detecting cryptocurrency manipulation (ManiScope).",
  "summaries": {
   "en": {
-   "brief": "Tensions escalate in the Strait of Hormuz as the US imposes a blockade and tolls, while a deadly Bangkok bar fire highlights global safety lapses. Research explores AI's role in communication and creative writing, from climate change narratives to playful email tones.",
-   "news_summary": "The US reinstates a blockade in the Strait of Hormuz and announces a 20% toll on cargo, prompting Iranian retaliation; a Bangkok bar fire kills 30, raising concerns over blocked exits and flammable materials; US political developments include Trump's retribution campaign and Supreme Court security requests.",
-   "papers_summary": "Studies examine how AI assists creative writing through collaborative games (FIERO), how TikTok users express climate change anxiety through personal narratives, and how playful AI tone in professional emails affects recipient engagement."
+   "brief": "Geopolitical tensions in the Gulf drive oil above $85, as US-Iran clashes and Hormuz toll threats rattle markets, while European allies flex military muscle at Bastille Day. Meanwhile, research explores AI's role in creative writing, climate narratives, and workplace communication.",
+   "news_summary": "Oil prices surge and stocks fall as US-Iran clashes escalate, with Iranian cruise missiles hitting tankers and Trump threatening tolls on Hormuz shipping. Other highlights include France's Bastille Day parade signaling European defense, a fatal ICE shooting in Maine, and the BBC facing a funding crisis.",
+   "papers_summary": "Papers examine AI-assisted creative writing (FIERO), emotional expressions about climate change on TikTok, the impact of playful AI in professional emails on recipient engagement, and a visual analytics system for detecting cryptocurrency manipulation (ManiScope)."
   },
   "zh": {
-   "brief": "今日重點：南海仲裁案十年未息，美國宣布封鎖荷姆茲海峽，曼谷酒吧大火30死。研究聚焦AI協作寫作與數據敘事誤區。",
-   "news_summary": "中國前政治局委員馬興瑞被雙開；英國改革黨發言人韋黛琴命案升級為反恐調查；直布羅陀邊境開放。國際方面，美國宣布對荷姆茲海峽實施封鎖並收費，曼谷酒吧大火疑因出口受阻。",
-   "papers_summary": "多篇論文探討AI輔助寫作對溝通效果的影響，以及數據敘事中的常見錯誤。另有研究分析TikTok短影音中民眾對氣候變化的情緒表達。"
+   "brief": "中国异见人士董广平第四次驾艇偷渡韩国，美伊冲突推高油价，南海仲裁案十年争议未息。论文方面，研究关注AI辅助创意写作与气候传播。",
+   "news_summary": "董广平冒险驾艇穿越黄海偷渡韩国；美伊冲突导致油价突破85美元，特朗普威胁对霍尔木兹航运收费；南海仲裁案十年后仍存争议。",
+   "papers_summary": "论文探索了AI在协作创意写作中的角色，以及TikTok视频中个人叙事表达气候焦虑的方式。"
   }
  },
  "todays_image": {
-  "caption": "The AGM-86B ALCM’s long-range precision strike mirrors the sudden, targeted backlash that finally caught up with the Democratic establishment.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19820121000-NASM2019-00593",
-  "source_name": "National Air and Space Museum",
-  "source_url": "http://n2t.net/ark:/65665/nv94c0f0ad1-9108-476e-b4d0-eeecff910345",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19820121000-NASM2019-00593",
-  "title": "Missile, Cruise, Air-launched, Flight Test, AGM-86B ALCM"
+  "caption": "The T-Rex's extinction from a prehistoric impact echoes today's oil price shock as fossil fuel markets face their own destabilizing collision.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57",
+  "source_name": "NMNH - Paleobiology Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3e09b29ad-36bd-4e85-88e8-f6ac46ffefc4",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57/90",
+  "title": "Tyrannosaurus rex Osborn, 1905"
  }
 }
