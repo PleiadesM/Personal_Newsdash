@@ -1,28 +1,28 @@
 {
- "brief": "Tensions escalate in the Middle East with US strikes and Iranian missile attacks on tankers, while domestic news features ICE shootings and the death of cartoonist Pat Oliphant. In research, papers examine AI's role in creative writing and data communication.",
+ "brief": "Escalating US-Iran strikes and a deadly Bangkok bar fire dominate headlines, while research explores AI-assisted creativity and data communication challenges.",
  "meta": {
-  "generated_at": "2026-07-14T03:30:51Z"
+  "generated_at": "2026-07-14T06:23:02Z"
  },
- "news_summary": "The US launches new strikes on Iran as the UAE condemns Iranian missiles hitting tankers; a Colombian man is fatally shot by ICE; tributes pour in for Sam Neill and Pat Oliphant.",
- "papers_summary": "Papers explore AI-assisted creative writing through collaborative gameplay, TikTok users' climate change expressions, and a taxonomy of data narrative failures.",
+ "news_summary": "US strikes Iran for third consecutive night as UAE reports tanker hits in Hormuz; Bangkok bar fire death toll reaches 30 with negligence suspected.",
+ "papers_summary": "Papers examine AI tools for collaborative writing, emotional expression in climate TikTok videos, and issues in data narratives.",
  "summaries": {
   "en": {
-   "brief": "Tensions escalate in the Middle East with US strikes and Iranian missile attacks on tankers, while domestic news features ICE shootings and the death of cartoonist Pat Oliphant. In research, papers examine AI's role in creative writing and data communication.",
-   "news_summary": "The US launches new strikes on Iran as the UAE condemns Iranian missiles hitting tankers; a Colombian man is fatally shot by ICE; tributes pour in for Sam Neill and Pat Oliphant.",
-   "papers_summary": "Papers explore AI-assisted creative writing through collaborative gameplay, TikTok users' climate change expressions, and a taxonomy of data narrative failures."
+   "brief": "Escalating US-Iran strikes and a deadly Bangkok bar fire dominate headlines, while research explores AI-assisted creativity and data communication challenges.",
+   "news_summary": "US strikes Iran for third consecutive night as UAE reports tanker hits in Hormuz; Bangkok bar fire death toll reaches 30 with negligence suspected.",
+   "papers_summary": "Papers examine AI tools for collaborative writing, emotional expression in climate TikTok videos, and issues in data narratives."
   },
   "zh": {
-   "brief": "今日重點：直布羅陀邊境開放、霸王龍化石高價拍賣、曼谷酒吧大火、美國參議員葛蘭姆去世、颱風巴威侵襲華北。",
-   "news_summary": "英西118年邊防撤關，直布羅陀迎來自由流動；6700萬年霸王龍化石將在紐約拍賣，估值創紀錄；曼谷酒吧大火致27死；美國參議員葛蘭姆逝世，影響共和黨議程；颱風巴威北上，河北大水困千人。",
-   "papers_summary": "研究探討LLM在專業郵件中的語氣影響，以及數據敘事失敗的分類學。"
+   "brief": "今日中国政坛重磅消息：马兴瑞被双开；台风巴威横扫华东后北移致河北严重水灾；曼谷酒吧大火死亡人数升至30人。学术方面暂无重点。",
+   "news_summary": "马兴瑞被开除党籍公职，成为习近平时代又一位落马的政治局委员；台风巴威给华东华北带来强降雨，河北宽城约1800人被困；曼谷酒吧大火死亡升至30人，警方调查疏忽责任；英属直布罗陀与西班牙撤除边境检查站；霸王龙化石将拍卖，估值创纪录；美国参议员葛兰姆去世，曾为特朗普盟友；中国留学生被指为墨西哥‘芬太尼王’。",
+   "papers_summary": "今日无重点论文。"
   }
  },
  "todays_image": {
-  "caption": "Like the Tyrannosaurus rex's unchecked dominance led to its extinction, AI companies' refusal to self-regulate risks a catastrophic loss of trust.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57",
-  "source_name": "NMNH - Paleobiology Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3e09b29ad-36bd-4e85-88e8-f6ac46ffefc4",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57/90",
-  "title": "Tyrannosaurus rex Osborn, 1905"
+  "caption": "Like the Lobophora sp. clinging to reefs, the Strait of Hormuz anchors global oil flows, now churning under strikes and tanker hits.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }

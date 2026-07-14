@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-14T03:30:51Z",
+ "generated_at": "2026-07-14T06:23:02Z",
  "private_summary": {
   "configured": 0,
   "total": 2
@@ -103,7 +103,7 @@
   },
   {
    "category": "open",
-   "count": 6,
+   "count": 4,
    "error": null,
    "full_text_count": 0,
    "id": "hn_frontpage_ai",
@@ -115,7 +115,7 @@
   },
   {
    "category": "open",
-   "count": 33,
+   "count": 34,
    "error": null,
    "full_text_count": 0,
    "id": "bbc_world",
