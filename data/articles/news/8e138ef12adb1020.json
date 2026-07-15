@@ -1,0 +1,30 @@
+{
+ "full_text": "As rumors continue to swirl about OpenAI's work on a personalized smart speaker and other hardware, the company is today rolling out its first branded device. The $230 Codex Micro is a specialized, RGB-lit mini-keyboard designed to let users monitor and quickly interact with multiple Codex agents with a glance and a few clicks. The device is described as a \"limited-run collaboration\" with Work Louder , which already sells a very similar-looking Creator Micro line of customizable square keyboards targeted at creative professionals. The Codex Micro differentiates itself from those mainly through six frosted keys in the top two rows, which offer color-coded live feedback on up to six Codex threads, even when they are not in focus on-screen. Open the OpenAI box for AI assistance.\n        Credit:\n          OpenAI / Work Louder Ideally, those colored keys will cycle from white when a thread is idle to blue when Codex is thinking to green when a task is complete. But the keys can also flash amber when Codex requires feedback or a decision from a human operator and red when a thread encounters an error, letting users know at a glance which of their Codex tasks needs immediate attention. A quick tap on the lit-up button brings up the applicable Codex window on-screen. Read full article Comments",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/8e138ef12adb1020.json",
+  "id": "8e138ef12adb1020",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-15T16:00:33Z",
+  "score": 0.7461,
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai",
+  "summary": "The Codex Micro is designed to monitor multiple agentic threads at a glance.",
+  "tags": [
+   "agents"
+  ],
+  "title": "OpenAI's first branded hardware is... a light-up keyboard?",
+  "url": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard/"
+ },
+ "meta": {
+  "generated_at": "2026-07-15T17:37:03Z",
+  "item_id": "8e138ef12adb1020",
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai"
+ }
+}

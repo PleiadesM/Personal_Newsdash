@@ -1,28 +1,28 @@
 {
- "brief": "Trump overturns DHS halt to ICE traffic stops amid fatal shootings; Buzz Aldrin's pen sells for $850k; new research explores multimodal emotion detection and graph database visualization.",
+ "brief": "Today's news covers AI safety and agent development, geopolitical tensions in the Strait of Hormuz, and health alerts for Cyclospora. Papers explore emotion-aware digital objects, AI research assistants, and human-AI collaboration in creative writing.",
  "meta": {
-  "generated_at": "2026-07-15T15:48:04Z"
+  "generated_at": "2026-07-15T17:37:03Z"
  },
- "news_summary": "The White House overturned a DHS halt on ICE traffic stops after two fatal shootings, drawing criticism. Meanwhile, wildfires spread smoke across the Northeast, and Buzz Aldrin's mission-saving pen sold for over $850,000.",
- "papers_summary": "New papers introduce CD-MED for cross-domain multimodal emotion detection in digital objects, GraphPolaris for graph database visualization, and Aïra for interdisciplinary AI research assistants.",
+ "news_summary": "OpenAI introduces GPT-Red to enhance model security, while US strikes in the Strait of Hormuz and ICE shootings dominate headlines. Health warnings about Cyclospora and wildfires in Ontario also feature.",
+ "papers_summary": "Research on multimodal emotion descriptors, AI assistants for interdisciplinary science, and creative writing through collaborative gameplay highlights advances in human-computer interaction.",
  "summaries": {
   "en": {
-   "brief": "Trump overturns DHS halt to ICE traffic stops amid fatal shootings; Buzz Aldrin's pen sells for $850k; new research explores multimodal emotion detection and graph database visualization.",
-   "news_summary": "The White House overturned a DHS halt on ICE traffic stops after two fatal shootings, drawing criticism. Meanwhile, wildfires spread smoke across the Northeast, and Buzz Aldrin's mission-saving pen sold for over $850,000.",
-   "papers_summary": "New papers introduce CD-MED for cross-domain multimodal emotion detection in digital objects, GraphPolaris for graph database visualization, and Aïra for interdisciplinary AI research assistants."
+   "brief": "Today's news covers AI safety and agent development, geopolitical tensions in the Strait of Hormuz, and health alerts for Cyclospora. Papers explore emotion-aware digital objects, AI research assistants, and human-AI collaboration in creative writing.",
+   "news_summary": "OpenAI introduces GPT-Red to enhance model security, while US strikes in the Strait of Hormuz and ICE shootings dominate headlines. Health warnings about Cyclospora and wildfires in Ontario also feature.",
+   "papers_summary": "Research on multimodal emotion descriptors, AI assistants for interdisciplinary science, and creative writing through collaborative gameplay highlights advances in human-computer interaction."
   },
   "zh": {
-   "brief": "今日中国新闻聚焦经济增速放缓至4.3%、间谍案拘留地震学家、香港书店被捕事件引发大陆读者回忆，同时霸王龙化石创下拍卖纪录。论文方面，AI与可视化研究成为热点。",
-   "news_summary": "中国二季度GDP增速放缓至4.3%，创2022年底以来新低；地震学家陈友麟因涉嫌间谍罪被拘留近两年；香港独立书店负责人被捕引发大陆读者集体回忆；霸王龙化石以5010万美元成交。",
-   "papers_summary": "arXiv论文涵盖多模态情感描述、图数据库可视化、AI研究助手及低资源语言健康 misinformation 检测等方向。"
+   "brief": "今日中國新聞聚焦於經濟增長放緩、間諜案及芬太尼毒梟引渡，同時霸王龍化石創拍賣紀錄。學術方面多項研究探討AI輔助寫作、情感分析與人機協作。",
+   "news_summary": "中國經濟第二季增長放緩至4.3%，創2022年底以來新低；地震學家陳友麟因涉朝鮮核試驗研究被以間諜罪拘留近兩年；涉嫌主導中美芬太尼供應鏈的中國毒梟「王哥」張智棟在美受審；霸王龍化石以5010萬美元拍出，創最貴恐龍標本紀錄。",
+   "papers_summary": "多篇論文關注AI在跨領域情感描述、圖數據庫可視化、研究助手設計及低資源語言健康錯誤信息檢測中的應用，另有人機協作實驗平台與創意寫作協作遊戲的研究。"
   }
  },
  "todays_image": {
-  "caption": "Both the wrecked train and the pressure to resume traffic stops evoke the disastrous consequences of unchecked momentum and reckless authority.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NPM-A.2009-45",
-  "source_name": "National Postal Museum",
-  "source_url": "https://postalmuseum.si.edu/object/npm_A.2009-45",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NPM-A.2009-45",
-  "title": "Photograph of post card of wrecked train near Beitner, Michigan"
+  "caption": "Both a lighthouse design and building the agent \"Shippy\" involve constructing a guiding beacon to navigate complex environments.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH1078",
+  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/30588",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CH1078",
+  "title": "Design for a Lighthouse"
  }
 }
