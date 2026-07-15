@@ -1,28 +1,28 @@
 {
- "brief": "Today's news highlights tensions over AI and data centers, Iran-Hormuz clashes, and a Supreme Court security hearing, while papers explore multimodal emotion detection and AI research tools.",
+ "brief": "Today's headlines span Australia's AI licensing debate and child stabbing case, UK overheating crisis and welfare reform, China's economic slowdown, and US-Iran tensions, while research explores cross-domain emotion detection, graph databases, and human-AI collaboration.",
  "meta": {
-  "generated_at": "2026-07-15T03:30:33Z"
+  "generated_at": "2026-07-15T06:26:33Z"
  },
- "news_summary": "PM vows to protect Australian content from AI; Supreme Court justices testify on security; U.S. advances permanent daylight saving time; boat sinks near Alcatraz; Iran tensions escalate.",
- "papers_summary": "Papers introduce CD-MED for cross-domain emotion analysis, GraphPolaris for graph database queries, and Aïra for interdisciplinary AI research assistance.",
+ "news_summary": "Global news features Australia's Aria chief calling for AI content licensing, a child accused of stabbing facing racist abuse, UK experts warning of new 'death traps' due to overheating, and China's economic growth falling to 4.3%.",
+ "papers_summary": "New papers introduce CD-MED for cross-domain emotion descriptors, GraphPolaris for graph database query and visualization, and Aïra for interdisciplinary AI research assistants, alongside studies on health misinformation and human-robot gaze.",
  "summaries": {
   "en": {
-   "brief": "Today's news highlights tensions over AI and data centers, Iran-Hormuz clashes, and a Supreme Court security hearing, while papers explore multimodal emotion detection and AI research tools.",
-   "news_summary": "PM vows to protect Australian content from AI; Supreme Court justices testify on security; U.S. advances permanent daylight saving time; boat sinks near Alcatraz; Iran tensions escalate.",
-   "papers_summary": "Papers introduce CD-MED for cross-domain emotion analysis, GraphPolaris for graph database queries, and Aïra for interdisciplinary AI research assistance."
+   "brief": "Today's headlines span Australia's AI licensing debate and child stabbing case, UK overheating crisis and welfare reform, China's economic slowdown, and US-Iran tensions, while research explores cross-domain emotion detection, graph databases, and human-AI collaboration.",
+   "news_summary": "Global news features Australia's Aria chief calling for AI content licensing, a child accused of stabbing facing racist abuse, UK experts warning of new 'death traps' due to overheating, and China's economic growth falling to 4.3%.",
+   "papers_summary": "New papers introduce CD-MED for cross-domain emotion descriptors, GraphPolaris for graph database query and visualization, and Aïra for interdisciplinary AI research assistants, alongside studies on health misinformation and human-robot gaze."
   },
   "zh": {
-   "brief": "今日新闻涵盖香港独立书店记忆、霸王龙化石拍卖纪录、小红书上市疑云等话题，同时学界关注多模态情感描述与AI研究助手等进展。",
-   "news_summary": "霸王龙化石创拍卖纪录，小红书前员工实名举报引发上市担忧；南海仲裁案十年争议未解，马兴瑞被“双开”成为关注焦点。",
-   "papers_summary": "英文论文聚焦跨领域多模态情感描述（CD-MED）、图数据库可视化系统（GraphPolaris）以及面向跨学科科学的AI研究助手（Aïra）等前沿研究。"
+   "brief": "中国经济增速放缓至4.3%，创2022年底以来新低；霸王龙化石以5010万美元拍出史上最高价；研究首探月经周期与多动症关联。",
+   "news_summary": "中国第二季度GDP增长4.3%，低于全年目标并创多年新低。霸王龙化石拍出5010万美元天价。英国首项研究探索月经周期与ADHD症状的关系。",
+   "papers_summary": "当日无中文优先论文，英文研究涉及AI辅助跨学科研究、低资源语言健康 misinformation 及人机协作等方向。"
   }
  },
  "todays_image": {
-  "caption": "Just as sailors navigate uncharted waters, the PM steers Australia's cultural heritage away from being commandeered by AI's vast, power-hungry datacentres.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B2B7C616F9072-000001",
-  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
-  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/13163",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B2B7C616F9072-000001",
-  "title": "Sailors"
+  "caption": "The public-domain T. rex, a remnant of a lost world, echoes today's stories of ownership over AI content and the irreversible loss of a young life in Perth.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57",
+  "source_name": "NMNH - Paleobiology Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3e09b29ad-36bd-4e85-88e8-f6ac46ffefc4",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57/90",
+  "title": "Tyrannosaurus rex Osborn, 1905"
  }
 }
