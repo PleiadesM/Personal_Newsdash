@@ -1,28 +1,28 @@
 {
- "brief": "Today's news features the US Mint's Trump coin, wildfires in Ontario impacting air quality, and ongoing ICE controversies. Research papers introduce CD-MED for multimodal emotion descriptors and GraphPolaris for graph database visualization.",
+ "brief": "Today's headlines span ICE custody deaths in Mexico, Todd Blanche's confirmation hurdle, Canada wildfire health risks, Ukraine's defense minister dismissal, and a Cyclospora outbreak, while research explores multimodal emotion analysis, human-AI interaction, and misinformation detection.",
  "meta": {
-  "generated_at": "2026-07-15T19:34:38Z"
+  "generated_at": "2026-07-15T21:13:49Z"
  },
- "news_summary": "The US Treasury announced a new $1 coin featuring Trump, the first living president on US currency. Wildfires in Ontario cause poor air quality in Toronto and NYC, while ICE faces scrutiny over traffic stops and detainee deaths.",
- "papers_summary": "CD-MED proposes cross-domain multimodal emotion descriptors for digital objects, and GraphPolaris offers a new system for querying and visualizing graph databases.",
+ "news_summary": "Mexico formally requests US state investigations into immigrant ICE deaths; Todd Blanche's nomination faces a critical Senate vote. Other major stories include Canada wildfire and heat health risks, Ukraine's defense minister ouster, Cyclospora outbreak, Texas flash floods, and global favorability shift towards China.",
+ "papers_summary": "New papers introduce Cross-Domain Multimodal Emotion Descriptor (CD-MED) for digital objects, GraphPolaris for graph database visualization, Aïra for interdisciplinary AI research assistants, and studies on health misinformation in low-resource languages, listener nodding generation, human-robot gaze, and playful AI in email.",
  "summaries": {
   "en": {
-   "brief": "Today's news features the US Mint's Trump coin, wildfires in Ontario impacting air quality, and ongoing ICE controversies. Research papers introduce CD-MED for multimodal emotion descriptors and GraphPolaris for graph database visualization.",
-   "news_summary": "The US Treasury announced a new $1 coin featuring Trump, the first living president on US currency. Wildfires in Ontario cause poor air quality in Toronto and NYC, while ICE faces scrutiny over traffic stops and detainee deaths.",
-   "papers_summary": "CD-MED proposes cross-domain multimodal emotion descriptors for digital objects, and GraphPolaris offers a new system for querying and visualizing graph databases."
+   "brief": "Today's headlines span ICE custody deaths in Mexico, Todd Blanche's confirmation hurdle, Canada wildfire health risks, Ukraine's defense minister dismissal, and a Cyclospora outbreak, while research explores multimodal emotion analysis, human-AI interaction, and misinformation detection.",
+   "news_summary": "Mexico formally requests US state investigations into immigrant ICE deaths; Todd Blanche's nomination faces a critical Senate vote. Other major stories include Canada wildfire and heat health risks, Ukraine's defense minister ouster, Cyclospora outbreak, Texas flash floods, and global favorability shift towards China.",
+   "papers_summary": "New papers introduce Cross-Domain Multimodal Emotion Descriptor (CD-MED) for digital objects, GraphPolaris for graph database visualization, Aïra for interdisciplinary AI research assistants, and studies on health misinformation in low-resource languages, listener nodding generation, human-robot gaze, and playful AI in email."
   },
   "zh": {
-   "brief": "今日新闻聚焦中国拘留地震学家、经济增长放缓至4.3%、毒枭王哥的跨国网络以及霸王龙化石拍卖纪录。研究论文涉及跨模态情感描述符和图数据库可视化。",
-   "news_summary": "中国拘留研究朝鲜核试验的地震学家，经济增速创2022年底以来新低；毒枭张智栋（王哥）被美国指控；霸王龙化石以5010万美元成交。",
-   "papers_summary": "英文预印本研究包括跨模态情感描述符、图数据库可视化、AI研究助手等，未涉及中文论文。"
+   "brief": "今日新聞涵蓋香港書店搜查、中國經濟放緩及霸王龍化石拍賣；論文方面則聚焦AI跨學科研究助手與低資源語言健康錯誤資訊。",
+   "news_summary": "香港國安搜查獨立書店逮捕5人；中國第二季度GDP增長放緩至4.3%；霸王龍化石以5010萬美元成交創紀錄。",
+   "papers_summary": "無中文論文，英文論文探討AI研究助手在跨學科科學中的應用，以及低資源語言（如孟加拉語）的健康錯誤資訊檢測。"
   }
  },
  "todays_image": {
-  "caption": "Both the Tyrannosaurus rex and the Trump $1 coin are apex predators of their respective eras, dominating through sheer force of presence.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57",
-  "source_name": "NMNH - Paleobiology Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3e09b29ad-36bd-4e85-88e8-f6ac46ffefc4",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57/90",
-  "title": "Tyrannosaurus rex Osborn, 1905"
+  "caption": "Both the lifeboat patent and the ICE death investigation involve attempts to prevent or address failures in systems designed to save lives in perilous situations.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-2009-5587",
+  "source_name": "National Museum of American History",
+  "source_url": null,
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-2009-5587&max=150",
+  "title": "Patent Model, Life Boat"
  }
 }
