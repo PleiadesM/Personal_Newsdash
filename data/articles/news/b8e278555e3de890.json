@@ -1,0 +1,30 @@
+{
+ "full_text": "The Elon Musk-owned xAI is suing a South Carolina man who allegedly used the company's Grok AI chatbot to generate child sexual abuse material (CSAM). In a lawsuit reported earlier by Reuters , xAI claims Terry Wayne Harwood \"knowingly and intentionally used Grok to circumvent safeguards, alter nonconsensual images, and generate and distribute CSAM,\" breaching the company's policies. Harwood was arrested in February for allegedly possessing and distributing CSAM and is facing eight felony charges. The lawsuit claims \"at least some\" of the images related to Harwood's criminal charges \"were generated or altered\" with Grok, and that Harwood byp … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/b8e278555e3de890.json",
+  "id": "b8e278555e3de890",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-15T21:33:20Z",
+  "score": 0.7454,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "The Elon Musk-owned xAI is suing a South Carolina man who allegedly used the company's Grok AI chatbot to generate child sexual abuse material (CSAM). In a lawsuit reported earlier by Reuters, xAI claims Terry Wayne Harwood \"knowingly and intentionally used Grok to circumvent safeguards, alter…",
+  "tags": [
+   "policy"
+  ],
+  "title": "xAI sues a man for using Grok to generate CSAM ‘deepfakes’",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam"
+ },
+ "meta": {
+  "generated_at": "2026-07-15T23:11:02Z",
+  "item_id": "b8e278555e3de890",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

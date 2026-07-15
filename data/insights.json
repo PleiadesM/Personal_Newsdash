@@ -1,28 +1,28 @@
 {
- "brief": "Today's headlines span ICE custody deaths in Mexico, Todd Blanche's confirmation hurdle, Canada wildfire health risks, Ukraine's defense minister dismissal, and a Cyclospora outbreak, while research explores multimodal emotion analysis, human-AI interaction, and misinformation detection.",
+ "brief": "US military actions escalate against Iran while domestic political divides deepen over Israel aid and a World Cup controversy erupts. Research advances explore multimodal emotion, graph databases, and human-AI teaming.",
  "meta": {
-  "generated_at": "2026-07-15T21:13:49Z"
+  "generated_at": "2026-07-15T23:11:02Z"
  },
- "news_summary": "Mexico formally requests US state investigations into immigrant ICE deaths; Todd Blanche's nomination faces a critical Senate vote. Other major stories include Canada wildfire and heat health risks, Ukraine's defense minister ouster, Cyclospora outbreak, Texas flash floods, and global favorability shift towards China.",
- "papers_summary": "New papers introduce Cross-Domain Multimodal Emotion Descriptor (CD-MED) for digital objects, GraphPolaris for graph database visualization, Aïra for interdisciplinary AI research assistants, and studies on health misinformation in low-resource languages, listener nodding generation, human-robot gaze, and playful AI in email.",
+ "news_summary": "US warships blockaded Iranian ports and launched fresh strikes as Trump warned Tehran; Argentina's World Cup celebration with a Falklands banner sparked criticism, while over 100 House Democrats voted to end military aid to Israel.",
+ "papers_summary": "Papers present new systems for cross-domain emotion analysis (CD-MED), graph database visualization (GraphPolaris), and platforms for human-AI teaming experiments (TRAIL), alongside studies on misinformation in low-resource languages and AI-assisted writing.",
  "summaries": {
   "en": {
-   "brief": "Today's headlines span ICE custody deaths in Mexico, Todd Blanche's confirmation hurdle, Canada wildfire health risks, Ukraine's defense minister dismissal, and a Cyclospora outbreak, while research explores multimodal emotion analysis, human-AI interaction, and misinformation detection.",
-   "news_summary": "Mexico formally requests US state investigations into immigrant ICE deaths; Todd Blanche's nomination faces a critical Senate vote. Other major stories include Canada wildfire and heat health risks, Ukraine's defense minister ouster, Cyclospora outbreak, Texas flash floods, and global favorability shift towards China.",
-   "papers_summary": "New papers introduce Cross-Domain Multimodal Emotion Descriptor (CD-MED) for digital objects, GraphPolaris for graph database visualization, Aïra for interdisciplinary AI research assistants, and studies on health misinformation in low-resource languages, listener nodding generation, human-robot gaze, and playful AI in email."
+   "brief": "US military actions escalate against Iran while domestic political divides deepen over Israel aid and a World Cup controversy erupts. Research advances explore multimodal emotion, graph databases, and human-AI teaming.",
+   "news_summary": "US warships blockaded Iranian ports and launched fresh strikes as Trump warned Tehran; Argentina's World Cup celebration with a Falklands banner sparked criticism, while over 100 House Democrats voted to end military aid to Israel.",
+   "papers_summary": "Papers present new systems for cross-domain emotion analysis (CD-MED), graph database visualization (GraphPolaris), and platforms for human-AI teaming experiments (TRAIL), alongside studies on misinformation in low-resource languages and AI-assisted writing."
   },
   "zh": {
-   "brief": "今日新聞涵蓋香港書店搜查、中國經濟放緩及霸王龍化石拍賣；論文方面則聚焦AI跨學科研究助手與低資源語言健康錯誤資訊。",
-   "news_summary": "香港國安搜查獨立書店逮捕5人；中國第二季度GDP增長放緩至4.3%；霸王龍化石以5010萬美元成交創紀錄。",
-   "papers_summary": "無中文論文，英文論文探討AI研究助手在跨學科科學中的應用，以及低資源語言（如孟加拉語）的健康錯誤資訊檢測。"
+   "brief": "今日中国焦点包括香港国安法下独立书店被查、地震学家被拘、经济增速放缓至4.3%，以及阿根廷队因福克兰群岛横幅面临处罚。国际方面，美国对伊朗实施海上封锁，AI泡沫论文引发讨论。",
+   "news_summary": "香港国安处搜查两家独立书店并逮捕五人，涉嫌出售煽动刊物；地震学家陈友麟因间谍罪被拘近两年；中国二季度GDP增速降至4.3%创2022年底以来新低；阿根廷队因展示福克兰群岛主权横幅面临国际足联处罚。",
+   "papers_summary": "今日无华语论文，但英文研究涉及多模态情感描述、图数据库可视化工具及AI助理在跨学科科学中的应用，同时一篇MIT论文探讨AI泡沫与投机增长。"
   }
  },
  "todays_image": {
-  "caption": "Both the lifeboat patent and the ICE death investigation involve attempts to prevent or address failures in systems designed to save lives in perilous situations.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-2009-5587",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-2009-5587&max=150",
-  "title": "Patent Model, Life Boat"
+  "caption": "Like the Tyrannosaurus rex defending its territory, the U.S. military's blockade of Iranian ports reasserts dominance after a fragile truce collapses.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57",
+  "source_name": "NMNH - Paleobiology Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3e09b29ad-36bd-4e85-88e8-f6ac46ffefc4",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3767225037e1e43faad6bd4010644fb57/90",
+  "title": "Tyrannosaurus rex Osborn, 1905"
  }
 }
