@@ -1,28 +1,20 @@
 {
- "brief": "Escalating Middle East tensions and Canadian wildfires dominate headlines, while UK and Ukraine see political shake-ups. Research explores AI adoption in public agencies and health misinformation in low-resource languages.",
+ "brief": "Canadian wildfires degrade US air quality, FDA approves new cholesterol pill, Genoa bridge officials sentenced, and AI-generated book controversy emerges alongside studies on academic networking and AI adoption in public agencies.",
  "meta": {
-  "generated_at": "2026-07-16T14:19:32Z"
+  "generated_at": "2026-07-16T17:39:08Z"
  },
- "news_summary": "Canadian wildfires worsen US air quality as Trump meets new senator; Gaza recovery plan scaled down; Ukraine defense minister's ousting sparks protests. Hong Kong raids independent bookstores, and diesel prices hit $5 amid Gulf tensions.",
- "papers_summary": "Studies examine generative AI adoption in state transportation agencies and health misinformation detection in Bangla. Other research maps academic networking in precarious transitions and bots in open-source projects.",
+ "news_summary": "More than 800 Canadian wildfires cause hazardous air in Michigan and Minnesota; FDA approves a new pill to slash cholesterol; Italian officials get prison for Genoa bridge collapse; AI-generated unauthorized biographies pollute Amazon.",
+ "papers_summary": "Research tracks academic networking amid precarity, L2 writing positioning patterns, and AI adoption in a state DOT, along with tools for multivariate graph analysis and LLM-generated text detection.",
  "summaries": {
   "en": {
-   "brief": "Escalating Middle East tensions and Canadian wildfires dominate headlines, while UK and Ukraine see political shake-ups. Research explores AI adoption in public agencies and health misinformation in low-resource languages.",
-   "news_summary": "Canadian wildfires worsen US air quality as Trump meets new senator; Gaza recovery plan scaled down; Ukraine defense minister's ousting sparks protests. Hong Kong raids independent bookstores, and diesel prices hit $5 amid Gulf tensions.",
-   "papers_summary": "Studies examine generative AI adoption in state transportation agencies and health misinformation detection in Bangla. Other research maps academic networking in precarious transitions and bots in open-source projects."
+   "brief": "Canadian wildfires degrade US air quality, FDA approves new cholesterol pill, Genoa bridge officials sentenced, and AI-generated book controversy emerges alongside studies on academic networking and AI adoption in public agencies.",
+   "news_summary": "More than 800 Canadian wildfires cause hazardous air in Michigan and Minnesota; FDA approves a new pill to slash cholesterol; Italian officials get prison for Genoa bridge collapse; AI-generated unauthorized biographies pollute Amazon.",
+   "papers_summary": "Research tracks academic networking amid precarity, L2 writing positioning patterns, and AI adoption in a state DOT, along with tools for multivariate graph analysis and LLM-generated text detection."
   },
   "zh": {
-   "brief": "今日全球新闻涵盖中国国际形象提升、霍尔木兹海峡替代路线争议、泰国曼谷酒吧大火反思、香港国安法再引关注等热点。学术研究关注生成式AI采用、开源社区机器人协作及低资源语言健康信息鉴别。",
-   "news_summary": "皮尤调查显示全球对华好感首次超越美国；曼谷酒吧大火暴露泰国法规漏洞；香港国安搜查独立书店引争议。此外，乌克兰国防部长被撤职引发抗议，加拿大野火影响美国空气质量。",
-   "papers_summary": "研究指出生成式AI在政府部门的采纳面临期望调整挑战；一项论文提出基于谓词逻辑的多变量图可视化分析工具ZipLine。"
+   "brief": "中國在全球好感度調查中首次超越美國；泰國曼谷酒吧大火致32死，暴露法規漏洞；台灣白色恐怖檔案解密引發歷史補課潮；學術打假風波持續。美國FDA批准新型降膽固醇藥物，意大利法官因大橋坍塌判刑。",
+   "news_summary": "皮尤調查顯示全球對中國好感度首超美國，習近平支持率高於特朗普；霍爾木茲海峽替代路線難以取代其戰略地位；LV告茉莉奶白案引發維權與輿論衝突；泰國曼谷酒吧大火揭示監管與腐敗問題。",
+   "papers_summary": "研究探討學術流動與不穩定網絡、L2學生寫作中的定位模式、以及AI生成文本的檢測方法。"
   }
- },
- "todays_image": {
-  "caption": "The brown algae *Lobophora* sp. creates floating mats that disrupt ecosystems, much like Trump's meeting with Darline Graham might stir political currents in the White House.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
  }
 }

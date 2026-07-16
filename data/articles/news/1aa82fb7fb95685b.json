@@ -1,0 +1,30 @@
+{
+ "full_text": "Google is giving its AI note-taking app a new name. The company announced on Thursday that NotebookLM is becoming Gemini Notebook, but will remain a standalone app even as it integrates more deeply across Gemini and Google Search. Google first revealed Gemini Notebook - then called Project Tailwind - in May 2023 before widely releasing the app just months later . Over the past few years, Google has been adding new features to the app to help organize and make sense of your notes, such as the ability to summarize them as AI podcasts , narrated slideshows , and TikTok-style clips . It recently started letting users connect their notebooks to the  … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/1aa82fb7fb95685b.json",
+  "id": "1aa82fb7fb95685b",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-16T16:00:00Z",
+  "score": 0.7446,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Google is giving its AI note-taking app a new name. The company announced on Thursday that NotebookLM is becoming Gemini Notebook, but will remain a standalone app even as it integrates more deeply across Gemini and Google Search. Google first revealed Gemini Notebook - then called Project Tailwind…",
+  "tags": [
+   "llm"
+  ],
+  "title": "Google is renaming NotebookLM to Gemini Notebook",
+  "url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm"
+ },
+ "meta": {
+  "generated_at": "2026-07-16T17:39:08Z",
+  "item_id": "1aa82fb7fb95685b",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}
