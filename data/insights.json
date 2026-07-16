@@ -1,28 +1,28 @@
 {
- "brief": "Global news highlights include the UK's modest GDP growth despite the Iran conflict, a fatal Bangkok bar fire, and US tariffs on Brazil. Meanwhile, research papers delve into generative AI adoption in public agencies, multivariate graph analysis, and human-robot gaze coordination.",
+ "brief": "Texas faces severe flooding with dozens rescued, Ukraine protests erupt over defense minister sacking, and US strikes expand in the Middle East, while studies on academic networking and AI adoption in public agencies are published.",
  "meta": {
-  "generated_at": "2026-07-16T06:29:46Z"
+  "generated_at": "2026-07-16T10:20:45Z"
  },
- "news_summary": "Key developments: UK economy grows 0.1% in May; Bangkok bar fire kills band members; US imposes 25% tariffs on Brazil; Ukraine dismisses defence minister; hundreds of Rohingya feared dead off Myanmar.",
- "papers_summary": "Papers investigate AI adoption in transportation departments, visual analysis of multivariate graphs, and the impact of bots on open-source projects. Other studies focus on multimodal emotion descriptors and real-time listener nodding generation.",
+ "news_summary": "Heavy rains in Texas lead to widespread flooding and rescues; Ukraine sees mass protests after President Zelenskyy removes defense minister Mykhailo Fedorov; US expands strikes to northern Iran amid regional tensions; Pentagon plans to screen all troops for low testosterone; TSMC announces $100 billion additional investment in US operations.",
+ "papers_summary": "A study examines how academics in precarious positions build networks for publishing, while another tracks generative AI adoption in a state Department of Transportation. Research also focuses on health misinformation in low-resource languages like Bangla.",
  "summaries": {
   "en": {
-   "brief": "Global news highlights include the UK's modest GDP growth despite the Iran conflict, a fatal Bangkok bar fire, and US tariffs on Brazil. Meanwhile, research papers delve into generative AI adoption in public agencies, multivariate graph analysis, and human-robot gaze coordination.",
-   "news_summary": "Key developments: UK economy grows 0.1% in May; Bangkok bar fire kills band members; US imposes 25% tariffs on Brazil; Ukraine dismisses defence minister; hundreds of Rohingya feared dead off Myanmar.",
-   "papers_summary": "Papers investigate AI adoption in transportation departments, visual analysis of multivariate graphs, and the impact of bots on open-source projects. Other studies focus on multimodal emotion descriptors and real-time listener nodding generation."
+   "brief": "Texas faces severe flooding with dozens rescued, Ukraine protests erupt over defense minister sacking, and US strikes expand in the Middle East, while studies on academic networking and AI adoption in public agencies are published.",
+   "news_summary": "Heavy rains in Texas lead to widespread flooding and rescues; Ukraine sees mass protests after President Zelenskyy removes defense minister Mykhailo Fedorov; US expands strikes to northern Iran amid regional tensions; Pentagon plans to screen all troops for low testosterone; TSMC announces $100 billion additional investment in US operations.",
+   "papers_summary": "A study examines how academics in precarious positions build networks for publishing, while another tracks generative AI adoption in a state Department of Transportation. Research also focuses on health misinformation in low-resource languages like Bangla."
   },
   "zh": {
-   "brief": "今日重點：皮尤調查顯示全球對中國好感度首次超越美國；香港國安法再拘捕獨立書店負責人；學術界對蔣方舟論文造假展開反思。同時，研究指出生成式AI在公部門的應用正面臨員工接納度的長期挑戰。",
-   "news_summary": "皮尤研究中心調查指出，全球受訪者對中國的好感度20多年來首次超過美國，習近平信心度領先特朗普。香港國安法持續擴大，兩間獨立書店因涉嫌販賣「煽動」書籍被查，五人被捕。台灣解嚴39年之際，政治受難者後代積極解密檔案，追尋白色恐怖真相。",
-   "papers_summary": "最新研究分析生成式AI在美國州交通局的長期採用，發現員工對AI的期待隨時間調整，影響組織變革。另有多篇論文探討多模態圖形分析、聊天機器人點頭生成等交互技術。"
+   "brief": "今日多條中國及全球新聞交織：LV與茉莉奶白商標案引發社交媒體審判、泰國曼谷大火暴露安全漏洞、阿根廷球員因福克蘭群島橫幅面臨處分；皮尤調查顯示全球對中國好感度首超美國。學術界關注AI採用與社交網絡研究，論文涉及虛擬助手、健康錯誤信息等。",
+   "news_summary": "重點新聞包括LV訴茉莉奶白案後的網絡審判、曼谷酒吧大火原因剖析、阿根廷國旗橫幅事件、皮尤全球好感度調查、台灣白色恐怖檔案探索、蔣方舟學術造假爭議、女性第四種視錐細胞、香港國安搜查書店、地震學家陳友麟被拘留、大陸讀者與香港書店回憶、世界盃補水暫停與進球關聯、以及芬太尼毒梟張智棟案。此外，美國德州洪水、烏克蘭國防部長被解職引發抗議、伊朗局勢等國際新聞亦值得關注。",
+   "papers_summary": "論文方面，研究探討學術流動與網絡構建、L2學生寫作定位模式、AI採用中的角色遷移、多變量圖可視化、開源項目中機器人採用、多模態情緒描述、圖數據庫查詢系統、跨學科AI研究助手及低資源語言健康錯誤信息檢測。"
   }
  },
  "todays_image": {
-  "caption": "The crystals on Janet Jackson's microphone, once used for clear performance communication, contrast with the disrupted communications at the Telstra Senate inquiry and the Melbourne arrest.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2021_28_6_001",
-  "source_name": "National Museum of African American History and Culture",
-  "source_url": "https://nmaahc.si.edu/object/nmaahc_2021.28.6",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2021_28_6_001",
-  "title": "Microphone covered by crystals used by Janet Jackson"
+  "caption": "Just as a 19th-century patent model envisioned a lifeboat for rescue, today's Texas flood rescues rely on modern lifeboats to save dozens from raging waters.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-2009-5587",
+  "source_name": "National Museum of American History",
+  "source_url": null,
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-2009-5587&max=150",
+  "title": "Patent Model, Life Boat"
  }
 }
