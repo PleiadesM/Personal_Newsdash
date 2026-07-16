@@ -1,28 +1,28 @@
 {
- "brief": "Escalating US-Iran military strikes include disabling an oil tanker in the Strait of Hormuz, while domestic US news covers wildfires, Texas floods, and new tariffs on Brazil. Academic research highlights generative AI adoption in public agencies and the integration of bots into open-source software teams.",
+ "brief": "Global news highlights include the UK's modest GDP growth despite the Iran conflict, a fatal Bangkok bar fire, and US tariffs on Brazil. Meanwhile, research papers delve into generative AI adoption in public agencies, multivariate graph analysis, and human-robot gaze coordination.",
  "meta": {
-  "generated_at": "2026-07-16T03:34:17Z"
+  "generated_at": "2026-07-16T06:29:46Z"
  },
- "news_summary": "The US military launched fresh strikes on Iran and disabled an oil tanker attempting to breach a blockade, as Trump warned Tehran to 'better behave.' Meanwhile, an Iranian-American woman was released from custody in Iran, the Trump administration imposed new tariffs on Brazil, and wildfires and flash floods affected parts of the US.",
- "papers_summary": "Research on generative AI adoption in a state department of transportation reveals how employee acceptance evolves, while another study examines how bot adoption affects the institutional fabric of open-source projects. Additional papers cover multimodal interaction analysis and health misinformation detection in low-resource languages.",
+ "news_summary": "Key developments: UK economy grows 0.1% in May; Bangkok bar fire kills band members; US imposes 25% tariffs on Brazil; Ukraine dismisses defence minister; hundreds of Rohingya feared dead off Myanmar.",
+ "papers_summary": "Papers investigate AI adoption in transportation departments, visual analysis of multivariate graphs, and the impact of bots on open-source projects. Other studies focus on multimodal emotion descriptors and real-time listener nodding generation.",
  "summaries": {
   "en": {
-   "brief": "Escalating US-Iran military strikes include disabling an oil tanker in the Strait of Hormuz, while domestic US news covers wildfires, Texas floods, and new tariffs on Brazil. Academic research highlights generative AI adoption in public agencies and the integration of bots into open-source software teams.",
-   "news_summary": "The US military launched fresh strikes on Iran and disabled an oil tanker attempting to breach a blockade, as Trump warned Tehran to 'better behave.' Meanwhile, an Iranian-American woman was released from custody in Iran, the Trump administration imposed new tariffs on Brazil, and wildfires and flash floods affected parts of the US.",
-   "papers_summary": "Research on generative AI adoption in a state department of transportation reveals how employee acceptance evolves, while another study examines how bot adoption affects the institutional fabric of open-source projects. Additional papers cover multimodal interaction analysis and health misinformation detection in low-resource languages."
+   "brief": "Global news highlights include the UK's modest GDP growth despite the Iran conflict, a fatal Bangkok bar fire, and US tariffs on Brazil. Meanwhile, research papers delve into generative AI adoption in public agencies, multivariate graph analysis, and human-robot gaze coordination.",
+   "news_summary": "Key developments: UK economy grows 0.1% in May; Bangkok bar fire kills band members; US imposes 25% tariffs on Brazil; Ukraine dismisses defence minister; hundreds of Rohingya feared dead off Myanmar.",
+   "papers_summary": "Papers investigate AI adoption in transportation departments, visual analysis of multivariate graphs, and the impact of bots on open-source projects. Other studies focus on multimodal emotion descriptors and real-time listener nodding generation."
   },
   "zh": {
-   "brief": "皮尤研究显示全球对中国的正面看法首次超过美国，香港突击搜查独立书店并逮捕五人，中国经济增速放缓至4.3%；科学领域关注女性四色视觉和ADHD与月经周期关联；英文论文则涉及AI在公共部门的采纳和多模态群体交互研究。",
-   "news_summary": "皮尤调查显示全球对华好感度首次超越美国；香港警方以涉嫌出售煽动性书籍为由搜查两家独立书店并逮捕五人；中国二季度GDP增速降至4.3%，为2022年底以来最低；此外，蒋方舟论文造假、芬太尼毒枭“王哥”案、女性四色视觉等话题也引发关注。",
-   "papers_summary": "无优先中文论文；英文论文包括生成式AI在州交通局的纵向采纳研究、基于谓词逻辑的多变量图可视化分析、以及多模态群体语言交互语料库等。"
+   "brief": "今日重點：皮尤調查顯示全球對中國好感度首次超越美國；香港國安法再拘捕獨立書店負責人；學術界對蔣方舟論文造假展開反思。同時，研究指出生成式AI在公部門的應用正面臨員工接納度的長期挑戰。",
+   "news_summary": "皮尤研究中心調查指出，全球受訪者對中國的好感度20多年來首次超過美國，習近平信心度領先特朗普。香港國安法持續擴大，兩間獨立書店因涉嫌販賣「煽動」書籍被查，五人被捕。台灣解嚴39年之際，政治受難者後代積極解密檔案，追尋白色恐怖真相。",
+   "papers_summary": "最新研究分析生成式AI在美國州交通局的長期採用，發現員工對AI的期待隨時間調整，影響組織變革。另有多篇論文探討多模態圖形分析、聊天機器人點頭生成等交互技術。"
   }
  },
  "todays_image": {
-  "caption": "Like the Lobophora sp. algae, which can break free from its anchor to drift in the open ocean, the Iranian American woman was released from the confines of detention.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "The crystals on Janet Jackson's microphone, once used for clear performance communication, contrast with the disrupted communications at the Telstra Senate inquiry and the Melbourne arrest.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2021_28_6_001",
+  "source_name": "National Museum of African American History and Culture",
+  "source_url": "https://nmaahc.si.edu/object/nmaahc_2021.28.6",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2021_28_6_001",
+  "title": "Microphone covered by crystals used by Janet Jackson"
  }
 }
