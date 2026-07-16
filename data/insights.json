@@ -1,20 +1,28 @@
 {
- "brief": "White House teleprompter operator put on leave for betting on Trump speeches; Merck's new cholesterol drug approved; atmosphere discovered on nearby Earthlike planet. Studies on academic networking and L2 writing patterns.",
+ "brief": "Today's news spans US political tensions, natural disasters, and international conflicts, while research papers explore AI adoption, misinformation, and academic writing.",
  "meta": {
-  "generated_at": "2026-07-16T21:14:15Z"
+  "generated_at": "2026-07-16T23:09:25Z"
  },
- "news_summary": "Teleprompter operator placed on leave after reportedly betting on Trump's speeches; Trump to deliver election integrity address; astronomers find atmosphere on potentially habitable exoplanet.",
- "papers_summary": "Two studies examine academic networking for precarious scholars and positioning patterns in L2 source-based writing.",
+ "news_summary": "Major US news includes Trump's upcoming address, a Florida candidate arrested for threatening him, and deadly Texas floods, alongside Canadian wildfire smoke affecting air quality and ongoing Iran conflict.",
+ "papers_summary": "Research covers academic networking, L2 writing, AI adoption in public agencies, graph visualization, and health misinformation in low-resource languages, with a focus on tools and linguistic analysis.",
  "summaries": {
   "en": {
-   "brief": "White House teleprompter operator put on leave for betting on Trump speeches; Merck's new cholesterol drug approved; atmosphere discovered on nearby Earthlike planet. Studies on academic networking and L2 writing patterns.",
-   "news_summary": "Teleprompter operator placed on leave after reportedly betting on Trump's speeches; Trump to deliver election integrity address; astronomers find atmosphere on potentially habitable exoplanet.",
-   "papers_summary": "Two studies examine academic networking for precarious scholars and positioning patterns in L2 source-based writing."
+   "brief": "Today's news spans US political tensions, natural disasters, and international conflicts, while research papers explore AI adoption, misinformation, and academic writing.",
+   "news_summary": "Major US news includes Trump's upcoming address, a Florida candidate arrested for threatening him, and deadly Texas floods, alongside Canadian wildfire smoke affecting air quality and ongoing Iran conflict.",
+   "papers_summary": "Research covers academic networking, L2 writing, AI adoption in public agencies, graph visualization, and health misinformation in low-resource languages, with a focus on tools and linguistic analysis."
   },
   "zh": {
-   "brief": "白宫读稿机操作员涉嫌利用特朗普演讲内幕信息在Kalshi平台下注获利近10万美元，被停职调查；皮尤调查显示全球对华好感度20多年来首次超过美国；泰国曼谷酒吧大火致32死，暴露监管漏洞。",
-   "news_summary": "白宫职员涉内幕交易获利10万美元；皮尤报告显示全球对华好感超越美国；曼谷大火32人死亡，专家指法规不健全；蒋方舟论文造假引发学术监督讨论；阿根廷因福克兰横幅面临FIFA处罚。",
-   "papers_summary": "两篇英文研究分别探讨了学术流动中的网络构建与不稳定状态，以及二语学生在论证写作中的立场模式对体裁表现的影响。"
+   "brief": "今日新闻聚焦白宫雇员利用特朗普演说内幕下注、全球对华好感度变化、霍尔木兹海峡替代路线争议、曼谷大火及台湾白色恐怖等事件。学术方面关注学术网络流动与生成式AI采用等研究。",
+   "news_summary": "重点新闻包括特朗普演说内幕交易、中国国际形象上升、霍尔木兹海峡战略重要性、曼谷酒吧火灾、福克兰群岛争议、台湾政治档案解密以及蒋方舟论文风波等。",
+   "papers_summary": "今日无优先论文，相关研究涉及学术网络转型、健康错误信息检测、生成式AI采用等。"
   }
+ },
+ "todays_image": {
+  "caption": "Like the floating marsh marigold \"Caltha natans\" drifts without reproach, the Blue Angels' close beach flyby went unpunished.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m36fcfe22774654ef28a115a2adda9e5ac",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3b130e1fd-fbb3-4ca9-ba8c-4598770d7a01",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m36fcfe22774654ef28a115a2adda9e5ac/90",
+  "title": "Caltha natans Pall."
  }
 }

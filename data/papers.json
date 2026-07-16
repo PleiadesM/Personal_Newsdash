@@ -15,7 +15,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-16T06:30:56Z",
-   "score": 0.4437,
+   "score": 0.4371,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -42,7 +42,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-16T06:28:36Z",
-   "score": 0.4436,
+   "score": 0.437,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -54,22 +54,493 @@
    "title": "Positioning Patterns and L2 Students’ Genre Performance in Source-Based Argumentative Writing",
    "url": "https://doi.org/10.1177/07410883261461558",
    "venue": "Written Communication"
+  },
+  {
+   "authors": [
+    "Omidreza Shoghli",
+    "Fatemeh Banani Ardecani",
+    "Amin Mohamadi Hezaveh"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Generative AI tools are increasingly being piloted in public agencies, but limited evidence explains how employee acceptance changes after hands-on use. This study examines Microsoft 365 Copilot adoption during an eight-week pilot at a state Department of Transportation. A matched two-wave survey measured perceived usefulness, perceived ease of use, behavioral intention, and trust before and after participation. After matching and response-quality screening, the sample included 124 employees.…",
+    "also_in": [
+     {
+      "source": "arXiv cs.HC (writing & docs)",
+      "url": "https://arxiv.org/abs/2607.13798v1"
+     }
+    ],
+    "arxiv_id": "2607.13798"
+   },
+   "id": "aa77733d70a5c793",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-15T13:02:55Z",
+   "score": 0.6923,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Generative AI tools are increasingly being piloted in public agencies, but limited evidence explains how employee acceptance changes after hands-on use. This study examines Microsoft 365 Copilot adoption during an eight-week pilot at a state Department of Transportation. A matched two-wave survey…",
+   "tags": [],
+   "title": "Persona Migration and Expectation Recalibration in Generative AI Adoption: A Longitudinal Study at a State Department of Transportation",
+   "url": "https://arxiv.org/abs/2607.13798v1",
+   "venue": "arXiv cs.CY"
+  },
+  {
+   "authors": [
+    "Sjoerd Vink",
+    "Suyang Li",
+    "Brian Montambault",
+    "Michael Behrisch",
+    "Mingwei Li",
+    "Remco Chang"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Multivariate graphs unite two distinct data perspectives: a topological structure defined by nodes and edges, and attribute data associated with each node. Analyzing such graphs therefore requires reasoning across two complementary spaces. However, existing systems typically emphasize the analysis of one space at a time, focusing either on topology or on attributes. As a result, exploration, analysis, and pattern discovery that depend on their interaction remain difficult. In this paper, we…",
+    "arxiv_id": "2607.13767"
+   },
+   "id": "6fc4b858c5b8fbc1",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-15T12:29:02Z",
+   "score": 0.4978,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Multivariate graphs unite two distinct data perspectives: a topological structure defined by nodes and edges, and attribute data associated with each node. Analyzing such graphs therefore requires reasoning across two complementary spaces. However, existing systems typically emphasize the analysis…",
+   "tags": [
+    "systems",
+    "visualization"
+   ],
+   "title": "ZipLine: Visual Analysis of Multivariate Graphs with Predicate Logic",
+   "url": "https://arxiv.org/abs/2607.13767v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Yongren Shi",
+    "Wenyi Gong"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "AI agents are joining human teams, raising a basic question: when an automated agent becomes a regular participant, does group organization strengthen or weaken? We study this question in open-source software, where bots open pull requests, review code, and merge changes alongside people, leaving a public record of every interaction. Treating bots as participants rather than tools, we examine 2,991 GitHub projects for two years before and after each adopted its first bot. We measure three…",
+    "arxiv_id": "2607.13679"
+   },
+   "id": "67d40f1c17eeb650",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-15T10:21:52Z",
+   "score": 0.6429,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "AI agents are joining human teams, raising a basic question: when an automated agent becomes a regular participant, does group organization strengthen or weaken? We study this question in open-source software, where bots open pull requests, review code, and merge changes alongside people, leaving a…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "When Bots Join the Team: Bot Adoption and the Institutional Fabric of Open-Source Software Projects",
+   "url": "https://arxiv.org/abs/2607.13679v1",
+   "venue": "arXiv cs.AI"
+  },
+  {
+   "authors": [
+    "Andrew Chang",
+    "Abhinay K Bodi",
+    "Wenxin Deng",
+    "Junrui Huang",
+    "Venu G Kadamba",
+    "Sumanth B H Karanam"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Group conversations are a fundamental yet complex form of social interaction central to human cognition and telecommunication technology. While understanding and facilitating these interactions has been a long-standing goal, findings are often isolated within specific in-person or videoconferencing settings due to a scarcity of datasets that bridge the two. We introduce VIP-MINGLE, a multimodal dataset comprising 59 hours of recordings (32 groups, 105 participants), featuring paired…",
+    "arxiv_id": "2607.13614"
+   },
+   "id": "8854dd0b2b55ddfa",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-15T09:04:21Z",
+   "score": 0.446,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Group conversations are a fundamental yet complex form of social interaction central to human cognition and telecommunication technology. While understanding and facilitating these interactions has been a long-standing goal, findings are often isolated within specific in-person or videoconferencing…",
+   "tags": [],
+   "title": "VIP-MINGLE: A Corpus for Videoconference and In-Person Multimodal Interaction in Group Language Engagement",
+   "url": "https://arxiv.org/abs/2607.13614v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Elnara Kadyrgali",
+    "Muragul Muratbekova",
+    "Pakizar Shamoi"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Digital objects express emotions through different modalities. For example, a movie may include visual scenes, audio, dialogue, and facial expressions, while a song may contain melody, rhythm, lyrics, and vocal tone. Because existing emotion recognition models are usually modality-specific, it is difficult to compare such objects directly. This paper proposes CD-MED, a Cross-Domain Multimodal Emotion Descriptor for representing heterogeneous digital objects in a common emotional space. Each…",
+    "arxiv_id": "2607.12958"
+   },
+   "id": "a14369f258faa43f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-14T16:54:51Z",
+   "score": 0.6284,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Digital objects express emotions through different modalities. For example, a movie may include visual scenes, audio, dialogue, and facial expressions, while a song may contain melody, rhythm, lyrics, and vocal tone. Because existing emotion recognition models are usually modality-specific, it is…",
+   "tags": [],
+   "title": "CD-MED: Cross-Domain Multimodal Emotion Descriptor for Visual Comparison of Digital Objects",
+   "url": "https://arxiv.org/abs/2607.12958v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Michael Behrisch",
+    "Sjoerd Vink",
+    "Leonardo Christino",
+    "Remco Chang"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Graph databases are increasingly adopted as alternatives to tabular, aggregation-focused data models used in business intelligence (BI) systems such as Tableau, Power BI, and Looker. They capture complex relationships between entities, processes, and events, enabling analysis of information propagation in networks. As a result, graph analysis is central to applications such as fraud detection, social influence analysis, and supply chain resilience. Despite these advantages, existing tools do…",
+    "also_in": [
+     {
+      "source": "arXiv cs.HC (writing & docs)",
+      "url": "https://arxiv.org/abs/2607.12845v1"
+     }
+    ],
+    "arxiv_id": "2607.12845"
+   },
+   "id": "ab5f9f23f347de4e",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-14T14:59:39Z",
+   "score": 0.4306,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Graph databases are increasingly adopted as alternatives to tabular, aggregation-focused data models used in business intelligence (BI) systems such as Tableau, Power BI, and Looker. They capture complex relationships between entities, processes, and events, enabling analysis of information…",
+   "tags": [
+    "systems",
+    "visualization"
+   ],
+   "title": "GraphPolaris: A System for Query, Analysis, and Visualization of Graph Databases",
+   "url": "https://arxiv.org/abs/2607.12845v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Diya Mirji",
+    "Tiffany Degbotse",
+    "Sharmil Nanjappa",
+    "Jiayi Zhou",
+    "Vishnu Manoj",
+    "Vihaan Nama"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Scientific discovery increasingly depends on interdisciplinary teams whose members contribute distinct expertise, conceptual frameworks, vocabularies, assumptions, and standards of evidence. Today's AI research assistants are largely designed to support individual researchers through literature review, writing assistance, coding, and data analysis. While these capabilities improve personal productivity, they provide little support for the collaborative reasoning required to integrate knowledge…",
+    "arxiv_id": "2607.12736"
+   },
+   "id": "e4e81c42db707010",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-14T13:06:49Z",
+   "score": 0.578,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Scientific discovery increasingly depends on interdisciplinary teams whose members contribute distinct expertise, conceptual frameworks, vocabularies, assumptions, and standards of evidence. Today's AI research assistants are largely designed to support individual researchers through literature…",
+   "tags": [
+    "ai-writing",
+    "ux"
+   ],
+   "title": "Aïra: Rethinking AI Research Assistants for Interdisciplinary Science",
+   "url": "https://arxiv.org/abs/2607.12736v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Farnaz Farid",
+    "Raihan Alam",
+    "Al Al-Areqi",
+    "Farhad Ahamed",
+    "Muhammad Hassan Khan",
+    "Sadia Hossain"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Artificial Intelligence (AI) technologies, while serving as a foundational enabler for modern social media and digital health services, exert a bivalent effect by simultaneously acting as a combatant against and a spread vector for misinformation. A prevalent challenge in mitigating this issue arises in non-English contexts and low socioeconomic classes, where limited data hinders the training of AI models for effective detection. Consequently, culturally and linguistically diverse (CALD)…",
+    "arxiv_id": "2607.12336"
+   },
+   "id": "f42604b5c31d6f9f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-14T04:34:05Z",
+   "score": 0.5562,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Artificial Intelligence (AI) technologies, while serving as a foundational enabler for modern social media and digital health services, exert a bivalent effect by simultaneously acting as a combatant against and a spread vector for misinformation. A prevalent challenge in mitigating this issue…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Evaluating Health Misinformation in Low-Resource Languages: Integrating Small Language Models with a Culturally-Sensitive Responsible NLP Framework (Bangla as a Case Study)",
+   "url": "https://arxiv.org/abs/2607.12336v1",
+   "venue": "arXiv cs.CL"
+  },
+  {
+   "authors": [
+    "Kazushi Kato",
+    "Koji Inoue",
+    "Taiga Mori",
+    "Divesh Lala",
+    "Tatsuya Kawahara"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "In human dialogue, we achieve smooth communication by expressing nonverbal cues such as eye contact, nodding, and facial expressions with precise timing. It is expected for conversational avatars to express these cues appropriately to realize natural and human-like interactions. This study focuses on nodding, which is crucial for demonstrating active listening and encouraging further user utterances. We propose a model that predicts both timing and kinematic parameters representing the motion…",
+    "arxiv_id": "2607.12329"
+   },
+   "id": "ca40de771e82da87",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-14T04:18:06Z",
+   "score": 0.363,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "In human dialogue, we achieve smooth communication by expressing nonverbal cues such as eye contact, nodding, and facial expressions with precise timing. It is expected for conversational avatars to express these cues appropriately to realize natural and human-like interactions. This study focuses…",
+   "tags": [],
+   "title": "Real-time Generation of Listener Nodding via Prediction of Kinematic Parameters for Avatar Dialogue Systems",
+   "url": "https://arxiv.org/abs/2607.12329v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Jens V. Rüppel",
+    "Tim Schreiter",
+    "Andrey Rudenko",
+    "Achim J. Lilienthal"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Robot gaze is a major component of human-robot dialogue coordination. Most studies of gaze in human-robot dialogue focus on face-to-face social conversations, but little is known about gaze in demanding task-focused interactions. In this paper, we investigate how the gaze of a robot game partner affects human visual attention and if humans tend to direct confirmation-seeking gazes towards the robot. In our study, we let participants play a collaborative word association game with a NAO robot…",
+    "arxiv_id": "2607.12181"
+   },
+   "id": "de4b702ff1a44766",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-13T22:00:47Z",
+   "score": 0.3484,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Robot gaze is a major component of human-robot dialogue coordination. Most studies of gaze in human-robot dialogue focus on face-to-face social conversations, but little is known about gaze in demanding task-focused interactions. In this paper, we investigate how the gaze of a robot game partner…",
+   "tags": [],
+   "title": "Analysis of Mutual and Referential Human and Robot Gazes in a Collaborative Word Association Game",
+   "url": "https://arxiv.org/abs/2607.12181v1",
+   "venue": "arXiv cs.RO"
+  },
+  {
+   "authors": [
+    "Mohammad Amin Samadi",
+    "Pedro Martins De Bastos",
+    "Jaeyoon Choi",
+    "Spencer JaQuay",
+    "Seehee Park",
+    "Nia Nixon"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "An AI teammate's design properties (personality, communication style, when it speaks) can shape a team's trust, coordination, and decisions. Studying this rigorously demands infrastructure no existing tool provides: reproducible configuration of an AI teammate embedded in instrumented, real-time collaboration sustained over time. We present the Team Research and AI Integration Lab (TRAIL), a web platform that makes the AI teammate a configurable, reproducible design object, pairing a Big Five…",
+    "arxiv_id": "2607.12180"
+   },
+   "id": "33458413caa99326",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-13T21:59:13Z",
+   "score": 0.5408,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "An AI teammate's design properties (personality, communication style, when it speaks) can shape a team's trust, coordination, and decisions. Studying this rigorously demands infrastructure no existing tool provides: reproducible configuration of an AI teammate embedded in instrumented, real-time…",
+   "tags": [
+    "ai-writing",
+    "ux"
+   ],
+   "title": "TRAIL: A Platform for Configurable Human--AI Teaming Experiments",
+   "url": "https://arxiv.org/abs/2607.12180v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Chu Zhang",
+    "XiaoKe Zeng",
+    "Jin Zhang",
+    "Ruoyu Wen",
+    "Vince Siu",
+    "Richard William Allen"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Creativity often flourishes in collaboration, such as when designers brainstorm a new app together, or storytellers collectively build a world with elements of each person's narrative. However, collaborative storytelling can have challenges for its participants, such as when they disagree about the plot proposed, or when different ideas become fragmented when voiced individually. While current tools for creative collaboration focus on synchronous online text sharing, they often neglect the…",
+    "arxiv_id": "2607.11837"
+   },
+   "id": "ea922e104cdbb4cf",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-13T17:27:30Z",
+   "score": 0.5309,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Creativity often flourishes in collaboration, such as when designers brainstorm a new app together, or storytellers collectively build a world with elements of each person's narrative. However, collaborative storytelling can have challenges for its participants, such as when they disagree about the…",
+   "tags": [
+    "ai-writing",
+    "ux",
+    "techcomm"
+   ],
+   "title": "FIERO: Empowering Creative Writing Through Collaborative Game Play",
+   "url": "https://arxiv.org/abs/2607.11837v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Chu Zhang",
+    "Simai Huang",
+    "Shaohua Wu",
+    "Yihuan Chen",
+    "Ray LC"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Climate change is a source of anxiety about the future. Understanding how people express themselves about climate change enables us to address such concerns. To study climate change expression on social media, we analyzed 200 TikTok videos tagged with #climatechange, identifying four categories of content: expression-feelings, views-appeals, news-information, and trend-hijacking. We found that creators use humor to package sharp critiques, avoiding direct confrontation. They replace complex…",
+    "arxiv_id": "2607.11803"
+   },
+   "id": "c304afb571fbeed9",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-13T16:54:22Z",
+   "score": 0.3373,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Climate change is a source of anxiety about the future. Understanding how people express themselves about climate change enables us to address such concerns. To study climate change expression on social media, we analyzed 200 TikTok videos tagged with #climatechange, identifying four categories of…",
+   "tags": [],
+   "title": "\"We are all in big trouble! *Shock Emoji\": Personal Narratives in Expressing Emotions, Opinions, and Data Regarding Climate Change in TikTok Short Videos",
+   "url": "https://arxiv.org/abs/2607.11803v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Ziv Ben-Zion",
+    "Teddy Lazebnik"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Large language models (LLMs) are rapidly reshaping workplace communication, yet whether AI-assisted writing changes how recipients actually behave, and through what channel, remains unknown. Here, in a randomized crossover field experiment, 121 employees across six companies sent work emails under three conditions over three weeks: unaided writing, GPT-5 rewriting in a playful tone, and GPT-5 rewriting in a professional tone. Across 16,880 emails, playful editing increased emotional positivity…",
+    "arxiv_id": "2607.11749"
+   },
+   "id": "c8a2f5a887051ba6",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-13T16:06:23Z",
+   "score": 0.6681,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Large language models (LLMs) are rapidly reshaping workplace communication, yet whether AI-assisted writing changes how recipients actually behave, and through what channel, remains unknown. Here, in a randomized crossover field experiment, 121 employees across six companies sent work emails under…",
+   "tags": [
+    "ai-writing",
+    "llm",
+    "techcomm"
+   ],
+   "title": "Playful AI in Professional Email: A Field Experiment on Tone and Recipient Engagement",
+   "url": "https://arxiv.org/abs/2607.11749v1",
+   "venue": "arXiv cs.AI"
+  },
+  {
+   "authors": [
+    "Xiaolin Wen",
+    "Feng Liang",
+    "Yuanye Ma",
+    "Qishuang Fu",
+    "Zhengyu Sun",
+    "Feng Zhu"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Cryptocurrency markets are vulnerable to trade-based manipulation, such as wash trading, which can distort price signals and mislead investors. Prior research has mainly focused on detecting manipulation using fixed rules or labeled examples, offering limited flexibility and interpretability for assessing potential risks. Existing visual analytics tools can reveal basic manipulation-related signals, such as token distribution, but still require substantial manual effort to integrate holder…",
+    "arxiv_id": "2607.11451"
+   },
+   "id": "3f62a3460d37caec",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-13T12:02:50Z",
+   "score": 0.6998,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Cryptocurrency markets are vulnerable to trade-based manipulation, such as wash trading, which can distort price signals and mislead investors. Prior research has mainly focused on detecting manipulation using fixed rules or labeled examples, offering limited flexibility and interpretability for…",
+   "tags": [
+    "ml-vis",
+    "llm",
+    "visualization"
+   ],
+   "title": "ManiScope: LLM-Assisted Visual Analytics of Cryptocurrency Manipulation Risk",
+   "url": "https://arxiv.org/abs/2607.11451v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Zhiguang Zhou",
+    "Yong Zhang",
+    "Yuming Ma",
+    "Yuqi Zhou",
+    "Ke Lu",
+    "Yong Wang"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Graph sampling techniques have been widely used to simplify network computation and visualization, which also results in inevitable differences between the sampled networks and the original networks in terms of nodes, edges and structures. Investigating such differences can inform graph sampling technique users of the pros and cons of different techniques and select the appropriate one, and can also help graph sampling developers evaluate their own technique. However, there are still no…",
+    "arxiv_id": "2607.11424"
+   },
+   "id": "a8c02e6cba137fa9",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-13T11:26:27Z",
+   "score": 0.3661,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Graph sampling techniques have been widely used to simplify network computation and visualization, which also results in inevitable differences between the sampled networks and the original networks in terms of nodes, edges and structures. Investigating such differences can inform graph sampling…",
+   "tags": [
+    "systems",
+    "visualization"
+   ],
+   "title": "DiffLens: A Visualization System to Explore Local Differences in Graph Sampling",
+   "url": "https://arxiv.org/abs/2607.11424v1",
+   "venue": "arXiv cs.HC"
   }
  ],
  "meta": {
-  "count": 2,
-  "generated_at": "2026-07-16T21:14:15Z",
+  "count": 18,
+  "generated_at": "2026-07-16T23:09:25Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
-    "count": 0,
-    "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60 (Caus",
+    "count": 6,
+    "error": null,
     "full_text_count": 0,
     "id": "arxiv_datavis",
     "name": "arXiv cs.HC + cs.GR",
-    "ok": false,
+    "ok": true,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"
@@ -124,12 +595,12 @@
    },
    {
     "category": "optional",
-    "count": 0,
-    "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC&sortBy=submittedDate&sortOrder=descending&max_results=40 (Caused by ReadTimeo",
+    "count": 12,
+    "error": null,
     "full_text_count": 0,
     "id": "arxiv_hci_writing",
     "name": "arXiv cs.HC (writing & docs)",
-    "ok": false,
+    "ok": true,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"
