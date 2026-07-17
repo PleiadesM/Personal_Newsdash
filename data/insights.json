@@ -1,28 +1,28 @@
 {
- "brief": "US launched a seventh night of strikes on Iran, escalating Hormuz conflict and driving oil prices higher, while Trump continued to push false election claims and threatened Canada over wildfire smoke. In tech, China's Moonshot AI unveiled a competitive model and a new satellite system for wildfire detection launched. Papers explore writing dynamics, AI's impact on writing, and human-robot interaction.",
+ "brief": "US news highlights political controversies, food safety scares, and wildfires, while research examines writing dynamics and AI's role in communication.",
  "meta": {
-  "generated_at": "2026-07-17T21:06:46Z"
+  "generated_at": "2026-07-17T23:06:12Z"
  },
- "news_summary": "US strikes on Iran continue for seventh night amid Hormuz crisis; Trump escalates election falsehoods and threatens Canada over smoke; Cyclospora linked to Taco Bell lettuce; China's Moonshot AI narrows gap in AI race.",
- "papers_summary": "Studies examine biographical factors in L2 writing instruction, children's multimodal writing, and ChatGPT's effects on rhetorical moves in personal statements. Other papers investigate pause analysis, urban driving data, and MLLMs for visualization literacy.",
+ "news_summary": "Trump's election demands spark Democratic backlash, a lettuce recall over cyclospora affects Taco Bell, and wildfires rage in Oregon. Other stories include Paul Pelosi's hit-and-run charge, ICE-related violence, and North Korean K-pop exposure.",
+ "papers_summary": "Studies explore how biography shapes writing instructors' identities, children's multimodal composition, and the impact of ChatGPT on personal statements. Other papers analyze urban driving data and human-robot juggling.",
  "summaries": {
   "en": {
-   "brief": "US launched a seventh night of strikes on Iran, escalating Hormuz conflict and driving oil prices higher, while Trump continued to push false election claims and threatened Canada over wildfire smoke. In tech, China's Moonshot AI unveiled a competitive model and a new satellite system for wildfire detection launched. Papers explore writing dynamics, AI's impact on writing, and human-robot interaction.",
-   "news_summary": "US strikes on Iran continue for seventh night amid Hormuz crisis; Trump escalates election falsehoods and threatens Canada over smoke; Cyclospora linked to Taco Bell lettuce; China's Moonshot AI narrows gap in AI race.",
-   "papers_summary": "Studies examine biographical factors in L2 writing instruction, children's multimodal writing, and ChatGPT's effects on rhetorical moves in personal statements. Other papers investigate pause analysis, urban driving data, and MLLMs for visualization literacy."
+   "brief": "US news highlights political controversies, food safety scares, and wildfires, while research examines writing dynamics and AI's role in communication.",
+   "news_summary": "Trump's election demands spark Democratic backlash, a lettuce recall over cyclospora affects Taco Bell, and wildfires rage in Oregon. Other stories include Paul Pelosi's hit-and-run charge, ICE-related violence, and North Korean K-pop exposure.",
+   "papers_summary": "Studies explore how biography shapes writing instructors' identities, children's multimodal composition, and the impact of ChatGPT on personal statements. Other papers analyze urban driving data and human-robot juggling."
   },
   "zh": {
-   "brief": "今日英國新首相貝安德就任，中英關係備受關注；香港禁書清單持續擴大，國安法影響深遠；美國對伊朗連續空襲，油價攀升；中國AI戰略聚焦開源，習近平現身AI大會。",
-   "news_summary": "英國工黨黨魁貝安德就任首相，其外交政策尤其是對華關係引發討論；香港國安法下書籍屢遭下架，BBC梳理禁書清單；美國對伊朗發動第七晚空襲，油價升至月內高點；習近平首次出席世界AI大會，強調開源戰略。",
-   "papers_summary": "今日無中文論文，但英文論文涉及第二語言寫作、多模態語言模型及AI編碼安全等領域。"
+   "brief": "英国新任首相贝安德就职，中英关系或迎务实转向；习近平首现世界AI大会凸显中国开源战略；美国收紧学生签证，特朗普再提中国干预选举。",
+   "news_summary": "贝安德正式就任英国工党党魁并即将成为首相，其对华政策受关注；习近平出席世界人工智能大会强调开源策略；美国拟收紧外国学生签证，特朗普指控中国干预选举遭反驳。",
+   "papers_summary": "英文论文聚焦二语写作教学、ChatGPT对写作的影响、多模态可视化理解及AI编码安全等议题，中文论文无新增。"
   }
  },
  "todays_image": {
-  "caption": "Both the Palapa satellite medal and the Hormuz strikes highlight disputes over control of vital global passageways—one in orbit, the other at sea.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-AD426447C3532_001",
-  "source_name": "National Air and Space Museum",
-  "source_url": "http://n2t.net/ark:/65665/nv976908549-48c7-4959-a9ec-5e24077c220a",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-AD426447C3532_001",
-  "title": "Medal, Palapa Satellite, Sally Ride"
+  "caption": "A fire hose section controls a powerful flow that can cause damage if unregulated, mirroring the need for America to release secrets with precision rather than in a damaging deluge.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-ET2016-09862-000001",
+  "source_name": "National Museum of American History",
+  "source_url": null,
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-ET2016-09862-000001&max=150",
+  "title": "Fire Hose Section"
  }
 }
