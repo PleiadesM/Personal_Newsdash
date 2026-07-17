@@ -1,20 +1,28 @@
 {
- "brief": "Global stocks fall on tech spending fears as Andy Burnham becomes UK Labour leader; Canadian wildfire smoke blankets US; research delves into AI writing tools and human-robot interaction.",
+ "brief": "Wildfire smoke poses health risks across the U.S. as Canadian fires continue; UK Prime Minister Burnham prepares cabinet picks; Amazon Web Services suffers major billing glitch; stock markets fall on AI spending concerns. Meanwhile, research explores second language writing, AI coding agent vulnerabilities, and human-robot juggling.",
  "meta": {
-  "generated_at": "2026-07-17T14:00:48Z"
+  "generated_at": "2026-07-17T15:37:45Z"
  },
- "news_summary": "Stock markets sink over AI investment concerns, Burnham urges party unity and 'new politics', US strikes Iranian infrastructure, and wildfire smoke spreads across the Midwest and Northeast.",
- "papers_summary": "Papers explore professional identities of writing instructors, ChatGPT revision effects on personal statements, and multimodal LLM evaluation; also human-robot juggling and narrative visualization in sports.",
+ "news_summary": "Persistent wildfire smoke prompts health warnings and DIY air purifier tips; President Trump escalates election fraud claims using declassified intel; Amazon AWS customers hit by multibillion-dollar billing errors; UK leader Burnham finalizes cabinet; stocks slide on tech spending anxiety.",
+ "papers_summary": "Studies analyze L2 writing instruction and ChatGPT's impact on rhetorical moves; research on urban driving data causality, AI coding agent security, and human-robot juggling highlight emerging interaction challenges.",
  "summaries": {
   "en": {
-   "brief": "Global stocks fall on tech spending fears as Andy Burnham becomes UK Labour leader; Canadian wildfire smoke blankets US; research delves into AI writing tools and human-robot interaction.",
-   "news_summary": "Stock markets sink over AI investment concerns, Burnham urges party unity and 'new politics', US strikes Iranian infrastructure, and wildfire smoke spreads across the Midwest and Northeast.",
-   "papers_summary": "Papers explore professional identities of writing instructors, ChatGPT revision effects on personal statements, and multimodal LLM evaluation; also human-robot juggling and narrative visualization in sports."
+   "brief": "Wildfire smoke poses health risks across the U.S. as Canadian fires continue; UK Prime Minister Burnham prepares cabinet picks; Amazon Web Services suffers major billing glitch; stock markets fall on AI spending concerns. Meanwhile, research explores second language writing, AI coding agent vulnerabilities, and human-robot juggling.",
+   "news_summary": "Persistent wildfire smoke prompts health warnings and DIY air purifier tips; President Trump escalates election fraud claims using declassified intel; Amazon AWS customers hit by multibillion-dollar billing errors; UK leader Burnham finalizes cabinet; stocks slide on tech spending anxiety.",
+   "papers_summary": "Studies analyze L2 writing instruction and ChatGPT's impact on rhetorical moves; research on urban driving data causality, AI coding agent security, and human-robot juggling highlight emerging interaction challenges."
   },
   "zh": {
-   "brief": "英国工党新领袖贝安德即将出任首相，其神秘背景和务实对华政策引发关注；中国国家主席习近平首次出席世界AI大会，强调开源战略；香港国安法下书籍被大量下架，形成禁书清单。",
-   "news_summary": "贝安德在无人挑战下就任工党党魁并有望成为首相，其中国政策走向受关注；习近平现身世界AI大会，将开源作为AI战略核心；香港国安法生效后，大量书籍被下架或检走，BBC中文梳理出禁书清单。",
-   "papers_summary": "今日论文涉及二语写作教学中的身份构建、儿童写作中的多模态意义表达，以及AI工具如ChatGPT对写作修订的影响。"
+   "brief": "英国新任首相贝安德就职，其政策走向引关注；特朗普借政府资源强化选举舞弊指控；全球市场因科技AI支出担忧下跌。",
+   "news_summary": "贝安德成为英国工党党魁并有望任首相，其中国政策和大曼城市长务实经验受热议；特朗普利用解密文件强化选举舞弊言论，中国否认干预；美股因科技股和AI支出忧虑大幅下跌。",
+   "papers_summary": "今日无优先论文，但英文资料显示有研究探讨写作过程中停顿的语境功能以及多模态大模型对科学可视化素养的评估。"
   }
+ },
+ "todays_image": {
+  "caption": "A fan in a box can stir or contain air, much like how protective measures aim to contain and filter the smoke equivalent of half a pack a day.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1942-34-2-aMattFlynn",
+  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/76044",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1942-34-2-aMattFlynn",
+  "title": "Pleated fan and box"
  }
 }
