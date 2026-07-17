@@ -1,28 +1,28 @@
 {
- "brief": "Trump's prime-time address on election security, Canada wildfires causing air quality alerts across US cities, and a Cyclospora outbreak linked to Taco Bell lettuce dominate today's news. Research explores causal analysis of urban driving data, the misclassification of autistic writing as AI-generated, and accessible data interfaces for blind users.",
+ "brief": "Trump escalates election security claims against China as Japan revises royal succession rules; a school bus crash in Uganda kills 20; new studies examine academic networking and writing positioning.",
  "meta": {
-  "generated_at": "2026-07-17T03:34:32Z"
+  "generated_at": "2026-07-17T06:25:54Z"
  },
- "news_summary": "Trump delivered a primetime speech making unverified claims about election meddling, while Canada wildfires blanket major US cities with smoke. A Cyclospora outbreak traced to Taylor Farms lettuce sent to Taco Bell, and US strikes hit Iran as tensions escalate over the Strait of Hormuz.",
- "papers_summary": "Papers on arXiv cover exploratory causal analysis of urban driving data, benchmarking multimodal LLMs for scientific visualization, and the misclassification of autistic writing as AI-generated. Studies also address academic networking in precarious transitions and co-designing accessible tactile data interfaces.",
+ "news_summary": "US launches more strikes on Iran as Trump alleges election vulnerabilities; Telstra boss admits outage affected 45% of calls; Uganda school bus crash kills 20; Japan keeps male-only succession.",
+ "papers_summary": "Studies on academic networking amid precarity and positioning patterns in L2 argumentative writing are featured.",
  "summaries": {
   "en": {
-   "brief": "Trump's prime-time address on election security, Canada wildfires causing air quality alerts across US cities, and a Cyclospora outbreak linked to Taco Bell lettuce dominate today's news. Research explores causal analysis of urban driving data, the misclassification of autistic writing as AI-generated, and accessible data interfaces for blind users.",
-   "news_summary": "Trump delivered a primetime speech making unverified claims about election meddling, while Canada wildfires blanket major US cities with smoke. A Cyclospora outbreak traced to Taylor Farms lettuce sent to Taco Bell, and US strikes hit Iran as tensions escalate over the Strait of Hormuz.",
-   "papers_summary": "Papers on arXiv cover exploratory causal analysis of urban driving data, benchmarking multimodal LLMs for scientific visualization, and the misclassification of autistic writing as AI-generated. Studies also address academic networking in precarious transitions and co-designing accessible tactile data interfaces."
+   "brief": "Trump escalates election security claims against China as Japan revises royal succession rules; a school bus crash in Uganda kills 20; new studies examine academic networking and writing positioning.",
+   "news_summary": "US launches more strikes on Iran as Trump alleges election vulnerabilities; Telstra boss admits outage affected 45% of calls; Uganda school bus crash kills 20; Japan keeps male-only succession.",
+   "papers_summary": "Studies on academic networking amid precarity and positioning patterns in L2 argumentative writing are featured."
   },
   "zh": {
-   "brief": "今日重点：诺兰执导的《奥德赛》上映，白宫职员利用特朗普演讲内幕下注获利，皮尤调查显示全球对华好感度首次超越美国，霍尔木兹海峡紧张局势升级。研究方面关注AI文本检测对自闭症写作的误判及人机协作抛接球技术。",
-   "news_summary": "中文新闻聚焦诺兰史诗电影《奥德赛》，白宫读稿机操作员涉内幕交易，皮尤报告称更多国家对中国好感胜于美国，以及霍尔木兹海峡替代路线探讨、LV诉茉莉奶白案、曼谷火灾反复发生、阿根廷因福克兰群岛横幅遭FIFA处罚。",
-   "papers_summary": "英文研究揭示AI生成文本检测模型对自闭症写作的偏见，探索人机抛接球规划，并介绍游泳视频中叙事可视化的自动生成方法。"
+   "brief": "今日重點包括特朗普政府收緊外國學生簽證、指控中國干預選舉，以及皮尤調查顯示全球對中國好感度上升。另有關於霍爾木茲海峽替代路線的討論。",
+   "news_summary": "特朗普政府宣布收緊外國學生簽證規定，並指控中國干預2020年選舉，與美情報機構結論矛盾。皮尤調查顯示全球更多國家對中國好感勝過美國。",
+   "papers_summary": "無優先中文論文，英文論文探討學術網絡轉型與L2學生寫作中的定位模式。"
   }
  },
  "todays_image": {
-  "caption": "Like binoculars focusing on Friendship 7, the Cyclospora outbreak zoomed in on a hidden contamination in Taco Bell's lettuce.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19670199000_PS01",
-  "source_name": "National Air and Space Museum",
-  "source_url": "http://n2t.net/ark:/65665/nv908238acb-2fa3-43f1-90df-caf0069ddd20",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19670199000_PS01",
-  "title": "Binoculars, Friendship 7"
+  "caption": "The mid-20th century ballot box symbolizes a trusted system for public voice, just as Telstra’s admission of network fallibility and the retirement of a trusted news anchor remind us that all channels of communication are subject to change ",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00282-000001",
+  "source_name": "National Museum of American History",
+  "source_url": null,
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00282-000001&max=150",
+  "title": "Ballot box, mid-20th century"
  }
 }
