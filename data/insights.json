@@ -1,24 +1,24 @@
 {
- "brief": "Two US troops were killed and one is missing in Jordan after Iranian attacks, escalating US-Iran tensions. Meanwhile, severe weather and Canadian wildfires threaten the Northeast and Midwest, while political shake-ups include Nebraska's Democratic Senate nominee withdrawing and Hungary's president stepping down. Research papers focus on second language writing, the effects of ChatGPT on student writing, and academic networking.",
+ "brief": "US-Iran tensions escalate with deadly attacks in Jordan, severe storms batter the Northeast, and political shifts in Hungary and the UK dominate headlines. Meanwhile, research explores AI's impact on writing, multimodal visualization, and human-robot interaction.",
  "meta": {
-  "generated_at": "2026-07-18T21:04:29Z"
+  "generated_at": "2026-07-18T23:08:13Z"
  },
- "news_summary": "Two US service members were killed and one remains missing in Jordan following Iranian attacks, as US-Iran hostilities escalate. Other top stories include Nebraska Democratic Senate nominee Cindy Burbank filing to withdraw, severe thunderstorms and Canadian wildfire smoke impacting the US, and Trump threatening tariffs on Canada over air quality.",
- "papers_summary": "Recent studies examine how biographical factors shape second language writing instructors' professional identities, the impact of ChatGPT revision on rhetorical moves in personal statements, and the developmental pathways of noun phrase complexity in Chinese learners' English writing. Other papers explore academic networking in precarious transitions and the role of drawing in children's multimodal writing.",
+ "news_summary": "Two US troops were killed and one is missing after Iranian attacks in Jordan, while severe thunderstorms and flooding hit the Northeast. Hungary's president resigned amid a constitutional crisis, and UK politics saw controversial remarks at CPAC and a shift on digital ID plans.",
+ "papers_summary": "Studies examine how ChatGPT affects rhetorical moves in personal statements and the role of drawing in children's writing. Other papers explore AI coding agents' security risks and authoring narrative visualizations in sports videos.",
  "summaries": {
   "en": {
-   "brief": "Two US troops were killed and one is missing in Jordan after Iranian attacks, escalating US-Iran tensions. Meanwhile, severe weather and Canadian wildfires threaten the Northeast and Midwest, while political shake-ups include Nebraska's Democratic Senate nominee withdrawing and Hungary's president stepping down. Research papers focus on second language writing, the effects of ChatGPT on student writing, and academic networking.",
-   "news_summary": "Two US service members were killed and one remains missing in Jordan following Iranian attacks, as US-Iran hostilities escalate. Other top stories include Nebraska Democratic Senate nominee Cindy Burbank filing to withdraw, severe thunderstorms and Canadian wildfire smoke impacting the US, and Trump threatening tariffs on Canada over air quality.",
-   "papers_summary": "Recent studies examine how biographical factors shape second language writing instructors' professional identities, the impact of ChatGPT revision on rhetorical moves in personal statements, and the developmental pathways of noun phrase complexity in Chinese learners' English writing. Other papers explore academic networking in precarious transitions and the role of drawing in children's multimodal writing."
+   "brief": "US-Iran tensions escalate with deadly attacks in Jordan, severe storms batter the Northeast, and political shifts in Hungary and the UK dominate headlines. Meanwhile, research explores AI's impact on writing, multimodal visualization, and human-robot interaction.",
+   "news_summary": "Two US troops were killed and one is missing after Iranian attacks in Jordan, while severe thunderstorms and flooding hit the Northeast. Hungary's president resigned amid a constitutional crisis, and UK politics saw controversial remarks at CPAC and a shift on digital ID plans.",
+   "papers_summary": "Studies examine how ChatGPT affects rhetorical moves in personal statements and the role of drawing in children's writing. Other papers explore AI coding agents' security risks and authoring narrative visualizations in sports videos."
   },
   "zh": {
-   "brief": "今日重点：世界盃決賽阿根廷對西班牙的跨世代對決，以及月經追蹤App的隱私爭議；梅西與馬拉多納、貝利的歷史地位比較也引發討論。",
-   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，獎金創新高；月經週期追蹤App被指洩漏用戶隱私，數據可拼湊出個人生活細節。",
-   "papers_summary": "今日無重點研究論文。"
+   "brief": "世界盃決賽阿根廷對西班牙即將上演，梅西的傳奇地位再成焦點；同時，經期追蹤App的隱私風險引發關注。研究方面，ChatGPT對寫作的影響成為熱點。",
+   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，獎金高達5000萬美元；梅西、馬拉多納、貝利誰是最強引發熱議。此外，經期追蹤App的數據隱私漏洞令人擔憂。",
+   "papers_summary": "多篇研究探討AI對寫作的影響，如ChatGPT修改個人陳述的修辭效果，以及AI編碼代理被惡意指令利用的風險。"
   }
  },
  "todays_image": {
-  "caption": "Like the clatter of the Underwood typewriter falling silent, Cindy Burbank’s withdrawal leaves an empty page in Nebraska’s political narrative.",
+  "caption": "The silent keys of a vintage typewriter echo the new, unseen pressures being typed into Jordan's role as a strategic buffer in the U.S.-Iran conflict.",
   "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-5686075A5BD62_4001-000002",
   "source_name": "National Museum of African American History and Culture",
   "source_url": "https://nmaahc.si.edu/object/nmaahc_2012.123.1ab",
