@@ -1,28 +1,28 @@
 {
- "brief": "US and Iran continue strikes across the Middle East for a seventh night, while a massive wildfire in Norway destroys over 100 homes. In tech, Skyroot Aerospace launches India's first commercial orbital rocket, and research highlights the impact of AI on writing and the risks of AI coding agents.",
+ "brief": "US and Iran escalate strikes for seventh night while wildfires rage in Norway and Canada; research explores writing pedagogy, AI agents, and human-robot juggling.",
  "meta": {
-  "generated_at": "2026-07-18T08:09:44Z"
+  "generated_at": "2026-07-18T09:43:58Z"
  },
- "news_summary": "US launches seventh night of strikes on Iran as Hormuz conflict escalates, while Iran retaliates against US allies. A huge fire in Drammen, Norway, destroys more than 100 homes, and India's first space-tech unicorn launches a commercial rocket.",
- "papers_summary": "Studies explore how ChatGPT revision affects rhetorical moves in personal statements and how setup instructions can be weaponized against AI coding agents. Other research investigates narrative visualization in sports videos and multimodal LLMs for scientific visualization literacy.",
+ "news_summary": "US launched seventh night of strikes on Iran as Hormuz conflict escalates; wildfires destroy homes in Norway and threaten air quality in the US, while Laos denies evidence in tourist methanol deaths.",
+ "papers_summary": "Studies examine professional identities of writing instructors, children's multimodal compositions, and the impact of ChatGPT on personal statement revision; other work benchmarks MLLMs on visualization literacy and analyzes urban driving data.",
  "summaries": {
   "en": {
-   "brief": "US and Iran continue strikes across the Middle East for a seventh night, while a massive wildfire in Norway destroys over 100 homes. In tech, Skyroot Aerospace launches India's first commercial orbital rocket, and research highlights the impact of AI on writing and the risks of AI coding agents.",
-   "news_summary": "US launches seventh night of strikes on Iran as Hormuz conflict escalates, while Iran retaliates against US allies. A huge fire in Drammen, Norway, destroys more than 100 homes, and India's first space-tech unicorn launches a commercial rocket.",
-   "papers_summary": "Studies explore how ChatGPT revision affects rhetorical moves in personal statements and how setup instructions can be weaponized against AI coding agents. Other research investigates narrative visualization in sports videos and multimodal LLMs for scientific visualization literacy."
+   "brief": "US and Iran escalate strikes for seventh night while wildfires rage in Norway and Canada; research explores writing pedagogy, AI agents, and human-robot juggling.",
+   "news_summary": "US launched seventh night of strikes on Iran as Hormuz conflict escalates; wildfires destroy homes in Norway and threaten air quality in the US, while Laos denies evidence in tourist methanol deaths.",
+   "papers_summary": "Studies examine professional identities of writing instructors, children's multimodal compositions, and the impact of ChatGPT on personal statement revision; other work benchmarks MLLMs on visualization literacy and analyzes urban driving data."
   },
   "zh": {
-   "brief": "世界盃決賽阿根廷對西班牙上演跨世代對決；英國新任工黨黨魁貝安德即將入主唐寧街，中英關係受關注。美國與伊朗連續第七夜交火，香港禁書清單持續擴大。研究顯示AI編碼助手存在安全風險，寫作過程研究關注停頓與語法。",
-   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，梅西是否超越馬拉多納成為焦點；英國工黨黨魁貝安德在無人挑戰下就任，成為首相熱門人選。美伊在霍爾木茲海峽衝突升級，香港國安法下禁書清單浮現，特朗普收緊外國學生簽證。",
-   "papers_summary": "研究分析二語寫作教師的個人背景與專業認同，以及ChatGPT對個人陳述修改的影響。另一研究揭示AI編碼助手可能被惡意文檔利用，安全風險值得關注。"
+   "brief": "世界盃決賽阿根廷對西班牙引關注，英國工黨貝安德就任黨魁，香港禁書清單持續擴大。美國與伊朗衝突升級，挪威大火肆虐。研究方面聚焦寫作教學與AI安全。",
+   "news_summary": "世界盃決賽看點包括跨世代對決與高額獎金；貝安德當選工黨黨魁，中英關係受關注；香港禁書清單再添多本。",
+   "papers_summary": "今日無中文重點論文，國際研究探討AI編程代理安全性及多模態模型視覺化能力。"
   }
  },
  "todays_image": {
-  "caption": "Just as waves relentlessly erode a shoreline overnight, the US strikes on Iran for the seventh consecutive night wear down the region's stability, much like the persistent growth of *Lobophora* sp. algae colonizing a reef.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "Both the first helicopter mail sack and the methanol-laced drinks in Laos represent unverified cargo whose true contents—news or poison—are only revealed upon arrival.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_518",
+  "source_name": "National Postal Museum",
+  "source_url": "https://postalmuseum.si.edu/object/npm_1982.0157.518",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_518",
+  "title": "First helicopter mail sack"
  }
 }
