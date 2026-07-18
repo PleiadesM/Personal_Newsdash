@@ -1,28 +1,28 @@
 {
- "brief": "US troops killed in Iranian attack in Jordan and wildfires sending smoke across US and Canada dominate headlines, while Hungary's president resigns after parliament vote. In research, studies on L2 writing and AI coding agents' security highlight ongoing academic concerns.",
+ "brief": "Two US troops were killed and one is missing in Jordan after Iranian attacks, escalating US-Iran tensions. Meanwhile, severe weather and Canadian wildfires threaten the Northeast and Midwest, while political shake-ups include Nebraska's Democratic Senate nominee withdrawing and Hungary's president stepping down. Research papers focus on second language writing, the effects of ChatGPT on student writing, and academic networking.",
  "meta": {
-  "generated_at": "2026-07-18T19:23:26Z"
+  "generated_at": "2026-07-18T21:04:29Z"
  },
- "news_summary": "Two US service members were killed and one is missing after an Iranian drone and missile attack on a base in Jordan, prompting US strikes on Iranian targets. Meanwhile, massive wildfires in Canada continue to send smoke into US cities, leading to political tensions between Trump and Canada, while thunderstorms threaten the Northeast.",
- "papers_summary": "Research on second language writing pedagogy explores biographical factors, noun phrase complexity, and effects of ChatGPT revision. Technical papers address vulnerabilities in AI coding agents' setup instructions and benchmark multimodal LLMs for visualization literacy.",
+ "news_summary": "Two US service members were killed and one remains missing in Jordan following Iranian attacks, as US-Iran hostilities escalate. Other top stories include Nebraska Democratic Senate nominee Cindy Burbank filing to withdraw, severe thunderstorms and Canadian wildfire smoke impacting the US, and Trump threatening tariffs on Canada over air quality.",
+ "papers_summary": "Recent studies examine how biographical factors shape second language writing instructors' professional identities, the impact of ChatGPT revision on rhetorical moves in personal statements, and the developmental pathways of noun phrase complexity in Chinese learners' English writing. Other papers explore academic networking in precarious transitions and the role of drawing in children's multimodal writing.",
  "summaries": {
   "en": {
-   "brief": "US troops killed in Iranian attack in Jordan and wildfires sending smoke across US and Canada dominate headlines, while Hungary's president resigns after parliament vote. In research, studies on L2 writing and AI coding agents' security highlight ongoing academic concerns.",
-   "news_summary": "Two US service members were killed and one is missing after an Iranian drone and missile attack on a base in Jordan, prompting US strikes on Iranian targets. Meanwhile, massive wildfires in Canada continue to send smoke into US cities, leading to political tensions between Trump and Canada, while thunderstorms threaten the Northeast.",
-   "papers_summary": "Research on second language writing pedagogy explores biographical factors, noun phrase complexity, and effects of ChatGPT revision. Technical papers address vulnerabilities in AI coding agents' setup instructions and benchmark multimodal LLMs for visualization literacy."
+   "brief": "Two US troops were killed and one is missing in Jordan after Iranian attacks, escalating US-Iran tensions. Meanwhile, severe weather and Canadian wildfires threaten the Northeast and Midwest, while political shake-ups include Nebraska's Democratic Senate nominee withdrawing and Hungary's president stepping down. Research papers focus on second language writing, the effects of ChatGPT on student writing, and academic networking.",
+   "news_summary": "Two US service members were killed and one remains missing in Jordan following Iranian attacks, as US-Iran hostilities escalate. Other top stories include Nebraska Democratic Senate nominee Cindy Burbank filing to withdraw, severe thunderstorms and Canadian wildfire smoke impacting the US, and Trump threatening tariffs on Canada over air quality.",
+   "papers_summary": "Recent studies examine how biographical factors shape second language writing instructors' professional identities, the impact of ChatGPT revision on rhetorical moves in personal statements, and the developmental pathways of noun phrase complexity in Chinese learners' English writing. Other papers explore academic networking in precarious transitions and the role of drawing in children's multimodal writing."
   },
   "zh": {
-   "brief": "今日世界盃決賽阿根廷對西班牙備受矚目，此外月經追蹤App隱私問題引發關注，以及梅西與傳奇球星比較話題持續。國際上，美軍在約旦遭伊朗攻擊致兩人陣亡，加拿大野火煙霧影響美國空氣品質。",
-   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，獎金創新高；月經追蹤App被指洩露用戶隱私；梅西、馬拉多納、貝利三人誰是最強球星引發討論。",
-   "papers_summary": "今日研究聚焦寫作教學與AI輔助寫作，包括第二語言寫作教師身份認同、兒童寫作中的圖文互動，以及ChatGPT對個人陳述修改的影響。"
+   "brief": "今日重点：世界盃決賽阿根廷對西班牙的跨世代對決，以及月經追蹤App的隱私爭議；梅西與馬拉多納、貝利的歷史地位比較也引發討論。",
+   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，獎金創新高；月經週期追蹤App被指洩漏用戶隱私，數據可拼湊出個人生活細節。",
+   "papers_summary": "今日無重點研究論文。"
   }
  },
  "todays_image": {
-  "caption": "The soccer field's goalposts frame a game of offense and defense, mirroring the deadly strike on US troops in Jordan.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1888BD60008B2-000001",
-  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
-  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/131435",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1888BD60008B2-000001",
-  "title": "Soccer Game"
+  "caption": "Like the clatter of the Underwood typewriter falling silent, Cindy Burbank’s withdrawal leaves an empty page in Nebraska’s political narrative.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-5686075A5BD62_4001-000002",
+  "source_name": "National Museum of African American History and Culture",
+  "source_url": "https://nmaahc.si.edu/object/nmaahc_2012.123.1ab",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-5686075A5BD62_4001-000002",
+  "title": "Underwood typewriter and case"
  }
 }

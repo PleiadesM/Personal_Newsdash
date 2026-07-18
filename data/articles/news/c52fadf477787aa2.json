@@ -1,0 +1,30 @@
+{
+ "full_text": "Dave Eggers attends the \"The Turning Point: To Be Destroyed\" premiere. | Image: John Lamparski/Getty Images for Tribeca Festival Last year, Sam Altman invited author Dave Eggers to give a talk to around 200 OpenAI staffers. The man has written countless novels , screenplays, pieces of journalism, started McSweeney's , and founded multiple schools and nonprofits that support writers and the arts more broadly. So one might expect he'd roll into the company's offices and offer tips on being relentlessly prolific, or how to excel in multiple fields. Instead, he apparently laced into the company. According to the Financial Times , Eggers told the staff: \"The effect of ChatGPT on educators' lives is catastrophic. Whether you intended to do it or not, you've made every teache … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/c52fadf477787aa2.json",
+  "id": "c52fadf477787aa2",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-18T20:54:42Z",
+  "score": 0.7964,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Last year, Sam Altman invited author Dave Eggers to give a talk to around 200 OpenAI staffers. The man has written countless novels, screenplays, pieces of journalism, started McSweeney's, and founded multiple schools and nonprofits that support writers and the arts more broadly. So one might…",
+  "tags": [
+   "llm"
+  ],
+  "title": "Dave Eggers told OpenAI staff  that ChatGPT was ‘silencing an entire generation’",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation"
+ },
+ "meta": {
+  "generated_at": "2026-07-18T21:04:29Z",
+  "item_id": "c52fadf477787aa2",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

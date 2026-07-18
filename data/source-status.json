@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-18T19:23:26Z",
+ "generated_at": "2026-07-18T21:04:29Z",
  "private_summary": {
   "configured": 0,
   "total": 0
@@ -175,12 +175,12 @@
   },
   {
    "category": "optional",
-   "count": 9,
-   "error": null,
+   "count": 0,
+   "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60 (Caus",
    "full_text_count": 0,
    "id": "arxiv_datavis",
    "name": "arXiv cs.HC + cs.GR",
-   "ok": true,
+   "ok": false,
    "section": "papers",
    "skip_reason": null,
    "type": "arxiv"
@@ -235,12 +235,12 @@
   },
   {
    "category": "optional",
-   "count": 13,
-   "error": null,
+   "count": 0,
+   "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC&sortBy=submittedDate&sortOrder=descending&max_results=40 (Caused by ReadTimeo",
    "full_text_count": 0,
    "id": "arxiv_hci_writing",
    "name": "arXiv cs.HC (writing & docs)",
-   "ok": true,
+   "ok": false,
    "section": "papers",
    "skip_reason": null,
    "type": "arxiv"

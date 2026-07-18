@@ -14,7 +14,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-17T11:09:40Z",
-   "score": 0.526,
+   "score": 0.5212,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -43,7 +43,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-17T10:20:03Z",
-   "score": 0.3861,
+   "score": 0.3814,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -69,7 +69,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-17T10:17:55Z",
-   "score": 0.386,
+   "score": 0.3813,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -96,7 +96,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-17T07:45:03Z",
-   "score": 0.5165,
+   "score": 0.5119,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -124,7 +124,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-17T07:42:02Z",
-   "score": 0.3788,
+   "score": 0.3743,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -135,177 +135,6 @@
    "title": "Syntagmatic and Functional Context of Pauses During Writing: A Hallidayan Perspective",
    "url": "https://doi.org/10.1177/07410883261461550",
    "venue": "Written Communication"
-  },
-  {
-   "authors": [
-    "Qiwei Li",
-    "Jorge Ortiz"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Traffic agencies now have access to large volumes of video-derived data for studying safety and congestion. Most of these data are observational and collected without interventions, which makes causal questions such as \"How would rain change traffic density?\" difficult to answer. We present teLLMe, a system for exploratory causal analysis of urban driving datasets. The system starts from a structured event table built from dashcam annotations and combines causal structure learning with the PC…",
-    "arxiv_id": "2607.15254"
-   },
-   "id": "6aa1b40217c83cb7",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T17:49:28Z",
-   "score": 0.7419,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Traffic agencies now have access to large volumes of video-derived data for studying safety and congestion. Most of these data are observational and collected without interventions, which makes causal questions such as \"How would rain change traffic density?\" difficult to answer. We present teLLMe,…",
-   "tags": [
-    "ai-writing",
-    "llm"
-   ],
-   "title": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
-   "url": "https://arxiv.org/abs/2607.15254v1",
-   "venue": "arXiv cs.AI"
-  },
-  {
-   "authors": [
-    "Patrick Phuoc Do",
-    "Chau M. Ta",
-    "Chaoli Wang"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Multimodal large language models (MLLMs) are increasingly used to interpret visualizations, yet current evaluations remain largely chart-centric and provide limited evidence of understanding of scientific visualization (SciVis). We benchmark six MLLMs on the scientific visualization literacy assessment test, a standardized SciVis literacy assessment comprising 49 items based on 18 scientific visualizations and illustrations, spanning 8 techniques and 11 task types. We evaluate three…",
-    "arxiv_id": "2607.15176"
-   },
-   "id": "9710cdbe3ca6a288",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T16:29:34Z",
-   "score": 0.778,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Multimodal large language models (MLLMs) are increasingly used to interpret visualizations, yet current evaluations remain largely chart-centric and provide limited evidence of understanding of scientific visualization (SciVis). We benchmark six MLLMs on the scientific visualization literacy…",
-   "tags": [
-    "eval-study",
-    "ml-vis",
-    "llm",
-    "visualization"
-   ],
-   "title": "Benchmarking Multimodal Large Language Models for Scientific Visualization Literacy",
-   "url": "https://arxiv.org/abs/2607.15176v1",
-   "venue": "arXiv cs.AI"
-  },
-  {
-   "authors": [
-    "Aadesh Bagmar",
-    "Pushkar Saraf"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "AI coding agents set up projects by reading documentation and installing the dependencies it lists, without verifying their names, sources, or known vulnerabilities. By editing only a README, requirements file, or Makefile, an attacker can redirect the agent to an untrusted registry, a known-vulnerable version, or a wrong-but-plausible name: documentation becomes a vector for code execution. We present the first systematic evaluation of package-install-time supply-chain attacks delivered…",
-    "arxiv_id": "2607.15143"
-   },
-   "id": "4b761cb3dad1b2a2",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T15:47:19Z",
-   "score": 0.596,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "AI coding agents set up projects by reading documentation and installing the dependencies it lists, without verifying their names, sources, or known vulnerabilities. By editing only a README, requirements file, or Makefile, an attacker can redirect the agent to an untrusted registry, a…",
-   "tags": [
-    "ai-writing",
-    "techcomm"
-   ],
-   "title": "Setup Complete, Now You Are Compromised: Weaponizing Setup Instructions Against AI Coding Agents",
-   "url": "https://arxiv.org/abs/2607.15143v1",
-   "venue": "arXiv cs.CR"
-  },
-  {
-   "authors": [
-    "Jonathan Rainer Lippert",
-    "Kai Ploeger",
-    "Abir Chowdhury",
-    "Hermann Müller",
-    "Jan Peters",
-    "Alap Kshirsagar"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Dynamic object exchange between humans and robots remains a challenging problem due to uncertainty in perception, timing, and contact-rich interaction. Human-robot juggling represents a particularly demanding instance of this problem, requiring precise real-time coordination, predictive motion planning with feedback control, and robustness to variability in human motion. Enabling such skills is of interest for advancing physical human-robot interaction and shared autonomy. We present a…",
-    "arxiv_id": "2607.15129"
-   },
-   "id": "eeb557c728fcdc01",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T15:39:30Z",
-   "score": 0.5956,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Dynamic object exchange between humans and robots remains a challenging problem due to uncertainty in perception, timing, and contact-rich interaction. Human-robot juggling represents a particularly demanding instance of this problem, requiring precise real-time coordination, predictive motion…",
-   "tags": [
-    "ai-writing"
-   ],
-   "title": "Catch, Throw, Repeat: Planning for Human-Robot Partner Juggling",
-   "url": "https://arxiv.org/abs/2607.15129v1",
-   "venue": "arXiv cs.RO"
-  },
-  {
-   "authors": [
-    "Junhao Zhao",
-    "Romain Vuillemot",
-    "Petra Isenberg",
-    "Lijie Yao"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "We investigate how to support authoring narrative visualizations in motion in sports videos, drawing on automated data preparation, systematic analysis, technology probe design, and evaluation, using swimming races as a case study. Sports videos are widely broadcast and shared across social media, where content creators increasingly seek to present and explain complex events to general audiences. Visualization in motion has been explored as an efficient way to embed data into videos and to move…",
-    "arxiv_id": "2607.14924"
-   },
-   "id": "4f267f925a8b53c6",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T12:41:10Z",
-   "score": 0.4346,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "We investigate how to support authoring narrative visualizations in motion in sports videos, drawing on automated data preparation, systematic analysis, technology probe design, and evaluation, using swimming races as a case study. Sports videos are widely broadcast and shared across social media,…",
-   "tags": [
-    "eval-study",
-    "systems",
-    "visualization"
-   ],
-   "title": "Authoring Narrative Visualization in Motion: Visual Storytelling in Swimming Videos",
-   "url": "https://arxiv.org/abs/2607.14924v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Summer Chambers",
-    "Matthew C. Kelley"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Recent findings suggest that detection models for artificial intelligence (AI) cannot accurately identify AI-generated text and may exhibit bias against certain minority groups. In the present study, anecdotal claims that autistic writers more often have their work flagged as AI-generated are examined empirically. A corpus of approximately 60,000 Reddit posts split into \"likely-autistic\" and \"general-Reddit\" subcorpora is used to compare the distribution of probabilities output by the OpenAI…",
-    "arxiv_id": "2607.14729"
-   },
-   "id": "8a7ecc71a78bbdaa",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T08:54:09Z",
-   "score": 0.5768,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Recent findings suggest that detection models for artificial intelligence (AI) cannot accurately identify AI-generated text and may exhibit bias against certain minority groups. In the present study, anecdotal claims that autistic writers more often have their work flagged as AI-generated are…",
-   "tags": [
-    "ai-writing",
-    "techcomm"
-   ],
-   "title": "The Misclassification of Autistic Writing as AI-Generated",
-   "url": "https://arxiv.org/abs/2607.14729v1",
-   "venue": "arXiv cs.CL"
   },
   {
    "authors": [
@@ -322,7 +151,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-16T06:30:56Z",
-   "score": 0.3196,
+   "score": 0.3162,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -349,7 +178,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-16T06:28:36Z",
-   "score": 0.3195,
+   "score": 0.3161,
    "section": "papers",
    "source": "TechComm journals (CrossRef)",
    "source_id": "crossref_techcomm_journals",
@@ -361,406 +190,22 @@
    "title": "Positioning Patterns and L2 Students’ Genre Performance in Source-Based Argumentative Writing",
    "url": "https://doi.org/10.1177/07410883261461558",
    "venue": "Written Communication"
-  },
-  {
-   "authors": [
-    "Samuel Reinders",
-    "Munazza Zaib",
-    "Bongshin Lee",
-    "Ingrid Zukerman",
-    "Matthew Butler",
-    "Thien Autran"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Combining refreshable tactile displays (RTDs) with conversational AI offers a promising approach to accessible data visualization for people who are blind or have low vision (BLV). However, it remains an open question how these modalities should be integrated to support accessible data experiences. We address this through a co-design process with three BLV co-designers. Building on our prior Wizard-of-Oz study, we created a conversational tactile data interface (CTDI) that combines an RTD with…",
-    "arxiv_id": "2607.14588"
-   },
-   "id": "9f98b035345be13f",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T05:34:04Z",
-   "score": 0.7481,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Combining refreshable tactile displays (RTDs) with conversational AI offers a promising approach to accessible data visualization for people who are blind or have low vision (BLV). However, it remains an open question how these modalities should be integrated to support accessible data experiences.…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "Conversational Tactile Data Interfaces: Co-Designing Accessible Data Experiences with Blind Users Using Refreshable Tactile Displays and Conversational AI",
-   "url": "https://arxiv.org/abs/2607.14588v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Frank Elavsky",
-    "Chieri Nnadozie",
-    "Lucas Nadolskis",
-    "Patrick Carrington",
-    "Dominik Moritz"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "When sighted practitioners author accessible data visualizations, they build navigation structures (the nodes, edges, and input bindings that govern how assistive technologies traverse an interface) entirely in code, with no visual representation. Without a representation to react to, practitioners cannot develop judgment about what makes navigation good or bad, and the quality ceiling of non-visual experiences is set by the absence of a feedback loop. We address this problem through…",
-    "arxiv_id": "2607.14579"
-   },
-   "id": "f9380ad5cfb310fe",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-16T05:16:17Z",
-   "score": 0.6073,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "When sighted practitioners author accessible data visualizations, they build navigation structures (the nodes, edges, and input bindings that govern how assistive technologies traverse an interface) entirely in code, with no visual representation. Without a representation to react to, practitioners…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "Skeleton: Visual Authoring of Non-visual Data Experiences",
-   "url": "https://arxiv.org/abs/2607.14579v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Shahin Hossain",
-    "Tukhbita Afroz Nawmi"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "As generative AI (GenAI) becomes increasingly embedded in undergraduate academic writing, how students rely on these tools, rather than simply whether they use them, has become a central question for learning, academic integrity, and educational equity. Existing measures of reliance were developed inductively, focused on discrete problem-solving tasks, and validated mainly with homogeneous samples. This study developed and validated the GenAI Reliance Types Scale (GenAI-RTS), a 20-item…",
-    "arxiv_id": "2607.14301"
-   },
-   "id": "528125f7ae9286fa",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-15T19:04:11Z",
-   "score": 0.5427,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "As generative AI (GenAI) becomes increasingly embedded in undergraduate academic writing, how students rely on these tools, rather than simply whether they use them, has become a central question for learning, academic integrity, and educational equity. Existing measures of reliance were developed…",
-   "tags": [
-    "pedagogy",
-    "ai-writing",
-    "techcomm"
-   ],
-   "title": "Measuring How Students Rely on Generative AI in Academic Writing: Development and Multi-Source Validation of the Generative AI Reliance Types Scale (GenAI-RTS)",
-   "url": "https://arxiv.org/abs/2607.14301v1",
-   "venue": "arXiv cs.AI"
-  },
-  {
-   "authors": [
-    "Omidreza Shoghli",
-    "Fatemeh Banani Ardecani",
-    "Amin Mohamadi Hezaveh"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Generative AI tools are increasingly being piloted in public agencies, but limited evidence explains how employee acceptance changes after hands-on use. This study examines Microsoft 365 Copilot adoption during an eight-week pilot at a state Department of Transportation. A matched two-wave survey measured perceived usefulness, perceived ease of use, behavioral intention, and trust before and after participation. After matching and response-quality screening, the sample included 124 employees.…",
-    "also_in": [
-     {
-      "source": "arXiv cs.HC (writing & docs)",
-      "url": "https://arxiv.org/abs/2607.13798v1"
-     }
-    ],
-    "arxiv_id": "2607.13798"
-   },
-   "id": "aa77733d70a5c793",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-15T13:02:55Z",
-   "score": 0.5696,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Generative AI tools are increasingly being piloted in public agencies, but limited evidence explains how employee acceptance changes after hands-on use. This study examines Microsoft 365 Copilot adoption during an eight-week pilot at a state Department of Transportation. A matched two-wave survey…",
-   "tags": [],
-   "title": "Persona Migration and Expectation Recalibration in Generative AI Adoption: A Longitudinal Study at a State Department of Transportation",
-   "url": "https://arxiv.org/abs/2607.13798v1",
-   "venue": "arXiv cs.CY"
-  },
-  {
-   "authors": [
-    "Sjoerd Vink",
-    "Suyang Li",
-    "Brian Montambault",
-    "Michael Behrisch",
-    "Mingwei Li",
-    "Remco Chang"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Multivariate graphs unite two distinct data perspectives: a topological structure defined by nodes and edges, and attribute data associated with each node. Analyzing such graphs therefore requires reasoning across two complementary spaces. However, existing systems typically emphasize the analysis of one space at a time, focusing either on topology or on attributes. As a result, exploration, analysis, and pattern discovery that depend on their interaction remain difficult. In this paper, we…",
-    "arxiv_id": "2607.13767"
-   },
-   "id": "6fc4b858c5b8fbc1",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-15T12:29:02Z",
-   "score": 0.3759,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Multivariate graphs unite two distinct data perspectives: a topological structure defined by nodes and edges, and attribute data associated with each node. Analyzing such graphs therefore requires reasoning across two complementary spaces. However, existing systems typically emphasize the analysis…",
-   "tags": [
-    "systems",
-    "visualization"
-   ],
-   "title": "ZipLine: Visual Analysis of Multivariate Graphs with Predicate Logic",
-   "url": "https://arxiv.org/abs/2607.13767v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Yongren Shi",
-    "Wenyi Gong"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "AI agents are joining human teams, raising a basic question: when an automated agent becomes a regular participant, does group organization strengthen or weaken? We study this question in open-source software, where bots open pull requests, review code, and merge changes alongside people, leaving a public record of every interaction. Treating bots as participants rather than tools, we examine 2,991 GitHub projects for two years before and after each adopted its first bot. We measure three…",
-    "arxiv_id": "2607.13679"
-   },
-   "id": "67d40f1c17eeb650",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-15T10:21:52Z",
-   "score": 0.524,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "AI agents are joining human teams, raising a basic question: when an automated agent becomes a regular participant, does group organization strengthen or weaken? We study this question in open-source software, where bots open pull requests, review code, and merge changes alongside people, leaving a…",
-   "tags": [
-    "ai-writing"
-   ],
-   "title": "When Bots Join the Team: Bot Adoption and the Institutional Fabric of Open-Source Software Projects",
-   "url": "https://arxiv.org/abs/2607.13679v1",
-   "venue": "arXiv cs.AI"
-  },
-  {
-   "authors": [
-    "Andrew Chang",
-    "Abhinay K Bodi",
-    "Wenxin Deng",
-    "Junrui Huang",
-    "Venu G Kadamba",
-    "Sumanth B H Karanam"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Group conversations are a fundamental yet complex form of social interaction central to human cognition and telecommunication technology. While understanding and facilitating these interactions has been a long-standing goal, findings are often isolated within specific in-person or videoconferencing settings due to a scarcity of datasets that bridge the two. We introduce VIP-MINGLE, a multimodal dataset comprising 59 hours of recordings (32 groups, 105 participants), featuring paired…",
-    "arxiv_id": "2607.13614"
-   },
-   "id": "8854dd0b2b55ddfa",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-15T09:04:21Z",
-   "score": 0.3289,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Group conversations are a fundamental yet complex form of social interaction central to human cognition and telecommunication technology. While understanding and facilitating these interactions has been a long-standing goal, findings are often isolated within specific in-person or videoconferencing…",
-   "tags": [],
-   "title": "VIP-MINGLE: A Corpus for Videoconference and In-Person Multimodal Interaction in Group Language Engagement",
-   "url": "https://arxiv.org/abs/2607.13614v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Michael Correll",
-    "Lucy Havens",
-    "Mahsan Nourani"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "The persuasive power of data visualizations can go awry: for instance, in an explainable AI (XAI) context, visualizations can produce over-trust of predictive models. In this paper, we use a crowdsourced study to show that providing accurate (but superfluous or irrelevant) data in a model explanation can, in fact, result in unjustified trust and other positive beliefs about a model, even when the model is patently discriminatory and unfair. Our results suggest that XAI designers and developers…",
-    "also_in": [
-     {
-      "source": "arXiv cs.HC (writing & docs)",
-      "url": "https://arxiv.org/abs/2607.14152v1"
-     }
-    ],
-    "arxiv_id": "2607.14152"
-   },
-   "id": "5a5616ab94f843a2",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-14T17:48:35Z",
-   "score": 0.6733,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "The persuasive power of data visualizations can go awry: for instance, in an explainable AI (XAI) context, visualizations can produce over-trust of predictive models. In this paper, we use a crowdsourced study to show that providing accurate (but superfluous or irrelevant) data in a model…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "\"Trust Junk\" Leads to Unjustified Support for Highly Discriminatory Predictive Models",
-   "url": "https://arxiv.org/abs/2607.14152v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Elnara Kadyrgali",
-    "Muragul Muratbekova",
-    "Pakizar Shamoi"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Digital objects express emotions through different modalities. For example, a movie may include visual scenes, audio, dialogue, and facial expressions, while a song may contain melody, rhythm, lyrics, and vocal tone. Because existing emotion recognition models are usually modality-specific, it is difficult to compare such objects directly. This paper proposes CD-MED, a Cross-Domain Multimodal Emotion Descriptor for representing heterogeneous digital objects in a common emotional space. Each…",
-    "arxiv_id": "2607.12958"
-   },
-   "id": "a14369f258faa43f",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-14T16:54:51Z",
-   "score": 0.5318,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Digital objects express emotions through different modalities. For example, a movie may include visual scenes, audio, dialogue, and facial expressions, while a song may contain melody, rhythm, lyrics, and vocal tone. Because existing emotion recognition models are usually modality-specific, it is…",
-   "tags": [],
-   "title": "CD-MED: Cross-Domain Multimodal Emotion Descriptor for Visual Comparison of Digital Objects",
-   "url": "https://arxiv.org/abs/2607.12958v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Michael Behrisch",
-    "Sjoerd Vink",
-    "Leonardo Christino",
-    "Remco Chang"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Graph databases are increasingly adopted as alternatives to tabular, aggregation-focused data models used in business intelligence (BI) systems such as Tableau, Power BI, and Looker. They capture complex relationships between entities, processes, and events, enabling analysis of information propagation in networks. As a result, graph analysis is central to applications such as fraud detection, social influence analysis, and supply chain resilience. Despite these advantages, existing tools do…",
-    "also_in": [
-     {
-      "source": "arXiv cs.HC (writing & docs)",
-      "url": "https://arxiv.org/abs/2607.12845v1"
-     }
-    ],
-    "arxiv_id": "2607.12845"
-   },
-   "id": "ab5f9f23f347de4e",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-14T14:59:39Z",
-   "score": 0.3362,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Graph databases are increasingly adopted as alternatives to tabular, aggregation-focused data models used in business intelligence (BI) systems such as Tableau, Power BI, and Looker. They capture complex relationships between entities, processes, and events, enabling analysis of information…",
-   "tags": [
-    "systems",
-    "visualization"
-   ],
-   "title": "GraphPolaris: A System for Query, Analysis, and Visualization of Graph Databases",
-   "url": "https://arxiv.org/abs/2607.12845v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Diya Mirji",
-    "Tiffany Degbotse",
-    "Sharmil Nanjappa",
-    "Jiayi Zhou",
-    "Vishnu Manoj",
-    "Vihaan Nama"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Scientific discovery increasingly depends on interdisciplinary teams whose members contribute distinct expertise, conceptual frameworks, vocabularies, assumptions, and standards of evidence. Today's AI research assistants are largely designed to support individual researchers through literature review, writing assistance, coding, and data analysis. While these capabilities improve personal productivity, they provide little support for the collaborative reasoning required to integrate knowledge…",
-    "arxiv_id": "2607.12736"
-   },
-   "id": "e4e81c42db707010",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-14T13:06:49Z",
-   "score": 0.4857,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Scientific discovery increasingly depends on interdisciplinary teams whose members contribute distinct expertise, conceptual frameworks, vocabularies, assumptions, and standards of evidence. Today's AI research assistants are largely designed to support individual researchers through literature…",
-   "tags": [
-    "ai-writing",
-    "ux"
-   ],
-   "title": "Aïra: Rethinking AI Research Assistants for Interdisciplinary Science",
-   "url": "https://arxiv.org/abs/2607.12736v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Farnaz Farid",
-    "Raihan Alam",
-    "Al Al-Areqi",
-    "Farhad Ahamed",
-    "Muhammad Hassan Khan",
-    "Sadia Hossain"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Artificial Intelligence (AI) technologies, while serving as a foundational enabler for modern social media and digital health services, exert a bivalent effect by simultaneously acting as a combatant against and a spread vector for misinformation. A prevalent challenge in mitigating this issue arises in non-English contexts and low socioeconomic classes, where limited data hinders the training of AI models for effective detection. Consequently, culturally and linguistically diverse (CALD)…",
-    "arxiv_id": "2607.12336"
-   },
-   "id": "f42604b5c31d6f9f",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-14T04:34:05Z",
-   "score": 0.4728,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Artificial Intelligence (AI) technologies, while serving as a foundational enabler for modern social media and digital health services, exert a bivalent effect by simultaneously acting as a combatant against and a spread vector for misinformation. A prevalent challenge in mitigating this issue…",
-   "tags": [
-    "ai-writing"
-   ],
-   "title": "Evaluating Health Misinformation in Low-Resource Languages: Integrating Small Language Models with a Culturally-Sensitive Responsible NLP Framework (Bangla as a Case Study)",
-   "url": "https://arxiv.org/abs/2607.12336v1",
-   "venue": "arXiv cs.CL"
-  },
-  {
-   "authors": [
-    "Kazushi Kato",
-    "Koji Inoue",
-    "Taiga Mori",
-    "Divesh Lala",
-    "Tatsuya Kawahara"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "In human dialogue, we achieve smooth communication by expressing nonverbal cues such as eye contact, nodding, and facial expressions with precise timing. It is expected for conversational avatars to express these cues appropriately to realize natural and human-like interactions. This study focuses on nodding, which is crucial for demonstrating active listening and encouraging further user utterances. We propose a model that predicts both timing and kinematic parameters representing the motion…",
-    "arxiv_id": "2607.12329"
-   },
-   "id": "ca40de771e82da87",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-14T04:18:06Z",
-   "score": 0.2799,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "In human dialogue, we achieve smooth communication by expressing nonverbal cues such as eye contact, nodding, and facial expressions with precise timing. It is expected for conversational avatars to express these cues appropriately to realize natural and human-like interactions. This study focuses…",
-   "tags": [],
-   "title": "Real-time Generation of Listener Nodding via Prediction of Kinematic Parameters for Avatar Dialogue Systems",
-   "url": "https://arxiv.org/abs/2607.12329v1",
-   "venue": "arXiv cs.HC"
   }
  ],
  "meta": {
-  "count": 26,
-  "generated_at": "2026-07-18T19:23:26Z",
+  "count": 7,
+  "generated_at": "2026-07-18T21:04:29Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
-    "count": 9,
-    "error": null,
+    "count": 0,
+    "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60 (Caus",
     "full_text_count": 0,
     "id": "arxiv_datavis",
     "name": "arXiv cs.HC + cs.GR",
-    "ok": true,
+    "ok": false,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"
@@ -815,12 +260,12 @@
    },
    {
     "category": "optional",
-    "count": 13,
-    "error": null,
+    "count": 0,
+    "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC&sortBy=submittedDate&sortOrder=descending&max_results=40 (Caused by ReadTimeo",
     "full_text_count": 0,
     "id": "arxiv_hci_writing",
     "name": "arXiv cs.HC (writing & docs)",
-    "ok": true,
+    "ok": false,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"
