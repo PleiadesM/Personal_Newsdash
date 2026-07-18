@@ -1,0 +1,28 @@
+{
+ "full_text": "If you’re like me, you or a loved one has struggled through the process of gaining pre-approval for the medical care that your physician has recommended. Personal stories abound regarding the tribulations of patients as they go through hoops to get their health insurer to pay for certain prescription medications, medical procedures, and more. When used judiciously, this process—known as prior authorization —serves as a check on overuse and spending on services or technologies for which there are less costly alternatives. But a large majority of physicians voice concerns about care delays, which can cause patients to abandon recommended treatments while waiting for the insurance company to verify their eligibility and confirm that the treatment is, indeed, medically necessary. Patients who are denied care may submit an appeal, but that requires more time. AI might be able to help. With its ability to efficiently sort through vast reams of information, artificial intelligence could theoretically expedite approval of unambiguously allowable claims, thereby reducing care delays. However, AI-driven prior authorization is facing resistance, as it may increase wrongful denials of health insurance coverage. A 2025 American Medical Association survey of physicians revealed significant concern about the application of AI tools , with 61 percent of doctors worrying that AI will exacerbate denials of what they deem are necessary treatments. Read full article Comments",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/002251d7838b61be.json",
+  "id": "002251d7838b61be",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-18T11:18:25Z",
+  "score": 0.7189,
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai",
+  "summary": "The government is piloting a program that uses AI for insurance-coverage decisions.",
+  "tags": [],
+  "title": "Will AI fix prior authorization—or make it worse?",
+  "url": "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/"
+ },
+ "meta": {
+  "generated_at": "2026-07-18T13:46:22Z",
+  "item_id": "002251d7838b61be",
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai"
+ }
+}

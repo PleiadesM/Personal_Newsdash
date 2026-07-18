@@ -1,20 +1,28 @@
 {
- "brief": "Wildfire smoke continues to affect US and Canada, while political tensions rise over NYC Mayor Mamdani's potential arrest of Netanyahu and Trump's spat with Italy. Research on writing instruction, AI coding agents, and human-robot juggling dominate today's papers.",
+ "brief": "Tensions escalate in the Middle East as US strikes Iran and Israel counters Iranian spying, while Canada faces uncontainable wildfires. In research, studies explore writing instruction, ChatGPT's impact on personal statements, and developmental pathways in L2 writing.",
  "meta": {
-  "generated_at": "2026-07-18T11:17:40Z"
+  "generated_at": "2026-07-18T13:46:22Z"
  },
- "news_summary": "Wildfire smoke shifts but persists across US and Canada; NYC Mayor Zohran Mamdani may order Netanyahu's arrest; White House backs Argentina players over Falklands banner; Ukraine drone attack kills 8 in Russia; Laos unable to determine cause of tourist deaths linked to methanol.",
- "papers_summary": "Studies explore biographical factors in L2 writing instructors, children's intermodal writing, and ChatGPT's effects on personal statements. Other papers examine AI coding agent vulnerabilities and human-robot partner juggling.",
+ "news_summary": "AIPAC blocked online donations for Democrats who voted against Israel aid. The US continues airstrikes on Iran for a seventh night, while Canada's wildfires remain impossible to extinguish.",
+ "papers_summary": "Research papers examine factors influencing second language writing instructors' identities, the effects of ChatGPT on personal statement revision, and noun phrase complexity in Chinese learners' English writing.",
  "summaries": {
   "en": {
-   "brief": "Wildfire smoke continues to affect US and Canada, while political tensions rise over NYC Mayor Mamdani's potential arrest of Netanyahu and Trump's spat with Italy. Research on writing instruction, AI coding agents, and human-robot juggling dominate today's papers.",
-   "news_summary": "Wildfire smoke shifts but persists across US and Canada; NYC Mayor Zohran Mamdani may order Netanyahu's arrest; White House backs Argentina players over Falklands banner; Ukraine drone attack kills 8 in Russia; Laos unable to determine cause of tourist deaths linked to methanol.",
-   "papers_summary": "Studies explore biographical factors in L2 writing instructors, children's intermodal writing, and ChatGPT's effects on personal statements. Other papers examine AI coding agent vulnerabilities and human-robot partner juggling."
+   "brief": "Tensions escalate in the Middle East as US strikes Iran and Israel counters Iranian spying, while Canada faces uncontainable wildfires. In research, studies explore writing instruction, ChatGPT's impact on personal statements, and developmental pathways in L2 writing.",
+   "news_summary": "AIPAC blocked online donations for Democrats who voted against Israel aid. The US continues airstrikes on Iran for a seventh night, while Canada's wildfires remain impossible to extinguish.",
+   "papers_summary": "Research papers examine factors influencing second language writing instructors' identities, the effects of ChatGPT on personal statement revision, and noun phrase complexity in Chinese learners' English writing."
   },
   "zh": {
-   "brief": "今日焦點：世界盃決賽阿根廷對西班牙，獎金創紀錄；英國工黨貝安德就任黨魁，中英關係受關注；香港國安法下禁書清單浮現。",
-   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，獎金5000萬美元；貝安德接任工黨黨魁，中英關係走向引熱議；香港國安法催生「禁書時代」，多本書籍被下架或檢走。",
-   "papers_summary": "今日無中文論文，英文論文探討寫作過程中的停頓、AI編碼代理安全、及多模態視覺化理解等主題。"
+   "brief": "世界盃決賽阿根廷對西班牙即將開踢，獎金創新高；經期追蹤App的隱私漏洞引發關注；梅西、馬拉多納與貝利誰是史上最佳球員的討論持續。學術研究方面，AI工具如ChatGPT對寫作修訂的影響成為焦點。",
+   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，除大力神盃外還有5000萬美元獎金；經期追蹤App收集的數據可能揭露用戶私密信息；梅西是否超越馬拉多納和貝利成為足球史上最強引發熱議。",
+   "papers_summary": "研究探討ChatGPT修訂對個人陳述中修辭步驟的影響，以及第二語言寫作教學中教師專業身份與教學實踐的動態關係。"
   }
+ },
+ "todays_image": {
+  "caption": "A fire engine plate marked \"HIBERNIA\" suggests a dormant but ready response, much like AIPAC's swift mobilization against the Democrats who voted to halt Israel aid.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2011q00827",
+  "source_name": "National Museum of American History",
+  "source_url": null,
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2011q00827&max=150",
+  "title": "Fire Engine Plate, \"HIBERNIA\""
  }
 }
