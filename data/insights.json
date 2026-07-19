@@ -1,28 +1,28 @@
 {
- "brief": "Geopolitical tensions escalate with Russian strikes on Kyiv and US-Iran exchanges, while Victoria unveils social media 'demasking' laws and the Tate brothers are arrested. In research, studies explore AI coding agent vulnerabilities and multimodal LLM visualization literacy.",
+ "brief": "A massive Russian ballistic missile attack on Kyiv kills one, while a ferry capsizes off Guyana and an Israeli paraglider works to save swifts nesting at the Western Wall. Research papers explore writing instruction, ChatGPT's impact on revision, and visualization literacy.",
  "meta": {
-  "generated_at": "2026-07-19T06:41:48Z"
+  "generated_at": "2026-07-19T10:02:00Z"
  },
- "news_summary": "Russia pounded Kyiv with dozens of missiles, the US and Iran traded strikes, and Victoria announced new powers to unmask anonymous social media users accused of vilification. The Tate brothers were arrested in Miami on UK sex crime charges, and the World Cup final features Argentina vs Spain.",
- "papers_summary": "Papers cover AI coding agent security risks from setup instructions, multimodal LLM benchmarking for scientific visualization, and human-robot juggling planning. Other studies analyze noun complexity in L2 writing and ChatGPT's effect on rhetorical moves in personal statements.",
+ "news_summary": "Russia launched one of its largest ballistic attacks on Kyiv, killing one; a ferry carrying 116 passengers sank off Guyana, with 53 rescued. In the U.S., the Tate brothers were arrested, and a Cuban dissident arrived in Miami after exile.",
+ "papers_summary": "Studies examine biographical factors in writing instruction, multimodal composition in children's writing, and the effects of ChatGPT on personal statement revision. Other papers cover pause analysis, urban driving data, and human-robot juggling.",
  "summaries": {
   "en": {
-   "brief": "Geopolitical tensions escalate with Russian strikes on Kyiv and US-Iran exchanges, while Victoria unveils social media 'demasking' laws and the Tate brothers are arrested. In research, studies explore AI coding agent vulnerabilities and multimodal LLM visualization literacy.",
-   "news_summary": "Russia pounded Kyiv with dozens of missiles, the US and Iran traded strikes, and Victoria announced new powers to unmask anonymous social media users accused of vilification. The Tate brothers were arrested in Miami on UK sex crime charges, and the World Cup final features Argentina vs Spain.",
-   "papers_summary": "Papers cover AI coding agent security risks from setup instructions, multimodal LLM benchmarking for scientific visualization, and human-robot juggling planning. Other studies analyze noun complexity in L2 writing and ChatGPT's effect on rhetorical moves in personal statements."
+   "brief": "A massive Russian ballistic missile attack on Kyiv kills one, while a ferry capsizes off Guyana and an Israeli paraglider works to save swifts nesting at the Western Wall. Research papers explore writing instruction, ChatGPT's impact on revision, and visualization literacy.",
+   "news_summary": "Russia launched one of its largest ballistic attacks on Kyiv, killing one; a ferry carrying 116 passengers sank off Guyana, with 53 rescued. In the U.S., the Tate brothers were arrested, and a Cuban dissident arrived in Miami after exile.",
+   "papers_summary": "Studies examine biographical factors in writing instruction, multimodal composition in children's writing, and the effects of ChatGPT on personal statement revision. Other papers cover pause analysis, urban driving data, and human-robot juggling."
   },
   "zh": {
-   "brief": "今日焦点：朝鲜人秘密接触K-pop，欧洲热浪推高中国空调需求，世界杯金靴之争白热化，以及首次发现宜居带岩质行星拥有大气层。",
-   "news_summary": "脱北者透露K-pop突破封锁进入朝鲜；欧洲热浪驱动中国空调销量激增；姆巴佩金靴领先但梅西有望在决赛反超；天文学家发现类地行星在宜居带内拥有大气层。",
-   "papers_summary": "研究关注二语写作教师的专业身份、儿童写作中的模态互动、ChatGPT对修辞步骤的影响，以及城市驾驶数据的因果分析。"
+   "brief": "今日新闻涵盖健康突破、社会运动、技术普及与体育赛事。双生矮小症姐妹为癌症预防提供关键线索；揭阳虐狗案引发全球关注；K-pop突破朝鲜封锁；欧洲热浪推动中国空调出口；世界杯金靴之争白热化；首颗宜居带行星被发现有大氣層。论文方面暂无优先报道。",
+   "news_summary": "双生姐妹身高不足1.2米，其研究为癌症预防提供线索；揭阳虐狗案引发全球舆论，民众呼吁动物保护立法；朝鲜年轻人通过K-pop接触外部文化；欧洲热浪下中国空调品牌需求激增；姆巴佩与梅西争夺世界杯金靴；科学家首次在宜居带类地行星上发现大气层。",
+   "papers_summary": "优先论文暂无报道。交叉语境论文涉及二语写作、数据可视化、人机交互等领域。"
   }
  },
  "todays_image": {
-  "caption": "As a drone strips away anonymity from above, Victoria's new law strips away the mask of anonymous online haters below.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2017-03151",
+  "caption": "From a NASA experimental paraglider designed to land spacecraft to an Israeli paraglider rescuing swifts at the Western Wall, both show unexpected uses of paragliding technology in service of higher purposes.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19700076000-NASM2019-01431",
   "source_name": "National Air and Space Museum",
-  "source_url": "http://n2t.net/ark:/65665/nv98883bd76-aa82-4d4d-8a92-76fa5e942cc5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-NASM2017-03151",
-  "title": "General Atomics MQ-1L Predator A"
+  "source_url": "http://n2t.net/ark:/65665/nv9be792e2a-d0bb-41bd-9cfa-fa5059023439",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19700076000-NASM2019-01431",
+  "title": "Paraglider Research Vehicle (Paresev) 1-A, Gemini"
  }
 }
