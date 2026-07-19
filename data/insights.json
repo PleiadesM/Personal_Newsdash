@@ -1,28 +1,28 @@
 {
- "brief": "US-Iran tensions escalate with deadly attacks in Jordan, severe storms batter the Northeast, and political shifts in Hungary and the UK dominate headlines. Meanwhile, research explores AI's impact on writing, multimodal visualization, and human-robot interaction.",
+ "brief": "Andrew and Tristan Tate arrested in Miami on UK sex crime charges; JD Vance's Epstein-Israel remarks stir controversy; two US troops killed in Jordan; Australia introduces unmasking law. Research examines L2 writing identities, ChatGPT's impact on personal statements, and multimodal LLM benchmarks.",
  "meta": {
-  "generated_at": "2026-07-18T23:08:13Z"
+  "generated_at": "2026-07-19T03:50:43Z"
  },
- "news_summary": "Two US troops were killed and one is missing after Iranian attacks in Jordan, while severe thunderstorms and flooding hit the Northeast. Hungary's president resigned amid a constitutional crisis, and UK politics saw controversial remarks at CPAC and a shift on digital ID plans.",
- "papers_summary": "Studies examine how ChatGPT affects rhetorical moves in personal statements and the role of drawing in children's writing. Other papers explore AI coding agents' security risks and authoring narrative visualizations in sports videos.",
+ "news_summary": "Andrew and Tristan Tate arrested in Miami on UK rape and trafficking charges; Vice President Vance's comments linking Epstein to Israeli intelligence echo conspiracy theories; two US troops killed in Iranian attack in Jordan; Australia announces new unmasking law for social media vilification.",
+ "papers_summary": "Studies explore biographical factors shaping L2 writing instructors' identities, effects of ChatGPT revision on rhetorical moves in personal statements, and benchmarking multimodal large language models for scientific visualization literacy.",
  "summaries": {
   "en": {
-   "brief": "US-Iran tensions escalate with deadly attacks in Jordan, severe storms batter the Northeast, and political shifts in Hungary and the UK dominate headlines. Meanwhile, research explores AI's impact on writing, multimodal visualization, and human-robot interaction.",
-   "news_summary": "Two US troops were killed and one is missing after Iranian attacks in Jordan, while severe thunderstorms and flooding hit the Northeast. Hungary's president resigned amid a constitutional crisis, and UK politics saw controversial remarks at CPAC and a shift on digital ID plans.",
-   "papers_summary": "Studies examine how ChatGPT affects rhetorical moves in personal statements and the role of drawing in children's writing. Other papers explore AI coding agents' security risks and authoring narrative visualizations in sports videos."
+   "brief": "Andrew and Tristan Tate arrested in Miami on UK sex crime charges; JD Vance's Epstein-Israel remarks stir controversy; two US troops killed in Jordan; Australia introduces unmasking law. Research examines L2 writing identities, ChatGPT's impact on personal statements, and multimodal LLM benchmarks.",
+   "news_summary": "Andrew and Tristan Tate arrested in Miami on UK rape and trafficking charges; Vice President Vance's comments linking Epstein to Israeli intelligence echo conspiracy theories; two US troops killed in Iranian attack in Jordan; Australia announces new unmasking law for social media vilification.",
+   "papers_summary": "Studies explore biographical factors shaping L2 writing instructors' identities, effects of ChatGPT revision on rhetorical moves in personal statements, and benchmarking multimodal large language models for scientific visualization literacy."
   },
   "zh": {
-   "brief": "世界盃決賽阿根廷對西班牙即將上演，梅西的傳奇地位再成焦點；同時，經期追蹤App的隱私風險引發關注。研究方面，ChatGPT對寫作的影響成為熱點。",
-   "news_summary": "世界盃決賽阿根廷與西班牙爭冠，獎金高達5000萬美元；梅西、馬拉多納、貝利誰是最強引發熱議。此外，經期追蹤App的數據隱私漏洞令人擔憂。",
-   "papers_summary": "多篇研究探討AI對寫作的影響，如ChatGPT修改個人陳述的修辭效果，以及AI編碼代理被惡意指令利用的風險。"
+   "brief": "今日重點：世界盃決賽阿根廷對西班牙，梅西與姆巴佩爭奪金靴；天文學家首次在宜居帶類地行星發現大氣層；經期追蹤App隱私漏洞受關注。無新中文研究論文。",
+   "news_summary": "世界盃決賽看點包括梅西與姆巴佩的金靴之爭及創紀錄獎金；科學家發現一顆位於宜居帶的類地行星擁有大氣層；經期追蹤App收集的數據可能洩露用戶隱私。",
+   "papers_summary": "今日無中文研究論文。"
   }
  },
  "todays_image": {
-  "caption": "The silent keys of a vintage typewriter echo the new, unseen pressures being typed into Jordan's role as a strategic buffer in the U.S.-Iran conflict.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-5686075A5BD62_4001-000002",
+  "caption": "Both the handcuffing of Henry Louis Gates Jr. and Victoria's new unmasking law target moments when identity and visibility become flashpoints for accountability in systems of power.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2010_11_001",
   "source_name": "National Museum of African American History and Culture",
-  "source_url": "https://nmaahc.si.edu/object/nmaahc_2012.123.1ab",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-5686075A5BD62_4001-000002",
-  "title": "Underwood typewriter and case"
+  "source_url": "https://nmaahc.si.edu/object/nmaahc_2010.11",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2010_11_001",
+  "title": "Handcuffs used in the arrest of Henry Louis Gates, Jr."
  }
 }
