@@ -1,28 +1,28 @@
 {
- "brief": "US and Iran exchange strikes amid escalating Middle East tensions, and Russia launches a major missile assault on Kyiv. Meanwhile, research highlights the impact of AI on writing and the challenges of human-robot interaction.",
+ "brief": "US airstrikes target Iran after soldier deaths and Russia launches major missile attack on Ukraine, while research papers explore AI's impact on writing and human-robot collaboration.",
  "meta": {
-  "generated_at": "2026-07-19T11:21:50Z"
+  "generated_at": "2026-07-19T13:50:51Z"
  },
- "news_summary": "The US and Iran trade strikes after US soldiers killed in Jordan; Russia batters Kyiv in one of the largest missile assaults. The Tate brothers face extradition from the US to the UK, and a majority of US voters link extreme weather to climate crisis.",
- "papers_summary": "Research explores how biographical factors shape second language writing instructors' identities and how ChatGPT affects personal statement revision. A study on urban driving data uses causal analysis to understand traffic jams.",
+ "news_summary": "Tensions escalate as US and Iran trade fire after two US soldiers killed in Jordan, and Russia strikes Ukrainian cities with ballistic missiles. Meanwhile, extreme weather, political controversies, and the Tate brothers' arrest dominate global headlines.",
+ "papers_summary": "Studies investigate how ChatGPT revision affects rhetorical moves in personal statements and how human-robot juggling can be planned, alongside analyses of writing processes and multimodal literacy.",
  "summaries": {
   "en": {
-   "brief": "US and Iran exchange strikes amid escalating Middle East tensions, and Russia launches a major missile assault on Kyiv. Meanwhile, research highlights the impact of AI on writing and the challenges of human-robot interaction.",
-   "news_summary": "The US and Iran trade strikes after US soldiers killed in Jordan; Russia batters Kyiv in one of the largest missile assaults. The Tate brothers face extradition from the US to the UK, and a majority of US voters link extreme weather to climate crisis.",
-   "papers_summary": "Research explores how biographical factors shape second language writing instructors' identities and how ChatGPT affects personal statement revision. A study on urban driving data uses causal analysis to understand traffic jams."
+   "brief": "US airstrikes target Iran after soldier deaths and Russia launches major missile attack on Ukraine, while research papers explore AI's impact on writing and human-robot collaboration.",
+   "news_summary": "Tensions escalate as US and Iran trade fire after two US soldiers killed in Jordan, and Russia strikes Ukrainian cities with ballistic missiles. Meanwhile, extreme weather, political controversies, and the Tate brothers' arrest dominate global headlines.",
+   "papers_summary": "Studies investigate how ChatGPT revision affects rhetorical moves in personal statements and how human-robot juggling can be planned, alongside analyses of writing processes and multimodal literacy."
   },
   "zh": {
-   "brief": "今日新闻涵盖双生姐妹矮小体型提供癌症线索、揭阳虐狗案引发全球抗议、K-pop悄然传入朝鲜、中国空调热销欧洲、姆巴佩与梅西的金靴之争，以及首次在宜居带类地行星发现大气层。研究方面暂无重点论文。",
-   "news_summary": "多项热点：双生姐妹研究揭示糖尿病与癌症的遗传关联；揭阳虐狗案激发动物保护呼声；朝鲜青少年通过K-pop接触外部文化；中国空调品牌抓住欧洲热浪商机；世界杯决赛前夕姆巴佩领先金靴榜；天文发现为地外生命探索带来希望。",
-   "papers_summary": "今日无优先级论文。"
+   "brief": "Today's top stories include: a study on dwarf twins providing cancer clues, the Jieyang dog abuse case sparking global outrage, K-pop spreading in North Korea, European heatwave boosting Chinese air conditioner sales, Mbappe leading World Cup golden boot race, and the first exoplanet in habitable zone with atmosphere found. In research, studies explore AI in writing, human-robot interaction, and narrative visualization.",
+   "news_summary": "Priority Chinese news covers health discoveries from twin sisters, animal rights protests, cultural infiltration in North Korea, climate-driven market shifts, sports rivalry, and astronomical breakthroughs.",
+   "papers_summary": "Context papers include studies on professional identities of writing instructors, multimodal meaning in children's writing, noun phrase complexity in L2 English, ChatGPT's impact on writing, and human-robot juggling."
   }
  },
  "todays_image": {
-  "caption": "The experimental Paresev glider and the US-Iran strikes both involve airborne vehicles that, whether for research or retaliation, carry inherent risks of unforeseen outcomes.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19700076000-NASM2019-01431",
-  "source_name": "National Air and Space Museum",
-  "source_url": "http://n2t.net/ark:/65665/nv9be792e2a-d0bb-41bd-9cfa-fa5059023439",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NASM-A19700076000-NASM2019-01431",
-  "title": "Paraglider Research Vehicle (Paresev) 1-A, Gemini"
+  "caption": "The erratic, fluid lines of Meissonnier's rococo ornamentation mirror the unpredictable, shifting course of the marathon runners on drifting sea ice.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CHD4003",
+  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/26793",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-CHD4003",
+  "title": "Oeuvre de Juste-Aurèle Meissonnier"
  }
 }
