@@ -1,28 +1,28 @@
 {
- "brief": "Andy Burnham becomes UK PM amid warnings about national challenges; US and Iran exchange fire after troop deaths; a ferry sinks off Guyana; and research papers explore writing processes, AI coding agents, and human-robot juggling.",
+ "brief": "Global attention is on the World Cup final as Trump attends, while geopolitical tensions persist with Iran and Russia. UK prepares for a new PM, and a ferry sinking in Guyana adds to the day's tragedies.",
  "meta": {
-  "generated_at": "2026-07-19T17:13:57Z"
+  "generated_at": "2026-07-19T19:29:55Z"
  },
- "news_summary": "Andy Burnham prepares to become UK prime minister, warning of honesty needed. US launches airstrikes after two troops killed, and Iran retaliates. A ferry sinks off Guyana with dozens missing. Thames Water creditors seek talks as nationalization looms. Second legionnaires' death in NYC.",
- "papers_summary": "Studies examine the build-measure-learn loop in startups, biographical factors in L2 writing instructors, children's multimodal writing, and ChatGPT's effects on personal statements. Other papers analyze urban driving data, MLLMs for visualization, and AI coding agent vulnerabilities.",
+ "news_summary": "Trump arrives by helicopter for the World Cup final amid escalating US-Iran conflict; Russia launches major missile attacks on Ukraine; Peru earthquake kills six; a ferry sinks off Guyana with dozens missing.",
+ "papers_summary": "Papers explore writing process dynamics, AI's effect on rhetorical moves, and human-robot interaction in juggling, alongside analyses of traffic data and visualization literacy.",
  "summaries": {
   "en": {
-   "brief": "Andy Burnham becomes UK PM amid warnings about national challenges; US and Iran exchange fire after troop deaths; a ferry sinks off Guyana; and research papers explore writing processes, AI coding agents, and human-robot juggling.",
-   "news_summary": "Andy Burnham prepares to become UK prime minister, warning of honesty needed. US launches airstrikes after two troops killed, and Iran retaliates. A ferry sinks off Guyana with dozens missing. Thames Water creditors seek talks as nationalization looms. Second legionnaires' death in NYC.",
-   "papers_summary": "Studies examine the build-measure-learn loop in startups, biographical factors in L2 writing instructors, children's multimodal writing, and ChatGPT's effects on personal statements. Other papers analyze urban driving data, MLLMs for visualization, and AI coding agent vulnerabilities."
+   "brief": "Global attention is on the World Cup final as Trump attends, while geopolitical tensions persist with Iran and Russia. UK prepares for a new PM, and a ferry sinking in Guyana adds to the day's tragedies.",
+   "news_summary": "Trump arrives by helicopter for the World Cup final amid escalating US-Iran conflict; Russia launches major missile attacks on Ukraine; Peru earthquake kills six; a ferry sinks off Guyana with dozens missing.",
+   "papers_summary": "Papers explore writing process dynamics, AI's effect on rhetorical moves, and human-robot interaction in juggling, alongside analyses of traffic data and visualization literacy."
   },
   "zh": {
-   "brief": "今日新闻包括雙生姐妹身高不足1.2米为癌症提供关键线索、揭阳虐狗案引发全球抗议、K-pop突破朝鲜封锁、欧洲热浪促使中国空调热销、世界杯金靴之争白热化，以及首次发现宜居带类地行星存在大气层。研究方面，主要关注写作过程和多模态大语言模型的评估。",
-   "news_summary": "中國雙生姐妹身高不足1.2米，卻為癌症預防提供關鍵線索；揭陽虐狗案引爆全球輿論；K-pop突破重重封鎖傳入朝鮮；歐洲熱浪下轉向中國空調；姆巴佩領跑世界盃金靴之爭，梅西仍有機會反超；首次在宜居帶發現類似地球的行星擁有大氣層。",
-   "papers_summary": "今日無重點中文論文，英文論文主要探討寫作過程中的停頓分析、多模態大語言模型對科學可視化的理解，以及人類與機器人合作拋接物體的規劃。"
+   "brief": "今日焦點包括雙生姐妹遺傳研究為癌症預防提供關鍵線索，中國揭陽虐狗案引發全球聲援與立法呼籲，北韓民眾透過K-pop接觸外部文化。歐洲熱浪推高中國空調需求，世界盃金靴之爭進入白熱化，以及首次發現宜居帶系外行星大氣層。",
+   "news_summary": "雙生姐妹身高不足1.2米卻提供癌症預防線索；中國虐狗案引發全球抵制行動與動保立法討論；北韓脫北者揭露K-pop滲透情況；歐洲熱浪下中國空調品牌崛起；姆巴佩與梅西角逐世界盃金靴。",
+   "papers_summary": "中文論文今日無更新；英文研究聚焦寫作過程與AI工具影響，如ChatGPT修改對個人陳述的影響、多模態大語言模型圖表理解能力。"
   }
  },
  "todays_image": {
-  "caption": "Just as the Yoroi Ferry carried passengers across uncertain waters, Burnham urges the UK to navigate its own hidden currents with honesty before crossing into a new leadership.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B1AB5BE8C6762-000001",
-  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
-  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/74762",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B1AB5BE8C6762-000001",
-  "title": "Yoroi Ferry, Koami-cho (Yoroi-no-watashi, Koami-cho) From the Series One Hundred Famous views of Edo"
+  "caption": "Both the first helicopter mail sack and Trump's arrival signal a moment when a helicopter carries something of significance—be it letters or a leader—to a historic event.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_518",
+  "source_name": "National Postal Museum",
+  "source_url": "https://postalmuseum.si.edu/object/npm_1982.0157.518",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_518",
+  "title": "First helicopter mail sack"
  }
 }
