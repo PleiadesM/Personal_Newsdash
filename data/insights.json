@@ -1,28 +1,28 @@
 {
- "brief": "Geopolitical tensions escalate as the US launches airstrikes against Iran, while Australia faces rising wellbeing poverty and consumer safety concerns. Meanwhile, AI's role in politics and writing is under scrutiny, and research explores ChatGPT's impact on personal statements and narrative visualization.",
+ "brief": "Andy Burnham becomes UK PM amid warnings about national challenges; US and Iran exchange fire after troop deaths; a ferry sinks off Guyana; and research papers explore writing processes, AI coding agents, and human-robot juggling.",
  "meta": {
-  "generated_at": "2026-07-19T15:13:09Z"
+  "generated_at": "2026-07-19T17:13:57Z"
  },
- "news_summary": "US airstrikes retaliate against Iran after American troops killed; Australia reports record life dissatisfaction and asbestos risks in play sand; Tate brothers arrested in US with new UK charges; AI chatbots targeted by political campaigns.",
- "papers_summary": "Studies examine ChatGPT's effects on rhetorical moves in personal statements and multimodal LLMs for scientific visualization literacy, alongside human-robot juggling and narrative visualization in swimming videos.",
+ "news_summary": "Andy Burnham prepares to become UK prime minister, warning of honesty needed. US launches airstrikes after two troops killed, and Iran retaliates. A ferry sinks off Guyana with dozens missing. Thames Water creditors seek talks as nationalization looms. Second legionnaires' death in NYC.",
+ "papers_summary": "Studies examine the build-measure-learn loop in startups, biographical factors in L2 writing instructors, children's multimodal writing, and ChatGPT's effects on personal statements. Other papers analyze urban driving data, MLLMs for visualization, and AI coding agent vulnerabilities.",
  "summaries": {
   "en": {
-   "brief": "Geopolitical tensions escalate as the US launches airstrikes against Iran, while Australia faces rising wellbeing poverty and consumer safety concerns. Meanwhile, AI's role in politics and writing is under scrutiny, and research explores ChatGPT's impact on personal statements and narrative visualization.",
-   "news_summary": "US airstrikes retaliate against Iran after American troops killed; Australia reports record life dissatisfaction and asbestos risks in play sand; Tate brothers arrested in US with new UK charges; AI chatbots targeted by political campaigns.",
-   "papers_summary": "Studies examine ChatGPT's effects on rhetorical moves in personal statements and multimodal LLMs for scientific visualization literacy, alongside human-robot juggling and narrative visualization in swimming videos."
+   "brief": "Andy Burnham becomes UK PM amid warnings about national challenges; US and Iran exchange fire after troop deaths; a ferry sinks off Guyana; and research papers explore writing processes, AI coding agents, and human-robot juggling.",
+   "news_summary": "Andy Burnham prepares to become UK prime minister, warning of honesty needed. US launches airstrikes after two troops killed, and Iran retaliates. A ferry sinks off Guyana with dozens missing. Thames Water creditors seek talks as nationalization looms. Second legionnaires' death in NYC.",
+   "papers_summary": "Studies examine the build-measure-learn loop in startups, biographical factors in L2 writing instructors, children's multimodal writing, and ChatGPT's effects on personal statements. Other papers analyze urban driving data, MLLMs for visualization, and AI coding agent vulnerabilities."
   },
   "zh": {
-   "brief": "今日新闻涵盖中国双胞胎姐妹癌症研究、揭阳虐狗案、朝鲜K-pop渗透、欧洲空调需求、世界杯金靴之争及系外行星大气层发现。论文方面关注写作与AI应用研究。",
-   "news_summary": "中国研究显示矮小双胞胎姐妹为癌症预防提供线索；揭阳虐狗案引发全球舆论；朝鲜民众通过K-pop接触外部文化；欧洲热浪推动中国空调需求；姆巴佩与梅西争夺世界杯金靴；发现宜居带系外行星存在大气层。",
-   "papers_summary": "研究探讨了写作中名词短语复杂性发展、ChatGPT对个人陈述修改的影响，以及AI编码代理的安全风险。"
+   "brief": "今日新闻包括雙生姐妹身高不足1.2米为癌症提供关键线索、揭阳虐狗案引发全球抗议、K-pop突破朝鲜封锁、欧洲热浪促使中国空调热销、世界杯金靴之争白热化，以及首次发现宜居带类地行星存在大气层。研究方面，主要关注写作过程和多模态大语言模型的评估。",
+   "news_summary": "中國雙生姐妹身高不足1.2米，卻為癌症預防提供關鍵線索；揭陽虐狗案引爆全球輿論；K-pop突破重重封鎖傳入朝鮮；歐洲熱浪下轉向中國空調；姆巴佩領跑世界盃金靴之爭，梅西仍有機會反超；首次在宜居帶發現類似地球的行星擁有大氣層。",
+   "papers_summary": "今日無重點中文論文，英文論文主要探討寫作過程中的停頓分析、多模態大語言模型對科學可視化的理解，以及人類與機器人合作拋接物體的規劃。"
   }
  },
  "todays_image": {
-  "caption": "Rothko's \"No. 4\" captures the same somber drift into grey as Australia’s collective mood sinks under \"wellbeing poverty.\"",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-20C1AEAA818E2-000001",
+  "caption": "Just as the Yoroi Ferry carried passengers across uncertain waters, Burnham urges the UK to navigate its own hidden currents with honesty before crossing into a new leadership.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B1AB5BE8C6762-000001",
   "source_name": "Cooper Hewitt, Smithsonian Design Museum",
-  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/144532",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-20C1AEAA818E2-000001",
-  "title": "No. 4"
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/74762",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-B1AB5BE8C6762-000001",
+  "title": "Yoroi Ferry, Koami-cho (Yoroi-no-watashi, Koami-cho) From the Series One Hundred Famous views of Edo"
  }
 }

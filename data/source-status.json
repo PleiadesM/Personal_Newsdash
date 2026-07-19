@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-19T15:13:09Z",
+ "generated_at": "2026-07-19T17:13:57Z",
  "private_summary": {
   "configured": 0,
   "total": 0
@@ -115,7 +115,7 @@
   },
   {
    "category": "open",
-   "count": 31,
+   "count": 33,
    "error": null,
    "full_text_count": 0,
    "id": "bbc_world",
@@ -151,7 +151,7 @@
   },
   {
    "category": "open",
-   "count": 19,
+   "count": 18,
    "error": null,
    "full_text_count": 0,
    "id": "nyt_homepage",
@@ -211,7 +211,7 @@
   },
   {
    "category": "optional",
-   "count": 14,
+   "count": 15,
    "error": null,
    "full_text_count": 0,
    "id": "crossref_techcomm_journals",
