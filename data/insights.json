@@ -1,28 +1,28 @@
 {
- "brief": "Global attention is on the World Cup final as Trump attends, while geopolitical tensions persist with Iran and Russia. UK prepares for a new PM, and a ferry sinking in Guyana adds to the day's tragedies.",
+ "brief": "Today's top stories include a US soldier killed in Iraq, a ferry sinking off Guyana with dozens missing, and Russia's massive missile attack on Kyiv, while papers focus on the effects of ChatGPT on writing and L2 instruction.",
  "meta": {
-  "generated_at": "2026-07-19T19:29:55Z"
+  "generated_at": "2026-07-19T21:05:34Z"
  },
- "news_summary": "Trump arrives by helicopter for the World Cup final amid escalating US-Iran conflict; Russia launches major missile attacks on Ukraine; Peru earthquake kills six; a ferry sinks off Guyana with dozens missing.",
- "papers_summary": "Papers explore writing process dynamics, AI's effect on rhetorical moves, and human-robot interaction in juggling, alongside analyses of traffic data and visualization literacy.",
+ "news_summary": "A US soldier was killed during a controlled detonation of an Iranian drone in Iraq, as the US launches more airstrikes. A ferry carrying 133 people sank off Guyana, with 67 rescued and dozens missing. Russia battered Kyiv with one of the largest missile assaults of the war, and Trump arrived by helicopter to attend the World Cup final.",
+ "papers_summary": "Research on ChatGPT revision reveals it tends to remove emphases in personal statements, while other papers examine pause patterns, noun phrase complexity in L2 writing, and academic networking in precarious transitions.",
  "summaries": {
   "en": {
-   "brief": "Global attention is on the World Cup final as Trump attends, while geopolitical tensions persist with Iran and Russia. UK prepares for a new PM, and a ferry sinking in Guyana adds to the day's tragedies.",
-   "news_summary": "Trump arrives by helicopter for the World Cup final amid escalating US-Iran conflict; Russia launches major missile attacks on Ukraine; Peru earthquake kills six; a ferry sinks off Guyana with dozens missing.",
-   "papers_summary": "Papers explore writing process dynamics, AI's effect on rhetorical moves, and human-robot interaction in juggling, alongside analyses of traffic data and visualization literacy."
+   "brief": "Today's top stories include a US soldier killed in Iraq, a ferry sinking off Guyana with dozens missing, and Russia's massive missile attack on Kyiv, while papers focus on the effects of ChatGPT on writing and L2 instruction.",
+   "news_summary": "A US soldier was killed during a controlled detonation of an Iranian drone in Iraq, as the US launches more airstrikes. A ferry carrying 133 people sank off Guyana, with 67 rescued and dozens missing. Russia battered Kyiv with one of the largest missile assaults of the war, and Trump arrived by helicopter to attend the World Cup final.",
+   "papers_summary": "Research on ChatGPT revision reveals it tends to remove emphases in personal statements, while other papers examine pause patterns, noun phrase complexity in L2 writing, and academic networking in precarious transitions."
   },
   "zh": {
-   "brief": "今日焦點包括雙生姐妹遺傳研究為癌症預防提供關鍵線索，中國揭陽虐狗案引發全球聲援與立法呼籲，北韓民眾透過K-pop接觸外部文化。歐洲熱浪推高中國空調需求，世界盃金靴之爭進入白熱化，以及首次發現宜居帶系外行星大氣層。",
-   "news_summary": "雙生姐妹身高不足1.2米卻提供癌症預防線索；中國虐狗案引發全球抵制行動與動保立法討論；北韓脫北者揭露K-pop滲透情況；歐洲熱浪下中國空調品牌崛起；姆巴佩與梅西角逐世界盃金靴。",
-   "papers_summary": "中文論文今日無更新；英文研究聚焦寫作過程與AI工具影響，如ChatGPT修改對個人陳述的影響、多模態大語言模型圖表理解能力。"
+   "brief": "今日头条包括：身高不足1.2米的双胞胎姐妹为癌症预防提供关键线索；中国揭阳虐狗案引发全球舆论；K-pop突破封锁传入朝鲜；欧洲热浪下中国空调需求激增；姆巴佩领跑世界杯金靴之争；首次在宜居带类地行星发现大气层。国际方面，一名美军在伊拉克死亡，圭亚那渡轮沉没，俄罗斯大规模空袭基辅。",
+   "news_summary": "中国新闻聚焦双胞胎姐妹的癌症预防研究、虐狗案舆论、K-pop在朝鲜传播、欧洲中国空调热、世界杯金靴竞争以及类地行星大气层发现。",
+   "papers_summary": "今日无重点中文论文。"
   }
  },
  "todays_image": {
-  "caption": "Both the first helicopter mail sack and Trump's arrival signal a moment when a helicopter carries something of significance—be it letters or a leader—to a historic event.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_518",
-  "source_name": "National Postal Museum",
-  "source_url": "https://postalmuseum.si.edu/object/npm_1982.0157.518",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1982_0157_518",
-  "title": "First helicopter mail sack"
+  "caption": "Like the creeping spread of Polypremum procumbens across the ground, the Cyclospora parasite silently colonizes its victims until the agony hits like a sudden, brutal blow.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m357b6ee9c944b4b2cb5152a2525576c8e",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/37fd863f1-b2e9-48d4-ace1-59b5bc634c0b",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m357b6ee9c944b4b2cb5152a2525576c8e/90",
+  "title": "Polypremum procumbens L."
  }
 }
