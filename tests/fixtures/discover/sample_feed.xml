@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Example Research Blog</title>
+    <link>https://blog.example.org/</link>
+    <item>
+      <title>First post about visualization</title>
+      <link>https://blog.example.org/posts/1</link>
+      <pubDate>Mon, 06 Jul 2026 08:00:00 GMT</pubDate>
+      <description>An intro to charts.</description>
+    </item>
+    <item>
+      <title>Second post about HCI</title>
+      <link>https://blog.example.org/posts/2</link>
+      <pubDate>Mon, 29 Jun 2026 08:00:00 GMT</pubDate>
+      <description>A study.</description>
+    </item>
+    <item>
+      <title>Third post about LLMs</title>
+      <link>https://blog.example.org/posts/3</link>
+      <pubDate>Mon, 22 Jun 2026 08:00:00 GMT</pubDate>
+      <description>Models.</description>
+    </item>
+  </channel>
+</rss>

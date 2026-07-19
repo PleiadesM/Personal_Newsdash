@@ -11,6 +11,40 @@ Variables go to the *Variables* tab on the same page.
 - Rotation: update the secret → `gh workflow run update.yml`. Old ciphertext
   remains in git history (see SECURITY_MODEL §rotation).
 
+## SRC_<ID>_URL (private feed URL)
+
+One secret per private source (`category: "private"`), holding the source's
+full capability URL. This is the value the 书童 must **never** see, echo, or
+commit — narrate only.
+
+- **Prerequisite:** `NEWSDASH_PASSPHRASE` must already be set. The `private`
+  section is always encrypted, so without a passphrase the source has nowhere
+  to render (and, at `visibility: "private"`, the build fails outright).
+- **Config first, secret second.** The matching `config/sources.json` entry
+  (`category: "private"`, `enabled: "auto"`, `secret_ref: ["SRC_<ID>_URL"]`,
+  `section: "private"`) must exist before the secret does any good.
+- **Name:** must match `^SRC_[A-Z0-9_]+$`. Convention is `SRC_<ID>_URL`, the
+  source's `id` uppercased (id `my_feed` → `SRC_MY_FEED_URL`). It must equal
+  the single name listed in that source's `secret_ref`.
+- **Value:** the full capability URL, starting `https://` — the whole link
+  including any token/query the provider gave you. Tell the user to paste it
+  into GitHub's form directly; never into the chat. (If it does land in chat
+  or an issue: treat as leaked, rotate immediately — see below.)
+- **Where:** add it as a **Secret** at
+  `https://github.com/<owner>/<repo>/settings/secrets/actions/new`.
+- **No workflow edit per source.** `update.yml` already forwards
+  `NEWSDASH_SOURCE_SECRETS: ${{ toJSON(secrets) }}`; the build lifts every
+  `^SRC_[A-Z0-9_]+$` key into env at load time. Adding the secret is enough —
+  you never touch the workflow to wire a new private source.
+- **Verify** on the next build: `source-status.json`'s
+  `private_summary.configured` increments by one (per-source private detail is
+  never public by design), and the 🔒 Private tab appears behind the unlock
+  gate. `python scripts/validate_config.py` stops printing
+  `waiting: <id> (set secret: SRC_…)` for that id.
+- **Rotation:** if the URL leaks (pasted into chat, an issue, or any log),
+  have the provider revoke/reissue the capability URL, then update the secret
+  to the new value. Old value in an Actions log = compromised.
+
 ## LLM_API_KEY + SMITHSONIAN_API_KEY (optional AI daily brief + Apropos-of-Nothing + Today's Image)
 
 Off by default — nothing changes until the user adds `LLM_API_KEY`. Explain

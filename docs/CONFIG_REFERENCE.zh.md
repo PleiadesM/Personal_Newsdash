@@ -70,7 +70,7 @@
 | `crossref` | optional | `issn` 列表或 `query` | 期刊追踪；按记录创建日期算新旧 |
 | `semanticscholar` | optional | `query` | 免密钥尽力而为 |
 
-通用字段：`id`（snake_case，唯一）、`name`、`section`（`news`/`papers`/`following`）、`weight`（0–1，默认 0.8）、`max_results`（默认 50）、`lang`（`"zh"`/`"en"` 固定该信源条目的语言；省略则逐条自动检测）。当前界面语言也会筛选可见新闻/研究内容：英文模式只显示英文条目，中文模式只显示中文条目。Schema **拒绝**在 `category: "private"` 信源上出现 `url`/`path`。
+通用字段：`id`（snake_case，唯一）、`name`、`section`（`news`/`papers`/`following`/`private`）、`weight`（0–1，默认 0.8）、`max_results`（默认 50）、`lang`（`"zh"`/`"en"` 固定该信源条目的语言；省略则逐条自动检测）。当前界面语言也会筛选可见新闻/研究内容：英文模式只显示英文条目，中文模式只显示中文条目。Schema **拒绝**在 `category: "private"` 信源上出现 `url`/`path`。
 
 v1 的全文阅读器没有配置开关。仅对 RSS/Atom 信源，若 feed 条目本身提供足量嵌入正文，管线会标记 **可阅读全文**，把清洗后的纯文本写入 `data/articles/`，前端通过 `#/read/<section>/<item_id>` 打开。只有摘要的 feed 仍与过去一样跳转到原站。
 

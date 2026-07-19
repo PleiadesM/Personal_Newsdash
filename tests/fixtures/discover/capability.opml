@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Subscriptions</title></head>
+  <body>
+    <outline text="Feeds">
+      <outline type="rss" title="A New Blog" xmlUrl="https://newblog.example.net/rss"/>
+      <outline type="rss" title="My Private Calendar" xmlUrl="https://calendar.google.com/calendar/ical/abcdefghijklmnopqrstuvwx/private/basic.ics"/>
+      <outline type="rss" xmlUrl="https://feeds.example.com/rss?token=deadbeefdeadbeefdeadbeef"/>
+    </outline>
+  </body>
+</opml>

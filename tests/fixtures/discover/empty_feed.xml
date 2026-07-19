@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Dateless Feed</title>
+    <link>https://nodate.example.org/</link>
+    <item>
+      <title>Undated entry one</title>
+      <link>https://nodate.example.org/a</link>
+    </item>
+    <item>
+      <title>Undated entry two</title>
+      <link>https://nodate.example.org/b</link>
+    </item>
+  </channel>
+</rss>

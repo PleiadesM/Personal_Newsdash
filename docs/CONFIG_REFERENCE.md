@@ -82,7 +82,7 @@ source without touching config: set the GitHub *Variable*
 | `semanticscholar` | optional | `query` | best-effort keyless |
 
 Common fields: `id` (snake_case, unique), `name`, `section`
-(`news`/`papers`/`following`), `weight` (0–1, default
+(`news`/`papers`/`following`/`private`), `weight` (0–1, default
 0.8), `max_results` (default 50), `lang` (`"zh"`/`"en"` forces the items'
 language; omit to auto-detect per item). The active UI language also filters
 visible news/research content: English mode shows only English items, and

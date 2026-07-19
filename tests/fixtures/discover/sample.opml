@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Subscriptions</title></head>
+  <body>
+    <outline text="Feeds">
+      <outline type="rss" title="Karpathy" xmlUrl="https://karpathy.github.io/feed.xml"/>
+      <outline type="rss" title="A New Blog" xmlUrl="https://newblog.example.net/rss"/>
+      <outline type="rss" title="Another New One" xmlUrl="https://second.example.com/atom.xml"/>
+    </outline>
+  </body>
+</opml>
