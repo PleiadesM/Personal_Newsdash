@@ -1,24 +1,24 @@
 {
- "brief": "Today's news features political shifts (Darline Graham's Senate run, new UK cabinet, US-Iran tensions) and economic moves (tariffs on Canada). Research highlights include studies on AI feedback in writing and visualization tools.",
+ "brief": "Trump imposes 50% tariffs on Canadian goods and launches strikes on Iran, while UK's new PM Burnham forms his cabinet. Research explores AI feedback in education and visualization tools.",
  "meta": {
-  "generated_at": "2026-07-20T21:30:20Z"
+  "generated_at": "2026-07-20T23:13:12Z"
  },
- "news_summary": "Darline Graham announces Senate run with Trump's endorsement; US launches fresh strikes on Iran amid escalating tensions; Trump imposes 50% tariff on Canadian goods.",
- "papers_summary": "Research examines AI feedback in student writing, visualization literacy in VLMs, and the rhetorical impact of ChatGPT on personal statements.",
+ "news_summary": "Trump escalates trade war with 50% tariff on Canadian goods and military strikes on Iran; UK's Burnham takes office with cabinet picks; NYC attack suspect targeted ICE.",
+ "papers_summary": "Studies examine AI feedback in writing, visualization literacy in VLMs, and debris tracking in hypervelocity impacts, alongside second language writing and children's multimodality.",
  "summaries": {
   "en": {
-   "brief": "Today's news features political shifts (Darline Graham's Senate run, new UK cabinet, US-Iran tensions) and economic moves (tariffs on Canada). Research highlights include studies on AI feedback in writing and visualization tools.",
-   "news_summary": "Darline Graham announces Senate run with Trump's endorsement; US launches fresh strikes on Iran amid escalating tensions; Trump imposes 50% tariff on Canadian goods.",
-   "papers_summary": "Research examines AI feedback in student writing, visualization literacy in VLMs, and the rhetorical impact of ChatGPT on personal statements."
+   "brief": "Trump imposes 50% tariffs on Canadian goods and launches strikes on Iran, while UK's new PM Burnham forms his cabinet. Research explores AI feedback in education and visualization tools.",
+   "news_summary": "Trump escalates trade war with 50% tariff on Canadian goods and military strikes on Iran; UK's Burnham takes office with cabinet picks; NYC attack suspect targeted ICE.",
+   "papers_summary": "Studies examine AI feedback in writing, visualization literacy in VLMs, and debris tracking in hypervelocity impacts, alongside second language writing and children's multimodality."
   },
   "zh": {
-   "brief": "英国新首相贝安德上任，中英关系受关注；泰特兄弟在美被捕并面临英国引渡；西班牙加时赛绝杀阿根廷夺得世界杯冠军。",
-   "news_summary": "贝安德就任英国首相，其中国政策引发讨论；泰特兄弟因性罪行在美被捕；西班牙世界杯夺冠但赛事争议不断；外卖骑手获文学奖、朝鲜人接触K-pop、俄罗斯人回归现金使用。",
-   "papers_summary": "今日无中文重点论文。"
+   "brief": "英国新任首相贝安德（Andy Burnham）就职，对华政策引发关注；美国宣布对加拿大商品加征50%关税，贸易紧张升级。2026年世界杯落幕，争议不断。研究方面无中文论文专题，英文论文聚焦写作教学与AI反馈。",
+   "news_summary": "英国工党领袖贝安德接任首相，其大曼城市长背景预示对华务实路线；美国对加拿大实施50%关税，加剧北美贸易摩擦；世界杯决赛西班牙加时胜阿根廷夺冠，但扩军与政治干预争议持续。",
+   "papers_summary": "今日无优先中文研究论文。英文论文探讨AI在写作反馈中的应用、可视化素养及儿童跨模态写作等课题。"
   }
  },
  "todays_image": {
-  "caption": "Just as an ax passes from one hand to another to continue the work, Darline Graham takes up the political tool to carry on her brother's legacy.",
+  "caption": "The ax, a tool for shaping wood, is ironically wielded as a blunt instrument in proposing tariffs to combat wildfire smoke, mirroring how the solution misdirects blame from the actual source of the fires.",
   "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-2017_1_2_001",
   "source_name": "National Museum of African American History and Culture",
   "source_url": "https://nmaahc.si.edu/object/nmaahc_2017.1.2",
