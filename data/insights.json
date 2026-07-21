@@ -1,24 +1,24 @@
 {
- "brief": "Escalating Middle East tensions as Iran and Houthis attack shipping, prompting US strikes; UK's new PM considers wealth tax; research explores AI's impact on writing and communication.",
+ "brief": "Iran attacks ships in the Strait of Hormuz amid ongoing US strikes, while new UK PM Andy Burnham cuts VAT on electricity and appoints John Healey as chancellor. Elsewhere, floods hit Afghanistan, protests erupt in Italy and India, and the Houthis threaten another strait blockade.",
  "meta": {
-  "generated_at": "2026-07-21T06:39:59Z"
+  "generated_at": "2026-07-21T10:33:20Z"
  },
- "news_summary": "Iran and Houthis attack ships in Strait of Hormuz and Red Sea, US launches retaliatory strikes; UK Prime Minister Andy Burnham is urged to introduce a wealth tax on the super-rich.",
- "papers_summary": "TechComm papers examine the effects of ChatGPT on writing, developmental pathways of noun phrase complexity in L2 writing, and the role of pauses in writing processes.",
+ "news_summary": "Iran claims attacks on oil tanker and other ships in Strait of Hormuz as US strikes continue. UK PM Burnham cuts VAT on electricity, appoints Healey as chancellor; defence stocks rise. Also: Afghanistan floods, Italy and India protests, Houthi blockade threat.",
+ "papers_summary": "No papers reported today.",
  "summaries": {
   "en": {
-   "brief": "Escalating Middle East tensions as Iran and Houthis attack shipping, prompting US strikes; UK's new PM considers wealth tax; research explores AI's impact on writing and communication.",
-   "news_summary": "Iran and Houthis attack ships in Strait of Hormuz and Red Sea, US launches retaliatory strikes; UK Prime Minister Andy Burnham is urged to introduce a wealth tax on the super-rich.",
-   "papers_summary": "TechComm papers examine the effects of ChatGPT on writing, developmental pathways of noun phrase complexity in L2 writing, and the role of pauses in writing processes."
+   "brief": "Iran attacks ships in the Strait of Hormuz amid ongoing US strikes, while new UK PM Andy Burnham cuts VAT on electricity and appoints John Healey as chancellor. Elsewhere, floods hit Afghanistan, protests erupt in Italy and India, and the Houthis threaten another strait blockade.",
+   "news_summary": "Iran claims attacks on oil tanker and other ships in Strait of Hormuz as US strikes continue. UK PM Burnham cuts VAT on electricity, appoints Healey as chancellor; defence stocks rise. Also: Afghanistan floods, Italy and India protests, Houthi blockade threat.",
+   "papers_summary": "No papers reported today."
   },
   "zh": {
-   "brief": "歐盟對阿里速賣通罰款5.5億歐元，阿根廷推出太陽能觀光火車，英國新首相貝安德上任，西班牙奪得世界盃冠軍，中國外賣騎手獲文學獎。研究方面多聚焦於語言教學與寫作過程。",
-   "news_summary": "歐盟因速賣通售賣非法商品罰款5.5億歐元；阿根廷推出零排放太陽能火車；英國貝安德就任首相；西班牙世界盃奪冠；中國藍領作家王計兵獲文學獎。",
-   "papers_summary": "多篇研究探討語言寫作中的名詞短語複雜性、ChatGPT的修辭影響、以及學術網絡中的流動性與不穩定性。"
+   "brief": "今日焦點包括廈門翔安機場引發台海緊張、英國首相貝安德上任即宣布減稅、以及伊朗與美國在荷姆茲海峽的衝突升溫。",
+   "news_summary": "中國在距離金門僅三公里的廈門興建機場，台灣憂心軍事與飛安威脅；英國新首相貝安德削減電費增值稅以應對生活成本危機；伊朗革命衛隊攻擊荷姆茲海峽船隻，美國則發動新一輪空襲。",
+   "papers_summary": "今日無相關論文。"
   }
  },
  "todays_image": {
-  "caption": "The AI detection tool’s verdict on Pope Leo’s speeches being human-authored is as naturally organic as the seaweed Lobophora sp. growing in the ocean.",
+  "caption": "Lobophora sp. algae can blanket the Strait of Hormuz's waters, echoing the way Iran's attacks disrupt the vital shipping lane.",
   "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
   "source_name": "NMNH - Botany Dept.",
   "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
