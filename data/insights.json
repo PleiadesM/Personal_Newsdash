@@ -1,28 +1,28 @@
 {
- "brief": "Global tensions rise with Australia and China discussing submarine missile launches, Trump threatening Houthi blockades, and Hegseth requesting $88bn for the Iran war. Meanwhile, new AI models and research on human-computer interaction highlight ongoing tech advances.",
+ "brief": "Today's news covers Ukraine's military shakeup, Houthi threats to Saudi oil tankers, and a tornado watch in the Northeast, while AI research explores how explanations and agent design can improve human-computer interaction.",
  "meta": {
-  "generated_at": "2026-07-21T21:32:24Z"
+  "generated_at": "2026-07-21T23:09:59Z"
  },
- "news_summary": "Key geopolitical moves: Australia pushes China on submarine launches; Trump vows action against Houthis; Hegseth defends Iran war funding. Domestically, NYC braces for floods, and the Gates Foundation reveals extensive Epstein meetings.",
- "papers_summary": "Research explores AI-assisted information evaluation, multitasking with computer agents, and generative widgets for analysis. Other papers address player reflection in games, LLM code explanations, and Mars rover drive retrieval.",
+ "news_summary": "Zelensky fires Ukraine's top general amid protests, Houthis threaten tankers carrying Saudi oil, and a tornado watch is issued for New York and other Northeast areas.",
+ "papers_summary": "New studies examine rhetorical patterns for AI-assisted information evaluation, the design of computer use agents for multitasking, and how LLM code explanations can adapt to diverse problem-solvers.",
  "summaries": {
   "en": {
-   "brief": "Global tensions rise with Australia and China discussing submarine missile launches, Trump threatening Houthi blockades, and Hegseth requesting $88bn for the Iran war. Meanwhile, new AI models and research on human-computer interaction highlight ongoing tech advances.",
-   "news_summary": "Key geopolitical moves: Australia pushes China on submarine launches; Trump vows action against Houthis; Hegseth defends Iran war funding. Domestically, NYC braces for floods, and the Gates Foundation reveals extensive Epstein meetings.",
-   "papers_summary": "Research explores AI-assisted information evaluation, multitasking with computer agents, and generative widgets for analysis. Other papers address player reflection in games, LLM code explanations, and Mars rover drive retrieval."
+   "brief": "Today's news covers Ukraine's military shakeup, Houthi threats to Saudi oil tankers, and a tornado watch in the Northeast, while AI research explores how explanations and agent design can improve human-computer interaction.",
+   "news_summary": "Zelensky fires Ukraine's top general amid protests, Houthis threaten tankers carrying Saudi oil, and a tornado watch is issued for New York and other Northeast areas.",
+   "papers_summary": "New studies examine rhetorical patterns for AI-assisted information evaluation, the design of computer use agents for multitasking, and how LLM code explanations can adapt to diverse problem-solvers."
   },
   "zh": {
-   "brief": "今日重點：英國新首相就任、廈門翔安機場引發台灣安全疑慮、智能戒指提前偵測懷孕；研究關注AI輔助資訊評估與使用者反饋。",
-   "news_summary": "貝安德接任英國首相，深圳地鐵因APEC加強安檢惹議，廈門翔安機場距金門僅三公里引發軍事關切，台灣演習首度模擬斷網。",
-   "papers_summary": "多項研究探討AI在資訊評估中的修辭策略、多任務電腦代理溝通設計，以及LLM程式碼解釋對不同學習者的適應性。"
+   "brief": "今日英國首相就任、深圳地鐵加強安檢、翔安機場逼近金門引發台灣安全憂慮，以及台灣演習擬模擬斷網等新聞牽動兩岸與國際關注。科技方面，智能戒指提前測知懷孕、亞洲年輕人押注科技股，阿里速賣通遭歐盟重罰。",
+   "news_summary": "英國新首相貝安德就職；深圳地鐵安檢升級引發民怨；廈門翔安機場距金門僅三公里，台灣表態關切；台灣防空演習將首度模擬斷網；智能戒指可提前檢測懷孕；速賣通因售非法商品被歐盟罰款5.5億歐元。",
+   "papers_summary": "今日無重點論文更新。"
   }
  },
  "todays_image": {
-  "caption": "Both involve submarines traversing oceans, but one delivered mail while the other delivers diplomatic tension over missile launches.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1993_2005_1",
-  "source_name": "National Postal Museum",
-  "source_url": "https://postalmuseum.si.edu/object/npm_1993.2005.1",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NPM-1993_2005_1",
-  "title": "First ocean to ocean submarine mail service cover"
+  "caption": "Like Lobophora seaweed drifting with unpredictable currents, the family navigated treacherous waters to escape North Korea.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }

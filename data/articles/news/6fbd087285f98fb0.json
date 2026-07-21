@@ -1,0 +1,31 @@
+{
+ "full_text": "Google is launching Gemini 3.6 Flash alongside a new security model dedicated to quickly finding and patching security vulnerabilities. In a blog post on Tuesday , Google describes Gemini 3.5 Flash Cyber as a \"cost-efficient and highly capable alternative\" to larger, more expensive AI systems, such as the one offered by Anthropic's Mythos. The cybersecurity model is built upon Gemini 3.5 Flash and will be available first to governments and trusted partners via CodeMender, Google's security-focused coding agent . As noted by Google, CodeMender can call upon 3.5 Flash Cyber \"multiple times at high speed and low cost,\" allowing the AI agents to  … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/6fbd087285f98fb0.json",
+  "id": "6fbd087285f98fb0",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-21T15:00:00Z",
+  "score": 0.5804,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Google is launching Gemini 3.6 Flash alongside a new security model dedicated to quickly finding and patching security vulnerabilities. In a blog post on Tuesday, Google describes Gemini 3.5 Flash Cyber as a \"cost-efficient and highly capable alternative\" to larger, more expensive AI systems, such…",
+  "tags": [
+   "model-release",
+   "llm"
+  ],
+  "title": "Google launches a cheaper alternative to large AI security models like Mythos",
+  "url": "https://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model"
+ },
+ "meta": {
+  "generated_at": "2026-07-21T23:09:59Z",
+  "item_id": "6fbd087285f98fb0",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}
