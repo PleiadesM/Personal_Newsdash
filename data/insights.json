@@ -1,28 +1,28 @@
 {
- "brief": "Oil prices rise as US-Iran tensions escalate; UK's new PM Burnham reshapes government; papers explore AI-assisted evaluation and multitasking agents.",
+ "brief": "Geopolitical tensions escalate with US seeking $80B for Iran war and Trump imposing 50% tariffs on Canada, while Houthis threaten Red Sea shipping. In tech, Anthropic's $1.5B copyright settlement is approved, and Google announces new AI models. Research explores AI-assisted evaluation and multitasking agents.",
  "meta": {
-  "generated_at": "2026-07-21T14:19:13Z"
+  "generated_at": "2026-07-21T17:43:31Z"
  },
- "news_summary": "Canada and US resume trade talks amid tariff threats; oil surges above $90; Thames Water imposes hosepipe ban; Trump's HIV funding cuts spark global concern; Tropical Storm Bertha threatens Gulf.",
- "papers_summary": "Research examines rhetorical patterns for AI information evaluation and designing communication for effective multitasking with computer use agents; further studies address visualization literacy in VLMs.",
+ "news_summary": "The Pentagon requests $80 billion for Iran conflict, Trump announces 50% tariffs on Canada, Houthis threaten shipping in the Red Sea, and a judge approves Anthropic's $1.5 billion copyright settlement with authors.",
+ "papers_summary": "Papers focus on AI-assisted information evaluation, designing communication for multitasking with computer use agents, and adapting LLM code explanations to diverse problem-solvers' needs.",
  "summaries": {
   "en": {
-   "brief": "Oil prices rise as US-Iran tensions escalate; UK's new PM Burnham reshapes government; papers explore AI-assisted evaluation and multitasking agents.",
-   "news_summary": "Canada and US resume trade talks amid tariff threats; oil surges above $90; Thames Water imposes hosepipe ban; Trump's HIV funding cuts spark global concern; Tropical Storm Bertha threatens Gulf.",
-   "papers_summary": "Research examines rhetorical patterns for AI information evaluation and designing communication for effective multitasking with computer use agents; further studies address visualization literacy in VLMs."
+   "brief": "Geopolitical tensions escalate with US seeking $80B for Iran war and Trump imposing 50% tariffs on Canada, while Houthis threaten Red Sea shipping. In tech, Anthropic's $1.5B copyright settlement is approved, and Google announces new AI models. Research explores AI-assisted evaluation and multitasking agents.",
+   "news_summary": "The Pentagon requests $80 billion for Iran conflict, Trump announces 50% tariffs on Canada, Houthis threaten shipping in the Red Sea, and a judge approves Anthropic's $1.5 billion copyright settlement with authors.",
+   "papers_summary": "Papers focus on AI-assisted information evaluation, designing communication for multitasking with computer use agents, and adapting LLM code explanations to diverse problem-solvers' needs."
   },
   "zh": {
-   "brief": "今日重點：英國新首相貝安德就職，廈門翔安機場引發台灣安全關切；智能戒指早期預測懷孕引起關注。研究方面無中文論文。",
-   "news_summary": "英國前大曼徹斯特市長貝安德接任首相；深圳地鐵加強安檢引發民怨，廈門翔安機場距金門僅三公里，台灣憂軍事威脅；智能戒指能提前檢測懷孕。",
-   "papers_summary": "無中文論文，英文研究聚焦AI輔助信息評估與設計工具。"
+   "brief": "英国新任首相贝安德就职，厦门翔安机场距金门仅三公里引发安全关切。智能戒指早于用户得知怀孕，科技股吸引亚洲年轻人。",
+   "news_summary": "贝安德接替施纪贤任英国首相；深圳地铁因APEC加强安检引民怨；厦门机场靠近金门引发台湾国安疑虑。",
+   "papers_summary": "今日无优先级中文论文摘要。"
   }
  },
  "todays_image": {
-  "caption": "The plant's name suggests splitting or divergence, mirroring the trade tensions as Canada faces potential new tariffs that could drive a wedge between it and the US.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b77064be233c4a089d1b011ff573aef9",
+  "caption": "Just as Lobophora sp. algae spreads unpredictably across reefs, the push for more war funding threatens to entangle the U.S. deeper in an escalating conflict.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
   "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/377d4bdc0-95c2-409f-889b-672f390941ee",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b77064be233c4a089d1b011ff573aef9/90",
-  "title": "Dichapetalum petaloideum Breteler"
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }
