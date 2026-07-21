@@ -1,28 +1,28 @@
 {
- "brief": "Geopolitical tensions escalate with US seeking $80B for Iran war and Trump imposing 50% tariffs on Canada, while Houthis threaten Red Sea shipping. In tech, Anthropic's $1.5B copyright settlement is approved, and Google announces new AI models. Research explores AI-assisted evaluation and multitasking agents.",
+ "brief": "US politics dominate with Trump's new tariffs on Canada and withheld Medicaid funds, while Google releases three new Gemini AI models and France bans social media for under-15s. In science, a rare-disease center launches, and a Seattle raccoon named Jimothy goes viral.",
  "meta": {
-  "generated_at": "2026-07-21T17:43:31Z"
+  "generated_at": "2026-07-21T19:49:30Z"
  },
- "news_summary": "The Pentagon requests $80 billion for Iran conflict, Trump announces 50% tariffs on Canada, Houthis threaten shipping in the Red Sea, and a judge approves Anthropic's $1.5 billion copyright settlement with authors.",
- "papers_summary": "Papers focus on AI-assisted information evaluation, designing communication for multitasking with computer use agents, and adapting LLM code explanations to diverse problem-solvers' needs.",
+ "news_summary": "Trump imposes 50% tariffs on Canadian goods and withholds $1B in Medicaid funds, while Google launches three new Gemini AI models. France bans social media for under-15s, and a New Jersey software glitch registered 6,600 noncitizens to vote.",
+ "papers_summary": "Papers focus on AI-assisted information evaluation, multitasking with computer use agents, and LLM-generated explanations for code. Other work covers player reflection in games, Mars rover drive retrieval, and hypervelocity impact tracking.",
  "summaries": {
   "en": {
-   "brief": "Geopolitical tensions escalate with US seeking $80B for Iran war and Trump imposing 50% tariffs on Canada, while Houthis threaten Red Sea shipping. In tech, Anthropic's $1.5B copyright settlement is approved, and Google announces new AI models. Research explores AI-assisted evaluation and multitasking agents.",
-   "news_summary": "The Pentagon requests $80 billion for Iran conflict, Trump announces 50% tariffs on Canada, Houthis threaten shipping in the Red Sea, and a judge approves Anthropic's $1.5 billion copyright settlement with authors.",
-   "papers_summary": "Papers focus on AI-assisted information evaluation, designing communication for multitasking with computer use agents, and adapting LLM code explanations to diverse problem-solvers' needs."
+   "brief": "US politics dominate with Trump's new tariffs on Canada and withheld Medicaid funds, while Google releases three new Gemini AI models and France bans social media for under-15s. In science, a rare-disease center launches, and a Seattle raccoon named Jimothy goes viral.",
+   "news_summary": "Trump imposes 50% tariffs on Canadian goods and withholds $1B in Medicaid funds, while Google launches three new Gemini AI models. France bans social media for under-15s, and a New Jersey software glitch registered 6,600 noncitizens to vote.",
+   "papers_summary": "Papers focus on AI-assisted information evaluation, multitasking with computer use agents, and LLM-generated explanations for code. Other work covers player reflection in games, Mars rover drive retrieval, and hypervelocity impact tracking."
   },
   "zh": {
-   "brief": "英国新任首相贝安德就职，厦门翔安机场距金门仅三公里引发安全关切。智能戒指早于用户得知怀孕，科技股吸引亚洲年轻人。",
-   "news_summary": "贝安德接替施纪贤任英国首相；深圳地铁因APEC加强安检引民怨；厦门机场靠近金门引发台湾国安疑虑。",
-   "papers_summary": "今日无优先级中文论文摘要。"
+   "brief": "今日头条包括英国新首相上任、厦门翔安机场引发台湾安全关切、深圳地铁加强安检等。学术方面关注AI辅助信息评估和人机交互设计。",
+   "news_summary": "英国贝安德成为新首相；厦门机场距金门仅3公里引发军事担忧；深圳地铁临时加强安检；台湾将首次模拟断网演习；智能戒指提前发现怀孕；澳洲诞生罕见同卵四胞胎；阿里速卖通被欧盟罚款5.5亿欧元。",
+   "papers_summary": "今日无中文论文，英文论文探讨了AI辅助信息评估、计算机使用代理的多任务设计等议题。"
   }
  },
  "todays_image": {
-  "caption": "Just as Lobophora sp. algae spreads unpredictably across reefs, the push for more war funding threatens to entangle the U.S. deeper in an escalating conflict.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "Like a raccoon's tenacious grip on a prize, Troy Jackson tightens his hold on Maine's Democratic Senate nomination.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3c112132c29a64990b0905046f1ab8097",
+  "source_name": "NMNH - Education & Outreach",
+  "source_url": "http://n2t.net/ark:/65665/32a7d9412-57a3-4a49-9dc2-77e5eda598b1",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3c112132c29a64990b0905046f1ab8097/90",
+  "title": "Common Raccoon, Racoon, Raccoon"
  }
 }
