@@ -1,28 +1,28 @@
 {
- "brief": "Geopolitical tensions rise as Dubai bypasses Strait of Hormuz with new port deal and Trump threatens Iran's infrastructure, while Ukraine's military shakeup continues. In research, studies explore AI for dementia care, visual query tools, and AI-assisted information evaluation.",
+ "brief": "Louvre reopens after heist, Iran-US tensions escalate, Trump tariffs on Canada, and Saudi nuclear deal dominate news. Meanwhile, research on generative AI for dementia care and interactive visualization tools advance.",
  "meta": {
-  "generated_at": "2026-07-22T19:41:10Z"
+  "generated_at": "2026-07-22T21:21:25Z"
  },
- "news_summary": "Dubai announces a port bypassing Hormuz; Trump threatens Iran's bridges and power plants; Paramount-Warner merger advances; Ukraine's military command changes; Laredo's tariff-driven boom faces risks; Israeli banks threaten Palestinian economy.",
- "papers_summary": "Papers examine ethical perspectives on generative AI for dementia care, a visual query tracer for logic programming, and rhetorical patterns for AI-assisted information evaluation, among other HCI topics.",
+ "news_summary": "The Louvre reopens after a crown jewel heist; Iran warns of retaliation against US threats; Trump escalates tariffs on Canada; House passes $1.5tn defense bill; Saudi Arabia secures a nuclear deal with the US; Tesla profits slide amid pivot to AI.",
+ "papers_summary": "Papers explore generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and efficient neural rendering for volume visualization.",
  "summaries": {
   "en": {
-   "brief": "Geopolitical tensions rise as Dubai bypasses Strait of Hormuz with new port deal and Trump threatens Iran's infrastructure, while Ukraine's military shakeup continues. In research, studies explore AI for dementia care, visual query tools, and AI-assisted information evaluation.",
-   "news_summary": "Dubai announces a port bypassing Hormuz; Trump threatens Iran's bridges and power plants; Paramount-Warner merger advances; Ukraine's military command changes; Laredo's tariff-driven boom faces risks; Israeli banks threaten Palestinian economy.",
-   "papers_summary": "Papers examine ethical perspectives on generative AI for dementia care, a visual query tracer for logic programming, and rhetorical patterns for AI-assisted information evaluation, among other HCI topics."
+   "brief": "Louvre reopens after heist, Iran-US tensions escalate, Trump tariffs on Canada, and Saudi nuclear deal dominate news. Meanwhile, research on generative AI for dementia care and interactive visualization tools advance.",
+   "news_summary": "The Louvre reopens after a crown jewel heist; Iran warns of retaliation against US threats; Trump escalates tariffs on Canada; House passes $1.5tn defense bill; Saudi Arabia secures a nuclear deal with the US; Tesla profits slide amid pivot to AI.",
+   "papers_summary": "Papers explore generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and efficient neural rendering for volume visualization."
   },
   "zh": {
-   "brief": "今日重點包括日本短褲政策引發性別爭議、金門翔安機場的情感工程、以及烏克蘭軍方高層更迭。研究方面聚焦生成式AI於失智照護、互動式邏輯程式視覺化等主題。",
-   "news_summary": "日本鼓勵男性穿短褲辦公，女性不滿「腿毛騷擾」；金門居民對廈門翔安機場的「情感工程」看法分歧；烏克蘭總統澤連斯基在抗議聲中革除軍方總司令。",
-   "papers_summary": "研究涵蓋生成式AI促進失智症社交連結、互動式邏輯程式視覺化工具、以及高斯潑濺體素渲染等主題。"
+   "brief": "日本职场性别争议与金门情感工程引发讨论，特朗普法律纠纷与乌克兰政局变动持续。国际方面，沙特获美国核协议，特朗普关税威胁升级。",
+   "news_summary": "日本鼓励男性穿短裤上班引发女性不满；金门居民对厦门翔安机场既期待又担忧。特朗普被令交出BBC诽谤案文件，乌克兰总统泽连斯基革除军总司令。",
+   "papers_summary": "今日无重点研究论文。"
   }
  },
  "todays_image": {
-  "caption": "The hawthorn's thorns and dense growth, which demand careful navigation, echo the strategic need for a new port to bypass the Strait of Hormuz.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3e70f113a2cc54640a62dee31a8450ec3",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/32474a9d4-e909-4d11-a36e-117ebe70fb97",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3e70f113a2cc54640a62dee31a8450ec3/90",
-  "title": "Crataegus pruinosa (H.L. Wendl.) K. Koch"
+  "caption": "A stick pin, a small piece of jewelry, echoes the brazen theft of larger treasures from the Louvre.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1983-69-8MattFlynn",
+  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/180671",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1983-69-8MattFlynn",
+  "title": "Stick pin"
  }
 }
