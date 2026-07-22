@@ -1,0 +1,30 @@
+{
+ "full_text": "The pledge was introduced in March, and has done little to quell concerns so far. | Image: Cath Virginia / The Verge, Getty Images In the face of backlash to concerns the AI boom will increase consumer electricity bills, the largest utility companies and data center developers in the US are now promising to do something about it. The Wall Street Journal reports that nearly 200 organizations have signed President Donald Trump's \"rate payer protection pledge\"  that's meant to safeguard average citizens from footing the AI bill. Trump is expected to announce the new signatories on Thursday, which include NextEra Energy, Duke Energy, Equinix, and Digital Realty, according to a list obtained by The WSJ . An unnamed White House official told the publication that those who hav … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/06d9cdac6d599d18.json",
+  "id": "06d9cdac6d599d18",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-22T10:12:13Z",
+  "score": 0.7893,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "In the face of backlash to concerns the AI boom will increase consumer electricity bills, the largest utility companies and data center developers in the US are now promising to do something about it. The Wall Street Journal reports that nearly 200 organizations have signed President Donald Trump's…",
+  "tags": [
+   "dev-tools"
+  ],
+  "title": "Utility companies are promising to spare us from AI’s energy bill",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump"
+ },
+ "meta": {
+  "generated_at": "2026-07-22T10:33:36Z",
+  "item_id": "06d9cdac6d599d18",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

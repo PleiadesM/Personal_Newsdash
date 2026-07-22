@@ -1,28 +1,28 @@
 {
- "brief": "Today's news highlights include a potential data breach affecting millions in Australia, UK bus fare caps, tornadoes in Kentucky, and Zelensky sacking Ukraine's top general. Research papers explore AI for dementia care, visual query tools for logic programming, and LLM code explanations.",
+ "brief": "Today's news covers UK bus fare caps, US strikes on Iran, Indian education protests, and Arizona primaries, while research explores AI for dementia care and visual programming tools.",
  "meta": {
-  "generated_at": "2026-07-22T06:41:03Z"
+  "generated_at": "2026-07-22T10:33:36Z"
  },
- "news_summary": "Major stories: Australia's Origin Energy investigates a data breach, UK inflation drops, tornadoes hit Kentucky, and Zelensky dismisses Ukraine's army commander. Also: France bans social media for under-15s, and a defibrillator shortage puts millions at risk.",
- "papers_summary": "Papers cover ethical AI for dementia care, a visual query tracer for Datalog, and LLM code explanations tailored to diverse problem-solvers. Other topics include multitasking with computer agents and player reflection in games.",
+ "news_summary": "UK transport secretary defends bus fare funding; US renews Iran strikes as India's parliament protests education reform; Arizona primaries yield Trump-backed candidates.",
+ "papers_summary": "Papers examine generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and rhetorical patterns in AI-assisted information evaluation.",
  "summaries": {
   "en": {
-   "brief": "Today's news highlights include a potential data breach affecting millions in Australia, UK bus fare caps, tornadoes in Kentucky, and Zelensky sacking Ukraine's top general. Research papers explore AI for dementia care, visual query tools for logic programming, and LLM code explanations.",
-   "news_summary": "Major stories: Australia's Origin Energy investigates a data breach, UK inflation drops, tornadoes hit Kentucky, and Zelensky dismisses Ukraine's army commander. Also: France bans social media for under-15s, and a defibrillator shortage puts millions at risk.",
-   "papers_summary": "Papers cover ethical AI for dementia care, a visual query tracer for Datalog, and LLM code explanations tailored to diverse problem-solvers. Other topics include multitasking with computer agents and player reflection in games."
+   "brief": "Today's news covers UK bus fare caps, US strikes on Iran, Indian education protests, and Arizona primaries, while research explores AI for dementia care and visual programming tools.",
+   "news_summary": "UK transport secretary defends bus fare funding; US renews Iran strikes as India's parliament protests education reform; Arizona primaries yield Trump-backed candidates.",
+   "papers_summary": "Papers examine generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and rhetorical patterns in AI-assisted information evaluation."
   },
   "zh": {
-   "brief": "今日重點：中國廈門翔安機場引發金門居民矛盾與台灣國安疑慮；特朗普遭法官下令交出信託文件；烏克蘭軍方總司令瑟爾斯基遭解職。",
-   "news_summary": "廈門翔安機場位置敏感，距金門僅三公里，引發台灣對軍事與飛安的高度關切。特朗普誹謗案法官強制公開其信託文件。烏克蘭國防部長撤換引發抗議後，總司令瑟爾斯基被革職。",
-   "papers_summary": "今日無中文論文，英文研究聚焦生成AI在失智症照護中的倫理視角，以及互動式查詢工具用於邏輯程式學習。"
+   "brief": "日本职场性别争议与深圳地铁安检升级引发热议，同时特朗普法律纠纷持续；乌克兰军方人事变动，金门人对厦门机场建设态度矛盾；科研方面关注生成式AI在医疗伦理中的应用。",
+   "news_summary": "日本‘Cool Biz’鼓励男性穿短裤，但女性遭‘腿毛骚扰’质疑；乌克兰军方人事变动；金门人对厦门机场建设态度矛盾；深圳地铁加强安检引民怨；特朗普诉BBC诽谤案法官令其交出记录。",
+   "papers_summary": "无中文重点论文，英文研究聚焦AI辅助信息评估与人机交互可视化工具，如生成式AI在痴呆症护理中的伦理应用。"
   }
  },
  "todays_image": {
-  "caption": "The ambulance of 1898 treated visible wartime wounds, while today's news reveals invisible modern casualties: the silent theft of data and the hidden trauma of brain injury.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00287",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-JN2026-00287&max=150",
-  "title": "Ambulance used during the Spanish-American War, 1898"
+  "caption": "A voting machine's infamous hanging chads and a bus fare cap's assured funding both hinge on the question of whether the numbers truly add up.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-26CAD039D1FF2_5001-000002",
+  "source_name": "National Museum of African American History and Culture",
+  "source_url": "https://nmaahc.si.edu/object/nmaahc_2013.181.1a-h",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-26CAD039D1FF2_5001-000002",
+  "title": "Voting machine used in the 2000 Presidential election"
  }
 }
