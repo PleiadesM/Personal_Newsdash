@@ -1,28 +1,28 @@
 {
- "brief": "Louvre reopens after heist, Iran-US tensions escalate, Trump tariffs on Canada, and Saudi nuclear deal dominate news. Meanwhile, research on generative AI for dementia care and interactive visualization tools advance.",
+ "brief": "Geopolitical tensions rise with US-Iran strikes and nuclear deal with Saudi Arabia, while AI labs face scrutiny over training practices. Research explores AI's role in dementia care and information evaluation.",
  "meta": {
-  "generated_at": "2026-07-22T21:21:25Z"
+  "generated_at": "2026-07-22T23:14:38Z"
  },
- "news_summary": "The Louvre reopens after a crown jewel heist; Iran warns of retaliation against US threats; Trump escalates tariffs on Canada; House passes $1.5tn defense bill; Saudi Arabia secures a nuclear deal with the US; Tesla profits slide amid pivot to AI.",
- "papers_summary": "Papers explore generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and efficient neural rendering for volume visualization.",
+ "news_summary": "US military sites hit by Iranian strikes, Trump threatens retaliation; Tesla profits slide despite revenue growth; House passes defense bill amid Iran war divide.",
+ "papers_summary": "Papers focus on ethical AI for social connectedness in dementia care, and rhetorical patterns in AI-assisted information evaluation.",
  "summaries": {
   "en": {
-   "brief": "Louvre reopens after heist, Iran-US tensions escalate, Trump tariffs on Canada, and Saudi nuclear deal dominate news. Meanwhile, research on generative AI for dementia care and interactive visualization tools advance.",
-   "news_summary": "The Louvre reopens after a crown jewel heist; Iran warns of retaliation against US threats; Trump escalates tariffs on Canada; House passes $1.5tn defense bill; Saudi Arabia secures a nuclear deal with the US; Tesla profits slide amid pivot to AI.",
-   "papers_summary": "Papers explore generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and efficient neural rendering for volume visualization."
+   "brief": "Geopolitical tensions rise with US-Iran strikes and nuclear deal with Saudi Arabia, while AI labs face scrutiny over training practices. Research explores AI's role in dementia care and information evaluation.",
+   "news_summary": "US military sites hit by Iranian strikes, Trump threatens retaliation; Tesla profits slide despite revenue growth; House passes defense bill amid Iran war divide.",
+   "papers_summary": "Papers focus on ethical AI for social connectedness in dementia care, and rhetorical patterns in AI-assisted information evaluation."
   },
   "zh": {
-   "brief": "日本职场性别争议与金门情感工程引发讨论，特朗普法律纠纷与乌克兰政局变动持续。国际方面，沙特获美国核协议，特朗普关税威胁升级。",
-   "news_summary": "日本鼓励男性穿短裤上班引发女性不满；金门居民对厦门翔安机场既期待又担忧。特朗普被令交出BBC诽谤案文件，乌克兰总统泽连斯基革除军总司令。",
-   "papers_summary": "今日无重点研究论文。"
+   "brief": "日本Cool Biz政策引爭議，特朗普被令交出文件，金門機場工程引矛盾，烏克蘭軍總司令被解職，貝克漢推廣足球。研究方面聚焦AI輔助分析與可視化工具。",
+   "news_summary": "日本鼓勵男性穿短褲引發女性不滿；特朗普誹謗案強制公開文件；廈門翔安機場設計引金門居民分歧；澤連斯基解除瑟爾斯基職務；貝克漢持續推動美國足球發展。",
+   "papers_summary": "多篇論文探討生成式AI在失智照護、程式設計學習與互動可視化中的應用，另有關於火星車駕駛檢索系統的研究。"
   }
  },
  "todays_image": {
-  "caption": "A stick pin, a small piece of jewelry, echoes the brazen theft of larger treasures from the Louvre.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1983-69-8MattFlynn",
+  "caption": "Both highlight unexpected interventions—pelicans aiding in fishing and visual evidence revealing damage from unseen forces.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-106153_02",
   "source_name": "Cooper Hewitt, Smithsonian Design Museum",
-  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/180671",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1983-69-8MattFlynn",
-  "title": "Stick pin"
+  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/106153",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-106153_02",
+  "title": "Indians Catching Fish with the Help of Pelicans"
  }
 }
