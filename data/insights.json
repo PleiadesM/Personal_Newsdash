@@ -1,28 +1,28 @@
 {
- "brief": "Fifth death in NYC Legionnaires' outbreak traced to cooling towers; Europe's heatwave causes €2bn in grain losses; Trump threatens Iran infrastructure; NYC mayor calls Netanyahu war criminal; Google commits $40M to AI for science; and more.",
+ "brief": "Geopolitical tensions rise as the US-Saudi nuclear deal nears sealing, while the Trump administration intensifies immigration enforcement. In health and tech, OpenAI faces a lawsuit over dangerous health advice and a transmissible cancer is discovered in catfish. Research highlights ethical AI for dementia care and interactive tools for learning.",
  "meta": {
-  "generated_at": "2026-07-22T14:19:56Z"
+  "generated_at": "2026-07-22T17:40:13Z"
  },
- "news_summary": "New York's Legionnaires' outbreak has killed five, sourced to cooling towers. Europe's June heatwave caused €2bn in crop damage. Trump threatens Iranian bridges and power plants, while NYC's Mamdani calls Netanyahu a war criminal.",
- "papers_summary": "No papers reported today.",
+ "news_summary": "The US-Saudi nuclear deal stokes arms race concerns, and Trump pressures immigrants with massive fines. OpenAI is sued for harmful chatbot health advice, and a transmissible cancer spreads in catfish.",
+ "papers_summary": "Papers explore generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and rhetorical patterns for AI-assisted information evaluation.",
  "summaries": {
   "en": {
-   "brief": "Fifth death in NYC Legionnaires' outbreak traced to cooling towers; Europe's heatwave causes €2bn in grain losses; Trump threatens Iran infrastructure; NYC mayor calls Netanyahu war criminal; Google commits $40M to AI for science; and more.",
-   "news_summary": "New York's Legionnaires' outbreak has killed five, sourced to cooling towers. Europe's June heatwave caused €2bn in crop damage. Trump threatens Iranian bridges and power plants, while NYC's Mamdani calls Netanyahu a war criminal.",
-   "papers_summary": "No papers reported today."
+   "brief": "Geopolitical tensions rise as the US-Saudi nuclear deal nears sealing, while the Trump administration intensifies immigration enforcement. In health and tech, OpenAI faces a lawsuit over dangerous health advice and a transmissible cancer is discovered in catfish. Research highlights ethical AI for dementia care and interactive tools for learning.",
+   "news_summary": "The US-Saudi nuclear deal stokes arms race concerns, and Trump pressures immigrants with massive fines. OpenAI is sued for harmful chatbot health advice, and a transmissible cancer spreads in catfish.",
+   "papers_summary": "Papers explore generative AI for social connectedness in dementia care, interactive visual query tools for logic programming, and rhetorical patterns for AI-assisted information evaluation."
   },
   "zh": {
-   "brief": "今日重點包括日本辦公室服裝性別爭議、金門與廈門機場的情感連結、烏克蘭軍方高層變動，以及特朗普法律糾紛。",
-   "news_summary": "日本「Cool Biz」政策鼓勵男性穿短褲，引發女性對「腿毛騷擾」的不滿；金門居民對翔安機場的「情感工程」看法分歧；澤連斯基在抗議聲中撤換軍方總司令；特朗普在誹謗案中被迫交出紀錄。",
-   "papers_summary": "今日無重點論文報導。"
+   "brief": "今日新闻涵盖日本职场短裤政策引发性别争议、特朗普诉讼文件被强制公开、金门翔安机场的情感工程、乌克兰军方高层变动，以及英国首相贝安德的着装风格挑战。学术方面暂无中文论文，但国际研究聚焦AI伦理与人机交互。",
+   "news_summary": "日本Cool Biz政策鼓励男性穿短裤，却引发女性对‘腿毛骚扰’的不满；特朗普被法官责令交出信托文件；金门居民对翔安机场计划矛盾重重；泽连斯基解除乌军总司令职务；贝安德能否适应唐宁街的正式风格受关注；贝克汉姆持续助力美国足球推广。",
+   "papers_summary": "未收录中文论文，但国际arXiv论文探讨了生成式AI在失智症护理中的伦理问题、可视化查询工具、以及AI辅助信息评估的修辞模式。"
   }
  },
  "todays_image": {
-  "caption": "Both Eryngium yuccifolium and Legionella bacteria thrive in moist environments—the plant in wet prairies and the bacteria in water systems—yet one was used as a traditional remedy while the other now spreads a deadly outbreak.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3250676aa06e84de28172e48fc157bcdf",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/37a14596a-87ec-46c0-9190-e17964bc1c9b",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3250676aa06e84de28172e48fc157bcdf/90",
-  "title": "Eryngium yuccifolium Michx."
+  "caption": "The public domain image of a healthy channel catfish serves as an eerie before-picture to the real-world lake where a strange transmissible cancer now spreads among the fish.",
+  "image_url": "http://ids.si.edu/ids/deliveryService?id=NZP-20170622-084CPM-000001",
+  "source_name": "Smithsonian's National Zoo & Conservation Biology Institute",
+  "source_url": "https://nationalzoo.si.edu/object/nzp_NZP-20170622-084CPM-000001",
+  "thumbnail_url": "http://ids.si.edu/ids/deliveryService?max=90&id=NZP-20170622-084CPM-000001",
+  "title": "Channel Catfish"
  }
 }

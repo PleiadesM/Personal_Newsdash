@@ -1,19 +1,283 @@
 {
- "items": [],
+ "items": [
+  {
+   "authors": [
+    "Teis Arets",
+    "Giulia Perugia",
+    "Maarten Houben",
+    "Wijnand IJsselsteijn"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "People with dementia in residential care often experience reduced social connectedness. Person-centered care approaches foreground meaningful social interactions to support well-being, but staff and time pressures increasingly constrain opportunities for such care. Generative AI (GenAI) technologies offer possibilities for helping care professionals facilitate social connectedness, despite increasing care pressures. Yet, the meaningful integration of such technologies into the complex…",
+    "arxiv_id": "2607.19007"
+   },
+   "id": "91cd808c3605dde0",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-21T11:44:43Z",
+   "score": 0.6676,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "People with dementia in residential care often experience reduced social connectedness. Person-centered care approaches foreground meaningful social interactions to support well-being, but staff and time pressures increasingly constrain opportunities for such care. Generative AI (GenAI)…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Caring Over Computing: An Ethical and Sociotechnical Perspective on Generative AI for Social Connectedness in Dementia Care",
+   "url": "https://arxiv.org/abs/2607.19007v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Julián Méndez",
+    "Lukas Gerlach",
+    "Tobias Wieland",
+    "Alex Ivliev",
+    "Markus Krötzsch",
+    "Raimund Dachselt"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Nemo Explain Visualizer (nev) is an interactive visual query tracer and builder for Nemo, a powerful Datalog reasoner with extended features. Our tools were developed with and for expert users. However, considering the lack of resources to learn Datalog and similar declarative logic programming languages, we conducted a qualitative user study to assess how our tools might help students. The study, interviewing 14 participants with varying levels of involvement with the content of a university…",
+    "arxiv_id": "2607.18864"
+   },
+   "id": "8e43f335c36784c4",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-21T08:55:39Z",
+   "score": 0.6572,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Nemo Explain Visualizer (nev) is an interactive visual query tracer and builder for Nemo, a powerful Datalog reasoner with extended features. Our tools were developed with and for expert users. However, considering the lack of resources to learn Datalog and similar declarative logic programming…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Evaluating a Visual Query Tracer and Builder for Learning Declarative Logic Programming",
+   "url": "https://arxiv.org/abs/2607.18864v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Kaiyuan Tang",
+    "Chaoli Wang"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Recent advances in differentiable Gaussian splatting have highlighted the potential of primitive-based approaches as alternative scene representations for interactive, high-quality, volume visualization (VolVis) of large datasets. However, the explicit nature of current primitive-based methods, combined with isolated optimization for each VolVis scene, results in redundant, non-compact representations. We present ECoNGS, an efficient compressive neural Gaussian splatting framework for VolVis…",
+    "arxiv_id": "2607.18466"
+   },
+   "id": "9e3b5576de1bfc8f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-20T19:35:24Z",
+   "score": 0.46,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Recent advances in differentiable Gaussian splatting have highlighted the potential of primitive-based approaches as alternative scene representations for interactive, high-quality, volume visualization (VolVis) of large datasets. However, the explicit nature of current primitive-based methods,…",
+   "tags": [
+    "ml-vis",
+    "visualization"
+   ],
+   "title": "ECoNGS: Efficient Compressive Neural Gaussian Splats for Volume Visualization",
+   "url": "https://arxiv.org/abs/2607.18466v1",
+   "venue": "arXiv cs.CV"
+  },
+  {
+   "authors": [
+    "Sadra Sabouri",
+    "Zeinabsadat Saghi",
+    "Jordan Lee Boyd-Graber",
+    "Jonathan May",
+    "Jonathan K. Kummerfeld",
+    "Souti Chattopadhyay"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Prior work on AI-assisted information evaluation has largely focused on what AI systems communicate, comparing explanation types and formats, with responses predominantly cast in directive rhetoric where the system delivers a verdict and the user passively accepts it. While debate-style interactions have recently shown promise in prompting critical evaluation over deference, the rhetorical patterns that structure AI responses and how they might induce reflection, uncertainty, or independent…",
+    "arxiv_id": "2607.17627"
+   },
+   "id": "701b3f5cdf392312",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-20T07:36:25Z",
+   "score": 0.5779,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Prior work on AI-assisted information evaluation has largely focused on what AI systems communicate, comparing explanation types and formats, with responses predominantly cast in directive rhetoric where the system delivers a verdict and the user passively accepts it. While debate-style…",
+   "tags": [
+    "ai-writing",
+    "techcomm"
+   ],
+   "title": "It Matters How You Say It: Exploring Rhetorical Patterns for AI-Assisted Information Evaluation",
+   "url": "https://arxiv.org/abs/2607.17627v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Ruei-Che Chang",
+    "Wenqian Xu",
+    "Dingzeyu Li",
+    "Bryan Wang",
+    "Anhong Guo"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Computer Use Agents (CUAs) can autonomously execute complex, multi-step tasks within GUIs, enhancing efficiency through parallel multitasking. However, our formative studies with CUA experts and GenAI users indicated that current feedback is primarily text-based, requiring sustained attention to monitor progress and offering limited visibility to trace past GUI interactions. Based on the findings, we developed a prototype system, Sidekick, for communicating CUAs' status with multimodal feedback…",
+    "arxiv_id": "2607.17527"
+   },
+   "id": "fc08650f00499277",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-20T04:03:38Z",
+   "score": 0.5686,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Computer Use Agents (CUAs) can autonomously execute complex, multi-step tasks within GUIs, enhancing efficiency through parallel multitasking. However, our formative studies with CUA experts and GenAI users indicated that current feedback is primarily text-based, requiring sustained attention to…",
+   "tags": [
+    "ai-writing",
+    "ux"
+   ],
+   "title": "Sidekick: Designing Communication for Effective Multitasking with Computer Use Agents",
+   "url": "https://arxiv.org/abs/2607.17527v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Meng Chen",
+    "Amy Pavel"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "People increasingly use chatbots such as ChatGPT for everyday analysis tasks. While chatbots unify many analysis functions (e.g., scripts, visualizations, summaries), long conversations become hard to navigate, making it difficult to revisit prior steps or reuse successful workflows. LLMs now generate high-fidelity GUI code that enables people to create customized analysis tools beyond text. Yet, what new opportunities generative UIs bring to analysis work remain unclear. We interviewed six…",
+    "arxiv_id": "2607.17394"
+   },
+   "id": "3d22c1f020620b4a",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-19T19:53:01Z",
+   "score": 0.5886,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "People increasingly use chatbots such as ChatGPT for everyday analysis tasks. While chatbots unify many analysis functions (e.g., scripts, visualizations, summaries), long conversations become hard to navigate, making it difficult to revisit prior steps or reuse successful workflows. LLMs now…",
+   "tags": [
+    "ml-vis",
+    "llm",
+    "visualization"
+   ],
+   "title": "TaskArtisan: Designing Composable Generative Widgets for LLM-Assisted Analysis",
+   "url": "https://arxiv.org/abs/2607.17394v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Nisha Devasia",
+    "Michele Newman",
+    "Safinah Ali",
+    "Julie A. Kientz",
+    "Jin Ha Lee"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "In recent years, interest in eudaimonic player experiences (PX) - concerning reflection, meaning-making, and personal growth - has increased. However, most games user research methods are not well-suited to study eudaimonic PX, as they have been developed to evaluate features of hedonic PX, such as flow, immersion, and playability. To more deeply explore eudaimonic PX, we require methods that can 1) investigate how moment-to-moment PX shapes player reflection and 2) explore how players reengage…",
+    "arxiv_id": "2607.17128"
+   },
+   "id": "77f147301d5c6d7c",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-19T08:34:05Z",
+   "score": 0.5239,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "In recent years, interest in eudaimonic player experiences (PX) - concerning reflection, meaning-making, and personal growth - has increased. However, most games user research methods are not well-suited to study eudaimonic PX, as they have been developed to evaluate features of hedonic PX, such as…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "SAVEstate: A Method for Documenting Player Reflection in Digital Games",
+   "url": "https://arxiv.org/abs/2607.17128v2",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Andrew Anderson",
+    "David Piorkowski",
+    "Justin Weisz",
+    "Margaret Burnett",
+    "Kush Varshney"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Large language model (LLM) code explanations can support people in solving code-related problems, yet prior work has shown that people have diverse problem-solving styles. If explanations fail to meet people's problem-solving needs, they may be less productive in their occupations and miss opportunities to learn and grow. Although some research has examined how LLMs can adapt their outputs to a user's age or expertise, no prior work has examined how LLMs can adapt their code explanations to…",
+    "arxiv_id": "2607.17022"
+   },
+   "id": "45ffe5a98e449920",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-19T01:20:42Z",
+   "score": 0.6497,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Large language model (LLM) code explanations can support people in solving code-related problems, yet prior work has shown that people have diverse problem-solving styles. If explanations fail to meet people's problem-solving needs, they may be less productive in their occupations and miss…",
+   "tags": [
+    "ai-writing",
+    "llm"
+   ],
+   "title": "Can LLM Code Explanations Adapt to Diverse Problem-Solvers' Needs?",
+   "url": "https://arxiv.org/abs/2607.17022v1",
+   "venue": "arXiv cs.SE"
+  },
+  {
+   "authors": [
+    "Luke Fiorante",
+    "Leslie Liu",
+    "Adam Xu",
+    "Xianmei Lei",
+    "Darwin Chiu",
+    "Krys Blackwood"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "While Mars rover operators plan drives across hazardous Martian terrain and diagnose unexpected faults, the necessary information is distributed across separate systems and often reconstructed through manual correlation and memory. To address this challenge, we partnered with Mars rover operators at the NASA Jet Propulsion Laboratory to introduce Hindsight, a visual analytics system that unifies previously disparate rover drive data into a single workspace for search, comparison, and…",
+    "arxiv_id": "2607.16537"
+   },
+   "id": "dfee5023c5cdb174",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-17T22:24:15Z",
+   "score": 0.5066,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "While Mars rover operators plan drives across hazardous Martian terrain and diagnose unexpected faults, the necessary information is distributed across separate systems and often reconstructed through manual correlation and memory. To address this challenge, we partnered with Mars rover operators…",
+   "tags": [
+    "systems"
+   ],
+   "title": "Hindsight: Similarity-Based Analytics for Mars Rover Drive Retrieval",
+   "url": "https://arxiv.org/abs/2607.16537v1",
+   "venue": "arXiv cs.HC"
+  }
+ ],
  "meta": {
-  "count": 0,
-  "generated_at": "2026-07-22T14:19:56Z",
+  "count": 9,
+  "generated_at": "2026-07-22T17:40:13Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
-    "count": 0,
-    "error": "429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60",
+    "count": 3,
+    "error": null,
     "full_text_count": 0,
     "id": "arxiv_datavis",
     "name": "arXiv cs.HC + cs.GR",
-    "ok": false,
+    "ok": true,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"
@@ -45,7 +309,7 @@
    {
     "category": "optional",
     "count": 0,
-    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A0361-1434%2Cfrom-created-date%3A2026-06-24&rows=12&sort=created&order=desc",
+    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A1050-6519%2Cfrom-created-date%3A2026-06-24&rows=12&sort=created&order=desc",
     "full_text_count": 0,
     "id": "crossref_techcomm_journals",
     "name": "TechComm journals (CrossRef)",
@@ -68,12 +332,12 @@
    },
    {
     "category": "optional",
-    "count": 0,
-    "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acs.HC&sortBy=submittedDate&sortOrder=descending&max_results=40",
+    "count": 6,
+    "error": null,
     "full_text_count": 0,
     "id": "arxiv_hci_writing",
     "name": "arXiv cs.HC (writing & docs)",
-    "ok": false,
+    "ok": true,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"

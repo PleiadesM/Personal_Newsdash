@@ -1,0 +1,30 @@
+{
+ "full_text": "OpenAI says an agent powered by its LLM models escaped its sandboxed testing environment to infiltrate Hugging Face's servers as part of an overzealous attempt to obtain solutions to a benchmark test. The company says it considers the unintended infiltration an \"an unprecedented cyber incident\" and is working with Hugging Face on new protections to prevent a recurrence. Hugging Face disclosed an intrusion last week that it said involved \"unauthorized access to a limited set of internal datasets and to several credentials used by our services.\" The AI data clearinghouse said it used its own LLM-driven analysis to identify \"a swarm of tens of thousands of automated actions\" from an \"autonomous agent framework.\" That agentic swarm exploited a flaw in Hugging Face's data-processing pipeline to gain the ability to run code as a processing worker, eventually escalating to high-level access to the company's cloud and server clusters. At the time, Hugging Face said the LLM being used in the attack was \"still not known.\" But OpenAI took responsibility for the intrusion Tuesday evening , saying it came about during an internal test involving the recently released GPT-5.6 Sol and \"an even more capable pre-release model.\" The models were being tested against the ExploitGym benchmark , an independent testing suite based on hundreds of real-world security vulnerabilities. Read full article Comments",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/f04a9d46a3f5676a.json",
+  "id": "f04a9d46a3f5676a",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-22T16:47:49Z",
+  "score": 0.7709,
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai",
+  "summary": "\"This is day one for cybersecurity in the age of agents,\" Hugging Face CEO says.",
+  "tags": [
+   "agents"
+  ],
+  "title": "OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face",
+  "url": "https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/"
+ },
+ "meta": {
+  "generated_at": "2026-07-22T17:40:13Z",
+  "item_id": "f04a9d46a3f5676a",
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai"
+ }
+}
