@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-22T03:42:09Z",
+ "generated_at": "2026-07-22T06:41:03Z",
  "private_summary": {
   "configured": 0,
   "total": 0
@@ -115,7 +115,7 @@
   },
   {
    "category": "open",
-   "count": 31,
+   "count": 36,
    "error": null,
    "full_text_count": 0,
    "id": "bbc_world",
@@ -151,7 +151,7 @@
   },
   {
    "category": "open",
-   "count": 27,
+   "count": 21,
    "error": null,
    "full_text_count": 0,
    "id": "nyt_homepage",
@@ -211,12 +211,12 @@
   },
   {
    "category": "optional",
-   "count": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A0047-2816%2Cfrom-created-date%3A2026-06-24&rows=12&sort=created&order=desc",
+   "count": 12,
+   "error": null,
    "full_text_count": 0,
    "id": "crossref_techcomm_journals",
    "name": "TechComm journals (CrossRef)",
-   "ok": false,
+   "ok": true,
    "section": "papers",
    "skip_reason": null,
    "type": "crossref"
@@ -271,12 +271,12 @@
   },
   {
    "category": "open",
-   "count": 15,
-   "error": null,
+   "count": 0,
+   "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCvxZ0tCKgCrrgfGu_175NIA",
    "full_text_count": 0,
    "id": "radiance_fields_yt",
    "name": "Radiance Fields (YouTube)",
-   "ok": true,
+   "ok": false,
    "section": "news",
    "skip_reason": null,
    "type": "rss"

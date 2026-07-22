@@ -16,7 +16,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-21T11:44:43Z",
-   "score": 0.7246,
+   "score": 0.7117,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -46,7 +46,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-21T08:55:39Z",
-   "score": 0.7124,
+   "score": 0.6998,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -57,6 +57,32 @@
    "title": "Evaluating a Visual Query Tracer and Builder for Learning Declarative Logic Programming",
    "url": "https://arxiv.org/abs/2607.18864v1",
    "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Christine Ackerley"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "",
+    "citations": 0,
+    "doi": "10.1080/10572252.2026.2700268"
+   },
+   "id": "c36a0bd23d9e1277",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-21T08:28:19Z",
+   "score": 0.4187,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "",
+   "tags": [
+    "techcomm"
+   ],
+   "title": "Equipping Readers: Composing Policy Reports for Extended Rhetorical Use",
+   "url": "https://doi.org/10.1080/10572252.2026.2700268",
+   "venue": "Technical Communication Quarterly"
   },
   {
    "authors": [
@@ -72,7 +98,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-20T19:35:24Z",
-   "score": 0.507,
+   "score": 0.4963,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -103,7 +129,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-20T07:36:25Z",
-   "score": 0.6187,
+   "score": 0.6094,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -133,7 +159,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-20T04:03:38Z",
-   "score": 0.6077,
+   "score": 0.5988,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -160,7 +186,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-19T19:53:01Z",
-   "score": 0.624,
+   "score": 0.616,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -173,6 +199,32 @@
    "title": "TaskArtisan: Designing Composable Generative Widgets for LLM-Assisted Analysis",
    "url": "https://arxiv.org/abs/2607.17394v1",
    "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Clay Spinuzzi"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "This article tells a story about two methodologies, one used to examine the workings of the other. The examined methodology, the build-measure-learn loop used in Lean Startup, is a design methodology: It involves developing a series of design objects and using them to elicit feedback from huddles of stakeholders in a series of dialogical encounters. But unlike most design methodologies used in technical and professional communication, which assume that both stakeholders and propositions…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461546"
+   },
+   "id": "05a4717a352a6018",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-19T16:01:32Z",
+   "score": 0.316,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "This article tells a story about two methodologies, one used to examine the workings of the other. The examined methodology, the build-measure-learn loop used in Lean Startup, is a design methodology: It involves developing a series of design objects and using them to elicit feedback from huddles…",
+   "tags": [
+    "ux"
+   ],
+   "title": "Testing the Battery: How a Startup’s Design Objects Cohere as a Fractional Object",
+   "url": "https://doi.org/10.1177/07410883261461546",
+   "venue": "Written Communication"
   },
   {
    "authors": [
@@ -191,7 +243,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-19T08:34:05Z",
-   "score": 0.5549,
+   "score": 0.5478,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -220,7 +272,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-19T01:20:42Z",
-   "score": 0.6782,
+   "score": 0.6717,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -251,7 +303,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-17T22:24:15Z",
-   "score": 0.5272,
+   "score": 0.5225,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -262,11 +314,202 @@
    "title": "Hindsight: Similarity-Based Analytics for Mars Rover Drive Retrieval",
    "url": "https://arxiv.org/abs/2607.16537v1",
    "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Young Wha Lee"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "This qualitative study investigates the biographical factors that influence the professional identities and teaching practices of second language (L2) writing instructors. Previous L2 writing studies have tended to rely on teacher interviews to examine such identities and practices and have failed to include the important perspective of classroom observations. This study conducted teacher interviews and classroom observations with three graduate teaching assistants (GTAs) of a first-year…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461552"
+   },
+   "id": "84dbd1316e747355",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-17T11:09:40Z",
+   "score": 0.376,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "This qualitative study investigates the biographical factors that influence the professional identities and teaching practices of second language (L2) writing instructors. Previous L2 writing studies have tended to rely on teacher interviews to examine such identities and practices and have failed…",
+   "tags": [
+    "pedagogy",
+    "ai-writing",
+    "techcomm"
+   ],
+   "title": "The Dynamics Between the Biographical Factors, Professional Identities, and Teaching Practices of Second Language Writing Instructors",
+   "url": "https://doi.org/10.1177/07410883261461552",
+   "venue": "Written Communication"
+  },
+  {
+   "authors": [
+    "Sofia Hort",
+    "Oscar Björk"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "In primary education, children frequently combine drawings with alphabetic writing in their compositions, and research has shown that drawing can support early writing development. Building on existing research on multimodality and intermodality in early writing, this study examines how drawing and writing function together in children’s multimodal compositions produced for diverse social purposes. The study analyses multimodal texts written by Swedish learners aged 7–8 years and explores…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461556"
+   },
+   "id": "1598fddff24a516d",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-17T10:20:03Z",
+   "score": 0.2376,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "In primary education, children frequently combine drawings with alphabetic writing in their compositions, and research has shown that drawing can support early writing development. Building on existing research on multimodality and intermodality in early writing, this study examines how drawing and…",
+   "tags": [
+    "techcomm"
+   ],
+   "title": "Meaning Across Modes: Social Purpose and Intermodality in Children’s School Writing and Drawing",
+   "url": "https://doi.org/10.1177/07410883261461556",
+   "venue": "Written Communication"
+  },
+  {
+   "authors": [
+    "Xia Gao"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "This study has analysed and compared Chinese learners’ use of 17 types of complex noun phrases (NPs) in English writing from beginner to advanced levels to explore the learners’ development in NP complexity. The findings reveal a correlation between learners’ proficiency levels and noun modification, which progresses from a reliance on pre-modifying adjectives and possessives at beginner levels, through more use of noun+noun and noun+ of phrases as postmodifiers at intermediate levels, to…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461545"
+   },
+   "id": "a0e1c75dfd0d36c8",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-17T10:17:55Z",
+   "score": 0.2376,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "This study has analysed and compared Chinese learners’ use of 17 types of complex noun phrases (NPs) in English writing from beginner to advanced levels to explore the learners’ development in NP complexity. The findings reveal a correlation between learners’ proficiency levels and noun…",
+   "tags": [
+    "techcomm"
+   ],
+   "title": "Developmental pathways of noun phrase complexity in Chinese learners’ English writing: L1 influence and proficiency effects",
+   "url": "https://doi.org/10.1177/07410883261461545",
+   "venue": "Written Communication"
+  },
+  {
+   "authors": [
+    "Qiuya Jing",
+    "Yingying Liu"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "As ChatGPT is increasingly used in second language (L2) writing practice and research, its potential to provide feedback and revision has attracted much scholarly attention. However, it remains largely unknown whether and how ChatGPT revision can influence rhetorical move-steps. This study investigates the effects of ChatGPT revision on rhetorical move-steps in English personal statements (PSs) written by L2 English undergraduate students, using a combination of corpus data and stimulated…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461562"
+   },
+   "id": "96b4422cdd406e27",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-17T07:45:03Z",
+   "score": 0.3724,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "As ChatGPT is increasingly used in second language (L2) writing practice and research, its potential to provide feedback and revision has attracted much scholarly attention. However, it remains largely unknown whether and how ChatGPT revision can influence rhetorical move-steps. This study…",
+   "tags": [
+    "ai-writing",
+    "llm",
+    "techcomm"
+   ],
+   "title": "“It Tends to Remove Things I Originally Wanted to Emphasize”: Effects of ChatGPT Revision on Rhetorical Move-Steps in Personal Statements",
+   "url": "https://doi.org/10.1177/07410883261461562",
+   "venue": "Written Communication"
+  },
+  {
+   "authors": [
+    "Mojtaba Sayyad Mahernia"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Studies on the writing process through the analysis of pauses, highlight a link between content formulation and linguistic units. From a text linguistics perspective, particularly Systemic Functional Linguistics (SFL), this relationship becomes even more apparent. This study investigates the location and duration of pauses in relation to syntagmatic units and their functional roles using an SFL-based framework, answering: (1) In what syntagmatic and functional contexts do pauses occur during…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461550"
+   },
+   "id": "43624525f600d68a",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-17T07:42:02Z",
+   "score": 0.2349,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "Studies on the writing process through the analysis of pauses, highlight a link between content formulation and linguistic units. From a text linguistics perspective, particularly Systemic Functional Linguistics (SFL), this relationship becomes even more apparent. This study investigates the…",
+   "tags": [
+    "techcomm"
+   ],
+   "title": "Syntagmatic and Functional Context of Pauses During Writing: A Hallidayan Perspective",
+   "url": "https://doi.org/10.1177/07410883261461550",
+   "venue": "Written Communication"
+  },
+  {
+   "authors": [
+    "Baraa Khuder",
+    "Bojana Petrić"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "This study investigates how academics in precarious transition develop and adapt academic networks to support writing for publication amid institutional instability and geographic mobility. Drawing on longitudinal data from three displaced scholars, including interviews, feedback interactions, and repeated Academic Network Plots, we analyze changes in network size, structure, and function. Across cases, network development is explained by three integrated moves: (1) targeted initiation with…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461559"
+   },
+   "id": "20643fe31882eb50",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-16T06:30:56Z",
+   "score": 0.2129,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "This study investigates how academics in precarious transition develop and adapt academic networks to support writing for publication amid institutional instability and geographic mobility. Drawing on longitudinal data from three displaced scholars, including interviews, feedback interactions, and…",
+   "tags": [
+    "techcomm"
+   ],
+   "title": "Academic Networking in Transition: Mapping Trajectories of Mobility and Precarity",
+   "url": "https://doi.org/10.1177/07410883261461559",
+   "venue": "Written Communication"
+  },
+  {
+   "authors": [
+    "Bufeng Song",
+    "Lixiang Cong"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "This study examines positioning patterns and their impact on genre performance in Chinese L2 students’ source-based argumentative writing. Drawing on positioning theory and analytical frameworks for source-based argumentation, analysis of 26 undergraduate English majors’ essays, stimulated recall interviews, and reflective journals revealed three overarching positioning patterns (single, negotiated, and simultaneous) and dynamic positioning shifts across essay segments. These patterns…",
+    "citations": 0,
+    "doi": "10.1177/07410883261461558"
+   },
+   "id": "4262f80144083be6",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-16T06:28:36Z",
+   "score": 0.2129,
+   "section": "papers",
+   "source": "TechComm journals (CrossRef)",
+   "source_id": "crossref_techcomm_journals",
+   "summary": "This study examines positioning patterns and their impact on genre performance in Chinese L2 students’ source-based argumentative writing. Drawing on positioning theory and analytical frameworks for source-based argumentation, analysis of 26 undergraduate English majors’ essays, stimulated recall…",
+   "tags": [
+    "pedagogy",
+    "techcomm"
+   ],
+   "title": "Positioning Patterns and L2 Students’ Genre Performance in Source-Based Argumentative Writing",
+   "url": "https://doi.org/10.1177/07410883261461558",
+   "venue": "Written Communication"
   }
  ],
  "meta": {
-  "count": 9,
-  "generated_at": "2026-07-22T03:42:09Z",
+  "count": 18,
+  "generated_at": "2026-07-22T06:41:03Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
@@ -308,12 +551,12 @@
    },
    {
     "category": "optional",
-    "count": 0,
-    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A0047-2816%2Cfrom-created-date%3A2026-06-24&rows=12&sort=created&order=desc",
+    "count": 12,
+    "error": null,
     "full_text_count": 0,
     "id": "crossref_techcomm_journals",
     "name": "TechComm journals (CrossRef)",
-    "ok": false,
+    "ok": true,
     "section": "papers",
     "skip_reason": null,
     "type": "crossref"
