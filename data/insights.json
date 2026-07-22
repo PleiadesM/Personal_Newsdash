@@ -1,28 +1,28 @@
 {
- "brief": "Today's news covers Ukraine's military shakeup, Houthi threats to Saudi oil tankers, and a tornado watch in the Northeast, while AI research explores how explanations and agent design can improve human-computer interaction.",
+ "brief": "U.S. politics dominate news with Arizona primary results and a stopgap spending bill, while severe storms and a tropical threat hit the country. In research, papers explore generative AI for dementia care, visual query tools for logic programming, and LLM code explanations tailored to diverse users.",
  "meta": {
-  "generated_at": "2026-07-21T23:09:59Z"
+  "generated_at": "2026-07-22T03:42:09Z"
  },
- "news_summary": "Zelensky fires Ukraine's top general amid protests, Houthis threaten tankers carrying Saudi oil, and a tornado watch is issued for New York and other Northeast areas.",
- "papers_summary": "New studies examine rhetorical patterns for AI-assisted information evaluation, the design of computer use agents for multitasking, and how LLM code explanations can adapt to diverse problem-solvers.",
+ "news_summary": "Arizona Republicans nominated election denier Alexander Kolodin for secretary of state and Andy Biggs for governor; the House passed a stopgap funding bill to avert a shutdown. Meanwhile, a Saudi-U.S. nuclear deal faces opposition, and tropical Storm Bertha approaches the Gulf Coast.",
+ "papers_summary": "Research on generative AI for social connectedness in dementia care highlights ethical considerations, while a visual query tracer for Datalog reasoning aids learning. Other works examine rhetorical patterns for AI-assisted information evaluation and LLM code explanations adapting to problem-solvers' styles.",
  "summaries": {
   "en": {
-   "brief": "Today's news covers Ukraine's military shakeup, Houthi threats to Saudi oil tankers, and a tornado watch in the Northeast, while AI research explores how explanations and agent design can improve human-computer interaction.",
-   "news_summary": "Zelensky fires Ukraine's top general amid protests, Houthis threaten tankers carrying Saudi oil, and a tornado watch is issued for New York and other Northeast areas.",
-   "papers_summary": "New studies examine rhetorical patterns for AI-assisted information evaluation, the design of computer use agents for multitasking, and how LLM code explanations can adapt to diverse problem-solvers."
+   "brief": "U.S. politics dominate news with Arizona primary results and a stopgap spending bill, while severe storms and a tropical threat hit the country. In research, papers explore generative AI for dementia care, visual query tools for logic programming, and LLM code explanations tailored to diverse users.",
+   "news_summary": "Arizona Republicans nominated election denier Alexander Kolodin for secretary of state and Andy Biggs for governor; the House passed a stopgap funding bill to avert a shutdown. Meanwhile, a Saudi-U.S. nuclear deal faces opposition, and tropical Storm Bertha approaches the Gulf Coast.",
+   "papers_summary": "Research on generative AI for social connectedness in dementia care highlights ethical considerations, while a visual query tracer for Datalog reasoning aids learning. Other works examine rhetorical patterns for AI-assisted information evaluation and LLM code explanations adapting to problem-solvers' styles."
   },
   "zh": {
-   "brief": "今日英國首相就任、深圳地鐵加強安檢、翔安機場逼近金門引發台灣安全憂慮，以及台灣演習擬模擬斷網等新聞牽動兩岸與國際關注。科技方面，智能戒指提前測知懷孕、亞洲年輕人押注科技股，阿里速賣通遭歐盟重罰。",
-   "news_summary": "英國新首相貝安德就職；深圳地鐵安檢升級引發民怨；廈門翔安機場距金門僅三公里，台灣表態關切；台灣防空演習將首度模擬斷網；智能戒指可提前檢測懷孕；速賣通因售非法商品被歐盟罰款5.5億歐元。",
-   "papers_summary": "今日無重點論文更新。"
+   "brief": "今日焦点：厦门翔安机场即将启用，引发金门与台湾对安全和军事的担忧；乌克兰军总司令被撤换；英国新首相贝安德上任；此外，深圳地铁加强安检引发民怨，速卖通被欧盟重罚。",
+   "news_summary": "翔安机场距金门仅三公里，台湾担忧军事与飞航安全；乌克兰总统泽连斯基解除军总司令瑟尔斯基职务；贝安德接任英国首相；深圳地铁突加强安检引发不满；速卖通因售非法商品被欧盟罚款5.5亿欧元。",
+   "papers_summary": "今日无重点论文。"
   }
  },
  "todays_image": {
-  "caption": "Like Lobophora seaweed drifting with unpredictable currents, the family navigated treacherous waters to escape North Korea.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "Both involve high-stakes counting—votes in a disputed election and enrichment levels in a nuclear deal—where trust in the process is fragile.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-26CAD039D1FF2_5001-000002",
+  "source_name": "National Museum of African American History and Culture",
+  "source_url": "https://nmaahc.si.edu/object/nmaahc_2013.181.1a-h",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAAHC-26CAD039D1FF2_5001-000002",
+  "title": "Voting machine used in the 2000 Presidential election"
  }
 }

@@ -2,6 +2,91 @@
  "items": [
   {
    "authors": [
+    "Teis Arets",
+    "Giulia Perugia",
+    "Maarten Houben",
+    "Wijnand IJsselsteijn"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "People with dementia in residential care often experience reduced social connectedness. Person-centered care approaches foreground meaningful social interactions to support well-being, but staff and time pressures increasingly constrain opportunities for such care. Generative AI (GenAI) technologies offer possibilities for helping care professionals facilitate social connectedness, despite increasing care pressures. Yet, the meaningful integration of such technologies into the complex…",
+    "arxiv_id": "2607.19007"
+   },
+   "id": "91cd808c3605dde0",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-21T11:44:43Z",
+   "score": 0.7246,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "People with dementia in residential care often experience reduced social connectedness. Person-centered care approaches foreground meaningful social interactions to support well-being, but staff and time pressures increasingly constrain opportunities for such care. Generative AI (GenAI)…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Caring Over Computing: An Ethical and Sociotechnical Perspective on Generative AI for Social Connectedness in Dementia Care",
+   "url": "https://arxiv.org/abs/2607.19007v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Julián Méndez",
+    "Lukas Gerlach",
+    "Tobias Wieland",
+    "Alex Ivliev",
+    "Markus Krötzsch",
+    "Raimund Dachselt"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Nemo Explain Visualizer (nev) is an interactive visual query tracer and builder for Nemo, a powerful Datalog reasoner with extended features. Our tools were developed with and for expert users. However, considering the lack of resources to learn Datalog and similar declarative logic programming languages, we conducted a qualitative user study to assess how our tools might help students. The study, interviewing 14 participants with varying levels of involvement with the content of a university…",
+    "arxiv_id": "2607.18864"
+   },
+   "id": "8e43f335c36784c4",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-21T08:55:39Z",
+   "score": 0.7124,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Nemo Explain Visualizer (nev) is an interactive visual query tracer and builder for Nemo, a powerful Datalog reasoner with extended features. Our tools were developed with and for expert users. However, considering the lack of resources to learn Datalog and similar declarative logic programming…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Evaluating a Visual Query Tracer and Builder for Learning Declarative Logic Programming",
+   "url": "https://arxiv.org/abs/2607.18864v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Kaiyuan Tang",
+    "Chaoli Wang"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Recent advances in differentiable Gaussian splatting have highlighted the potential of primitive-based approaches as alternative scene representations for interactive, high-quality, volume visualization (VolVis) of large datasets. However, the explicit nature of current primitive-based methods, combined with isolated optimization for each VolVis scene, results in redundant, non-compact representations. We present ECoNGS, an efficient compressive neural Gaussian splatting framework for VolVis…",
+    "arxiv_id": "2607.18466"
+   },
+   "id": "9e3b5576de1bfc8f",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-20T19:35:24Z",
+   "score": 0.507,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Recent advances in differentiable Gaussian splatting have highlighted the potential of primitive-based approaches as alternative scene representations for interactive, high-quality, volume visualization (VolVis) of large datasets. However, the explicit nature of current primitive-based methods,…",
+   "tags": [
+    "ml-vis",
+    "visualization"
+   ],
+   "title": "ECoNGS: Efficient Compressive Neural Gaussian Splats for Volume Visualization",
+   "url": "https://arxiv.org/abs/2607.18466v1",
+   "venue": "arXiv cs.CV"
+  },
+  {
+   "authors": [
     "Sadra Sabouri",
     "Zeinabsadat Saghi",
     "Jordan Lee Boyd-Graber",
@@ -18,7 +103,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-20T07:36:25Z",
-   "score": 0.6335,
+   "score": 0.6187,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -48,7 +133,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-20T04:03:38Z",
-   "score": 0.6219,
+   "score": 0.6077,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -75,7 +160,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-19T19:53:01Z",
-   "score": 0.6369,
+   "score": 0.624,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -106,7 +191,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-19T08:34:05Z",
-   "score": 0.5661,
+   "score": 0.5549,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -115,7 +200,7 @@
     "ai-writing"
    ],
    "title": "SAVEstate: A Method for Documenting Player Reflection in Digital Games",
-   "url": "https://arxiv.org/abs/2607.17128v1",
+   "url": "https://arxiv.org/abs/2607.17128v2",
    "venue": "arXiv cs.HC"
   },
   {
@@ -135,7 +220,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-19T01:20:42Z",
-   "score": 0.6885,
+   "score": 0.6782,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -147,36 +232,6 @@
    "title": "Can LLM Code Explanations Adapt to Diverse Problem-Solvers' Needs?",
    "url": "https://arxiv.org/abs/2607.17022v1",
    "venue": "arXiv cs.SE"
-  },
-  {
-   "authors": [
-    "Mohammad Arvan",
-    "Amber E. Osterholt",
-    "Bailee Rue",
-    "Yuvaneswaren Ramakrishnan Sureshbabu",
-    "Krishna Riteshkumar Patel",
-    "Rebecca T. Feinstein"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Introduction. Clinical and Translational Science Award (CTSA) programs must document their scholars' research impact, but assembling each scholar's record by hand takes staff an estimated 15 hours and does not scale to a full cohort. An artificial intelligence (AI) agent could serve as a tool to gather scholar data across platforms and disciplines. Methods. We built a human-in-the-loop AI agent that assembles a dossier of sourced evidence for each scholar and drafts one-sentence Translational…",
-    "arxiv_id": "2607.16989"
-   },
-   "id": "12adc72b790b54f2",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-18T22:34:52Z",
-   "score": 0.5421,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Introduction. Clinical and Translational Science Award (CTSA) programs must document their scholars' research impact, but assembling each scholar's record by hand takes staff an estimated 15 hours and does not scale to a full cohort. An artificial intelligence (AI) agent could serve as a tool to…",
-   "tags": [
-    "ai-writing"
-   ],
-   "title": "Real-World Evaluation of an AI Agent Drafting Translational Impact Summaries",
-   "url": "https://arxiv.org/abs/2607.16989v1",
-   "venue": "arXiv cs.CL"
   },
   {
    "authors": [
@@ -196,7 +251,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-17T22:24:15Z",
-   "score": 0.5347,
+   "score": 0.5272,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -207,185 +262,17 @@
    "title": "Hindsight: Similarity-Based Analytics for Mars Rover Drive Retrieval",
    "url": "https://arxiv.org/abs/2607.16537v1",
    "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Andres Karjus",
-    "Janika Leoste",
-    "Tiia Õun"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Generative AI is increasingly used for feedback in higher education, but evidence from repeated classroom use remains limited. This short paper analyses 2988 reflective essay-feedback-appraisal instances from 283 Estonian bachelor students across one semester. Students obtained and assessed feedback from a self-selected AI tool using a uniform prompt. The present analysis of the anonymized text corpus covers essay content, AI feedback, and its perceived helpfulness. Students found feedback…",
-    "arxiv_id": "2607.16115"
-   },
-   "id": "413c60c9550ea182",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-17T16:53:00Z",
-   "score": 0.4857,
-   "section": "papers",
-   "source": "arXiv cs.HC (writing & docs)",
-   "source_id": "arxiv_hci_writing",
-   "summary": "Generative AI is increasingly used for feedback in higher education, but evidence from repeated classroom use remains limited. This short paper analyses 2988 reflective essay-feedback-appraisal instances from 283 Estonian bachelor students across one semester. Students obtained and assessed…",
-   "tags": [
-    "pedagogy",
-    "ai-writing",
-    "techcomm"
-   ],
-   "title": "Student Evaluation of Repeated AI Feedback Across a Semester of Writing",
-   "url": "https://arxiv.org/abs/2607.16115v1",
-   "venue": "arXiv cs.CY"
-  },
-  {
-   "authors": [
-    "Maeve Hutchinson",
-    "Abderrahmane Wassim Mehdaoui",
-    "Pranava Madhyastha"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Understanding how vision-language models (VLMs) interpret data visualizations remains an open problem, and is increasingly important as these models are used for analytical tasks where reliable reasoning is essential. We introduce a lightweight, diagnostic saliency map method tailored for text generation over images using transformer models, the current state-of-the-art models in visualization interpretation. Our approach aggregates the language model's attention over the visual tokens across…",
-    "arxiv_id": "2607.16105"
-   },
-   "id": "fbd10fe46dfe7415",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-17T16:40:23Z",
-   "score": 0.6653,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Understanding how vision-language models (VLMs) interpret data visualizations remains an open problem, and is increasingly important as these models are used for analytical tasks where reliable reasoning is essential. We introduce a lightweight, diagnostic saliency map method tailored for text…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "Attention-Guided Saliency Maps for Interpreting Visualization Literacy in VLMs",
-   "url": "https://arxiv.org/abs/2607.16105v1",
-   "venue": "arXiv cs.CV"
-  },
-  {
-   "authors": [
-    "Théophane Loloum",
-    "Fabien Vivodtzev",
-    "David Hébert",
-    "Baptiste Reynier",
-    "Michel Arrigoni",
-    "Julien Tierny"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "This application paper presents DebrisTracer, a framework for the reliable tracking of debris in hypervelocity impact fast imaging. These noisy and highly specific datasets capture the ejection of a large number of debris fragments after the impact of a projectile launched at hypervelocity into a target material. The reliable estimation of debris mass and speed distributions is of major importance in aerospace applications. We document how to extend an off-the-shelf topology tracking framework…",
-    "arxiv_id": "2607.15986"
-   },
-   "id": "33717867e1630e96",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-17T14:24:05Z",
-   "score": 0.3293,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "This application paper presents DebrisTracer, a framework for the reliable tracking of debris in hypervelocity impact fast imaging. These noisy and highly specific datasets capture the ejection of a large number of debris fragments after the impact of a projectile launched at hypervelocity into a…",
-   "tags": [
-    "systems"
-   ],
-   "title": "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging",
-   "url": "https://arxiv.org/abs/2607.15986v1",
-   "venue": "arXiv cs.LG"
-  },
-  {
-   "authors": [
-    "Hyeon Jeon",
-    "Sungbok Shin",
-    "Niklas Elmqvist"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "When domain experts create charts, the bottleneck is rarely the data, but knowing the optimal next step in chart design. The visualization design space is vast, and while domain experts can recognize a good design when they see it, it is often challenging to determine the exact path to get there. To address this, we present VISAUTOCOMPLETE, a system inspired by text autocompletion that reconceptualizes visualization design as a sequential process, recommending concrete next steps at each stage…",
-    "arxiv_id": "2607.15608"
-   },
-   "id": "bfb1f0944eefd9a1",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-17T04:09:00Z",
-   "score": 0.5069,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "When domain experts create charts, the bottleneck is rarely the data, but knowing the optimal next step in chart design. The visualization design space is vast, and while domain experts can recognize a good design when they see it, it is often challenging to determine the exact path to get there.…",
-   "tags": [
-    "visualization"
-   ],
-   "title": "Visualization Autocomplete: Visualization Authoring via Stepwise Design Recommendations",
-   "url": "https://arxiv.org/abs/2607.15608v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Hongyu Zhu",
-    "Lin Chen",
-    "Yuming Fu",
-    "Mounim A. El-Yacoubi",
-    "Mingsheng Shang"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Electroencephalography (EEG)-based emotion recognition captures affective neural signals with high temporal precision, but cross-subject variability and label noise remain critical challenges to its practical healthcare deployment. Existing label-denoising methods lack physiological grounding, while physiology-informed approaches rely on hand-crafted hyperparameters. To bridge these two paradigms, we propose PhyDA, a plug-and-play, tuning-free framework that unifies neurophysiological priors…",
-    "arxiv_id": "2607.15566"
-   },
-   "id": "7c05f4aa64d554b0",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-17T02:17:23Z",
-   "score": 0.5044,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Electroencephalography (EEG)-based emotion recognition captures affective neural signals with high temporal precision, but cross-subject variability and label noise remain critical challenges to its practical healthcare deployment. Existing label-denoising methods lack physiological grounding,…",
-   "tags": [
-    "ml-vis"
-   ],
-   "title": "Physiological Prior-Driven Label Enhancement for Cross-Subject EEG Emotion Recognition",
-   "url": "https://arxiv.org/abs/2607.15566v1",
-   "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Zhicheng Liu"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Scene-centric visualization systems expose semantic components, such as marks, encodings, layouts, and axes, as first-class objects that can be directly manipulated. Existing interaction abstractions, however, are largely based on event streams, signals, and data selections rather than semantic scene components. This mismatch makes interactions involving scene components less natural to specify and limits the expressive power of scene-centric visualization systems. We present Interactive…",
-    "arxiv_id": "2607.15523"
-   },
-   "id": "fb24bdcaac83532f",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-17T00:19:59Z",
-   "score": 0.5019,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Scene-centric visualization systems expose semantic components, such as marks, encodings, layouts, and axes, as first-class objects that can be directly manipulated. Existing interaction abstractions, however, are largely based on event streams, signals, and data selections rather than semantic…",
-   "tags": [
-    "systems",
-    "visualization"
-   ],
-   "title": "Interactive Mascot: A Scene-Centric Interaction Grammar for Data Visualizations",
-   "url": "https://arxiv.org/abs/2607.15523v2",
-   "venue": "arXiv cs.HC"
   }
  ],
  "meta": {
-  "count": 13,
-  "generated_at": "2026-07-21T23:09:59Z",
+  "count": 9,
+  "generated_at": "2026-07-22T03:42:09Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
-    "count": 7,
+    "count": 3,
     "error": null,
     "full_text_count": 0,
     "id": "arxiv_datavis",
@@ -422,7 +309,7 @@
    {
     "category": "optional",
     "count": 0,
-    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A0361-1434%2Cfrom-created-date%3A2026-06-23&rows=12&sort=created&order=desc",
+    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A0047-2816%2Cfrom-created-date%3A2026-06-24&rows=12&sort=created&order=desc",
     "full_text_count": 0,
     "id": "crossref_techcomm_journals",
     "name": "TechComm journals (CrossRef)",
