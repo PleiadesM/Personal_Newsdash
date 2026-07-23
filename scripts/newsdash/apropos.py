@@ -16,8 +16,9 @@ import requests
 from dateutil import parser as dateparser
 
 from .http import get
+from .llm import extract_json, post_chat, resolve_endpoint
 from .models import clip, iso_utc, strip_html
-from .summarize import _extract_json, _item_lines, _post_chat
+from .summarize import _item_lines
 
 GDELT_DOC_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
 MAX_CONTEXT_NEWS = 18
@@ -76,9 +77,9 @@ def _context_prompt(payloads: dict[str, dict]) -> str:
 def _llm_json(label: str, base_url: str, api_key: str, model: str,
               messages: list[dict], session: requests.Session) -> dict | None:
     try:
-        content = _post_chat(
+        content = post_chat(
             base_url, api_key, model, messages, session, json_mode=True)
-        result = _extract_json(content)
+        result = extract_json(content)
         if not isinstance(result, dict):
             raise ValueError("json root was not an object")
         return result
@@ -279,8 +280,7 @@ def find_apropos_of_nothing(payloads: dict[str, dict], env: Mapping[str, str],
     if not news_items and not paper_items:
         return None
 
-    base_url = (env.get("LLM_BASE_URL") or "https://api.openai.com/v1").strip()
-    model = (env.get("LLM_MODEL") or "gpt-4o-mini").strip()
+    base_url, model = resolve_endpoint(env)
 
     idea = _llm_json(
         "query",

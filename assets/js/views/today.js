@@ -169,6 +169,141 @@ function highlightsBlock(cardOpts) {
       picked.map((item) => itemCard(item, item.section || "news", cardOpts))));
 }
 
+// ---- AI "Threads · 线索" ---------------------------------------------------
+// LLM-aggregated keywords across sources, each a bilingual foothold with
+// per-source "return ticket" angles, a convergence glyph, a "why now"
+// occasion line, and inter-thread links — replaces highlightsBlock() when
+// present (graceful fallback otherwise). All thread text is untrusted LLM
+// output: it renders only through el()/textContent, never innerHTML, and the
+// glyph is static path data (never LLM-derived).
+
+// Bilingual field picker: active UI/content language → en → zh → "".
+function pickLang(bi) {
+  if (!bi) return "";
+  const lang = getLang();
+  return bi[lang] || bi.en || bi.zh || "";
+}
+
+// 16×16 inline convergence glyph. SVG is built with createElementNS (el() is
+// HTML-only). stroke="currentColor", static path data ONLY — never any
+// LLM-derived text inside the SVG. Wrapped in a span carrying an accessible
+// i18n title.
+function convergenceGlyph(kind) {
+  const SVG = "http://www.w3.org/2000/svg";
+  // Path data per variant. All strokes read left → right toward the right edge.
+  const paths = {
+    // three strokes meeting toward a single right-edge point
+    convergent: ["M1 3 L15 8", "M1 8 L15 8", "M1 13 L15 8"],
+    // two meeting at the point + one crossing away from it
+    mixed: ["M1 3 L15 8", "M1 13 L15 8", "M1 8 L15 2"],
+    // three fanning out from a single left-edge point
+    divergent: ["M1 8 L15 3", "M1 8 L15 8", "M1 8 L15 13"],
+  };
+  const variant = paths[kind] ? kind : "mixed";
+  const svg = document.createElementNS(SVG, "svg");
+  svg.setAttribute("viewBox", "0 0 16 16");
+  svg.setAttribute("width", "16");
+  svg.setAttribute("height", "16");
+  svg.setAttribute("fill", "none");
+  svg.setAttribute("aria-hidden", "true");
+  for (const d of paths[variant]) {
+    const p = document.createElementNS(SVG, "path");
+    p.setAttribute("d", d);
+    p.setAttribute("stroke", "currentColor");
+    p.setAttribute("stroke-width", "1.25");
+    p.setAttribute("stroke-linecap", "round");
+    svg.appendChild(p);
+  }
+  const titleKey = {
+    convergent: "today.threadConvergent",
+    mixed: "today.threadMixed",
+    divergent: "today.threadDivergent",
+  }[variant];
+  const span = el("span", { class: "thread-glyph", title: t(titleKey) });
+  span.appendChild(svg);
+  return span;
+}
+
+// One angle row: a two-way "return ticket". If full_text_file is present the
+// link goes to the in-app reader (#/read/<section>/<item_id>); otherwise it
+// opens the original in a new tab. Source and phrase are LLM/feed text →
+// textContent only.
+function angleRow(angle) {
+  const link = angle.full_text_file
+    ? el("a", { href: `#/read/${angle.section}/${angle.item_id}` })
+    : el("a", { href: safeHref(angle.url), target: "_blank", rel: "noopener noreferrer" });
+  link.appendChild(el("span", { class: "thread-angle-source" }, angle.source));
+  link.appendChild(document.createTextNode(" — "));
+  link.appendChild(el("span", { class: "thread-angle-phrase" }, pickLang(angle.phrase)));
+  return el("li", { class: "thread-angle" }, link);
+}
+
+// One thread card. `list` is the full payload thread list (for resolving
+// relates_to ids to their keyword labels). Angles are deliberately NOT run
+// through filterItemsForContentLang — cross-language convergence is the point
+// of the feature.
+function threadCard(thread, isPrivate, list) {
+  const card = el("article", {
+    class: `thread-card${isPrivate ? " thread-card-private" : ""}`,
+    dataset: { threadId: thread.id },
+  },
+    el("h3", { class: "thread-keyword" },
+      pickLang(thread.keyword),
+      convergenceGlyph(thread.convergence),
+    ),
+    el("p", { class: "thread-gloss" }, pickLang(thread.gloss)),
+  );
+  const whyNow = pickLang(thread.why_now);
+  if (whyNow) {
+    card.appendChild(el("p", { class: "thread-whynow" },
+      el("span", { class: "thread-whynow-label" }, t("today.threadsWhyNow") + " "),
+      whyNow));
+  }
+  const angles = (thread.angles || []).map(angleRow);
+  if (angles.length) card.appendChild(el("ul", { class: "thread-angles" }, angles));
+
+  const related = (thread.relates_to || [])
+    .map((id) => list.find((x) => x.id === id))
+    .filter(Boolean);
+  if (related.length) {
+    const touches = el("div", { class: "thread-touches" },
+      el("span", { class: "thread-touches-label" }, t("today.threadsTouches") + " "));
+    related.forEach((target, i) => {
+      if (i) touches.appendChild(document.createTextNode(" · "));
+      touches.appendChild(el("span", {
+        class: "thread-touch",
+        role: "button",
+        tabindex: "0",
+        onclick: () => scrollToThread(target.id),
+        onkeydown: (e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); scrollToThread(target.id); }
+        },
+      }, pickLang(target.keyword)));
+    });
+    card.appendChild(touches);
+  }
+  return card;
+}
+
+function scrollToThread(id) {
+  const target = document.querySelector(`[data-thread-id="${CSS.escape(id)}"]`);
+  if (target) target.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+// The Threads block: public threads always; private-scope threads only while
+// unlocked (no teaser when locked). Null when empty → caller falls back to
+// highlightsBlock().
+function threadsBlock() {
+  const threads = get().threads;
+  if (!threads) return null;
+  const list = (threads.public?.threads || [])
+    .concat(get().unlocked ? (threads.private?.threads || []) : []);
+  if (!list.length) return null;
+  const privateIds = new Set((threads.private?.threads || []).map((x) => x.id));
+  const cards = list.map((thT) => threadCard(thT, privateIds.has(thT.id), list));
+  return block(t("today.threads"), null, el("div", { class: "threads-grid" }, cards));
+}
+
 // AI-News-Radar-style numeric overview: fresh count, totals, source health,
 // language split, favorites. Computed client-side from loaded sections so
 // encrypted-section counts never leak into public files.
@@ -356,7 +491,7 @@ function renderTheType(container, favs) {
   if (grid) hero.appendChild(grid);
   container.appendChild(hero);
 
-  const highlights = highlightsBlock({ favs });
+  const highlights = threadsBlock() || highlightsBlock({ favs });
   if (highlights) {
     highlights.classList.add("nd-fadein", "nd-fadein-d1");
     container.appendChild(highlights);
@@ -409,7 +544,7 @@ export async function render(container) {
   const strip = overviewStrip(favs ? favs.size : null);
   if (strip) container.appendChild(strip);
   const cardOpts = { favs };
-  const blocks = [highlightsBlock(cardOpts), todaysImageBlock(),
+  const blocks = [threadsBlock() || highlightsBlock(cardOpts), todaysImageBlock(),
                   storiesBlock(cardOpts), papersBlock(cardOpts), followingBlock(cardOpts)]
     .filter(Boolean);
   const apropos = aproposOfNothingBlock();

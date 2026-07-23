@@ -65,18 +65,45 @@ async function loadInsights(manifest, key) {
   }
 }
 
+// AI "Threads · 线索" — two independent scopes, each a sibling file (like
+// insights): public (threads_file, may be plaintext or .enc.json when the
+// site is private) and private-scope (threads_private_file, always encrypted,
+// key-only). Any failure leaves that slot null (console.error only). Returns
+// { public, private }.
+async function loadThreads(manifest, key) {
+  const load = async (file, sectionId, keyRequired) => {
+    if (!file) return null;
+    if (keyRequired && !key) return null;
+    try {
+      const doc = await fetchData(file, manifest.build_id);
+      if (!file.endsWith(".enc.json")) return doc;
+      if (!key) return null;
+      return await decryptEnvelope(doc, key, sectionId);
+    } catch (err) {
+      console.error(`${sectionId}:`, err);
+      return null;
+    }
+  };
+  const [pub, priv] = await Promise.all([
+    load(manifest.threads_file, "threads", false),
+    load(manifest.threads_private_file, "threads-private", true),
+  ]);
+  return { public: pub, private: priv };
+}
+
 // (Re)load all sections. Called at boot and again after unlock/lock.
 export async function loadAllSections() {
   const { manifest, cryptoKey } = get();
   if (!manifest || !Array.isArray(manifest.sections)) return;
-  const [results, sourceStatus, insights] = await Promise.all([
+  const [results, sourceStatus, insights, threads] = await Promise.all([
     Promise.all(manifest.sections.map((e) => loadSection(e, manifest, cryptoKey))),
     loadSourceStatus(manifest, cryptoKey),
     loadInsights(manifest, cryptoKey),
+    loadThreads(manifest, cryptoKey),
   ]);
   const sections = {};
   for (const r of results) sections[r.entry.id] = r;
-  set({ sections, sourceStatus, insights });
+  set({ sections, sourceStatus, insights, threads });
 }
 
 export async function loadArticle(item) {
@@ -107,5 +134,13 @@ export function dropDecrypted() {
     ? null : get().sourceStatus;
   const insights = manifest?.insights_file?.endsWith(".enc.json")
     ? null : get().insights;
-  set({ sections, sourceStatus, insights });
+  // Private-scope threads are always encrypted → drop on lock. Public threads
+  // drop only when their file is encrypted (site visibility:"private").
+  const prevThreads = get().threads;
+  const threads = {
+    public: manifest?.threads_file?.endsWith(".enc.json")
+      ? null : (prevThreads?.public ?? null),
+    private: null,
+  };
+  set({ sections, sourceStatus, insights, threads });
 }

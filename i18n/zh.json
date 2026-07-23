@@ -84,7 +84,13 @@
     "photoOfTheDay": "今日一图",
     "aproposTitle": "无关一则",
     "aproposKicker": "大概与你无关",
-    "aproposSource": "来源"
+    "aproposSource": "来源",
+    "threads": "线索 · Threads",
+    "threadsWhyNow": "为何此刻 —",
+    "threadsTouches": "关联：",
+    "threadConvergent": "汇聚",
+    "threadMixed": "杂声",
+    "threadDivergent": "分歧"
   },
   "overview": {
     "newToday": "今日新增",

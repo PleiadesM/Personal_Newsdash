@@ -37,6 +37,15 @@
         "max_per_source": { "type": "integer", "minimum": 1 }
       }
     },
+    "threads": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "max_threads": { "type": "integer", "minimum": 2, "maximum": 6 },
+        "include_private": { "type": "boolean" }
+      }
+    },
     "sections": {
       "type": "array",
       "items": {

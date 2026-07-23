@@ -38,6 +38,7 @@ from newsdash.output import read_json, remove_if_exists, write_json
 from newsdash.scoring import apply_tags, score_item
 from newsdash.status import StatusAccumulator
 from newsdash.summarize import summarize
+from newsdash.threads import generate_threads
 from newsdash.todays_image import caption_todays_image, find_todays_image
 
 FUTURE_SLACK_SECONDS = 2 * 3600  # tolerate slightly future-dated feed items
@@ -219,6 +220,7 @@ def main(argv=None) -> None:
         }
 
     payloads: dict[str, dict] = {}
+    section_categories: dict[str, str] = {}
     manifest_sections: list[dict] = []
     section_meta = {m.id: m for m in cfg.site.sections}
     shutil.rmtree(out_dir / ARTICLE_ROOT, ignore_errors=True)
@@ -231,6 +233,7 @@ def main(argv=None) -> None:
         kind = meta.kind if (meta and meta.kind) else SECTION_KINDS.get(section, "news")
         sources = cfg.sources_for_section(section)
         category = section_category(sources)
+        section_categories[section] = category
         sec_status = status.section_status(section)
         encrypted = encrypt_all or category == "private"
 
@@ -352,6 +355,72 @@ def main(argv=None) -> None:
                 insights_file = insights_plain.name
             print(f"[insights] -> {insights_file}")
 
+    # ---- Threads · 线索 (LLM keyword aggregation) -----------------------
+    # Two isolated scopes, one bilingual call each. Public reads only
+    # non-private-category payloads; private (opt-in) reads only
+    # category:"private" payloads and is written encrypted-only, never as
+    # plaintext. Never runs during --smoke. Log discipline on the private
+    # path lives in threads.generate_threads (detail-free errors); the only
+    # two lines this block prints for the private scope are the allowed
+    # "[threads:private] written" on success and nothing on a skip.
+    threads_file = None
+    threads_private_file = None
+    threads_plain = out_dir / "threads.json"
+    threads_enc = out_dir / "threads.enc.json"
+    threads_private_enc = out_dir / "threads-private.enc.json"
+    if not args.smoke and cfg.site.threads.enabled:
+        public_payloads = {
+            s: p for s, p in payloads.items()
+            if section_categories.get(s) != "private"
+        }
+        result = generate_threads(
+            public_payloads, env, ctx.session,
+            scope="public", max_threads=cfg.site.threads.max_threads)
+        if result:
+            payload = {
+                "meta": {"generated_at": generated_at, "scope": "public",
+                         "count": len(result["threads"])},
+                "threads": result["threads"],
+            }
+            if encrypt_all:
+                write_json(threads_enc,
+                           crypto.encrypt_json(payload, "threads", key, salt))
+                threads_file = threads_enc.name
+            else:
+                write_json(threads_plain, payload)
+                threads_file = threads_plain.name
+            print(f"[threads] -> {threads_file}")
+
+        # Private scope is opt-in AND requires a key (guarded above: a
+        # passphrase is present whenever a private section is active).
+        if cfg.site.threads.include_private and key is not None:
+            private_payloads = {
+                s: p for s, p in payloads.items()
+                if section_categories.get(s) == "private"
+            }
+            result = generate_threads(
+                private_payloads, env, ctx.session,
+                scope="private", max_threads=cfg.site.threads.max_threads)
+            if result:
+                payload = {
+                    "meta": {"generated_at": generated_at, "scope": "private",
+                             "count": len(result["threads"])},
+                    "threads": result["threads"],
+                }
+                write_json(threads_private_enc, crypto.encrypt_json(
+                    payload, "threads-private", key, salt))
+                threads_private_file = threads_private_enc.name
+                print("[threads:private] written")
+
+    # Stale-file hygiene: any of the three variants not written this run must
+    # not survive from a previous build in the output dir.
+    if threads_file != threads_plain.name:
+        remove_if_exists(threads_plain)
+    if threads_file != threads_enc.name:
+        remove_if_exists(threads_enc)
+    if threads_private_file is None:
+        remove_if_exists(threads_private_enc)
+
     # ---- archive (open + optional items only; never private data) -------
     previous = load_previous_archive(out_dir, passphrase)
     archive_map = {
@@ -360,6 +429,12 @@ def main(argv=None) -> None:
         if isinstance(d, dict) and "id" in d
     }
     for section, payload in payloads.items():
+        # Never let private-category items into the archive: it is written as
+        # plaintext archive.json whenever site visibility is "public" (only a
+        # private *section* is active), so mixing them in would leak private
+        # titles/summaries in cleartext. Honors this block's stated contract.
+        if section_categories.get(section) == "private":
+            continue
         for item in payload.get("items", []):
             archive_map[item["id"]] = archive_item(item)
     cutoff = now.timestamp() - win.archive_days * 86400
@@ -414,6 +489,11 @@ def main(argv=None) -> None:
     )
     manifest["source_status_file"] = status_file
     manifest["insights_file"] = insights_file
+    # Nullable existence flags, set like insights_file. A non-null private
+    # field reveals only that private threads exist — the same disclosure
+    # class as the private entry already in sections[].
+    manifest["threads_file"] = threads_file
+    manifest["threads_private_file"] = threads_private_file
     manifest["ai_summary"] = {
         "enabled": bool(env.get("LLM_API_KEY", "").strip())
         and env.get("LLM_SUMMARY_ENABLED") != "0"

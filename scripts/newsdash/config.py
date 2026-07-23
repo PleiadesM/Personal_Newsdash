@@ -79,6 +79,17 @@ class Ranking:
 
 
 @dataclass
+class Threads:
+    # "Threads · 线索": the optional LLM keyword-aggregation block. Bounds on
+    # max_threads (2..6) are enforced by config/schema/site.schema.json.
+    # include_private is an explicit consent gate: private-section titles and
+    # summaries are only sent to the configured LLM endpoint when it is true.
+    enabled: bool = True
+    max_threads: int = 6
+    include_private: bool = False
+
+
+@dataclass
 class SectionMeta:
     """Friendly, orderable metadata for a nav tab (section).
 
@@ -104,6 +115,7 @@ class SiteConfig:
     windows: Windows
     ranking: Ranking
     sections: list[SectionMeta] = field(default_factory=list)
+    threads: Threads = field(default_factory=Threads)
 
 
 @dataclass
@@ -322,6 +334,7 @@ def load_site(repo_root: Path) -> SiteConfig:
     if rank.max_per_source < 1:
         raise ConfigError("config/site.json: ranking.max_per_source must be >= 1")
     sections = _parse_sections(doc.get("sections", []))
+    threads = Threads(**doc.get("threads", {}))
     return SiteConfig(
         title=doc["title"],
         subtitle=doc.get("subtitle", ""),
@@ -333,6 +346,7 @@ def load_site(repo_root: Path) -> SiteConfig:
         windows=win,
         ranking=rank,
         sections=sections,
+        threads=threads,
     )
 
 

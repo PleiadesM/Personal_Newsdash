@@ -8,6 +8,7 @@ const state = {
   sections: {},        // id -> { entry, status, payload|null, locked }
   sourceStatus: null,  // decoded source-status payload or null
   insights: null,      // decoded insights payload (AI brief/summaries/image) or null
+  threads: null,       // { public: payload|null, private: payload|null } — AI "Threads · 线索"
   unlocked: false,
   cryptoKey: null,     // in-memory CryptoKey while unlocked
   lang: "en",

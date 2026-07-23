@@ -91,7 +91,13 @@ export const FALLBACK_EN = {
     "photoOfTheDay": "Photo of the Day",
     "aproposTitle": "Apropos-of-Nothing",
     "aproposKicker": "Not for you, probably",
-    "aproposSource": "Source"
+    "aproposSource": "Source",
+    "threads": "Threads · 线索",
+    "threadsWhyNow": "Why now —",
+    "threadsTouches": "touches:",
+    "threadConvergent": "convergent",
+    "threadMixed": "mixed",
+    "threadDivergent": "divergent"
   },
   "overview": {
     "newToday": "New today",

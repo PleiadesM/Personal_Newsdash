@@ -72,6 +72,32 @@ def rss_with_full_text(url="https://a.example/story"):
 </item></channel></rss>"""
 
 
+def simple_rss(title, url):
+    pub = format_datetime(datetime.now(timezone.utc), usegmt=True)
+    return f"""<?xml version="1.0"?>
+<rss version="2.0"><channel><title>T</title>
+<item><title>{title}</title><link>{url}</link>
+<pubDate>{pub}</pubDate><description>{title} — summary</description></item>
+</channel></rss>"""
+
+
+def basic_thread(items=(1, 2), keyword=None):
+    return {
+        "keyword": keyword or {"en": "kw", "zh": "关键"},
+        "gloss": {"en": "a gloss", "zh": "释义"},
+        "why_now": {"en": "now", "zh": "此刻"},
+        "convergence": "convergent",
+        "angles": [{"item": n, "phrase": {"en": "angle", "zh": "角度"}}
+                   for n in items],
+    }
+
+
+def threads_completion(threads=None):
+    threads = threads if threads is not None else [basic_thread(), basic_thread()]
+    return {"choices": [{"message":
+            {"content": json.dumps({"threads": threads})}}]}
+
+
 def test_smoke_zero_secret(tmp_path, monkeypatch, repo_root):
     for var in ("NEWSDASH_PASSPHRASE", "LLM_API_KEY", "SMITHSONIAN_API_KEY"):
         monkeypatch.delenv(var, raising=False)
@@ -94,6 +120,12 @@ def test_smoke_zero_secret(tmp_path, monkeypatch, repo_root):
     assert (out / "archive.json").exists()
     assert manifest["insights_file"] is None
     assert manifest["ai_summary"] == {"enabled": False}
+    # Threads never run during --smoke: nullable fields present-and-null, no files
+    assert manifest["threads_file"] is None
+    assert manifest["threads_private_file"] is None
+    assert not (out / "threads.json").exists()
+    assert not (out / "threads.enc.json").exists()
+    assert not (out / "threads-private.enc.json").exists()
 
 
 def test_smoke_never_calls_llm_or_smithsonian_even_with_keys_set(tmp_path, monkeypatch):
@@ -109,6 +141,10 @@ def test_smoke_never_calls_llm_or_smithsonian_even_with_keys_set(tmp_path, monke
     assert manifest["ai_summary"] == {"enabled": True}  # key present -> "configured"
     assert not (out / "insights.json").exists()
     assert not (out / "insights.enc.json").exists()
+    # --smoke must not call the LLM for threads either, even with a key set
+    assert manifest["threads_file"] is None
+    assert manifest["threads_private_file"] is None
+    assert not (out / "threads.json").exists()
 
 
 def test_smoke_with_private_secrets(tmp_path, monkeypatch, make_repo):
@@ -230,6 +266,42 @@ def test_private_visibility_encrypts_everything(tmp_path, monkeypatch, make_repo
     assert (out / "archive.enc.json").exists()
 
 
+def test_smoke_custom_section_carries_label_kind_and_orders(tmp_path, monkeypatch, make_repo):
+    # A custom section ("ai") with site.json metadata: the manifest entry must
+    # carry the bilingual label + the overridden kind, and ordered entries must
+    # sort ahead of unordered ones.
+    monkeypatch.delenv("NEWSDASH_PASSPHRASE", raising=False)
+    root = make_repo(
+        site={
+            "schema_version": 1, "title": "T", "visibility": "public",
+            "languages": ["en", "zh"], "default_language": "en",
+            "theme": "bear", "timezone": "UTC",
+            "sections": [
+                {"id": "ai", "label": {"en": "AI", "zh": "AI 前沿"},
+                 "order": 1, "kind": "news"},
+            ],
+        },
+        sources={"schema_version": 1, "presets": [], "sources": [
+            {"id": "world", "type": "rss", "section": "news",
+             "name": "World", "url": "https://a.example/feed.xml"},
+            {"id": "ai_feed", "type": "rss", "section": "ai",
+             "name": "AI Feed", "url": "https://b.example/feed.xml"},
+        ]},
+    )
+    out = tmp_path / "data"
+    build_mod.main(["--output-dir", str(out), "--smoke", "--repo-root", str(root)])
+
+    manifest = read(out / "manifest.json")
+    by_id = {s["id"]: s for s in manifest["sections"]}
+    assert by_id["ai"]["label"] == {"en": "AI", "zh": "AI 前沿"}
+    assert by_id["ai"]["kind"] == "news"
+    # built-in "news" section stays label-free
+    assert "label" not in by_id["news"]
+    # the ordered section (order=1) sorts ahead of the unordered "news"
+    ids = [s["id"] for s in manifest["sections"]]
+    assert ids.index("ai") < ids.index("news")
+
+
 @responses.activate
 def test_build_writes_bilingual_insights(tmp_path, monkeypatch, make_repo):
     monkeypatch.setenv("LLM_API_KEY", "sk-test")
@@ -253,6 +325,8 @@ def test_build_writes_bilingual_insights(tmp_path, monkeypatch, make_repo):
     responses.get("https://api.gdeltproject.org/api/v2/doc/doc",
                   json=gdelt_apropos_response())
     responses.post(CHAT_URL, json=apropos_summary_completion())
+    # Threads runs last in the enrichment block (after summarize en/zh + apropos)
+    responses.post(CHAT_URL, json=threads_completion())
     root = make_repo(sources={"schema_version": 1, "presets": [], "sources": [
         {"id": "feed_en", "type": "rss", "section": "news",
          "name": "A", "url": "https://a.example/feed.xml", "lang": "en"},
@@ -264,6 +338,12 @@ def test_build_writes_bilingual_insights(tmp_path, monkeypatch, make_repo):
 
     manifest = read(out / "manifest.json")
     assert manifest["insights_file"] == "insights.json"
+    assert manifest["threads_file"] == "threads.json"
+    assert manifest["threads_private_file"] is None
+    threads = read(out / "threads.json")
+    assert threads["meta"]["scope"] == "public"
+    assert len(threads["threads"]) == 2
+    assert threads["threads"][0]["id"] == "t1"
     insights = read(out / "insights.json")
     assert insights["summaries"]["en"] == {
         "brief": "EN brief", "news_summary": "EN news", "papers_summary": "EN papers",
@@ -342,36 +422,187 @@ def test_private_visibility_encrypts_article_files(tmp_path, monkeypatch, make_r
     assert status["sources"][0]["full_text_count"] == 1
 
 
-def test_smoke_custom_section_carries_label_kind_and_orders(tmp_path, monkeypatch, make_repo):
-    # A custom section ("ai") with site.json metadata: the manifest entry must
-    # carry the bilingual label + the overridden kind, and ordered entries must
-    # sort ahead of unordered ones.
-    monkeypatch.delenv("NEWSDASH_PASSPHRASE", raising=False)
-    root = make_repo(
+# ---- Threads · 线索 build integration -----------------------------------
+
+PRIVATE_MARKER = "ZZMARKERPRIVATECAREER"
+
+
+def _threads_repo(make_repo, *, include_private, visibility="public"):
+    """Two public news feeds + two private career feeds; LLM summary/apropos
+    disabled so the only LLM calls a build makes are the threads call(s)."""
+    return make_repo(
         site={
-            "schema_version": 1, "title": "T", "visibility": "public",
+            "schema_version": 1, "title": "T", "visibility": visibility,
             "languages": ["en", "zh"], "default_language": "en",
             "theme": "bear", "timezone": "UTC",
-            "sections": [
-                {"id": "ai", "label": {"en": "AI", "zh": "AI 前沿"},
-                 "order": 1, "kind": "news"},
-            ],
+            "sections": [{"id": "career", "label": {"en": "Career", "zh": "求职"}}],
+            "threads": {"enabled": True, "max_threads": 6,
+                        "include_private": include_private},
         },
         sources={"schema_version": 1, "presets": [], "sources": [
-            {"id": "world", "type": "rss", "section": "news",
-             "name": "World", "url": "https://a.example/feed.xml"},
-            {"id": "ai_feed", "type": "rss", "section": "ai",
-             "name": "AI Feed", "url": "https://b.example/feed.xml"},
+            {"id": "pub_a", "type": "rss", "section": "news",
+             "name": "PubA", "url": "https://pa.example/feed.xml"},
+            {"id": "pub_b", "type": "rss", "section": "news",
+             "name": "PubB", "url": "https://pb.example/feed.xml"},
+            {"id": "career_a", "category": "private", "type": "rss",
+             "section": "career", "name": "CareerA",
+             "secret_ref": ["SRC_CAREER_A_URL"], "enabled": "auto"},
+            {"id": "career_b", "category": "private", "type": "rss",
+             "section": "career", "name": "CareerB",
+             "secret_ref": ["SRC_CAREER_B_URL"], "enabled": "auto"},
         ]},
     )
-    out = tmp_path / "data"
-    build_mod.main(["--output-dir", str(out), "--smoke", "--repo-root", str(root)])
+
+
+def _threads_env(monkeypatch, *, passphrase=None):
+    # Kill summary + apropos + today's image so only the threads call(s) hit
+    # the LLM; keep threads on with a key present.
+    monkeypatch.setenv("LLM_API_KEY", "sk-test")
+    monkeypatch.setenv("LLM_SUMMARY_ENABLED", "0")
+    monkeypatch.delenv("SMITHSONIAN_API_KEY", raising=False)
+    if passphrase:
+        monkeypatch.setenv("NEWSDASH_PASSPHRASE", passphrase)
+    else:
+        monkeypatch.delenv("NEWSDASH_PASSPHRASE", raising=False)
+
+
+def _mock_threads_feeds(private=True):
+    responses.get("https://pa.example/feed.xml",
+                  body=simple_rss("Public story A", "https://pa.example/a"))
+    responses.get("https://pb.example/feed.xml",
+                  body=simple_rss("Public story B", "https://pb.example/b"))
+    if private:
+        responses.get("https://feeds.example/cap/aaaa",
+                      body=simple_rss(PRIVATE_MARKER, "https://jobs.example/1"))
+        responses.get("https://feeds.example/cap/bbbb",
+                      body=simple_rss("Career posting two", "https://jobs.example/2"))
+
+
+@responses.activate
+def test_threads_opt_in_private_encrypts_and_isolates(tmp_path, monkeypatch, make_repo):
+    passphrase = "correct horse battery staple"
+    _threads_env(monkeypatch, passphrase=passphrase)
+    monkeypatch.setenv("SRC_CAREER_A_URL", "https://feeds.example/cap/aaaa")
+    monkeypatch.setenv("SRC_CAREER_B_URL", "https://feeds.example/cap/bbbb")
+    _mock_threads_feeds()
+    # public threads call first, then the private one (build order)
+    responses.post(CHAT_URL, json=threads_completion())
+    responses.post(CHAT_URL, json=threads_completion())
+
+    out = tmp_path / "d"
+    build_mod.main(["--output-dir", str(out), "--repo-root",
+                    str(_threads_repo(make_repo, include_private=True))])
+
     manifest = read(out / "manifest.json")
-    by_id = {s["id"]: s for s in manifest["sections"]}
-    assert by_id["ai"]["label"] == {"en": "AI", "zh": "AI 前沿"}
-    assert by_id["ai"]["kind"] == "news"
-    # built-in "news" section stays label-free
-    assert "label" not in by_id["news"]
-    # the ordered section (order=1) sorts ahead of the unordered "news"
-    ids = [s["id"] for s in manifest["sections"]]
-    assert ids.index("ai") < ids.index("news")
+    assert manifest["threads_file"] == "threads.json"
+    assert manifest["threads_private_file"] == "threads-private.enc.json"
+
+    # private threads decrypt only under their own AAD; no plaintext variant
+    assert not (out / "threads-private.json").exists()
+    payload = crypto.decrypt_json(
+        read(out / "threads-private.enc.json"), passphrase, "threads-private")
+    assert payload["meta"]["scope"] == "private"
+    assert payload["threads"][0]["id"] == "p1"
+
+    # the private marker title is byte-absent from every plaintext file
+    needle = PRIVATE_MARKER.encode("utf-8")
+    scanned = 0
+    for path in out.rglob("*"):
+        if path.is_file() and not path.name.endswith(".enc.json"):
+            assert needle not in path.read_bytes(), f"marker leaked into {path.name}"
+            scanned += 1
+    assert scanned > 0
+
+    # the private title reaches only the private LLM request, never the public
+    def body_text(call):
+        b = call.request.body
+        return b.decode("utf-8") if isinstance(b, bytes) else b
+    assert PRIVATE_MARKER not in body_text(responses.calls[-2])
+    assert PRIVATE_MARKER in body_text(responses.calls[-1])
+
+
+@responses.activate
+def test_threads_private_default_off_makes_no_private_call(tmp_path, monkeypatch, make_repo):
+    passphrase = "correct horse battery staple"
+    _threads_env(monkeypatch, passphrase=passphrase)
+    monkeypatch.setenv("SRC_CAREER_A_URL", "https://feeds.example/cap/aaaa")
+    monkeypatch.setenv("SRC_CAREER_B_URL", "https://feeds.example/cap/bbbb")
+    _mock_threads_feeds()
+    responses.post(CHAT_URL, json=threads_completion())  # public only
+
+    out = tmp_path / "d"
+    build_mod.main(["--output-dir", str(out), "--repo-root",
+                    str(_threads_repo(make_repo, include_private=False))])
+
+    manifest = read(out / "manifest.json")
+    assert manifest["threads_file"] == "threads.json"
+    assert manifest["threads_private_file"] is None
+    assert not (out / "threads-private.enc.json").exists()
+    # exactly one LLM call — the public threads call — was made
+    assert sum(1 for c in responses.calls if c.request.url == CHAT_URL) == 1
+
+
+@responses.activate
+def test_threads_private_visibility_encrypts_public_threads(tmp_path, monkeypatch, make_repo):
+    passphrase = "four random words here"
+    _threads_env(monkeypatch, passphrase=passphrase)
+    responses.get("https://pa.example/feed.xml",
+                  body=simple_rss("Public story A", "https://pa.example/a"))
+    responses.get("https://pb.example/feed.xml",
+                  body=simple_rss("Public story B", "https://pb.example/b"))
+    responses.post(CHAT_URL, json=threads_completion())
+
+    root = make_repo(
+        site={"schema_version": 1, "title": "T", "visibility": "private",
+              "languages": ["en", "zh"], "default_language": "en",
+              "theme": "bear", "timezone": "UTC",
+              "threads": {"enabled": True}},
+        sources={"schema_version": 1, "presets": [], "sources": [
+            {"id": "pub_a", "type": "rss", "section": "news",
+             "name": "PubA", "url": "https://pa.example/feed.xml"},
+            {"id": "pub_b", "type": "rss", "section": "news",
+             "name": "PubB", "url": "https://pb.example/feed.xml"},
+        ]},
+    )
+    out = tmp_path / "d"
+    build_mod.main(["--output-dir", str(out), "--repo-root", str(root)])
+
+    manifest = read(out / "manifest.json")
+    assert manifest["threads_file"] == "threads.enc.json"
+    assert not (out / "threads.json").exists()
+    payload = crypto.decrypt_json(
+        read(out / "threads.enc.json"), passphrase, "threads")
+    assert payload["meta"]["scope"] == "public"
+
+
+@responses.activate
+def test_threads_http_error_leaves_no_file_and_clears_stale(tmp_path, monkeypatch, make_repo):
+    _threads_env(monkeypatch)  # no passphrase; public only
+    responses.get("https://pa.example/feed.xml",
+                  body=simple_rss("Public story A", "https://pa.example/a"))
+    responses.get("https://pb.example/feed.xml",
+                  body=simple_rss("Public story B", "https://pb.example/b"))
+    responses.post(CHAT_URL, status=500)
+
+    out = tmp_path / "d"
+    out.mkdir(parents=True)
+    (out / "threads.json").write_text('{"stale": true}', encoding="utf-8")  # prior build
+
+    root = make_repo(
+        site={"schema_version": 1, "title": "T", "visibility": "public",
+              "languages": ["en", "zh"], "default_language": "en",
+              "theme": "bear", "timezone": "UTC", "threads": {"enabled": True}},
+        sources={"schema_version": 1, "presets": [], "sources": [
+            {"id": "pub_a", "type": "rss", "section": "news",
+             "name": "PubA", "url": "https://pa.example/feed.xml"},
+            {"id": "pub_b", "type": "rss", "section": "news",
+             "name": "PubB", "url": "https://pb.example/feed.xml"},
+        ]},
+    )
+    build_mod.main(["--output-dir", str(out), "--repo-root", str(root)])
+
+    manifest = read(out / "manifest.json")
+    assert manifest["status"] == "ok"  # a threads failure never fails the build
+    assert manifest["threads_file"] is None
+    assert manifest["threads_private_file"] is None
+    assert not (out / "threads.json").exists(), "stale threads.json must be swept"

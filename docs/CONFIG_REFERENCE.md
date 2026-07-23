@@ -33,6 +33,7 @@ what's wrong.
 | `windows.*` | integers | See overview table; schema enforces sane ranges |
 | `ranking.*` | object | Homepage "Highlights" variety knobs — see §2a |
 | `sections` | array | Friendly bilingual nav-tab labels + ordering for custom sections — see §2b |
+| `threads.*` | object | "Threads · 线索" AI keyword-aggregation block (replaces Highlights when live) — see §2c |
 
 ### 2a. `ranking` — the homepage Highlights block
 
@@ -75,6 +76,25 @@ that doesn't materialize is ignored.
 Label display falls back `label[activeLang]` → `label.en` → `label.zh` →
 the i18n key `nav.<id>` → the raw id. Full clustering guidance and the proposal format:
 `skills/newsdash/references/categories.md`.
+
+### 2c. `threads` — "Threads · 线索" AI keyword-aggregation block
+
+```json
+"threads": { "enabled": true, "max_threads": 6, "include_private": false }
+```
+
+| Key | Values | Default | Effect |
+|---|---|---|---|
+| `threads.enabled` | boolean | `true` | Build the LLM-generated **Threads** block. Only takes effect when `LLM_API_KEY` is configured (§4a) and never runs during `--smoke`; when off, absent a key, or the model returns fewer than 2 usable threads, the frontend falls back to the existing Highlights block per `site.ranking` (§2a) |
+| `threads.max_threads` | integer, `2`–`6` | `6` | Upper bound on threads per build (schema-enforced range) |
+| `threads.include_private` | boolean | `false` | **Explicit consent gate.** Enabling this sends your private-section item titles and summaries to your configured LLM endpoint (§4a) as part of a second, fully separated call — still your own key and endpoint, but it is still third-party network traffic leaving your infrastructure. Output is always written encrypted-only (`threads-private.enc.json`); there is no plaintext variant, regardless of site `visibility` |
+
+Threads replaces the client-computed Highlights block on Today: up to
+`max_threads` keyword-themes the build's LLM found at least two different
+sources converging on today, each with a bilingual gloss, a "why now" line,
+a convergence verdict, and per-source angles linking back to the underlying
+items. See `docs/DATA_CONTRACT.md`'s `threads.json` section for the exact
+payload shape and the public/private scope split.
 
 ## 3. `config/sources.json`
 
@@ -185,7 +205,7 @@ it unset and the source skips cleanly with `skip_reason: "not_configured"`
 <id> (set secret: SRC_…)` hint. The `<ID>_ENABLED=0` kill switch still
 overrides everything, private sources included.
 
-### 4a. Optional AI enrichment (daily brief + Today's Image + Apropos-of-Nothing)
+### 4a. Optional AI enrichment (daily brief + Today's Image + Apropos-of-Nothing + Threads)
 
 Not a source — a build-time bolt-on, off by default, no config-file
 surface at all (every knob is an env var, read the same way
@@ -201,6 +221,7 @@ build, never per visitor — budget-gated by design.
 |---|---|
 | `LLM_API_KEY` | Language-specific AI daily briefs after the greeting, one-line summaries inside "Top stories" and "Top papers," and an "Apropos-of-Nothing" card at the end of Today that links to one intentionally off-profile public-news item |
 | `LLM_API_KEY` **and** `SMITHSONIAN_API_KEY` | The above, plus a "Today's Image" block: a public-domain image from the [Smithsonian Open Access API](https://www.si.edu/openaccess) loosely/creatively matched to the day's content, with a one-sentence AI caption and a source link |
+| `LLM_API_KEY` (plus `threads.enabled`, default on) | A "Threads · 线索" block on Today: up to `threads.max_threads` bilingual keyword-themes where ≥2 different sources converge today, replacing the client-computed Highlights block. Set `threads.include_private: true` to also run a fully separated, encrypted-only call over your private sections (§2c) |
 
 `LLM_API_KEY` targets any OpenAI-Chat-Completions-compatible endpoint
 (`{LLM_BASE_URL}/chat/completions`, `Authorization: Bearer`) — OpenAI,
@@ -221,19 +242,25 @@ Hard guarantees:
   dashboard.
 - Generates English and Chinese summaries separately. Each summary sees both
   English and Chinese inputs, but prioritizes the active target language.
+- Threads makes exactly **one bilingual call per scope** per build (one for
+  public, and — only when `threads.include_private` is on — a second, fully
+  separated call over private-category input only); it never runs during
+  `--smoke`, and falls back to the Highlights block whenever it's off,
+  keyless, or the model returns fewer than 2 usable threads.
 - **Never** during `--smoke` (no network calls at all), regardless of which
   keys are set.
 - Only images the Smithsonian explicitly marks `usage.access: "CC0"` are
   ever shown — a rights-uncertain result is treated as no image.
 - Follows the exact same public/private encryption rule as every other
   section: plaintext when `visibility: "public"`, encrypted when
-  `visibility: "private"`.
+  `visibility: "private"`. Private-scope Threads output is the one
+  exception — always encrypted-only, even when site `visibility: "public"`.
 - `LLM_SUMMARY_ENABLED=0` / `TODAYS_IMAGE_ENABLED=0` /
-  `APROPOS_OF_NOTHING_ENABLED=0` (Variables) force individual AI features
-  off without removing the key.
+  `APROPOS_OF_NOTHING_ENABLED=0` / `LLM_THREADS_ENABLED=0` (Variables) force
+  individual AI features off without removing the key.
 
-See `docs/DATA_CONTRACT.md`'s `insights.json` section for the exact payload
-shape.
+See `docs/DATA_CONTRACT.md`'s `insights.json` and `threads.json` sections
+for the exact payload shapes.
 
 ## 5. Preset packs (`config/presets/<id>.json`)
 
@@ -272,7 +299,7 @@ never fires on a BBC story.
 | `<ID>_ENABLED` | Variable | `0` = emergency stop for source `<id>` |
 | `RSS_MAX_FEEDS` | Variable | OPML expansion cap |
 | `LLM_BASE_URL` / `LLM_MODEL` | Variable | AI endpoint + model (§4a) |
-| `LLM_SUMMARY_ENABLED` / `TODAYS_IMAGE_ENABLED` / `APROPOS_OF_NOTHING_ENABLED` | Variable | `0` = emergency stop for an AI feature |
+| `LLM_SUMMARY_ENABLED` / `TODAYS_IMAGE_ENABLED` / `APROPOS_OF_NOTHING_ENABLED` / `LLM_THREADS_ENABLED` | Variable | `0` = emergency stop for an AI feature |
 
 ## 7. "I want to change X" quick table
 
@@ -294,6 +321,9 @@ never fires on a BBC story.
 | Rename / reorder a nav tab | `site.json → sections[]` (§2b) |
 | Turn on AI enrichment | Secret `LLM_API_KEY` (§4a) |
 | Add Today's Image | Secret `SMITHSONIAN_API_KEY` (+ `LLM_API_KEY`) (§4a) |
+| Turn Threads on/off | `site.json → threads.enabled` (default `true`) or Variable `LLM_THREADS_ENABLED=0` (§2c, §4a) |
+| Include private items in Threads | `site.json → threads.include_private: true` (§2c — explicit consent) |
+| Tune thread count | `site.json → threads.max_threads` (2–6, default 6) (§2c) |
 | Stop one source *now* | Variable `<UPPERCASED_SOURCE_ID>_ENABLED=0` |
 | Different theme/language default | `site.json → theme` / `default_language` |
 | Rename the site | `site.json → title` |

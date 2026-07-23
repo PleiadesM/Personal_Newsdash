@@ -198,6 +198,44 @@ def test_top_level_tag_rules_apply_to_feed_sections(make_repo):
     assert all(r.source_ids is None for r in cfg.tag_rules["news"])
 
 
+# ---- threads (Threads · 线索 config) ------------------------------------
+
+
+def test_threads_defaults_when_absent(make_repo):
+    root = make_repo(site=_site())
+    cfg = load_config(root, env={})
+    assert cfg.site.threads.enabled is True
+    assert cfg.site.threads.max_threads == 6
+    assert cfg.site.threads.include_private is False
+
+
+def test_threads_explicit_values_parse(make_repo):
+    root = make_repo(site=_site(threads={
+        "enabled": False, "max_threads": 3, "include_private": True}))
+    cfg = load_config(root, env={})
+    assert cfg.site.threads.enabled is False
+    assert cfg.site.threads.max_threads == 3
+    assert cfg.site.threads.include_private is True
+
+
+def test_threads_max_threads_above_bound_rejected(make_repo):
+    root = make_repo(site=_site(threads={"max_threads": 7}))
+    with pytest.raises(ConfigError):
+        load_config(root, env={})
+
+
+def test_threads_max_threads_below_bound_rejected(make_repo):
+    root = make_repo(site=_site(threads={"max_threads": 1}))
+    with pytest.raises(ConfigError):
+        load_config(root, env={})
+
+
+def test_threads_unknown_key_rejected(make_repo):
+    root = make_repo(site=_site(threads={"bogus": True}))
+    with pytest.raises(ConfigError):
+        load_config(root, env={})
+
+
 # ---- section metadata (custom nav tabs) ---------------------------------
 
 

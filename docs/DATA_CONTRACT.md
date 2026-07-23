@@ -50,6 +50,8 @@ other data file as `<file>?v=<build_id>` — GitHub Pages' CDN caches for
   ],
   "source_status_file": "source-status.json",
   "insights_file": "insights.json",       // AI brief/summaries/image/apropos; null if absent
+  "threads_file": "threads.json",         // public Threads · 线索; null if absent/disabled
+  "threads_private_file": null,           // private-scope Threads (opt-in); null if absent
   "ai_summary": { "enabled": true }        // was LLM_API_KEY configured this run?
 }
 ```
@@ -111,9 +113,12 @@ One JSON object per file:
   fresh random nonce. Derive once per session, decrypt N files.
 - The AAD binds a ciphertext to what you are loading: section files use
   `newsdash:v1:` + section id, source status uses `newsdash:v1:source-status`,
-  insights uses `newsdash:v1:insights`, and full-text article files use
+  insights uses `newsdash:v1:insights`, public Threads uses
+  `newsdash:v1:threads`, private-scope Threads uses
+  `newsdash:v1:threads-private`, and full-text article files use
   `newsdash:v1:article:<section_id>:<item_id>`. Compute this locally; do not
-  trust the envelope's `aad` field (it is informational).
+  trust the envelope's `aad` field (it is informational). (Envelope
+  parameters themselves are unchanged by Threads — no `v` bump.)
 - Verify the passphrase against `manifest.crypto.check` (plaintext is the
   ASCII string `newsdash:ok`, AAD `newsdash:v1:check`) *before* downloading
   data files — instant wrong-passphrase UX.
@@ -301,6 +306,65 @@ writes a short bilingual card for one sourced result. If GDELT is rate-limited
 or no sourced result is available, the field is omitted for that build. No
 visitor browser ever contacts GDELT or the LLM endpoint for this block.
 
+### `threads.json` / `threads.enc.json` / `threads-private.enc.json` — optional AI enrichment
+
+Not a manifest *section* — sibling files pointed to by `manifest.threads_file`
+/ `manifest.threads_private_file` (see above), so neither gets an automatic
+nav tab. **Threads · 线索** replaces the client-computed Highlights block with
+an LLM-generated set of keyword-themes that at least two different sources
+touched today, each with a bilingual gloss, a "why now" occasion line, a
+convergence verdict, and per-source angles that link back to ground-truth
+items. Built only when `site.json → threads.enabled` (default `true`) and
+`LLM_API_KEY` is configured; never runs during `--smoke`; one bilingual LLM
+call per scope.
+
+Two fully separated scopes:
+
+- **public** — input is `open`/`optional`-category sections only. Written as
+  `threads.json` or, when `visibility: "private"`, `threads.enc.json` (AAD
+  `newsdash:v1:threads`).
+- **private** — opt-in via `threads.include_private` (default `false`);
+  input is `category: "private"` sections only. Always written encrypted,
+  regardless of site visibility, as `threads-private.enc.json` (AAD
+  `newsdash:v1:threads-private`) — there is no plaintext variant. Runs only
+  when `include_private`, a passphrase, and `LLM_API_KEY` are all present.
+
+```jsonc
+{
+  "meta": { "generated_at": "…Z", "scope": "public", "count": 5 },
+  "threads": [ {
+      "id": "t1",                           // "t1"…"tN" (public) or "p1"…"pN" (private) — never collide
+      "keyword": { "en": "compute sovereignty", "zh": "算力主权" },
+      "gloss":   { "en": "1–2 light sentences, may be poetic", "zh": "…" },   // ≤240 chars/lang
+      "why_now": { "en": "one-line occasion note", "zh": "…" },               // ≤120 chars/lang
+      "convergence": "convergent",          // "convergent" | "mixed" | "divergent" (invalid model output coerced to "mixed")
+      "relates_to": ["t3"],                 // other thread ids from this same build; may be []
+      "angles": [ {                         // ≥2 entries, resolved against ≥2 distinct sources
+          "item_id": "…", "section": "news", "source": "…",
+          "phrase": { "en": "≤8 words", "zh": "≤16 characters" },
+          "url": "https://…",
+          "full_text_file": "articles/news/….json"   // present iff the resolved item has an in-app reader file
+      } ]
+  } ]
+}
+```
+
+The private variant is identical in shape with `"scope": "private"` and
+thread ids `p1…pN`.
+
+**Anti-hallucination referencing:** the prompt numbers pooled items
+`[1]…[N]`; the model returns angles as integer refs; the pipeline resolves
+every ref against ground truth and fills in `item_id`, `section`, `source`,
+`url`, `full_text_file` itself — the model never supplies these directly.
+Out-of-range refs are dropped, and a thread whose surviving angles resolve to
+fewer than 2 distinct sources is dropped entirely (never trusted from the
+model). Threads are capped at `threads.max_threads` (2–6, default 6).
+
+**Frontend fallback rule:** Threads replaces Highlights. When
+`threads_file` is `null`, the file fails to load, or the loaded payload has
+no threads, the frontend renders the existing Highlights block per
+`site.ranking` instead.
+
 ## Privacy invariants (frontend must uphold)
 
 1. Never write decrypted content or the passphrase to storage. The derived
@@ -321,3 +385,13 @@ visitor browser ever contacts GDELT or the LLM endpoint for this block.
    (`referrerpolicy="no-referrer"`); the AI-generated text has no runtime
    third-party contact at all, baked fully into `insights.json`/`.enc.json`
    at build time.
+6. Private-scope Threads render only while unlocked (`manifest.crypto`
+   present + successful check-block decrypt) — the same gate as any other
+   encrypted section. Public Threads are built exclusively from
+   non-private-category input and never derive from private-section data,
+   even when a private section is active on the same site.
+7. Thread `angles` are deliberately exempt from the content-language filter
+   applied elsewhere to `news`/`papers`/`following`/Today feed blocks —
+   cross-language convergence (a theme two sources touch in different
+   languages) is the point of the feature. Do not "fix" this by filtering
+   angles to the active UI language.

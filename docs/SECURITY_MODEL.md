@@ -59,6 +59,14 @@ Every `*.enc.json` file is one envelope:
   public repo, **Actions logs are public**.
 - `source-status.json` shows private sources only as an aggregate
   (`configured n of m`); their detail rides inside the encrypted payloads.
+- **Hardening note:** the rolling `archive.json`/`.enc.json` loop now
+  explicitly skips any section whose category is `private` before folding
+  items into the archive map. Previously it did not filter by category —
+  once a private section existed on a `visibility: "public"` site, its
+  items would have been archived into the *plaintext* `archive.json`
+  alongside open/optional items, leaking private titles/summaries in
+  cleartext. Fixed in the same round Threads shipped (v0.3.0); see
+  `scripts/build.py`'s archive block.
 
 ### 3a. Per-source secret transport
 
@@ -109,6 +117,28 @@ and/or `SMITHSONIAN_API_KEY` — see `docs/CONFIG_REFERENCE.md` §4a:
 Both features are off unless you explicitly add the relevant secret, and
 both fail silently (skip, never crash the build) if the endpoint is
 unreachable or misbehaves.
+
+### 3c. Private-scope Threads (opt-in, off by default)
+
+"Threads · 线索" (§4a of `docs/CONFIG_REFERENCE.md`) runs its **public**
+scope over `open`/`optional` items only — the same egress shape as the
+daily brief above. Its **private** scope is a separate, explicit opt-in
+(`threads.include_private`, default `false`) with a stricter contract:
+
+- **Input isolation.** The private-scope LLM call is built from
+  `category: "private"` payloads only — it never sees `open`/`optional`
+  items, and the public-scope call never sees private items. The two
+  scopes are separately pooled, separately prompted, and separately posted.
+- **Encrypted-only output.** The private-scope result is written *only* to
+  `data/threads-private.enc.json` under AAD `newsdash:v1:threads-private`.
+  There is no plaintext code path for it — unlike every other section,
+  which follows site `visibility`, this file is always ciphertext even on
+  a `visibility: "public"` site.
+- **Log discipline.** The private path's error handling prints exactly one
+  of two lines, both detail-free, because Actions logs on a public repo are
+  public: `[threads:private] written` on success, or
+  `[threads:private] error: <ExceptionTypeName> (detail withheld)` on
+  failure — never an HTTP status, response body, item title, or count.
 
 ## 4. Browser side
 

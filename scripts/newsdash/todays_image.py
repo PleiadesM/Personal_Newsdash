@@ -19,6 +19,7 @@ from typing import Mapping
 import requests
 
 from .http import get
+from .llm import resolve_endpoint
 
 API_BASE = "https://api.si.edu/openaccess/api/v1.0/"
 CAPTION_TIMEOUT = 30
@@ -94,11 +95,7 @@ def caption_todays_image(image: dict, top_story_title: str, env: Mapping[str, st
     api_key = env.get("LLM_API_KEY", "").strip()
     if not api_key:
         return None
-    # `or default`, not `.get(key, default)` — see summarize.py's comment:
-    # GitHub Actions emits an empty-string env var, not an absent one, when
-    # a referenced `vars.X` doesn't exist in the repo.
-    base_url = (env.get("LLM_BASE_URL") or "https://api.openai.com/v1").strip()
-    model = (env.get("LLM_MODEL") or "gpt-4o-mini").strip()
+    base_url, model = resolve_endpoint(env)
     prompt = (
         "In one short sentence, explain a loose, creative connection "
         f'between the public domain image "{image.get("title", "")}" and '

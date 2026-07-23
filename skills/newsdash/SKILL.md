@@ -317,6 +317,62 @@ Order matters — config entry first, secret second:
 Do not echo, store, or use it — tell the user to rotate it immediately (see
 Safety rules), then continue narrate-only.
 
+### Enable Threads
+
+"Threads · 线索" is the LLM keyword-aggregation block that replaces the
+homepage Highlights block; it needs `LLM_API_KEY` before it does anything.
+
+1. **Narrate the secret setup**: `LLM_API_KEY` (same secret the AI daily
+   brief already uses — no new secret if it's already configured), plus
+   Variables `LLM_BASE_URL` / `LLM_MODEL` for the endpoint (defaults:
+   `https://api.openai.com/v1` / `gpt-4o-mini`; the owner's DeepSeek setup is
+   `https://api.deepseek.com/v1` / `deepseek-chat`). Never ask for or handle
+   the key value.
+2. **Optional tuning** in `config/site.json → threads`: `enabled` (default
+   `true` — nothing to change unless the user wants it off),
+   `max_threads` (2–6, default 6), and `include_private` (default `false` —
+   flip only with explicit user consent; it sends private-section titles and
+   summaries to the configured LLM endpoint, see `docs/CONFIG_REFERENCE.md`
+   §2c).
+3. **Run the update workflow**: `gh workflow run update.yml && gh run
+   watch`.
+4. **Verify**: `manifest.threads_file` is non-null (public scope ran); if
+   `include_private` was turned on, `manifest.threads_private_file` is also
+   non-null. If the LLM endpoint errors or returns too few threads, both
+   stay `null` and the site quietly falls back to Highlights — that is
+   expected graceful degradation, not a bug.
+
+**Kill switch**: repo Variable `LLM_THREADS_ENABLED=0` turns Threads off
+without touching the key or `site.json`.
+
+### Wire a private career section
+
+A worked example of adding a custom private section and pointing Threads'
+private scope at it — follow the general private-source protocol above,
+plus:
+
+1. **Config shape** in `config/sources.json`: private sources with
+   `category: "private"`, `secret_ref: ["SRC_<ID>_URL"]` per source (e.g.
+   `SRC_CAREER_HIGHEREDJOBS_URL`), pointed at a custom section — add that
+   section's metadata (`id`, bilingual `label`) to `config/site.json →
+   sections[]` (§2b of `docs/CONFIG_REFERENCE.md`). No `url`/`path` in the
+   repo — the schema rejects them on private sources.
+2. **Consent flag**: if the user wants this section's items fed into
+   Threads, that requires flipping `site.json → threads.include_private:
+   true` — narrate the consent note from `docs/CONFIG_REFERENCE.md` §2c
+   before doing it (private titles/summaries leave the build for the
+   configured LLM endpoint).
+3. **Narrate each secret** per `references/secrets-setup.md` — the exact
+   name, the settings page, that the value is the full `https://` feed URL.
+   Never ask for or handle the value; the owner creates the Secrets
+   themselves.
+4. **Verify** after the next build: the new section's `.enc.json` file
+   (e.g. `career.enc.json`) appears and decrypts under unlock; if
+   `include_private` is on, `threads-private.enc.json` also appears. Before
+   secrets are set, `python scripts/validate_config.py` prints a `waiting:
+   <id> (set secret: SRC_…)` hint for each — that's the expected
+   zero-secret-green state, not an error.
+
 ### Discovery — topic / page / OPML in, feed out
 
 When the user hasn't handed you a feed URL, use `scripts/discover_source.py`

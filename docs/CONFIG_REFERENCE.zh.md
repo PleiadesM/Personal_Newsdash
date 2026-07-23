@@ -27,6 +27,25 @@
 | `theme` | `"the-type"` \| `"nyt"` \| `"bear"` | 默认主题（访客可切换，按浏览器记忆） |
 | `timezone` | IANA 名称 | 日界与开窗边界（显示用访客本地时钟） |
 | `windows.*` | 整数 | 见总览表；Schema 限定合理范围 |
+| `threads.*` | 对象 | 「线索 · Threads」AI 关键词聚合模块（生效时取代 Highlights）——见 §2c |
+
+### 2c. `threads` ——「线索 · Threads」AI 关键词聚合模块
+
+```json
+"threads": { "enabled": true, "max_threads": 6, "include_private": false }
+```
+
+| 键 | 取值 | 默认 | 作用 |
+|---|---|---|---|
+| `threads.enabled` | 布尔 | `true` | 构建 LLM 生成的**线索**区块。只有在配置了 `LLM_API_KEY`（§4a）时才真正生效，`--smoke` 下永不运行；关闭、无 Key，或模型返回的可用线索少于 2 条时，前端回退渲染既有的 Highlights 区块（遵循 `site.ranking`） |
+| `threads.max_threads` | 整数，`2`–`6` | `6` | 每次构建的线索条数上限（Schema 强制范围） |
+| `threads.include_private` | 布尔 | `false` | **显式同意开关。** 开启后会把你私密栏目的条目标题与摘要发送到你配置的 LLM 端点（§4a）——这是一次完全独立的第二次调用，依然用你自己的 Key 和端点，但仍然是离开你基础设施的第三方网络流量。输出永远只以加密形式写出（`threads-private.enc.json`），不论站点 `visibility` 为何都没有明文版本 |
+
+线索取代 Today 页面上原本客户端计算的 Highlights 区块：最多 `max_threads`
+条本次构建的 LLM 判定为「今日至少两个不同信源都触及」的关键词主题，各附
+双语释义、一句「为何是现在」、一个收敛度判定，以及指回原始条目的逐信源
+angle。确切载荷结构与 public/private 范围划分见 `docs/DATA_CONTRACT.md`
+的 `threads.json` 一节。
 
 ## 3. `config/sources.json`
 
@@ -110,7 +129,7 @@ Secret 名必须匹配 `^SRC_[A-Z0-9_]+$`（约定写法：`SRC_<ID>_URL`，`<ID
 会打印 `waiting: <id> (set secret: SRC_…)` 提示。`<ID>_ENABLED=0` 急停开关
 对私密信源同样有效，优先级最高。
 
-### 4a. 可选 AI 增强功能（每日简报 + 今日一图 + 无关一则）
+### 4a. 可选 AI 增强功能（每日简报 + 今日一图 + 无关一则 + 线索 · Threads）
 
 不是信源——一个构建时的附加功能，默认关闭，没有任何配置文件字段（所有开关都是环境变量，读取方式与 `CONTACT_MAILTO`/`OPENALEX_API_KEY` 完全一致）。只在服务端运行：用你自己的 Key，绝非访客提供的 Key。构建会分别请求英文与中文摘要；只有找到 CC0 图片时才追加一次简短图片说明调用，并且每次定时构建最多一次图库检索（绝不按访客次数调用）——按设计做了预算控制。
 此外，它也可以让 LLM 先根据当前 `news`/`papers` 标题与短摘要提出一个刻意离题的公开新闻检索词，再通过 GDELT 的公开 DOC API 检索一次，并把结果写成一个带来源链接的“无关一则”卡片。
@@ -119,6 +138,7 @@ Secret 名必须匹配 `^SRC_[A-Z0-9_]+$`（约定写法：`SRC_<ID>_URL`，`<ID
 |---|---|
 | `LLM_API_KEY` | 今日页面问候语后出现按语言分别生成的 AI 每日简报，「头条」「优选论文」栏目各附一行对应语言摘要；今日页末尾还会出现“无关一则”卡片，链接到一条刻意偏离当前信息流的公开新闻 |
 | `LLM_API_KEY` **加上** `SMITHSONIAN_API_KEY` | 上述功能，外加「今日一图」栏目：从 [Smithsonian Open Access API](https://www.si.edu/openaccess) 中挑选一张与当日内容有松散、创意关联的公共领域图片，附一句 AI 生成的说明与来源链接 |
+| `LLM_API_KEY`（配合 `threads.enabled`，默认开启） | Today 页面出现「线索 · Threads」区块：最多 `threads.max_threads` 条双语关键词主题，覆盖今日至少两个不同信源的共同话题，取代原本客户端计算的 Highlights 区块。设 `threads.include_private: true` 还会对私密栏目跑一次完全独立、只加密输出的调用（§2c） |
 
 `LLM_API_KEY` 面向任何 OpenAI Chat Completions 兼容端点
 （`{LLM_BASE_URL}/chat/completions`，`Authorization: Bearer`）——OpenAI、
@@ -134,15 +154,22 @@ OpenRouter、Groq、Together、自建 Ollama/vLLM 均可；用 `LLM_BASE_URL` /
 - 如果 GDELT 被限流，或公开新闻检索没有可用结果，这次构建只会省略“无关一则”
   卡片；不会让仪表盘失败或降级。
 - 英文与中文摘要分别生成；每个摘要都会读取英中两种输入，但优先围绕目标语言。
+- 「线索」每次构建**每个范围只调用一次**双语 LLM（公开一次；只有开启
+  `threads.include_private` 时才会对私密类别输入再跑一次完全独立的调用）；
+  `--smoke` 下永不运行；关闭、无 Key，或模型返回不足 2 条可用线索时，
+  一律回退到 Highlights 区块。
 - `--smoke` 时**绝不**发出任何网络请求，无论配置了哪些 Key。
 - 只有 Smithsonian 明确标注 `usage.access: "CC0"` 的图片才会展示——权利
   状态不确定的结果一律视为「今日无图」。
 - 与其他任何栏目遵循完全相同的公开/私密加密规则：`visibility: "public"`
-  时明文，`visibility: "private"` 时加密。
+  时明文，`visibility: "private"` 时加密。私密范围「线索」是唯一例外——
+  即使站点 `visibility: "public"`，输出也永远只加密。
 - `LLM_SUMMARY_ENABLED=0` / `TODAYS_IMAGE_ENABLED=0` /
-  `APROPOS_OF_NOTHING_ENABLED=0`（Variable）可在保留 Key 的情况下单独急停某个 AI 功能。
+  `APROPOS_OF_NOTHING_ENABLED=0` / `LLM_THREADS_ENABLED=0`（Variable）可在
+  保留 Key 的情况下单独急停某个 AI 功能。
 
-确切的载荷结构见 `docs/DATA_CONTRACT.md` 的 `insights.json` 一节。
+确切的载荷结构见 `docs/DATA_CONTRACT.md` 的 `insights.json` 与
+`threads.json` 两节。
 
 ## 5. 信源包（`config/presets/<id>.json`）
 
@@ -178,7 +205,7 @@ OpenRouter、Groq、Together、自建 Ollama/vLLM 均可；用 `LLM_BASE_URL` /
 | `<ID>_ENABLED` | Variable | 设 `0` = 急停信源 `<id>` |
 | `RSS_MAX_FEEDS` | Variable | OPML 展开上限 |
 | `LLM_BASE_URL` / `LLM_MODEL` | Variable | AI 端点与模型（§4a） |
-| `LLM_SUMMARY_ENABLED` / `TODAYS_IMAGE_ENABLED` / `APROPOS_OF_NOTHING_ENABLED` | Variable | 设 `0` = 急停对应 AI 功能 |
+| `LLM_SUMMARY_ENABLED` / `TODAYS_IMAGE_ENABLED` / `APROPOS_OF_NOTHING_ENABLED` / `LLM_THREADS_ENABLED` | Variable | 设 `0` = 急停对应 AI 功能 |
 
 ## 7. 「想改 X」速查表
 
@@ -197,6 +224,9 @@ OpenRouter、Groq、Together、自建 Ollama/vLLM 均可；用 `LLM_BASE_URL` /
 | 提升我的主题 | `interests.keywords`（+ `boost`） |
 | 开启 AI 增强功能 | Secret `LLM_API_KEY`（§4a） |
 | 加上今日一图 | Secret `SMITHSONIAN_API_KEY`（+ `LLM_API_KEY`）（§4a） |
+| 开关「线索」 | `site.json → threads.enabled`（默认 `true`）或 Variable `LLM_THREADS_ENABLED=0`（§2c、§4a） |
+| 让「线索」包含私密条目 | `site.json → threads.include_private: true`（§2c——显式同意） |
+| 调整线索条数 | `site.json → threads.max_threads`（2–6，默认 6）（§2c） |
 | 立刻停掉某个信源 | Variable `<信源ID大写>_ENABLED=0` |
 | 换默认主题/语言 | `site.json → theme` / `default_language` |
 | 改站名 | `site.json → title` |
