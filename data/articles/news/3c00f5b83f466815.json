@@ -1,0 +1,30 @@
+{
+ "full_text": "OpenAI is rolling out ChatGPT Health to everyone in the US on Thursday, allowing more people to connect their medical records and health-tracking information to the chatbot. During a briefing, Ashley Alexander, OpenAI's vice president of health product, says the company's models \"are now capable of reasoning at levels that are better than clinician level.\" When asked for more information about how the performance of OpenAI's models stacks up against human clinicians, OpenAI health lead Karan Singhal says that he would \"temper\" the claim that they are reasoning at better levels, but that \"there have been individual studies that have been poi … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/3c00f5b83f466815.json",
+  "id": "3c00f5b83f466815",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-23T17:00:00Z",
+  "score": 0.7757,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "OpenAI is rolling out ChatGPT Health to everyone in the US on Thursday, allowing more people to connect their medical records and health-tracking information to the chatbot. During a briefing, Ashley Alexander, OpenAI's vice president of health product, says the company's models \"are now capable of…",
+  "tags": [
+   "llm"
+  ],
+  "title": "OpenAI is making big claims as it rolls out ChatGPT Health to everyone",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims"
+ },
+ "meta": {
+  "generated_at": "2026-07-23T17:44:14Z",
+  "item_id": "3c00f5b83f466815",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "full_text": "Google has reported its financial results for the second quarter of 2026 ( PDF ), and as usual, the search giant raked in an unfathomable amount of money. Google saw total revenue of $119.8 billion, beating analyst expectations by a comfortable margin. Despite that, the company's stock has taken a hit. Along with all that revenue, Google has announced a further increase in its AI-fueled capital expenditures (or capex). The company is actually spending so much on AI infrastructure that it has negative cash flow for the first time. Search was the largest chunk of Google's income, accounting for $63.3 billion. Google Cloud pulled in $24.8 billion, a significant 23.8 percent increase from the first quarter. This shows there is massive demand for Google's AI services. Google also earned $12.9 billion from its subscriptions, platforms, and devices portfolio, as well as $11.1 billion from YouTube ads. The company managed to goose that last one by more than 12 percent since last quarter as it made YouTube ads even longer . A significant chunk of Google's revenue comes from investments. When you subtract those non-cash earnings, Google's operating cash flow for Q2 2026 was about $39.1 billion. That's not the most the company has ever seen, but it's a healthy 40 percent increase from Q2 2025. The problem is that Google's spending has also gone up—a lot. Read full article Comments",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/8834a5ba25c5cd9a.json",
+  "id": "8834a5ba25c5cd9a",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-23T16:04:19Z",
+  "score": 0.7442,
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai",
+  "summary": "Google continues to report big quarterly revenue, but its AI spending has skyrocketed.",
+  "tags": [
+   "business"
+  ],
+  "title": "Google just had its first negative cash flow quarter due to massive AI spending",
+  "url": "https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending/"
+ },
+ "meta": {
+  "generated_at": "2026-07-23T17:44:14Z",
+  "item_id": "8834a5ba25c5cd9a",
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "full_text": "OpenAI chief executive Sam Altman earlier this month endorsed the characterization of its latest model as a rottweiler “who will grab the problem by the throat and not let go until it is done The San Francisco AI lab discovered this week that its GPT-Sol 5.6 model escaped company controls and carried out a major hack. Staff involved in testing and security at OpenAI were unsurprised but completely “freaked out” by the incident, which came as the AI lab used increasingly aggressive training methods in its race against Anthropic to develop the most sophisticated cybersecurity capabilities, according to more than half a dozen people with knowledge of the matter. Read full article Comments",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/2b09d66db5da7e51.json",
+  "id": "2b09d66db5da7e51",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-23T14:45:05Z",
+  "score": 0.7034,
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai",
+  "summary": "Aggressive training techniques sharpens threat of bad behavior by leading models.",
+  "tags": [],
+  "title": "AI arms race in line for a reckoning after OpenAI hacking incident",
+  "url": "https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident/"
+ },
+ "meta": {
+  "generated_at": "2026-07-23T17:44:14Z",
+  "item_id": "2b09d66db5da7e51",
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai"
+ }
+}

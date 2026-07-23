@@ -1,28 +1,28 @@
 {
- "brief": "Yemen's Houthis attacked a Saudi tanker, pushing oil past $100; lawmakers propose an AI 'kill switch'; US-Saudi nuclear deal tied to Israel recognition; floods in West Virginia and wildfires in France.",
+ "brief": "Geopolitical tensions escalate over Iran, tariffs, and Houthi attacks, while AI market volatility and EU fines on Google dominate business news. In research, advances in data visualization and multimodal AI benchmarks feature prominently.",
  "meta": {
-  "generated_at": "2026-07-23T14:28:39Z"
+  "generated_at": "2026-07-23T17:44:14Z"
  },
- "news_summary": "Houthi attacks on Saudi tankers and US-Iran tensions drive oil above $100; a bill requiring AI companies to implement kill switches is proposed; US-Saudi nuclear deal conditions on Saudi recognition of Israel; nearly 500 National Guard deployed for West Virginia floods.",
- "papers_summary": "No research papers reported today.",
+ "news_summary": "Israel welcomes Trump's Saudi-ties demand but criticizes a nuclear deal; the US House rebukes Trump on the Iran war; markets worry over AI spending as Google and Tesla shares plunge; and Houthi attacks threaten global shipping amid tariff uncertainty.",
+ "papers_summary": "Papers cover edge bundling task taxonomies, multimodal LLM benchmarks for interface construction, HIPAA-compliant clinical workflow optimization, and compressive Gaussian splatting for volume visualization.",
  "summaries": {
   "en": {
-   "brief": "Yemen's Houthis attacked a Saudi tanker, pushing oil past $100; lawmakers propose an AI 'kill switch'; US-Saudi nuclear deal tied to Israel recognition; floods in West Virginia and wildfires in France.",
-   "news_summary": "Houthi attacks on Saudi tankers and US-Iran tensions drive oil above $100; a bill requiring AI companies to implement kill switches is proposed; US-Saudi nuclear deal conditions on Saudi recognition of Israel; nearly 500 National Guard deployed for West Virginia floods.",
-   "papers_summary": "No research papers reported today."
+   "brief": "Geopolitical tensions escalate over Iran, tariffs, and Houthi attacks, while AI market volatility and EU fines on Google dominate business news. In research, advances in data visualization and multimodal AI benchmarks feature prominently.",
+   "news_summary": "Israel welcomes Trump's Saudi-ties demand but criticizes a nuclear deal; the US House rebukes Trump on the Iran war; markets worry over AI spending as Google and Tesla shares plunge; and Houthi attacks threaten global shipping amid tariff uncertainty.",
+   "papers_summary": "Papers cover edge bundling task taxonomies, multimodal LLM benchmarks for interface construction, HIPAA-compliant clinical workflow optimization, and compressive Gaussian splatting for volume visualization."
   },
   "zh": {
-   "brief": "今日要闻：香港民主派人士胡志伟在英机场被扣留后获准入境；台湾收紧陆配参选资格；中国电影《澎湖海战》因触及歷史敏感题材撤档；美国与沙特签署核协议，条件为沙特承认以色列；英国女子在香港遭强姦后反被判刑；TikTok直播带货在英国兴起；华语电影金牌制片施南生逝世。",
-   "news_summary": "香港民主派人士胡志伟在伦敦希斯罗机场被扣留后获准入境；台湾新规将陆配参选资格从「设籍满十年」改为「除籍满十年」，引发争议；中国电影《澎湖海战》撤档，因触及「反清复明」敏感历史；美国与沙特签署核协议，要求沙特承认以色列；英国女子伊莎贝尔·罗斯在香港控告强姦不成反被判勒索罪成；TikTok直播带货在英国快速增长；华语电影知名制片人施南生病逝。",
-   "papers_summary": "今日无相关论文摘要。"
+   "brief": "Geopolitical tensions and tech market jitters dominate today, with US-Saudi nuclear deal, Houthi attacks, Taiwan's stricter rules for mainland spouses, and Hong Kong politician Hu Zhiwei detained in London. Research papers focus on AI-augmented workflows and visualization tools.",
+   "news_summary": "Hong Kong politician Hu Zhiwei was detained at Heathrow amid '47-person case' fallout; Taiwan tightened residency rules for mainland spouses; Chinese film 'Penglai Sea Battle' shelved due to historical sensitivities; other stories include US-Saudi nuclear deal, TikTok live shopping boom, and death of producer Nansun Shi.",
+   "papers_summary": "Research papers explore AI-augmented clinical workflow optimization, edge bundling visualization, multi-view interface construction, and generative AI for dementia care."
   }
  },
  "todays_image": {
-  "caption": "The branching, creeping spread of Lobophora sp. mirrors the widening conflict as Houthi attacks and US strikes entangle the region's waters.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
-  "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
-  "title": "Lobophora sp."
+  "caption": "Just as the popcorn orchid’s unexpected form blends the familiar with the exotic, Trump’s push for Israeli-Saudi ties pops an improbable diplomatic bloom into reality.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3cf1c7dad88c9494fb6e9f3cf54a51a53",
+  "source_name": "NMNH - Education & Outreach",
+  "source_url": "http://n2t.net/ark:/65665/3603a16bc-c597-4333-b907-84f012f638db",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3cf1c7dad88c9494fb6e9f3cf54a51a53/90",
+  "title": "Popcorn Orchid"
  }
 }

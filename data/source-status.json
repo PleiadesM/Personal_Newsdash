@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-23T14:28:39Z",
+ "generated_at": "2026-07-23T17:44:14Z",
  "private_summary": {
   "configured": 0,
   "total": 0
@@ -103,7 +103,7 @@
   },
   {
    "category": "open",
-   "count": 9,
+   "count": 10,
    "error": null,
    "full_text_count": 0,
    "id": "hn_frontpage_ai",
@@ -115,7 +115,7 @@
   },
   {
    "category": "open",
-   "count": 27,
+   "count": 28,
    "error": null,
    "full_text_count": 0,
    "id": "bbc_world",
@@ -151,7 +151,7 @@
   },
   {
    "category": "open",
-   "count": 24,
+   "count": 23,
    "error": null,
    "full_text_count": 0,
    "id": "nyt_homepage",
@@ -175,12 +175,12 @@
   },
   {
    "category": "optional",
-   "count": 0,
-   "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60 (Caus",
+   "count": 3,
+   "error": null,
    "full_text_count": 0,
    "id": "arxiv_datavis",
    "name": "arXiv cs.HC + cs.GR",
-   "ok": false,
+   "ok": true,
    "section": "papers",
    "skip_reason": null,
    "type": "arxiv"
@@ -199,7 +199,7 @@
   },
   {
    "category": "optional",
-   "count": 0,
+   "count": 30,
    "error": null,
    "full_text_count": 0,
    "id": "s2_datavis",
@@ -212,7 +212,7 @@
   {
    "category": "optional",
    "count": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A1050-6519%2Cfrom-created-date%3A2026-06-25&rows=12&sort=created&order=desc",
+   "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A0047-2816%2Cfrom-created-date%3A2026-06-25&rows=12&sort=created&order=desc",
    "full_text_count": 0,
    "id": "crossref_techcomm_journals",
    "name": "TechComm journals (CrossRef)",
@@ -235,12 +235,12 @@
   },
   {
    "category": "optional",
-   "count": 0,
-   "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC&sortBy=submittedDate&sortOrder=descending&max_results=40 (Caused by ReadTimeo",
+   "count": 3,
+   "error": null,
    "full_text_count": 0,
    "id": "arxiv_hci_writing",
    "name": "arXiv cs.HC (writing & docs)",
-   "ok": false,
+   "ok": true,
    "section": "papers",
    "skip_reason": null,
    "type": "arxiv"
