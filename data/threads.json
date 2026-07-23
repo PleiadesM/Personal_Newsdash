@@ -1,0 +1,255 @@
+{
+ "meta": {
+  "count": 5,
+  "generated_at": "2026-07-23T19:44:07Z",
+  "scope": "public"
+ },
+ "threads": [
+  {
+   "angles": [
+    {
+     "item_id": "9f24f2cfdf1a975d",
+     "phrase": {
+      "en": "Trump ties nuclear deal to Saudi ties",
+      "zh": "特朗普将核协议与沙特关系挂钩"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/live/2026/jul/23/us-house-defense-spending-bill-donald-trump-iran-rubio-latest-news-updates"
+    },
+    {
+     "item_id": "a2bbda57a6b1a04f",
+     "phrase": {
+      "en": "UN chief says crisis out of control",
+      "zh": "联合国秘书长称危机失控"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/live/2026/jul/23/us-iran-war-live-updates-strikes-houthis-red-sea-saudi-nuclear-deal-middle-east-crisis-latest-news"
+    },
+    {
+     "item_id": "b5f87411702b3f18",
+     "phrase": {
+      "en": "Israel welcomes Trump's demand",
+      "zh": "以色列欢迎特朗普要求"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/us/politics/israel-saudi-arabia-us-nuclear-deal.html"
+    },
+    {
+     "item_id": "3c55eb23e60229d4",
+     "phrase": {
+      "en": "Houthi attacks raise conflict fears",
+      "zh": "胡塞袭击引发冲突担忧"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cvgve0vxy1yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "7c5d1360decf4f6a",
+     "phrase": {
+      "en": "Houthi attack Saudi tanker",
+      "zh": "胡塞袭击沙特油轮"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cpw9xzx9r4ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "10c03c6799b39318",
+     "phrase": {
+      "en": "Trump close to Iran attack decision",
+      "zh": "特朗普接近决定攻击伊朗"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/2026/jul/23/trump-says-he-is-close-to-decision-on-largest-yet-attack-on-iran"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "Tensions surge as Houthi attacks and Trump threats push region to the brink.",
+    "zh": "胡塞袭击与特朗普威胁将地区推向边缘。"
+   },
+   "id": "t1",
+   "keyword": {
+    "en": "Middle East escalation",
+    "zh": "中东局势升级"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Houthi strikes on Saudi tankers and Trump's Iran threat today.",
+    "zh": "今日胡塞袭击沙特油轮及特朗普威胁伊朗。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "ffb547add588c639",
+     "phrase": {
+      "en": "NY storm prevention costs $500B",
+      "zh": "纽约风暴防护需五千亿"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/nyregion/new-york-storm-damage-repair-cost-climate-change.html"
+    },
+    {
+     "item_id": "983d68d80176b261",
+     "phrase": {
+      "en": "Wildfires in France, extreme heat",
+      "zh": "法国野火，极端高温"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/2026/jul/23/people-evacuated-intense-wildfire-saumos-france"
+    }
+   ],
+   "convergence": "mixed",
+   "gloss": {
+    "en": "New York faces half trillion in storm costs as wildfires scorch southern Europe.",
+    "zh": "纽约面临五千亿风暴费用，南欧野火肆虐。"
+   },
+   "id": "t2",
+   "keyword": {
+    "en": "climate crisis costs",
+    "zh": "气候危机成本"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Reports on storm costs and wildfires released today.",
+    "zh": "今日发布风暴费用及野火报告。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "full_text_file": "articles/news/3c00f5b83f466815.json",
+     "item_id": "3c00f5b83f466815",
+     "phrase": {
+      "en": "ChatGPT Health available to all",
+      "zh": "ChatGPT健康版全面开放"
+     },
+     "section": "news",
+     "source": "The Verge · AI",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims"
+    },
+    {
+     "item_id": "4685c66bae8e17d4",
+     "phrase": {
+      "en": "AI for clinical assay workflows",
+      "zh": "AI用于临床检测工作流"
+     },
+     "section": "papers",
+     "source": "arXiv cs.HC (writing & docs)",
+     "url": "https://arxiv.org/abs/2607.20382v1"
+    },
+    {
+     "item_id": "91cd808c3605dde0",
+     "phrase": {
+      "en": "AI for social connectedness in dementia",
+      "zh": "AI促进失智症社会联系"
+     },
+     "section": "papers",
+     "source": "arXiv cs.HC (writing & docs)",
+     "url": "https://arxiv.org/abs/2607.19007v1"
+    }
+   ],
+   "convergence": "mixed",
+   "gloss": {
+    "en": "OpenAI rolls out ChatGPT Health while research explores AI for clinical workflows and dementia care.",
+    "zh": "OpenAI推出ChatGPT健康版，研究探索临床工作流及失智症护理。"
+   },
+   "id": "t3",
+   "keyword": {
+    "en": "AI health tools",
+    "zh": "AI健康工具"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "ChatGPT Health launch and two new papers today.",
+    "zh": "今日ChatGPT健康版上线及两篇新论文。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "c9169c7d26bb11f3",
+     "phrase": {
+      "en": "Subpoenas withdrawn after judge questions",
+      "zh": "法官质疑后撤回传票"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/business/media/new-york-times-subpoenas-withdraw.html"
+    },
+    {
+     "item_id": "9051b2186c59e756",
+     "phrase": {
+      "en": "Lobbying firm paid for favorable stories",
+      "zh": "游说公司花钱买正面报道"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/politics/2026/jul/23/lobbying-firm-pressed-for-details-about-payments-to-journalists-for-favourable-stories"
+    }
+   ],
+   "convergence": "mixed",
+   "gloss": {
+    "en": "Government subpoenas dropped, but lobbying firm offers cash for favorable coverage.",
+    "zh": "政府撤回传票，但游说公司花钱买正面报道。"
+   },
+   "id": "t4",
+   "keyword": {
+    "en": "press under pressure",
+    "zh": "新闻界受压"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Two stories on press independence emerge today.",
+    "zh": "今日两篇关于新闻独立性的报道。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "3298be9468eccfb7",
+     "phrase": {
+      "en": "Life sentence for killing lawmaker",
+      "zh": "杀害议员获无期徒刑"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/2026/jul/23/melissa-hortman-killing-life-sentence-vance-boelter"
+    },
+    {
+     "item_id": "8e5229195607a433",
+     "phrase": {
+      "en": "Ex-governor guilty of murder",
+      "zh": "前州长谋杀罪名成立"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cvg9l039ljyo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "A Minnesota man gets life for killing a lawmaker, and a Kenyan ex-governor is convicted of murder.",
+    "zh": "明尼苏达男子因杀害议员被判终身监禁，肯尼亚前州长谋杀罪成。"
+   },
+   "id": "t5",
+   "keyword": {
+    "en": "murder convictions",
+    "zh": "谋杀定罪"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Both verdicts handed down today.",
+    "zh": "今日两起判决。"
+   }
+  }
+ ]
+}

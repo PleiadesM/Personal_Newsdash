@@ -1,0 +1,31 @@
+{
+ "full_text": "Until now, voice mode has only been available on Claude Haiku , Anthropic's faster but less powerful model. Now the company is making its Opus and Sonnet models available in voice mode , and extending its reach into apps like Gmail, Slack, and Canva. When Anthropic launched voice mode last year, it was primarily focused on delivering answers to quick questions with minimal delay. But in a blog post, the company said people immediately started using voice mode for far more than casual queries. They were using it to work \"through real business problems,\" which Haiku was not really designed for. That model \"kept conversations quick, but not alwa … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/42da2205c8c643d1.json",
+  "id": "42da2205c8c643d1",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-23T19:00:00Z",
+  "score": 0.7757,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Until now, voice mode has only been available on Claude Haiku, Anthropic's faster but less powerful model. Now the company is making its Opus and Sonnet models available in voice mode, and extending its reach into apps like Gmail, Slack, and Canva. When Anthropic launched voice mode last year, it…",
+  "tags": [
+   "model-release",
+   "llm"
+  ],
+  "title": "Claude’s voice mode is now available for Opus and Sonnet",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai"
+ },
+ "meta": {
+  "generated_at": "2026-07-23T19:44:07Z",
+  "item_id": "42da2205c8c643d1",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}
