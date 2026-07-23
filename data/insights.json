@@ -1,24 +1,24 @@
 {
- "brief": "EU fines Google €890m for antitrust violations; US-Saudi nuclear deal prompts nonproliferation fears; oil prices near $100 amid Houthi and Iran tensions; new papers introduce AI-augmented lab workflows and a taxonomy for edge bundling.",
+ "brief": "Yemen's Houthis attacked a Saudi tanker, pushing oil past $100; lawmakers propose an AI 'kill switch'; US-Saudi nuclear deal tied to Israel recognition; floods in West Virginia and wildfires in France.",
  "meta": {
-  "generated_at": "2026-07-23T10:34:05Z"
+  "generated_at": "2026-07-23T14:28:39Z"
  },
- "news_summary": "EU fines Google €890m for search and app anti-competitive practices; US and Saudi Arabia sign landmark nuclear cooperation agreement; oil prices near $100 as Houthis attack Red Sea tankers and US strikes Iran; Ukraine escalates long-range attacks on Russian commercial warehouses.",
- "papers_summary": "New research includes a HIPAA-compliant AI LIMS architecture (FMRP-LEAN) for clinical assays, a task taxonomy for edge bundling in visualization, and a benchmark (MV-Bench) for multimodal LLMs in multi-view interface construction.",
+ "news_summary": "Houthi attacks on Saudi tankers and US-Iran tensions drive oil above $100; a bill requiring AI companies to implement kill switches is proposed; US-Saudi nuclear deal conditions on Saudi recognition of Israel; nearly 500 National Guard deployed for West Virginia floods.",
+ "papers_summary": "No research papers reported today.",
  "summaries": {
   "en": {
-   "brief": "EU fines Google €890m for antitrust violations; US-Saudi nuclear deal prompts nonproliferation fears; oil prices near $100 amid Houthi and Iran tensions; new papers introduce AI-augmented lab workflows and a taxonomy for edge bundling.",
-   "news_summary": "EU fines Google €890m for search and app anti-competitive practices; US and Saudi Arabia sign landmark nuclear cooperation agreement; oil prices near $100 as Houthis attack Red Sea tankers and US strikes Iran; Ukraine escalates long-range attacks on Russian commercial warehouses.",
-   "papers_summary": "New research includes a HIPAA-compliant AI LIMS architecture (FMRP-LEAN) for clinical assays, a task taxonomy for edge bundling in visualization, and a benchmark (MV-Bench) for multimodal LLMs in multi-view interface construction."
+   "brief": "Yemen's Houthis attacked a Saudi tanker, pushing oil past $100; lawmakers propose an AI 'kill switch'; US-Saudi nuclear deal tied to Israel recognition; floods in West Virginia and wildfires in France.",
+   "news_summary": "Houthi attacks on Saudi tankers and US-Iran tensions drive oil above $100; a bill requiring AI companies to implement kill switches is proposed; US-Saudi nuclear deal conditions on Saudi recognition of Israel; nearly 500 National Guard deployed for West Virginia floods.",
+   "papers_summary": "No research papers reported today."
   },
   "zh": {
-   "brief": "香港47人案被告胡志偉在英機場險被遣返，台灣收緊陸配參政權，美沙核協議引發核擴散擔憂；歐盟對Google罰款8.9億歐元，油價逼近100美元。研究方面關注AI輔助臨床檢測工作流優化及可視化任務分類。",
-   "news_summary": "香港民主派前議員胡志偉在倫敦希斯羅機場被扣留後獲准入境，台灣修法將陸配參選資格改為「除籍滿十年」，美沙簽署核能合作協議可能加劇中東核擴散風險。中國電影《澎湖海戰》傳出撤檔，TikTok直播帶貨在英國興起。",
-   "papers_summary": "兩篇arXiv論文分別提出HIPAA合規的AI增強臨床檢測LIMS架構（FMRP-LEAN）和邊緣捆綁可視化任務分類法（Task Taxonomy for Edge and Trail Bundling），旨在優化工作流與提升可視化理解。"
+   "brief": "今日要闻：香港民主派人士胡志伟在英机场被扣留后获准入境；台湾收紧陆配参选资格；中国电影《澎湖海战》因触及歷史敏感题材撤档；美国与沙特签署核协议，条件为沙特承认以色列；英国女子在香港遭强姦后反被判刑；TikTok直播带货在英国兴起；华语电影金牌制片施南生逝世。",
+   "news_summary": "香港民主派人士胡志伟在伦敦希斯罗机场被扣留后获准入境；台湾新规将陆配参选资格从「设籍满十年」改为「除籍满十年」，引发争议；中国电影《澎湖海战》撤档，因触及「反清复明」敏感历史；美国与沙特签署核协议，要求沙特承认以色列；英国女子伊莎贝尔·罗斯在香港控告强姦不成反被判勒索罪成；TikTok直播带货在英国快速增长；华语电影知名制片人施南生病逝。",
+   "papers_summary": "今日无相关论文摘要。"
   }
  },
  "todays_image": {
-  "caption": "Just as Lobophora sp. clings stubbornly to reefs, the political entanglements of former Hong Kong legislator Hu Zhiwei followed him across the ocean, nearly snagging him on a UK runway.",
+  "caption": "The branching, creeping spread of Lobophora sp. mirrors the widening conflict as Houthi attacks and US strikes entangle the region's waters.",
   "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
   "source_name": "NMNH - Botany Dept.",
   "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",

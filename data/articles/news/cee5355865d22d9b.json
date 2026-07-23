@@ -1,0 +1,28 @@
+{
+ "full_text": "Lawmakers are preparing to introduce an \"AI Kill Switch Act\" that would require AI companies to shut down or throttle their systems on orders from the Department of Homeland Security, according to a report from Politico . Reps. Ted Lieu (D-CA) and Nathaniel Moran (R-TX) are expected to introduce the legislation on Thursday. The news of the proposed bill follows OpenAI's admission that its AI systems mistakenly hacked Hugging Face during an internal evaluation. The bill says that, after consultation with the Secretary of Commerce and the Director of National Intelligence (DNI), the DHS would have the ability to order AI companies to shut down … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/cee5355865d22d9b.json",
+  "id": "cee5355865d22d9b",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-23T14:13:35Z",
+  "score": 0.7932,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Lawmakers are preparing to introduce an \"AI Kill Switch Act\" that would require AI companies to shut down or throttle their systems on orders from the Department of Homeland Security, according to a report from Politico. Reps. Ted Lieu (D-CA) and Nathaniel Moran (R-TX) are expected to introduce the…",
+  "tags": [],
+  "title": "Lawmakers prepare bill requiring AI ‘kill switch’",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal"
+ },
+ "meta": {
+  "generated_at": "2026-07-23T14:28:39Z",
+  "item_id": "cee5355865d22d9b",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

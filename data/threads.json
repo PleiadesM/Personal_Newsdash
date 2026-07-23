@@ -1,0 +1,219 @@
+{
+ "meta": {
+  "count": 3,
+  "generated_at": "2026-07-23T14:28:39Z",
+  "scope": "public"
+ },
+ "threads": [
+  {
+   "angles": [
+    {
+     "item_id": "7c5d1360decf4f6a",
+     "phrase": {
+      "en": "Houthi attack on tanker",
+      "zh": "胡塞袭击油轮"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cpw9xzx9r4ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "65620f0e788c89a3",
+     "phrase": {
+      "en": "Diesel crisis from Hormuz",
+      "zh": "霍尔木兹柴油危机"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/business/bangladesh-farmers-diesel-water-iran.html"
+    },
+    {
+     "item_id": "a2bbda57a6b1a04f",
+     "phrase": {
+      "en": "Nuclear deal tied to Israel",
+      "zh": "核协议与以色列挂钩"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/live/2026/jul/23/us-iran-war-live-updates-strikes-houthis-red-sea-saudi-nuclear-deal-middle-east-crisis-latest-news"
+    },
+    {
+     "item_id": "83d0cef1a8a1d3b0",
+     "phrase": {
+      "en": "Oil price climbs past $100",
+      "zh": "油价突破100美元"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/business/2026/jul/23/oil-price-passes-100-a-barrel-again-as-middle-east-conflict-escalates"
+    },
+    {
+     "item_id": "19391732c54e3c3f",
+     "phrase": {
+      "en": "US military in Jordan targeted",
+      "zh": "美在约旦军队遭袭"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/world/middleeast/jordan-iran-us-forces.html"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "Oil surges past $100 as Houthi attacks and US-Iran strikes rattle the region.",
+    "zh": "油价突破100美元，胡塞袭击和美伊冲突震动中东。"
+   },
+   "id": "t1",
+   "keyword": {
+    "en": "Middle East crisis",
+    "zh": "中东危机"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Houthis claim new tanker attacks; oil hits $100 again.",
+    "zh": "胡塞声称袭击油轮，油价重回100美元。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "full_text_file": "articles/news/cee5355865d22d9b.json",
+     "item_id": "cee5355865d22d9b",
+     "phrase": {
+      "en": "AI kill switch bill",
+      "zh": "AI终止开关法案"
+     },
+     "section": "news",
+     "source": "The Verge · AI",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal"
+    },
+    {
+     "full_text_file": "articles/news/edf4550492d10cc3.json",
+     "item_id": "edf4550492d10cc3",
+     "phrase": {
+      "en": "Apple-OpenAI lawsuit",
+      "zh": "苹果诉OpenAI案"
+     },
+     "section": "news",
+     "source": "The Verge · AI",
+     "url": "https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive"
+    },
+    {
+     "item_id": "34b7a5441840391a",
+     "phrase": {
+      "en": "Google sets AI spending pace",
+      "zh": "谷歌设定AI支出节奏"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/business/dealbook/google-ai-capex.html"
+    },
+    {
+     "item_id": "4f1fe2c194e40afd",
+     "phrase": {
+      "en": "Alphabet cash burn alarm",
+      "zh": "Alphabet现金消耗警示"
+     },
+     "section": "news",
+     "source": "Hacker News (AI filter)",
+     "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/"
+    },
+    {
+     "item_id": "3b94a72aaec14703",
+     "phrase": {
+      "en": "AI companies hide debt",
+      "zh": "AI公司隐藏债务"
+     },
+     "section": "news",
+     "source": "Hacker News (AI filter)",
+     "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet"
+    },
+    {
+     "item_id": "42ca4a0ed3667cd3",
+     "phrase": {
+      "en": "OpenAI/Anthropic unite",
+      "zh": "OpenAI与Anthropic联手"
+     },
+     "section": "news",
+     "source": "Hacker News (AI filter)",
+     "url": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china"
+    },
+    {
+     "full_text_file": "articles/news/cdef10134d2509de.json",
+     "item_id": "cdef10134d2509de",
+     "phrase": {
+      "en": "AI for drug design",
+      "zh": "AI用于药物设计"
+     },
+     "section": "news",
+     "source": "MIT Technology Review · AI",
+     "url": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/"
+    }
+   ],
+   "convergence": "mixed",
+   "gloss": {
+    "en": "Big Tech pours billions into AI while lawmakers push kill switches and scrutiny grows.",
+    "zh": "科技巨头砸重金投入AI，立法者推动‘终止开关’，审查加强。"
+   },
+   "id": "t2",
+   "keyword": {
+    "en": "AI spending and regulation",
+    "zh": "AI投资与监管"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Google raises AI spending; new kill switch bill introduced.",
+    "zh": "谷歌提高AI支出，新‘终止开关’法案提出。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "308580ab137ac8b9",
+     "phrase": {
+      "en": "Warns of Black Sea attacks",
+      "zh": "警告黑海袭击"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/live/2026/jul/23/eu-sanctions-russia-ukraine-marcio-rubio-sergei-lavrov-kallas-google-latest-news-updates"
+    },
+    {
+     "item_id": "caf7ae78fc8e27ea",
+     "phrase": {
+      "en": "Targets Russia's Amazon-like warehouses",
+      "zh": "打击俄版亚马逊仓库"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/world/europe/russia-ukraine-wildberries-attacks.html"
+    },
+    {
+     "item_id": "20351ea1e1d334cf",
+     "phrase": {
+      "en": "Zelenskyy's dizzying U-turn",
+      "zh": "泽连斯基令人眩晕的转向"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/world/europe/zelensky-ukraine-military-reversal.html"
+    }
+   ],
+   "convergence": "mixed",
+   "gloss": {
+    "en": "Kyiv strikes Russian warehouses as Zelenskyy warns on Black Sea and shifts strategy.",
+    "zh": "基辅打击俄罗斯仓库，泽连斯基警告黑海并调整战略。"
+   },
+   "id": "t3",
+   "keyword": {
+    "en": "Ukraine war escalation",
+    "zh": "乌克兰战争升级"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "New long-range attacks on Russian commerce; Zelenskyy's U-turn on leadership.",
+    "zh": "对俄罗斯商业的新远程打击；泽连斯基领导层转向。"
+   }
+  }
+ ]
+}
