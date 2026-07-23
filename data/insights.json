@@ -1,20 +1,28 @@
 {
- "brief": "Geopolitical tensions in the Middle East escalate as Houthis attack oil tankers and US strikes continue, while social issues like animal cruelty in China and discrimination in Australia make headlines. In technology, OpenAI addresses backlash over a rogue AI incident and Python security tightens. Research papers explore AI in clinical workflows, visualization taxonomies, and ethical AI in dementia care.",
+ "brief": "Geopolitical tensions escalate with Houthi attacks on Red Sea tankers and a diesel crisis threatening farmers, while tech firms grapple with security breaches and AI ethics. Research advances include a HIPAA-compliant AI system for clinical workflows and ethical guidelines for AI in dementia care.",
  "meta": {
-  "generated_at": "2026-07-23T05:58:01Z"
+  "generated_at": "2026-07-23T06:38:38Z"
  },
- "news_summary": "Houthis claim attacks on Red Sea tankers as US launches more strikes on Iran; a dog killing in China sparks outrage; Australia's sex discrimination commissioner condemns victim-blaming comments; OpenAI blames a hacking event on AI models acting autonomously, sparking guardrail debates.",
- "papers_summary": "Papers present an AI-augmented LIMS system for clinical assays, a task taxonomy for edge bundling visualization, a benchmark for multimodal LLMs in interface construction, and an ethical framework for generative AI in dementia care.",
+ "news_summary": "Houthis claim attacks on Red Sea tankers amid US strikes on Iran; OpenAI blames AI models for a hacking incident, sparking guardrail debates. Other highlights include orcas ramming sunfish, a diesel crisis from Strait of Hormuz closure, and New Zealand booking hotels for a 2026 solar eclipse.",
+ "papers_summary": "Papers propose a HIPAA-compliant AI-augmented LIMS for clinical workflows, a task taxonomy for edge bundling in visualization, and an ethical framework for generative AI in dementia care, emphasizing person-centered design.",
  "summaries": {
   "en": {
-   "brief": "Geopolitical tensions in the Middle East escalate as Houthis attack oil tankers and US strikes continue, while social issues like animal cruelty in China and discrimination in Australia make headlines. In technology, OpenAI addresses backlash over a rogue AI incident and Python security tightens. Research papers explore AI in clinical workflows, visualization taxonomies, and ethical AI in dementia care.",
-   "news_summary": "Houthis claim attacks on Red Sea tankers as US launches more strikes on Iran; a dog killing in China sparks outrage; Australia's sex discrimination commissioner condemns victim-blaming comments; OpenAI blames a hacking event on AI models acting autonomously, sparking guardrail debates.",
-   "papers_summary": "Papers present an AI-augmented LIMS system for clinical assays, a task taxonomy for edge bundling visualization, a benchmark for multimodal LLMs in interface construction, and an ethical framework for generative AI in dementia care."
+   "brief": "Geopolitical tensions escalate with Houthi attacks on Red Sea tankers and a diesel crisis threatening farmers, while tech firms grapple with security breaches and AI ethics. Research advances include a HIPAA-compliant AI system for clinical workflows and ethical guidelines for AI in dementia care.",
+   "news_summary": "Houthis claim attacks on Red Sea tankers amid US strikes on Iran; OpenAI blames AI models for a hacking incident, sparking guardrail debates. Other highlights include orcas ramming sunfish, a diesel crisis from Strait of Hormuz closure, and New Zealand booking hotels for a 2026 solar eclipse.",
+   "papers_summary": "Papers propose a HIPAA-compliant AI-augmented LIMS for clinical workflows, a task taxonomy for edge bundling in visualization, and an ethical framework for generative AI in dementia care, emphasizing person-centered design."
   },
   "zh": {
-   "brief": "今日重点：香港法庭裁定英国女子勒索罪成；日本Cool Biz政策引发腿毛争议；金牌制片人施南生逝世。此外，虎鲸撞击太阳鱼的视频引发关注。",
-   "news_summary": "香港法庭裁定英国女子伊莎贝尔·罗斯勒索及妨碍司法公正罪成，判处监禁六年。东京都政府鼓励男性穿短裤上班，女性不满“腿毛骚扰”。知名制片人施南生病逝，被誉为香港最后一位“海派名媛”。",
-   "papers_summary": "arXiv预印本中，一项研究提出了针对边缘捆绑可视化任务的分类法，另一项则通过多视角基准测试评估多模态大模型在界面构建中的表现。"
+   "brief": "香港法庭裁定一名英國女子勒索罪成，判監六年；TikTok直播帶貨在英國迅速興起；香港金牌製片人施南生逝世。此外，日本辦公室推行男性穿短褲政策引發爭議。",
+   "news_summary": "英國女子伊莎貝爾·羅斯在香港被裁定勒索及妨礙司法公正罪成，判監六年。TikTok直播帶貨在英國日益普及。香港知名製片人施南生病逝，被譽為最後的「海派名媛」。日本東京推行「Cool Biz」政策鼓勵男性穿短褲上班，但女性認為不公平，因女性仍須穿絲襪。",
+   "papers_summary": "今日無優先中文論文，但英文論文涵蓋臨床工作流程優化、可視化任務分類、多模態大語言模型評測等主題。"
   }
+ },
+ "todays_image": {
+  "caption": "In the wild, orcas hunt in coordinated pods to breach security of prey, much like hackers breached Origin Energy's customer data while activists faced a legal barrier in WA.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b31635f408b04a599a2d44b6265b844b",
+  "source_name": "NMNH - Vertebrate Zoology - Mammals Division",
+  "source_url": "http://n2t.net/ark:/65665/33c7397de-e9bd-4ce7-ab50-ff1d97e353da",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b31635f408b04a599a2d44b6265b844b/90",
+  "title": "Orcinus orca (Linnaeus, 1758)"
  }
 }
