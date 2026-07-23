@@ -8,6 +8,25 @@ round of significant changes lands. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); versions follow semver
 (minor = feature round, patch = fixes).
 
+## [0.4.0] — 2026-07-23
+
+Appearance round.
+
+### Added
+- **Designed dark variants for all three themes** — `the-type` gets a warm
+  charcoal "Lamplight" palette, `nyt` a night-newsprint palette, and
+  `bear`'s existing dark palette is promoted alongside them. Follows the
+  system color scheme by default, with a Light/Dark/Auto override in
+  Settings and a ☀/☾ toggle in the header, persisted per device. Scheme
+  changes cross-fade smoothly (skipped under `prefers-reduced-motion`).
+- **`the-type` Today hero now shows the latest update time.**
+- **Time-aware poetic greetings** — six day slots, deterministic per day,
+  bilingual (en/zh).
+
+### Changed
+- **`the-type`'s hardcoded ink colors tokenized** — a pure refactor; light
+  rendering is unchanged.
+
 ## [0.3.0] — 2026-07-23
 
 Threads · 线索 round.

@@ -46,7 +46,7 @@ body:
       options:
         - "the-type — typography-first serif · 字砌"
         - "nyt — newspaper front page · 报纸"
-        - "bear — minimal, auto dark mode · 小熊"
+        - "bear — minimal, compact · 小熊"
     validations:
       required: true
 

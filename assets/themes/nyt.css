@@ -56,3 +56,20 @@
 [data-theme="nyt"] .today-greeting { font-weight: 700; }
 [data-theme="nyt"] .tag { border-radius: 0; }
 [data-theme="nyt"] .course-card { border-radius: 0; background: transparent; }
+
+/* ---- dark scheme ---- */
+html[data-scheme="dark"][data-theme="nyt"] {
+  --bg: #121212;
+  --bg-elev: #1e1e1e;
+  --fg: #e2e2e2;
+  --fg-muted: #a3a3a3;
+  --accent: #6b9dc2;
+  --accent-fg: #121212;
+  --rule: #2f2f2f;
+  --rule-strong: #525252;
+  --link: #e2e2e2;
+  --highlight-bg: #4d431c;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --shadow-pop: rgba(0, 0, 0, 0.5);
+  --shadow-soft: rgba(0, 0, 0, 0.3);
+}

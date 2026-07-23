@@ -8,6 +8,8 @@
     "notConfigured": "此栏目尚未配置。",
     "notConfiguredHint": "请在仓库设置中添加所需的 Secrets，等待下一次更新。详见配置指南。",
     "setupGuide": "配置指南",
+    "schemeToDark": "切换到深色模式",
+    "schemeToLight": "切换到浅色模式",
     "noscript": "及君需要启用 JavaScript 才能显示。Relevance needs JavaScript."
   },
   "nav": {
@@ -66,9 +68,38 @@
     "noCrypto": "尚未配置私密模式。设置 NEWSDASH_PASSPHRASE Secret 后即可启用私密栏目与笔记。"
   },
   "today": {
-    "greetingMorning": "早上好",
-    "greetingAfternoon": "下午好",
-    "greetingEvening": "晚上好",
+    "greetings": {
+      "dawn": [
+        "你比头条醒得早。",
+        "天刚亮，字也刚醒。",
+        "今天还是草稿。"
+      ],
+      "morning": [
+        "早安——世界替你守了一夜的消息。",
+        "新的一页，从哪里读起都好。",
+        "早安，墨迹未干。"
+      ],
+      "midday": [
+        "正午，消息还温着。",
+        "午间，适合抬头看看世界。",
+        "半日已过，世界如常辽阔。"
+      ],
+      "afternoon": [
+        "午后日光正好，长事短读。",
+        "清晨的猜测，午后见分晓。",
+        "时辰慢了下来，正好细读一篇。"
+      ],
+      "evening": [
+        "入夜前，把今天的线索收拢。",
+        "白日交出最后一批稿件。",
+        "暮色四合，新闻也放轻了声音。"
+      ],
+      "night": [
+        "夜深了，慢慢读。",
+        "世界进入夜班了。",
+        "明天已经在排版了。"
+      ]
+    },
     "today": "今天",
     "yesterday": "昨天",
     "highlights": "撷英",
@@ -213,6 +244,8 @@
     "tabs": { "general": "通用", "sources": "信源" },
     "theme": "主题",
     "themes": { "the-type": "字砌", "nyt": "报纸", "bear": "小熊" },
+    "appearance": "外观",
+    "schemes": { "light": "浅色", "dark": "深色", "auto": "跟随系统" },
     "language": "语言",
     "privacy": "私密模式",
     "print": "打印今日简报",

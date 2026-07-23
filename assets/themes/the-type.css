@@ -16,10 +16,15 @@
   --fg-muted: #77726a;
   --accent: #c7372f;
   --accent-fg: #ffffff;
-  --rule: rgba(0, 0, 0, 0.08);
-  --rule-strong: rgba(0, 0, 0, 0.18);
+  --rule: rgba(var(--ink-rgb), 0.08);
+  --rule-strong: rgba(var(--ink-rgb), 0.18);
   --link: #1a1a1a;
   --highlight-bg: #f9e9a0;
+  --ink-rgb: 0, 0, 0;
+  --bg-card: #fffdf8;
+  --ok: #4caf50;
+  --selection: rgba(199, 55, 47, 0.15);
+  --shadow-soft: rgba(0, 0, 0, 0.06);
   --font-serif: "Source Serif 4", "Source Serif Pro", georgia, "Times New Roman", serif;
   --font-cjk-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", simsun, serif;
   --font-body: var(--font-serif), var(--font-cjk-serif);
@@ -39,7 +44,7 @@
   font-family: var(--font-serif), var(--font-cjk-serif);
 }
 
-[data-theme="the-type"] ::selection { background: rgba(199, 55, 47, 0.15); }
+[data-theme="the-type"] ::selection { background: var(--selection); }
 
 /* ---- header: display:contents promotes masthead-inner's children to
    direct flex items of #masthead, so `order` alone can reflow title / nav
@@ -72,7 +77,7 @@
   gap: 24px;
 }
 [data-theme="the-type"] #nav a {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(var(--ink-rgb), 0.5);
   border-bottom: 1.5px solid transparent;
   padding-bottom: 2px;
 }
@@ -91,7 +96,7 @@
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.5px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(var(--ink-rgb), 0.4);
 }
 [data-theme="the-type"] .masthead-meta::before {
   content: "";
@@ -101,7 +106,7 @@
   transform: translateY(-50%);
   width: 1px;
   height: 14px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(var(--ink-rgb), 0.1);
 }
 [data-theme="the-type"] .chrome-btn {
   border: none;
@@ -110,7 +115,7 @@
   border-radius: 0;
   font-family: var(--font-mono);
   font-size: 11px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(var(--ink-rgb), 0.4);
   letter-spacing: 0.5px;
 }
 [data-theme="the-type"] .chrome-btn:hover { color: var(--accent); }
@@ -128,7 +133,7 @@
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(var(--ink-rgb), 0.35);
   margin-bottom: 8px;
 }
 [data-theme="the-type"] .hero-date {
@@ -142,7 +147,7 @@
 [data-theme="the-type"] .hero-date-sub {
   font-family: var(--font-cjk-serif);
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(var(--ink-rgb), 0.4);
   margin-top: 10px;
 }
 [data-theme="the-type"] .hero-greeting {
@@ -153,26 +158,42 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #4caf50;
+  background: var(--ok);
 }
 [data-theme="the-type"] .hero-greeting-text {
   font-family: var(--font-meta);
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(var(--ink-rgb), 0.45);
+}
+
+[data-theme="the-type"] .hero-side {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: rgba(var(--ink-rgb), 0.4);
+  gap: 6px;
+}
+[data-theme="the-type"] .hero-updated {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: rgba(var(--ink-rgb), 0.4);
 }
 
 [data-theme="the-type"] .hero-grid {
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(var(--ink-rgb), 0.08);
+  border-bottom: 1px solid rgba(var(--ink-rgb), 0.08);
 }
 [data-theme="the-type"] .hero-grid > *:only-child { grid-column: 1 / -1; }
 
 [data-theme="the-type"] .hero-image {
   aspect-ratio: 16 / 10;
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(var(--ink-rgb), 0.08);
 }
 [data-theme="the-type"] .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* image-anchored scrim + white overlay text: stays constant across
+   light/dark scheme since it sits on top of a photo, not the page bg */
 [data-theme="the-type"] .hero-image::after {
   content: "";
   position: absolute;
@@ -213,14 +234,14 @@
   font-size: 10px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(var(--ink-rgb), 0.35);
 }
 [data-theme="the-type"] .hero-summary-text {
   margin: 0;
   font-family: var(--font-heading);
   font-size: 17px;
   line-height: 1.75;
-  color: #2a2a2a;
+  color: rgba(var(--ink-rgb), 0.85);
 }
 
 [data-theme="the-type"] .stats-pills { padding: 0 36px 28px; gap: 10px; }
@@ -243,7 +264,7 @@
   font-size: 11px;
   text-transform: none;
   letter-spacing: 0;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(var(--ink-rgb), 0.4);
 }
 
 /* ---- today's feed: section header + numbered article list ---- */
@@ -270,7 +291,7 @@
   color: var(--accent);
 }
 [data-theme="the-type"] .featured-article .item-meta { margin-bottom: 12px; }
-[data-theme="the-type"] .featured-article .item-source { color: rgba(0, 0, 0, 0.3); font-weight: 400; }
+[data-theme="the-type"] .featured-article .item-source { color: rgba(var(--ink-rgb), 0.3); font-weight: 400; }
 [data-theme="the-type"] .featured-article .item-title {
   margin: 0 0 12px;
   font-size: 28px;
@@ -281,7 +302,7 @@
 [data-theme="the-type"] .featured-article .item-summary {
   font-size: 15px;
   line-height: 1.7;
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(var(--ink-rgb), 0.65);
 }
 
 [data-theme="the-type"] .item-list { max-width: none; counter-reset: feed-article 0; }
@@ -293,7 +314,7 @@
   grid-template-columns: 56px 1fr;
   column-gap: 20px;
   padding: 20px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(var(--ink-rgb), 0.08);
   border-bottom: none;
   counter-increment: feed-article;
 }
@@ -303,13 +324,13 @@
   grid-row: 1 / -1;
   align-self: start;
   font: 700 32px/1 var(--font-serif);
-  color: rgba(0, 0, 0, 0.08);
+  color: rgba(var(--ink-rgb), 0.1);
 }
 [data-theme="the-type"] .item-list .item > * { grid-column: 2; }
 [data-theme="the-type"] .item-list .item .item-meta { font-family: var(--font-mono); font-size: 10px; }
-[data-theme="the-type"] .item-list .item .item-source { color: rgba(0, 0, 0, 0.3); font-weight: 400; }
+[data-theme="the-type"] .item-list .item .item-source { color: rgba(var(--ink-rgb), 0.3); font-weight: 400; }
 [data-theme="the-type"] .item-list .item .item-title { font-size: 19px; font-weight: 600; letter-spacing: -0.3px; }
-[data-theme="the-type"] .item-list .item .item-summary { font-size: 13px; color: rgba(0, 0, 0, 0.4); }
+[data-theme="the-type"] .item-list .item .item-summary { font-size: 13px; color: rgba(var(--ink-rgb), 0.4); }
 
 /* ---- today blocks (papers, following) ---- */
 
@@ -322,12 +343,12 @@
 [data-theme="the-type"] .apropos-card {
   margin-top: 2.4rem;
   border-radius: 0;
-  background: #fffdf8;
+  background: var(--bg-card);
   box-shadow: none;
 }
 [data-theme="the-type"] .apropos-card:hover,
 [data-theme="the-type"] .apropos-card:focus-within {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 28px var(--shadow-soft);
 }
 [data-theme="the-type"] .apropos-kicker,
 [data-theme="the-type"] .apropos-source-label {
@@ -350,7 +371,7 @@
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.5px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(var(--ink-rgb), 0.3);
 }
 
 /* ---- animations ---- */
@@ -378,5 +399,26 @@
   [data-theme="the-type"] .masthead-meta { order: 2; width: auto; margin-left: auto; }
   [data-theme="the-type"] .hero-date { font-size: 48px; letter-spacing: -1.5px; }
   [data-theme="the-type"] .hero-grid { grid-template-columns: 1fr; }
-  [data-theme="the-type"] .hero-image { border-right: none; border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+  [data-theme="the-type"] .hero-image { border-right: none; border-bottom: 1px solid rgba(var(--ink-rgb), 0.08); }
+}
+
+/* ---- dark scheme: "Lamplight" — warm charcoal, cream ink, vermillion accent ---- */
+html[data-scheme="dark"][data-theme="the-type"] {
+  --bg: #1b1917;
+  --bg-elev: #26221d;
+  --bg-card: #26211a;
+  --fg: #eae4da;
+  --fg-muted: #a49c8f;
+  --accent: #e06a55;
+  --accent-fg: #1b1917;
+  --ink-rgb: 234, 228, 218;
+  --rule: rgba(var(--ink-rgb), 0.12);
+  --rule-strong: rgba(var(--ink-rgb), 0.3);
+  --link: #eae4da;
+  --highlight-bg: #4a3f14;
+  --ok: #7cb96a;
+  --selection: rgba(224, 106, 85, 0.3);
+  --shadow-soft: rgba(0, 0, 0, 0.3);
+  --overlay: rgba(0, 0, 0, 0.6);
+  --shadow-pop: rgba(0, 0, 0, 0.5);
 }

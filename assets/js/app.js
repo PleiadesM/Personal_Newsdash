@@ -7,6 +7,7 @@ import * as ndCrypto from "./crypto.js";
 import { dropDecrypted, loadAllSections, loadManifest } from "./data.js";
 import { clear, el } from "./dom.js";
 import { fmtDateTime, initI18n, t } from "./i18n.js";
+import { applyScheme, initScheme, resolvedScheme, updateThemeColorMeta } from "./scheme.js";
 import { get, prefs, set } from "./store.js";
 import * as clippingsView from "./views/clippings.js";
 import * as feedView from "./views/feed.js";
@@ -133,6 +134,23 @@ function renderHeader() {
     nav.appendChild(el("a", { href: `#/${route}`, dataset: { route } },
       sectionLabel(route)));
   }
+
+  // Scheme toggle glyph/label track the resolved scheme; theme switches also
+  // change --bg, so refresh the meta theme-color here too.
+  updateSchemeToggle();
+  updateThemeColorMeta();
+}
+
+// Header ☀/☾ quick-toggle: glyph reflects the RESOLVED scheme, the label names
+// the action (switch to the other one). Kept in sync via nd:schemechange.
+function updateSchemeToggle() {
+  const btn = document.getElementById("scheme-toggle");
+  if (!btn) return;
+  const dark = resolvedScheme() === "dark";
+  btn.textContent = dark ? "☾" : "☀";
+  const title = dark ? t("app.schemeToLight") : t("app.schemeToDark");
+  btn.title = title;
+  btn.setAttribute("aria-label", title);
 }
 
 function renderAll() {
@@ -298,6 +316,7 @@ async function boot() {
 
   const theme = prefs.read("theme", manifest?.site?.theme || "the-type");
   document.documentElement.dataset.theme = theme;
+  initScheme();
   await initI18n(prefs.read("lang", manifest?.site?.default_language || "en"));
 
   initAnnotator();
@@ -311,6 +330,9 @@ async function boot() {
       renderCurrent();
     });
   });
+  document.getElementById("scheme-toggle").addEventListener("click", () => {
+    applyScheme(resolvedScheme() === "dark" ? "light" : "dark");
+  });
   document.getElementById("lock-btn").addEventListener("click", () => {
     if (get().unlocked) lock();
     else showUnlockModal();
@@ -318,6 +340,7 @@ async function boot() {
   document.addEventListener("nd:unlock-request", showUnlockModal);
   document.addEventListener("nd:lock", lock);
   document.addEventListener("nd:rerender", renderCurrent);
+  document.addEventListener("nd:schemechange", updateSchemeToggle);
   document.addEventListener("nd:show-tutorial", showTutorial);
   window.addEventListener("hashchange", renderCurrent);
 

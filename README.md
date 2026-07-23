@@ -39,7 +39,7 @@ It is designed to help those who need to cope with a large amount of information
 - **Today's Image (need an LLM API key and Smithsonian API key):** Let an LLM generate keywords according to the collected sources, and then search the [Smithsonian Open Access](https://www.si.edu/openaccess) and select an image that matches the main themes of the day.
 - **Private Modes:** There are two layers of meaning regarding private modes: full private mode and private visibility. The first one is that the whole webpage you deploy is encrypted ([see the instructions below](#private-mode-and-its-management)) and requires a passphrase to visit. Private visibility means that some information is only visible to you, like favorites, highlights, and notes. So, setting a passphrase is necessary.
 - **Favorite, annotations, and notes:** You can also highlight the texts that you collected, which are stored in your local cookies. This is only visible to you, and you need to set up the passphrase to read them.
-- **Themes:** There are several themes available. Currently, `The Type` is the most functional one.
+- **Themes:** There are several themes available. Currently, `The Type` is the most functional one. Every theme ships a designed dark variant — follows your system by default, Light/Dark/Auto override in Settings, ☀/☾ toggle in the header.
 - **Apropos-of-Nothing (need an LLM API key):** While this app helps you collect the most relevant information, it also asks your LLM to find a totally irrelevant public-news item and displays it with a short summary and source link.
 
 ---

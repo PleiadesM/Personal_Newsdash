@@ -15,6 +15,8 @@ export const FALLBACK_EN = {
     "notConfigured": "This section isn't set up yet.",
     "notConfiguredHint": "Add the required secrets in your repository settings, then wait for the next update. See the setup guide.",
     "setupGuide": "Setup guide",
+    "schemeToDark": "Switch to dark mode",
+    "schemeToLight": "Switch to light mode",
     "noscript": "Relevance needs JavaScript to render your dashboard. 及君需要启用 JavaScript 才能显示。"
   },
   "nav": {
@@ -73,9 +75,38 @@ export const FALLBACK_EN = {
     "noCrypto": "Private mode isn't configured. Set the NEWSDASH_PASSPHRASE secret to enable private sections and notes."
   },
   "today": {
-    "greetingMorning": "Good morning",
-    "greetingAfternoon": "Good afternoon",
-    "greetingEvening": "Good evening",
+    "greetings": {
+      "dawn": [
+        "Up before the headlines.",
+        "First light, first lines.",
+        "The day is still in draft."
+      ],
+      "morning": [
+        "Morning — the world kept notes while you slept.",
+        "A fresh page. Begin anywhere.",
+        "Good morning. The ink is still fresh."
+      ],
+      "midday": [
+        "Midday — the news is still warm.",
+        "Noon. A good hour to look up.",
+        "Half the day, whole of the world."
+      ],
+      "afternoon": [
+        "Afternoon light, long stories, short reads.",
+        "The afternoon knows what the morning suspected.",
+        "Slow hours. Read one thing well."
+      ],
+      "evening": [
+        "Evening — time to gather the day's threads.",
+        "The day files its last dispatches.",
+        "Dusk. The headlines soften."
+      ],
+      "night": [
+        "Late hours. Read gently.",
+        "The world runs on night shift now.",
+        "Tomorrow is already typesetting."
+      ]
+    },
     "today": "Today",
     "yesterday": "Yesterday",
     "highlights": "Highlights",
@@ -233,6 +264,12 @@ export const FALLBACK_EN = {
       "the-type": "The Type",
       "nyt": "Newsprint",
       "bear": "Bear"
+    },
+    "appearance": "Appearance",
+    "schemes": {
+      "light": "Light",
+      "dark": "Dark",
+      "auto": "Auto"
     },
     "language": "Language",
     "privacy": "Private mode",

@@ -58,8 +58,6 @@ rule above.
 - **Story clustering + scoring backtest** — merge multi-source coverage of the same
   event and replay scoring changes against `archive.json`, porting radar's
   v0.6 (story merge) and v0.7 (hot ranking + backtest tool) ideas.
-- **Dark variants for `the-type` and `nyt`** — `bear` already auto-darks; the other
-  two deserve deliberate dark palettes, not an inverted filter.
 - **`deploy-pages` no-commit mode + history-squash workflow** — publish `data/` via
   the Pages artifact API instead of committing it, and a one-click workflow to squash
   the bot-commit history that accumulates in the meantime.

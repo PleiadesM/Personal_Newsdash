@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
   <title>Relevance</title>
+  <meta name="theme-color" content="#faf9f6">
+  <!-- FOUC guard: stamp theme + resolved scheme onto <html> BEFORE any
+       stylesheet loads, so the first paint is already correct. Mirrors
+       assets/js/scheme.js and the `nd.` prefs namespace (store.js) — keep in
+       sync. Anything unexpected falls back to the light scheme. -->
+  <script>
+    (function () {
+      try {
+        var themes = ["the-type", "nyt", "bear"];
+        var theme = localStorage.getItem("nd.theme");
+        if (themes.indexOf(theme) !== -1) {
+          document.documentElement.dataset.theme = theme;
+        }
+        var scheme = localStorage.getItem("nd.scheme") || "auto";
+        var resolved = (scheme === "light" || scheme === "dark") ? scheme
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark" : "light");
+        document.documentElement.dataset.scheme = resolved;
+      } catch (e) {
+        document.documentElement.dataset.scheme = "light";
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/themes/the-type.css">
   <link rel="stylesheet" href="assets/themes/nyt.css">
@@ -28,6 +51,7 @@
         <div class="masthead-meta">
           <span id="updated-at"></span>
           <button id="lang-toggle" class="chrome-btn" type="button">中文</button>
+          <button id="scheme-toggle" class="chrome-btn" type="button">☀</button>
           <button id="lock-btn" class="chrome-btn" type="button" hidden>🔒</button>
         </div>
       </div>

@@ -2,11 +2,25 @@
 
 import { clear, el } from "../dom.js";
 import { getLang, setLang, t } from "../i18n.js";
+import { applyScheme, schemePref } from "../scheme.js";
 import { get, prefs } from "../store.js";
 import { tabBar } from "./shared.js";
 import * as sourcesView from "./sources.js";
 
 const THEMES = ["the-type", "nyt", "bear"];
+const SCHEMES = ["light", "dark", "auto"];
+
+// Keep the Appearance chips reflecting the PREF (Auto stays active under auto),
+// even when the scheme changes from the header toggle or a live OS flip. The
+// scheme swap is a pure CSS-var change (no nd:rerender), so nothing re-renders
+// settings for us — this listener, registered once, resyncs the active chip in
+// place. No-ops when the settings view isn't mounted.
+document.addEventListener("nd:schemechange", () => {
+  const pref = schemePref();
+  document.querySelectorAll(".scheme-chip").forEach((chip) => {
+    chip.classList.toggle("active", chip.dataset.scheme === pref);
+  });
+});
 
 export function render(container, tab = "general") {
   if (tab !== "sources") tab = "general"; // unknown tab -> default
@@ -43,6 +57,22 @@ function renderGeneral(container) {
           document.dispatchEvent(new CustomEvent("nd:rerender"));
         },
       }, t(`settings.themes.${theme}`));
+    })),
+  ));
+
+  // appearance (color scheme): light / dark / auto. Chips reflect the PREF,
+  // not the resolved scheme, so Auto stays highlighted under a dark OS. Each
+  // click is a pure CSS-var swap (applyScheme cross-fades) — deliberately NO
+  // nd:rerender, which would rebuild the DOM and defeat the fade.
+  container.appendChild(el("section", { class: "settings-group" },
+    el("h3", {}, t("settings.appearance")),
+    el("div", { class: "theme-picker" }, SCHEMES.map((scheme) => {
+      const active = schemePref() === scheme;
+      return el("button", {
+        class: `theme-chip scheme-chip${active ? " active" : ""}`,
+        dataset: { scheme },
+        onclick: () => applyScheme(scheme),
+      }, t(`settings.schemes.${scheme}`));
     })),
   ));
 

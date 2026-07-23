@@ -15,11 +15,43 @@ function isTheType() {
   return document.documentElement.dataset.theme === "the-type";
 }
 
+// Time-aware greeting. Six slots by hour of day; each has a small i18n pool
+// (today.greetings.<slot>) picked deterministically by day-of-year, so the
+// line is stable within a day rather than churning on every render. en/zh
+// pools are crafted separately but keep identical per-slot counts.
+function daySlot(hour) {
+  if (hour < 5) return "night";      // 22–5 (wraps past midnight)
+  if (hour < 8) return "dawn";       // 5–8
+  if (hour < 12) return "morning";   // 8–12
+  if (hour < 14) return "midday";    // 12–14
+  if (hour < 18) return "afternoon"; // 14–18
+  if (hour < 22) return "evening";   // 18–22
+  return "night";                    // 22–5
+}
+
+// Probe today.greetings.<slot>.<i> until t() returns the key unchanged (the
+// missing-key signal), collecting the pool. Arrays survive i18n's dotted
+// lookup as node["0"], node["1"], … (see i18n.js).
+function greetingPool(slot) {
+  const pool = [];
+  for (let i = 0; ; i++) {
+    const key = `today.greetings.${slot}.${i}`;
+    const line = t(key);
+    if (line === key) break;
+    pool.push(line);
+  }
+  return pool;
+}
+
+function dayOfYear(date = new Date()) {
+  const start = new Date(date.getFullYear(), 0, 0);
+  return Math.floor((date - start) / 86400000);
+}
+
 function greeting() {
-  const hour = new Date().getHours();
-  if (hour < 12) return t("today.greetingMorning");
-  if (hour < 18) return t("today.greetingAfternoon");
-  return t("today.greetingEvening");
+  const pool = greetingPool(daySlot(new Date().getHours()));
+  if (!pool.length) return "";
+  return pool[dayOfYear() % pool.length];
 }
 
 function block(title, route, ...children) {
@@ -474,6 +506,7 @@ function theTypeFeedSection(favs) {
 
 function renderTheType(container, favs) {
   const { weekday, mainDate, subDate } = heroDateParts();
+  const generatedAt = get().manifest?.generated_at;
   const hero = el("div", { class: "hero-section nd-fadein" },
     el("div", { class: "hero-date-row" },
       el("div", {},
@@ -481,9 +514,15 @@ function renderTheType(container, favs) {
         el("div", { class: "hero-date" }, mainDate),
         el("div", { class: "hero-date-sub" }, subDate),
       ),
-      el("div", { class: "hero-greeting" },
-        el("span", { class: "hero-greeting-dot" }),
-        el("span", { class: "hero-greeting-text" }, greeting()),
+      el("div", { class: "hero-side" },
+        el("div", { class: "hero-greeting" },
+          el("span", { class: "hero-greeting-dot" }),
+          el("span", { class: "hero-greeting-text" }, greeting()),
+        ),
+        generatedAt
+          ? el("div", { class: "hero-updated" },
+              t("app.updated", { time: fmtDateTime(generatedAt) }))
+          : null,
       ),
     ),
   );

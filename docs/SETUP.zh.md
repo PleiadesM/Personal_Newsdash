@@ -65,7 +65,7 @@
    |---|---|
    | **Interface language 界面语言** | 默认界面语言（中或英）。读者在页面上仍可随时切换。 |
    | **Site visibility 站点可见性** | **Public 公开** = 新闻/论文任何人可读，私人栏目仍加密。**Private 私密** = *全站*加密，打开即口令门——需要 `NEWSDASH_PASSPHRASE`（[第 5 步](#5-私密模式与口令)）。 |
-   | **Theme 主题** | `the-type`（字砌）、`nyt`（报纸）、`bear`（小熊极简、自动深色）。 |
+   | **Theme 主题** | `the-type`（字砌）、`nyt`（报纸）、`bear`（小熊极简、紧凑）。三套主题均配有专门设计的深色版本。 |
    | **Site title 站点标题** | 报头文字（可选）。 |
    | **Timezone 时区** | IANA 名称，如 `Asia/Shanghai`、`America/Chicago`——用于日界（可选）。 |
    | **Open news packs 公开新闻包** | 勾选 **AI news** 和/或 **General news**。全不勾则保留两个默认包。 |

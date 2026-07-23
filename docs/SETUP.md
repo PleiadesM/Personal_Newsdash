@@ -84,7 +84,7 @@ You never need to edit JSON by hand. The repo ships an issue form that a bot rea
    |---|---|
    | **Interface language** | Default UI language, English or Chinese. Readers can still toggle anytime on the page. |
    | **Site visibility** | **Public** = news/papers readable by anyone, personal sections still encrypted. **Private** = the *entire* site is encrypted and opens with a passphrase gate — requires the `NEWSDASH_PASSPHRASE` secret ([step 5](#5-private-mode-and-the-passphrase)). |
-   | **Theme** | `the-type` (typography-first serif), `nyt` (newspaper front page), or `bear` (minimal, auto dark mode). |
+   | **Theme** | `the-type` (typography-first serif), `nyt` (newspaper front page), or `bear` (minimal, compact). All three ship a designed dark variant. |
    | **Site title** | The masthead text (optional). |
    | **Timezone** | IANA name like `America/Chicago` or `Asia/Shanghai` — used for day boundaries (optional). |
    | **Open news packs** | Tick **AI news** and/or **General news**. Tick nothing and the bot keeps both defaults. |

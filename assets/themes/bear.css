@@ -1,5 +1,8 @@
 /* Theme: bear — Bear Blog (bearblog.dev) ultra-minimalism: system fonts,
-   one narrow column, near-zero chrome, automatic light/dark. */
+   one narrow column, near-zero chrome. Dark variant is driven by the
+   app's own Light/Dark/Auto scheme control (`html[data-scheme]`), not a
+   bare `prefers-color-scheme` media query — that would ignore an explicit
+   manual override under a dark OS. */
 
 [data-theme="bear"] {
   --bg: #ffffff;
@@ -25,19 +28,20 @@
   --page-max: 46rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  [data-theme="bear"] {
-    --bg: #171717;
-    --bg-elev: #222222;
-    --fg: #dddddd;
-    --fg-muted: #999999;
-    --accent: #77aaff;
-    --accent-fg: #101010;
-    --rule: #2e2e2e;
-    --rule-strong: #494949;
-    --link: #77aaff;
-    --highlight-bg: #5c531f;
-  }
+html[data-scheme="dark"][data-theme="bear"] {
+  --bg: #171717;
+  --bg-elev: #222222;
+  --fg: #dddddd;
+  --fg-muted: #999999;
+  --accent: #77aaff;
+  --accent-fg: #101010;
+  --rule: #2e2e2e;
+  --rule-strong: #494949;
+  --link: #77aaff;
+  --highlight-bg: #5c531f;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --shadow-pop: rgba(0, 0, 0, 0.5);
+  --shadow-soft: rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="bear"] body { font-family: var(--font-sans); }
