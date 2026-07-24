@@ -4,7 +4,11 @@ from urllib.parse import parse_qs, urlparse
 import responses
 
 import newsdash.apropos as apropos_mod
-from newsdash.apropos import GDELT_DOC_URL, find_apropos_of_nothing
+from newsdash.apropos import (
+    GDELT_DOC_URL,
+    GOOGLE_NEWS_RSS_URL,
+    find_apropos_of_nothing,
+)
 from newsdash.http import make_session
 
 CHAT_URL = "https://api.openai.com/v1/chat/completions"
@@ -77,6 +81,60 @@ def gdelt_response():
     }
 
 
+def google_news_rss_body():
+    # Two items: RFC-822 pubDates, per-item <source url="..."> publisher tags,
+    # titles suffixed " - Publisher", and HTML-link descriptions that just
+    # repeat the headline (as Google News actually emits).
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<rss version="2.0"><channel>'
+        "<title>Google News</title>"
+        "<item>"
+        "<title>Giant pumpkin weigh-off draws crowds - The Gazette</title>"
+        "<link>https://news.google.com/rss/articles/item1</link>"
+        "<pubDate>Wed, 08 Jul 2026 09:00:00 GMT</pubDate>"
+        '<description>&lt;a href="https://news.google.com/rss/articles/item1"&gt;'
+        "Giant pumpkin weigh-off draws crowds&lt;/a&gt;</description>"
+        '<source url="https://gazette.example">The Gazette</source>'
+        "</item>"
+        "<item>"
+        "<title>Pumpkin championship crowns record gourd - Rural Weekly</title>"
+        "<link>https://news.google.com/rss/articles/item2</link>"
+        "<pubDate>Wed, 08 Jul 2026 10:30:00 GMT</pubDate>"
+        '<description>&lt;a href="https://news.google.com/rss/articles/item2"&gt;'
+        "Pumpkin championship crowns record gourd&lt;/a&gt;</description>"
+        '<source url="https://ruralweekly.example">Rural Weekly</source>'
+        "</item>"
+        "</channel></rss>"
+    )
+
+
+def empty_google_news_rss_body():
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<rss version="2.0"><channel><title>Google News</title></channel></rss>'
+    )
+
+
+def linkless_google_news_rss_body():
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<rss version="2.0"><channel><title>Google News</title>'
+        "<item>"
+        "<title>Headline with no link - The Gazette</title>"
+        "<pubDate>Wed, 08 Jul 2026 09:00:00 GMT</pubDate>"
+        "</item>"
+        "</channel></rss>"
+    )
+
+
+def _patch_no_sleep(monkeypatch):
+    sleeps = []
+    monkeypatch.setattr(apropos_mod, "GDELT_RETRY_SLEEPS", (0, 0))
+    monkeypatch.setattr(apropos_mod.time, "sleep", lambda s: sleeps.append(s))
+    return sleeps
+
+
 def test_no_key_skips_without_call():
     assert find_apropos_of_nothing(make_payloads(), {}, make_session()) is None
 
@@ -115,27 +173,118 @@ def test_happy_path_searches_public_news_and_returns_card_payload():
 
 
 @responses.activate
-def test_gdelt_429_is_best_effort_skip(capsys, monkeypatch):
-    sleeps = []
-    monkeypatch.setattr(apropos_mod, "GDELT_RETRY_SLEEPS", (0, 0))
-    monkeypatch.setattr(apropos_mod.time, "sleep", lambda s: sleeps.append(s))
+def test_gdelt_429_then_empty_fallback_is_best_effort_skip(capsys, monkeypatch):
+    sleeps = _patch_no_sleep(monkeypatch)
 
     responses.post(CHAT_URL, json=query_completion())
     responses.get(GDELT_DOC_URL, status=429)
     responses.get(GDELT_DOC_URL, status=429)
     responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GOOGLE_NEWS_RSS_URL, body=empty_google_news_rss_body(),
+                 content_type="application/rss+xml")
 
     env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
     result = find_apropos_of_nothing(make_payloads(), env, make_session())
 
     assert result is None
-    assert len(responses.calls) == 4
+    # 1 query LLM POST + 3 GDELT attempts + 1 Google News fallback
+    assert len(responses.calls) == 5
     out = capsys.readouterr().out
-    assert "GDELT rate-limited (429)" in out
-    assert ("skipped: GDELT rate-limited (429); will try again next build"
-            in out)
+    assert "GDELT rate-limited (429); giving up on GDELT this build" in out
+    assert "will try again next build" not in out
+    assert "falling back to Google News RSS" in out
+    assert "skipped: Google News fallback had 0 results" in out
     assert "[apropos-of-nothing:search] error" not in out
     assert sleeps == [0, 0]
+
+
+@responses.activate
+def test_gdelt_429_falls_back_to_google_news(capsys, monkeypatch):
+    _patch_no_sleep(monkeypatch)
+
+    responses.post(CHAT_URL, json=query_completion())
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GOOGLE_NEWS_RSS_URL, body=google_news_rss_body(),
+                 content_type="application/rss+xml")
+    responses.post(CHAT_URL, json=summary_completion())
+
+    env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
+    result = find_apropos_of_nothing(make_payloads(), env, make_session())
+
+    assert result is not None
+    # summary_completion picks choice=2 → the second RSS item.
+    assert result["source"]["name"] == "Rural Weekly"
+    assert result["source"]["title"] == "Pumpkin championship crowns record gourd"
+    assert result["source"]["published_at"] == "2026-07-08T10:30:00Z"
+
+    gn_call = next(c for c in responses.calls
+                   if c.request.url.startswith(GOOGLE_NEWS_RSS_URL))
+    params = parse_qs(urlparse(gn_call.request.url).query)
+    assert params["q"] == ['"pumpkin championship" OR "giant pumpkin" when:14d']
+    assert params["hl"] == ["en-US"]
+    assert params["gl"] == ["US"]
+    assert params["ceid"] == ["US:en"]
+
+    out = capsys.readouterr().out
+    assert "falling back to Google News RSS" in out
+
+
+@responses.activate
+def test_gdelt_zero_results_both_queries_falls_back(monkeypatch):
+    _patch_no_sleep(monkeypatch)
+
+    responses.post(CHAT_URL, json=query_completion())
+    responses.get(GDELT_DOC_URL, json={"articles": []})
+    responses.get(GDELT_DOC_URL, json={"articles": []})
+    responses.get(GOOGLE_NEWS_RSS_URL, body=google_news_rss_body(),
+                 content_type="application/rss+xml")
+    responses.post(CHAT_URL, json=summary_completion())
+
+    env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
+    result = find_apropos_of_nothing(make_payloads(), env, make_session())
+
+    assert result is not None
+    assert result["source"]["name"] == "Rural Weekly"
+
+
+@responses.activate
+def test_google_news_fallback_failure_returns_none(capsys, monkeypatch):
+    _patch_no_sleep(monkeypatch)
+
+    responses.post(CHAT_URL, json=query_completion())
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GOOGLE_NEWS_RSS_URL, status=503)
+
+    env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
+    result = find_apropos_of_nothing(make_payloads(), env, make_session())
+
+    assert result is None
+    out = capsys.readouterr().out
+    assert "skipped: Google News fallback error" in out
+    assert "[apropos-of-nothing:search] error" not in out
+
+
+@responses.activate
+def test_google_news_fallback_all_invalid_items_returns_none(capsys, monkeypatch):
+    _patch_no_sleep(monkeypatch)
+
+    responses.post(CHAT_URL, json=query_completion())
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GDELT_DOC_URL, status=429)
+    responses.get(GOOGLE_NEWS_RSS_URL, body=linkless_google_news_rss_body(),
+                 content_type="application/rss+xml")
+
+    env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
+    result = find_apropos_of_nothing(make_payloads(), env, make_session())
+
+    assert result is None
+    out = capsys.readouterr().out
+    assert "skipped: Google News fallback had 0 results" in out
 
 
 @responses.activate

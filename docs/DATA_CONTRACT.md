@@ -301,9 +301,10 @@ rights-uncertain results are never surfaced.
 `apropos_of_nothing` is a build-time echo-chamber break. The configured LLM
 first sees only `news`/`papers` titles and short summaries and proposes
 benign off-profile search terms. The pipeline then searches public news via
-the GDELT DOC API (`mode=artlist`, `format=json`, one week), and the LLM
-writes a short bilingual card for one sourced result. If GDELT is rate-limited
-or no sourced result is available, the field is omitted for that build. No
+the GDELT DOC API (`mode=artlist`, `format=json`, one week), falling back to
+keyless Google News RSS when GDELT is rate-limited or returns nothing, and the
+LLM writes a short bilingual card for one sourced result. If no sourced result
+is available, the field is omitted for that build. No
 visitor browser ever contacts GDELT or the LLM endpoint for this block.
 
 ### `threads.json` / `threads.enc.json` / `threads-private.enc.json` — optional AI enrichment

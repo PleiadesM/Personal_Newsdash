@@ -3,7 +3,9 @@
 Build-time only, off unless ``LLM_API_KEY`` is configured. The LLM first
 chooses a benign, off-profile search topic from the public news/papers
 context, then the pipeline searches public news through GDELT's DOC API and
-asks the LLM for a short bilingual summary of one result.
+asks the LLM for a short bilingual summary of one result. When GDELT yields
+nothing (rate-limited on shared runner IPs, or no results even after the
+broadened retry) the search falls back to keyless Google News RSS.
 """
 
 from __future__ import annotations
@@ -13,6 +15,7 @@ import time
 from datetime import datetime, timezone
 from typing import Mapping
 
+import feedparser
 import requests
 from dateutil import parser as dateparser
 
@@ -22,6 +25,7 @@ from .models import clip, iso_utc, strip_html
 from .summarize import _item_lines
 
 GDELT_DOC_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
+GOOGLE_NEWS_RSS_URL = "https://news.google.com/rss/search"
 MAX_CONTEXT_NEWS = 18
 MAX_CONTEXT_PAPERS = 8
 MAX_GDELT_RESULTS = 8
@@ -242,8 +246,8 @@ def _gdelt_attempts(query: str, timespan: str,
                 time.sleep(sleep)
                 continue
             if status in GDELT_SOFT_FAIL_STATUSES:
-                print("[apropos-of-nothing:search] skipped: GDELT rate-limited "
-                      f"({status}); will try again next build")
+                print("[apropos-of-nothing:search] GDELT rate-limited "
+                      f"({status}); giving up on GDELT this build")
                 return None
             print(f"[apropos-of-nothing:search] error: HTTPError: {str(exc)[:200]}")
             return None
@@ -269,10 +273,76 @@ def _search_gdelt(terms: list[str], session: requests.Session) -> tuple[str, lis
     if articles is None:
         return broad, []
     if not articles:
-        print("[apropos-of-nothing:search] skipped: 0 results even for "
+        print("[apropos-of-nothing:search] 0 results even for "
               f"broadened query {broad}")
         return broad, []
     return broad, articles
+
+
+def _google_news_articles(raw: bytes) -> list[dict]:
+    feed = feedparser.parse(raw)
+    articles: list[dict] = []
+    seen: set[str] = set()
+    for entry in feed.entries:
+        title = strip_html(entry.get("title") or "").strip()
+        url = (entry.get("link") or "").strip()
+        if not title or not url.startswith(("http://", "https://")) or url in seen:
+            continue
+        seen.add(url)
+
+        source_name = "Google News"
+        source = entry.get("source")
+        if isinstance(source, dict):
+            candidate = strip_html(str(source.get("title") or "")).strip()
+            if candidate:
+                source_name = candidate
+
+        suffix = f" - {source_name}"
+        if title.endswith(suffix):
+            stripped = title[: -len(suffix)].strip()
+            if stripped:
+                title = stripped
+
+        summary = clip(strip_html(
+            entry.get("summary") or entry.get("description") or ""
+        ))
+        if summary.casefold() == title.casefold():
+            summary = ""
+
+        articles.append({
+            "title": title,
+            "url": url,
+            "source_name": source_name,
+            "published_at": _parse_article_date(entry.get("published")),
+            "summary": summary,
+        })
+        if len(articles) == MAX_GDELT_RESULTS:
+            break
+    return articles
+
+
+def _search_google_news(terms: list[str],
+                        session: requests.Session) -> tuple[str, list[dict]]:
+    query = " OR ".join(_quote_query_term(t) for t in terms)
+    print(f"[apropos-of-nothing:search] falling back to Google News RSS: {query}")
+    params = {
+        "q": f"{query} when:14d",
+        "hl": "en-US",
+        "gl": "US",
+        "ceid": "US:en",
+    }
+    try:
+        resp = get(session, GOOGLE_NEWS_RSS_URL, params=params)
+        articles = _google_news_articles(resp.content)
+    except Exception as exc:  # noqa: BLE001 - optional enrichment must not fail builds
+        print("[apropos-of-nothing:search] skipped: Google News fallback error: "
+              f"{type(exc).__name__}: {str(exc)[:200]}")
+        return query, []
+    if not articles:
+        print("[apropos-of-nothing:search] skipped: Google News fallback had "
+              f"0 results for {query}")
+        return query, []
+    return query, articles
 
 
 def _candidate_lines(articles: list[dict]) -> str:
@@ -351,6 +421,8 @@ def find_apropos_of_nothing(payloads: dict[str, dict], env: Mapping[str, str],
         return None
 
     query, articles = _search_gdelt(terms, session)
+    if not articles:
+        query, articles = _search_google_news(terms, session)
     if not articles:
         return None
 

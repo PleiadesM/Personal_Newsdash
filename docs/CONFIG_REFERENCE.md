@@ -243,8 +243,9 @@ Hard guarantees:
 
 - Reads only your `news`/`papers` items.
 - Apropos-of-Nothing sends only news/papers titles and short summaries to the
-  configured LLM, then searches public news through GDELT; visitor browsers
-  never contact either service for that card.
+  configured LLM, then searches public news through GDELT (falling back to
+  keyless Google News RSS when GDELT is rate-limited or empty); visitor
+  browsers never contact either service for that card.
 - A GDELT rate limit or empty public-news result just omits the
   Apropos-of-Nothing card for that build; it does not fail or degrade the
   dashboard.
