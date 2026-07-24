@@ -1,175 +1,116 @@
 {
  "meta": {
-  "count": 4,
-  "generated_at": "2026-07-24T10:27:35Z",
+  "count": 6,
+  "generated_at": "2026-07-24T14:09:17Z",
   "scope": "public"
  },
  "threads": [
   {
    "angles": [
     {
-     "item_id": "783148f1732e3681",
+     "item_id": "8b61d4c958aa9559",
      "phrase": {
-      "en": "France evacuates, Spain declares emergency",
-      "zh": "法国疏散，西班牙宣布紧急状态"
-     },
-     "section": "news",
-     "source": "BBC World",
-     "url": "https://www.bbc.co.uk/news/videos/cz641jd4p4lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "item_id": "6cd75902153faa78",
-     "phrase": {
-      "en": "Cap Ferret evacuated, Spain warns",
-      "zh": "Cap Ferret 疏散，西班牙警告"
+      "en": "Democrats call it a sales tax",
+      "zh": "民主党称之为销售税"
      },
      "section": "news",
      "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/world/live/2026/jul/24/france-spain-wildfires-cap-ferret-europe-latest-news-updates"
+     "url": "https://www.theguardian.com/us-news/live/2026/jul/24/donald-trump-tariffs-white-house-correspondents-dinner-latest-news-updates"
     },
     {
-     "item_id": "47883d6c013d5701",
+     "item_id": "4b722151ec75d05e",
      "phrase": {
-      "en": "France learns from Spain on heat",
-      "zh": "法国向西班牙学习应对高温"
+      "en": "costly for households",
+      "zh": "让家庭付出代价"
      },
      "section": "news",
      "source": "The New York Times",
-     "url": "https://www.nytimes.com/2026/07/24/world/europe/france-spain-climate-heat-wildfires.html"
+     "url": "https://www.nytimes.com/2026/07/24/business/dealbook/trump-trade-war-economy.html"
     },
-    {
-     "item_id": "0abcfb409d218a08",
-     "phrase": {
-      "en": "900 wildfires rage across Canada",
-      "zh": "加拿大爆发900场野火"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/environment/2026/jul/24/weather-tracker-wildfires-canada-argentina-heat"
-    },
-    {
-     "item_id": "b4d855c2e83e2151",
-     "phrase": {
-      "en": "Tens of thousands evacuated in France",
-      "zh": "法国数万人疏散"
-     },
-     "section": "news",
-     "source": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/cdx82rl5g0do?at_medium=RSS&at_campaign=rss"
-    }
-   ],
-   "convergence": "convergent",
-   "gloss": {
-    "en": "Flames race across France, Spain, and Canada, forcing evacuations and declaring emergencies.",
-    "zh": "烈焰横扫法国、西班牙和加拿大，迫使疏散并宣布紧急状态。"
-   },
-   "id": "t1",
-   "keyword": {
-    "en": "wildfires",
-    "zh": "野火"
-   },
-   "relates_to": [],
-   "why_now": {
-    "en": "Multiple wildfires raging today in Europe and North America.",
-    "zh": "今日欧洲和北美多处野火肆虐。"
-   }
-  },
-  {
-   "angles": [
     {
      "item_id": "f6633a2323ca2d25",
      "phrase": {
-      "en": "Are tariffs delivering on objectives?",
-      "zh": "关税是否达成目标？"
+      "en": "asks if tariffs are working",
+      "zh": "质疑关税是否奏效"
      },
      "section": "news",
      "source": "BBC World",
      "url": "https://www.bbc.co.uk/news/videos/c5yw2xgnv2jo?at_medium=RSS&at_campaign=rss"
     },
     {
-     "item_id": "776ac4694de4da33",
+     "item_id": "9a8dda30a35ed2ed",
      "phrase": {
-      "en": "Australian exports hit with 12.5% tariff",
-      "zh": "澳大利亚出口被加征12.5%关税"
+      "en": "allies object to forced labor claims",
+      "zh": "盟友反对强迫劳动指控"
      },
      "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/australia-news/live/2026/jul/24/australia-news-live-jim-chalmers-anthony-albanese-labor-conference-gas-tax-gambling-reform-one-nation-pauline-hanson-ntwnfb"
-    },
-    {
-     "item_id": "0a2e5804ed2ed1bd",
-     "phrase": {
-      "en": "Forced labour rationale met with bewilderment",
-      "zh": "强迫劳动理由遭困惑"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/us-news/2026/jul/24/trump-tariffs-forced-labor-us-trading-partners-react"
-    },
-    {
-     "item_id": "0fd3246454de770c",
-     "phrase": {
-      "en": "Australia hits back at unjustified tariff",
-      "zh": "澳大利亚反击不合理关税"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/australia-news/2026/jul/24/donald-trump-hits-australian-exports-to-us-with-new-higher-trade-tariff-over-claims-of-forced-labour"
+     "source": "NPR News",
+     "url": "https://www.npr.org/2026/07/24/nx-s1-5906301/us-global-trump-tariffs-reaction"
     }
    ],
    "convergence": "mixed",
    "gloss": {
-    "en": "Trump's tariffs stir confusion and anger among allies, with new levies on Australia and Canada.",
-    "zh": "特朗普关税引发盟友困惑和愤怒，对澳大利亚和加拿大加征新税。"
+    "en": "Trump's renewed tariffs spark debate over who pays and whether they work.",
+    "zh": "特朗普重启关税，引发谁买单、是否有效的争论。"
    },
-   "id": "t2",
+   "id": "t1",
    "keyword": {
-    "en": "Trump tariffs",
-    "zh": "特朗普关税"
+    "en": "tariffs",
+    "zh": "关税"
    },
    "relates_to": [],
    "why_now": {
-    "en": "Trump announces new tariffs on Australian exports today.",
-    "zh": "特朗普今日宣布对澳大利亚出口加征新关税。"
+    "en": "Trump announces new tariffs on over 80 countries today.",
+    "zh": "特朗普今日宣布对80多国加征新关税。"
    }
   },
   {
    "angles": [
     {
-     "item_id": "bf54f1823abe2458",
+     "item_id": "6cd75902153faa78",
      "phrase": {
-      "en": "Cockroach protest explained",
-      "zh": "蟑螂抗议解析"
+      "en": "France evacuates Cap Ferret",
+      "zh": "法国疏散费雷角"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/live/2026/jul/24/france-spain-wildfires-cap-ferret-europe-latest-news-updates"
+    },
+    {
+     "item_id": "783148f1732e3681",
+     "phrase": {
+      "en": "fires rage across both countries",
+      "zh": "两国山火肆虐"
      },
      "section": "news",
      "source": "BBC World",
-     "url": "https://www.bbc.co.uk/news/videos/c3307vgneveo?at_medium=RSS&at_campaign=rss"
+     "url": "https://www.bbc.co.uk/news/videos/cz641jd4p4lo?at_medium=RSS&at_campaign=rss"
     },
     {
-     "item_id": "1f3cee6c0570bf33",
+     "item_id": "47883d6c013d5701",
      "phrase": {
-      "en": "Gen Z protesters blast through Modi media control",
-      "zh": "Z世代抗议者打破莫迪媒体控制"
+      "en": "France learns from Spain's coping",
+      "zh": "法国向西班牙学习应对"
      },
      "section": "news",
      "source": "The New York Times",
-     "url": "https://www.nytimes.com/2026/07/24/world/asia/india-cockroach-party-cjp-protest-memes.html"
+     "url": "https://www.nytimes.com/2026/07/24/world/europe/france-spain-climate-heat-wildfires.html"
     }
    ],
    "convergence": "convergent",
    "gloss": {
-    "en": "Thousands take to streets in India's biggest protests in years, using cockroach mascot and social media.",
-    "zh": "印度爆发多年来最大规模抗议，使用蟑螂吉祥物和社交媒体。"
+    "en": "France and Spain battle wildfires, forcing mass evacuations.",
+    "zh": "法国和西班牙山火肆虐，大规模疏散。"
    },
-   "id": "t3",
+   "id": "t2",
    "keyword": {
-    "en": "India protests",
-    "zh": "印度抗议"
+    "en": "wildfires",
+    "zh": "山火"
    },
    "relates_to": [],
    "why_now": {
-    "en": "Mass protests erupt across India today.",
-    "zh": "今日印度各地爆发大规模抗议。"
+    "en": "Major wildfires ongoing in France and Spain today.",
+    "zh": "法国和西班牙今日遭遇严重山火。"
    }
   },
   {
@@ -177,38 +118,176 @@
     {
      "item_id": "f104d25dfe2f0bac",
      "phrase": {
-      "en": "AI music legal and listening questions",
-      "zh": "AI音乐法律和听众问题"
+      "en": "legality of AI music",
+      "zh": "AI音乐合法性"
      },
      "section": "news",
      "source": "The New York Times",
      "url": "https://www.nytimes.com/2026/07/24/arts/music/ai-music-faq.html"
     },
     {
-     "item_id": "a2130030f0863af6",
+     "full_text_file": "articles/news/9950bfed769fda8f.json",
+     "item_id": "9950bfed769fda8f",
      "phrase": {
-      "en": "New video-action model Flux 3 X Mimic",
-      "zh": "新型视频动作模型Flux 3 X Mimic"
+      "en": "EPA may limit public input",
+      "zh": "EPA或限制公众意见"
+     },
+     "section": "news",
+     "source": "Ars Technica · AI",
+     "url": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say/"
+    },
+    {
+     "item_id": "38b4343660926ceb",
+     "phrase": {
+      "en": "building app with AI took a year",
+      "zh": "用AI构建应用耗时一年"
      },
      "section": "news",
      "source": "Hacker News (AI filter)",
-     "url": "https://bfl.ai/blog/flux-3-mimic"
+     "url": "https://www.alexhyett.com/videos/tried-building-app-with-ai-it-took-a-year/"
+    },
+    {
+     "item_id": "9e060c6415654c76",
+     "phrase": {
+      "en": "wearable AI for writing",
+      "zh": "可穿戴AI辅助写作"
+     },
+     "section": "papers",
+     "source": "arXiv cs.HC (writing & docs)",
+     "url": "https://arxiv.org/abs/2607.21394v1"
     }
    ],
-   "convergence": "divergent",
+   "convergence": "mixed",
    "gloss": {
-    "en": "AI music creation raises legal and ethical questions about remixing and ownership.",
-    "zh": "AI音乐创作引发关于混音和所有权的法律与伦理问题。"
+    "en": "AI music and data centers raise legal and ethical questions.",
+    "zh": "AI音乐与数据中心引发法律和伦理疑问。"
    },
-   "id": "t4",
+   "id": "t3",
    "keyword": {
-    "en": "AI music",
-    "zh": "AI音乐"
+    "en": "AI regulation",
+    "zh": "AI监管"
    },
    "relates_to": [],
    "why_now": {
-    "en": "New York Times publishes an AI music FAQ today.",
-    "zh": "《纽约时报》今日发布AI音乐常见问题解答。"
+    "en": "New AI music capabilities and data center rules debated today.",
+    "zh": "今日讨论AI音乐能力及数据中心新规。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "070c8e5234bdcdc8",
+     "phrase": {
+      "en": "Trump threatens major escalation",
+      "zh": "特朗普威胁大幅升级"
+     },
+     "section": "news",
+     "source": "NPR News",
+     "url": "https://www.npr.org/2026/07/24/g-s1-135417/us-iran-war-updates"
+    },
+    {
+     "item_id": "8b26fcd2b3e911ad",
+     "phrase": {
+      "en": "Iranians feel trapped",
+      "zh": "伊朗人感到陷入困境"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/24/world/middleeast/iran-war-cycle.html"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "Trump threatens escalation as war devastates Iranian lives.",
+    "zh": "特朗普威胁升级，战争摧毁伊朗民生。"
+   },
+   "id": "t4",
+   "keyword": {
+    "en": "Iran",
+    "zh": "伊朗"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Trump threatens 'massive attack' on Iran today.",
+    "zh": "特朗普今日威胁对伊朗发动‘大规模攻击’。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "1a9a01c127ca8d1c",
+     "phrase": {
+      "en": "nun detained by ICE",
+      "zh": "修女被ICE拘留"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/2026/jul/24/texas-nun-detained-ice-speaks-out"
+    },
+    {
+     "item_id": "d4926aec9d64ef98",
+     "phrase": {
+      "en": "former nun's cloistered life",
+      "zh": "前修女的隐居生活"
+     },
+     "section": "news",
+     "source": "NPR News",
+     "url": "https://www.npr.org/2026/07/24/nx-s1-5904598/a-former-nun-explains-why-she-ran-away-from-her-cloistered-life"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "Texas nun detained by ICE speaks out, highlighting immigration tensions.",
+    "zh": "德州修女被ICE拘留后发声，凸显移民紧张局势。"
+   },
+   "id": "t5",
+   "keyword": {
+    "en": "detained nun",
+    "zh": "被拘留修女"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Sister Leticia Ugboaja speaks publicly for the first time today.",
+    "zh": "莱蒂西亚修女今日首次公开讲话。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "0d0d3c060e158b54",
+     "phrase": {
+      "en": "settler attack kills five",
+      "zh": "定居者袭击致五人死亡"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/2026/jul/24/palestinians-israeli-killed-west-bank-shooting"
+    },
+    {
+     "item_id": "2bbbd241993b4a31",
+     "phrase": {
+      "en": "Tanzanian lecturer held for protests",
+      "zh": "坦桑尼亚讲师因抗议被捕"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cd9w2xnxe1qo?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "Settler attack kills four Palestinians and one Israeli, escalating conflict.",
+    "zh": "定居者袭击造成四名巴勒斯坦人和一名以色列人死亡，冲突升级。"
+   },
+   "id": "t6",
+   "keyword": {
+    "en": "West Bank violence",
+    "zh": "西岸暴力"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Deadly shooting in West Bank today.",
+    "zh": "今日西岸发生致命枪击事件。"
    }
   }
  ]

@@ -1,48 +1,48 @@
 {
  "apropos_of_nothing": {
-  "query": "pumpkin championship OR giant pumpkin cultivation",
+  "query": "\"beard championship\" OR \"mustache competition\"",
   "source": {
-   "name": "Axios",
-   "published_at": "2026-07-02T07:00:00Z",
-   "title": "An update on Hope",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43NnM1RUN6V05WWi1JZ0ZuTWVlUE5zVFJRbFBEVnlRZmN6MlRtWC1WRFdES2pEUGZ4R25vUDc2QU5INXZCVkJQZUVmS0tPbkEyc3FkczB4X0kySWxRVzFmNnVpdEliZFV3eWxnbjRUOWppVnljOHc?oc=5"
+   "name": "The Courier Express",
+   "published_at": "2026-07-16T09:00:00Z",
+   "title": "Beard championship at Clearfield County Fair to benefit charity",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOTWdQQnJYeEQtU0p0ZDJZLXRlc0d4aUh1SmpXTUQwYjNiV2g2WnVjX2hHU2NpNHZma0hFZEE0Tk5rS3pzQVdWLTZqZVRCNVF5blhkeUNaMUs2cjNiMHAxUGIyVHFZamFDRnpfYWhyNUZIUXY0VE5uQ3p4emhxQ3dPcGpfdHplYUNqVFpoT3A0X1ctOU9oY3ZvbFA0Nmg2NVo2ZjZwVVZ4OTdwaEJ1RHFyYmNvREo2dWZJWThMbm4yVm14WURCbjNQMFY4RUNZUWZ4NDI2LW9NWllBMXloS0lvQ1RRcTJwSGFMb2I2R3dJdw?oc=5"
   },
   "summaries": {
    "en": {
-    "summary": "Hope's latest progress is quietly noted in a single-sentence update.",
-    "why_irrelevant": "it's a personal health milestone far removed from pumpkin lore."
+    "summary": "A beard championship at the Clearfield County Fair raises funds for charity.",
+    "why_irrelevant": "This local charity event is unrelated to global news or professional fields."
    },
    "zh": {
-    "summary": "Hope的最新进展以一句话更新低调记录。",
-    "why_irrelevant": "这是一个与南瓜传说无关的个人健康里程碑。"
+    "summary": "克利尔菲尔德县博览会上的胡须锦标赛为慈善机构筹款。",
+    "why_irrelevant": "这场本地慈善活动与全球新闻或专业领域无关。"
    }
   },
-  "topic": "competitive pumpkin growing"
+  "topic": "world championship of competitive beard and mustache growing"
  },
- "brief": "Wildfires in France and Spain force mass evacuations, Iran conflict escalates with oil prices topping $100, and AI advances raise legal questions in music creation.",
+ "brief": "China tightens rare earth export controls targeting European tech and defense firms, while the US imposes new tariffs over forced labor and Trump unveils a revised tariff system after a Supreme Court setback. Research papers focus on usability and transparency in AI systems, including conversational agents, creative writing tools, and data visualization.",
  "meta": {
-  "generated_at": "2026-07-24T10:27:35Z"
+  "generated_at": "2026-07-24T14:09:17Z"
  },
- "news_summary": "Wildfires rage in France and Spain, forcing tens of thousands to evacuate tourist areas, while US-Iran conflict drives oil prices above $100 and new global tariffs take effect. AI music creation tools and Gen Z-led protests in India blur digital boundaries.",
- "papers_summary": "Papers explore usability of conversational AI, wearable creative tools for fiction writing, and public health data workflows, alongside political visualization and ethics in dementia care.",
+ "news_summary": "China bans rare earth shipments to 14 European firms, escalating trade tensions. The US announces Section 301 tariffs on 60 partners over forced labor, and Trump's new tariff system emerges after Supreme Court rejection. Other stories include UK political shifts, AI data center rules, and Iran conflict risks.",
+ "papers_summary": "Papers explore improving transparency in AI-powered product advisors and wearable creative writing assistants, while proposing a new semantics-driven language for data visualization and a benchmark for multimodal LLMs in interface construction.",
  "summaries": {
   "en": {
-   "brief": "Wildfires in France and Spain force mass evacuations, Iran conflict escalates with oil prices topping $100, and AI advances raise legal questions in music creation.",
-   "news_summary": "Wildfires rage in France and Spain, forcing tens of thousands to evacuate tourist areas, while US-Iran conflict drives oil prices above $100 and new global tariffs take effect. AI music creation tools and Gen Z-led protests in India blur digital boundaries.",
-   "papers_summary": "Papers explore usability of conversational AI, wearable creative tools for fiction writing, and public health data workflows, alongside political visualization and ethics in dementia care."
+   "brief": "China tightens rare earth export controls targeting European tech and defense firms, while the US imposes new tariffs over forced labor and Trump unveils a revised tariff system after a Supreme Court setback. Research papers focus on usability and transparency in AI systems, including conversational agents, creative writing tools, and data visualization.",
+   "news_summary": "China bans rare earth shipments to 14 European firms, escalating trade tensions. The US announces Section 301 tariffs on 60 partners over forced labor, and Trump's new tariff system emerges after Supreme Court rejection. Other stories include UK political shifts, AI data center rules, and Iran conflict risks.",
+   "papers_summary": "Papers explore improving transparency in AI-powered product advisors and wearable creative writing assistants, while proposing a new semantics-driven language for data visualization and a benchmark for multimodal LLMs in interface construction."
   },
   "zh": {
-   "brief": "今日重点：美国以强迫劳动为由对60个贸易伙伴加征关税，白宫指控中国AI公司窃取技术；法国野火导致数万人疏散，油价突破100美元。研究显示年轻女性2型糖尿病增加，以及为什么你总在凌晨三点醒来。",
-   "news_summary": "美国对60个贸易伙伴征10%-12.5%关税，7月24日生效；白宫指控中国月之暗面窃取Anthropic技术；法国野火致数万人撤离，油价破100美元；胡塞武装威胁曼德海峡航运；香港胡志伟英国机场险被遣返。",
-   "papers_summary": "今日论文聚焦AI可用性与透明性：大型语言模型使对话式产品顾问流畅但不透明；智能眼镜上的可穿戴AI辅助创意写作；以及用于临床工作流的HIPAA合规AI增强LIMS架构。"
+   "brief": "美国对60个贸易伙伴征收新关税，指控强迫劳动；白宫称中国AI公司窃取技术；胡塞武装威胁红海航运，全球贸易紧张加剧。研究显示年轻女性糖尿病发病率上升，凌晨三点的睡眠中断引发关注。",
+   "news_summary": "美国对60个贸易伙伴征收10%-12.5%关税，涉及中国、台湾等；白宫指控中国AI公司蒸餾Anthropic技术；胡塞武装威胁曼德海峡，红海航运面临风险。",
+   "papers_summary": "研究表明大语言模型在对话式产品推荐中可能缺乏透明度；一项研究提出可穿戴AI智能眼镜辅助创意写作。"
   }
  },
  "todays_image": {
-  "caption": "The Fair Mount Company Cape, a historic coastal landmark in a vintage image, and the French tourist spot being evacuated both represent beautiful natural areas now contrasted by the threat of destruction—one by time, the other by fire.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2012q28329",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2012q28329&max=150",
-  "title": "Fair Mount Company Cape"
+  "caption": "Beiyinite, a rare earth mineral, symbolizes the very resource at the heart of China's new export controls tightening leverage over Europe.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3335b4a448e0345d1852669c372e23df0",
+  "source_name": "NMNH - Mineral Sciences Dept.",
+  "source_url": "http://n2t.net/ark:/65665/39c72ec6c-d410-41cc-b6c7-e6609ea54aa3",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3335b4a448e0345d1852669c372e23df0/90",
+  "title": "Beiyinite"
  }
 }
