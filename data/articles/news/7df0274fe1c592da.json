@@ -1,0 +1,31 @@
+{
+ "full_text": "Weeks after Anthropic's latest toe-to-toe with the US government, and days after an OpenAI security incident that dominated tech industry discussions, Anthropic on Thursday released its newest model, Claude Opus 5. The company said in a release that Opus 5 \"comes close to the capabilities of Claude Fable 5 in many domains\" and is much better at complex coding tasks. (Fable 5 is the public-facing Mythos-class model that drew the government's ire, was taken offline for a few weeks along with Mythos 5, and then brought back with even stronger cyber safeguards than before.) The Fable 5 concerns - and the ensuing weeks of negotiations between … Read the full story at The Verge.",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/7df0274fe1c592da.json",
+  "id": "7df0274fe1c592da",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-24T17:00:00Z",
+  "score": 0.7724,
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai",
+  "summary": "Weeks after Anthropic's latest toe-to-toe with the US government, and days after an OpenAI security incident that dominated tech industry discussions, Anthropic on Thursday released its newest model, Claude Opus 5. The company said in a release that Opus 5 \"comes close to the capabilities of Claude…",
+  "tags": [
+   "model-release",
+   "llm"
+  ],
+  "title": "Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release"
+ },
+ "meta": {
+  "generated_at": "2026-07-24T17:49:50Z",
+  "item_id": "7df0274fe1c592da",
+  "section": "news",
+  "source": "The Verge · AI",
+  "source_id": "verge_ai"
+ }
+}

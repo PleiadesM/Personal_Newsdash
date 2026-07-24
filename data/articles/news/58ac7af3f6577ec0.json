@@ -1,0 +1,28 @@
+{
+ "full_text": "A couple of decades after the discovery of systems that could selectively target DNA, we're starting to see the first therapies based on gene editing. One challenge these developments have faced is safety. While we can make them pretty specific to the gene we want edited, the human genome is very large, and even rare DNA sequences can appear a couple of times by chance. As a result, all the original gene-editing systems had known rates of what are called off-target effects, in which they simply edit the wrong sequence. This may be a low-probability event, but edit enough cells—and therapies generally have to edit many—and errors become inevitable. A lot of effort has gone into finding ways to minimize or eliminate off-target edits. In a recent issue of Nature, researchers described modifying the AI protein-folding software AlphaFold to help identify key areas of gene-editing proteins responsible for off-target effects. Those areas were then modified to reduce the problems. Read full article Comments",
+ "item": {
+  "category": "open",
+  "extra": {},
+  "full_text_available": true,
+  "full_text_file": "articles/news/58ac7af3f6577ec0.json",
+  "id": "58ac7af3f6577ec0",
+  "kind": "news",
+  "lang": "en",
+  "published_at": "2026-07-24T17:31:26Z",
+  "score": 0.7911,
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai",
+  "summary": "Google's AlphaFold can help ID what parts of a gene editing protein enable mistakes.",
+  "tags": [],
+  "title": "Team uses AlphaFold AI to redesign gene-editing proteins to make them safer",
+  "url": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/"
+ },
+ "meta": {
+  "generated_at": "2026-07-24T17:49:50Z",
+  "item_id": "58ac7af3f6577ec0",
+  "section": "news",
+  "source": "Ars Technica · AI",
+  "source_id": "ars_ai"
+ }
+}

@@ -15,7 +15,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-23T16:58:34Z",
-   "score": 0.5033,
+   "score": 0.4947,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -46,7 +46,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-23T16:50:58Z",
-   "score": 0.7353,
+   "score": 0.7267,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -74,7 +74,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-23T14:56:51Z",
-   "score": 0.6876,
+   "score": 0.6793,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -101,7 +101,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-23T13:10:00Z",
-   "score": 0.4881,
+   "score": 0.4799,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -130,7 +130,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-22T22:42:34Z",
-   "score": 0.6687,
+   "score": 0.6618,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -158,7 +158,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-22T17:11:52Z",
-   "score": 0.6112,
+   "score": 0.6047,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -184,7 +184,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-22T12:40:08Z",
-   "score": 0.6376,
+   "score": 0.6315,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -214,7 +214,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-22T08:42:55Z",
-   "score": 0.7663,
+   "score": 0.7605,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -245,7 +245,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-21T11:44:43Z",
-   "score": 0.5347,
+   "score": 0.5301,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -275,7 +275,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-21T08:55:39Z",
-   "score": 0.5287,
+   "score": 0.5243,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -286,63 +286,11 @@
    "title": "Evaluating a Visual Query Tracer and Builder for Learning Declarative Logic Programming",
    "url": "https://arxiv.org/abs/2607.18864v1",
    "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Christine Ackerley"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "",
-    "citations": 0,
-    "doi": "10.1080/10572252.2026.2700268"
-   },
-   "id": "c36a0bd23d9e1277",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-21T08:28:19Z",
-   "score": 0.2863,
-   "section": "papers",
-   "source": "TechComm journals (CrossRef)",
-   "source_id": "crossref_techcomm_journals",
-   "summary": "",
-   "tags": [
-    "techcomm"
-   ],
-   "title": "Equipping Readers: Composing Policy Reports for Extended Rhetorical Use",
-   "url": "https://doi.org/10.1080/10572252.2026.2700268",
-   "venue": "Technical Communication Quarterly"
-  },
-  {
-   "authors": [
-    "Clay Spinuzzi"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "This article tells a story about two methodologies, one used to examine the workings of the other. The examined methodology, the build-measure-learn loop used in Lean Startup, is a design methodology: It involves developing a series of design objects and using them to elicit feedback from huddles of stakeholders in a series of dialogical encounters. But unlike most design methodologies used in technical and professional communication, which assume that both stakeholders and propositions…",
-    "citations": 0,
-    "doi": "10.1177/07410883261461546"
-   },
-   "id": "05a4717a352a6018",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-19T16:01:32Z",
-   "score": 0.2342,
-   "section": "papers",
-   "source": "TechComm journals (CrossRef)",
-   "source_id": "crossref_techcomm_journals",
-   "summary": "This article tells a story about two methodologies, one used to examine the workings of the other. The examined methodology, the build-measure-learn loop used in Lean Startup, is a design methodology: It involves developing a series of design objects and using them to elicit feedback from huddles…",
-   "tags": [
-    "ux"
-   ],
-   "title": "Testing the Battery: How a Startup’s Design Objects Cohere as a Fractional Object",
-   "url": "https://doi.org/10.1177/07410883261461546",
-   "venue": "Written Communication"
   }
  ],
  "meta": {
-  "count": 12,
-  "generated_at": "2026-07-24T15:42:37Z",
+  "count": 10,
+  "generated_at": "2026-07-24T17:49:50Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
@@ -384,12 +332,12 @@
    },
    {
     "category": "optional",
-    "count": 12,
-    "error": null,
+    "count": 0,
+    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A0361-1434%2Cfrom-created-date%3A2026-06-26&rows=12&sort=created&order=desc",
     "full_text_count": 0,
     "id": "crossref_techcomm_journals",
     "name": "TechComm journals (CrossRef)",
-    "ok": true,
+    "ok": false,
     "section": "papers",
     "skip_reason": null,
     "type": "crossref"

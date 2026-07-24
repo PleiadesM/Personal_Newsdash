@@ -1,48 +1,48 @@
 {
  "apropos_of_nothing": {
-  "query": "hurdy-gurdy history OR hurdy-gurdy revival OR hurdy-gurdy festivals",
+  "query": "\"oyster shucking championship\" OR \"oyster shucking contest\" OR \"world oyster shucking\"",
   "source": {
-   "name": "BBC",
-   "published_at": "2026-06-26T07:00:00Z",
-   "title": "In pictures: Re-enactors out in force at history festival",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XSHViRDZaUWRqOVRoeXJnbGtKdjZKd0JXaU5YczJiNVdZVkwyTUhTUnowNUI4WE5WUlA0M2U1bzhrOWUxMzZCVmIxLW9yd2toYllaR3N3SG9EaDJQ?oc=5"
+   "name": "blogTO",
+   "published_at": "2026-07-19T17:17:35Z",
+   "title": "OOF Presents: The Ontario Oyster Shucking Championship",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSjIxUjFRdTVfNjV5aXoyWG8tRjNXanl5WHpBMFU2MUJsQ0wxaDdFWlhWZkN4b3VrQkdIdXQ4cG1Mc1Jma2dMSlplTE9kR3lXejZhdl9BdGw5NU1OcU4yY3c3bENEX0haTHZSX3V6ZTgzWS1CX1BLNHdwd2xPRl9ZV1laZDJhWUtXTDNhLWo5WGNSNW9KQlA4?oc=5"
   },
   "summaries": {
    "en": {
-    "summary": "Re-enactors gather at a history festival, bringing the past to life with costumes and demonstrations.",
-    "why_irrelevant": "this local heritage event is far removed from global political and tech news."
+    "summary": "The Ontario Oyster Shucking Championship is a competitive event where participants race to shuck oysters.",
+    "why_irrelevant": "It is a local food contest completely unrelated to current major news topics."
    },
    "zh": {
-    "summary": "历史重现爱好者齐聚历史节，通过服装和演示让过去重现生机。",
-    "why_irrelevant": "这个本地遗产活动远离全球政治和科技新闻。"
+    "summary": "安大略牡蛎开壳锦标赛是一项参赛者竞相开壳的竞技活动。",
+    "why_irrelevant": "这是一个与当前主要新闻完全无关的本地食品竞赛。"
    }
   },
-  "topic": "The history and revival of the hurdy-gurdy"
+  "topic": "competitive oyster shucking"
  },
- "brief": "Escalating US-Iran strikes, West Bank killings, and wildfires in Europe dominate today's news, while papers explore usability and ethics in AI-assisted tools.",
+ "brief": "Tariffs dominate the news, with small businesses suing the Trump administration and new duties threatening trade wars. In AI, Anthropic releases Opus 5 and Meta upgrades its chatbot.",
  "meta": {
-  "generated_at": "2026-07-24T15:42:37Z"
+  "generated_at": "2026-07-24T17:49:50Z"
  },
- "news_summary": "US and Iran trade new strikes amid Middle East crisis; four Palestinians and two Israelis killed in West Bank; wildfires rage across Spain and France causing mass evacuations.",
- "papers_summary": "Papers focus on usability of conversational AI advisors, accessible AR for deaf students, and ethical concerns of generative AI in dementia care.",
+ "news_summary": "Small businesses sue over Trump's latest tariffs; Argentines defend their nation after World Cup criticism; Canada opens Gordie Howe bridge amid US tensions; multiple incidents in West Bank, Ireland, and London. Trump threatens EU tariffs over tech fines, and US strikes Iran as conflicts escalate.",
+ "papers_summary": "Research on AI usability for conversational advisors, creative writing with smart glasses, and accessibility for deaf students highlight human-centered computing. Data visualization and benchmarking of multimodal LLMs are also featured.",
  "summaries": {
   "en": {
-   "brief": "Escalating US-Iran strikes, West Bank killings, and wildfires in Europe dominate today's news, while papers explore usability and ethics in AI-assisted tools.",
-   "news_summary": "US and Iran trade new strikes amid Middle East crisis; four Palestinians and two Israelis killed in West Bank; wildfires rage across Spain and France causing mass evacuations.",
-   "papers_summary": "Papers focus on usability of conversational AI advisors, accessible AR for deaf students, and ethical concerns of generative AI in dementia care."
+   "brief": "Tariffs dominate the news, with small businesses suing the Trump administration and new duties threatening trade wars. In AI, Anthropic releases Opus 5 and Meta upgrades its chatbot.",
+   "news_summary": "Small businesses sue over Trump's latest tariffs; Argentines defend their nation after World Cup criticism; Canada opens Gordie Howe bridge amid US tensions; multiple incidents in West Bank, Ireland, and London. Trump threatens EU tariffs over tech fines, and US strikes Iran as conflicts escalate.",
+   "papers_summary": "Research on AI usability for conversational advisors, creative writing with smart glasses, and accessibility for deaf students highlight human-centered computing. Data visualization and benchmarking of multimodal LLMs are also featured."
   },
   "zh": {
-   "brief": "今日重点：美国对60个贸易伙伴加征新关税，指控其未能禁止强迫劳动产品，影响中国、台湾等经济体；美中AI科技战升级，白宫指控中国公司窃取技术；香港出版环境持续收紧。同时，全球多地发生冲突与灾害，包括西岸枪击、红海航运威胁、西班牙法国野火及麻疹病例激增。",
-   "news_summary": "美国以强迫劳动为由对60个贸易伙伴加征10%-12.5%关税，涵盖中国、台湾、欧盟等；白宫指控中国AI公司月之暗面窃取Anthropic技术。此外，香港出版环境变化引发关注，西岸枪击致4死，红海航运面临威胁，西班牙法国野火肆虐，美国麻疹病例创纪录。",
-   "papers_summary": "今日无中文论文摘要。英文论文侧重AI可用性研究，包括对话式产品顾问、智能眼镜创意写作辅助及增强现实无障碍系统等。"
+   "brief": "美国对60个贸易伙伴加征关税，指控强迫劳动，涵盖中国和台湾；白宫指控中国AI公司窃取技术；香港出版环境持续收紧；同时，深夜频繁醒来有科学解释。",
+   "news_summary": "美国以强迫劳动为由对60个贸易伙伴加征10%-12.5%关税，涉及中国、台湾等经济体；白宫指控中国AI公司月之暗面通过蒸馏Anthropic技术开发K3模型；香港出版环境变化引发关注；研究解释为何常在凌晨三点醒来。",
+   "papers_summary": "今日无优先论文，但英文论文涉及AI辅助写作、AR无障碍、数据可视化等领域，包括可穿戴AI用于写作、智能眼镜辅助听障学生等研究。"
   }
  },
  "todays_image": {
-  "caption": "The star-shaped aster flowers echo the Star of David, a symbol of the Israeli victims, yet their roots grow in the same soil as the Palestinian lives lost.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b4efb1b7ba324866b5ce210f1b8ae00c",
+  "caption": "The clustered seed heads of *Juncus capitatus* resemble small businesses banding together, pushing back against the trade barriers that threaten their growth.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3ec9c960c932740efb79fa0637ad45c31",
   "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3d1b2a964-ed98-4ee0-8f71-927381c84000",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b4efb1b7ba324866b5ce210f1b8ae00c/90",
-  "title": "Chaetopappa asteroides (Nutt.) DC."
+  "source_url": "http://n2t.net/ark:/65665/3c173bf80-b2ae-48d9-91f5-6261581739bd",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3ec9c960c932740efb79fa0637ad45c31/90",
+  "title": "Juncus capitatus Weigel"
  }
 }

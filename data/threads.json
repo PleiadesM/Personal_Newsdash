@@ -1,278 +1,264 @@
 {
  "meta": {
-  "count": 6,
-  "generated_at": "2026-07-24T15:42:37Z",
+  "count": 5,
+  "generated_at": "2026-07-24T17:49:50Z",
   "scope": "public"
  },
  "threads": [
   {
    "angles": [
     {
-     "item_id": "783148f1732e3681",
-     "phrase": {
-      "en": "National emergency declared",
-      "zh": "宣布国家紧急状态"
-     },
-     "section": "news",
-     "source": "BBC World",
-     "url": "https://www.bbc.co.uk/news/videos/cz641jd4p4lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "item_id": "6cd75902153faa78",
-     "phrase": {
-      "en": "Evacuations in France and Spain",
-      "zh": "法国和西班牙疏散"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/world/live/2026/jul/24/france-spain-wildfires-cap-ferret-europe-latest-news-updates"
-    },
-    {
-     "item_id": "a9dca2653fcac13b",
-     "phrase": {
-      "en": "80,000 flee wildfires",
-      "zh": "八万人逃离野火"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/world/2026/jul/24/france-evacuation-cap-ferret-peninsula-wildfire"
-    }
-   ],
-   "convergence": "convergent",
-   "gloss": {
-    "en": "Massive wildfires scorch Spain and France, forcing tens of thousands to flee their homes.",
-    "zh": "大规模野火席卷西班牙和法国，数万人被迫撤离家园。"
-   },
-   "id": "t1",
-   "keyword": {
-    "en": "wildfires in Europe",
-    "zh": "欧洲野火"
-   },
-   "relates_to": [],
-   "why_now": {
-    "en": "Spain declares emergency as fires merge near Madrid; France evacuates Cap Ferret.",
-    "zh": "西班牙宣布紧急状态，马德里附近火势合并；法国疏散费雷角。"
-   }
-  },
-  {
-   "angles": [
-    {
      "item_id": "394529f59dccd5f8",
      "phrase": {
-      "en": "US strikes, Iran targets bases",
-      "zh": "美国打击，伊朗攻击基地"
+      "en": "US strikes Iran, Tehran retaliates",
+      "zh": "美国打击伊朗，德黑兰报复"
      },
      "section": "news",
      "source": "The Guardian · World",
      "url": "https://www.theguardian.com/world/live/2026/jul/24/us-iran-donald-trump-iraq-bahrain-kuwait-jordan-latest-news-updates"
     },
     {
-     "item_id": "070c8e5234bdcdc8",
+     "item_id": "12ab90e682fe0e48",
      "phrase": {
-      "en": "Trump threatens massive attack",
-      "zh": "特朗普威胁大规模攻击"
+      "en": "US expands attacks on Iran",
+      "zh": "美国扩大对伊朗打击"
      },
      "section": "news",
-     "source": "NPR News",
-     "url": "https://www.npr.org/2026/07/24/g-s1-135417/us-iran-war-updates"
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/2026/jul/24/us-expands-iran-attacks-as-trump-warns-tehran-and-houthis-over-red-sea-strikes"
+    },
+    {
+     "item_id": "0d0d3c060e158b54",
+     "phrase": {
+      "en": "Israel plans West Bank operation",
+      "zh": "以色列计划西岸行动"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/2026/jul/24/palestinians-israeli-killed-west-bank-shooting"
+    },
+    {
+     "item_id": "2c8867eb98d38d82",
+     "phrase": {
+      "en": "Deadly West Bank shooting",
+      "zh": "西岸致命枪击"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/24/world/middleeast/west-bank-shooting-tell-israelis-palestinians.html"
     }
    ],
-   "convergence": "convergent",
+   "convergence": "mixed",
    "gloss": {
-    "en": "US strikes Iran and Tehran retaliates, raising fears of a wider war in the Middle East.",
-    "zh": "美国空袭伊朗，德黑兰报复，引发中东战争扩大担忧。"
+    "en": "US and Iran trade strikes, while Israel plans a major West Bank operation after a deadly shooting.",
+    "zh": "美伊互相打击，以色列在致命枪击后计划大规模西岸行动。"
    },
-   "id": "t2",
+   "id": "t1",
    "keyword": {
-    "en": "US-Iran conflict",
-    "zh": "美伊冲突"
+    "en": "Middle East escalation",
+    "zh": "中东局势升级"
    },
    "relates_to": [],
    "why_now": {
-    "en": "Trump vows 'major military punishment'; Omani delegation arrives for talks.",
-    "zh": "特朗普誓言‘重大军事惩罚’；阿曼代表团抵达谈判。"
+    "en": "US strikes Iran, Israel plans West Bank offensive after deadly incident.",
+    "zh": "美国打击伊朗，以色列在致命事件后计划西岸进攻。"
    }
   },
   {
    "angles": [
     {
+     "item_id": "e32db4bc6a085575",
+     "phrase": {
+      "en": "France, Spain wildfires force evacuations",
+      "zh": "法国西班牙野火迫使撤离"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/24/world/europe/france-spain-wildfires.html"
+    },
+    {
+     "item_id": "47883d6c013d5701",
+     "phrase": {
+      "en": "France learns from Spain on heat",
+      "zh": "法国向西班牙学习应对高温"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/24/world/europe/france-spain-climate-heat-wildfires.html"
+    },
+    {
+     "item_id": "783148f1732e3681",
+     "phrase": {
+      "en": "Wildfires rage across Spain and France",
+      "zh": "野火肆虐西班牙和法国"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/videos/cz641jd4p4lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "a9dca2653fcac13b",
+     "phrase": {
+      "en": "80,000 flee wildfires in France, Spain",
+      "zh": "八万人逃离法国西班牙野火"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/2026/jul/24/france-evacuation-cap-ferret-peninsula-wildfire"
+    },
+    {
+     "item_id": "6cd75902153faa78",
+     "phrase": {
+      "en": "France evacuates Cap Ferret",
+      "zh": "法国撤离费拉角"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/live/2026/jul/24/france-spain-wildfires-cap-ferret-europe-latest-news-updates"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "France and Spain battle massive wildfires forcing tens of thousands to flee.",
+    "zh": "法国和西班牙抗击大规模野火，数万人被迫撤离。"
+   },
+   "id": "t2",
+   "keyword": {
+    "en": "wildfires in Europe",
+    "zh": "欧洲野火"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Mass evacuations in France and Spain due to wildfires.",
+    "zh": "法国和西班牙因野火大规模疏散。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "2f705f014bab13a9",
+     "phrase": {
+      "en": "Trump threatens EU tariffs over fines",
+      "zh": "特朗普因罚款威胁欧盟关税"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/2026/jul/24/trump-european-union-tariffs"
+    },
+    {
      "item_id": "8b61d4c958aa9559",
      "phrase": {
-      "en": "Democrats call it a sales tax",
-      "zh": "民主党称其为销售税"
+      "en": "Democrats say tariffs hurt Americans",
+      "zh": "民主党称关税伤害美国人"
      },
      "section": "news",
      "source": "The Guardian · World",
      "url": "https://www.theguardian.com/us-news/live/2026/jul/24/donald-trump-tariffs-white-house-correspondents-dinner-latest-news-updates"
     },
     {
-     "item_id": "f6633a2323ca2d25",
+     "item_id": "eeb5df466a0d4bf8",
      "phrase": {
-      "en": "Are tariffs working?",
-      "zh": "关税有效吗？"
+      "en": "Canada bridge opens amid tariffs",
+      "zh": "加拿大桥梁在关税中开通"
      },
      "section": "news",
-     "source": "BBC World",
-     "url": "https://www.bbc.co.uk/news/videos/c5yw2xgnv2jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "item_id": "9a8dda30a35ed2ed",
-     "phrase": {
-      "en": "Allies object to forced labor claims",
-      "zh": "盟友反对强迫劳动指控"
-     },
-     "section": "news",
-     "source": "NPR News",
-     "url": "https://www.npr.org/2026/07/24/nx-s1-5906301/us-global-trump-tariffs-reaction"
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/24/world/canada/canada-gordie-howe-bridge-trump.html"
     }
    ],
    "convergence": "mixed",
    "gloss": {
-    "en": "New US tariffs on 85 countries spark criticism from Democrats and allies alike.",
-    "zh": "美国对85国加征新关税，引发民主党和盟友批评。"
+    "en": "Trump threatens EU with tariffs over tech fines, while Democrats criticize tariff impact.",
+    "zh": "特朗普因科技罚款威胁欧盟征收关税，民主党批评关税影响。"
    },
    "id": "t3",
    "keyword": {
     "en": "Trump tariffs",
     "zh": "特朗普关税"
    },
-   "relates_to": [
-    "t5"
-   ],
+   "relates_to": [],
    "why_now": {
-    "en": "Trump unveils sweeping tariffs; allies object.",
-    "zh": "特朗普推出全面关税；盟友反对。"
+    "en": "Trump announces new tariffs on 80+ countries.",
+    "zh": "特朗普宣布对80多个国家征收新关税。"
    }
   },
   {
    "angles": [
     {
-     "full_text_file": "articles/news/22eb600d2dd3bec3.json",
-     "item_id": "22eb600d2dd3bec3",
+     "item_id": "0a239d8c77f6ed7d",
      "phrase": {
-      "en": "Tech-broification of science",
-      "zh": "科学的科技兄弟化"
-     },
-     "section": "news",
-     "source": "The Verge · AI",
-     "url": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants"
-    },
-    {
-     "full_text_file": "articles/news/9950bfed769fda8f.json",
-     "item_id": "9950bfed769fda8f",
-     "phrase": {
-      "en": "AI firms want more data centers",
-      "zh": "AI公司需要更多数据中心"
-     },
-     "section": "news",
-     "source": "Ars Technica · AI",
-     "url": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say/"
-    },
-    {
-     "item_id": "7ed1b8a1c6575888",
-     "phrase": {
-      "en": "Open weights and AI leadership",
-      "zh": "开放权重与AI领导力"
+      "en": "Skepticism of OpenAI hacker story",
+      "zh": "对OpenAI黑客故事存疑"
      },
      "section": "news",
      "source": "Hacker News (AI filter)",
-     "url": "https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf"
-    }
-   ],
-   "convergence": "divergent",
-   "gloss": {
-    "en": "US government launches $5 billion AI-driven science initiative, signaling a new era.",
-    "zh": "美国政府启动50亿美元人工智能科学计划，标志新时代开启。"
-   },
-   "id": "t4",
-   "keyword": {
-    "en": "AI science funding",
-    "zh": "人工智能科学资助"
-   },
-   "relates_to": [],
-   "why_now": {
-    "en": "First 'Genesis Mission' grants announced by Trump administration.",
-    "zh": "特朗普政府公布首批‘创世纪任务’资助。"
-   }
-  },
-  {
-   "angles": [
-    {
-     "item_id": "7c610fe039570a33",
-     "phrase": {
-      "en": "Oil above $100, rate hike fears",
-      "zh": "油价超100美元，加息担忧"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/australia-news/2026/jul/25/australian-households-prospect-interest-rate-hike-petrol-prices-rising"
+     "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker"
     },
     {
-     "item_id": "070c8e5234bdcdc8",
+     "full_text_file": "articles/news/7df0274fe1c592da.json",
+     "item_id": "7df0274fe1c592da",
      "phrase": {
-      "en": "Trump threatens massive attack",
-      "zh": "特朗普威胁大规模攻击"
+      "en": "Anthropic release after OpenAI incident",
+      "zh": "Anthropic在OpenAI事件后发布"
      },
      "section": "news",
-     "source": "NPR News",
-     "url": "https://www.npr.org/2026/07/24/g-s1-135417/us-iran-war-updates"
-    }
-   ],
-   "convergence": "convergent",
-   "gloss": {
-    "en": "Escalating Middle East conflict pushes crude oil above $100, threatening global economies.",
-    "zh": "中东冲突升级推动原油突破100美元，威胁全球经济。"
-   },
-   "id": "t5",
-   "keyword": {
-    "en": "Middle East oil prices",
-    "zh": "中东油价"
-   },
-   "relates_to": [
-    "t2"
-   ],
-   "why_now": {
-    "en": "Iran attacks and US strikes raise oil supply fears.",
-    "zh": "伊朗袭击和美国打击引发石油供应担忧。"
-   }
-  },
-  {
-   "angles": [
-    {
-     "item_id": "8afe287a4c372d8d",
-     "phrase": {
-      "en": "Cockroach activist ends strike",
-      "zh": "蟑螂活动人士结束绝食"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/world/2026/jul/24/india-cockroach-protest-sonam-wangchuk-ends-hunger-strike"
-    },
-    {
-     "item_id": "2bbbd241993b4a31",
-     "phrase": {
-      "en": "Lecturer charged with terrorism",
-      "zh": "讲师被控恐怖主义"
-     },
-     "section": "news",
-     "source": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/cd9w2xnxe1qo?at_medium=RSS&at_campaign=rss"
+     "source": "The Verge · AI",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release"
     }
    ],
    "convergence": "mixed",
    "gloss": {
-    "en": "From India to Tanzania, activists face hunger strikes, arrests, and terrorism charges.",
-    "zh": "从印度到坦桑尼亚，活动人士面临绝食、逮捕和恐怖主义指控。"
+    "en": "Skepticism over OpenAI's hacker story and AI safety discussions continue.",
+    "zh": "对OpenAI黑客故事持怀疑态度，AI安全讨论持续。"
    },
-   "id": "t6",
+   "id": "t4",
    "keyword": {
-    "en": "protest and crackdown",
-    "zh": "抗议与镇压"
+    "en": "AI safety concern",
+    "zh": "AI安全担忧"
    },
    "relates_to": [],
    "why_now": {
-    "en": "Indian activist ends strike; Tanzanian lecturer charged with terrorism.",
-    "zh": "印度活动人士结束绝食；坦桑尼亚讲师被控恐怖主义。"
+    "en": "OpenAI security incident and skepticism arise.",
+    "zh": "OpenAI安全事件及怀疑涌现。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "b66a514b7b1f21af",
+     "phrase": {
+      "en": "11 indicted over migrant deaths",
+      "zh": "11人被起诉涉移民死亡"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/2026/jul/24/texas-migrant-deaths-indictment"
+    },
+    {
+     "item_id": "2c8867eb98d38d82",
+     "phrase": {
+      "en": "Similar tragedy in West Bank",
+      "zh": "西岸类似悲剧"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/24/world/middleeast/west-bank-shooting-tell-israelis-palestinians.html"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "Eleven indicted for deaths of six migrants in a Texas cargo container.",
+    "zh": "十一人因德州货柜中六名移民死亡被起诉。"
+   },
+   "id": "t5",
+   "keyword": {
+    "en": "migrant tragedy",
+    "zh": "移民悲剧"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Indictment announced in 2023 migrant deaths case.",
+    "zh": "2023年移民死亡案件起诉公布。"
    }
   }
  ]
