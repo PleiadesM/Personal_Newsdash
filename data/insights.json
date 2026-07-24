@@ -1,44 +1,24 @@
 {
- "apropos_of_nothing": {
-  "query": "(\"pumpkin championship\" OR \"giant pumpkin\")",
-  "source": {
-   "name": "yangtse.com",
-   "published_at": "2026-07-20T08:45:00Z",
-   "title": "视频｜404 . 8斤 ！ 宿迁试种出一巨型南瓜 ， 母体  重801斤",
-   "url": "https://www.yangtse.com/news/jiangsu/202607/t20260720_374032.html"
-  },
-  "summaries": {
-   "en": {
-    "summary": "A 404.8-jin giant pumpkin was grown in Suqian, China, with a mother plant weighing 801 jin.",
-    "why_irrelevant": "It's a hyperlocal Chinese gardening feat far from typical user feeds."
-   },
-   "zh": {
-    "summary": "宿迁试种出一巨型南瓜重404.8斤，母体重801斤。",
-    "why_irrelevant": "这是一个远离用户日常信息流的超本地化种植新闻。"
-   }
-  },
-  "topic": "competitive pumpkin growing"
- },
- "brief": "Tariffs, Middle East conflict, and India protests dominate headlines, with UN warning of escalating crisis and US imposing new tariffs on over 80 countries.",
+ "brief": "Trump imposes new 'forced labor' tariffs on 80+ nations as Middle East tensions escalate; Justice Dept. drops NYT subpoenas; a usability study finds LLM-based product advisors opaque.",
  "meta": {
-  "generated_at": "2026-07-24T03:05:01Z"
+  "generated_at": "2026-07-24T03:40:12Z"
  },
- "news_summary": "Trump administration imposes tariffs on over 80 countries over forced labor; UN warns Middle East crisis is 'getting out of control'; India faces widespread protests after police brutality.",
- "papers_summary": "No new research papers reported today.",
+ "news_summary": "Trump's new 10-12.5% tariffs replace the global 10% duty, citing forced labor, while the Justice Department withdraws subpoenas for NYT journalists. In the Middle East, the UN warns the crisis is 'getting out of control' as Houthi attacks threaten global shipping.",
+ "papers_summary": "A formative usability study on conversational product advisors reveals that large language models can be fluent but opaque, hiding ranking logic and evidence. Other papers explore wearable AI for fiction writing, AR accessibility for deaf students, and a semantics-driven visualization language called Flint.",
  "summaries": {
   "en": {
-   "brief": "Tariffs, Middle East conflict, and India protests dominate headlines, with UN warning of escalating crisis and US imposing new tariffs on over 80 countries.",
-   "news_summary": "Trump administration imposes tariffs on over 80 countries over forced labor; UN warns Middle East crisis is 'getting out of control'; India faces widespread protests after police brutality.",
-   "papers_summary": "No new research papers reported today."
+   "brief": "Trump imposes new 'forced labor' tariffs on 80+ nations as Middle East tensions escalate; Justice Dept. drops NYT subpoenas; a usability study finds LLM-based product advisors opaque.",
+   "news_summary": "Trump's new 10-12.5% tariffs replace the global 10% duty, citing forced labor, while the Justice Department withdraws subpoenas for NYT journalists. In the Middle East, the UN warns the crisis is 'getting out of control' as Houthi attacks threaten global shipping.",
+   "papers_summary": "A formative usability study on conversational product advisors reveals that large language models can be fluent but opaque, hiding ranking logic and evidence. Other papers explore wearable AI for fiction writing, AR accessibility for deaf students, and a semantics-driven visualization language called Flint."
   },
   "zh": {
-   "brief": "曼德海峽與紅海航運危機風險上升，同時美國對多國加徵關稅引爭議；AI取代工作擔憂加劇。學術無重大更新。",
-   "news_summary": "胡塞武裝威脅封鎖曼德海峽，全球航運風險升高；美國以強迫勞動為由對80多國加徵關稅，引發民主黨批評。",
-   "papers_summary": "今日無相關學術論文。"
+   "brief": "今日新闻聚焦曼德海峡航运危机、AI取代工作担忧、香港民主派人士胡志伟在英险遭遣返及台湾陆配参选资格新规；研究方面无中文论文，英文论文多关注AI与可视化交互设计。",
+   "news_summary": "胡塞武装威胁曼德海峡可能引发全球航运危机；香港47人案被告胡志伟在伦敦机场被扣后获准入境；台湾收紧陆配参选资格，要求除籍满十年；美国与沙特签署核协议引核扩散担忧。",
+   "papers_summary": "今日无中文论文。英文论文主要探讨AI在对话系统、创意写作、无障碍技术及数据可视化中的可用性与伦理问题，包括可穿戴AI眼镜辅助写作、增强现实对聋哑学生的支持等。"
   }
  },
  "todays_image": {
-  "caption": "Like the fan-like lobes of Lobophora that can obscure underwater views, GLP-1 drugs now carry a warning of potential vision loss.",
+  "caption": "Like Lobophora sp. swaying with ocean currents, the Justice Department bent under judicial pressure and dropped the subpoenas.",
   "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
   "source_name": "NMNH - Botany Dept.",
   "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
