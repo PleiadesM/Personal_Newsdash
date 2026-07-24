@@ -1,28 +1,48 @@
 {
- "brief": "The US imposes new tariffs on over 80 nations over forced labor concerns, while the Middle East crisis deepens with Houthi threats and US strikes; India's 'Cockroach' protests spread as activist ends hunger strike.",
- "meta": {
-  "generated_at": "2026-07-24T02:34:52Z"
+ "apropos_of_nothing": {
+  "query": "(\"pumpkin championship\" OR \"giant pumpkin\")",
+  "source": {
+   "name": "yangtse.com",
+   "published_at": "2026-07-20T08:45:00Z",
+   "title": "视频｜404 . 8斤 ！ 宿迁试种出一巨型南瓜 ， 母体  重801斤",
+   "url": "https://www.yangtse.com/news/jiangsu/202607/t20260720_374032.html"
+  },
+  "summaries": {
+   "en": {
+    "summary": "A 404.8-jin giant pumpkin was grown in Suqian, China, with a mother plant weighing 801 jin.",
+    "why_irrelevant": "It's a hyperlocal Chinese gardening feat far from typical user feeds."
+   },
+   "zh": {
+    "summary": "宿迁试种出一巨型南瓜重404.8斤，母体重801斤。",
+    "why_irrelevant": "这是一个远离用户日常信息流的超本地化种植新闻。"
+   }
+  },
+  "topic": "competitive pumpkin growing"
  },
- "news_summary": "The Trump administration announced new tariffs on over 80 countries tied to forced labor, replacing a global 10% tariff, drawing Democratic criticism. The UN warns the Middle East crisis is 'getting out of control' as the US launches more strikes on Iran and Houthi attacks threaten global shipping.",
- "papers_summary": "No research papers were provided in the priority news feed.",
+ "brief": "Tariffs, Middle East conflict, and India protests dominate headlines, with UN warning of escalating crisis and US imposing new tariffs on over 80 countries.",
+ "meta": {
+  "generated_at": "2026-07-24T03:05:01Z"
+ },
+ "news_summary": "Trump administration imposes tariffs on over 80 countries over forced labor; UN warns Middle East crisis is 'getting out of control'; India faces widespread protests after police brutality.",
+ "papers_summary": "No new research papers reported today.",
  "summaries": {
   "en": {
-   "brief": "The US imposes new tariffs on over 80 nations over forced labor concerns, while the Middle East crisis deepens with Houthi threats and US strikes; India's 'Cockroach' protests spread as activist ends hunger strike.",
-   "news_summary": "The Trump administration announced new tariffs on over 80 countries tied to forced labor, replacing a global 10% tariff, drawing Democratic criticism. The UN warns the Middle East crisis is 'getting out of control' as the US launches more strikes on Iran and Houthi attacks threaten global shipping.",
-   "papers_summary": "No research papers were provided in the priority news feed."
+   "brief": "Tariffs, Middle East conflict, and India protests dominate headlines, with UN warning of escalating crisis and US imposing new tariffs on over 80 countries.",
+   "news_summary": "Trump administration imposes tariffs on over 80 countries over forced labor; UN warns Middle East crisis is 'getting out of control'; India faces widespread protests after police brutality.",
+   "papers_summary": "No new research papers reported today."
   },
   "zh": {
-   "brief": "今日重點：曼德海峽緊張局勢加劇，胡塞武裝威脅紅海航運，全球貿易面臨新風險；美國對80多國加徵關稅，引發爭議；台灣收緊陸配參選資格，引發兩岸反應。",
-   "news_summary": "曼德海峽局勢升溫，胡塞武裝威脅封鎖航道，加劇全球貿易不確定性。美國對80多國加徵關稅，民主黨批評其繞過國會。台灣修改陸配參選規定，要求除籍滿十年，陸委會稱正本清源，國台辦批打壓。",
-   "papers_summary": "今日無重要論文。"
+   "brief": "曼德海峽與紅海航運危機風險上升，同時美國對多國加徵關稅引爭議；AI取代工作擔憂加劇。學術無重大更新。",
+   "news_summary": "胡塞武裝威脅封鎖曼德海峽，全球航運風險升高；美國以強迫勞動為由對80多國加徵關稅，引發民主黨批評。",
+   "papers_summary": "今日無相關學術論文。"
   }
  },
  "todays_image": {
-  "caption": "Just as a band's rhythm can mask discord, the ABC's takedown of drug-trade episodes and Labor's sidestep of gambling reform both drown out uncomfortable truths.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-101950_01-000001",
-  "source_name": "Cooper Hewitt, Smithsonian Design Museum",
-  "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/101950",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-101950_01-000001",
-  "title": "Band"
+  "caption": "Like the fan-like lobes of Lobophora that can obscure underwater views, GLP-1 drugs now carry a warning of potential vision loss.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7",
+  "source_name": "NMNH - Botany Dept.",
+  "source_url": "http://n2t.net/ark:/65665/3a20dbcaf-62f6-4dd2-b936-69074b28dad5",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3026e0dcfbfe94328a44f8aa80712e8e7/90",
+  "title": "Lobophora sp."
  }
 }

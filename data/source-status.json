@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-24T02:34:52Z",
+ "generated_at": "2026-07-24T03:05:01Z",
  "private_summary": {
   "configured": 0,
   "total": 0
@@ -223,7 +223,7 @@
   },
   {
    "category": "optional",
-   "count": 40,
+   "count": 0,
    "error": null,
    "full_text_count": 0,
    "id": "openalex_techcomm",

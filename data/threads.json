@@ -1,7 +1,7 @@
 {
  "meta": {
-  "count": 5,
-  "generated_at": "2026-07-24T02:34:52Z",
+  "count": 4,
+  "generated_at": "2026-07-24T03:05:01Z",
   "scope": "public"
  },
  "threads": [
@@ -10,8 +10,8 @@
     {
      "item_id": "69a86a69c3de91ee",
      "phrase": {
-      "en": "Tariffs target 60 partners over forced labor",
-      "zh": "对60个贸易伙伴加征关税"
+      "en": "targets 60 partners over forced labour",
+      "zh": "针对60个伙伴的强迫劳动"
      },
      "section": "news",
      "source": "BBC World",
@@ -20,8 +20,8 @@
     {
      "item_id": "776ac4694de4da33",
      "phrase": {
-      "en": "Australia hit with 12.5% tariff",
-      "zh": "澳大利亚被征12.5%关税"
+      "en": "Australian exports hit with 12.5% tariff",
+      "zh": "澳洲出口被征12.5%关税"
      },
      "section": "news",
      "source": "The Guardian · World",
@@ -30,28 +30,18 @@
     {
      "item_id": "9f24f2cfdf1a975d",
      "phrase": {
-      "en": "Democrats call tariffs an end-run around Congress",
-      "zh": "民主党称关税绕过国会"
+      "en": "Democrats call it end-run around Congress",
+      "zh": "民主党称绕过国会"
      },
      "section": "news",
      "source": "The Guardian · World",
      "url": "https://www.theguardian.com/us-news/live/2026/jul/23/us-house-defense-spending-bill-donald-trump-iran-rubio-latest-news-updates"
     },
     {
-     "item_id": "0fd3246454de770c",
-     "phrase": {
-      "en": "Australia's trade minister says tariff unjustified",
-      "zh": "澳贸易部长称关税不合理"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/australia-news/2026/jul/24/donald-trump-hits-australian-exports-to-us-with-new-higher-trade-tariff-over-claims-of-forced-labour"
-    },
-    {
      "item_id": "6a4053a78bcda243",
      "phrase": {
-      "en": "New tariffs of about 10% on 80+ nations",
-      "zh": "对80多国征约10%关税"
+      "en": "new tariffs on over 80 nations",
+      "zh": "对80多国加征新关税"
      },
      "section": "news",
      "source": "The New York Times",
@@ -60,8 +50,8 @@
     {
      "item_id": "dbcd3742779b564e",
      "phrase": {
-      "en": "Tariffs 10%-12.5% on over 80 countries",
-      "zh": "对80多国征收10%-12.5%关税"
+      "en": "tariffs range 10%-12.5%, effective Friday",
+      "zh": "关税10%-12.5%，周五生效"
      },
      "section": "news",
      "source": "The Guardian · World",
@@ -70,28 +60,38 @@
     {
      "item_id": "6df2d895b5f0f7bd",
      "phrase": {
-      "en": "Fresh wave of tariffs over forced labor",
-      "zh": "以强迫劳动为由的新一轮关税"
+      "en": "fresh wave of tariffs on 80+ countries",
+      "zh": "对80多国加征新一轮关税"
      },
      "section": "news",
      "source": "The Guardian · World",
      "url": "https://www.theguardian.com/us-news/2026/jul/23/trump-administration-trade-tariffs"
+    },
+    {
+     "item_id": "0fd3246454de770c",
+     "phrase": {
+      "en": "Australian exports hit with new tariff",
+      "zh": "澳洲出口遭新关税打击"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/australia-news/2026/jul/24/donald-trump-hits-australian-exports-to-us-with-new-higher-trade-tariff-over-claims-of-forced-labour"
     }
    ],
    "convergence": "convergent",
    "gloss": {
-    "en": "America slaps new tariffs on dozens of nations, citing forced labor.",
-    "zh": "美国以强迫劳动为由对多国加征新关税。"
+    "en": "A wave of new tariffs hits over 80 countries, citing forced labor concerns.",
+    "zh": "新一轮关税波及80多国，以强迫劳动为由。"
    },
    "id": "t1",
    "keyword": {
-    "en": "Trump tariffs",
-    "zh": "特朗普关税"
+    "en": "global tariffs",
+    "zh": "全球关税"
    },
    "relates_to": [],
    "why_now": {
-    "en": "New tariff wave announced today, replacing expiring global duty.",
-    "zh": "今日宣布新关税，取代即将到期的全球关税。"
+    "en": "Trump administration announces new tariffs today.",
+    "zh": "特朗普政府今日宣布新关税。"
    }
   },
   {
@@ -99,8 +99,8 @@
     {
      "item_id": "3c55eb23e60229d4",
      "phrase": {
-      "en": "Houthi attacks risk wider conflict",
-      "zh": "胡塞袭击引发更广泛冲突风险"
+      "en": "Houthis threaten Saudi vessels in shipping route",
+      "zh": "胡塞威胁沙特船只航线"
      },
      "section": "news",
      "source": "BBC World",
@@ -109,8 +109,8 @@
     {
      "item_id": "a2bbda57a6b1a04f",
      "phrase": {
-      "en": "UN chief says crisis spiraling",
-      "zh": "联合国秘书长称危机螺旋升级"
+      "en": "UN chief says crisis 'getting out of control'",
+      "zh": "联合国秘书长称危机失控"
      },
      "section": "news",
      "source": "The Guardian · World",
@@ -119,28 +119,18 @@
     {
      "item_id": "90b1d9b6f0c7c822",
      "phrase": {
-      "en": "UK ready to defend after Iranian threat",
-      "zh": "英准备自卫回应伊朗威胁"
+      "en": "UK ready to defend itself after Iranian threat",
+      "zh": "英国准备自卫应对伊朗威胁"
      },
      "section": "news",
      "source": "The Guardian · World",
      "url": "https://www.theguardian.com/world/2026/jul/23/uk-ready-to-defend-itself-iran-threat-us-bases"
-    },
-    {
-     "item_id": "7fa474d369f6fe14",
-     "phrase": {
-      "en": "Pentagon removes killed soldiers from list",
-      "zh": "五角大楼删除阵亡士兵名单"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/us-news/2026/jul/23/pentagon-service-members-killed-iran"
     }
    ],
    "convergence": "convergent",
    "gloss": {
-    "en": "War drums beat louder as Houthis threaten Saudi vessels and US strikes Iran.",
-    "zh": "胡塞武装威胁沙特船只，美国打击伊朗，战鼓声急。"
+    "en": "Tensions escalate as Houthis threaten ships, UN warns of wider war.",
+    "zh": "胡塞武装威胁船只，联合国警告战争扩大。"
    },
    "id": "t2",
    "keyword": {
@@ -149,71 +139,12 @@
    },
    "relates_to": [],
    "why_now": {
-    "en": "UN chief warns crisis is 'getting out of control' today.",
-    "zh": "联合国秘书长今日警告危机‘失控’。"
+    "en": "UN chief warns crisis 'getting out of control' today.",
+    "zh": "联合国秘书长今日警告危机失控。"
    }
   },
   {
    "angles": [
-    {
-     "item_id": "1519dd87851df788",
-     "phrase": {
-      "en": "Modi caught off guard by student anger",
-      "zh": "莫迪被学生愤怒打个措手不及"
-     },
-     "section": "news",
-     "source": "The New York Times",
-     "url": "https://www.nytimes.com/2026/07/23/world/asia/india-modi-protests-economy-cockroach-party.html"
-    },
-    {
-     "item_id": "d4039ec15c83f776",
-     "phrase": {
-      "en": "Cockroach movement drives big protests",
-      "zh": "‘蟑螂运动’推动大规模抗议"
-     },
-     "section": "news",
-     "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/news/audio/2026/jul/24/the-cockroaches-marching-on-indias-government-podcast"
-    }
-   ],
-   "convergence": "convergent",
-   "gloss": {
-    "en": "Students march on Delhi, shaking Modi's government amid economic anger.",
-    "zh": "学生游行涌向德里，经济不满冲击莫迪政府。"
-   },
-   "id": "t3",
-   "keyword": {
-    "en": "India protests",
-    "zh": "印度抗议"
-   },
-   "relates_to": [],
-   "why_now": {
-    "en": "Student movement explodes today, largest protests in years.",
-    "zh": "今日学生运动爆发，为多年来最大抗议。"
-   }
-  },
-  {
-   "angles": [
-    {
-     "item_id": "8e9dc2f21bb2d46e",
-     "phrase": {
-      "en": "Will AI replace your job?",
-      "zh": "你的工作会被AI取代吗？"
-     },
-     "section": "news",
-     "source": "BBC 中文",
-     "url": "https://www.bbc.com/zhongwen/articles/cvgl8r4j1j4o/trad?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "item_id": "6f2c975c9b70cb7a",
-     "phrase": {
-      "en": "First runaway AI agent or stunt?",
-      "zh": "首个失控AI智能体还是噱头？"
-     },
-     "section": "news",
-     "source": "Simon Willison",
-     "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything"
-    },
     {
      "item_id": "5440d1db45d7dd88",
      "phrase": {
@@ -225,70 +156,89 @@
      "url": "https://www.bbc.co.uk/news/articles/c235n47g8g8o?at_medium=RSS&at_campaign=rss"
     },
     {
-     "full_text_file": "articles/news/03496daaba1d5700.json",
-     "item_id": "03496daaba1d5700",
+     "item_id": "8e9dc2f21bb2d46e",
      "phrase": {
-      "en": "Alexa Plus gets AI update",
-      "zh": "Alexa Plus获AI更新"
+      "en": "asks which jobs AI will replace",
+      "zh": "探讨AI将取代哪些工作"
      },
      "section": "news",
-     "source": "The Verge · AI",
-     "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices"
+     "source": "BBC 中文",
+     "url": "https://www.bbc.com/zhongwen/articles/cvgl8r4j1j4o/trad?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "6f2c975c9b70cb7a",
+     "phrase": {
+      "en": "first known runaway AI agent",
+      "zh": "首个失控AI代理"
+     },
+     "section": "news",
+     "source": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything"
     }
    ],
    "convergence": "mixed",
    "gloss": {
-    "en": "Markets fret as tech giants spend billions on AI with uncertain payoff.",
-    "zh": "科技巨头砸钱AI回报不明，市场焦虑。"
+    "en": "Tech stocks tumble as investors question when AI will pay off.",
+    "zh": "科技股下跌，投资者质疑AI何时盈利。"
    },
-   "id": "t4",
+   "id": "t3",
    "keyword": {
-    "en": "AI anxiety",
-    "zh": "AI焦虑"
+    "en": "AI market jitters",
+    "zh": "AI市场焦虑"
    },
    "relates_to": [],
    "why_now": {
-    "en": "Google and Tesla shares plunge today on AI spending concerns.",
-    "zh": "今日谷歌和特斯拉股价因AI支出担忧暴跌。"
+    "en": "Google and Tesla shares plunge today.",
+    "zh": "谷歌和特斯拉股价今日暴跌。"
    }
   },
   {
    "angles": [
     {
-     "item_id": "c9169c7d26bb11f3",
+     "item_id": "dfd4ad969d851351",
      "phrase": {
-      "en": "US withdraws subpoenas to NYT journalists",
-      "zh": "美撤回对纽约时报记者传票"
+      "en": "activist breaks hunger strike after 26 days",
+      "zh": "活动家26天后结束绝食"
      },
      "section": "news",
      "source": "The New York Times",
-     "url": "https://www.nytimes.com/2026/07/23/business/media/new-york-times-subpoenas-withdraw.html"
+     "url": "https://www.nytimes.com/2026/07/23/world/asia/sonam-wangchuk-india-hunger-strike-protests-modi.html"
     },
     {
-     "item_id": "776ac4694de4da33",
+     "item_id": "1519dd87851df788",
      "phrase": {
-      "en": "ABC pulls Four Corners episodes over veracity",
-      "zh": "ABC因真实性问题撤下节目"
+      "en": "Modi caught off guard by youth protests",
+      "zh": "莫迪被青年抗议打个措手不及"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/world/asia/india-modi-protests-economy-cockroach-party.html"
+    },
+    {
+     "item_id": "d4039ec15c83f776",
+     "phrase": {
+      "en": "'cockroaches' marching on India's government",
+      "zh": "“蟑螂”游行冲击印度政府"
      },
      "section": "news",
      "source": "The Guardian · World",
-     "url": "https://www.theguardian.com/australia-news/live/2026/jul/24/australia-news-live-jim-chalmers-anthony-albanese-labor-conference-gas-tax-gambling-reform-one-nation-pauline-hanson-ntwnfb"
+     "url": "https://www.theguardian.com/news/audio/2026/jul/24/the-cockroaches-marching-on-indias-government-podcast"
     }
    ],
    "convergence": "convergent",
    "gloss": {
-    "en": "US government withdraws subpoenas against NYT journalists after judge pushback.",
-    "zh": "美国政府撤回对纽约时报记者的传票，因法官质疑。"
+    "en": "Student-led 'Cockroach' movement grows; activist breaks hunger strike.",
+    "zh": "学生领导的'蟑螂'运动扩大；活动家结束绝食。"
    },
-   "id": "t5",
+   "id": "t4",
    "keyword": {
-    "en": "press freedom",
-    "zh": "新闻自由"
+    "en": "India protests",
+    "zh": "印度抗议"
    },
    "relates_to": [],
    "why_now": {
-    "en": "Subpoenas dropped today amid concerns over press intimidation.",
-    "zh": "今日撤销传票，因担忧媒体恐吓。"
+    "en": "Prominent activist breaks 26-day hunger strike today.",
+    "zh": "知名活动家今日结束26天绝食。"
    }
   }
  ]
