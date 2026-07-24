@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-24T03:40:12Z",
+ "generated_at": "2026-07-24T06:37:48Z",
  "private_summary": {
   "configured": 0,
   "total": 0
@@ -115,7 +115,7 @@
   },
   {
    "category": "open",
-   "count": 30,
+   "count": 31,
    "error": null,
    "full_text_count": 0,
    "id": "bbc_world",
@@ -151,7 +151,7 @@
   },
   {
    "category": "open",
-   "count": 22,
+   "count": 23,
    "error": null,
    "full_text_count": 0,
    "id": "nyt_homepage",
@@ -223,7 +223,7 @@
   },
   {
    "category": "optional",
-   "count": 0,
+   "count": 40,
    "error": null,
    "full_text_count": 0,
    "id": "openalex_techcomm",
@@ -271,12 +271,12 @@
   },
   {
    "category": "open",
-   "count": 15,
-   "error": null,
+   "count": 0,
+   "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCvxZ0tCKgCrrgfGu_175NIA",
    "full_text_count": 0,
    "id": "radiance_fields_yt",
    "name": "Radiance Fields (YouTube)",
-   "ok": true,
+   "ok": false,
    "section": "news",
    "skip_reason": null,
    "type": "rss"
