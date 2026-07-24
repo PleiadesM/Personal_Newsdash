@@ -2,6 +2,149 @@
  "items": [
   {
    "authors": [
+    "Kevin Schott",
+    "Dagmar Kern",
+    "Daniel Hienert"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Large language models can make conversational product advisors fluent but opaque. If they hide the logic behind a ranking and the evidence for a recommendation inside natural-language replies, they challenge users' ability to understand, trust, and steer the results. One response is to build transparency into the advisor. We report a formative, moderated think-aloud usability study of one such system: a chatbot for laptop search with constrained natural-language generation, an on-demand ranking…",
+    "arxiv_id": "2607.21513"
+   },
+   "id": "cf75fc92fc6a3f06",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-23T16:58:34Z",
+   "score": 0.5669,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Large language models can make conversational product advisors fluent but opaque. If they hide the logic behind a ranking and the evidence for a recommendation inside natural-language replies, they challenge users' ability to understand, trust, and steer the results. One response is to build…",
+   "tags": [
+    "ux",
+    "llm"
+   ],
+   "title": "Transparent by Design, Usable in Practice? A Formative Usability Study of a Conversational Product Advisor",
+   "url": "https://arxiv.org/abs/2607.21513v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Ashu Gupta",
+    "Cameron Owens",
+    "Benjamin Wilson-Langman",
+    "Max Hill",
+    "Jason Cox",
+    "Joshua Clinton"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Political legislation affects the well-being and livelihoods of constituents. In the U.S. Congress a representative's voting record on bills and legislation is public. These bills have themes associated with them, such as veterans' affairs, coastal monitoring, agricultural appropriations, etc. A bill on veterans' affairs may affect a constituency differently if they have a high percentage of veterans. In this work, we demonstrate how congressional vote outcomes can be merged with typical…",
+    "arxiv_id": "2607.21502"
+   },
+   "id": "fde64d4ce07cba6c",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-23T16:50:58Z",
+   "score": 0.7988,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "Political legislation affects the well-being and livelihoods of constituents. In the U.S. Congress a representative's voting record on bills and legislation is public. These bills have themes associated with them, such as veterans' affairs, coastal monitoring, agricultural appropriations, etc. A…",
+   "tags": [],
+   "title": "A Needs Assessment for Measuring Geographic - Legislative Associations in the U.S. House of Representatives",
+   "url": "https://arxiv.org/abs/2607.21502v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Runze Cai",
+    "Yuxuan Huang",
+    "Lin-Ping Yuan",
+    "Kexin Xiang",
+    "David Hsu",
+    "Collier Nogues"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Creative writing increasingly integrates AI assistance, yet current tools miss in-situ moments when writers draw inspiration from real-world experiences. We envision Context-aware Reality-Fiction Transformation (CRAFT), an approach for AI glasses that translates daily experiences into fiction narratives. We explored its desirability, feasibility, and potential viability through three studies. Interviews with nine writers yielded desires and three design goals: 1) augmenting in-situ perception…",
+    "arxiv_id": "2607.21394"
+   },
+   "id": "9e060c6415654c76",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-23T14:56:51Z",
+   "score": 0.7497,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Creative writing increasingly integrates AI assistance, yet current tools miss in-situ moments when writers draw inspiration from real-world experiences. We envision Context-aware Reality-Fiction Transformation (CRAFT), an approach for AI glasses that translates daily experiences into fiction…",
+   "tags": [
+    "ai-writing",
+    "techcomm"
+   ],
+   "title": "CRAFT: Exploring Wearable Creative AI on Smart Glasses for Fiction Writing in Real-World Contexts",
+   "url": "https://arxiv.org/abs/2607.21394v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Roshan Mathew",
+    "Roshan Peiris"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "In experiential learning environments, Deaf and hard of hearing (DHH) students often experience ``split attention,'' dividing their focus among tasks, instructors, and access providers. Augmented reality (AR) has been proposed as a means to centralize communication access within the student's field of view; however, little is known about how such systems affect the instructors, interpreters, and captioners who support access in these settings. We present a formative, expert-based evaluation of…",
+    "arxiv_id": "2607.21289"
+   },
+   "id": "9165cdbc5004b2a9",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-23T13:10:00Z",
+   "score": 0.5489,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "In experiential learning environments, Deaf and hard of hearing (DHH) students often experience ``split attention,'' dividing their focus among tasks, instructors, and access providers. Augmented reality (AR) has been proposed as a means to centralize communication access within the student's field…",
+   "tags": [
+    "pedagogy"
+   ],
+   "title": "Reimagining the Augmented Reality Accessibility Ecosystem for Deaf Students: Service Provider Perspectives in Experiential Learning",
+   "url": "https://arxiv.org/abs/2607.21289v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Yunhai Wang",
+    "Kecheng Lu",
+    "Junhao Chen",
+    "Alper Sarikaya",
+    "Chenglong Wang"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "We present Flint, an intermediate language that enables authors to create high-quality visualizations from concise, semantics-driven specifications without explicitly configuring low-level parameters such as scales, axes, and formatting. Unlike prior systems that infer default configurations from surface-level data representations, often producing brittle choices, Flint introduces a hierarchical data semantic model that allows users to specify the meanings of data fields structurally and helps…",
+    "arxiv_id": "2607.20775"
+   },
+   "id": "6c55f12f043ac39c",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-22T22:42:34Z",
+   "score": 0.7199,
+   "section": "papers",
+   "source": "arXiv cs.HC + cs.GR",
+   "source_id": "arxiv_datavis",
+   "summary": "We present Flint, an intermediate language that enables authors to create high-quality visualizations from concise, semantics-driven specifications without explicitly configuring low-level parameters such as scales, axes, and formatting. Unlike prior systems that infer default configurations from…",
+   "tags": [
+    "systems",
+    "visualization"
+   ],
+   "title": "Flint: A Semantics-Driven Data Visualization Intermediate Language",
+   "url": "https://arxiv.org/abs/2607.20775v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
     "Eva McCord",
     "Ernest Pedapati",
     "Zag ElSayed"
@@ -15,7 +158,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-22T17:11:52Z",
-   "score": 0.6675,
+   "score": 0.6591,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -41,7 +184,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-22T12:40:08Z",
-   "score": 0.6909,
+   "score": 0.683,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -71,7 +214,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-22T08:42:55Z",
-   "score": 0.8172,
+   "score": 0.8097,
    "section": "papers",
    "source": "arXiv cs.HC + cs.GR",
    "source_id": "arxiv_datavis",
@@ -102,7 +245,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-21T11:44:43Z",
-   "score": 0.5743,
+   "score": 0.5684,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -132,7 +275,7 @@
    "kind": "paper",
    "lang": "en",
    "published_at": "2026-07-21T08:55:39Z",
-   "score": 0.567,
+   "score": 0.5613,
    "section": "papers",
    "source": "arXiv cs.HC (writing & docs)",
    "source_id": "arxiv_hci_writing",
@@ -143,44 +286,17 @@
    "title": "Evaluating a Visual Query Tracer and Builder for Learning Declarative Logic Programming",
    "url": "https://arxiv.org/abs/2607.18864v1",
    "venue": "arXiv cs.HC"
-  },
-  {
-   "authors": [
-    "Kaiyuan Tang",
-    "Chaoli Wang"
-   ],
-   "category": "optional",
-   "extra": {
-    "abstract_snippet": "Recent advances in differentiable Gaussian splatting have highlighted the potential of primitive-based approaches as alternative scene representations for interactive, high-quality, volume visualization (VolVis) of large datasets. However, the explicit nature of current primitive-based methods, combined with isolated optimization for each VolVis scene, results in redundant, non-compact representations. We present ECoNGS, an efficient compressive neural Gaussian splatting framework for VolVis…",
-    "arxiv_id": "2607.18466"
-   },
-   "id": "9e3b5576de1bfc8f",
-   "kind": "paper",
-   "lang": "en",
-   "published_at": "2026-07-20T19:35:24Z",
-   "score": 0.383,
-   "section": "papers",
-   "source": "arXiv cs.HC + cs.GR",
-   "source_id": "arxiv_datavis",
-   "summary": "Recent advances in differentiable Gaussian splatting have highlighted the potential of primitive-based approaches as alternative scene representations for interactive, high-quality, volume visualization (VolVis) of large datasets. However, the explicit nature of current primitive-based methods,…",
-   "tags": [
-    "ml-vis",
-    "visualization"
-   ],
-   "title": "ECoNGS: Efficient Compressive Neural Gaussian Splats for Volume Visualization",
-   "url": "https://arxiv.org/abs/2607.18466v1",
-   "venue": "arXiv cs.CV"
   }
  ],
  "meta": {
-  "count": 6,
-  "generated_at": "2026-07-23T23:09:59Z",
+  "count": 10,
+  "generated_at": "2026-07-24T01:25:37Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
-    "count": 3,
+    "count": 4,
     "error": null,
     "full_text_count": 0,
     "id": "arxiv_datavis",
@@ -217,7 +333,7 @@
    {
     "category": "optional",
     "count": 0,
-    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A1050-6519%2Cfrom-created-date%3A2026-06-25&rows=12&sort=created&order=desc",
+    "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works?filter=issn%3A1050-6519%2Cfrom-created-date%3A2026-06-26&rows=12&sort=created&order=desc",
     "full_text_count": 0,
     "id": "crossref_techcomm_journals",
     "name": "TechComm journals (CrossRef)",
@@ -240,7 +356,7 @@
    },
    {
     "category": "optional",
-    "count": 3,
+    "count": 6,
     "error": null,
     "full_text_count": 0,
     "id": "arxiv_hci_writing",

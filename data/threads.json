@@ -1,0 +1,247 @@
+{
+ "meta": {
+  "count": 4,
+  "generated_at": "2026-07-24T01:25:37Z",
+  "scope": "public"
+ },
+ "threads": [
+  {
+   "angles": [
+    {
+     "item_id": "69a86a69c3de91ee",
+     "phrase": {
+      "en": "Tariffs target 60 partners",
+      "zh": "针对60个贸易伙伴"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cvgj61j6l08o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "776ac4694de4da33",
+     "phrase": {
+      "en": "Australia demands removal",
+      "zh": "澳洲要求撤销"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/australia-news/live/2026/jul/24/australia-news-live-jim-chalmers-anthony-albanese-labor-conference-gas-tax-gambling-reform-one-nation-pauline-hanson-ntwnfb"
+    },
+    {
+     "item_id": "9f24f2cfdf1a975d",
+     "phrase": {
+      "en": "Democrats criticize as illegal",
+      "zh": "民主党批评违法"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/live/2026/jul/23/us-house-defense-spending-bill-donald-trump-iran-rubio-latest-news-updates"
+    },
+    {
+     "item_id": "0fd3246454de770c",
+     "phrase": {
+      "en": "Australia calls tariffs unjust",
+      "zh": "澳洲称关税不公"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/australia-news/2026/jul/24/donald-trump-hits-australian-exports-to-us-with-new-higher-trade-tariff-over-claims-of-forced-labour"
+    }
+   ],
+   "convergence": "mixed",
+   "gloss": {
+    "en": "New US tariffs hit dozens of nations, claiming to fight forced labour, but allies cry foul.",
+    "zh": "美国以打击强迫劳动为由对多国加征关税，盟友纷纷抗议。"
+   },
+   "id": "t1",
+   "keyword": {
+    "en": "US tariffs",
+    "zh": "美国关税"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Trump administration announced tariffs today.",
+    "zh": "特朗普政府今日宣布关税措施。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "a2bbda57a6b1a04f",
+     "phrase": {
+      "en": "UN says crisis out of control",
+      "zh": "联合国称危机失控"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/live/2026/jul/23/us-iran-war-live-updates-strikes-houthis-red-sea-saudi-nuclear-deal-middle-east-crisis-latest-news"
+    },
+    {
+     "item_id": "90b1d9b6f0c7c822",
+     "phrase": {
+      "en": "UK ready to defend itself",
+      "zh": "英国准备自卫"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/world/2026/jul/23/uk-ready-to-defend-itself-iran-threat-us-bases"
+    },
+    {
+     "item_id": "3c55eb23e60229d4",
+     "phrase": {
+      "en": "Houthi attacks raise war fears",
+      "zh": "胡塞袭击加剧战争担忧"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cvgve0vxy1yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "7fa474d369f6fe14",
+     "phrase": {
+      "en": "Pentagon alters death count",
+      "zh": "五角大楼修改阵亡人数"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/2026/jul/23/pentagon-service-members-killed-iran"
+    },
+    {
+     "item_id": "0af7dccd2134b31a",
+     "phrase": {
+      "en": "Death numbers appear lower",
+      "zh": "阵亡数字显示减少"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/us/politics/iran-troop-deaths.html"
+    }
+   ],
+   "convergence": "mixed",
+   "gloss": {
+    "en": "UN warns of escalating conflict as US strikes Iran and Houthis threaten shipping.",
+    "zh": "联合国警告冲突升级，美国打击伊朗，胡塞武装威胁航运。"
+   },
+   "id": "t2",
+   "keyword": {
+    "en": "Middle East crisis",
+    "zh": "中东危机"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "UN chief's warning and new US strikes today.",
+    "zh": "联合国秘书长今日发出警告，美军发动新一轮打击。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "8e9dc2f21bb2d46e",
+     "phrase": {
+      "en": "Which jobs will AI replace?",
+      "zh": "哪些工作会被AI取代"
+     },
+     "section": "news",
+     "source": "BBC 中文",
+     "url": "https://www.bbc.com/zhongwen/articles/cvgl8r4j1j4o/trad?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "5440d1db45d7dd88",
+     "phrase": {
+      "en": "AI spending worries investors",
+      "zh": "AI支出令投资者担忧"
+     },
+     "section": "news",
+     "source": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/c235n47g8g8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "item_id": "6f2c975c9b70cb7a",
+     "phrase": {
+      "en": "First runaway AI agent?",
+      "zh": "首个失控AI智能体？"
+     },
+     "section": "news",
+     "source": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything"
+    },
+    {
+     "full_text_file": "articles/news/13c8f8dd12d276f7.json",
+     "item_id": "13c8f8dd12d276f7",
+     "phrase": {
+      "en": "AI Kill Switch Act proposed",
+      "zh": "提出AI关闭法案"
+     },
+     "section": "news",
+     "source": "Ars Technica · AI",
+     "url": "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/"
+    },
+    {
+     "full_text_file": "articles/news/42da2205c8c643d1.json",
+     "item_id": "42da2205c8c643d1",
+     "phrase": {
+      "en": "Claude voice mode expands",
+      "zh": "Claude语音模式扩展"
+     },
+     "section": "news",
+     "source": "The Verge · AI",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai"
+    }
+   ],
+   "convergence": "divergent",
+   "gloss": {
+    "en": "As AI agents advance, workers and markets worry about job loss and investment payoff.",
+    "zh": "AI智能体发展，工人和市场担忧失业与投资回报。"
+   },
+   "id": "t3",
+   "keyword": {
+    "en": "AI and job displacement",
+    "zh": "AI与就业替代"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "AI spending rattles markets today.",
+    "zh": "AI支出今日冲击市场。"
+   }
+  },
+  {
+   "angles": [
+    {
+     "item_id": "f873cff1e6c4a624",
+     "phrase": {
+      "en": "Possible hate crime stabbings",
+      "zh": "疑似仇恨犯罪刺伤"
+     },
+     "section": "news",
+     "source": "The Guardian · World",
+     "url": "https://www.theguardian.com/us-news/2026/jul/23/new-york-city-double-stabbing"
+    },
+    {
+     "item_id": "5a55e4738da5d532",
+     "phrase": {
+      "en": "Police investigate hate crime",
+      "zh": "警方调查仇恨犯罪"
+     },
+     "section": "news",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/2026/07/23/nyregion/nyc-central-park-west-stabbing.html"
+    }
+   ],
+   "convergence": "convergent",
+   "gloss": {
+    "en": "Two stabbings in NYC targeting Asian and Jewish victims are investigated as hate crimes.",
+    "zh": "纽约两起刺伤案针对亚裔和犹太人，警方调查为仇恨犯罪。"
+   },
+   "id": "t4",
+   "keyword": {
+    "en": "hate crimes",
+    "zh": "仇恨犯罪"
+   },
+   "relates_to": [],
+   "why_now": {
+    "en": "Incident occurred today in Manhattan.",
+    "zh": "今日发生在曼哈顿的事件。"
+   }
+  }
+ ]
+}

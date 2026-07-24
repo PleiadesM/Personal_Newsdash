@@ -1,28 +1,28 @@
 {
- "brief": "US imposes tariffs on over 80 nations amid Middle East tensions, while a NYC stabbing spree and Tesla's stock plunge dominate headlines. Papers explore AI for clinical workflows, visualization tools, and dementia care.",
+ "brief": "US imposes new tariffs on dozens of countries; Pentagon list of Iran war deaths changes; Middle East crisis worsens. Protests in India and Indonesia babies trafficked to Singapore. AI usability studies and visualization tools dominate papers.",
  "meta": {
-  "generated_at": "2026-07-23T23:09:59Z"
+  "generated_at": "2026-07-24T01:25:37Z"
  },
- "news_summary": "Trump administration announces tariffs on over 80 countries for forced labor enforcement; two people stabbed near Central Park; Tesla stock drops 13.5% after weak profits; UN warns Middle East crisis 'getting out of control'.",
- "papers_summary": "Research covers HIPAA-compliant AI for clinical assays, a taxonomy for edge bundling tasks, multimodal LLMs for interface construction, and generative AI for social connectedness in dementia care.",
+ "news_summary": "US tariffs target 80+ countries over forced labor claims; Pentagon's list of Iran war deaths fluctuates; double stabbing in NYC probed as hate crime. India activist ends hunger strike; Indonesia babies trafficked to Singapore; LA homelessness rises.",
+ "papers_summary": "Papers explore usability of conversational AI, edge bundling taxonomies, and creative writing AI on smart glasses. Frameworks for accessible AR for deaf students and semantics-driven visualization languages are introduced.",
  "summaries": {
   "en": {
-   "brief": "US imposes tariffs on over 80 nations amid Middle East tensions, while a NYC stabbing spree and Tesla's stock plunge dominate headlines. Papers explore AI for clinical workflows, visualization tools, and dementia care.",
-   "news_summary": "Trump administration announces tariffs on over 80 countries for forced labor enforcement; two people stabbed near Central Park; Tesla stock drops 13.5% after weak profits; UN warns Middle East crisis 'getting out of control'.",
-   "papers_summary": "Research covers HIPAA-compliant AI for clinical assays, a taxonomy for edge bundling tasks, multimodal LLMs for interface construction, and generative AI for social connectedness in dementia care."
+   "brief": "US imposes new tariffs on dozens of countries; Pentagon list of Iran war deaths changes; Middle East crisis worsens. Protests in India and Indonesia babies trafficked to Singapore. AI usability studies and visualization tools dominate papers.",
+   "news_summary": "US tariffs target 80+ countries over forced labor claims; Pentagon's list of Iran war deaths fluctuates; double stabbing in NYC probed as hate crime. India activist ends hunger strike; Indonesia babies trafficked to Singapore; LA homelessness rises.",
+   "papers_summary": "Papers explore usability of conversational AI, edge bundling taxonomies, and creative writing AI on smart glasses. Frameworks for accessible AR for deaf students and semantics-driven visualization languages are introduced."
   },
   "zh": {
-   "brief": "今日焦點包括香港民主派人士胡志偉在英國機場險遭遣返、台灣收緊陸配參選資格，以及美國與沙特簽署核協議引發擴散擔憂。論文方面，多項研究聚焦AI在臨床工作流程、可視化任務分類及痴呆症護理中的應用。",
-   "news_summary": "香港47人案被告胡志偉在倫敦希斯羅機場被扣留後獲准入境；台灣修改陸配參選資格要求除籍滿十年；中國電影《澎湖海戰》因觸及歷史敏感擱置上映。",
-   "papers_summary": "多篇論文探討AI輔助臨床檢驗工作流程、邊緣捆綁可視化任務分類，以及生成式AI在痴呆症護理中促進社交聯繫的倫理與社會技術視角。"
+   "brief": "胡塞武装威胁封锁曼德海峡加剧红海航运危机；美国对多国加征关税并签署沙特核协议，中东局势紧张；英国女子香港强奸案判刑，香港前议员胡志伟英国入境受阻。",
+   "news_summary": "胡塞武装威胁封锁曼德海峡，全球石油贸易面临新冲击；美国与沙特签署核协议，引发核扩散担忧；英国女子在香港被裁定勒索等罪成立，判监六年。",
+   "papers_summary": "今日无新增优先论文，跨语言论文展示了AI在写作、无障碍和可视化等领域的最新研究，如智能眼镜辅助写作和增强现实无障碍系统。"
   }
  },
  "todays_image": {
-  "caption": "The 1831 map’s orderly borders chart a world of planned spaces, while today’s attack shatters that illusion of safety in one of its most iconic landmarks.",
-  "image_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-ET2016-04903",
-  "source_name": "National Museum of American History",
-  "source_url": null,
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NMAH-ET2016-04903&max=150",
-  "title": "1831 World Map by Marianne S. Fernald, Student at Charlestown Female Academy"
+  "caption": "Arthur Roy Smith's pioneering airmail flights once bridged continents, now his legacy contrasts with trade tariffs and bird flu grounding modern global exchange.",
+  "image_url": "https://ids.si.edu/ids/deliveryService?id=NPM-A.2009-1",
+  "source_name": "National Postal Museum",
+  "source_url": "https://postalmuseum.si.edu/object/npm_A.2009-1",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService?id=NPM-A.2009-1",
+  "title": "Photograph of airmail pilot Arthur Roy Smith"
  }
 }
