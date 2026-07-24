@@ -1,15 +1,186 @@
 {
- "items": [],
+ "items": [
+  {
+   "authors": [
+    "Kevin Schott",
+    "Dagmar Kern",
+    "Daniel Hienert"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Large language models can make conversational product advisors fluent but opaque. If they hide the logic behind a ranking and the evidence for a recommendation inside natural-language replies, they challenge users' ability to understand, trust, and steer the results. One response is to build transparency into the advisor. We report a formative, moderated think-aloud usability study of one such system: a chatbot for laptop search with constrained natural-language generation, an on-demand ranking…",
+    "arxiv_id": "2607.21513"
+   },
+   "id": "cf75fc92fc6a3f06",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-23T16:58:34Z",
+   "score": 0.5598,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Large language models can make conversational product advisors fluent but opaque. If they hide the logic behind a ranking and the evidence for a recommendation inside natural-language replies, they challenge users' ability to understand, trust, and steer the results. One response is to build…",
+   "tags": [
+    "ux",
+    "llm"
+   ],
+   "title": "Transparent by Design, Usable in Practice? A Formative Usability Study of a Conversational Product Advisor",
+   "url": "https://arxiv.org/abs/2607.21513v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Runze Cai",
+    "Yuxuan Huang",
+    "Lin-Ping Yuan",
+    "Kexin Xiang",
+    "David Hsu",
+    "Collier Nogues"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Creative writing increasingly integrates AI assistance, yet current tools miss in-situ moments when writers draw inspiration from real-world experiences. We envision Context-aware Reality-Fiction Transformation (CRAFT), an approach for AI glasses that translates daily experiences into fiction narratives. We explored its desirability, feasibility, and potential viability through three studies. Interviews with nine writers yielded desires and three design goals: 1) augmenting in-situ perception…",
+    "arxiv_id": "2607.21394"
+   },
+   "id": "9e060c6415654c76",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-23T14:56:51Z",
+   "score": 0.7428,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Creative writing increasingly integrates AI assistance, yet current tools miss in-situ moments when writers draw inspiration from real-world experiences. We envision Context-aware Reality-Fiction Transformation (CRAFT), an approach for AI glasses that translates daily experiences into fiction…",
+   "tags": [
+    "ai-writing",
+    "techcomm"
+   ],
+   "title": "CRAFT: Exploring Wearable Creative AI on Smart Glasses for Fiction Writing in Real-World Contexts",
+   "url": "https://arxiv.org/abs/2607.21394v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Roshan Mathew",
+    "Roshan Peiris"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "In experiential learning environments, Deaf and hard of hearing (DHH) students often experience ``split attention,'' dividing their focus among tasks, instructors, and access providers. Augmented reality (AR) has been proposed as a means to centralize communication access within the student's field of view; however, little is known about how such systems affect the instructors, interpreters, and captioners who support access in these settings. We present a formative, expert-based evaluation of…",
+    "arxiv_id": "2607.21289"
+   },
+   "id": "9165cdbc5004b2a9",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-23T13:10:00Z",
+   "score": 0.5421,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "In experiential learning environments, Deaf and hard of hearing (DHH) students often experience ``split attention,'' dividing their focus among tasks, instructors, and access providers. Augmented reality (AR) has been proposed as a means to centralize communication access within the student's field…",
+   "tags": [
+    "pedagogy"
+   ],
+   "title": "Reimagining the Augmented Reality Accessibility Ecosystem for Deaf Students: Service Provider Perspectives in Experiential Learning",
+   "url": "https://arxiv.org/abs/2607.21289v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Eva McCord",
+    "Ernest Pedapati",
+    "Zag ElSayed"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Clinical biomarker workflows in translational research settings often rely on spreadsheet-driven tracking, manual quality control (QC) reconciliation, and loosely integrated systems, resulting in limited state visibility, delayed reporting, and increased operational risk. These challenges are particularly pronounced in multi-day assays such as Luminex-based quantification of Fragile X Messenger Ribonucleoprotein (FMRP), where HIPAA-compliant data governance, deterministic workflow progression,…",
+    "arxiv_id": "2607.20382"
+   },
+   "id": "4685c66bae8e17d4",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-22T17:11:52Z",
+   "score": 0.6537,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Clinical biomarker workflows in translational research settings often rely on spreadsheet-driven tracking, manual quality control (QC) reconciliation, and loosely integrated systems, resulting in limited state visibility, delayed reporting, and increased operational risk. These challenges are…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization",
+   "url": "https://arxiv.org/abs/2607.20382v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Teis Arets",
+    "Giulia Perugia",
+    "Maarten Houben",
+    "Wijnand IJsselsteijn"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "People with dementia in residential care often experience reduced social connectedness. Person-centered care approaches foreground meaningful social interactions to support well-being, but staff and time pressures increasingly constrain opportunities for such care. Generative AI (GenAI) technologies offer possibilities for helping care professionals facilitate social connectedness, despite increasing care pressures. Yet, the meaningful integration of such technologies into the complex…",
+    "arxiv_id": "2607.19007"
+   },
+   "id": "91cd808c3605dde0",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-21T11:44:43Z",
+   "score": 0.5646,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "People with dementia in residential care often experience reduced social connectedness. Person-centered care approaches foreground meaningful social interactions to support well-being, but staff and time pressures increasingly constrain opportunities for such care. Generative AI (GenAI)…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Caring Over Computing: An Ethical and Sociotechnical Perspective on Generative AI for Social Connectedness in Dementia Care",
+   "url": "https://arxiv.org/abs/2607.19007v1",
+   "venue": "arXiv cs.HC"
+  },
+  {
+   "authors": [
+    "Julián Méndez",
+    "Lukas Gerlach",
+    "Tobias Wieland",
+    "Alex Ivliev",
+    "Markus Krötzsch",
+    "Raimund Dachselt"
+   ],
+   "category": "optional",
+   "extra": {
+    "abstract_snippet": "Nemo Explain Visualizer (nev) is an interactive visual query tracer and builder for Nemo, a powerful Datalog reasoner with extended features. Our tools were developed with and for expert users. However, considering the lack of resources to learn Datalog and similar declarative logic programming languages, we conducted a qualitative user study to assess how our tools might help students. The study, interviewing 14 participants with varying levels of involvement with the content of a university…",
+    "arxiv_id": "2607.18864"
+   },
+   "id": "8e43f335c36784c4",
+   "kind": "paper",
+   "lang": "en",
+   "published_at": "2026-07-21T08:55:39Z",
+   "score": 0.5576,
+   "section": "papers",
+   "source": "arXiv cs.HC (writing & docs)",
+   "source_id": "arxiv_hci_writing",
+   "summary": "Nemo Explain Visualizer (nev) is an interactive visual query tracer and builder for Nemo, a powerful Datalog reasoner with extended features. Our tools were developed with and for expert users. However, considering the lack of resources to learn Datalog and similar declarative logic programming…",
+   "tags": [
+    "ai-writing"
+   ],
+   "title": "Evaluating a Visual Query Tracer and Builder for Learning Declarative Logic Programming",
+   "url": "https://arxiv.org/abs/2607.18864v1",
+   "venue": "arXiv cs.HC"
+  }
+ ],
  "meta": {
-  "count": 0,
-  "generated_at": "2026-07-24T02:34:52Z",
+  "count": 6,
+  "generated_at": "2026-07-24T02:54:43Z",
   "kind": "papers",
   "section": "papers",
   "sources": [
    {
     "category": "optional",
     "count": 0,
-    "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60",
+    "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60 (Caus",
     "full_text_count": 0,
     "id": "arxiv_datavis",
     "name": "arXiv cs.HC + cs.GR",
@@ -68,12 +239,12 @@
    },
    {
     "category": "optional",
-    "count": 0,
-    "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acs.HC&sortBy=submittedDate&sortOrder=descending&max_results=40",
+    "count": 6,
+    "error": null,
     "full_text_count": 0,
     "id": "arxiv_hci_writing",
     "name": "arXiv cs.HC (writing & docs)",
-    "ok": false,
+    "ok": true,
     "section": "papers",
     "skip_reason": null,
     "type": "arxiv"

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-24T02:34:52Z",
+ "generated_at": "2026-07-24T02:54:43Z",
  "private_summary": {
   "configured": 0,
   "total": 0
@@ -176,7 +176,7 @@
   {
    "category": "optional",
    "count": 0,
-   "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60",
+   "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acs.HC+OR+cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=60 (Caus",
    "full_text_count": 0,
    "id": "arxiv_datavis",
    "name": "arXiv cs.HC + cs.GR",
@@ -235,12 +235,12 @@
   },
   {
    "category": "optional",
-   "count": 0,
-   "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acs.HC&sortBy=submittedDate&sortOrder=descending&max_results=40",
+   "count": 6,
+   "error": null,
    "full_text_count": 0,
    "id": "arxiv_hci_writing",
    "name": "arXiv cs.HC (writing & docs)",
-   "ok": false,
+   "ok": true,
    "section": "papers",
    "skip_reason": null,
    "type": "arxiv"
