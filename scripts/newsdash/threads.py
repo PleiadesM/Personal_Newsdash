@@ -28,7 +28,7 @@ from typing import Mapping
 import jsonschema
 import requests
 
-from .llm import extract_json, post_chat, resolve_endpoint
+from .llm import extract_json, post_chat, resolve_endpoint, resolve_extra_body
 from .models import clip, strip_html
 
 # Input caps (per bilingual call). News/papers are capped separately for the
@@ -39,12 +39,15 @@ MAX_INPUT_PAPERS = 12
 MAX_INPUT_PRIVATE = 30
 SUMMARY_CLIP = 200
 
-# Reasoning-capable models (DeepSeek reasoner/R1-style, o1-style) spend part
-# of this budget on hidden chain-of-thought before emitting visible content,
-# and this call asks for several bilingual threads at once — a bigger payload
-# than summarize.py's brief. 4000 leaves headroom so a reasoning model does
-# not truncate mid-JSON and come back with finish_reason="length".
-THREADS_MAX_TOKENS = 4000
+# Reasoning-capable models spend part of this same budget on hidden
+# chain-of-thought before emitting visible content; in production
+# deepseek-v4-flash (thinking on by default) exhausted the whole 4000 on
+# reasoning and returned finish_reason="length" with empty content on every
+# scheduled run. 16000 gives real headroom while staying under the smallest
+# common completion cap among default endpoints (gpt-4o-mini's 16384);
+# max_tokens is a cap, not spend. Where the provider supports it, prefer
+# disabling thinking via LLM_EXTRA_BODY (docs/CONFIG_REFERENCE.md §4a).
+THREADS_MAX_TOKENS = 16000
 
 MIN_THREADS = 2  # fewer than this and we fall back to Highlights, not a thin block
 
@@ -296,6 +299,7 @@ def generate_threads(payloads: dict[str, dict], env: Mapping[str, str],
               "content": SYSTEM_PROMPT.replace("__MAX_THREADS__", str(max_threads))},
              {"role": "user", "content": _prompt_lines(items)}],
             session, json_mode=True, max_tokens=THREADS_MAX_TOKENS,
+            extra_body=resolve_extra_body(env),
         )
         data = extract_json(content)
     except Exception as exc:  # noqa: BLE001 — enrichment must not fail builds

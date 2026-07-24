@@ -78,6 +78,7 @@ jobs:
           LLM_MODEL: ${{ vars.LLM_MODEL }}
           LLM_SUMMARY_ENABLED: ${{ vars.LLM_SUMMARY_ENABLED }}
           LLM_THREADS_ENABLED: ${{ vars.LLM_THREADS_ENABLED }}
+          LLM_EXTRA_BODY: ${{ vars.LLM_EXTRA_BODY }}
           TODAYS_IMAGE_ENABLED: ${{ vars.TODAYS_IMAGE_ENABLED }}
         run: python scripts/build.py --output-dir data
 

@@ -16,7 +16,7 @@ import requests
 from dateutil import parser as dateparser
 
 from .http import get
-from .llm import extract_json, post_chat, resolve_endpoint
+from .llm import extract_json, post_chat, resolve_endpoint, resolve_extra_body
 from .models import clip, iso_utc, strip_html
 from .summarize import _item_lines
 
@@ -75,10 +75,12 @@ def _context_prompt(payloads: dict[str, dict]) -> str:
 
 
 def _llm_json(label: str, base_url: str, api_key: str, model: str,
-              messages: list[dict], session: requests.Session) -> dict | None:
+              messages: list[dict], session: requests.Session,
+              env: Mapping[str, str]) -> dict | None:
     try:
         content = post_chat(
-            base_url, api_key, model, messages, session, json_mode=True)
+            base_url, api_key, model, messages, session, json_mode=True,
+            extra_body=resolve_extra_body(env))
         result = extract_json(content)
         if not isinstance(result, dict):
             raise ValueError("json root was not an object")
@@ -292,6 +294,7 @@ def find_apropos_of_nothing(payloads: dict[str, dict], env: Mapping[str, str],
             {"role": "user", "content": _context_prompt(payloads)},
         ],
         session,
+        env,
     )
     if not idea or not all(k in idea for k in QUERY_KEYS):
         print("[apropos-of-nothing:query] error: response missing keys")
@@ -321,6 +324,7 @@ def find_apropos_of_nothing(payloads: dict[str, dict], env: Mapping[str, str],
             )},
         ],
         session,
+        env,
     )
     if not summary_data:
         return None

@@ -32,10 +32,33 @@ def resolve_endpoint(env: Mapping[str, str]) -> tuple[str, str]:
     return base_url, model
 
 
+def resolve_extra_body(env: Mapping[str, str]) -> dict:
+    """Optional provider-specific request-body keys from LLM_EXTRA_BODY.
+
+    e.g. '{"thinking": {"type": "disabled"}}' turns off DeepSeek-V4
+    thinking mode. Must be a JSON object; empty or invalid values are
+    ignored (a broken Variable must never fail the build). Core keys
+    (model/messages/max_tokens/response_format) always win over these.
+    """
+    raw = (env.get("LLM_EXTRA_BODY") or "").strip()
+    if not raw:
+        return {}
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError:
+        parsed = None
+    if not isinstance(parsed, dict):
+        print("[llm] LLM_EXTRA_BODY ignored: not a JSON object")
+        return {}
+    return parsed
+
+
 def post_chat(base_url: str, api_key: str, model: str, messages: list[dict],
               session: requests.Session, *, json_mode: bool = False,
-              max_tokens: int = MAX_RESPONSE_TOKENS) -> str:
-    body = {"model": model, "messages": messages, "max_tokens": max_tokens}
+              max_tokens: int = MAX_RESPONSE_TOKENS,
+              extra_body: dict | None = None) -> str:
+    body = {**(extra_body or {}), "model": model, "messages": messages,
+            "max_tokens": max_tokens}
     if json_mode:
         body["response_format"] = {"type": "json_object"}
     resp = session.post(

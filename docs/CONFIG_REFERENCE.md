@@ -231,6 +231,14 @@ endpoint/model with the `LLM_BASE_URL` / `LLM_MODEL` Variables (defaults:
 from <https://api.data.gov/signup/> — one key works across every
 api.data.gov API, Smithsonian included.
 
+`LLM_EXTRA_BODY` (Variable, optional) is a JSON object merged into every
+chat-completions request body, for provider-specific parameters —
+e.g. `{"thinking": {"type": "disabled"}}` to turn off DeepSeek-V4 thinking
+mode (recommended: thinking-mode models can otherwise spend the whole token
+budget on hidden reasoning and Threads falls back to Highlights). Invalid
+JSON is ignored with a log line, and it can never override the core
+`model`/`messages`/`max_tokens`/`response_format` keys.
+
 Hard guarantees:
 
 - Reads only your `news`/`papers` items.
@@ -299,6 +307,7 @@ never fires on a BBC story.
 | `<ID>_ENABLED` | Variable | `0` = emergency stop for source `<id>` |
 | `RSS_MAX_FEEDS` | Variable | OPML expansion cap |
 | `LLM_BASE_URL` / `LLM_MODEL` | Variable | AI endpoint + model (§4a) |
+| `LLM_EXTRA_BODY` | Variable | provider-specific request-body JSON, e.g. disable DeepSeek thinking mode (§4a) |
 | `LLM_SUMMARY_ENABLED` / `TODAYS_IMAGE_ENABLED` / `APROPOS_OF_NOTHING_ENABLED` / `LLM_THREADS_ENABLED` | Variable | `0` = emergency stop for an AI feature |
 
 ## 7. "I want to change X" quick table

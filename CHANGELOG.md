@@ -8,6 +8,17 @@ round of significant changes lands. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); versions follow semver
 (minor = feature round, patch = fixes).
 
+## [0.4.1] — 2026-07-23
+
+### Fixed
+- Threads · 线索 never generated on scheduled builds: thinking-mode models
+  (deepseek-v4-flash thinks by default) exhausted the 4000-token cap on
+  hidden reasoning (finish_reason=length, empty content). THREADS_MAX_TOKENS
+  → 16000, and new `LLM_EXTRA_BODY` Variable passes provider-specific
+  request keys, e.g. `{"thinking": {"type": "disabled"}}`.
+- Threads section title is now monolingual per view: "Threads" (EN) /
+  "线索" (ZH).
+
 ## [0.4.0] — 2026-07-23
 
 Appearance round.

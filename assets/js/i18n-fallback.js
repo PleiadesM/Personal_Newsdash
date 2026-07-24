@@ -123,7 +123,7 @@ export const FALLBACK_EN = {
     "aproposTitle": "Apropos-of-Nothing",
     "aproposKicker": "Not for you, probably",
     "aproposSource": "Source",
-    "threads": "Threads · 线索",
+    "threads": "Threads",
     "threadsWhyNow": "Why now —",
     "threadsTouches": "touches:",
     "threadConvergent": "convergent",

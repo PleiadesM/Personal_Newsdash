@@ -11,7 +11,7 @@ from typing import Mapping
 
 import requests
 
-from .llm import extract_json, post_chat, resolve_endpoint
+from .llm import extract_json, post_chat, resolve_endpoint, resolve_extra_body
 
 MAX_NEWS_ITEMS = 20
 MAX_PAPER_ITEMS = 10
@@ -82,7 +82,8 @@ def _prompt_for_lang(payloads: dict[str, dict], target_lang: str) -> str:
 
 
 def _summarize_lang(payloads: dict[str, dict], target_lang: str, base_url: str,
-                    api_key: str, model: str, session: requests.Session) -> dict | None:
+                    api_key: str, model: str, session: requests.Session,
+                    env: Mapping[str, str]) -> dict | None:
     try:
         content = post_chat(
             base_url, api_key, model,
@@ -90,7 +91,7 @@ def _summarize_lang(payloads: dict[str, dict], target_lang: str, base_url: str,
               "content": SYSTEM_PROMPT.replace(
                   "__LANGUAGE__", LANG_NAMES[target_lang])},
              {"role": "user", "content": _prompt_for_lang(payloads, target_lang)}],
-            session, json_mode=True,
+            session, json_mode=True, extra_body=resolve_extra_body(env),
         )
         result = extract_json(content)
         if not all(k in result for k in RESPONSE_KEYS):
@@ -125,7 +126,7 @@ def summarize(payloads: dict[str, dict], env: Mapping[str, str],
     base_url, model = resolve_endpoint(env)
 
     raw = {
-        lang: _summarize_lang(payloads, lang, base_url, api_key, model, session)
+        lang: _summarize_lang(payloads, lang, base_url, api_key, model, session, env)
         for lang in LANGS
     }
     summaries = {
