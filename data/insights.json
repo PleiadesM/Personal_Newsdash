@@ -1,48 +1,48 @@
 {
  "apropos_of_nothing": {
-  "query": "\"oyster shucking championship\" OR \"oyster shucking contest\" OR \"world oyster shucking\"",
+  "query": "lawn mowing competition OR competitive mowing sport",
   "source": {
-   "name": "blogTO",
-   "published_at": "2026-07-19T17:17:35Z",
-   "title": "OOF Presents: The Ontario Oyster Shucking Championship",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSjIxUjFRdTVfNjV5aXoyWG8tRjNXanl5WHpBMFU2MUJsQ0wxaDdFWlhWZkN4b3VrQkdIdXQ4cG1Mc1Jma2dMSlplTE9kR3lXejZhdl9BdGw5NU1OcU4yY3c3bENEX0haTHZSX3V6ZTgzWS1CX1BLNHdwd2xPRl9ZV1laZDJhWUtXTDNhLWo5WGNSNW9KQlA4?oc=5"
+   "name": "Newsbug.info",
+   "published_at": "2026-07-20T23:30:00Z",
+   "title": "White County Fair tractor, lawn mower ribbon winners",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOaEN6T3JEeGt1ZmhMU1dZWnk5ZElsb3JGREdTYTZLYXRqY2FYLW9YVm9qcE9BalRzNFhwN18zOEEtS2doOTgzdVgzTmswZmdZVlFUb2lXRnRWWHgtSWsybmtlbktmVWJsaEtVS3VSZzF5VUJQa2J5MWpnYS1uZFppV0I4ZHN6a04xX0FHZnFkZDFUc2NVT0xOV3VVY2drbklOTV9GV040RHdudGVZalNGb1hOdUtwS2FabC1jRDZ3bFF0LWQ3V0ZRV2dtbmtoQnR1MkZZdDhOTlhLMVpmeFIwSVZoTFg1RjhxbGZmSDd3?oc=5"
   },
   "summaries": {
    "en": {
-    "summary": "The Ontario Oyster Shucking Championship is a competitive event where participants race to shuck oysters.",
-    "why_irrelevant": "It is a local food contest completely unrelated to current major news topics."
+    "summary": "White County Fair awards ribbons for tractor and lawn mower competitions.",
+    "why_irrelevant": "A local fair event far removed from global politics or tech trends."
    },
    "zh": {
-    "summary": "安大略牡蛎开壳锦标赛是一项参赛者竞相开壳的竞技活动。",
-    "why_irrelevant": "这是一个与当前主要新闻完全无关的本地食品竞赛。"
+    "summary": "怀特县博览会给拖拉机和割草机比赛颁发绶带。",
+    "why_irrelevant": "一个远离全球政治或科技趋势的地方性集市活动。"
    }
   },
-  "topic": "competitive oyster shucking"
+  "topic": "the history of competitive lawn mowing"
  },
- "brief": "Tariffs dominate the news, with small businesses suing the Trump administration and new duties threatening trade wars. In AI, Anthropic releases Opus 5 and Meta upgrades its chatbot.",
+ "brief": "US businesses sue over tariffs, Paramount delays merger, wildfires rage in France and Spain, and measles cases hit a record high.",
  "meta": {
-  "generated_at": "2026-07-24T17:49:50Z"
+  "generated_at": "2026-07-24T19:44:33Z"
  },
- "news_summary": "Small businesses sue over Trump's latest tariffs; Argentines defend their nation after World Cup criticism; Canada opens Gordie Howe bridge amid US tensions; multiple incidents in West Bank, Ireland, and London. Trump threatens EU tariffs over tech fines, and US strikes Iran as conflicts escalate.",
- "papers_summary": "Research on AI usability for conversational advisors, creative writing with smart glasses, and accessibility for deaf students highlight human-centered computing. Data visualization and benchmarking of multimodal LLMs are also featured.",
+ "news_summary": "Two US small businesses sue Trump administration over new tariffs; Paramount agrees to delay Warner Bros. merger. Wildfires force tens of thousands to flee in France and Spain; measles cases reach a record high in the US.",
+ "papers_summary": "Studies explore usability of conversational AI, geographic-legislative associations, wearable AI for fiction writing, and AR accessibility for deaf students.",
  "summaries": {
   "en": {
-   "brief": "Tariffs dominate the news, with small businesses suing the Trump administration and new duties threatening trade wars. In AI, Anthropic releases Opus 5 and Meta upgrades its chatbot.",
-   "news_summary": "Small businesses sue over Trump's latest tariffs; Argentines defend their nation after World Cup criticism; Canada opens Gordie Howe bridge amid US tensions; multiple incidents in West Bank, Ireland, and London. Trump threatens EU tariffs over tech fines, and US strikes Iran as conflicts escalate.",
-   "papers_summary": "Research on AI usability for conversational advisors, creative writing with smart glasses, and accessibility for deaf students highlight human-centered computing. Data visualization and benchmarking of multimodal LLMs are also featured."
+   "brief": "US businesses sue over tariffs, Paramount delays merger, wildfires rage in France and Spain, and measles cases hit a record high.",
+   "news_summary": "Two US small businesses sue Trump administration over new tariffs; Paramount agrees to delay Warner Bros. merger. Wildfires force tens of thousands to flee in France and Spain; measles cases reach a record high in the US.",
+   "papers_summary": "Studies explore usability of conversational AI, geographic-legislative associations, wearable AI for fiction writing, and AR accessibility for deaf students."
   },
   "zh": {
-   "brief": "美国对60个贸易伙伴加征关税，指控强迫劳动，涵盖中国和台湾；白宫指控中国AI公司窃取技术；香港出版环境持续收紧；同时，深夜频繁醒来有科学解释。",
-   "news_summary": "美国以强迫劳动为由对60个贸易伙伴加征10%-12.5%关税，涉及中国、台湾等经济体；白宫指控中国AI公司月之暗面通过蒸馏Anthropic技术开发K3模型；香港出版环境变化引发关注；研究解释为何常在凌晨三点醒来。",
-   "papers_summary": "今日无优先论文，但英文论文涉及AI辅助写作、AR无障碍、数据可视化等领域，包括可穿戴AI用于写作、智能眼镜辅助听障学生等研究。"
+   "brief": "今日新闻聚焦美国以强迫劳动为由对60个贸易伙伴加征关税、美中AI技术争端升级、以及欧洲野火与麻疹疫情。论文主要涉及人机交互与AI辅助工具的设计研究。",
+   "news_summary": "美国宣布对60个贸易伙伴征收10%-12.5%关税，理由是强迫劳动问题，涵盖中国、台湾等；白宫指控中国AI公司‘月之暗面’窃取Anthropic技术。此外，法国和西班牙野火迫使超10万人撤离，美国麻疹病例创30年新高。",
+   "papers_summary": "多篇论文探讨AI在对话系统、创意写作、增强现实及临床工作流中的应用，强调可解释性与用户体验；另有一篇研究评估可视化工具对逻辑编程学习的效果。"
   }
  },
  "todays_image": {
-  "caption": "The clustered seed heads of *Juncus capitatus* resemble small businesses banding together, pushing back against the trade barriers that threaten their growth.",
-  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3ec9c960c932740efb79fa0637ad45c31",
+  "caption": "The aster flower's name means \"star,\" and the merger delay buys time for the studio stars to align.",
+  "image_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b4efb1b7ba324866b5ce210f1b8ae00c",
   "source_name": "NMNH - Botany Dept.",
-  "source_url": "http://n2t.net/ark:/65665/3c173bf80-b2ae-48d9-91f5-6261581739bd",
-  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3ec9c960c932740efb79fa0637ad45c31/90",
-  "title": "Juncus capitatus Weigel"
+  "source_url": "http://n2t.net/ark:/65665/3d1b2a964-ed98-4ee0-8f71-927381c84000",
+  "thumbnail_url": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3b4efb1b7ba324866b5ce210f1b8ae00c/90",
+  "title": "Chaetopappa asteroides (Nutt.) DC."
  }
 }
