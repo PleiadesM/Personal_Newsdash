@@ -11,7 +11,7 @@ round of significant changes lands. Format loosely follows
 ## [0.4.3] — 2026-07-24
 
 ### Fixed
-- Apropos-of-Nothing now falls back to keyless Google News RSS when GDELT is rate-limited or returns nothing. GDELT throttles GitHub's shared runner IPs wholesale (429 on every attempt since 2026-07-14), so the v0.4.2 backoff and broadened query alone never recovered the card. The fallback runs the same cleaned search terms against Google News, feeds results into the existing candidate/summary flow, and is best-effort — any failure logs and skips without failing the build.
+- Apropos-of-Nothing now falls back to keyless Google News RSS when GDELT is rate-limited or returns nothing. GDELT throttles GitHub's shared runner IPs wholesale (429 on every attempt since 2026-07-14), so the v0.4.2 backoff and broadened query alone never recovered the card. The fallback runs the same cleaned search terms against Google News with its own two-tier query — exact quoted phrases over the last 14 days, then unquoted broadened terms over 30 days when the niche query comes back empty — feeds results into the existing candidate/summary flow, and is best-effort: any failure logs and skips without failing the build.
 
 ## [0.4.2] — 2026-07-24
 

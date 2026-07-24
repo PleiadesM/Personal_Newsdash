@@ -321,28 +321,42 @@ def _google_news_articles(raw: bytes) -> list[dict]:
     return articles
 
 
-def _search_google_news(terms: list[str],
-                        session: requests.Session) -> tuple[str, list[dict]]:
-    query = " OR ".join(_quote_query_term(t) for t in terms)
-    print(f"[apropos-of-nothing:search] falling back to Google News RSS: {query}")
+def _google_news_attempt(query: str, when: str,
+                         session: requests.Session) -> list[dict]:
     params = {
-        "q": f"{query} when:14d",
+        "q": f"{query} when:{when}",
         "hl": "en-US",
         "gl": "US",
         "ceid": "US:en",
     }
+    resp = get(session, GOOGLE_NEWS_RSS_URL, params=params)
+    return _google_news_articles(resp.content)
+
+
+def _search_google_news(terms: list[str],
+                        session: requests.Session) -> tuple[str, list[dict]]:
+    query = " OR ".join(_quote_query_term(t) for t in terms)
+    broad = " OR ".join(terms)
+    print(f"[apropos-of-nothing:search] falling back to Google News RSS: {query}")
+    # Two-tier, mirroring GDELT: exact quoted phrases over 14 days, then
+    # unquoted broadened terms over 30 days when the niche query is empty.
+    last_query = query
     try:
-        resp = get(session, GOOGLE_NEWS_RSS_URL, params=params)
-        articles = _google_news_articles(resp.content)
+        articles = _google_news_attempt(query, "14d", session)
+        if not articles:
+            print(f"[apropos-of-nothing:search] 0 Google News results for {query}; "
+                  f"retrying broadened {broad} over 30d")
+            last_query = broad
+            articles = _google_news_attempt(broad, "30d", session)
     except Exception as exc:  # noqa: BLE001 - optional enrichment must not fail builds
         print("[apropos-of-nothing:search] skipped: Google News fallback error: "
               f"{type(exc).__name__}: {str(exc)[:200]}")
-        return query, []
+        return last_query, []
     if not articles:
         print("[apropos-of-nothing:search] skipped: Google News fallback had "
-              f"0 results for {query}")
-        return query, []
-    return query, articles
+              f"0 results for {broad}")
+        return broad, []
+    return last_query, articles
 
 
 def _candidate_lines(articles: list[dict]) -> str:

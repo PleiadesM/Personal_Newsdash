@@ -182,17 +182,20 @@ def test_gdelt_429_then_empty_fallback_is_best_effort_skip(capsys, monkeypatch):
     responses.get(GDELT_DOC_URL, status=429)
     responses.get(GOOGLE_NEWS_RSS_URL, body=empty_google_news_rss_body(),
                  content_type="application/rss+xml")
+    responses.get(GOOGLE_NEWS_RSS_URL, body=empty_google_news_rss_body(),
+                 content_type="application/rss+xml")
 
     env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
     result = find_apropos_of_nothing(make_payloads(), env, make_session())
 
     assert result is None
-    # 1 query LLM POST + 3 GDELT attempts + 1 Google News fallback
-    assert len(responses.calls) == 5
+    # 1 query LLM POST + 3 GDELT attempts + 2 Google News attempts (14d, 30d)
+    assert len(responses.calls) == 6
     out = capsys.readouterr().out
     assert "GDELT rate-limited (429); giving up on GDELT this build" in out
     assert "will try again next build" not in out
     assert "falling back to Google News RSS" in out
+    assert "retrying broadened" in out
     assert "skipped: Google News fallback had 0 results" in out
     assert "[apropos-of-nothing:search] error" not in out
     assert sleeps == [0, 0]
@@ -278,6 +281,8 @@ def test_google_news_fallback_all_invalid_items_returns_none(capsys, monkeypatch
     responses.get(GDELT_DOC_URL, status=429)
     responses.get(GOOGLE_NEWS_RSS_URL, body=linkless_google_news_rss_body(),
                  content_type="application/rss+xml")
+    responses.get(GOOGLE_NEWS_RSS_URL, body=linkless_google_news_rss_body(),
+                 content_type="application/rss+xml")
 
     env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
     result = find_apropos_of_nothing(make_payloads(), env, make_session())
@@ -285,6 +290,37 @@ def test_google_news_fallback_all_invalid_items_returns_none(capsys, monkeypatch
     assert result is None
     out = capsys.readouterr().out
     assert "skipped: Google News fallback had 0 results" in out
+
+
+@responses.activate
+def test_google_news_broadened_second_attempt_succeeds(capsys, monkeypatch):
+    _patch_no_sleep(monkeypatch)
+
+    responses.post(CHAT_URL, json=query_completion())
+    responses.get(GDELT_DOC_URL, json={"articles": []})
+    responses.get(GDELT_DOC_URL, json={"articles": []})
+    responses.get(GOOGLE_NEWS_RSS_URL, body=empty_google_news_rss_body(),
+                 content_type="application/rss+xml")
+    responses.get(GOOGLE_NEWS_RSS_URL, body=google_news_rss_body(),
+                 content_type="application/rss+xml")
+    responses.post(CHAT_URL, json=summary_completion())
+
+    env = {"LLM_API_KEY": "sk-test", "LLM_MODEL": "gpt-4o-mini"}
+    result = find_apropos_of_nothing(make_payloads(), env, make_session())
+
+    assert result is not None
+    assert result["source"]["name"] == "Rural Weekly"
+
+    gn_calls = [c for c in responses.calls
+                if c.request.url.startswith(GOOGLE_NEWS_RSS_URL)]
+    assert len(gn_calls) == 2
+    second_q = parse_qs(urlparse(gn_calls[1].request.url).query)["q"][0]
+    assert '"' not in second_q
+    assert "pumpkin championship OR giant pumpkin" in second_q
+    assert second_q.endswith("when:30d")
+
+    out = capsys.readouterr().out
+    assert "retrying broadened" in out
 
 
 @responses.activate
