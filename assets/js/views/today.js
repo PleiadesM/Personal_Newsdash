@@ -380,7 +380,7 @@ function heroDateParts() {
   return {
     weekday: new Intl.DateTimeFormat(locale, { weekday: "long" }).format(now),
     mainDate: new Intl.DateTimeFormat(locale, { month: "long", day: "numeric" }).format(now),
-    subDate: new Intl.DateTimeFormat(locale, { year: "numeric", month: "long", day: "numeric" }).format(now),
+    subDate: new Intl.DateTimeFormat(locale, { year: "numeric" }).format(now),
   };
 }
 
@@ -576,27 +576,61 @@ export async function render(container) {
     el("h2", { class: "today-greeting" }, greeting()),
     el("p", { class: "today-date" }, dateLabel),
   ));
+  const cardOpts = { favs };
   const brief = localizedInsights(get().insights)?.brief;
-  if (brief) {
-    container.appendChild(el("div", { class: "ai-brief-block nd-fadein" },
-      el("p", { class: "ai-brief-label" }, `✨ ${t("today.aiSummaryLabel")}`),
-      el("p", { class: "ai-brief-text" }, brief),
-    ));
+  const aiBriefBlock = brief
+    ? el("div", { class: "ai-brief-block" },
+        el("p", { class: "ai-brief-label" }, `✨ ${t("today.aiSummaryLabel")}`),
+        el("p", { class: "ai-brief-text" }, brief),
+      )
+    : null;
+  const imageBlock = todaysImageBlock();
+
+  // Brief row (image LEFT / AI summary RIGHT, like the-type's hero) only when
+  // BOTH exist — the image is then NOT repeated in the grid below. Brief-only
+  // keeps the standalone .ai-brief-block; image-only keeps the image in the
+  // grid (current behavior).
+  const pairBriefAndImage = Boolean(imageBlock && aiBriefBlock);
+  if (pairBriefAndImage) {
+    container.appendChild(el("div", { class: "brief-row nd-fadein" }, imageBlock, aiBriefBlock));
+  } else if (aiBriefBlock) {
+    aiBriefBlock.classList.add("nd-fadein");
+    container.appendChild(aiBriefBlock);
   }
+
   const strip = overviewStrip(favs ? favs.size : null);
   if (strip) {
     strip.classList.add("nd-fadein");
     container.appendChild(strip);
   }
-  const cardOpts = { favs };
-  const blocks = [threadsBlock() || highlightsBlock(cardOpts), todaysImageBlock(),
-                  storiesBlock(cardOpts), papersBlock(cardOpts), followingBlock(cardOpts)]
-    .filter(Boolean);
-  const apropos = aproposOfNothingBlock();
-  if (!blocks.length && !apropos) container.appendChild(emptyCard());
-  if (blocks.length) {
-    container.appendChild(el("div", { class: "today-grid nd-fadein nd-fadein-d1" }, blocks));
+
+  // Threads (or highlights fallback) — full-width single column above the grid
+  // (mirrors renderTheType). Sits at the d1 stagger.
+  const threads = threadsBlock() || highlightsBlock(cardOpts);
+  if (threads) {
+    threads.classList.add("nd-fadein", "nd-fadein-d1");
+    container.appendChild(threads);
   }
+
+  // The grid keeps stories / papers / following, plus the image only when it
+  // wasn't paired into the brief row above. Sits after threads at d2.
+  const gridBlocks = [
+    pairBriefAndImage ? null : imageBlock,
+    storiesBlock(cardOpts), papersBlock(cardOpts), followingBlock(cardOpts),
+  ].filter(Boolean);
+  const grid = gridBlocks.length
+    ? el("div", { class: "today-grid nd-fadein nd-fadein-d2" }, gridBlocks)
+    : null;
+
+  const apropos = aproposOfNothingBlock();
+
+  // Empty state only when nothing at all rendered (brief row / standalone
+  // brief / strip / threads / grid / apropos all absent). aiBriefBlock covers
+  // both the brief-row and standalone-brief cases.
+  if (!aiBriefBlock && !strip && !threads && !grid && !apropos) {
+    container.appendChild(emptyCard());
+  }
+  if (grid) container.appendChild(grid);
   if (apropos) {
     apropos.classList.add("nd-fadein", "nd-fadein-d2");
     container.appendChild(apropos);

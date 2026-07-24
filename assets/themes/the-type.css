@@ -55,7 +55,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--fg);
   /* padding-block only — the shared #masthead padding-inline does the
      full-bleed bleed-compensation and must survive this more-specific rule. */
   padding-block: 1.1rem;

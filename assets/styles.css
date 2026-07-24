@@ -142,7 +142,6 @@ button:focus-visible, a:focus-visible {
      then pad content back into alignment with the column */
   margin-inline: calc(50% - 50vw);
   padding-inline: calc(50vw - 50%);
-  border-bottom: 2px solid var(--fg);
   padding-top: calc(var(--space) * 1.5);
 }
 #masthead::before {
@@ -333,6 +332,18 @@ mark.nd-highlight.has-note { border-bottom: 2px dotted var(--accent); cursor: he
 }
 .ai-brief-text { margin: 0; font-family: var(--font-heading); font-size: 1.1rem; line-height: 1.5; }
 .ai-summary-line { margin: 0 0 0.6rem; color: var(--fg-muted); font-style: italic; }
+
+/* Brief row: Today's Image (left) + AI summary (right), like the-type's hero.
+   Rendered on papermod/blowfish only when BOTH image and brief exist. */
+.brief-row {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: calc(var(--space) * 1.6);
+  align-items: start;
+  margin: 0.8rem 0 calc(var(--space) * 1.2);
+}
+.brief-row .ai-brief-block { margin: 0; max-width: none; }
+.brief-row .todays-image img { width: 100%; max-height: 16rem; object-fit: cover; border-radius: var(--radius); }
 
 .today-grid {
   display: grid;
@@ -805,6 +816,10 @@ a.stat-tile:hover .stat-num { color: var(--accent); }
 
 /* ---- responsiveness, motion, print ---- */
 
+@media (max-width: 48rem) {
+  .brief-row { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 40rem) {
   .masthead-inner { flex-direction: column; gap: 0.3rem; }
   .masthead-meta { width: 100%; }
@@ -853,7 +868,7 @@ a.stat-tile:hover .stat-num { color: var(--accent); }
   .feed-controls, .tag-row, .fav-star, .new-badge,
   .thread-touches, .thread-glyph { display: none !important; }
   .thread-card { break-inside: avoid; }
-  #masthead { border-bottom-width: 1px; position: static; margin-inline: 0; padding-inline: 0; }
+  #masthead { position: static; margin-inline: 0; padding-inline: 0; }
   #masthead::before { display: none; }
   body { background: #fff; color: #000; }
   .today-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }

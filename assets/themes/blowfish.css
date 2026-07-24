@@ -65,7 +65,6 @@ html[data-scheme="dark"][data-theme="blowfish"] {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: none;
   /* padding-block only — the shared #masthead padding-inline handles the
      full-bleed bleed-compensation and must not be overridden here. */
   padding-block: 1rem;

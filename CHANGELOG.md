@@ -8,6 +8,21 @@ round of significant changes lands. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); versions follow semver
 (minor = feature round, patch = fixes).
 
+## [0.5.2] — 2026-07-24
+
+Today-layout polish for the shared (papermod/blowfish) view.
+
+### Changed
+- **AI summary + Today's Image now share a two-column row** (image left,
+  summary right — mirroring the-type's hero). Falls back gracefully: brief
+  alone stays full-width, image alone stays in the grid.
+- **Threads (or Highlights) is a full-width single column** above the grid;
+  Top stories / Top papers / Following keep the two-column grid.
+- **The masthead's bottom border is gone in every theme** — separation now
+  comes from the scroll-ramped blur/shadow alone.
+- **the-type's hero third line shows just the year** ("2026" / "2026年")
+  instead of repeating the full date.
+
 ## [0.5.1] — 2026-07-23
 
 Theme round follow-up: one design language for motion and the masthead.

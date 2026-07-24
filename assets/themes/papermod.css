@@ -62,7 +62,6 @@ html[data-scheme="dark"][data-theme="papermod"] {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--rule);
   /* padding-block only — the shared #masthead padding-inline handles the
      full-bleed bleed-compensation and must survive this more-specific rule. */
   padding-block: 1rem;
@@ -139,6 +138,14 @@ html[data-scheme="dark"][data-theme="papermod"] {
   transform: none;
   border-color: transparent;
   border-bottom-color: var(--rule);
+}
+/* Brief row: the image block is a carded .today-block, so card the adjacent
+   .ai-brief-block (not a .today-block) to match rather than sit naked. */
+[data-theme="papermod"] .brief-row .ai-brief-block {
+  background: var(--bg-card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
 }
 
 /* ---- chips / tabs / thread cards ---- */
